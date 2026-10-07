@@ -1,0 +1,278 @@
+{
+  "archiveId": "2026-10-04-epoch-rush-design-v0.1",
+  "date": "2026-10-04",
+  "timezone": "Asia/Taipei",
+  "designVersion": "0.1.0",
+  "deliveryStage": "system_design_baseline",
+  "sourceDirectory": "docs/epoch-rush",
+  "status": "design_validated_implementation_and_native_validation_pending",
+  "sourceFileCount": 52,
+  "assetStatus": {
+    "referenceReady": 1,
+    "productionPlanned": 196
+  },
+  "hashAlgorithm": "SHA-256",
+  "files": [
+    {
+      "path": "00-产品愿景与范围.md",
+      "bytes": 3848,
+      "sha256": "d3fc60319a24a251bf52232c5d3845495d4fb2a39a2a8f37e6c54ea6e9e306e8"
+    },
+    {
+      "path": "01-世界观与背景故事.md",
+      "bytes": 4859,
+      "sha256": "9c56fae89e92452fad8361f81c8db4fdbb4e47f4341b7e5bac5174566a0ccb17"
+    },
+    {
+      "path": "02-核心循环与对局规则.md",
+      "bytes": 5734,
+      "sha256": "96ac6c69148e432acbf5d86fd50c8a5464e8f2ec150fd09b6ff18d43ab3cbb95"
+    },
+    {
+      "path": "03-可玩角色与军团体系.md",
+      "bytes": 5709,
+      "sha256": "ab20ec1d4962f520831fa765ebde9dfa9b7509f44211f722483f2b52a252e8e9"
+    },
+    {
+      "path": "04-成长路线与构筑.md",
+      "bytes": 4969,
+      "sha256": "3a370ee93f983326e4cda2e9a616986ece12e61643424c811d89030a7dae7e7d"
+    },
+    {
+      "path": "05-掉落物与经济.md",
+      "bytes": 4697,
+      "sha256": "d00d757f930ee1012c2936ced4c4cb4d74cbe2216f5945536a3922030649da77"
+    },
+    {
+      "path": "06-技能组合与状态系统.md",
+      "bytes": 6461,
+      "sha256": "696260155b5fa57c9b85c4e96ef633522cf154e7c02bb4d18cf7967da61d5399"
+    },
+    {
+      "path": "07-战斗打击与数值.md",
+      "bytes": 6046,
+      "sha256": "f4553a885fbd15c234e750598f4d774e8ce371f170cfdaf67dbaa77b0e448f7e"
+    },
+    {
+      "path": "08-美术设定与素材制作.md",
+      "bytes": 6408,
+      "sha256": "545b5d15c191a02934527a6f55895d82c39afe7b294a0b679a38c6c39236c006"
+    },
+    {
+      "path": "09-交互体验与多端UI.md",
+      "bytes": 5634,
+      "sha256": "7d1dd821369b7f5f1ca72b856b58a709f8daca7ae22016fee210155f0a0fdfed"
+    },
+    {
+      "path": "10-音频与触觉.md",
+      "bytes": 3058,
+      "sha256": "511ee4955a181c921640d6261537fd95ed81a270070ebe78fc41527fb1b44719"
+    },
+    {
+      "path": "11-关卡敌人AI与叙事.md",
+      "bytes": 5839,
+      "sha256": "affecbba5954a946a7f17183e600e7aefa13ac09d7bcb835ef28ebea13ada5f9"
+    },
+    {
+      "path": "12-技术架构与跨端交付.md",
+      "bytes": 7004,
+      "sha256": "ac7e606cdb6c5b6a0a910cc2227d82adc6574a80b41465cc441ac4a1b7c055b8"
+    },
+    {
+      "path": "13-数据字典存档与配置.md",
+      "bytes": 5891,
+      "sha256": "20651aef1c9659c1f4713e5daab11d808b4c9c8e12a6143ccd8d6df605495f68"
+    },
+    {
+      "path": "14-实施里程碑与验收.md",
+      "bytes": 4112,
+      "sha256": "252f07e4d573e5d8cec003c0ac1a8cefd5e97fa236cce0ddc717c3197b8f8eac"
+    },
+    {
+      "path": "15-决策记录与实现风险.md",
+      "bytes": 2972,
+      "sha256": "758b8300c17b492a1d1a046f8c24dedeef62ba467460be110f1cf432e75f273c"
+    },
+    {
+      "path": "16-需求追踪与覆盖.md",
+      "bytes": 2478,
+      "sha256": "074cae10a92458e9cd7a2772032ad07005ae5c05d35b0287cd1c592a214449cc"
+    },
+    {
+      "path": "17-数值演算与构筑样例.md",
+      "bytes": 4143,
+      "sha256": "137ed00b2159664adac72da6d9a5ae26c75ae8853a5e98d165d3d24a64e9a515"
+    },
+    {
+      "path": "assets/reference/epoch-rush-concept.png",
+      "bytes": 2024079,
+      "sha256": "8489c7340a49ef2ee94223e95b9286b9bbaae226093975ef61baf5a9679c0518"
+    },
+    {
+      "path": "data/asset-manifest.json",
+      "bytes": 61590,
+      "sha256": "3ad3ad5808e35ab0188d1e047ae9813cf8422dc2095ccfa06fb32d315c7887ba"
+    },
+    {
+      "path": "data/builds.json",
+      "bytes": 2573,
+      "sha256": "28fd9b279970f66641e64ab4cc1b92bfe4384ce3d37ac6d4f6f25b0f367827ed"
+    },
+    {
+      "path": "data/enemy-profiles.json",
+      "bytes": 2927,
+      "sha256": "55ba61691a5204ffe402c706e347d63a2e0bdb3de6a401fa77a936a5bb453f09"
+    },
+    {
+      "path": "data/eras.json",
+      "bytes": 1021,
+      "sha256": "71ed347d1e6d86f32562bd010b98c393034e4890cd078b5c03eb5ea009c0cfa0"
+    },
+    {
+      "path": "data/heroes.json",
+      "bytes": 3050,
+      "sha256": "fce4dcea63321c2c4af0aed8db69924e1ebe8cd20a90afd7b5e6ada2d0950ba3"
+    },
+    {
+      "path": "data/loot.json",
+      "bytes": 1378,
+      "sha256": "5602178ccab50149e4a5004f65c510ea4f6266bd7a9f9bacd547a30581cd89fb"
+    },
+    {
+      "path": "data/missions.json",
+      "bytes": 6963,
+      "sha256": "382b61452cb2b9a0636770c9a5fd491c09fa9bb445938f50574bfd304da599a9"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 1918,
+      "sha256": "1d39f0bd380b0c27960398963a932a1cd5a63c598cb99a12d5384d6e9e871016"
+    },
+    {
+      "path": "data/relics.json",
+      "bytes": 3074,
+      "sha256": "e89b71e5e9bafde5db868810f25356758a098ae8074cb4cdc3cb7a6cd1bca4e6"
+    },
+    {
+      "path": "data/rules.json",
+      "bytes": 4055,
+      "sha256": "800f7703f564a130493e131cd08f1b2e31624ecb7b8c092096e0c42b1c2db737"
+    },
+    {
+      "path": "data/run-upgrades.json",
+      "bytes": 2885,
+      "sha256": "77849d3dfc543dafa618989d3f6879265c6a620325e08cfbc726d6117b4b0b4f"
+    },
+    {
+      "path": "data/skills.json",
+      "bytes": 11560,
+      "sha256": "5e7cc6e2b998df76d45089109ab0cb69fa322aadd15317c31c7f42c743e438b1"
+    },
+    {
+      "path": "data/specializations.json",
+      "bytes": 4394,
+      "sha256": "9faa12f351a6cb7665fa017c5e3cfd2cfe602fc210906de70ea115b004bc8518"
+    },
+    {
+      "path": "data/statuses.json",
+      "bytes": 1862,
+      "sha256": "4d8d37b184b53203d94cabefe821fc0c74e71157a19487a7e9d92ca840402075"
+    },
+    {
+      "path": "data/talents.json",
+      "bytes": 3836,
+      "sha256": "9e6d2b5c616733e7cb38812a625289e446cd237093c46007344c4386f91a5846"
+    },
+    {
+      "path": "data/turrets.json",
+      "bytes": 2815,
+      "sha256": "1de724f45f25df1c487ce83c39d809fcd936175f2f4e505abdc0d1ca7f382b24"
+    },
+    {
+      "path": "data/units.json",
+      "bytes": 10923,
+      "sha256": "071ba9be56fe1ff3e8826abdf665e6780196c240dbdf5c1cb8c32f9647d5d753"
+    },
+    {
+      "path": "data/weapons.json",
+      "bytes": 1203,
+      "sha256": "2a55898972ac35f82fdb04455cc571d4e881a9c0548d5d28c4a28a37b45f2791"
+    },
+    {
+      "path": "examples/match-snapshot-v1.json",
+      "bytes": 2336,
+      "sha256": "485addd2a9fbcf64f3a8e09bbe1a4f5ccee7ce4e7142494b4339c70c45c208c4"
+    },
+    {
+      "path": "examples/profile-v1.json",
+      "bytes": 1462,
+      "sha256": "3a78035b61f12a3be81fa5ed1ec2806ae0e93907ec7876fe194d6933a6542413"
+    },
+    {
+      "path": "examples/reward-transaction-v1.json",
+      "bytes": 620,
+      "sha256": "be3777cde568124ec34ba456d36851c3f872aacf8e15c424685bdb182b67700a"
+    },
+    {
+      "path": "prompts/01-风格母版.md",
+      "bytes": 1431,
+      "sha256": "423be777d183b2810425af1cbfcd8616b798bda6c3b867c2cb53a94abf3363ad"
+    },
+    {
+      "path": "prompts/02-角色与专精.md",
+      "bytes": 9257,
+      "sha256": "03b1678dfa0a9b845b18eedc54a1b900397de779fe2f18f759a584896b3f911e"
+    },
+    {
+      "path": "prompts/03-五时代场景.md",
+      "bytes": 9114,
+      "sha256": "ba12da40bb0e7db1dfd69f83ad0cf3569286bcb60d1bfd8d41c2d067aa2c5873"
+    },
+    {
+      "path": "prompts/04-兵种与炮塔.md",
+      "bytes": 29562,
+      "sha256": "cfcac26d99a655e376c11e7c90d80c67b41047f9e2b8db88003b51647b5d76a1"
+    },
+    {
+      "path": "prompts/05-界面掉落与特效.md",
+      "bytes": 3429,
+      "sha256": "347f93c5ecdb89128d10b50728d6652f6e6ed6a93f528ebe9ecf580b96be8720"
+    },
+    {
+      "path": "prompts/06-动画制作与QA.md",
+      "bytes": 1804,
+      "sha256": "2ed48022d1afc08ef936ff625fedaa05740453368bf28f4cbec8d2e8889175ea"
+    },
+    {
+      "path": "prompts/README.md",
+      "bytes": 1686,
+      "sha256": "7715cb64f9a637053f0ed0e70453fe3b55fae3c5f1a3aaeb0390aadf76331348"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5006,
+      "sha256": "fb176469c7c397c506eb601f7c17b39f75a2149d322cdd28baadc3a53985f58e"
+    },
+    {
+      "path": "tools/validate_design.py",
+      "bytes": 16634,
+      "sha256": "87280d0f2f8f5fb387e0a1d55b3456a0dd30c9703e60b814030b9bb728361bf0"
+    },
+    {
+      "path": "素材制作任务表.md",
+      "bytes": 14549,
+      "sha256": "f4da489b33a4402a6c7cc86ae858f6fcde2112ad77946ac3bb0814f8d4a60268"
+    },
+    {
+      "path": "设计校验报告.md",
+      "bytes": 2331,
+      "sha256": "3696fceccef456c460f96985daf60b727c115e829f725759506a109b22071114"
+    },
+    {
+      "path": "附录-内容目录.md",
+      "bytes": 13639,
+      "sha256": "0599e6c520850f7a655f7670014f4b56a98233f40d8a5c4fc5186fda39aa978b"
+    }
+  ],
+  "manifestExcludedFromItsOwnHashes": true
+}

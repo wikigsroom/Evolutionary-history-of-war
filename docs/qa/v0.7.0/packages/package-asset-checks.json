@@ -1,0 +1,68 @@
+{
+  "version": "0.7.0",
+  "passed": true,
+  "actors": 126,
+  "strips": 252,
+  "nonempty_frames": 6980,
+  "fonts": [
+    {
+      "name": "resource-rounded.woff2",
+      "required_chinese_glyphs": 662,
+      "missing": []
+    },
+    {
+      "name": "smiley.woff2",
+      "required_chinese_glyphs": 662,
+      "missing": []
+    }
+  ],
+  "android": [
+    {
+      "file": "Epoch-Rush-Godot-debug.apk",
+      "size": 145540287,
+      "sha256": "48c9ae97e6a6943587bc4fa9015b20c099715c2b3a137947607c00d83a868bc2",
+      "checked_data_files": 19,
+      "checked_textures": 570,
+      "missing_textures": [],
+      "mismatched_imports": [],
+      "data_differences": [],
+      "forbidden_files": [],
+      "crc_error": null,
+      "architectures": [
+        "arm64-v8a"
+      ]
+    },
+    {
+      "file": "Epoch-Rush-Godot-release.apk",
+      "size": 143725280,
+      "sha256": "7a49301c6ccc7c94bd714b2504a9bf5d48ea96421c95fe856bb0f34962017b97",
+      "checked_data_files": 19,
+      "checked_textures": 570,
+      "missing_textures": [],
+      "mismatched_imports": [],
+      "data_differences": [],
+      "forbidden_files": [],
+      "crc_error": null,
+      "architectures": [
+        "arm64-v8a"
+      ]
+    }
+  ],
+  "windows": {
+    "exe_sha256": "f4c3cddd6c738e0e0f081665b48e43c49540f0dc2bb4d4116b9ff5d23fdb8810",
+    "exe_bytes": 226609904,
+    "zip_sha256": "56535cc9ae34a8ab67c6a7ba6895fdf878662d00f528677119e3ea87bf9a61c7",
+    "zip_bytes": 154244655,
+    "files": [
+      "Epoch-Rush-Godot.exe",
+      "README.md",
+      "Godot-LICENSE.txt",
+      "Godot-third-party-notices.txt",
+      "resource-rounded-LICENSE.txt",
+      "smiley-LICENSE.txt",
+      "Audio-CREDITS.txt",
+      "Audio-CC0-1.0.txt"
+    ]
+  },
+  "failures": []
+}

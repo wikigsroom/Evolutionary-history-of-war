@@ -1,0 +1,2643 @@
+{
+	"checks": [
+		{
+			"detail": null,
+			"name": "Ten usable eras",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Fifty recruitable units",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Sixty commander forms",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Twenty campaign missions",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Free battle reaches era ten",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U21",
+			"passed": true
+		},
+		{
+			"detail": 5.25,
+			"name": "Fivefold same-target damage U21",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U21",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U22",
+			"passed": true
+		},
+		{
+			"detail": 5.21428571428571,
+			"name": "Fivefold same-target damage U22",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U22",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U23",
+			"passed": true
+		},
+		{
+			"detail": 5.17647058823529,
+			"name": "Fivefold same-target damage U23",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U23",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U24",
+			"passed": true
+		},
+		{
+			"detail": 5.09090909090909,
+			"name": "Fivefold same-target damage U24",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U24",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U25",
+			"passed": true
+		},
+		{
+			"detail": 5.22222222222222,
+			"name": "Fivefold same-target damage U25",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U25",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U31",
+			"passed": true
+		},
+		{
+			"detail": 5.01587301587302,
+			"name": "Fivefold same-target damage U31",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U31",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U32",
+			"passed": true
+		},
+		{
+			"detail": 5.01369863013699,
+			"name": "Fivefold same-target damage U32",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U32",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U33",
+			"passed": true
+		},
+		{
+			"detail": 5.02272727272727,
+			"name": "Fivefold same-target damage U33",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U33",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U34",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold same-target damage U34",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U34",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U35",
+			"passed": true
+		},
+		{
+			"detail": 5.04255319148936,
+			"name": "Fivefold same-target damage U35",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U35",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U41",
+			"passed": true
+		},
+		{
+			"detail": 5.0126582278481,
+			"name": "Fivefold same-target damage U41",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U41",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U42",
+			"passed": true
+		},
+		{
+			"detail": 5.00273224043716,
+			"name": "Fivefold same-target damage U42",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U42",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U43",
+			"passed": true
+		},
+		{
+			"detail": 5.00678733031674,
+			"name": "Fivefold same-target damage U43",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U43",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U44",
+			"passed": true
+		},
+		{
+			"detail": 5.00238095238095,
+			"name": "Fivefold same-target damage U44",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U44",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U45",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold same-target damage U45",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U45",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U51",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold same-target damage U51",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U51",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U52",
+			"passed": true
+		},
+		{
+			"detail": 5.00218459858001,
+			"name": "Fivefold same-target damage U52",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U52",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U53",
+			"passed": true
+		},
+		{
+			"detail": 5.00090375056484,
+			"name": "Fivefold same-target damage U53",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U53",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U54",
+			"passed": true
+		},
+		{
+			"detail": 5.00047596382675,
+			"name": "Fivefold same-target damage U54",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U54",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U55",
+			"passed": true
+		},
+		{
+			"detail": 5.00084388185654,
+			"name": "Fivefold same-target damage U55",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U55",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U61",
+			"passed": true
+		},
+		{
+			"detail": 5.00012626262626,
+			"name": "Fivefold same-target damage U61",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U61",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U62",
+			"passed": true
+		},
+		{
+			"detail": 5.00021836445027,
+			"name": "Fivefold same-target damage U62",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U62",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U63",
+			"passed": true
+		},
+		{
+			"detail": 5.0002710761724,
+			"name": "Fivefold same-target damage U63",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U63",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U64",
+			"passed": true
+		},
+		{
+			"detail": 5.0001903674091,
+			"name": "Fivefold same-target damage U64",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U64",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U65",
+			"passed": true
+		},
+		{
+			"detail": 5.00050624367195,
+			"name": "Fivefold same-target damage U65",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U65",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U71",
+			"passed": true
+		},
+		{
+			"detail": 5.00002525188758,
+			"name": "Fivefold same-target damage U71",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U71",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U72",
+			"passed": true
+		},
+		{
+			"detail": 5.00004367098282,
+			"name": "Fivefold same-target damage U72",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U72",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U73",
+			"passed": true
+		},
+		{
+			"detail": 5.00003614153023,
+			"name": "Fivefold same-target damage U73",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U73",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U74",
+			"passed": true
+		},
+		{
+			"detail": 5.00002855402421,
+			"name": "Fivefold same-target damage U74",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U74",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U75",
+			"passed": true
+		},
+		{
+			"detail": 5.00010123848412,
+			"name": "Fivefold same-target damage U75",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U75",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U81",
+			"passed": true
+		},
+		{
+			"detail": 5.00001010070402,
+			"name": "Fivefold same-target damage U81",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U81",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U82",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold same-target damage U82",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U82",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U83",
+			"passed": true
+		},
+		{
+			"detail": 5.0000108423807,
+			"name": "Fivefold same-target damage U83",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U83",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U84",
+			"passed": true
+		},
+		{
+			"detail": 5.00000190359074,
+			"name": "Fivefold same-target damage U84",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U84",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U85",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold same-target damage U85",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U85",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U91",
+			"passed": true
+		},
+		{
+			"detail": 5.00000101006836,
+			"name": "Fivefold same-target damage U91",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U91",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U92",
+			"passed": true
+		},
+		{
+			"detail": 5.00000087341203,
+			"name": "Fivefold same-target damage U92",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U92",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U93",
+			"passed": true
+		},
+		{
+			"detail": 5.00000144564762,
+			"name": "Fivefold same-target damage U93",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U93",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U94",
+			"passed": true
+		},
+		{
+			"detail": 5.000000380718,
+			"name": "Fivefold same-target damage U94",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U94",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U95",
+			"passed": true
+		},
+		{
+			"detail": 5.00000269963825,
+			"name": "Fivefold same-target damage U95",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U95",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U101",
+			"passed": true
+		},
+		{
+			"detail": 5.00000060604089,
+			"name": "Fivefold same-target damage U101",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U101",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U102",
+			"passed": true
+		},
+		{
+			"detail": 5.00000052404712,
+			"name": "Fivefold same-target damage U102",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U102",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U103",
+			"passed": true
+		},
+		{
+			"detail": 5.00000043369416,
+			"name": "Fivefold same-target damage U103",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U103",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U104",
+			"passed": true
+		},
+		{
+			"detail": 5.00000030457438,
+			"name": "Fivefold same-target damage U104",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U104",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold attack U105",
+			"passed": true
+		},
+		{
+			"detail": 5.00000053992736,
+			"name": "Fivefold same-target damage U105",
+			"passed": true
+		},
+		{
+			"detail": 5.0,
+			"name": "Fivefold DPS U105",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era XP gate A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era recruit catalog A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era-specific raid A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "XP separate from power A10",
+			"passed": true
+		},
+		{
+			"detail": 227.0,
+			"name": "Late-era kill cannot skip many ages",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era ten ID, power and approved sword-guard art agree",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.0,
+				"medics": 0,
+				"peakShieldHpRatio": 0.0,
+				"seconds": 10.8666666666667,
+				"shielders": 0
+			},
+			"name": "Sustained contact kills supported front [0, 0, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.0,
+				"medics": 0,
+				"peakShieldHpRatio": 0.0,
+				"seconds": 10.8666666666667,
+				"shielders": 0
+			},
+			"name": "Passive shields remain bounded [0, 0, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.108,
+				"medics": 1,
+				"peakShieldHpRatio": 0.0,
+				"seconds": 12.3666666666667,
+				"shielders": 0
+			},
+			"name": "Sustained contact kills supported front [1, 0, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.108,
+				"medics": 1,
+				"peakShieldHpRatio": 0.0,
+				"seconds": 12.3666666666667,
+				"shielders": 0
+			},
+			"name": "Passive shields remain bounded [1, 0, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.316808145454545,
+				"medics": 4,
+				"peakShieldHpRatio": 0.0,
+				"seconds": 16.8666666666667,
+				"shielders": 0
+			},
+			"name": "Sustained contact kills supported front [4, 0, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.316808145454545,
+				"medics": 4,
+				"peakShieldHpRatio": 0.0,
+				"seconds": 16.8666666666667,
+				"shielders": 0
+			},
+			"name": "Passive shields remain bounded [4, 0, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.336,
+				"medics": 4,
+				"peakShieldHpRatio": 0.06,
+				"seconds": 18.3666666666667,
+				"shielders": 4
+			},
+			"name": "Sustained contact kills supported front [4, 4, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 0,
+				"died": true,
+				"healedHpRatio": 0.336,
+				"medics": 4,
+				"peakShieldHpRatio": 0.06,
+				"seconds": 18.3666666666667,
+				"shielders": 4
+			},
+			"name": "Passive shields remain bounded [4, 4, 0]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 3,
+				"died": true,
+				"healedHpRatio": 0.347003345454545,
+				"medics": 4,
+				"peakShieldHpRatio": 0.06,
+				"seconds": 22.8666666666667,
+				"shielders": 4
+			},
+			"name": "Sustained contact kills supported front [4, 4, 3]",
+			"passed": true
+		},
+		{
+			"detail": {
+				"armorLevel": 3,
+				"died": true,
+				"healedHpRatio": 0.347003345454545,
+				"medics": 4,
+				"peakShieldHpRatio": 0.06,
+				"seconds": 22.8666666666667,
+				"shielders": 4
+			},
+			"name": "Passive shields remain bounded [4, 4, 3]",
+			"passed": true
+		},
+		{
+			"detail": 30.1,
+			"name": "Healing under weak attack uses incoming-pressure budget",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Combat healing cannot instantly fill a large health pool",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Active shield plus health respects separate shield cap",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Granting a shield never increases health",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Medics cannot revive dead units",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Old 85 XP cannot rush the first evolution",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolve through age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Enemy age stays independent at age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Leader evolution changes background era 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Trailing side can evolve independently",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Trailing-side evolution also selects another dominant-era map",
+			"passed": true
+		},
+		{
+			"detail": {
+				"1": true,
+				"2": true,
+				"3": true
+			},
+			"name": "All three map candidates are selectable",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Random events do not advance combat RNG",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Neutral event damage is bounded on both sides",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Random events cannot damage bases",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Environment damage grants no bounty",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Neutral lethal damage grants no opponent XP or gold",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Ten-era snapshot with neutral scheduled effects restores",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Map and event RNG persist exactly",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Pause freezes events and world simulation",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H01 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H01 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H01 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander has ten named skill variants H01",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H02 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H02 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H02 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander has ten named skill variants H02",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H03 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H03 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H03 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander has ten named skill variants H03",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H04 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H04 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H04 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander has ten named skill variants H04",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H05 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H05 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H05 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander has ten named skill variants H05",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander changes form H06 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander preserves health ratio H06 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Evolution cannot reset skill cooldown H06 age 10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Commander has ten named skill variants H06",
+			"passed": true
+		}
+	],
+	"damageMatrix": [
+		{
+			"dpsRatio": 5.0,
+			"from": "U11",
+			"newAttack": 73.5,
+			"oldAttack": 14.7,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.25,
+			"to": "U21"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U12",
+			"newAttack": 85.0,
+			"oldAttack": 17.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.21428571428571,
+			"to": "U22"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U13",
+			"newAttack": 115.0,
+			"oldAttack": 23.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.17647058823529,
+			"to": "U23"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U14",
+			"newAttack": 150.0,
+			"oldAttack": 30.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.09090909090909,
+			"to": "U24"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U15",
+			"newAttack": 55.0,
+			"oldAttack": 11.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.22222222222222,
+			"to": "U25"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U21",
+			"newAttack": 367.5,
+			"oldAttack": 73.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.01587301587302,
+			"to": "U31"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U22",
+			"newAttack": 425.0,
+			"oldAttack": 85.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.01369863013699,
+			"to": "U32"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U23",
+			"newAttack": 575.0,
+			"oldAttack": 115.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.02272727272727,
+			"to": "U33"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U24",
+			"newAttack": 750.0,
+			"oldAttack": 150.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0,
+			"to": "U34"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U25",
+			"newAttack": 275.0,
+			"oldAttack": 55.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.04255319148936,
+			"to": "U35"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U31",
+			"newAttack": 1837.5,
+			"oldAttack": 367.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0126582278481,
+			"to": "U41"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U32",
+			"newAttack": 2125.0,
+			"oldAttack": 425.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00273224043716,
+			"to": "U42"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U33",
+			"newAttack": 2875.0,
+			"oldAttack": 575.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00678733031674,
+			"to": "U43"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U34",
+			"newAttack": 3750.0,
+			"oldAttack": 750.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00238095238095,
+			"to": "U44"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U35",
+			"newAttack": 1375.0,
+			"oldAttack": 275.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0,
+			"to": "U45"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U41",
+			"newAttack": 9187.5,
+			"oldAttack": 1837.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0,
+			"to": "U51"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U42",
+			"newAttack": 10625.0,
+			"oldAttack": 2125.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00218459858001,
+			"to": "U52"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U43",
+			"newAttack": 14375.0,
+			"oldAttack": 2875.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00090375056484,
+			"to": "U53"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U44",
+			"newAttack": 18750.0,
+			"oldAttack": 3750.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00047596382675,
+			"to": "U54"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U45",
+			"newAttack": 6875.0,
+			"oldAttack": 1375.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00084388185654,
+			"to": "U55"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U51",
+			"newAttack": 45937.5,
+			"oldAttack": 9187.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00012626262626,
+			"to": "U61"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U52",
+			"newAttack": 53125.0,
+			"oldAttack": 10625.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00021836445027,
+			"to": "U62"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U53",
+			"newAttack": 71875.0,
+			"oldAttack": 14375.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0002710761724,
+			"to": "U63"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U54",
+			"newAttack": 93750.0,
+			"oldAttack": 18750.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0001903674091,
+			"to": "U64"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U55",
+			"newAttack": 34375.0,
+			"oldAttack": 6875.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00050624367195,
+			"to": "U65"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U61",
+			"newAttack": 229687.5,
+			"oldAttack": 45937.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00002525188758,
+			"to": "U71"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U62",
+			"newAttack": 265625.0,
+			"oldAttack": 53125.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00004367098282,
+			"to": "U72"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U63",
+			"newAttack": 359375.0,
+			"oldAttack": 71875.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00003614153023,
+			"to": "U73"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U64",
+			"newAttack": 468750.0,
+			"oldAttack": 93750.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00002855402421,
+			"to": "U74"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U65",
+			"newAttack": 171875.0,
+			"oldAttack": 34375.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00010123848412,
+			"to": "U75"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U71",
+			"newAttack": 1148437.5,
+			"oldAttack": 229687.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00001010070402,
+			"to": "U81"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U72",
+			"newAttack": 1328125.0,
+			"oldAttack": 265625.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0,
+			"to": "U82"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U73",
+			"newAttack": 1796875.0,
+			"oldAttack": 359375.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0000108423807,
+			"to": "U83"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U74",
+			"newAttack": 2343750.0,
+			"oldAttack": 468750.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000190359074,
+			"to": "U84"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U75",
+			"newAttack": 859375.0,
+			"oldAttack": 171875.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.0,
+			"to": "U85"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U81",
+			"newAttack": 5742187.5,
+			"oldAttack": 1148437.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000101006836,
+			"to": "U91"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U82",
+			"newAttack": 6640625.0,
+			"oldAttack": 1328125.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000087341203,
+			"to": "U92"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U83",
+			"newAttack": 8984375.0,
+			"oldAttack": 1796875.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000144564762,
+			"to": "U93"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U84",
+			"newAttack": 11718750.0,
+			"oldAttack": 2343750.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.000000380718,
+			"to": "U94"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U85",
+			"newAttack": 4296875.0,
+			"oldAttack": 859375.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000269963825,
+			"to": "U95"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U91",
+			"newAttack": 28710937.5,
+			"oldAttack": 5742187.5,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000060604089,
+			"to": "U101"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U92",
+			"newAttack": 33203125.0,
+			"oldAttack": 6640625.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000052404712,
+			"to": "U102"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U93",
+			"newAttack": 44921875.0,
+			"oldAttack": 8984375.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000043369416,
+			"to": "U103"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U94",
+			"newAttack": 58593750.0,
+			"oldAttack": 11718750.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000030457438,
+			"to": "U104"
+		},
+		{
+			"dpsRatio": 5.0,
+			"from": "U95",
+			"newAttack": 21484375.0,
+			"oldAttack": 4296875.0,
+			"rawRatio": 5.0,
+			"sameTargetHitRatio": 5.00000053992736,
+			"to": "U105"
+		}
+	],
+	"passed": true,
+	"supportCases": [
+		{
+			"armorLevel": 0,
+			"died": true,
+			"healedHpRatio": 0.0,
+			"medics": 0,
+			"peakShieldHpRatio": 0.0,
+			"seconds": 10.8666666666667,
+			"shielders": 0
+		},
+		{
+			"armorLevel": 0,
+			"died": true,
+			"healedHpRatio": 0.108,
+			"medics": 1,
+			"peakShieldHpRatio": 0.0,
+			"seconds": 12.3666666666667,
+			"shielders": 0
+		},
+		{
+			"armorLevel": 0,
+			"died": true,
+			"healedHpRatio": 0.316808145454545,
+			"medics": 4,
+			"peakShieldHpRatio": 0.0,
+			"seconds": 16.8666666666667,
+			"shielders": 0
+		},
+		{
+			"armorLevel": 0,
+			"died": true,
+			"healedHpRatio": 0.336,
+			"medics": 4,
+			"peakShieldHpRatio": 0.06,
+			"seconds": 18.3666666666667,
+			"shielders": 4
+		},
+		{
+			"armorLevel": 3,
+			"died": true,
+			"healedHpRatio": 0.347003345454545,
+			"medics": 4,
+			"peakShieldHpRatio": 0.06,
+			"seconds": 22.8666666666667,
+			"shielders": 4
+		}
+	]
+}

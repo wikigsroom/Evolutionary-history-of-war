@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "matchId": "ER-EXAMPLE-4",
+  "rewardSequence": 4,
+  "stage": "prepared",
+  "lootSeed": 54321,
+  "pityBefore": {
+    "rareMisses": 1,
+    "epicMisses": 3
+  },
+  "plannedRewards": {
+    "heroId": "H01",
+    "proficiencyXp": 100,
+    "firstClearMissionId": "M04",
+    "fixedRelicId": "I04",
+    "randomRelicIds": [
+      "I01"
+    ],
+    "duplicatesToFragments": 1
+  },
+  "pityAfter": {
+    "rareMisses": 2,
+    "epicMisses": 4
+  },
+  "targetProfileRevision": 4,
+  "exampleOnly": true,
+  "checksum": "0311359e8ae301eae31c2ff1428dbaa9be16d6f9e4d7fcd32b8e1ad3ec142110"
+}

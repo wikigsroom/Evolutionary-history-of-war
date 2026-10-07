@@ -1,0 +1,57 @@
+{
+  "battleKillGold": "units.bountyGold * era.costMultiplier, floor",
+  "battleKillKnowledge": "units.killKnowledge, no era multiplier",
+  "battleRewardEligibleEntities": [
+    "regular_enemy"
+  ],
+  "groundPickupMode": "automatic_ledger_first_visual_after",
+  "firstClearRelicByMission": {
+    "M01": "I01",
+    "M02": "I02",
+    "M03": "I03",
+    "M04": "I04",
+    "M05": "I05",
+    "M06": "I06",
+    "M07": "I07",
+    "M08": "I08",
+    "M09": "I09",
+    "M10": "I10",
+    "M11": "I11",
+    "M12": "I12"
+  },
+  "missionFirstClearFragments": {
+    "M13": 2,
+    "M14": 2,
+    "M15": 4
+  },
+  "victoryChests": 1,
+  "chapterBossVictoryChests": 2,
+  "chapterBossMissionIds": [
+    "M03",
+    "M06",
+    "M09",
+    "M12",
+    "M15"
+  ],
+  "randomChestEligibility": "tutorial_complete",
+  "rarityWeights": {
+    "common": 60,
+    "rare": 30,
+    "epic": 10
+  },
+  "withinRarity": "uniform",
+  "rareOrBetterGuaranteedEvery": 5,
+  "epicGuaranteedEvery": 20,
+  "pityPrecedence": "epic_then_rare_then_weighted",
+  "duplicatesToFragments": 1,
+  "targetCraftCostFragments": 4,
+  "craftPool": "all_12_relics_after_M03",
+  "defeatRandomChests": 0,
+  "rewardTransactionKey": "matchId",
+  "completedRewardIdsRetained": 200,
+  "profileJournalKeepsLifetimeLastSequence": true,
+  "rarePityWeights": {
+    "rare": 30,
+    "epic": 10
+  }
+}

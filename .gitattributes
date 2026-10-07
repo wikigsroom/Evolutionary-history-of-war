@@ -1,0 +1,25 @@
+* text=auto eol=lf
+
+# Keep recorded evidence byte-identical so published SHA-256 checks survive clones.
+docs/qa/v0.7.0/**/*.json -text
+
+# Native Windows command scripts use Windows line endings.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.mp4 binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.zip binary
+*.pdf binary

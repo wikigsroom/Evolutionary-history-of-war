@@ -1,0 +1,791 @@
+{
+	"eras": [
+		{
+			"actors": [
+				{
+					"id": "H01-A1",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A1",
+					"textureLoaded": true
+				},
+				{
+					"id": "U11",
+					"textureLoaded": true
+				},
+				{
+					"id": "U13",
+					"textureLoaded": true
+				},
+				{
+					"id": "U14",
+					"textureLoaded": true
+				},
+				{
+					"id": "U12",
+					"textureLoaded": true
+				},
+				{
+					"id": "U15",
+					"textureLoaded": true
+				},
+				{
+					"id": "U14",
+					"textureLoaded": true
+				},
+				{
+					"id": "U15",
+					"textureLoaded": true
+				}
+			],
+			"age": 1,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "dinosaur",
+			"map": "res://assets/environment/eras/A1-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A1-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A1-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A1-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H02-A2",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A2",
+					"textureLoaded": true
+				},
+				{
+					"id": "U21",
+					"textureLoaded": true
+				},
+				{
+					"id": "U23",
+					"textureLoaded": true
+				},
+				{
+					"id": "U24",
+					"textureLoaded": true
+				},
+				{
+					"id": "U22",
+					"textureLoaded": true
+				},
+				{
+					"id": "U25",
+					"textureLoaded": true
+				},
+				{
+					"id": "U25",
+					"textureLoaded": true
+				}
+			],
+			"age": 2,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "meteor",
+			"map": "res://assets/environment/eras/A2-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A2-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A2-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A2-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H03-A3",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A3",
+					"textureLoaded": true
+				},
+				{
+					"id": "U31",
+					"textureLoaded": true
+				},
+				{
+					"id": "U33",
+					"textureLoaded": true
+				},
+				{
+					"id": "U34",
+					"textureLoaded": true
+				},
+				{
+					"id": "U32",
+					"textureLoaded": true
+				},
+				{
+					"id": "U35",
+					"textureLoaded": true
+				},
+				{
+					"id": "U33",
+					"textureLoaded": true
+				},
+				{
+					"id": "U34",
+					"textureLoaded": true
+				},
+				{
+					"id": "U35",
+					"textureLoaded": true
+				}
+			],
+			"age": 3,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "rockfall",
+			"map": "res://assets/environment/eras/A3-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A3-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A3-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A3-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H04-A4",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A4",
+					"textureLoaded": true
+				},
+				{
+					"id": "U41",
+					"textureLoaded": true
+				},
+				{
+					"id": "U43",
+					"textureLoaded": true
+				},
+				{
+					"id": "U44",
+					"textureLoaded": true
+				},
+				{
+					"id": "U42",
+					"textureLoaded": true
+				},
+				{
+					"id": "U45",
+					"textureLoaded": true
+				}
+			],
+			"age": 4,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "storm",
+			"map": "res://assets/environment/eras/A4-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A4-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A4-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A4-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H05-A5",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A5",
+					"textureLoaded": true
+				},
+				{
+					"id": "U53",
+					"textureLoaded": true
+				},
+				{
+					"id": "U54",
+					"textureLoaded": true
+				},
+				{
+					"id": "U52",
+					"textureLoaded": true
+				},
+				{
+					"id": "U55",
+					"textureLoaded": true
+				},
+				{
+					"id": "U54",
+					"textureLoaded": true
+				},
+				{
+					"id": "U52",
+					"textureLoaded": true
+				},
+				{
+					"id": "U55",
+					"textureLoaded": true
+				}
+			],
+			"age": 5,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "rockfall",
+			"map": "res://assets/environment/eras/A5-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A5-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A5-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A5-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H06-A6",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A6",
+					"textureLoaded": true
+				},
+				{
+					"id": "U61",
+					"textureLoaded": true
+				},
+				{
+					"id": "U63",
+					"textureLoaded": true
+				},
+				{
+					"id": "U64",
+					"textureLoaded": true
+				},
+				{
+					"id": "U62",
+					"textureLoaded": true
+				},
+				{
+					"id": "U65",
+					"textureLoaded": true
+				},
+				{
+					"id": "U64",
+					"textureLoaded": true
+				},
+				{
+					"id": "U65",
+					"textureLoaded": true
+				}
+			],
+			"age": 6,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "plane",
+			"map": "res://assets/environment/eras/A6-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A6-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A6-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A6-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H01-A7",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A7",
+					"textureLoaded": true
+				},
+				{
+					"id": "U73",
+					"textureLoaded": true
+				},
+				{
+					"id": "U74",
+					"textureLoaded": true
+				},
+				{
+					"id": "U72",
+					"textureLoaded": true
+				},
+				{
+					"id": "U75",
+					"textureLoaded": true
+				},
+				{
+					"id": "U74",
+					"textureLoaded": true
+				}
+			],
+			"age": 7,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": false,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": false,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "plane",
+			"map": "res://assets/environment/eras/A7-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A7-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A7-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A7-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H02-A8",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A8",
+					"textureLoaded": true
+				},
+				{
+					"id": "U83",
+					"textureLoaded": true
+				},
+				{
+					"id": "U84",
+					"textureLoaded": true
+				},
+				{
+					"id": "U82",
+					"textureLoaded": true
+				},
+				{
+					"id": "U85",
+					"textureLoaded": true
+				},
+				{
+					"id": "U84",
+					"textureLoaded": true
+				}
+			],
+			"age": 8,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "plane",
+			"map": "res://assets/environment/eras/A8-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A8-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A8-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A8-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H03-A9",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A9",
+					"textureLoaded": true
+				},
+				{
+					"id": "U91",
+					"textureLoaded": true
+				},
+				{
+					"id": "U93",
+					"textureLoaded": true
+				},
+				{
+					"id": "U94",
+					"textureLoaded": true
+				},
+				{
+					"id": "U92",
+					"textureLoaded": true
+				},
+				{
+					"id": "U95",
+					"textureLoaded": true
+				}
+			],
+			"age": 9,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": true,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "drone",
+			"map": "res://assets/environment/eras/A9-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A9-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A9-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A9-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		},
+		{
+			"actors": [
+				{
+					"id": "H04-A10",
+					"textureLoaded": true
+				},
+				{
+					"id": "H03-A10",
+					"textureLoaded": true
+				},
+				{
+					"id": "U103",
+					"textureLoaded": true
+				},
+				{
+					"id": "U104",
+					"textureLoaded": true
+				},
+				{
+					"id": "U102",
+					"textureLoaded": true
+				},
+				{
+					"id": "U105",
+					"textureLoaded": true
+				}
+			],
+			"age": 10,
+			"ambientLoaded": true,
+			"baseUnaffectedByNeutralEvent": true,
+			"carriers": [
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": false,
+					"side": 0
+				},
+				{
+					"correctType": true,
+					"groundContact": true,
+					"grounded": false,
+					"side": 1
+				}
+			],
+			"cuesMissing": 0,
+			"effectsBounded": true,
+			"eventKind": "debris",
+			"map": "res://assets/environment/eras/A10-3.png",
+			"mapLoaded": true,
+			"maps": [
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A10-1.png",
+					"variant": 1
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A10-2.png",
+					"variant": 2
+				},
+				{
+					"correctPath": true,
+					"loaded": true,
+					"renderedPath": "res://assets/environment/eras/A10-3.png",
+					"variant": 3
+				}
+			],
+			"raidCast": true
+		}
+	],
+	"passed": true
+}

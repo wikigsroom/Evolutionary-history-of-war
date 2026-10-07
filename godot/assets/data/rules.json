@@ -1,0 +1,218 @@
+{
+  "designVersion": "0.7.0",
+  "status": "ten_eras_rebuild",
+  "simulationHz": 30,
+  "world": {
+    "width": 1600,
+    "basePositions": [
+      80,
+      1520
+    ],
+    "populationPerSide": 30,
+    "heroReservedSlots": 1,
+    "trainingQueueMax": 5,
+    "maxMeleeContacts": 1
+  },
+  "resources": {
+    "startingGold": 240,
+    "goldPerSec": 2.5,
+    "startingKnowledge": 0,
+    "knowledgePerSec": 0,
+    "startingCommand": 50,
+    "commandPerSec": 3,
+    "commandMax": 100,
+    "experienceFromOwnLossRatio": 0.65,
+    "experienceFromCombatOnly": true
+  },
+  "queue": {
+    "unstartedCancelRefund": 1,
+    "inProgressCancelRefund": 0.75,
+    "blockedSpawnRetainsUnit": true
+  },
+  "hero": {
+    "respawnSec": 25,
+    "stanceChangeIntervalSec": 0.5,
+    "deathResetsCooldowns": false,
+    "evolutionPreservesHealthRatio": true
+  },
+  "base": {
+    "startingHp": 2400,
+    "slotsInitial": 1,
+    "slotUnlockCosts": [
+      90,
+      180
+    ],
+    "turretSellRefund": 0.6,
+    "evolutionPreservesHealthRatio": true,
+    "armor": 20,
+    "energyResistance": 0.1
+  },
+  "evolutionRush": {
+    "eligibleSec": 30,
+    "spawnCount": 3,
+    "buffSec": 8,
+    "moveBonus": 0.25,
+    "firstAttackBonus": 0.2
+  },
+  "caps": {
+    "attackBonus": 0.3,
+    "skillPowerBonus": 0.2,
+    "conditionalDamageBonus": 0.35,
+    "attackSpeedBonus": 0.3,
+    "moveSpeedBonus": 0.35,
+    "trainingReduction": 0.25,
+    "incomeBonus": 0.25,
+    "costReduction": 0.2,
+    "receivedDamageReduction": 0.35,
+    "shieldHpRatio": 0.2,
+    "commandMax": 110,
+    "cooldownReduction": 0.25,
+    "bountyBonus": 0.3,
+    "queueProgressCapOfOriginal": 0.5,
+    "damageCastTargetsIncludingChains": 6
+  },
+  "overtime": {
+    "firstSec": 1200,
+    "firstBaseDamageMultiplier": 1.5,
+    "secondSec": 1440,
+    "secondBaseDamageMultiplier": 2,
+    "burnStartsSec": 1800,
+    "baseMaxHpBurnPerSec": 0.01
+  },
+  "damage": {
+    "armorConstant": 100,
+    "baseSkillDamageMultiplier": 0.35,
+    "minimumDamage": 1,
+    "rounding": "floor_after_all_modifiers",
+    "counter": {
+      "physical": {
+        "light": 1.0,
+        "heavy": 0.9,
+        "base": 1.0
+      },
+      "pierce": {
+        "light": 0.85,
+        "heavy": 1.35,
+        "base": 1.0
+      },
+      "blast": {
+        "light": 1.25,
+        "heavy": 0.85,
+        "base": 1.0
+      },
+      "energy": {
+        "light": 0.95,
+        "heavy": 1.1,
+        "base": 1.0
+      }
+    },
+    "pierceArmorIgnore": 0.35,
+    "roleCounterBonus": 1.3,
+    "heavyBaseDamageMultiplier": 2.6
+  },
+  "mastery": {
+    "startingPoints": 2,
+    "maximumPoints": 6,
+    "pointMissionIds": [
+      "M03",
+      "M06",
+      "M09",
+      "M12"
+    ],
+    "tiersRequirePoints": [
+      0,
+      2,
+      4
+    ],
+    "pointsPerNode": 1
+  },
+  "heroProficiency": {
+    "thresholds": [
+      0,
+      100,
+      300,
+      600,
+      1000
+    ],
+    "winXp": 100,
+    "lossXp": 50,
+    "cosmeticOnly": true,
+    "lossEligibilityMinSec": 120,
+    "lossEligibilityMinKills": 3
+  },
+  "rng": {
+    "separateStreams": [
+      "combat",
+      "loot",
+      "visual"
+    ],
+    "lootSeedRecordedBeforeReward": true,
+    "algorithm": "xorshift32-v1",
+    "zeroSeedFallback": 2654435769,
+    "boundedSampling": "rejection"
+  },
+  "difficulty": [
+    {
+      "id": "D01",
+      "name": "轻松",
+      "decisionSec": 2,
+      "mistakeProbability": 0.2,
+      "incomeMultiplier": 1
+    },
+    {
+      "id": "D02",
+      "name": "标准",
+      "decisionSec": 1,
+      "mistakeProbability": 0.08,
+      "incomeMultiplier": 1
+    },
+    {
+      "id": "D03",
+      "name": "挑战",
+      "decisionSec": 0.5,
+      "mistakeProbability": 0.02,
+      "incomeMultiplier": 1
+    }
+  ],
+  "loadout": {
+    "heroSlots": 1,
+    "signatureSkillSlots": 1,
+    "commonSkillSlots": 2,
+    "relicSlots": 2,
+    "minimumRelics": 0,
+    "allowEmptyRelicSlots": true
+  },
+  "initialUnlocks": {
+    "heroIds": [
+      "H01",
+      "H03"
+    ],
+    "commonSkillIds": [
+      "S01",
+      "S02"
+    ],
+    "relicIds": []
+  },
+  "support": {
+    "pulseSec": 1.5,
+    "maximumTargets": 3,
+    "combatRecoveryRatioPerSec": 0.02,
+    "outOfCombatRecoveryRatioPerSec": 0.05,
+    "passiveShieldCapRatio": 0.12,
+    "totalShieldCapRatio": 0.2,
+    "combatSustainFractionOfPressure": 0.35,
+    "pressureWindowSec": 3.0,
+    "shieldRegenHpRatioPerSec": 0.01
+  },
+  "randomEvents": {
+    "enabled": true,
+    "firstMinSec": 38,
+    "firstMaxSec": 58,
+    "intervalMinSec": 48,
+    "intervalMaxSec": 82,
+    "warningSec": 2.1,
+    "maximumDamageHpRatioPerEvent": 0.1,
+    "maximumEvents": 14,
+    "canDamageBase": false
+  }
+}

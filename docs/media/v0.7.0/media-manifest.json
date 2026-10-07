@@ -1,0 +1,174 @@
+{
+  "version": "0.7.0",
+  "preparedAtUtc": "2026-10-07T11:40:38.393000+00:00",
+  "source": "Native Godot 4.7.2 rendering of the v0.7.0 Windows embedded PCK; scripted era practice.",
+  "annotation": "Only menu-guide, battle-guide and gallery add explanatory labels to original game captures.",
+  "gifs": {
+    "fps": 12,
+    "width": 768,
+    "loop": true,
+    "audio": false,
+    "clips": [
+      [
+        "medieval-battle.gif",
+        26.0,
+        6.0
+      ],
+      [
+        "modern-strike.gif",
+        58.7,
+        6.8
+      ],
+      [
+        "orbital-strike.gif",
+        74.5,
+        6.5
+      ]
+    ]
+  },
+  "files": [
+    {
+      "file": "battle-guide.png",
+      "bytes": 684697,
+      "sha256": "660f61e3463a99178b9186404cb192812119b661a5ba23bce307d4e58ff99cdd",
+      "size": [
+        1280,
+        1136
+      ]
+    },
+    {
+      "file": "battle-medieval.png",
+      "bytes": 870672,
+      "sha256": "182d82dea042ed3e4360ace9d43c6c3497adabad6f581b791cdb15cb115358c7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "battle-modern.png",
+      "bytes": 702203,
+      "sha256": "8697919cc73e4d5b74b939adeab3051ad35b4e78b5cdedb3b02e2e1d6e36732b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "battle-orbital.png",
+      "bytes": 710324,
+      "sha256": "d100f02287cc79837be62f1c2656591c5834888fb4e5298c2fc6b2a8d5ed1014",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "battle-stone.png",
+      "bytes": 738830,
+      "sha256": "5d805e60dd16408e06c28fe1a44bf891dfa597344cf3fbe86ea6d80a3457b474",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "medieval-battle.gif",
+      "bytes": 3197921,
+      "sha256": "1c4677df4b59d74cece80f88028270a397ff52eae639347750d74712ea5d101f",
+      "size": [
+        768,
+        432
+      ],
+      "frames": 72,
+      "durationMs": 6000
+    },
+    {
+      "file": "menu-campaign.png",
+      "bytes": 210449,
+      "sha256": "8004d9b1af61d70625cd86fdfc8fb4f63e93d7b12ae88f0251dc2fb14500d705",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "menu-codex.png",
+      "bytes": 215093,
+      "sha256": "822f557f490837833596c4b516547aea7511b14b67dfd6c857d2199807bbb65d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "menu-guide.png",
+      "bytes": 610824,
+      "sha256": "464920755ce9d3f57fed5b1161d81cdf6c0340254d87952e3548eccc76dcccb5",
+      "size": [
+        1280,
+        1042
+      ]
+    },
+    {
+      "file": "menu-home.png",
+      "bytes": 649912,
+      "sha256": "836b1742ed4d4b09203c15b14025a5bcd0a998a17929ff6feac5b990f897d602",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "menu-loadout.png",
+      "bytes": 334549,
+      "sha256": "d91f5872362945c15986d5cd14634af3867d0e47bdd10ce90b9b715ca2027871",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "menu-settings.png",
+      "bytes": 333146,
+      "sha256": "690b151cd0839e08aff935eac3fa43d85e512f09be324ca6831bb6f177b6ace1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-strike.gif",
+      "bytes": 4189294,
+      "sha256": "33dde05da273765f7df40d576572b4f3cfd88c6dd15be2219e0bdf26f93b76c0",
+      "size": [
+        768,
+        432
+      ],
+      "frames": 82,
+      "durationMs": 6830
+    },
+    {
+      "file": "orbital-strike.gif",
+      "bytes": 3838650,
+      "sha256": "6985ce471eb24819a80d5b6919ec01b66fe45f213bded2e208ddebc7d92c0ec7",
+      "size": [
+        768,
+        432
+      ],
+      "frames": 78,
+      "durationMs": 6500
+    },
+    {
+      "file": "ten-era-gallery.jpg",
+      "bytes": 270595,
+      "sha256": "ced35107d716de081271f8026de079029032d84d6e27d9a01c7c2cad3542f27e",
+      "size": [
+        1600,
+        374
+      ]
+    }
+  ],
+  "windowsEmbeddedPckSha256": "f4c3cddd6c738e0e0f081665b48e43c49540f0dc2bb4d4116b9ff5d23fdb8810",
+  "sourceVideoSha256": "6d95e6f160b050b8a0f34b0a3a78fa3b34133994468081a9badc4fa364d6bcdd"
+}

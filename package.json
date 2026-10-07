@@ -1,0 +1,66 @@
+{
+  "name": "epoch-rush",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "main": "desktop/main.cjs",
+  "description": "一线万年：文明冲锋 — a five-era tactical lane defense game",
+  "author": "Epoch Rush Studio",
+  "scripts": {
+    "dev": "node tools/sync_asset_manifest.mjs && vite --host 127.0.0.1",
+    "build": "node tools/sync_asset_manifest.mjs && tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "assets:prompts": "python -X utf8 tools/build_asset_prompts.py",
+    "desktop": "npm run build && electron .",
+    "desktop:pack": "npm run build && node tools/pack_desktop.mjs",
+    "native:sync": "npm run build && cap sync",
+    "android:build": "npm run native:sync && node tools/build_android.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0",
+    "@capacitor/core": "8.5.2",
+    "@capacitor/android": "8.5.2",
+    "@capacitor/ios": "8.5.2",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/filesystem": "8.1.4",
+    "@capacitor/share": "8.0.3"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.2",
+    "vitest": "5.0.3",
+    "@capacitor/cli": "8.5.2",
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3"
+  },
+  "overrides": {
+    "xcode": {
+      "uuid": "11.1.1"
+    }
+  },
+  "build": {
+    "appId": "studio.epochrush.game",
+    "productName": "Epoch Rush",
+    "directories": {
+      "app": "output/desktop-app",
+      "output": "output/releases/windows"
+    },
+    "files": [
+      "dist/**/*",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "public/app-icon.ico",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "Epoch-Rush-${version}-Windows-x64.exe"
+    },
+    "asar": true
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "archive_id": "GD-20261003-v1",
+  "archive_date": "2026-10-03",
+  "timezone": "Asia/Taipei",
+  "version": "v1",
+  "status": "candidate_directions_pending_selection",
+  "source_document": "docs/游戏方向提案.md",
+  "source_document_sha256": "442d45b2f5f04fcaca23e50cfee79f22227207d8272022d0242de67351be2615",
+  "directions": [
+    {
+      "id": "01",
+      "name_zh": "一线万年：文明冲锋",
+      "name_en": "Epoch Rush",
+      "document": "plans/01-文明冲锋.md",
+      "style_frame": "assets/directions/01_epoch_rush.png",
+      "prompt": "prompts/01_epoch_rush.txt"
+    },
+    {
+      "id": "02",
+      "name_zh": "齿轮边境：移动要塞",
+      "name_en": "Gearfront",
+      "document": "plans/02-移动要塞.md",
+      "style_frame": "assets/directions/02_gearfront.png",
+      "prompt": "prompts/02_gearfront.txt"
+    },
+    {
+      "id": "03",
+      "name_zh": "菌潮：进化吞噬",
+      "name_en": "Bloomwar",
+      "document": "plans/03-进化吞噬.md",
+      "style_frame": "assets/directions/03_bloomwar.png",
+      "prompt": "prompts/03_bloomwar.txt"
+    },
+    {
+      "id": "04",
+      "name_zh": "香火纪元：山海护城",
+      "name_en": "Spiritbound",
+      "document": "plans/04-山海护城.md",
+      "style_frame": "assets/directions/04_spiritbound.png",
+      "prompt": "prompts/04_spiritbound.txt"
+    },
+    {
+      "id": "05",
+      "name_zh": "玩具起义：课桌战争",
+      "name_en": "Desk Rebellion",
+      "document": "plans/05-课桌战争.md",
+      "style_frame": "assets/directions/05_desk_rebellion.png",
+      "prompt": "prompts/05_desk_rebellion.txt"
+    }
+  ],
+  "image_generation": {
+    "route": "sub2-image-gen / Sub2API",
+    "requested_model": "gpt-image-2.5",
+    "quality": "high",
+    "output_format": "png",
+    "style_frame_size": [
+      1536,
+      1024
+    ]
+  },
+  "file_count_excluding_manifest": 20,
+  "files": [
+    {
+      "path": "assets/direction-comparison.png",
+      "bytes": 2300712,
+      "sha256": "d013a9b1cbe2728fdba9cb4896f7a37e17f4d9debd5527406a988e8e0036a4ed"
+    },
+    {
+      "path": "assets/directions/01_epoch_rush.png",
+      "bytes": 2024079,
+      "sha256": "8489c7340a49ef2ee94223e95b9286b9bbaae226093975ef61baf5a9679c0518"
+    },
+    {
+      "path": "assets/directions/02_gearfront.png",
+      "bytes": 2376184,
+      "sha256": "94994c17788c7280dd8bdae1afb2f163c209ba4adb6cac22091ce0fef0b66723"
+    },
+    {
+      "path": "assets/directions/03_bloomwar.png",
+      "bytes": 2192461,
+      "sha256": "0daafb88882db3825a1d8ece659385b0606a5ded40686eabf99a6af279209e02"
+    },
+    {
+      "path": "assets/directions/04_spiritbound.png",
+      "bytes": 2661875,
+      "sha256": "efe073706f6fdf432060dfe92a10e44ce4ac9255b0098c6151d543d699992944"
+    },
+    {
+      "path": "assets/directions/05_desk_rebellion.png",
+      "bytes": 1823254,
+      "sha256": "24a4ef116537c5703e2abad516ab1b1d2ba2db7437dc8e77b1b3997187184638"
+    },
+    {
+      "path": "plans/01-文明冲锋.md",
+      "bytes": 3170,
+      "sha256": "7d8251446fa30ec213e19f0bba30f5a458cfc245a9f0dc369005b6918b9900db"
+    },
+    {
+      "path": "plans/02-移动要塞.md",
+      "bytes": 3018,
+      "sha256": "14f496d4e55e214345b084466eb10d4def9e69ad7692f3aa8f6ee5ff3095214b"
+    },
+    {
+      "path": "plans/03-进化吞噬.md",
+      "bytes": 3147,
+      "sha256": "653d50f4e3c647a53ea28981b9fe85eec88886e8e73bf9ad1cac8f75b3768fb2"
+    },
+    {
+      "path": "plans/04-山海护城.md",
+      "bytes": 3240,
+      "sha256": "f3ec7362c371b5dadeb53dcac6a846eaee8a1bc9e175d6f3bc153003e2aaa54d"
+    },
+    {
+      "path": "plans/05-课桌战争.md",
+      "bytes": 3182,
+      "sha256": "1748404c002ad45fea3a7e3ba38c0cddac6d87c85e472127536df5a1ef49fe53"
+    },
+    {
+      "path": "prompts/01_epoch_rush.txt",
+      "bytes": 2202,
+      "sha256": "4d89a6f329a20c1a0924ff25cda2a360b554b644e52d4a5451c75e036193f8d8"
+    },
+    {
+      "path": "prompts/02_gearfront.txt",
+      "bytes": 2100,
+      "sha256": "10a9c3ecb8cfe007533148d0375dc0766c234c1f0ac7adf032fa40207babe1c5"
+    },
+    {
+      "path": "prompts/03_bloomwar.txt",
+      "bytes": 2146,
+      "sha256": "918738ad25734fbf244d43efd23a69ff48c9cb1e835eb91b142584047e2c6ff4"
+    },
+    {
+      "path": "prompts/04_spiritbound.txt",
+      "bytes": 2143,
+      "sha256": "d7618d3448718f18120705224420d8da0bcab544fc73bf790f2e225e2038ac92"
+    },
+    {
+      "path": "prompts/05_desk_rebellion.txt",
+      "bytes": 2213,
+      "sha256": "64f1c63156ebf49cc36e00b039766d806a2cb9b79019aa90a98754b06b8092ae"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2682,
+      "sha256": "04e921cb423e829250379799603294b5b1a2b679cda1433b5f26d9727dfa6afd"
+    },
+    {
+      "path": "共用实施范围.md",
+      "bytes": 4929,
+      "sha256": "c7f65483e095e5d96ef28f11874ccc8a1288056edeed940f5f3427de14005fd6"
+    },
+    {
+      "path": "方案对比.md",
+      "bytes": 1703,
+      "sha256": "2a9f5ff09048101cc5d1344b8caa6a67aee0335961d40979ee324a0555d06940"
+    },
+    {
+      "path": "游戏方向提案.md",
+      "bytes": 23433,
+      "sha256": "ac246c277cdfeabfbcf8f7e11b98505b62ba9f2df43d4ae7601c5919622b79e3"
+    }
+  ]
+}

@@ -1,0 +1,1087 @@
+{
+	"failures": [],
+	"forms": [
+		{
+			"attack": 30.0,
+			"form": "H01-A1",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "骨槌冲锋",
+			"texture": "res://assets/characters/animations/H01-A1.png",
+			"visual": "H01-A1"
+		},
+		{
+			"attack": 30.0,
+			"form": "H01-A1",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "骨槌冲锋",
+			"texture": "res://assets/characters/animations/H01-A1-enemy.png",
+			"visual": "H01-A1"
+		},
+		{
+			"attack": 150.0,
+			"form": "H01-A2",
+			"hpRatio": 0.64974358974359,
+			"side": 0,
+			"skill": "盾矛突进",
+			"texture": "res://assets/characters/animations/H01-A2.png",
+			"visual": "H01-A2"
+		},
+		{
+			"attack": 150.0,
+			"form": "H01-A2",
+			"hpRatio": 0.64974358974359,
+			"side": 1,
+			"skill": "盾矛突进",
+			"texture": "res://assets/characters/animations/H01-A2-enemy.png",
+			"visual": "H01-A2"
+		},
+		{
+			"attack": 750.0,
+			"form": "H01-A3",
+			"hpRatio": 0.64974358974359,
+			"side": 0,
+			"skill": "军团破阵",
+			"texture": "res://assets/characters/animations/H01-A3.png",
+			"visual": "H01-A3"
+		},
+		{
+			"attack": 750.0,
+			"form": "H01-A3",
+			"hpRatio": 0.64974358974359,
+			"side": 1,
+			"skill": "军团破阵",
+			"texture": "res://assets/characters/animations/H01-A3-enemy.png",
+			"visual": "H01-A3"
+		},
+		{
+			"attack": 3750.0,
+			"form": "H01-A4",
+			"hpRatio": 0.649723076923077,
+			"side": 0,
+			"skill": "王国冲锋",
+			"texture": "res://assets/characters/animations/H01-A4.png",
+			"visual": "H01-A4"
+		},
+		{
+			"attack": 3750.0,
+			"form": "H01-A4",
+			"hpRatio": 0.649723076923077,
+			"side": 1,
+			"skill": "王国冲锋",
+			"texture": "res://assets/characters/animations/H01-A4-enemy.png",
+			"visual": "H01-A4"
+		},
+		{
+			"attack": 18750.0,
+			"form": "H01-A5",
+			"hpRatio": 0.649723076923077,
+			"side": 0,
+			"skill": "军旗突击",
+			"texture": "res://assets/characters/animations/H01-A5.png",
+			"visual": "H01-A5"
+		},
+		{
+			"attack": 18750.0,
+			"form": "H01-A5",
+			"hpRatio": 0.649723076923077,
+			"side": 1,
+			"skill": "军旗突击",
+			"texture": "res://assets/characters/animations/H01-A5-enemy.png",
+			"visual": "H01-A5"
+		},
+		{
+			"attack": 93750.0,
+			"form": "H01-A6",
+			"hpRatio": 0.649723076923077,
+			"side": 0,
+			"skill": "刺刀突击",
+			"texture": "res://assets/characters/animations/H01-A6.png",
+			"visual": "H01-A6"
+		},
+		{
+			"attack": 93750.0,
+			"form": "H01-A6",
+			"hpRatio": 0.649723076923077,
+			"side": 1,
+			"skill": "刺刀突击",
+			"texture": "res://assets/characters/animations/H01-A6-enemy.png",
+			"visual": "H01-A6"
+		},
+		{
+			"attack": 468750.0,
+			"form": "H01-A7",
+			"hpRatio": 0.649723076923077,
+			"side": 0,
+			"skill": "突破推进",
+			"texture": "res://assets/characters/animations/H01-A7.png",
+			"visual": "H01-A7"
+		},
+		{
+			"attack": 468750.0,
+			"form": "H01-A7",
+			"hpRatio": 0.649723076923077,
+			"side": 1,
+			"skill": "突破推进",
+			"texture": "res://assets/characters/animations/H01-A7-enemy.png",
+			"visual": "H01-A7"
+		},
+		{
+			"attack": 2343750.0,
+			"form": "H01-A8",
+			"hpRatio": 0.649723076923077,
+			"side": 0,
+			"skill": "战术突入",
+			"texture": "res://assets/characters/animations/H01-A8.png",
+			"visual": "H01-A8"
+		},
+		{
+			"attack": 2343750.0,
+			"form": "H01-A8",
+			"hpRatio": 0.649723076923077,
+			"side": 1,
+			"skill": "战术突入",
+			"texture": "res://assets/characters/animations/H01-A8-enemy.png",
+			"visual": "H01-A8"
+		},
+		{
+			"attack": 11718750.0,
+			"form": "H01-A9",
+			"hpRatio": 0.649723076923077,
+			"side": 0,
+			"skill": "动力冲锋",
+			"texture": "res://assets/characters/animations/H01-A9.png",
+			"visual": "H01-A9"
+		},
+		{
+			"attack": 11718750.0,
+			"form": "H01-A9",
+			"hpRatio": 0.649723076923077,
+			"side": 1,
+			"skill": "动力冲锋",
+			"texture": "res://assets/characters/animations/H01-A9-enemy.png",
+			"visual": "H01-A9"
+		},
+		{
+			"attack": 58593750.0,
+			"form": "H01-A10",
+			"hpRatio": 0.649723076923077,
+			"side": 0,
+			"skill": "相位贯阵",
+			"texture": "res://assets/characters/animations/H01-A10.png",
+			"visual": "H01-A10"
+		},
+		{
+			"attack": 58593750.0,
+			"form": "H01-A10",
+			"hpRatio": 0.649723076923077,
+			"side": 1,
+			"skill": "相位贯阵",
+			"texture": "res://assets/characters/animations/H01-A10-enemy.png",
+			"visual": "H01-A10"
+		},
+		{
+			"attack": 31.0,
+			"form": "H02-A1",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "燧石连投",
+			"texture": "res://assets/characters/animations/H02-A1.png",
+			"visual": "H02-A1"
+		},
+		{
+			"attack": 31.0,
+			"form": "H02-A1",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "燧石连投",
+			"texture": "res://assets/characters/animations/H02-A1-enemy.png",
+			"visual": "H02-A1"
+		},
+		{
+			"attack": 155.0,
+			"form": "H02-A2",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "青铜连矢",
+			"texture": "res://assets/characters/animations/H02-A2.png",
+			"visual": "H02-A2"
+		},
+		{
+			"attack": 155.0,
+			"form": "H02-A2",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "青铜连矢",
+			"texture": "res://assets/characters/animations/H02-A2-enemy.png",
+			"visual": "H02-A2"
+		},
+		{
+			"attack": 775.0,
+			"form": "H02-A3",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "重弩点射",
+			"texture": "res://assets/characters/animations/H02-A3.png",
+			"visual": "H02-A3"
+		},
+		{
+			"attack": 775.0,
+			"form": "H02-A3",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "重弩点射",
+			"texture": "res://assets/characters/animations/H02-A3-enemy.png",
+			"visual": "H02-A3"
+		},
+		{
+			"attack": 3875.0,
+			"form": "H02-A4",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "鹰隼齐射",
+			"texture": "res://assets/characters/animations/H02-A4.png",
+			"visual": "H02-A4"
+		},
+		{
+			"attack": 3875.0,
+			"form": "H02-A4",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "鹰隼齐射",
+			"texture": "res://assets/characters/animations/H02-A4-enemy.png",
+			"visual": "H02-A4"
+		},
+		{
+			"attack": 19375.0,
+			"form": "H02-A5",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "线列齐射",
+			"texture": "res://assets/characters/animations/H02-A5.png",
+			"visual": "H02-A5"
+		},
+		{
+			"attack": 19375.0,
+			"form": "H02-A5",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "线列齐射",
+			"texture": "res://assets/characters/animations/H02-A5-enemy.png",
+			"visual": "H02-A5"
+		},
+		{
+			"attack": 96875.0,
+			"form": "H02-A6",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "远距狙击",
+			"texture": "res://assets/characters/animations/H02-A6.png",
+			"visual": "H02-A6"
+		},
+		{
+			"attack": 96875.0,
+			"form": "H02-A6",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "远距狙击",
+			"texture": "res://assets/characters/animations/H02-A6-enemy.png",
+			"visual": "H02-A6"
+		},
+		{
+			"attack": 484375.0,
+			"form": "H02-A7",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "穿甲连射",
+			"texture": "res://assets/characters/animations/H02-A7.png",
+			"visual": "H02-A7"
+		},
+		{
+			"attack": 484375.0,
+			"form": "H02-A7",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "穿甲连射",
+			"texture": "res://assets/characters/animations/H02-A7-enemy.png",
+			"visual": "H02-A7"
+		},
+		{
+			"attack": 2421875.0,
+			"form": "H02-A8",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "制导点杀",
+			"texture": "res://assets/characters/animations/H02-A8.png",
+			"visual": "H02-A8"
+		},
+		{
+			"attack": 2421875.0,
+			"form": "H02-A8",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "制导点杀",
+			"texture": "res://assets/characters/animations/H02-A8-enemy.png",
+			"visual": "H02-A8"
+		},
+		{
+			"attack": 12109375.0,
+			"form": "H02-A9",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "无人追猎",
+			"texture": "res://assets/characters/animations/H02-A9.png",
+			"visual": "H02-A9"
+		},
+		{
+			"attack": 12109375.0,
+			"form": "H02-A9",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "无人追猎",
+			"texture": "res://assets/characters/animations/H02-A9-enemy.png",
+			"visual": "H02-A9"
+		},
+		{
+			"attack": 60546875.0,
+			"form": "H02-A10",
+			"hpRatio": 0.649777777777778,
+			"side": 0,
+			"skill": "星轨连射",
+			"texture": "res://assets/characters/animations/H02-A10.png",
+			"visual": "H02-A10"
+		},
+		{
+			"attack": 60546875.0,
+			"form": "H02-A10",
+			"hpRatio": 0.649777777777778,
+			"side": 1,
+			"skill": "星轨连射",
+			"texture": "res://assets/characters/animations/H02-A10-enemy.png",
+			"visual": "H02-A10"
+		},
+		{
+			"attack": 21.0,
+			"form": "H03-A1",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "祖灵护佑",
+			"texture": "res://assets/characters/animations/H03-A1.png",
+			"visual": "H03-A1"
+		},
+		{
+			"attack": 21.0,
+			"form": "H03-A1",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "祖灵护佑",
+			"texture": "res://assets/characters/animations/H03-A1-enemy.png",
+			"visual": "H03-A1"
+		},
+		{
+			"attack": 105.0,
+			"form": "H03-A2",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "青铜誓卫",
+			"texture": "res://assets/characters/animations/H03-A2.png",
+			"visual": "H03-A2"
+		},
+		{
+			"attack": 105.0,
+			"form": "H03-A2",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "青铜誓卫",
+			"texture": "res://assets/characters/animations/H03-A2-enemy.png",
+			"visual": "H03-A2"
+		},
+		{
+			"attack": 525.0,
+			"form": "H03-A3",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "军团盾阵",
+			"texture": "res://assets/characters/animations/H03-A3.png",
+			"visual": "H03-A3"
+		},
+		{
+			"attack": 525.0,
+			"form": "H03-A3",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "军团盾阵",
+			"texture": "res://assets/characters/animations/H03-A3-enemy.png",
+			"visual": "H03-A3"
+		},
+		{
+			"attack": 2625.0,
+			"form": "H03-A4",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "城垒誓卫",
+			"texture": "res://assets/characters/animations/H03-A4.png",
+			"visual": "H03-A4"
+		},
+		{
+			"attack": 2625.0,
+			"form": "H03-A4",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "城垒誓卫",
+			"texture": "res://assets/characters/animations/H03-A4-enemy.png",
+			"visual": "H03-A4"
+		},
+		{
+			"attack": 13125.0,
+			"form": "H03-A5",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "列阵掩护",
+			"texture": "res://assets/characters/animations/H03-A5.png",
+			"visual": "H03-A5"
+		},
+		{
+			"attack": 13125.0,
+			"form": "H03-A5",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "列阵掩护",
+			"texture": "res://assets/characters/animations/H03-A5-enemy.png",
+			"visual": "H03-A5"
+		},
+		{
+			"attack": 65625.0,
+			"form": "H03-A6",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "堑壕堡垒",
+			"texture": "res://assets/characters/animations/H03-A6.png",
+			"visual": "H03-A6"
+		},
+		{
+			"attack": 65625.0,
+			"form": "H03-A6",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "堑壕堡垒",
+			"texture": "res://assets/characters/animations/H03-A6-enemy.png",
+			"visual": "H03-A6"
+		},
+		{
+			"attack": 328125.0,
+			"form": "H03-A7",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "钢盔守备",
+			"texture": "res://assets/characters/animations/H03-A7.png",
+			"visual": "H03-A7"
+		},
+		{
+			"attack": 328125.0,
+			"form": "H03-A7",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "钢盔守备",
+			"texture": "res://assets/characters/animations/H03-A7-enemy.png",
+			"visual": "H03-A7"
+		},
+		{
+			"attack": 1640625.0,
+			"form": "H03-A8",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "装甲屏障",
+			"texture": "res://assets/characters/animations/H03-A8.png",
+			"visual": "H03-A8"
+		},
+		{
+			"attack": 1640625.0,
+			"form": "H03-A8",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "装甲屏障",
+			"texture": "res://assets/characters/animations/H03-A8-enemy.png",
+			"visual": "H03-A8"
+		},
+		{
+			"attack": 8203125.0,
+			"form": "H03-A9",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "电子护罩",
+			"texture": "res://assets/characters/animations/H03-A9.png",
+			"visual": "H03-A9"
+		},
+		{
+			"attack": 8203125.0,
+			"form": "H03-A9",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "电子护罩",
+			"texture": "res://assets/characters/animations/H03-A9-enemy.png",
+			"visual": "H03-A9"
+		},
+		{
+			"attack": 41015625.0,
+			"form": "H03-A10",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "相位壁垒",
+			"texture": "res://assets/characters/animations/H03-A10.png",
+			"visual": "H03-A10"
+		},
+		{
+			"attack": 41015625.0,
+			"form": "H03-A10",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "相位壁垒",
+			"texture": "res://assets/characters/animations/H03-A10-enemy.png",
+			"visual": "H03-A10"
+		},
+		{
+			"attack": 20.0,
+			"form": "H04-A1",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "投石机关",
+			"texture": "res://assets/characters/animations/H04-A1.png",
+			"visual": "H04-A1"
+		},
+		{
+			"attack": 20.0,
+			"form": "H04-A1",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "投石机关",
+			"texture": "res://assets/characters/animations/H04-A1-enemy.png",
+			"visual": "H04-A1"
+		},
+		{
+			"attack": 100.0,
+			"form": "H04-A2",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "城邦弩机",
+			"texture": "res://assets/characters/animations/H04-A2.png",
+			"visual": "H04-A2"
+		},
+		{
+			"attack": 100.0,
+			"form": "H04-A2",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "城邦弩机",
+			"texture": "res://assets/characters/animations/H04-A2-enemy.png",
+			"visual": "H04-A2"
+		},
+		{
+			"attack": 500.0,
+			"form": "H04-A3",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "帝国重弩",
+			"texture": "res://assets/characters/animations/H04-A3.png",
+			"visual": "H04-A3"
+		},
+		{
+			"attack": 500.0,
+			"form": "H04-A3",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "帝国重弩",
+			"texture": "res://assets/characters/animations/H04-A3-enemy.png",
+			"visual": "H04-A3"
+		},
+		{
+			"attack": 2500.0,
+			"form": "H04-A4",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "折叠弩台",
+			"texture": "res://assets/characters/animations/H04-A4.png",
+			"visual": "H04-A4"
+		},
+		{
+			"attack": 2500.0,
+			"form": "H04-A4",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "折叠弩台",
+			"texture": "res://assets/characters/animations/H04-A4-enemy.png",
+			"visual": "H04-A4"
+		},
+		{
+			"attack": 12500.0,
+			"form": "H04-A5",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "火药炮台",
+			"texture": "res://assets/characters/animations/H04-A5.png",
+			"visual": "H04-A5"
+		},
+		{
+			"attack": 12500.0,
+			"form": "H04-A5",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "火药炮台",
+			"texture": "res://assets/characters/animations/H04-A5-enemy.png",
+			"visual": "H04-A5"
+		},
+		{
+			"attack": 62500.0,
+			"form": "H04-A6",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "战壕机枪",
+			"texture": "res://assets/characters/animations/H04-A6.png",
+			"visual": "H04-A6"
+		},
+		{
+			"attack": 62500.0,
+			"form": "H04-A6",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "战壕机枪",
+			"texture": "res://assets/characters/animations/H04-A6-enemy.png",
+			"visual": "H04-A6"
+		},
+		{
+			"attack": 312500.0,
+			"form": "H04-A7",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "防御火炮",
+			"texture": "res://assets/characters/animations/H04-A7.png",
+			"visual": "H04-A7"
+		},
+		{
+			"attack": 312500.0,
+			"form": "H04-A7",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "防御火炮",
+			"texture": "res://assets/characters/animations/H04-A7-enemy.png",
+			"visual": "H04-A7"
+		},
+		{
+			"attack": 1562500.0,
+			"form": "H04-A8",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "遥控炮台",
+			"texture": "res://assets/characters/animations/H04-A8.png",
+			"visual": "H04-A8"
+		},
+		{
+			"attack": 1562500.0,
+			"form": "H04-A8",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "遥控炮台",
+			"texture": "res://assets/characters/animations/H04-A8-enemy.png",
+			"visual": "H04-A8"
+		},
+		{
+			"attack": 7812500.0,
+			"form": "H04-A9",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "无人炮塔",
+			"texture": "res://assets/characters/animations/H04-A9.png",
+			"visual": "H04-A9"
+		},
+		{
+			"attack": 7812500.0,
+			"form": "H04-A9",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "无人炮塔",
+			"texture": "res://assets/characters/animations/H04-A9-enemy.png",
+			"visual": "H04-A9"
+		},
+		{
+			"attack": 39062500.0,
+			"form": "H04-A10",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "轨道哨机",
+			"texture": "res://assets/characters/animations/H04-A10.png",
+			"visual": "H04-A10"
+		},
+		{
+			"attack": 39062500.0,
+			"form": "H04-A10",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "轨道哨机",
+			"texture": "res://assets/characters/animations/H04-A10-enemy.png",
+			"visual": "H04-A10"
+		},
+		{
+			"attack": 18.0,
+			"form": "H05-A1",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "祭仪泥沼",
+			"texture": "res://assets/characters/animations/H05-A1.png",
+			"visual": "H05-A1"
+		},
+		{
+			"attack": 18.0,
+			"form": "H05-A1",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "祭仪泥沼",
+			"texture": "res://assets/characters/animations/H05-A1-enemy.png",
+			"visual": "H05-A1"
+		},
+		{
+			"attack": 90.0,
+			"form": "H05-A2",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "日轮牵制",
+			"texture": "res://assets/characters/animations/H05-A2.png",
+			"visual": "H05-A2"
+		},
+		{
+			"attack": 90.0,
+			"form": "H05-A2",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "日轮牵制",
+			"texture": "res://assets/characters/animations/H05-A2-enemy.png",
+			"visual": "H05-A2"
+		},
+		{
+			"attack": 450.0,
+			"form": "H05-A3",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "阵线扰动",
+			"texture": "res://assets/characters/animations/H05-A3.png",
+			"visual": "H05-A3"
+		},
+		{
+			"attack": 450.0,
+			"form": "H05-A3",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "阵线扰动",
+			"texture": "res://assets/characters/animations/H05-A3-enemy.png",
+			"visual": "H05-A3"
+		},
+		{
+			"attack": 2250.0,
+			"form": "H05-A4",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "风阵拘束",
+			"texture": "res://assets/characters/animations/H05-A4.png",
+			"visual": "H05-A4"
+		},
+		{
+			"attack": 2250.0,
+			"form": "H05-A4",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "风阵拘束",
+			"texture": "res://assets/characters/animations/H05-A4-enemy.png",
+			"visual": "H05-A4"
+		},
+		{
+			"attack": 11250.0,
+			"form": "H05-A5",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "硝烟压制",
+			"texture": "res://assets/characters/animations/H05-A5.png",
+			"visual": "H05-A5"
+		},
+		{
+			"attack": 11250.0,
+			"form": "H05-A5",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "硝烟压制",
+			"texture": "res://assets/characters/animations/H05-A5-enemy.png",
+			"visual": "H05-A5"
+		},
+		{
+			"attack": 56250.0,
+			"form": "H05-A6",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "磁场扰动",
+			"texture": "res://assets/characters/animations/H05-A6.png",
+			"visual": "H05-A6"
+		},
+		{
+			"attack": 56250.0,
+			"form": "H05-A6",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "磁场扰动",
+			"texture": "res://assets/characters/animations/H05-A6-enemy.png",
+			"visual": "H05-A6"
+		},
+		{
+			"attack": 281250.0,
+			"form": "H05-A7",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "电波压制",
+			"texture": "res://assets/characters/animations/H05-A7.png",
+			"visual": "H05-A7"
+		},
+		{
+			"attack": 281250.0,
+			"form": "H05-A7",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "电波压制",
+			"texture": "res://assets/characters/animations/H05-A7-enemy.png",
+			"visual": "H05-A7"
+		},
+		{
+			"attack": 1406250.0,
+			"form": "H05-A8",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "战术干扰",
+			"texture": "res://assets/characters/animations/H05-A8.png",
+			"visual": "H05-A8"
+		},
+		{
+			"attack": 1406250.0,
+			"form": "H05-A8",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "战术干扰",
+			"texture": "res://assets/characters/animations/H05-A8-enemy.png",
+			"visual": "H05-A8"
+		},
+		{
+			"attack": 7031250.0,
+			"form": "H05-A9",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "共振封锁",
+			"texture": "res://assets/characters/animations/H05-A9.png",
+			"visual": "H05-A9"
+		},
+		{
+			"attack": 7031250.0,
+			"form": "H05-A9",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "共振封锁",
+			"texture": "res://assets/characters/animations/H05-A9-enemy.png",
+			"visual": "H05-A9"
+		},
+		{
+			"attack": 35156250.0,
+			"form": "H05-A10",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "裂隙场",
+			"texture": "res://assets/characters/animations/H05-A10.png",
+			"visual": "H05-A10"
+		},
+		{
+			"attack": 35156250.0,
+			"form": "H05-A10",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "裂隙场",
+			"texture": "res://assets/characters/animations/H05-A10-enemy.png",
+			"visual": "H05-A10"
+		},
+		{
+			"attack": 16.0,
+			"form": "H06-A1",
+			"hpRatio": 0.65,
+			"side": 0,
+			"skill": "草药补给",
+			"texture": "res://assets/characters/animations/H06-A1.png",
+			"visual": "H06-A1"
+		},
+		{
+			"attack": 16.0,
+			"form": "H06-A1",
+			"hpRatio": 0.65,
+			"side": 1,
+			"skill": "草药补给",
+			"texture": "res://assets/characters/animations/H06-A1-enemy.png",
+			"visual": "H06-A1"
+		},
+		{
+			"attack": 80.0,
+			"form": "H06-A2",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "城邦军需",
+			"texture": "res://assets/characters/animations/H06-A2.png",
+			"visual": "H06-A2"
+		},
+		{
+			"attack": 80.0,
+			"form": "H06-A2",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "城邦军需",
+			"texture": "res://assets/characters/animations/H06-A2-enemy.png",
+			"visual": "H06-A2"
+		},
+		{
+			"attack": 400.0,
+			"form": "H06-A3",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "军团补给",
+			"texture": "res://assets/characters/animations/H06-A3.png",
+			"visual": "H06-A3"
+		},
+		{
+			"attack": 400.0,
+			"form": "H06-A3",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "军团补给",
+			"texture": "res://assets/characters/animations/H06-A3-enemy.png",
+			"visual": "H06-A3"
+		},
+		{
+			"attack": 2000.0,
+			"form": "H06-A4",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "行军补给",
+			"texture": "res://assets/characters/animations/H06-A4.png",
+			"visual": "H06-A4"
+		},
+		{
+			"attack": 2000.0,
+			"form": "H06-A4",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "行军补给",
+			"texture": "res://assets/characters/animations/H06-A4-enemy.png",
+			"visual": "H06-A4"
+		},
+		{
+			"attack": 10000.0,
+			"form": "H06-A5",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "火药补给",
+			"texture": "res://assets/characters/animations/H06-A5.png",
+			"visual": "H06-A5"
+		},
+		{
+			"attack": 10000.0,
+			"form": "H06-A5",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "火药补给",
+			"texture": "res://assets/characters/animations/H06-A5-enemy.png",
+			"visual": "H06-A5"
+		},
+		{
+			"attack": 50000.0,
+			"form": "H06-A6",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "战壕补给",
+			"texture": "res://assets/characters/animations/H06-A6.png",
+			"visual": "H06-A6"
+		},
+		{
+			"attack": 50000.0,
+			"form": "H06-A6",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "战壕补给",
+			"texture": "res://assets/characters/animations/H06-A6-enemy.png",
+			"visual": "H06-A6"
+		},
+		{
+			"attack": 250000.0,
+			"form": "H06-A7",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "前线救护",
+			"texture": "res://assets/characters/animations/H06-A7.png",
+			"visual": "H06-A7"
+		},
+		{
+			"attack": 250000.0,
+			"form": "H06-A7",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "前线救护",
+			"texture": "res://assets/characters/animations/H06-A7-enemy.png",
+			"visual": "H06-A7"
+		},
+		{
+			"attack": 1250000.0,
+			"form": "H06-A8",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "空投补给",
+			"texture": "res://assets/characters/animations/H06-A8.png",
+			"visual": "H06-A8"
+		},
+		{
+			"attack": 1250000.0,
+			"form": "H06-A8",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "空投补给",
+			"texture": "res://assets/characters/animations/H06-A8-enemy.png",
+			"visual": "H06-A8"
+		},
+		{
+			"attack": 6250000.0,
+			"form": "H06-A9",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "无人补给",
+			"texture": "res://assets/characters/animations/H06-A9.png",
+			"visual": "H06-A9"
+		},
+		{
+			"attack": 6250000.0,
+			"form": "H06-A9",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "无人补给",
+			"texture": "res://assets/characters/animations/H06-A9-enemy.png",
+			"visual": "H06-A9"
+		},
+		{
+			"attack": 31250000.0,
+			"form": "H06-A10",
+			"hpRatio": 0.649677419354839,
+			"side": 0,
+			"skill": "时序补给",
+			"texture": "res://assets/characters/animations/H06-A10.png",
+			"visual": "H06-A10"
+		},
+		{
+			"attack": 31250000.0,
+			"form": "H06-A10",
+			"hpRatio": 0.649677419354839,
+			"side": 1,
+			"skill": "时序补给",
+			"texture": "res://assets/characters/animations/H06-A10-enemy.png",
+			"visual": "H06-A10"
+		}
+	],
+	"formsRendered": 120,
+	"passed": true
+}

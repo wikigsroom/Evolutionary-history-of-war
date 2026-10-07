@@ -1,0 +1,98 @@
+[
+  {
+    "id": "AP01",
+    "name": "均衡军",
+    "heroId": "H01",
+    "roleWeights": {
+      "front": 0.35,
+      "ranged": 0.3,
+      "anti_armor": 0.2,
+      "heavy": 0.15
+    },
+    "description": "观察对方数量后补前排或破甲",
+    "buildId": "B01",
+    "talentBudgetMode": "match_player_profile_or_fixed_challenge",
+    "showLoadoutBeforeBattle": true,
+    "contentAvailabilityMode": "match_player_unlocks_except_hero_or_fixed_challenge"
+  },
+  {
+    "id": "AP02",
+    "name": "蜂拥军",
+    "heroId": "H06",
+    "roleWeights": {
+      "front": 0.5,
+      "ranged": 0.25,
+      "anti_armor": 0.15,
+      "heavy": 0.1
+    },
+    "description": "低成本持续出兵，惧怕溅射与控制",
+    "buildId": "B06",
+    "talentBudgetMode": "match_player_profile_or_fixed_challenge",
+    "showLoadoutBeforeBattle": true,
+    "contentAvailabilityMode": "match_player_unlocks_except_hero_or_fixed_challenge"
+  },
+  {
+    "id": "AP03",
+    "name": "城防军",
+    "heroId": "H03",
+    "roleWeights": {
+      "front": 0.4,
+      "ranged": 0.25,
+      "anti_armor": 0.2,
+      "heavy": 0.15
+    },
+    "description": "留钱建设炮塔，仍保持最少一名前排",
+    "buildId": "B03",
+    "talentBudgetMode": "match_player_profile_or_fixed_challenge",
+    "showLoadoutBeforeBattle": true,
+    "contentAvailabilityMode": "match_player_unlocks_except_hero_or_fixed_challenge"
+  },
+  {
+    "id": "AP04",
+    "name": "重甲军",
+    "heroId": "H03",
+    "roleWeights": {
+      "front": 0.25,
+      "ranged": 0.15,
+      "anti_armor": 0.2,
+      "heavy": 0.4
+    },
+    "description": "重型招牌兵推进，惧怕破甲组合",
+    "buildId": "B03",
+    "talentBudgetMode": "match_player_profile_or_fixed_challenge",
+    "showLoadoutBeforeBattle": true,
+    "contentAvailabilityMode": "match_player_unlocks_except_hero_or_fixed_challenge"
+  },
+  {
+    "id": "AP05",
+    "name": "火力军",
+    "heroId": "H04",
+    "roleWeights": {
+      "front": 0.25,
+      "ranged": 0.4,
+      "anti_armor": 0.15,
+      "heavy": 0.2
+    },
+    "description": "保护远程，选择能压制聚集敌兵的技能",
+    "buildId": "B04",
+    "talentBudgetMode": "match_player_profile_or_fixed_challenge",
+    "showLoadoutBeforeBattle": true,
+    "contentAvailabilityMode": "match_player_unlocks_except_hero_or_fixed_challenge"
+  },
+  {
+    "id": "AP06",
+    "name": "竞速军",
+    "heroId": "H05",
+    "roleWeights": {
+      "front": 0.3,
+      "ranged": 0.2,
+      "anti_armor": 0.25,
+      "heavy": 0.25
+    },
+    "description": "储蓄学识优先进化，不能透支军资",
+    "buildId": "B05",
+    "talentBudgetMode": "match_player_profile_or_fixed_challenge",
+    "showLoadoutBeforeBattle": true,
+    "contentAvailabilityMode": "match_player_unlocks_except_hero_or_fixed_challenge"
+  }
+]

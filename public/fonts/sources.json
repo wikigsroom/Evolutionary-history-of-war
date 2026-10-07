@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "name": "resource-rounded",
+      "url": "https://github.com/CyanoHao/Resource-Han-Rounded/releases/download/v0.990/RHR-CN-0.990.7z"
+    },
+    {
+      "name": "smiley",
+      "url": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip"
+    }
+  ],
+  "subset": "All shipped game UI and content text, ASCII, full shaping features"
+}

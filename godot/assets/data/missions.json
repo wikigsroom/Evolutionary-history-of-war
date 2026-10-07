@@ -1,0 +1,450 @@
+[
+  {
+    "id": "M01",
+    "chapter": 1,
+    "name": "石器部落 · 军团推进",
+    "startingEraId": "A1",
+    "maximumEraId": "A2",
+    "enemyProfileId": "AP02",
+    "enemyStartingGold": 240,
+    "playerStartingGold": 240,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I01",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M02",
+    "chapter": 1,
+    "name": "石器部落 · 阵线突破",
+    "startingEraId": "A1",
+    "maximumEraId": "A2",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 240,
+    "playerStartingGold": 240,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": null,
+    "firstClearRelicId": "I02",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M03",
+    "chapter": 2,
+    "name": "青铜城邦 · 军团推进",
+    "startingEraId": "A2",
+    "maximumEraId": "A3",
+    "enemyProfileId": "AP04",
+    "enemyStartingGold": 307,
+    "playerStartingGold": 307,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": "enemy_base_hp_plus_20pct",
+    "firstClearRelicId": "I03",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [
+      "H02"
+    ],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  },
+  {
+    "id": "M04",
+    "chapter": 2,
+    "name": "青铜城邦 · 阵线突破",
+    "startingEraId": "A2",
+    "maximumEraId": "A3",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 307,
+    "playerStartingGold": 307,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": null,
+    "firstClearRelicId": "I04",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M05",
+    "chapter": 3,
+    "name": "古典帝国 · 军团推进",
+    "startingEraId": "A3",
+    "maximumEraId": "A4",
+    "enemyProfileId": "AP05",
+    "enemyStartingGold": 393,
+    "playerStartingGold": 393,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I05",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M06",
+    "chapter": 3,
+    "name": "古典帝国 · 阵线突破",
+    "startingEraId": "A3",
+    "maximumEraId": "A4",
+    "enemyProfileId": "AP03",
+    "enemyStartingGold": 393,
+    "playerStartingGold": 393,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": "enemy_prebuilt_close_turret_debit_opening_budget",
+    "firstClearRelicId": "I06",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  },
+  {
+    "id": "M07",
+    "chapter": 4,
+    "name": "中世纪王国 · 军团推进",
+    "startingEraId": "A4",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP02",
+    "enemyStartingGold": 503,
+    "playerStartingGold": 503,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I07",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [
+      "H04"
+    ],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M08",
+    "chapter": 4,
+    "name": "中世纪王国 · 阵线突破",
+    "startingEraId": "A4",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP04",
+    "enemyStartingGold": 503,
+    "playerStartingGold": 503,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": null,
+    "firstClearRelicId": "I08",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M09",
+    "chapter": 5,
+    "name": "火药列阵 · 军团推进",
+    "startingEraId": "A5",
+    "maximumEraId": "A6",
+    "enemyProfileId": "AP05",
+    "enemyStartingGold": 644,
+    "playerStartingGold": 644,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": "enemy_artillery_skill_telegraph_plus_0.4sec",
+    "firstClearRelicId": "I09",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M10",
+    "chapter": 5,
+    "name": "火药列阵 · 阵线突破",
+    "startingEraId": "A5",
+    "maximumEraId": "A6",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 644,
+    "playerStartingGold": 644,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": null,
+    "firstClearRelicId": "I10",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M11",
+    "chapter": 6,
+    "name": "工业战壕 · 军团推进",
+    "startingEraId": "A6",
+    "maximumEraId": "A7",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 825,
+    "playerStartingGold": 825,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I11",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [
+      "H06"
+    ],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M12",
+    "chapter": 6,
+    "name": "工业战壕 · 阵线突破",
+    "startingEraId": "A6",
+    "maximumEraId": "A7",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 825,
+    "playerStartingGold": 825,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": "enemy_evolution_choice_visible",
+    "firstClearRelicId": "I12",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M13",
+    "chapter": 7,
+    "name": "二战钢盔 · 军团推进",
+    "startingEraId": "A7",
+    "maximumEraId": "A8",
+    "enemyProfileId": "AP02",
+    "enemyStartingGold": 1056,
+    "playerStartingGold": 1056,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M14",
+    "chapter": 7,
+    "name": "二战钢盔 · 阵线突破",
+    "startingEraId": "A7",
+    "maximumEraId": "A8",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 1056,
+    "playerStartingGold": 1056,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": null,
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    },
+    "bossParameters": {}
+  },
+  {
+    "id": "M15",
+    "chapter": 8,
+    "name": "现代机械化 · 军团推进",
+    "startingEraId": "A8",
+    "maximumEraId": "A9",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 1351,
+    "playerStartingGold": 1351,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": "base_hp_threshold_shield_at_65_and_30pct_costs_20_command_for_4sec",
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [
+      "H05"
+    ],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  },
+  {
+    "id": "M16",
+    "chapter": 8,
+    "name": "现代机械化 · 阵线突破",
+    "startingEraId": "A8",
+    "maximumEraId": "A9",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 1351,
+    "playerStartingGold": 1351,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": "base_hp_threshold_shield_at_65_and_30pct_costs_20_command_for_4sec",
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  },
+  {
+    "id": "M17",
+    "chapter": 9,
+    "name": "无人战术 · 军团推进",
+    "startingEraId": "A9",
+    "maximumEraId": "A10",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 1729,
+    "playerStartingGold": 1729,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": "base_hp_threshold_shield_at_65_and_30pct_costs_20_command_for_4sec",
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  },
+  {
+    "id": "M18",
+    "chapter": 9,
+    "name": "无人战术 · 阵线突破",
+    "startingEraId": "A9",
+    "maximumEraId": "A10",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 1729,
+    "playerStartingGold": 1729,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": "base_hp_threshold_shield_at_65_and_30pct_costs_20_command_for_4sec",
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  },
+  {
+    "id": "M19",
+    "chapter": 10,
+    "name": "轨道文明 · 军团推进",
+    "startingEraId": "A10",
+    "maximumEraId": "A10",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 2214,
+    "playerStartingGold": 2214,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": false,
+    "bossModifier": "base_hp_threshold_shield_at_65_and_30pct_costs_20_command_for_4sec",
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  },
+  {
+    "id": "M20",
+    "chapter": 10,
+    "name": "轨道文明 · 阵线突破",
+    "startingEraId": "A10",
+    "maximumEraId": "A10",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 2214,
+    "playerStartingGold": 2214,
+    "teaching": "占位接敌、研究与时代奇袭；医疗和护盾有共享恢复上限。",
+    "boss": true,
+    "bossModifier": "base_hp_threshold_shield_at_65_and_30pct_costs_20_command_for_4sec",
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "bossParameters": {},
+    "reinforcements": {
+      "periodSec": 36,
+      "waves": 40,
+      "deploySec": 28
+    }
+  }
+]

@@ -1,0 +1,1509 @@
+{
+  "reviewer": "Codex visual inspection",
+  "recordedAt": "2026-10-07T09:05:45.541269+00:00",
+  "activeActors": 120,
+  "maps": 30,
+  "boards": [
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A1.png",
+      "sha256": "3a4d3db39f18ccea3cfed07597e76435df08dd92a456ce02de2c1125a6ca73c3"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A10.png",
+      "sha256": "dd64335f4d52510fc94327b41ba7011f12dadbda8f9b29b2d68fca3ee03a5e77"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A2.png",
+      "sha256": "2e99da1d3ee53554439c114b0e625beafc407afe6294baa192da37d616335331"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A3.png",
+      "sha256": "06845e196aa3f22ed9877fcdd6cb3677bae344edfc41d43cd5751021518e398d"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A4.png",
+      "sha256": "5228ff2f2d94f159c2e2ac873915b6a43b224d1637eb500a6ae510286c21a2cc"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A5.png",
+      "sha256": "c5de297c4a9babf57a80d33f70c7340a0fe7c70cc02fd844cc3fc2cecedd24af"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A6.png",
+      "sha256": "b512a15dcbc21ae36ecf7226bf42796e100417f90e17b502bc6c6d208de36f25"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A7.png",
+      "sha256": "7a1311643fb8bbb7f5cbdae3c527fdd10f56aecbcb471ac162c5b3614b71c7da"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A8.png",
+      "sha256": "aa5822b8c7a95448e3f40ad544bfd8791cd48e8ad58742177f5432fb9347c96a"
+    },
+    {
+      "file": "output/imagegen/ten-eras/raw/maps-A9.png",
+      "sha256": "a7a5faf745812851d0de68e32f0e3d14358f66a13a3c32ce67597ac834dc3b66"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A1-heroes.png",
+      "sha256": "99f1eaabc8940861ad419968d27f690746f745007904af48a858ffb39043fa4a"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A1-units.png",
+      "sha256": "9ad13a4e5e3333fc4d4757cef0699036ce87559767cf2aefebbeec2e3818b0ef"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A10-heroes.png",
+      "sha256": "ae7fb298df8fd21578b27a27cabb2ce9a92663d8ff47034850bd82034711d55e"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A10-units.png",
+      "sha256": "92e87923dcb9de5f6f52effc4e5caf128cd8ed1f07ca93b1e0e243ee56f9eaee"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A2-heroes.png",
+      "sha256": "400809ab90e1fb8ffc89dc3175bf058e6d0f01c471876234b1b95285caf2f5d9"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A2-units.png",
+      "sha256": "acb671acb8397ce0518b102d78e94b1b0b14801c42caa12e0f74aa754a8d6033"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A3-heroes.png",
+      "sha256": "c176b9ebd88265ce9f72b821c3dfa7a3544e0e5b992e48232e24d39118bf1a03"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A3-units.png",
+      "sha256": "f0817b7216575cb1b1e6700fce1957e67322660d912e0d678eb5150040c72465"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A4-heroes.png",
+      "sha256": "a9d44db0196e841b0fc989cabcaf90462ec1f9ade4517018f69989f461e26b75"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A4-units.png",
+      "sha256": "b093dfe506095143b39cc63c58d7c42810216f321e5ae14b474ce4217e9036cd"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A5-heroes.png",
+      "sha256": "729c91375993126eb52f5c408613fc357c1f61f2b2099aa663093f602518d048"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A5-units.png",
+      "sha256": "9b0b4bcc4282706c48bdef6517367bb15821e515ac96f1a60a79045280948d38"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A6-heroes.png",
+      "sha256": "13de4496bf22822b1d4eb4cc6613f2f6dbbfeb813bc710894b0986e950734194"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A6-units.png",
+      "sha256": "14488dd5d1bbc06c8a2a6d44bee4603db83690a8d065b1cd7394f6daaf3b99ed"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A7-heroes.png",
+      "sha256": "fdef9e5a944e6a122976a93adbb1f828041b1841d553e0e8dc2fc041e24ba212"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A7-units.png",
+      "sha256": "8048e6aa3999fe39925f4ce728ef220be48968bfd7c7480e2d592094b9a9dbe7"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A8-heroes.png",
+      "sha256": "67b8662367b315788107456ec2e06c7bc5c287d78064f376037c087eeddc8686"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A8-units.png",
+      "sha256": "3eef48ad84491c1ef0d9b145a1a41839bc1e6bc2fbd23600bc298e097e4353f1"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A9-heroes.png",
+      "sha256": "2d37e94a360e4bb54c7adee713de4dd45f5f78a98e5bf522d32eb0492e9e58a6"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-A9-units.png",
+      "sha256": "2268dc468e01dfa986b3f45dd828ca1a1f2d37366e2073763794136eb5aae340"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-ambient-events.png",
+      "sha256": "0df86cea7630366c1fabec7d77bfd2f8806f199da31000516ff225f9725fb0b3"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-base.png",
+      "sha256": "08cd91422ffffe8c13aa985330c582b4397ce297a9dea3b446023bc750c2d6e7"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-fx.png",
+      "sha256": "2aa57c5dd3af0153fb3c1c7f26419959fdac33ab5ee4063b1a0c1b4b7768b0ba"
+    },
+    {
+      "file": "output/qa/ten-eras/assets/review-turrets.png",
+      "sha256": "076f9d7f8e065fd91a49a397ddb4fd7c343390caa06c84abe6949e78f1c5c519"
+    }
+  ],
+  "textures": [
+    {
+      "file": "godot/assets/base/A1.png",
+      "sha256": "258249ce64f49dd14a37b1d70296bae03ad5ce57b2cb031bb6fb0bd08d7c5d23"
+    },
+    {
+      "file": "godot/assets/base/A1-enemy.png",
+      "sha256": "d89758c08c0f098c7da5296e9a1add0f1d6be13628f36d76285609d131f48c74"
+    },
+    {
+      "file": "godot/assets/base/A1-worn.png",
+      "sha256": "9e6b07745f6689d4a5978d68190feb49098907eb9bc67074f57aa2d6c37398d0"
+    },
+    {
+      "file": "godot/assets/base/A1-worn-enemy.png",
+      "sha256": "1260cb91e5385176cae08a9d4ac19027b5608c1df602cc6dc45de1a2fe8f265e"
+    },
+    {
+      "file": "godot/assets/base/A1-critical.png",
+      "sha256": "b09bcb0adf0ac057467d2e9a1b580fdac14ccc133d1cd15fb3d80444b33cd60c"
+    },
+    {
+      "file": "godot/assets/base/A1-critical-enemy.png",
+      "sha256": "b9e61550491c32d790b063669c1a6a6102cf1c848a1f4e0a4199371e1aa74055"
+    },
+    {
+      "file": "godot/assets/base/A1-ruin.png",
+      "sha256": "7225b68d3d206b5b7ab2aa4d10abaffd053d4cc17ca6297d28748b610fc2c409"
+    },
+    {
+      "file": "godot/assets/base/A1-ruin-enemy.png",
+      "sha256": "300e3dabc15bb2952cd17cc12b38dc571f4eebb32ed6a9be7800a6a2d518c27c"
+    },
+    {
+      "file": "godot/assets/base/A2.png",
+      "sha256": "a4a6dd2520e9614e202ba0970f7ca8f41384c6682da98bd85be53b684d47d5b9"
+    },
+    {
+      "file": "godot/assets/base/A2-enemy.png",
+      "sha256": "f9829e63612186cef3728c5d9bf02c28897446fc982c63f93fb7d00b3831699a"
+    },
+    {
+      "file": "godot/assets/base/A2-worn.png",
+      "sha256": "35667883234b3d07191dba7139d7040bcf83d4035ce87ab3d6c4a494e431a10f"
+    },
+    {
+      "file": "godot/assets/base/A2-worn-enemy.png",
+      "sha256": "4477a8ee90d4d296b75c0580a02130ad9eb8422e48b0afdd0d5a19fc62be2a2f"
+    },
+    {
+      "file": "godot/assets/base/A2-critical.png",
+      "sha256": "4bc70871d170fb639f5d808ff6fa0a7537979d49b87959c03d8f6cbdc5c64874"
+    },
+    {
+      "file": "godot/assets/base/A2-critical-enemy.png",
+      "sha256": "f71f58add1dd4bb92ec921a9c1e10f72e060f377725d5d32ee81010fa8ae1b7f"
+    },
+    {
+      "file": "godot/assets/base/A2-ruin.png",
+      "sha256": "434e790942060de7deebd333286afb55d19b27b0800edbaace819fe1495579a1"
+    },
+    {
+      "file": "godot/assets/base/A2-ruin-enemy.png",
+      "sha256": "24e5610d7950cdfe1b61fe34e482962aa7c8dcdb0229f9db7b296bff27c6f6ab"
+    },
+    {
+      "file": "godot/assets/base/A3.png",
+      "sha256": "457e7028508d9448ca2ad7051b86ad36a026dee52895d0b3a471ac66734992d4"
+    },
+    {
+      "file": "godot/assets/base/A3-enemy.png",
+      "sha256": "a76cb70ddbcf8187caeb7686d128ed48edc60552665009f1f70b395c3cd5c5f0"
+    },
+    {
+      "file": "godot/assets/base/A3-worn.png",
+      "sha256": "555facf5d932e6897ce9b45cf58482d926a28b0b4d8288ef51962c17a87d6e77"
+    },
+    {
+      "file": "godot/assets/base/A3-worn-enemy.png",
+      "sha256": "4cbb493e109fd9989c26a83804a327d9202776707c2f892ef66d79e00dc77225"
+    },
+    {
+      "file": "godot/assets/base/A3-critical.png",
+      "sha256": "01083df95f6871114ba4510729c3e09dd9a26745aadd3c1c0307743da30e4c2f"
+    },
+    {
+      "file": "godot/assets/base/A3-critical-enemy.png",
+      "sha256": "6676fd7d33015790c012051d3c831fc8143aefb4002045c20959e875524b713b"
+    },
+    {
+      "file": "godot/assets/base/A3-ruin.png",
+      "sha256": "4de8d99aa95e5b17500c8360d8bc6c90d59a324b18feb1a1947b42138e6ba97f"
+    },
+    {
+      "file": "godot/assets/base/A3-ruin-enemy.png",
+      "sha256": "3ef173f7df066dc946ac97ec2f5544af1413fe52458322bec1d5fa0891a2f693"
+    },
+    {
+      "file": "godot/assets/base/A4.png",
+      "sha256": "2dcf9a5dc51232be884b99eb698a41224ad9b227dc04c3fc3930319ccb1a1195"
+    },
+    {
+      "file": "godot/assets/base/A4-enemy.png",
+      "sha256": "250ce1b9d280ab80ccf7e90edd4ba4e1424185ffa725455dbf608326a8abbc12"
+    },
+    {
+      "file": "godot/assets/base/A4-worn.png",
+      "sha256": "1d979746eacdc6236faa78b111a64952524f57228909cd190e00fb8d1579238b"
+    },
+    {
+      "file": "godot/assets/base/A4-worn-enemy.png",
+      "sha256": "6710c2d4c18f79dc9e0b52c7cea46475391f89c1cda1b27b12ed0a49b53da065"
+    },
+    {
+      "file": "godot/assets/base/A4-critical.png",
+      "sha256": "f6f7f0d73e46188ca7d5dd577a0660a54b580bb94ea9a08cc745c8dfda4cb276"
+    },
+    {
+      "file": "godot/assets/base/A4-critical-enemy.png",
+      "sha256": "c6fc5de9b2ea55f92130ea25cc2c111af3c1203c33688b271d7fe8610518afb3"
+    },
+    {
+      "file": "godot/assets/base/A4-ruin.png",
+      "sha256": "acf83f50124d8b5e4f09f4acbdc3414b32b97869588a75927c2d9bda221bb5c7"
+    },
+    {
+      "file": "godot/assets/base/A4-ruin-enemy.png",
+      "sha256": "4dfc3f236352b377000e5f5ad50eab91e0311029668d1224d9888f916eb27b8e"
+    },
+    {
+      "file": "godot/assets/base/A5.png",
+      "sha256": "a4507873f13b7d7cfe488e473f882073b29d3678337b2155c97521cc80645b8f"
+    },
+    {
+      "file": "godot/assets/base/A5-enemy.png",
+      "sha256": "f3af66f4e3cfddaa6a6b31abc2f01eb3792ea6aa88c554b3cc82ca2bb0610ffd"
+    },
+    {
+      "file": "godot/assets/base/A5-worn.png",
+      "sha256": "604ccb267441aba48135319145a4265c208ab5d769cb227dd4292c5d3cf94fa2"
+    },
+    {
+      "file": "godot/assets/base/A5-worn-enemy.png",
+      "sha256": "58e1b0b3471692bf5bebbe6b4a1a8867128ba3aa35c1b835c6d19ed19947a9b5"
+    },
+    {
+      "file": "godot/assets/base/A5-critical.png",
+      "sha256": "30b85e1716445dd263fd4dc7b976cc5b29de46e57df22888824f7d312d3ac6e2"
+    },
+    {
+      "file": "godot/assets/base/A5-critical-enemy.png",
+      "sha256": "63271a9f830548c9e2b9126845c9897c99d2fb2e4cab25b9bab067c8c5cc2ab6"
+    },
+    {
+      "file": "godot/assets/base/A5-ruin.png",
+      "sha256": "c7529e4b4be4708a373184bcfb941f51d4cd9a098da59ddc6e80b138f4c2a971"
+    },
+    {
+      "file": "godot/assets/base/A5-ruin-enemy.png",
+      "sha256": "016ab025908bdab0b1e4b7c686d08a008d5397c3e801e8b4cd54b68a932a6c48"
+    },
+    {
+      "file": "godot/assets/base/A6.png",
+      "sha256": "11bcf28196d821f3d35e2c87e3c3d5c495047ab4e89173b05726aed30194f366"
+    },
+    {
+      "file": "godot/assets/base/A6-enemy.png",
+      "sha256": "1e308107c4623afe8e1bb4b8181f15788c5e8e0eb7076a86334a52d7556c5dca"
+    },
+    {
+      "file": "godot/assets/base/A6-worn.png",
+      "sha256": "8c95c7b67f58f02505c1bd503a18d4c8418323d84920a9a35b54b4c8aeef173f"
+    },
+    {
+      "file": "godot/assets/base/A6-worn-enemy.png",
+      "sha256": "af1319b3c75526e33f0eb27ca8fe0b88e65048fdb8a9dba88e9814bcf39f25ab"
+    },
+    {
+      "file": "godot/assets/base/A6-critical.png",
+      "sha256": "406eea850639b5d83ddca628f7ef3aa79b79852c4c29e9f62e2c95c36340d2da"
+    },
+    {
+      "file": "godot/assets/base/A6-critical-enemy.png",
+      "sha256": "be483a74d0aa4da293ad43dcae063675c186739e33c5f1352348e3b39323775d"
+    },
+    {
+      "file": "godot/assets/base/A6-ruin.png",
+      "sha256": "39a8600434ec76a1231c4d817cc9d357398869acbdf90398966e1f68d7a51993"
+    },
+    {
+      "file": "godot/assets/base/A6-ruin-enemy.png",
+      "sha256": "bd9b4b1f8b36796d002a6225f2458716d66ffc7ea1eb4e5b7bef1ab95999d16e"
+    },
+    {
+      "file": "godot/assets/base/A7.png",
+      "sha256": "585f98b0d4add18b541768f13038b7a420bdb2b658c0d9da2e3c3b6ee62ec549"
+    },
+    {
+      "file": "godot/assets/base/A7-enemy.png",
+      "sha256": "a0232e93229520df4bfaf0fd2b78060412606f169c6d9a4e846c3253356bd95a"
+    },
+    {
+      "file": "godot/assets/base/A7-worn.png",
+      "sha256": "0a45c1f4f1c9842c82138ffadb7dbf80fb910254c93ba191ef905b973d8d4ee7"
+    },
+    {
+      "file": "godot/assets/base/A7-worn-enemy.png",
+      "sha256": "5bc931eb85991f8af0aa0b65f137635e12988945dc33e94a6df22d52596cd1a7"
+    },
+    {
+      "file": "godot/assets/base/A7-critical.png",
+      "sha256": "43ffaf6b838f0ac0c87b79f64da2898e8b281da4900908878c926af229e60b97"
+    },
+    {
+      "file": "godot/assets/base/A7-critical-enemy.png",
+      "sha256": "491b30ea74c46cc25a74e0f69c74fc886c659f3c3e8a10f9899541a3a2023212"
+    },
+    {
+      "file": "godot/assets/base/A7-ruin.png",
+      "sha256": "f61ea9d094120afcff663cd6f4fd999488146f7d0aa08b77461a8d1f8c6aa141"
+    },
+    {
+      "file": "godot/assets/base/A7-ruin-enemy.png",
+      "sha256": "694e40983f222ae58505d9ed82df326f5280b095481f024db77296d8327ca895"
+    },
+    {
+      "file": "godot/assets/base/A8.png",
+      "sha256": "f2a926d0da34ade41e62d49c87c747b8d44552233178cef7562d991a7ea08247"
+    },
+    {
+      "file": "godot/assets/base/A8-enemy.png",
+      "sha256": "24ca630c76e11cfbe6e5bf12db0c596c50bc3041a508b50ef89a6257b36fe5f1"
+    },
+    {
+      "file": "godot/assets/base/A8-worn.png",
+      "sha256": "e80d7ef63af418c71066e37409be37b6e0d4649088caeb85db1af4b716419e11"
+    },
+    {
+      "file": "godot/assets/base/A8-worn-enemy.png",
+      "sha256": "66ab6351c239199d01da404740f906733609aa6b99d5d093b2ffec693527825d"
+    },
+    {
+      "file": "godot/assets/base/A8-critical.png",
+      "sha256": "c2b0b893f9c8af1aecfa28b7d7aa50b1e622ed5be5067f0b04792068003b218a"
+    },
+    {
+      "file": "godot/assets/base/A8-critical-enemy.png",
+      "sha256": "6293b5b8051aba646d09e65ff46c6224c649008241e4f664aef12d456fa1dd11"
+    },
+    {
+      "file": "godot/assets/base/A8-ruin.png",
+      "sha256": "a63e79a2c710ecc10a2c8790914d8da35ac7802db2c3092dfd67d8e0f340857a"
+    },
+    {
+      "file": "godot/assets/base/A8-ruin-enemy.png",
+      "sha256": "b1b041067bfe50694bc65c7e65fb1ed0b8ff40c0bdf6f4709dfabfd80ac23bf7"
+    },
+    {
+      "file": "godot/assets/base/A9.png",
+      "sha256": "8254e7d37d7e6e23e5f0ccceb6081c0047fc7d16d7438eb6736f340dd651c220"
+    },
+    {
+      "file": "godot/assets/base/A9-enemy.png",
+      "sha256": "b8c66bbe2d74f78d7976059d85355bd4ce3d227a0ccbef4b4c6b901a2c355f53"
+    },
+    {
+      "file": "godot/assets/base/A9-worn.png",
+      "sha256": "e33890eaefc75aed7a57ceafe2ab611e9966f3056fccf369a1a48721dd1722af"
+    },
+    {
+      "file": "godot/assets/base/A9-worn-enemy.png",
+      "sha256": "b785e6361790ebc901f3736f9c13e2630a017a37ef1fef107326453c1304afbc"
+    },
+    {
+      "file": "godot/assets/base/A9-critical.png",
+      "sha256": "ea5da7330c31dacb208710b4763c39f51f4de5249e4b73be20e29f0f679ff528"
+    },
+    {
+      "file": "godot/assets/base/A9-critical-enemy.png",
+      "sha256": "d9556f03d16134207682f9f4a8dbeee87abb93dd9708c666bc16d2987c0938f9"
+    },
+    {
+      "file": "godot/assets/base/A9-ruin.png",
+      "sha256": "1cce00719b51b467fcada5f227c410080232580e66cfac9d7d38d67134d104c4"
+    },
+    {
+      "file": "godot/assets/base/A9-ruin-enemy.png",
+      "sha256": "024350d6828fc5d89823b36d6141164bdb9b1a435b781e04107010b6db500f3a"
+    },
+    {
+      "file": "godot/assets/base/A10.png",
+      "sha256": "3f15abfb61df31317d36f1ad81da13b5b03b97615fb9dbdbb22faeccd21877f7"
+    },
+    {
+      "file": "godot/assets/base/A10-enemy.png",
+      "sha256": "43e537811b4cd2465127b15a7c8da91555fa97fb51624d6bc2fec2a684f70696"
+    },
+    {
+      "file": "godot/assets/base/A10-worn.png",
+      "sha256": "757d46a231343609b599651a9ac31bc2bfc7025c50498ada5ffd84a488ef494b"
+    },
+    {
+      "file": "godot/assets/base/A10-worn-enemy.png",
+      "sha256": "40433b10c25302b6cd066a9c62a45a74cd7d70453cfdb99351ec81efbaa6ce1b"
+    },
+    {
+      "file": "godot/assets/base/A10-critical.png",
+      "sha256": "85c53bbf91959ed9fef155f037b652da0f8cb611132fce5f62c65080ae538e8f"
+    },
+    {
+      "file": "godot/assets/base/A10-critical-enemy.png",
+      "sha256": "b3114990bd9050a75b41ea4c6608712b1c29c61363491d0cd8cf4b097ff7d2ef"
+    },
+    {
+      "file": "godot/assets/base/A10-ruin.png",
+      "sha256": "3d0fd2e1964c17a3a180fd223b89748047f63b9956008443e2ecbec2b0171ccf"
+    },
+    {
+      "file": "godot/assets/base/A10-ruin-enemy.png",
+      "sha256": "98c01318529f6f25bcb4f8fb10fd17134dd1ad10c4637942b6ce67546263b062"
+    },
+    {
+      "file": "godot/assets/fx/eras/A1-carrier.png",
+      "sha256": "0d4c01ba2e6a9d2d41799ce9677138a1bffa4903960b1fee61762926986b3e56"
+    },
+    {
+      "file": "godot/assets/fx/eras/A1-projectile.png",
+      "sha256": "07e542869f049c11266c5033399e73fd35c264364dc5d3b76bfb951fb184f29d"
+    },
+    {
+      "file": "godot/assets/fx/eras/A1-impact.png",
+      "sha256": "1b515f2f5ca232de688a0d2b0fcdf77416a1a2f74fd347994e0979b3b87d9cd6"
+    },
+    {
+      "file": "godot/assets/fx/eras/A1-shock.png",
+      "sha256": "bc5d011f6bc471ea4d736b8cc3ed773b40d25a77caf9cdef38b32a05ece710ce"
+    },
+    {
+      "file": "godot/assets/fx/eras/A1-sparks.png",
+      "sha256": "e52d73ac18d54f201cf0867bffa707b6e55bc2ab3142204d504cc7ae4393d120"
+    },
+    {
+      "file": "godot/assets/fx/eras/A1-smoke.png",
+      "sha256": "e0f7c999faae407bea6c968790ed3cbb51927e7f07c575a6d392bf290a89c95a"
+    },
+    {
+      "file": "godot/assets/fx/eras/A2-carrier.png",
+      "sha256": "c184ba329a69aac15541408e7973368da9ba08afc4aaee326fcc30b054ecb3e4"
+    },
+    {
+      "file": "godot/assets/fx/eras/A2-projectile.png",
+      "sha256": "13ace987279c0b2846872a73612023dbfc20ee8928baa8cb18683dfec4cb9af3"
+    },
+    {
+      "file": "godot/assets/fx/eras/A2-impact.png",
+      "sha256": "0923957bdb273e64b7c51e497da84161f8bd54a0da12018353f620fdcb6f6529"
+    },
+    {
+      "file": "godot/assets/fx/eras/A2-shock.png",
+      "sha256": "c02c81d2ba2ac6a5fd2e59f05ad25f4fd9356890f5bf815af35e8a024de759f7"
+    },
+    {
+      "file": "godot/assets/fx/eras/A2-sparks.png",
+      "sha256": "5e0e277ba3bfd53ce38883c95780af2bf85f2a392747449faca527ca8124ae1f"
+    },
+    {
+      "file": "godot/assets/fx/eras/A2-smoke.png",
+      "sha256": "08a6e68f65ca478bf695e5a06d7ed4ec9f84f98534978f0f080c73cd1732ab55"
+    },
+    {
+      "file": "godot/assets/fx/eras/A3-carrier.png",
+      "sha256": "cf23cc50cf842206d56781117c03e1c5a8494537e469cc0e66c95920af1d4d86"
+    },
+    {
+      "file": "godot/assets/fx/eras/A3-projectile.png",
+      "sha256": "627154000b2198bb3fd015dc888ae314aa273e9383f300b25185195e257c40f0"
+    },
+    {
+      "file": "godot/assets/fx/eras/A3-impact.png",
+      "sha256": "ac19f6c8430f87f46a3b6285468a50abba97a07c00181c24d06a3fa9c17adf78"
+    },
+    {
+      "file": "godot/assets/fx/eras/A3-shock.png",
+      "sha256": "18def9d83f4d01bafe50c6c763ab4c5ab19d755e050b20337e213a544efd8de5"
+    },
+    {
+      "file": "godot/assets/fx/eras/A3-sparks.png",
+      "sha256": "a09bb2d8ab8ffd112575b10d087d58db96eb95a3b82f0aaecac8de20fd38a710"
+    },
+    {
+      "file": "godot/assets/fx/eras/A3-smoke.png",
+      "sha256": "014a47267d43af90044ecdfcc5ae5db8a042f57e756a171fdd270606138392fb"
+    },
+    {
+      "file": "godot/assets/fx/eras/A4-carrier.png",
+      "sha256": "fbf2b40f4f01c3a8e02c5c01954afc5351bad7805de082c180a9a709fee7ed7e"
+    },
+    {
+      "file": "godot/assets/fx/eras/A4-projectile.png",
+      "sha256": "605eca393ff1132062d43d9725f3cdd352c4e2b74158be7c5296b682b047b95d"
+    },
+    {
+      "file": "godot/assets/fx/eras/A4-impact.png",
+      "sha256": "8f0195cae01cc869bfd4c783e5b362de2a8f8986bf14933e74c2364c80747033"
+    },
+    {
+      "file": "godot/assets/fx/eras/A4-shock.png",
+      "sha256": "3c01870490cd2538c90deaa1f0341635cafd3fc3e154f366d2ea1552fe517aa3"
+    },
+    {
+      "file": "godot/assets/fx/eras/A4-sparks.png",
+      "sha256": "21f26417074cf91df19a3ffb92a55516f44939a4bbcf99b7e2769e85b65d4fc7"
+    },
+    {
+      "file": "godot/assets/fx/eras/A4-smoke.png",
+      "sha256": "71faa67a8e391e49f2b166c31ac4620684b422bd04a7a3f23041f4610952dd10"
+    },
+    {
+      "file": "godot/assets/fx/eras/A5-carrier.png",
+      "sha256": "b1ec8145ddaeb7b1b504c734d77a1d0d8e68748b81cd50ecc9f6d712ba42b9af"
+    },
+    {
+      "file": "godot/assets/fx/eras/A5-projectile.png",
+      "sha256": "74ef7d6c711dd8870fc6287bcb05e3d5f079946f674121b9c01c6f6fd46dde07"
+    },
+    {
+      "file": "godot/assets/fx/eras/A5-impact.png",
+      "sha256": "73d4462311d673da4967ca32142e251cf40f7cab8ad6b9b9cdcb81159aa62ec2"
+    },
+    {
+      "file": "godot/assets/fx/eras/A5-shock.png",
+      "sha256": "4fdaff8156b516e68006c0c176da79f422092a31efd9123bd858b891f9d7c669"
+    },
+    {
+      "file": "godot/assets/fx/eras/A5-sparks.png",
+      "sha256": "71ec69b5fe1bb70987deee89a1502333f92afd3d39e8c25dec608adcb7a379a1"
+    },
+    {
+      "file": "godot/assets/fx/eras/A5-smoke.png",
+      "sha256": "102eaaab57c7f63dcbb56ca78b157d0edb283f05704b6ca4c2867245884f56cf"
+    },
+    {
+      "file": "godot/assets/fx/eras/A6-carrier.png",
+      "sha256": "cfae3de31fa8925e6ee46593ef8fe40612ba668058e0fdfe0060a9c894854a16"
+    },
+    {
+      "file": "godot/assets/fx/eras/A6-projectile.png",
+      "sha256": "c3baf80cec516651cfea63b1ee290f56433d46fec3d46d7381199657cc55695a"
+    },
+    {
+      "file": "godot/assets/fx/eras/A6-impact.png",
+      "sha256": "9ba8ec1f1ff8d11d2c1e9a79c171245981f201f9a3bb6dda9435bbf294a33702"
+    },
+    {
+      "file": "godot/assets/fx/eras/A6-shock.png",
+      "sha256": "650bc4a07e48bffd13cb175849f4b7982ca07455727ed734634fe36dea4b69f8"
+    },
+    {
+      "file": "godot/assets/fx/eras/A6-sparks.png",
+      "sha256": "779eea74ae7db54ab352cd3300e4ac553ee3e7b42024e6a3cbc4e85dee378298"
+    },
+    {
+      "file": "godot/assets/fx/eras/A6-smoke.png",
+      "sha256": "7571ccd39077f7d68ab1bf88eb7d02055aa170879f95670140b9b12c9799edb5"
+    },
+    {
+      "file": "godot/assets/fx/eras/A7-carrier.png",
+      "sha256": "7cb8bd077e7535246dc949b152d5a18b539a7232604391e339ae03848199890f"
+    },
+    {
+      "file": "godot/assets/fx/eras/A7-projectile.png",
+      "sha256": "571dc9e9f1ce5bcef616b5f98312564cbb959ffc0810c0c5efcd4a0c670f039a"
+    },
+    {
+      "file": "godot/assets/fx/eras/A7-impact.png",
+      "sha256": "479adbd07acf6d6fdb67bc4571e5fff161bc8be4c65646b5fe86d8d8b132ee91"
+    },
+    {
+      "file": "godot/assets/fx/eras/A7-shock.png",
+      "sha256": "deb3867f4cd9a0cc8570cfcfda1e87fd14e1cfae58570cc682fb7ec62190dbeb"
+    },
+    {
+      "file": "godot/assets/fx/eras/A7-sparks.png",
+      "sha256": "1f07020dbfed725c885ae25cf6487955f5ac6b3bbaf03b3d863e1f140c2ebafd"
+    },
+    {
+      "file": "godot/assets/fx/eras/A7-smoke.png",
+      "sha256": "f282f3b26d9b39d901973ecc56ef6bd42ea36115a303fff7ab53df5df43a6a15"
+    },
+    {
+      "file": "godot/assets/fx/eras/A8-carrier.png",
+      "sha256": "6513462cdebda6dc6a68abd2212c8644e1192cf8f57f6c1db8f0ea49e62a890e"
+    },
+    {
+      "file": "godot/assets/fx/eras/A8-projectile.png",
+      "sha256": "60bbed61a7fd3b4e8d0d71238290e7deae569607295c75e589a537568ed4222a"
+    },
+    {
+      "file": "godot/assets/fx/eras/A8-impact.png",
+      "sha256": "d9f99b420e4bab2a69c468415ece633ed6074e9ede15ab7fa10953fdf781db0b"
+    },
+    {
+      "file": "godot/assets/fx/eras/A8-shock.png",
+      "sha256": "b5f3229dfbf9604e54e7040bce715aa2e00e761dc9932c434be27e37336d6e9d"
+    },
+    {
+      "file": "godot/assets/fx/eras/A8-sparks.png",
+      "sha256": "8d1fbd4fdefadce893490462a1f8938fbae91d5abcdb3c05e0f3d43434ff03bc"
+    },
+    {
+      "file": "godot/assets/fx/eras/A8-smoke.png",
+      "sha256": "b36080da1849bfe9154ad11d83c41ad178cc4ad0911378eb25b40100aa78f15b"
+    },
+    {
+      "file": "godot/assets/fx/eras/A9-carrier.png",
+      "sha256": "24384244134170c94fbf6e1d57ef65e0775c5b338c2419546d5f4e81b681de01"
+    },
+    {
+      "file": "godot/assets/fx/eras/A9-projectile.png",
+      "sha256": "1b38da1c792c14695db2df47231ac4db27cddd763f346e78b173e1b1860524c5"
+    },
+    {
+      "file": "godot/assets/fx/eras/A9-impact.png",
+      "sha256": "0a31b6b208cf74cd6a1892f9f8c263710454932bcc12ae30da72930755a6ce92"
+    },
+    {
+      "file": "godot/assets/fx/eras/A9-shock.png",
+      "sha256": "0e2e981b0c87a822ac40e66ac286ed2593ab0bbf48b9d6918d7d25e319423903"
+    },
+    {
+      "file": "godot/assets/fx/eras/A9-sparks.png",
+      "sha256": "f425706b88dbb17f985fc569c0c1262584e297efd3e8329fcf4d870f02b0e00e"
+    },
+    {
+      "file": "godot/assets/fx/eras/A9-smoke.png",
+      "sha256": "76a547201e0a3344400825525b4a58beaa5c5599cd5a4247eed18581e0071268"
+    },
+    {
+      "file": "godot/assets/fx/eras/A10-carrier.png",
+      "sha256": "fb5aafd4791e6a194ccad4b6ee933390b8733d89f5aa04887713f48f4fba6024"
+    },
+    {
+      "file": "godot/assets/fx/eras/A10-projectile.png",
+      "sha256": "5d5dd47d04712e39aa1992c71edef4b459b493ba439e82fbde2789c7d25172c0"
+    },
+    {
+      "file": "godot/assets/fx/eras/A10-impact.png",
+      "sha256": "7f16eafc43a5780f89b3b506c519bbfb5c01fede99395e498c697c56a120a1f1"
+    },
+    {
+      "file": "godot/assets/fx/eras/A10-shock.png",
+      "sha256": "252720b2411b06cfff2985a8338c31629b3d00236d43c5390871aaaf3f2eb50b"
+    },
+    {
+      "file": "godot/assets/fx/eras/A10-sparks.png",
+      "sha256": "ad7dc0e3a66903d758d0e3a3b46c4f5a6c6f86505c05a22e897f9362e8dccda3"
+    },
+    {
+      "file": "godot/assets/fx/eras/A10-smoke.png",
+      "sha256": "b53d1a9642a841aedf7da2e71d9f68ebd3ff843a71cc0cf5333f550853bd1518"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR11.png",
+      "sha256": "093697cdb1c23bcf5f9852b8550a3c61ff5168f48df81c9ad453fe9af77f25a4"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR11-enemy.png",
+      "sha256": "9e6c909a9cb173c0b8c6fa4d206fc9df8deb9f5b9e42e7e23f2d51c5e448f7e3"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR12.png",
+      "sha256": "cce1df5ac263ab876ae724b32acacebfc452ea4dbb8a5fc62f5fbc89f1873c03"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR12-enemy.png",
+      "sha256": "c49084ccbc75ad425dc2c7c2e6f203baa4878059ed31baa832225f1fed65fbc1"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR21.png",
+      "sha256": "77d2777600a82ce15ec0c70ff21d0102d97b37e225384e44cf765b94acc907f8"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR21-enemy.png",
+      "sha256": "594ed96d450e4b78932864f2a7b5fc0bbb25f5c4909f595be0c39fbc6797cc9a"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR22.png",
+      "sha256": "90588316d95d04cc0905fb20eb8a19b5e710924a2f3db4b29444ade83d6e79a5"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR22-enemy.png",
+      "sha256": "ac8a86aa9d45412c7d769ea34cb99cd0504399cdac14a2ddccf3aa09658eaf29"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR31.png",
+      "sha256": "fa1b2d8f3e6bbc5a9000d267c96dc29635f780ae15dff8a7f3a809f0f37d69b4"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR31-enemy.png",
+      "sha256": "d60889b0f5ff3a92fd27076ff3ed20d2184027d5a0f95c2f070c6214c2c87fb4"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR32.png",
+      "sha256": "a775de3f40c0df1f5defba3c2dcc258267fe11a6d59668047d8c4726be98b794"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR32-enemy.png",
+      "sha256": "3852081232de211254eeff8e0d3d50d5cf45211f1da52686465791b86ffbe99f"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR41.png",
+      "sha256": "5632529ffea02d7ab8115ffde7ac180c601e0ab8bed4d73abe849e9efe90b35e"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR41-enemy.png",
+      "sha256": "c66f7fd9fbd1ea29e53d7602d0f351cde9d3200b250ab93225448079fbb87aa9"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR42.png",
+      "sha256": "33350833d2dc435c0ff97fe1304d4b90646c306920f69db95bde6c1d921b378d"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR42-enemy.png",
+      "sha256": "0dfd0858d2c67fcca4cae5c2bcbbad206dfdc23da339f480ae7da0f66f9164a6"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR51.png",
+      "sha256": "b6b8c4bc4aff9add90e4190ecf6222dde7e87609fbb5c2bb92a7c94df9581e95"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR51-enemy.png",
+      "sha256": "64de258fae98e847a50fd1b0792867e3f7b7275d2a954eb665ddf1123ade7bc5"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR52.png",
+      "sha256": "ec659549b817c69553d9879cfca8101b8e802a43bc03d9ce6c94f5c34f2aec26"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR52-enemy.png",
+      "sha256": "f87467b803520b12ef89f4d1ba3b1089fca2ed932abdbb29ab7c9d3d92f471f5"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR61.png",
+      "sha256": "4f61785c78a2c9c195c6ec24a7ea6e71c3a46d43b91e403cbd7c81c08bc6459c"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR61-enemy.png",
+      "sha256": "7053a5fd639c0abca6d2b71154dc6464572adbf8f6671a52817cd689304060f4"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR62.png",
+      "sha256": "52d90a02e978548a7425067953dd582773cd98303bfcc361909806c96061a0c6"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR62-enemy.png",
+      "sha256": "fc75ec5c8ec95341713b5948a3e5044b0d6b53c03b30df2254589bef7d34ac7d"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR71.png",
+      "sha256": "d95c25b83455980028fd7b74c623377c38bdd788eb9f2ffcfdfd1d8e5a858dd3"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR71-enemy.png",
+      "sha256": "ecb3260e081b3e0280b22a120c572228481d075402c681532510597d8f9256d9"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR72.png",
+      "sha256": "ba53ff16aa52a92c3e303c0313755eaa093c4d39e4d2560e339e14adf3c1dcfb"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR72-enemy.png",
+      "sha256": "509e2944d11e3e3edb2e8329fb85a56189d0645e89ba1802db9296bf13e7e768"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR81.png",
+      "sha256": "3654bb7a02b9645cc0e4b254c2b847b452d3713e9266608a7a1b721c0b814ca1"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR81-enemy.png",
+      "sha256": "68cacbb0ac7e0380a62e0a328a77a39fa8c4130c2f5df7b7688dda62aa609b74"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR82.png",
+      "sha256": "845b30fda4d1eaa01d0fd48e6bbdda4a8fc7eb3a235d383e37ffb0c3345e6273"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR82-enemy.png",
+      "sha256": "bff7210effc29d14d0887eb75d6d15e3561de63f2e7335120ee8bd2b57a8cc37"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR91.png",
+      "sha256": "6661c4dc22ebf701a75da16339d99e2cecc4cf7ed2f92806a779a22ada608fb2"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR91-enemy.png",
+      "sha256": "bc12e097e792cf0103a69b9b05ad65beb0ebfe787b189aa2748dfcfb32934422"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR92.png",
+      "sha256": "8015d0a17f6a4409186b1b84e5a935aa2a5ba070e07069b83d3d74f63c577791"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR92-enemy.png",
+      "sha256": "45fc7d0e98499a698ce2b54254e0ea80a9f925a92ed478ccde8e85cf0773cd2e"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR101.png",
+      "sha256": "28a9984e5caa394a4bf8e2d0509f8a970b3a66a9ede11fc7bda8180c3974ad66"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR101-enemy.png",
+      "sha256": "f022e290792aa9d79c91c45d1a7e4d172f4104306b5a28dbd571628869adcc89"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR102.png",
+      "sha256": "54b35ece17967de9aac4d6fb2edecf15992bf44664d86530dee4a6f0203298fb"
+    },
+    {
+      "file": "godot/assets/environment/turrets/TR102-enemy.png",
+      "sha256": "92b83e0b6bf1141aff2730ab429d61a9b71883084e4726606506344e239a214d"
+    },
+    {
+      "file": "godot/assets/environment/ambient/bat.png",
+      "sha256": "b61a9de67f9061747aebe2922f8db6a746d4a5c1a14f2fe578459c14b7d17907"
+    },
+    {
+      "file": "godot/assets/environment/ambient/bird.png",
+      "sha256": "f4f6beb9deea79709c1819bdcc1272e8a81d6ccc9e760028ea977da5ec52619c"
+    },
+    {
+      "file": "godot/assets/environment/ambient/pterosaur.png",
+      "sha256": "7de4abcc09db18797e4d586b77ba614ff27ecadc10e5e319c3779dcaef74584c"
+    },
+    {
+      "file": "godot/assets/environment/ambient/balloon.png",
+      "sha256": "34965a23c7302d2babce9ff4f764d5c3d19e6dc750270a11c0994d88edab4b73"
+    },
+    {
+      "file": "godot/assets/environment/ambient/biplane.png",
+      "sha256": "1d375e612105c81fa6a98cd574079f7c43b5df7b33df8ccebe0e3a35a3c75cb8"
+    },
+    {
+      "file": "godot/assets/environment/ambient/fighter.png",
+      "sha256": "8241ad565cf024e664f4c7a3a5e063e38db5666f55f4764f9e8c3d574bb5ee0d"
+    },
+    {
+      "file": "godot/assets/environment/ambient/bomber.png",
+      "sha256": "14428a041d13ea40602d85ecf56690f64fd9763000d89d72a62127a188e566cb"
+    },
+    {
+      "file": "godot/assets/environment/ambient/jet.png",
+      "sha256": "22b57c5d3da6433c3b0f03bd5712faa89bd7effcf5e8f612f2e7229743eccf78"
+    },
+    {
+      "file": "godot/assets/environment/ambient/helicopter.png",
+      "sha256": "02b69e0da840aca474e008a0bbec8e8fc17cee64bf5ed4a43c9a138dabd63b9e"
+    },
+    {
+      "file": "godot/assets/environment/ambient/drone.png",
+      "sha256": "e797c6b5a1ea8b524e746d71e943a22327228efff567610938a54b77886c8f21"
+    },
+    {
+      "file": "godot/assets/environment/ambient/shuttle.png",
+      "sha256": "84545e9b8d4b8f86b4bb14df9459e21bb10a18d472a486381f21f7d1562fbf41"
+    },
+    {
+      "file": "godot/assets/environment/ambient/debris.png",
+      "sha256": "7a75fe8425630b466fc699b859273806acf94803caba23f551190f7f6a58cd1e"
+    },
+    {
+      "file": "godot/assets/fx/events/meteor.png",
+      "sha256": "e7bfd3be40bbe9a05e7453b9e6581e6c2409cf27be12512302a6d2c85bf5d541"
+    },
+    {
+      "file": "godot/assets/fx/events/plane.png",
+      "sha256": "bc31408b82107f87a5f00d2775c218fc33ba706cc6599b092c1512b37a0d867e"
+    },
+    {
+      "file": "godot/assets/fx/events/dinosaur.png",
+      "sha256": "674b8d7d9c3ebe521d97b0b4bd1e18298771ec9f5acc049509cf8b5ebd062fac"
+    },
+    {
+      "file": "godot/assets/fx/events/rockfall.png",
+      "sha256": "c6c4e831e9d1c21899cf9cd7a0015f45553fb3fbfab67d884b90290137096eac"
+    },
+    {
+      "file": "godot/assets/fx/events/drone.png",
+      "sha256": "e51b8064cc1d25474a436d5653e1adb3bacf58ac37a4d21cfd6631381da82208"
+    },
+    {
+      "file": "godot/assets/fx/events/debris.png",
+      "sha256": "2d90d30afe7189efddd5f025bf289affefe48ed88f2891e6150faa1b606721d3"
+    },
+    {
+      "file": "godot/assets/ui/units/U11.png",
+      "sha256": "9c3f674c97d0ad818753f73b118d9adb8f9ada8eb3c3ce0c4bde7ac51f82c83a"
+    },
+    {
+      "file": "godot/assets/ui/units/U12.png",
+      "sha256": "a30660f92a92fcd8daf7ea46fc08766aae059fa3dd31eac7938b975a8602ab60"
+    },
+    {
+      "file": "godot/assets/ui/units/U13.png",
+      "sha256": "86d736e888271318ccd511afe23f8e150011c1023490b4e0d1c908330acb0525"
+    },
+    {
+      "file": "godot/assets/ui/units/U14.png",
+      "sha256": "1ba82e4587e0f1c9cd9ba4c0a8bf081dcc599d160d26ce73c938fcf7a2118b32"
+    },
+    {
+      "file": "godot/assets/ui/units/U15.png",
+      "sha256": "c18d43135e7b4a22dd632baea356811eca7fdbca786d645c0ded3b94878de245"
+    },
+    {
+      "file": "godot/assets/ui/units/U21.png",
+      "sha256": "a0e098efae69142b510adf83bf7cf81fc5ce2fcc491a507b7dd61d5c97fc27b8"
+    },
+    {
+      "file": "godot/assets/ui/units/U22.png",
+      "sha256": "ac7eaa4f5024be8cff0f6cae710fade5cc210b0846d155d522c55f4d8705aeec"
+    },
+    {
+      "file": "godot/assets/ui/units/U23.png",
+      "sha256": "c724645c27ac69d3cc1b32447e9402fbc3f6b046702855adaab4cb2e9ea45f75"
+    },
+    {
+      "file": "godot/assets/ui/units/U24.png",
+      "sha256": "499567edf95d45f014ddc2a09fc1b91b3fa4b258ae0b7f850d1bbcb3611e6f7f"
+    },
+    {
+      "file": "godot/assets/ui/units/U25.png",
+      "sha256": "38031385b0f2c72aa3e543cf4582d0212f06ba5de45032f48bd1bab04187af57"
+    },
+    {
+      "file": "godot/assets/ui/units/U31.png",
+      "sha256": "d3e62c61a43ea0359d4f24cd3af29a3ae5981376b1033d8c790c04313bbaf7d9"
+    },
+    {
+      "file": "godot/assets/ui/units/U32.png",
+      "sha256": "ed20ab86f940dd0ea2d418c1fb524296c79d913997e3c150309442651811c023"
+    },
+    {
+      "file": "godot/assets/ui/units/U33.png",
+      "sha256": "16961a11354a25fb087bb467a7ec136c1bf9ae48c4221f36fa41f24c0051b835"
+    },
+    {
+      "file": "godot/assets/ui/units/U34.png",
+      "sha256": "1a01b1c6abbb6cbfe009dd9520ff0d8cc6bd426d59019d12c363d65c2c28b212"
+    },
+    {
+      "file": "godot/assets/ui/units/U35.png",
+      "sha256": "f75d18314f1bb090a36539c08b9f0a8bbc791f4986d4e3c40d10723f2bb5c447"
+    },
+    {
+      "file": "godot/assets/ui/units/U41.png",
+      "sha256": "712f021b0af1fb9c7e4b391c691dc96de19c33af0e5efade648108c3dd7db17a"
+    },
+    {
+      "file": "godot/assets/ui/units/U42.png",
+      "sha256": "cf63d1b11b9428b812023e2e9373bf5c2d0d688afceb6ba5bcdb702ab5db5d91"
+    },
+    {
+      "file": "godot/assets/ui/units/U43.png",
+      "sha256": "91887ae5bd822885a91b7d4bce8e62cfcb2086d6fe4e68be8b5eeb675d55e038"
+    },
+    {
+      "file": "godot/assets/ui/units/U44.png",
+      "sha256": "b5c4b613a7712eb46c7d25612e9f03ace2967bf853842122b4d3ebdb93e2035f"
+    },
+    {
+      "file": "godot/assets/ui/units/U45.png",
+      "sha256": "bed504ce49dcc2816e44281f4ef610b421d44874ac385a855496ce5b473f9346"
+    },
+    {
+      "file": "godot/assets/ui/units/U51.png",
+      "sha256": "cb993a974913b26097e0aea4c46ec73c6a1938e9ac0b9c6060a647ee38b8ab3d"
+    },
+    {
+      "file": "godot/assets/ui/units/U52.png",
+      "sha256": "6153a3f3e8d0dda3f2c20f080630f77cde5e5a01bc2b36879cac2ab535cd2801"
+    },
+    {
+      "file": "godot/assets/ui/units/U53.png",
+      "sha256": "26dd47624fee0abe78cc7e3c51642abb3aac4bdcf8e9004600ec1e5d1c1b5cd7"
+    },
+    {
+      "file": "godot/assets/ui/units/U54.png",
+      "sha256": "f769d4e847475a5ded751ea9c8b518f774232899cda85040ce60fddc3229089d"
+    },
+    {
+      "file": "godot/assets/ui/units/U55.png",
+      "sha256": "3b4e83ba55e88725c479e36666db0d461c84ee4bb23380fecaf58d9b0905269c"
+    },
+    {
+      "file": "godot/assets/ui/units/U61.png",
+      "sha256": "2fbf2cb7f4e3c1ea68e0d809a52f24afc293ac0c9fcd75aad21fc0bb0288613b"
+    },
+    {
+      "file": "godot/assets/ui/units/U62.png",
+      "sha256": "a94dbfadc59e61e188d6963eeb0634211293736ab9138479de51fdf92a40871c"
+    },
+    {
+      "file": "godot/assets/ui/units/U63.png",
+      "sha256": "8d340c3b5c44e581cbfae0c71b5b10553791ab51eef706857e205b083d1a7a3d"
+    },
+    {
+      "file": "godot/assets/ui/units/U64.png",
+      "sha256": "68be202b212421f6486a128db95743e421aa63efdd735fe982efc8180c73b4e6"
+    },
+    {
+      "file": "godot/assets/ui/units/U65.png",
+      "sha256": "14699247b58071d228e3732c1db905baa72db7051acbe6bcc24423d65e13192d"
+    },
+    {
+      "file": "godot/assets/ui/units/U71.png",
+      "sha256": "d375952b98202c797bdf43a486210618b75aaaea9ff2800b68ce62d77e3fb9d4"
+    },
+    {
+      "file": "godot/assets/ui/units/U72.png",
+      "sha256": "d85d4fd32c35f0594844a5333213a3a28370bc42906b7be42bf21b812636f240"
+    },
+    {
+      "file": "godot/assets/ui/units/U73.png",
+      "sha256": "ad8781d51bd571215c52336af5fc356ef084b4c92f7b4c0b3630824f8ecbd2b9"
+    },
+    {
+      "file": "godot/assets/ui/units/U74.png",
+      "sha256": "12e75dccd696117f180e53679cfeeb350cbd9c8e5da6b413b1225c77bdd50546"
+    },
+    {
+      "file": "godot/assets/ui/units/U75.png",
+      "sha256": "627fb09a6ce00a56f3eb6cb665077b306bbb404c98229adaecc8c914dd4c00a4"
+    },
+    {
+      "file": "godot/assets/ui/units/U81.png",
+      "sha256": "9ea8e22d661ede05ad0ece8f3567076cb11f40d4fd9f5e4cdd3614514c5fbfff"
+    },
+    {
+      "file": "godot/assets/ui/units/U82.png",
+      "sha256": "63d43ab182c3423cf00f5b7941b6266be4e259d40a82e0ab9c9e2a9cab77ade7"
+    },
+    {
+      "file": "godot/assets/ui/units/U83.png",
+      "sha256": "356089364b06cb398cfa1a7a0e3f3d0ee980233a14d984e57140f0d8c045f513"
+    },
+    {
+      "file": "godot/assets/ui/units/U84.png",
+      "sha256": "500bddb96141b076e2dab4c0879320878289f093aa018685ad827e1ce7d0dad1"
+    },
+    {
+      "file": "godot/assets/ui/units/U85.png",
+      "sha256": "fbfd1a411cce54aae32729487c05bc9dc32e056df36c704ac8b65837185631b0"
+    },
+    {
+      "file": "godot/assets/ui/units/U91.png",
+      "sha256": "76d8310cac75b5aacfeacb7f451771e3885fff0487b2921c780e8d0078438aba"
+    },
+    {
+      "file": "godot/assets/ui/units/U92.png",
+      "sha256": "6e3de302dfcfefc7b69b93c2d3955720ca6181186c4b288d1eab0feab68842f1"
+    },
+    {
+      "file": "godot/assets/ui/units/U93.png",
+      "sha256": "828642fdd2bdfb69ec857672b0393fd38db101092fe64b26b9b806e283ed77ec"
+    },
+    {
+      "file": "godot/assets/ui/units/U94.png",
+      "sha256": "4a56a1a931547a7d4ed229b50adb41166cfff8f3680633da492fa7923a50ca17"
+    },
+    {
+      "file": "godot/assets/ui/units/U95.png",
+      "sha256": "71497df7e19c9a72a098e9ddf0bd66aa93e9dfeb3d0d9166494b00150ff1da0e"
+    },
+    {
+      "file": "godot/assets/ui/units/U101.png",
+      "sha256": "1d46baf2f8c5106d752627eaaed00b415602c0f25b63deb083258112c1b5bc81"
+    },
+    {
+      "file": "godot/assets/ui/units/U102.png",
+      "sha256": "4b67f1348fe76f7413fa6ee18224c74e206abc87e6655ff84c5336aec9dffae0"
+    },
+    {
+      "file": "godot/assets/ui/units/U103.png",
+      "sha256": "3973d199cd14ccafac8a675e32c3b895543115dd295bf1989afcc9b309415ab1"
+    },
+    {
+      "file": "godot/assets/ui/units/U104.png",
+      "sha256": "72ffe82b1d46b0862f344b92e8ef035b9c0b132311630f9aac5132c519e96753"
+    },
+    {
+      "file": "godot/assets/ui/units/U105.png",
+      "sha256": "ee7444203e041284d304c9881a127e2d509437d606e017e8035be16c4d718a89"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A1.png",
+      "sha256": "df397467f55fabaef67addf1fab03eaaa2521b0b7f10bf91cf9bd6e6165b0c5e"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A1.png",
+      "sha256": "9b32e8146326733bab68859595b44f11138a5b0a1ee9367b5323d2aeb74071df"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A1.png",
+      "sha256": "1717403b8d3f87a37751bd350c8bf12df31cfe1050a893463ed651ce5553f309"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A1.png",
+      "sha256": "54e63b314591b7dc38184e98bf1f8954f939f8131bdb48a5786991e02cb63003"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A1.png",
+      "sha256": "0bca4e2fb36ee678f5b77f9d81c8a6d165543881277f6a7ccfcf75e55f93599f"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A1.png",
+      "sha256": "893e05f837dc297ea24b4d2007e3e46fd1959872f93eb7304dd4fb633230e10f"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A2.png",
+      "sha256": "b4755941e05e77080d8f3fad9bdd6e6e3a4d728f698a01a21fed93979189b002"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A2.png",
+      "sha256": "d7591a5cbbf0721171ff71c37037ca912def606fa7d758c31dba6d898dc07620"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A2.png",
+      "sha256": "b219fc988647c8dc9e2ec478a4ddd7a09c1ba8dc877230365c925e1af6145197"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A2.png",
+      "sha256": "3c3ddefba58b171c7f3ad4a664a45606577db84ebdaf6fa0c514ec77840be3d1"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A2.png",
+      "sha256": "6c612ac2aef61721065c040f8ea99a94d2ada6ce411d88effbc9b42cca59e582"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A2.png",
+      "sha256": "3045a90987c124a9a853f74c2503945654890aaf52c0a3f302271e67e5c60127"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A3.png",
+      "sha256": "6465d8079a37f318f7ea320336d4b64db0644db1bcd4ccee31f000cc992a4838"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A3.png",
+      "sha256": "67ae216371804909246f2d02f768bbacd8c63529f1094ee5d95916cc543a1278"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A3.png",
+      "sha256": "29f80d97bf90a0d61b8827c28c502916f16f83dc5552f4213c18f1457be40fac"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A3.png",
+      "sha256": "e9bdd56ec0541f3c63e038bfd360c9e71080e13d79ab62dbf26ae2c9fba635b5"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A3.png",
+      "sha256": "47de4d366ca4dcad4d428b223c4fb0bdfddf02364a44142b79401ece118f0d00"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A3.png",
+      "sha256": "8207d6999884d7bdda9ef1ad2c151d005f2d4d35c0c3fb7c8d20ccca0e318808"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A4.png",
+      "sha256": "7a31ac8d16bcb1d23f743d2f54c9620f184ccca3395fe3864477b4fecb835be6"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A4.png",
+      "sha256": "587324d24e121b91a05a7a8f0d06d98f0bbf07edf45a0b974656f9aec0afb9d3"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A4.png",
+      "sha256": "9fbe7d9b7ad832f42f40ca6208987599f9617a533242ff2e4d81537dbde6c3c9"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A4.png",
+      "sha256": "538a9f4b8a1dd896f285afb41dc951792cd5882a630ecd45facfd955923457f6"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A4.png",
+      "sha256": "94073e845be657b1553d8741eea450d6a69a9525f5167ff79678591be4112276"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A4.png",
+      "sha256": "f28bf82344a5d37af2a04a23c6728512fd98aecaa5b62018e69b64622d3dcf93"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A5.png",
+      "sha256": "35338b6c51c8d047e542f79352c1849e1e03974f771185969780206c5cb7fc22"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A5.png",
+      "sha256": "202d0735526ac95116e884e3850d2ba34eb57ff46c833299ea1b10e43cb7543c"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A5.png",
+      "sha256": "509c46af865d50a09cd7a2c18c9f13974cbdbefc313fc32a8d2f73c9dbb7a870"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A5.png",
+      "sha256": "a0b3a6d1311e79f9815ab51e98db473d8278ff368dac049e89805b1bb41dc3b6"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A5.png",
+      "sha256": "5c76bb40e2350665c685947ccaa1c611a6fa905bdbbe08dbf5b158c277a89838"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A5.png",
+      "sha256": "152f52898e6adbb2cc075980019b8af837c6728e1b67990f11101fa1cd6672fe"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A6.png",
+      "sha256": "84c910ece4157e887830b7b5041b725cbca059e57a800536d5aa086d133a166c"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A6.png",
+      "sha256": "4ca3b7f9023812a06716293b0019c1bf6be1dd2eb5f6d4ca130963e9f2d7326d"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A6.png",
+      "sha256": "9e4198514da700c44ae0cf25a551f64ce43c44aebcffd559661a5c5bacb753ff"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A6.png",
+      "sha256": "0f398c4513101520f8d160c2d94eee415a445a587434d6c965d1b3c06cee52f6"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A6.png",
+      "sha256": "83befc066379d74033eed7fbf0ff45835aea3b5c0f814fe1d3e3a0edb48589ed"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A6.png",
+      "sha256": "d9e764c96c6b027a365803768f2b7563c2acd4cf333d2772cb7cc76aa651e5a2"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A7.png",
+      "sha256": "8c01cabe7721c2e52205c4d771e96003f16dd0f312a199e8346ab552cc1860fd"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A7.png",
+      "sha256": "5291066fc60436cee718480f2ab0187f5ced16c128484233ae3ae3b177a96166"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A7.png",
+      "sha256": "47971d046282cc290faa52b311851127ba8771011c0952006aab1a250a0a61fe"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A7.png",
+      "sha256": "37c730348c6b556be357e653fd5eaf1017db086f34b6c6add256a89d1eab332f"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A7.png",
+      "sha256": "616d768f17a98f7895d8d4d35edaa12e1a9b1692acd8b8a4fa9c199fd7b02188"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A7.png",
+      "sha256": "fd45923e7e3e13266fdd69957afec4aa620c5d7be8620a5730b710e423ec7a57"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A8.png",
+      "sha256": "340423af1a38e579a63c37d34c991cbc5f4b357cebd7b9d09bb386aad90d12c9"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A8.png",
+      "sha256": "8374a62fa333536c14e99540e1258ac17eaa83c1e94e4223cff807a26d9b00ff"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A8.png",
+      "sha256": "b05e692178d903804134f709118258f043841e1e568f88d34fefac40e7b3c18a"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A8.png",
+      "sha256": "38e34147471d1b722c8f2fa81abb10b7b46b310e0cd04994d63879eef8dc9af9"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A8.png",
+      "sha256": "fcccf07c9d4076f828505b26c0412c6f6b05bf4cf88a1009c9b43c4d167e4063"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A8.png",
+      "sha256": "9e8fe6ab876a7095e875ab7081bbdb3c08aec562f3739ea444a7874c1e7af841"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A9.png",
+      "sha256": "49d01372433417d6098bc51ed8496f4c436ea25a40481eb12496d7889b2c07b2"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A9.png",
+      "sha256": "d16dabac83a90f06518787aa06af8e5ff04cc5a23aaebf9adc9d56aa304994d8"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A9.png",
+      "sha256": "e23b03682bec959d324624d8f637747cc20c429eb4e5b7e2a8f927a5917f54f8"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A9.png",
+      "sha256": "1a55f96518ced315069369939867259af2583cd1be6e4ff607950bce10449839"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A9.png",
+      "sha256": "e4c80ae3fc4d3c0446373d47f6f5782b433282681e97a8a3f6f84fa645ddc1da"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A9.png",
+      "sha256": "6e19967147201dc7daa6e592623188b4d9c5a84279eafed9959044515c27e013"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H01-A10.png",
+      "sha256": "5eb9fe8638c24aeabe3ee3087b0c58e38eac6c0100c70309d5333f82f1005ec0"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H02-A10.png",
+      "sha256": "43b40c66b37b11fa70240c9135891d468e0b1dfff675caf0926d1247635c7a7b"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H03-A10.png",
+      "sha256": "dfa165be2f9ee9ffa4b926352463edd92658274ab7d07a00f784e8425e7a404b"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H04-A10.png",
+      "sha256": "c2e22a1a1ebc2bac51f65618c0656b3931aa8bde8c2629597c371d713d238b43"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H05-A10.png",
+      "sha256": "ecaa26cc042426e96f1c2c6d9d057ff086513eefafe902015df45d9342b08499"
+    },
+    {
+      "file": "godot/assets/ui/heroes/H06-A10.png",
+      "sha256": "a64d9897e7c77c257dd64b6416fe28c8f6309606eeb2c1b2b944b9bdc34dd1d4"
+    },
+    {
+      "file": "godot/assets/environment/eras/A1-1.png",
+      "sha256": "6dbbc0d045c848c8a787879e8f62c2f5f3fe2f6bc94517f994da7e4842926573"
+    },
+    {
+      "file": "godot/assets/environment/eras/A1-2.png",
+      "sha256": "1e47548dddc3f6e10161322362d102f1fd639827085cee28c52e7b2ec2287613"
+    },
+    {
+      "file": "godot/assets/environment/eras/A1-3.png",
+      "sha256": "d02a784a2c5ce02638fe5884f8ca7127210b484c396aac10eaa2c02d921a4e44"
+    },
+    {
+      "file": "godot/assets/environment/eras/A2-1.png",
+      "sha256": "ed0b1286bdf48a62c440bf8392fb100960652821be065c0164638505fc643a13"
+    },
+    {
+      "file": "godot/assets/environment/eras/A2-2.png",
+      "sha256": "a1d1a5dcc53d81f7ad6391db30dd1603c40f6309ca1ccd894100bbbb23d428fe"
+    },
+    {
+      "file": "godot/assets/environment/eras/A2-3.png",
+      "sha256": "7ed1238c9564703a9293a26ee2649c494f77bdbb4aa91a24a18fc6fb60f5cf96"
+    },
+    {
+      "file": "godot/assets/environment/eras/A3-1.png",
+      "sha256": "469527052210760009b56ecb37f2cbde60a960456925138117b2ae3513f937f6"
+    },
+    {
+      "file": "godot/assets/environment/eras/A3-2.png",
+      "sha256": "8babaf28f4847e4d33973d5f22bbe4a7e47e3eaf7dec5d65af35e9fe07166f65"
+    },
+    {
+      "file": "godot/assets/environment/eras/A3-3.png",
+      "sha256": "d7f6e2c3c6ac0c3ecf52ef82c430f93b6d0e1536880f9cecf91b3c12025fbefa"
+    },
+    {
+      "file": "godot/assets/environment/eras/A4-1.png",
+      "sha256": "2fa0e8e55939dd8eb9abc9f3dd9e4738faa3c9056cbe46e895e70d10ede64ec3"
+    },
+    {
+      "file": "godot/assets/environment/eras/A4-2.png",
+      "sha256": "8279d52a28a2d28decbeed920444c420d25e97210dde904024470e67cce99127"
+    },
+    {
+      "file": "godot/assets/environment/eras/A4-3.png",
+      "sha256": "4f9720fc2dd06cac44de30b2739c3961f1de80307d29273b2a840f042db327f1"
+    },
+    {
+      "file": "godot/assets/environment/eras/A5-1.png",
+      "sha256": "5cca342dddd40b8a33ab9939116e2738b01b1f48aa933922e61db8791274b403"
+    },
+    {
+      "file": "godot/assets/environment/eras/A5-2.png",
+      "sha256": "6449e6b336befb020fc906457208376588421bf1f1068cd5c1c38572f3bd89c5"
+    },
+    {
+      "file": "godot/assets/environment/eras/A5-3.png",
+      "sha256": "818e8167024c448d981cdceeadcfb24937da745af693e2a8620816452ab2ee0a"
+    },
+    {
+      "file": "godot/assets/environment/eras/A6-1.png",
+      "sha256": "27b132c0c2cff9c8d34d8ea48f50b79235e437d93fdcfd28f26820cd2d543439"
+    },
+    {
+      "file": "godot/assets/environment/eras/A6-2.png",
+      "sha256": "235c4ff54391bc9689149f125e4429afabdbadf8adedb913618b51e7d1ca5370"
+    },
+    {
+      "file": "godot/assets/environment/eras/A6-3.png",
+      "sha256": "46b431f7c5852331efc858cd7e19b7c5ba164130ff4baecf86242f5bc711fe29"
+    },
+    {
+      "file": "godot/assets/environment/eras/A7-1.png",
+      "sha256": "18a57843667112c4f669fd66133a3eb519863c0e3ac9ca8de9abb43063075076"
+    },
+    {
+      "file": "godot/assets/environment/eras/A7-2.png",
+      "sha256": "cf96248178721d95496442a207a4466f02fd2393a8b24ca8308b52891e4b1de9"
+    },
+    {
+      "file": "godot/assets/environment/eras/A7-3.png",
+      "sha256": "58c8d38854e5b3d8553ec556d6ab408ee4027862d99d77d86af039be50d96641"
+    },
+    {
+      "file": "godot/assets/environment/eras/A8-1.png",
+      "sha256": "bb8d551441cd9c1efd10f68754a1bdd61f89b24c759509d302cbc97c487ec5f0"
+    },
+    {
+      "file": "godot/assets/environment/eras/A8-2.png",
+      "sha256": "745e686c9194aeadcfee3e998496b8d65d50782e8d05438c403961eb0a220461"
+    },
+    {
+      "file": "godot/assets/environment/eras/A8-3.png",
+      "sha256": "39493ca89e9735020617ad62524628f76724e25fff06aee2fefb7e2d50073c8e"
+    },
+    {
+      "file": "godot/assets/environment/eras/A9-1.png",
+      "sha256": "c4640800028bbc40f4cffa0cfe41afc0a8f99e0d6950ee0940c63aaf7fddcd7a"
+    },
+    {
+      "file": "godot/assets/environment/eras/A9-2.png",
+      "sha256": "4f4b3dfd700e087dee4461e381177eaa59be614b3ac73f5605b6d6b5069590bd"
+    },
+    {
+      "file": "godot/assets/environment/eras/A9-3.png",
+      "sha256": "e69ed92a38d26694f180b0e2270685769ecd0fea73b398ab73352699e5c3427a"
+    },
+    {
+      "file": "godot/assets/environment/eras/A10-1.png",
+      "sha256": "710a98c01b03908370d5b247b242649e328494124c64ad0317d4b570c18ac226"
+    },
+    {
+      "file": "godot/assets/environment/eras/A10-2.png",
+      "sha256": "0bc788d487c2f261c9d9c2060b7259e27a60fdf1f26f3356379ec1cc537c9969"
+    },
+    {
+      "file": "godot/assets/environment/eras/A10-3.png",
+      "sha256": "9e0dbe8f79afa7455af3b168a5cfda644b9bc884549eddd36776c2781af33e9c"
+    }
+  ],
+  "checks": [
+    "Full idle, walk, attack, hurt, death rows inspected; shared identity and weapon across poses.",
+    "Eleven complete animation sheets regenerated after review; rejected raw sources retained.",
+    "Turret extraction keeps the connected turret and removes neighboring-row fragments.",
+    "Ten map triptychs inspected; each era has three distinct panoramas.",
+    "Native tests verify both palettes, live era changes, texture references and HP fraction."
+  ],
+  "limitations": [
+    "Static ambient cutouts move and rotate at runtime; no newly generated multi-frame wing or propeller atlases.",
+    "Summoned turrets are stationary cutouts with procedural recoil and flash, not thirty-frame character sheets."
+  ]
+}

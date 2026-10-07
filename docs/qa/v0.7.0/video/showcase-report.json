@@ -1,0 +1,79 @@
+{
+	"eras": [
+		{
+			"effectsPeak": 165,
+			"era": "A1",
+			"hero": "H01",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 213,
+			"era": "A2",
+			"hero": "H02",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 195,
+			"era": "A3",
+			"hero": "H03",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 225,
+			"era": "A4",
+			"hero": "H04",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 133,
+			"era": "A5",
+			"hero": "H05",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 149,
+			"era": "A6",
+			"hero": "H06",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 179,
+			"era": "A7",
+			"hero": "H01",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 179,
+			"era": "A8",
+			"hero": "H02",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 195,
+			"era": "A9",
+			"hero": "H03",
+			"neutral": true,
+			"raid": true
+		},
+		{
+			"effectsPeak": 220,
+			"era": "A10",
+			"hero": "H04",
+			"neutral": true,
+			"raid": true
+		}
+	],
+	"failures": [],
+	"fps": 60,
+	"frames": 4890,
+	"passed": true,
+	"source": "Native rendering of shipped Windows embedded PCK with real simulation, animation and audio"
+}

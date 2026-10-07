@@ -1,0 +1,345 @@
+[
+	{
+		"actions": 68,
+		"base_hp": [
+			12000.0,
+			0.0
+		],
+		"enemy_era": 1,
+		"eraTimeline": [
+			{
+				"from": 1,
+				"remainingXp": 2.0,
+				"seconds": 312.033333333333,
+				"side": 0,
+				"to": 2
+			}
+		],
+		"eras": [
+			1,
+			2
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			27,
+			13
+		],
+		"mission": "",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 18,
+		"seconds": 345.9,
+		"seed": 42571,
+		"simulation_ms": 13683,
+		"strategy": "balanced",
+		"winner": 0
+	},
+	{
+		"actions": 208,
+		"base_hp": [
+			0.0,
+			0.0
+		],
+		"enemy_era": 6,
+		"eraTimeline": [
+			{
+				"from": 1,
+				"remainingXp": 3.0,
+				"seconds": 364.033333333333,
+				"side": 0,
+				"to": 2
+			},
+			{
+				"from": 1,
+				"remainingXp": 0.0,
+				"seconds": 366.5,
+				"side": 1,
+				"to": 2
+			},
+			{
+				"from": 2,
+				"remainingXp": 1.0,
+				"seconds": 641.033333333333,
+				"side": 0,
+				"to": 3
+			},
+			{
+				"from": 2,
+				"remainingXp": 11.0,
+				"seconds": 662.5,
+				"side": 1,
+				"to": 3
+			},
+			{
+				"from": 3,
+				"remainingXp": 10.0,
+				"seconds": 978.5,
+				"side": 1,
+				"to": 4
+			},
+			{
+				"from": 3,
+				"remainingXp": 6.0,
+				"seconds": 990.033333333333,
+				"side": 0,
+				"to": 4
+			},
+			{
+				"from": 4,
+				"remainingXp": 19.0,
+				"seconds": 1399.5,
+				"side": 1,
+				"to": 5
+			},
+			{
+				"from": 4,
+				"remainingXp": 7.0,
+				"seconds": 1419.03333333333,
+				"side": 0,
+				"to": 5
+			},
+			{
+				"from": 5,
+				"remainingXp": 1.0,
+				"seconds": 1811.5,
+				"side": 1,
+				"to": 6
+			},
+			{
+				"from": 5,
+				"remainingXp": 37.0,
+				"seconds": 1854.03333333333,
+				"side": 0,
+				"to": 6
+			}
+		],
+		"eras": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			140,
+			124
+		],
+		"mission": "",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 27,
+		"seconds": 1899.0,
+		"seed": 27183,
+		"simulation_ms": 93431,
+		"strategy": "fortify",
+		"winner": 2
+	},
+	{
+		"actions": 69,
+		"base_hp": [
+			12000.0,
+			0.0
+		],
+		"enemy_era": 1,
+		"eraTimeline": [
+			{
+				"from": 1,
+				"remainingXp": 2.0,
+				"seconds": 320.033333333333,
+				"side": 0,
+				"to": 2
+			}
+		],
+		"eras": [
+			1,
+			2
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			27,
+			12
+		],
+		"mission": "",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 20,
+		"seconds": 350.7,
+		"seed": 3107,
+		"simulation_ms": 11736,
+		"strategy": "race",
+		"winner": 0
+	},
+	{
+		"actions": 61,
+		"base_hp": [
+			12000.0,
+			0.0
+		],
+		"enemy_era": 1,
+		"eraTimeline": [
+			{
+				"from": 1,
+				"remainingXp": 6.0,
+				"seconds": 262.033333333333,
+				"side": 0,
+				"to": 2
+			}
+		],
+		"eras": [
+			1,
+			2
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			27,
+			14
+		],
+		"mission": "M01",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 21,
+		"seconds": 281.366666666667,
+		"seed": 48711,
+		"simulation_ms": 8294,
+		"strategy": "balanced",
+		"winner": 0
+	},
+	{
+		"actions": 187,
+		"base_hp": [
+			0.0,
+			300000.0
+		],
+		"enemy_era": 4,
+		"eraTimeline": [
+			{
+				"from": 3,
+				"remainingXp": 13.0,
+				"seconds": 369.5,
+				"side": 1,
+				"to": 4
+			},
+			{
+				"from": 3,
+				"remainingXp": 1.0,
+				"seconds": 370.033333333333,
+				"side": 0,
+				"to": 4
+			}
+		],
+		"eras": [
+			3,
+			4
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			71,
+			98
+		],
+		"mission": "M06",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 27,
+		"seconds": 1543.4,
+		"seed": 98173,
+		"simulation_ms": 93808,
+		"strategy": "balanced",
+		"winner": 1
+	},
+	{
+		"actions": 268,
+		"base_hp": [
+			0.0,
+			28101564.0
+		],
+		"enemy_era": 9,
+		"eraTimeline": [
+			{
+				"from": 8,
+				"remainingXp": 5.0,
+				"seconds": 232.5,
+				"side": 1,
+				"to": 9
+			},
+			{
+				"from": 8,
+				"remainingXp": 16.0,
+				"seconds": 238.033333333333,
+				"side": 0,
+				"to": 9
+			}
+		],
+		"eras": [
+			8,
+			9
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			122,
+			142
+		],
+		"mission": "M15",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 16,
+		"seconds": 1858.0,
+		"seed": 31597,
+		"simulation_ms": 21723,
+		"strategy": "race",
+		"winner": 1
+	},
+	{
+		"actions": 66,
+		"base_hp": [
+			0.0,
+			4687500000.0
+		],
+		"enemy_era": 10,
+		"eraTimeline": [],
+		"eras": [
+			10
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			27,
+			31
+		],
+		"mission": "M19",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 19,
+		"seconds": 539.4,
+		"seed": 51373,
+		"simulation_ms": 7959,
+		"strategy": "balanced",
+		"winner": 1
+	},
+	{
+		"actions": 229,
+		"base_hp": [
+			0.0,
+			4687500000.0
+		],
+		"enemy_era": 10,
+		"eraTimeline": [],
+		"eras": [
+			10
+		],
+		"ground_overlaps": 0,
+		"kills": [
+			95,
+			148
+		],
+		"mission": "M20",
+		"normal_route_jumps": 0,
+		"occupancy_checked_every_tick": true,
+		"peak": 26,
+		"seconds": 1596.56666666667,
+		"seed": 81731,
+		"simulation_ms": 94222,
+		"strategy": "fortify",
+		"winner": 1
+	}
+]

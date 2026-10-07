@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "sourceKey": "unit.U24",
+  "size": [
+    384,
+    384
+  ],
+  "visibleBounds": [
+    13,
+    116,
+    366,
+    346
+  ],
+  "bodyTop": 184.32,
+  "anchor": [
+    0.5,
+    0.9
+  ],
+  "motionClass": "chariot",
+  "parts": [
+    {
+      "key": "rig.U24.body",
+      "role": "body",
+      "bounds": [
+        13,
+        116,
+        366,
+        345
+      ],
+      "pivot": [
+        192.0,
+        345.6
+      ]
+    },
+    {
+      "key": "rig.U24.head",
+      "role": "head",
+      "bounds": [
+        119,
+        184,
+        158,
+        231
+      ],
+      "pivot": [
+        138.24,
+        230.39999999999998
+      ]
+    },
+    {
+      "key": "rig.U24.weapon",
+      "role": "weapon",
+      "bounds": [
+        161,
+        201,
+        296,
+        265
+      ],
+      "pivot": [
+        165.12,
+        241.92000000000002
+      ]
+    },
+    {
+      "key": "rig.U24.leg0",
+      "role": "leg0",
+      "bounds": [
+        192,
+        307,
+        235,
+        346
+      ],
+      "pivot": [
+        213.11999999999998,
+        311.808
+      ]
+    },
+    {
+      "key": "rig.U24.leg1",
+      "role": "leg1",
+      "bounds": [
+        235,
+        307,
+        277,
+        346
+      ],
+      "pivot": [
+        255.36,
+        311.808
+      ]
+    },
+    {
+      "key": "rig.U24.leg2",
+      "role": "leg2",
+      "bounds": [
+        277,
+        307,
+        319,
+        346
+      ],
+      "pivot": [
+        297.59999999999997,
+        311.808
+      ]
+    },
+    {
+      "key": "rig.U24.leg3",
+      "role": "leg3",
+      "bounds": [
+        319,
+        307,
+        361,
+        346
+      ],
+      "pivot": [
+        339.84000000000003,
+        311.808
+      ]
+    },
+    {
+      "key": "rig.U24.wheel",
+      "role": "wheel",
+      "bounds": [
+        46,
+        276,
+        139,
+        346
+      ],
+      "pivot": [
+        92.544,
+        311.808
+      ]
+    },
+    {
+      "key": "rig.U24.cloth",
+      "role": "cloth",
+      "bounds": [
+        13,
+        180,
+        93,
+        227
+      ],
+      "pivot": [
+        92.16,
+        184.32
+      ]
+    }
+  ],
+  "clips": {
+    "idle": {
+      "periodSec": 2.4
+    },
+    "move": {
+      "stride": 65
+    },
+    "windup": {
+      "weaponAngle": -12
+    },
+    "release": {
+      "weaponAngle": 8,
+      "recoil": 7
+    },
+    "hit": {
+      "flashMs": 75
+    },
+    "dead": {
+      "durationSec": 0.8
+    },
+    "skill": {
+      "leanAngle": 7
+    },
+    "respawn": {
+      "fadeSec": 0.35
+    }
+  }
+}

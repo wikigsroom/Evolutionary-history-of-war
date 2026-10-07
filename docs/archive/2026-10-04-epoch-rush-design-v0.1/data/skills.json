@@ -1,0 +1,457 @@
+[
+  {
+    "id": "S01",
+    "name": "盾墙投射",
+    "category": "common",
+    "commandCost": 30,
+    "cooldownSec": 18,
+    "damageType": "physical",
+    "damageBase": 0,
+    "radius": 160,
+    "maxTargets": 8,
+    "statusIds": [
+      "ST07"
+    ],
+    "castRange": 560,
+    "description": "附近友军获得20%最大生命护盾，6秒",
+    "allowedTarget": "ally_area",
+    "canDamageBase": false,
+    "unlock": "initial",
+    "effects": {
+      "shieldHpRatio": 0.2,
+      "durationSec": 6
+    },
+    "targetMode": "ally_area"
+  },
+  {
+    "id": "S02",
+    "name": "战鼓鼓动",
+    "category": "common",
+    "commandCost": 25,
+    "cooldownSec": 18,
+    "damageType": "physical",
+    "damageBase": 0,
+    "radius": 160,
+    "maxTargets": 8,
+    "statusIds": [
+      "ST08"
+    ],
+    "castRange": 560,
+    "description": "附近友军攻击速度 +15%，5秒",
+    "allowedTarget": "ally_area",
+    "canDamageBase": false,
+    "unlock": "initial",
+    "effects": {
+      "attackSpeedBonus": 0.15,
+      "durationSec": 5
+    },
+    "targetMode": "ally_area"
+  },
+  {
+    "id": "S03",
+    "name": "箭幕",
+    "category": "common",
+    "commandCost": 30,
+    "cooldownSec": 20,
+    "damageType": "physical",
+    "damageBase": 24,
+    "radius": 110,
+    "maxTargets": 3,
+    "statusIds": [],
+    "castRange": 560,
+    "description": "三轮箭幕，间隔0.2秒；每轮每目标基础24伤害，至多三目标",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": true,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "burstCount": 3,
+      "burstSpacingSec": 0.2
+    },
+    "targetMode": "enemy_area"
+  },
+  {
+    "id": "S04",
+    "name": "破甲弹",
+    "category": "common",
+    "commandCost": 25,
+    "cooldownSec": 16,
+    "damageType": "physical",
+    "damageBase": 32,
+    "radius": 48,
+    "maxTargets": 1,
+    "statusIds": [
+      "ST01"
+    ],
+    "castRange": 560,
+    "description": "命中后施加25%破甲，4秒，首发自身不享受该破甲",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": true,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "armorBreakMagnitude": 0.25,
+      "durationSec": 4,
+      "statusAfterDamage": true
+    },
+    "targetMode": "enemy_entity"
+  },
+  {
+    "id": "S05",
+    "name": "集束轰击",
+    "category": "common",
+    "commandCost": 35,
+    "cooldownSec": 26,
+    "damageType": "blast",
+    "damageBase": 72,
+    "radius": 110,
+    "maxTargets": 5,
+    "statusIds": [],
+    "castRange": 560,
+    "description": "对破甲目标条件伤害 +20%，不再额外触发第二次爆炸",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": true,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "conditionalStatusId": "ST01",
+      "conditionalDamageBonus": 0.2
+    },
+    "targetMode": "enemy_area"
+  },
+  {
+    "id": "S06",
+    "name": "共振网",
+    "category": "common",
+    "commandCost": 30,
+    "cooldownSec": 22,
+    "damageType": "energy",
+    "damageBase": 12,
+    "radius": 110,
+    "maxTargets": 5,
+    "statusIds": [
+      "ST03",
+      "ST05"
+    ],
+    "castRange": 560,
+    "description": "减速30%持续3秒，导电持续6秒；状态在首发伤害后施加",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": false,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "slowMagnitude": 0.3,
+      "slowDurationSec": 3,
+      "conductiveDurationSec": 6,
+      "statusAfterDamage": true
+    },
+    "targetMode": "enemy_area"
+  },
+  {
+    "id": "S07",
+    "name": "脉冲链",
+    "category": "common",
+    "commandCost": 35,
+    "cooldownSec": 24,
+    "damageType": "energy",
+    "damageBase": 54,
+    "radius": 0,
+    "maxTargets": 3,
+    "statusIds": [],
+    "castRange": 560,
+    "description": "主链最多3目标，倍率1/0.7/0.49；导电支链遵守6目标总上限",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": true,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "mainChainDamageFactors": [
+        1,
+        0.7,
+        0.49
+      ],
+      "mainChainMaxTargets": 3
+    },
+    "targetMode": "enemy_area"
+  },
+  {
+    "id": "S08",
+    "name": "引火罐",
+    "category": "common",
+    "commandCost": 25,
+    "cooldownSec": 18,
+    "damageType": "blast",
+    "damageBase": 18,
+    "radius": 75,
+    "maxTargets": 4,
+    "statusIds": [
+      "ST06"
+    ],
+    "castRange": 560,
+    "description": "初始爆炸后施加基础12每秒燃烧，共4秒",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": true,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "dotDamageBasePerSec": 12,
+      "durationSec": 4
+    },
+    "targetMode": "enemy_area"
+  },
+  {
+    "id": "S09",
+    "name": "回旋气浪",
+    "category": "common",
+    "commandCost": 30,
+    "cooldownSec": 24,
+    "damageType": "physical",
+    "damageBase": 16,
+    "radius": 100,
+    "maxTargets": 4,
+    "statusIds": [
+      "ST09"
+    ],
+    "castRange": 560,
+    "description": "向施法中心拉拢最多70逻辑单位；重型仅20%，英雄50%",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": false,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "displacement": "pull",
+      "maxDistance": 70,
+      "heavyMultiplier": 0.2,
+      "heroMultiplier": 0.5,
+      "staggerSec": 0.1
+    },
+    "targetMode": "enemy_area"
+  },
+  {
+    "id": "S10",
+    "name": "测距标记",
+    "category": "common",
+    "commandCost": 20,
+    "cooldownSec": 14,
+    "damageType": "physical",
+    "damageBase": 0,
+    "radius": 60,
+    "maxTargets": 1,
+    "statusIds": [
+      "ST04"
+    ],
+    "castRange": 560,
+    "description": "4秒内接下来4次物理/穿刺投射命中条件伤害 +15%",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": false,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "markCharges": 4,
+      "durationSec": 4,
+      "conditionalDamageBonus": 0.15,
+      "allowedDamageTypes": [
+        "physical",
+        "pierce"
+      ]
+    },
+    "targetMode": "enemy_entity"
+  },
+  {
+    "id": "S11",
+    "name": "烟幕掩护",
+    "category": "common",
+    "commandCost": 25,
+    "cooldownSec": 22,
+    "damageType": "physical",
+    "damageBase": 0,
+    "radius": 160,
+    "maxTargets": 8,
+    "statusIds": [
+      "ST10"
+    ],
+    "castRange": 560,
+    "description": "附近友军受到投射物伤害降低20%，5秒",
+    "allowedTarget": "ally_area",
+    "canDamageBase": false,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "projectileReduction": 0.2,
+      "durationSec": 5
+    },
+    "targetMode": "ally_area"
+  },
+  {
+    "id": "S12",
+    "name": "急行军令",
+    "category": "common",
+    "commandCost": 25,
+    "cooldownSec": 20,
+    "damageType": "physical",
+    "damageBase": 0,
+    "radius": 180,
+    "maxTargets": 8,
+    "statusIds": [],
+    "castRange": 560,
+    "description": "友军移动 +20%，5秒；当前训练剩余时间减少15%，同一项目仅一次",
+    "allowedTarget": "ally_area",
+    "canDamageBase": false,
+    "unlock": "tutorial_complete",
+    "effects": {
+      "moveBonus": 0.2,
+      "durationSec": 5,
+      "queueRemainingReduction": 0.15,
+      "oncePerQueueItem": true
+    },
+    "targetMode": "ally_area"
+  },
+  {
+    "id": "HS01",
+    "name": "贯阵冲锋",
+    "category": "signature",
+    "heroId": "H01",
+    "commandCost": 45,
+    "cooldownSec": 24,
+    "damageType": "physical",
+    "damageBase": 90,
+    "maxTargets": 3,
+    "castRange": 560,
+    "radius": 160,
+    "statusIds": [
+      "ST09"
+    ],
+    "description": "向前冲锋200，最多命中3敌；不能穿过基地或因冲锋离开安全边界",
+    "allowedTarget": "self",
+    "canDamageBase": true,
+    "effects": {
+      "chargeDistance": 200,
+      "chargeSec": 0.6,
+      "knockbackDistance": 60,
+      "maxContacts": 3
+    },
+    "targetMode": "direction_self"
+  },
+  {
+    "id": "HS02",
+    "name": "连星齐射",
+    "category": "signature",
+    "heroId": "H02",
+    "commandCost": 45,
+    "cooldownSec": 28,
+    "damageType": "pierce",
+    "damageBase": 38,
+    "maxTargets": 1,
+    "castRange": 560,
+    "radius": 160,
+    "statusIds": [],
+    "description": "三发专属箭，首要目标相同；标记计数每次命中消耗一次",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": true,
+    "effects": {
+      "shotCount": 3,
+      "shotSpacingSec": 0.2
+    },
+    "targetMode": "enemy_entity"
+  },
+  {
+    "id": "HS03",
+    "name": "城垒誓卫",
+    "category": "signature",
+    "heroId": "H03",
+    "commandCost": 50,
+    "cooldownSec": 32,
+    "damageType": "physical",
+    "damageBase": 0,
+    "maxTargets": 8,
+    "castRange": 560,
+    "radius": 160,
+    "statusIds": [
+      "ST07"
+    ],
+    "description": "自身及附近友军获得25%最大生命护盾，6秒，最高总护盾30%",
+    "allowedTarget": "self",
+    "canDamageBase": false,
+    "effects": {
+      "shieldHpRatio": 0.25,
+      "durationSec": 6,
+      "includeHero": true
+    },
+    "targetMode": "self"
+  },
+  {
+    "id": "HS04",
+    "name": "折叠炮台",
+    "category": "signature",
+    "heroId": "H04",
+    "commandCost": 50,
+    "cooldownSec": 35,
+    "damageType": "physical",
+    "damageBase": 0,
+    "maxTargets": 1,
+    "castRange": 560,
+    "radius": 160,
+    "statusIds": [],
+    "description": "部署一座占普通兵槽的炮台，持续12秒，基础HP220/攻击18/射程280/攻击周期1秒；同侧只能一座",
+    "allowedTarget": "ally_area",
+    "canDamageBase": false,
+    "effects": {
+      "summon": {
+        "durationSec": 12,
+        "hpBase": 220,
+        "attackBase": 18,
+        "armor": 8,
+        "range": 280,
+        "attackPeriodSec": 1,
+        "damageType": "physical",
+        "weaponId": "W04",
+        "populationCost": 1,
+        "maximumPerSide": 1,
+        "bountyGold": 0,
+        "killKnowledge": 0
+      }
+    },
+    "targetMode": "ally_point"
+  },
+  {
+    "id": "HS05",
+    "name": "裂隙场",
+    "category": "signature",
+    "heroId": "H05",
+    "commandCost": 60,
+    "cooldownSec": 38,
+    "damageType": "energy",
+    "damageBase": 10,
+    "maxTargets": 5,
+    "castRange": 560,
+    "radius": 110,
+    "statusIds": [
+      "ST03"
+    ],
+    "description": "半径110，持续6秒，每秒基础10伤害；减速30%，最多5目标",
+    "allowedTarget": "enemy_area",
+    "canDamageBase": true,
+    "effects": {
+      "fieldDurationSec": 6,
+      "tickIntervalSec": 1,
+      "slowMagnitude": 0.3,
+      "slowRefreshDurationSec": 1
+    },
+    "targetMode": "enemy_area"
+  },
+  {
+    "id": "HS06",
+    "name": "行军补给",
+    "category": "signature",
+    "heroId": "H06",
+    "commandCost": 50,
+    "cooldownSec": 30,
+    "damageType": "physical",
+    "damageBase": 0,
+    "maxTargets": 5,
+    "castRange": 560,
+    "radius": 160,
+    "statusIds": [],
+    "description": "获得60军资；当前训练剩余时间减少25%；治疗附近友军15%最大生命，至多5目标",
+    "allowedTarget": "self",
+    "canDamageBase": false,
+    "effects": {
+      "goldFlat": 60,
+      "healHpRatio": 0.15,
+      "queueRemainingReduction": 0.25,
+      "oncePerQueueItem": true
+    },
+    "targetMode": "self"
+  }
+]

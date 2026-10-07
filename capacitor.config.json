@@ -1,0 +1,8 @@
+{
+  "appId":"studio.epochrush.game",
+  "appName":"一线万年",
+  "webDir":"dist",
+  "server":{"androidScheme":"https"},
+  "android":{"backgroundColor":"#102333","allowMixedContent":false,"captureInput":true},
+  "ios":{"backgroundColor":"#102333","contentInset":"never","allowsLinkPreview":false,"preferredContentMode":"mobile"}
+}

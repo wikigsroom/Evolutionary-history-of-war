@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ST01",
+    "name": "破甲",
+    "magnitude": 0.25,
+    "defaultDurationSec": 4,
+    "stackRule": "strongest_refresh",
+    "effectKind": "armor_reduce"
+  },
+  {
+    "id": "ST02",
+    "name": "压制",
+    "magnitude": 0.2,
+    "defaultDurationSec": 4,
+    "stackRule": "strongest_refresh",
+    "effectKind": "attack_speed_reduce"
+  },
+  {
+    "id": "ST03",
+    "name": "迟缓",
+    "magnitude": 0.3,
+    "defaultDurationSec": 3,
+    "stackRule": "strongest_refresh",
+    "effectKind": "movement_reduce"
+  },
+  {
+    "id": "ST04",
+    "name": "标记",
+    "magnitude": 0.15,
+    "defaultDurationSec": 4,
+    "stackRule": "replace_charges_4",
+    "effectKind": "conditional_projectile_damage"
+  },
+  {
+    "id": "ST05",
+    "name": "导电",
+    "magnitude": 0.4,
+    "defaultDurationSec": 6,
+    "stackRule": "refresh_one_trigger",
+    "effectKind": "energy_chain_extra_one"
+  },
+  {
+    "id": "ST06",
+    "name": "燃烧",
+    "magnitude": 12,
+    "defaultDurationSec": 4,
+    "stackRule": "strongest_refresh",
+    "effectKind": "dot_base_per_sec"
+  },
+  {
+    "id": "ST07",
+    "name": "护盾",
+    "magnitude": 0.2,
+    "defaultDurationSec": 6,
+    "stackRule": "sum_with_hp_cap_0.30",
+    "effectKind": "absorb_damage"
+  },
+  {
+    "id": "ST08",
+    "name": "鼓舞",
+    "magnitude": 0.15,
+    "defaultDurationSec": 5,
+    "stackRule": "strongest_refresh",
+    "effectKind": "attack_speed_add"
+  },
+  {
+    "id": "ST09",
+    "name": "硬直",
+    "magnitude": 0.1,
+    "defaultDurationSec": 0.1,
+    "stackRule": "immune_2sec_after",
+    "effectKind": "interrupt_windup"
+  },
+  {
+    "id": "ST10",
+    "name": "烟幕",
+    "magnitude": 0.2,
+    "defaultDurationSec": 5,
+    "stackRule": "strongest_refresh",
+    "effectKind": "projectile_reduction"
+  }
+]

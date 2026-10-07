@@ -1,0 +1,281 @@
+[
+  {
+    "id": "R21",
+    "eraId": "A2",
+    "name": "青铜城邦 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A2"
+  },
+  {
+    "id": "R22",
+    "eraId": "A2",
+    "name": "青铜城邦 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A2"
+  },
+  {
+    "id": "R23",
+    "eraId": "A2",
+    "name": "青铜城邦 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A2"
+  },
+  {
+    "id": "R31",
+    "eraId": "A3",
+    "name": "古典帝国 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A3"
+  },
+  {
+    "id": "R32",
+    "eraId": "A3",
+    "name": "古典帝国 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A3"
+  },
+  {
+    "id": "R33",
+    "eraId": "A3",
+    "name": "古典帝国 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A3"
+  },
+  {
+    "id": "R41",
+    "eraId": "A4",
+    "name": "中世纪王国 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A4"
+  },
+  {
+    "id": "R42",
+    "eraId": "A4",
+    "name": "中世纪王国 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A4"
+  },
+  {
+    "id": "R43",
+    "eraId": "A4",
+    "name": "中世纪王国 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A4"
+  },
+  {
+    "id": "R51",
+    "eraId": "A5",
+    "name": "火药列阵 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A5"
+  },
+  {
+    "id": "R52",
+    "eraId": "A5",
+    "name": "火药列阵 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A5"
+  },
+  {
+    "id": "R53",
+    "eraId": "A5",
+    "name": "火药列阵 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A5"
+  },
+  {
+    "id": "R61",
+    "eraId": "A6",
+    "name": "工业战壕 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A6"
+  },
+  {
+    "id": "R62",
+    "eraId": "A6",
+    "name": "工业战壕 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A6"
+  },
+  {
+    "id": "R63",
+    "eraId": "A6",
+    "name": "工业战壕 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A6"
+  },
+  {
+    "id": "R71",
+    "eraId": "A7",
+    "name": "二战钢盔 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A7"
+  },
+  {
+    "id": "R72",
+    "eraId": "A7",
+    "name": "二战钢盔 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A7"
+  },
+  {
+    "id": "R73",
+    "eraId": "A7",
+    "name": "二战钢盔 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A7"
+  },
+  {
+    "id": "R81",
+    "eraId": "A8",
+    "name": "现代机械化 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A8"
+  },
+  {
+    "id": "R82",
+    "eraId": "A8",
+    "name": "现代机械化 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A8"
+  },
+  {
+    "id": "R83",
+    "eraId": "A8",
+    "name": "现代机械化 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A8"
+  },
+  {
+    "id": "R91",
+    "eraId": "A9",
+    "name": "无人战术 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A9"
+  },
+  {
+    "id": "R92",
+    "eraId": "A9",
+    "name": "无人战术 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A9"
+  },
+  {
+    "id": "R93",
+    "eraId": "A9",
+    "name": "无人战术 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A9"
+  },
+  {
+    "id": "R101",
+    "eraId": "A10",
+    "name": "轨道文明 · 军团锋刃",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A10"
+  },
+  {
+    "id": "R102",
+    "eraId": "A10",
+    "name": "轨道文明 · 坚守阵线",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A10"
+  },
+  {
+    "id": "R103",
+    "eraId": "A10",
+    "name": "轨道文明 · 战术补给",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A10"
+  }
+]

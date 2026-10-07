@@ -1,0 +1,70 @@
+{
+	"capture_slices": [
+		{
+			"listener": [
+				300.0,
+				1056.31067961165
+			],
+			"signal": {
+				"left_energy": 57.0988461690951,
+				"peak": 0.428437560796738,
+				"right_energy": 13.2369052961594,
+				"samples": 57344
+			},
+			"test": "pan",
+			"voice": {
+				"cue": "flesh_hit",
+				"gain": 0.8,
+				"pan": -0.35,
+				"path": "res://assets/audio/sfx/flesh_hit_02.wav",
+				"pitch": 0.98199999332428,
+				"voice": 4
+			},
+			"x": 300.0
+		},
+		{
+			"listener": [
+				300.0,
+				1056.31067961165
+			],
+			"signal": {
+				"left_energy": 13.7658521207342,
+				"peak": 0.428123563528061,
+				"right_energy": 59.3805167074135,
+				"samples": 59392
+			},
+			"test": "pan",
+			"voice": {
+				"cue": "flesh_hit",
+				"gain": 0.8,
+				"pan": 0.35,
+				"path": "res://assets/audio/sfx/flesh_hit_03.wav",
+				"pitch": 1.01800000667572,
+				"voice": 4
+			},
+			"x": 1356.31067961165
+		},
+		{
+			"signal": {
+				"left_energy": 0.0,
+				"peak": 0.0,
+				"right_energy": 0.0,
+				"samples": 38912
+			},
+			"test": "master_zero"
+		}
+	],
+	"checks": 265,
+	"driver_setting": "WASAPI",
+	"failures": [],
+	"mix_bytes": 14827520,
+	"passed": true,
+	"sample_rate": 48000.0,
+	"stats": {
+		"culled": 0,
+		"merged": 54,
+		"missing": 0,
+		"preempted": 0,
+		"started": 71
+	}
+}

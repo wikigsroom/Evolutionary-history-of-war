@@ -1,0 +1,2181 @@
+{
+  "version": 2,
+  "sample_rate": 48000,
+  "music": {
+    "menu": {
+      "path": "res://assets/audio/music/menu.ogg",
+      "loop": true,
+      "source_ids": [
+        "relax"
+      ],
+      "style": "温暖拨弦 · 整军待发",
+      "duration": 62.67858,
+      "target_lufs": -20,
+      "peak": 0.414,
+      "source_loudness": {
+        "input_i": "-12.34",
+        "input_tp": "0.01",
+        "input_lra": "3.50",
+        "input_thresh": "-22.75",
+        "output_i": "-19.70",
+        "output_tp": "-5.83",
+        "output_lra": "2.80",
+        "output_thresh": "-30.05",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.30"
+      },
+      "sha256": "1875cb9afaf59a2999563282aa0220eb52dd4203edf966f5a7e89c53926017d7"
+    },
+    "age1": {
+      "path": "res://assets/audio/music/age1.ogg",
+      "loop": true,
+      "source_ids": [
+        "krakatoa"
+      ],
+      "style": "部落打击乐 · 木质与兽皮",
+      "duration": 72.0,
+      "target_lufs": -19,
+      "peak": 0.61359,
+      "source_loudness": {
+        "input_i": "-17.16",
+        "input_tp": "-2.40",
+        "input_lra": "2.40",
+        "input_thresh": "-27.16",
+        "output_i": "-19.31",
+        "output_tp": "-4.45",
+        "output_lra": "2.10",
+        "output_thresh": "-29.31",
+        "normalization_type": "dynamic",
+        "target_offset": "0.31"
+      },
+      "sha256": "aa1bcbb28060bed211cce6e8d75a7469cefcf0f2a8d0513fca9de2e1e3629c6d"
+    },
+    "age2": {
+      "path": "res://assets/audio/music/age2.ogg",
+      "loop": true,
+      "source_ids": [
+        "epic-march"
+      ],
+      "style": "军阵行进 · 低鼓与铜管",
+      "duration": 43.5825,
+      "target_lufs": -19,
+      "peak": 0.39264,
+      "source_loudness": {
+        "input_i": "-10.88",
+        "input_tp": "0.05",
+        "input_lra": "7.50",
+        "input_thresh": "-20.88",
+        "output_i": "-19.37",
+        "output_tp": "-6.85",
+        "output_lra": "7.30",
+        "output_thresh": "-29.37",
+        "normalization_type": "dynamic",
+        "target_offset": "0.37"
+      },
+      "sha256": "7518e57ad8dc5270e6746be2ac01748844892dfb12106424e9f829932b69918e"
+    },
+    "age3": {
+      "path": "res://assets/audio/music/age3.ogg",
+      "loop": true,
+      "source_ids": [
+        "hope"
+      ],
+      "style": "王国冲锋 · 管弦与军鼓",
+      "duration": 69.81819,
+      "target_lufs": -19,
+      "peak": 0.36392,
+      "source_loudness": {
+        "input_i": "-10.22",
+        "input_tp": "0.03",
+        "input_lra": "2.80",
+        "input_thresh": "-20.22",
+        "output_i": "-18.45",
+        "output_tp": "-6.86",
+        "output_lra": "1.80",
+        "output_thresh": "-28.45",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.55"
+      },
+      "sha256": "c32eee27cbdebbfc8a0aa9745fc18c44fec26c6fde3b0b583795c5219a64358f"
+    },
+    "age4": {
+      "path": "res://assets/audio/music/age4.ogg",
+      "loop": true,
+      "source_ids": [
+        "8bit-battle"
+      ],
+      "style": "工业脉冲 · 机械与芯片节奏",
+      "duration": 26.65,
+      "target_lufs": -19,
+      "peak": 0.42477,
+      "source_loudness": {
+        "input_i": "-17.54",
+        "input_tp": "-5.98",
+        "input_lra": "1.30",
+        "input_thresh": "-27.54",
+        "output_i": "-18.89",
+        "output_tp": "-7.23",
+        "output_lra": "1.20",
+        "output_thresh": "-28.89",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.11"
+      },
+      "sha256": "e83a8de134fb74bcc3ccd5656ce1d1b806ba868ecb2d2ce15f4eaea038d86135"
+    },
+    "age5": {
+      "path": "res://assets/audio/music/age5.ogg",
+      "loop": true,
+      "source_ids": [
+        "awake"
+      ],
+      "style": "星际决战 · 电子与碎拍",
+      "duration": 57.31344,
+      "target_lufs": -19,
+      "peak": 0.52963,
+      "source_loudness": {
+        "input_i": "-13.48",
+        "input_tp": "0.01",
+        "input_lra": "0.70",
+        "input_thresh": "-23.48",
+        "output_i": "-19.05",
+        "output_tp": "-5.53",
+        "output_lra": "0.60",
+        "output_thresh": "-29.05",
+        "normalization_type": "dynamic",
+        "target_offset": "0.05"
+      },
+      "sha256": "6211c2682220371367c29ab644c9e2b691e3f982aaebd0bcc65b8b14f954e5e9"
+    },
+    "victory": {
+      "path": "res://assets/audio/music/victory.ogg",
+      "loop": false,
+      "source_ids": [
+        "kenney-jingles"
+      ],
+      "style": "原创结算短句 + CC0 拨弦质感",
+      "duration": 1.26,
+      "peak": 0.55,
+      "sha256": "608dcfc8d8ca1cd0fa71995adb3f2b5fc01cbca8c227a7681721a80910ed3a9a"
+    },
+    "defeat": {
+      "path": "res://assets/audio/music/defeat.ogg",
+      "loop": false,
+      "source_ids": [
+        "kenney-jingles"
+      ],
+      "style": "原创结算短句 + CC0 拨弦质感",
+      "duration": 1.26,
+      "peak": 0.55,
+      "sha256": "2e0e4aceb31cc8d99275f3dc840e92e76909039986869214664e08e2e6b44465"
+    },
+    "draw": {
+      "path": "res://assets/audio/music/draw.ogg",
+      "loop": false,
+      "source_ids": [
+        "kenney-jingles"
+      ],
+      "style": "原创结算短句 + CC0 拨弦质感",
+      "duration": 1.04,
+      "peak": 0.55,
+      "sha256": "0a3fe7395aa3421f64a275f549e9f240fdbfd547147b1f12f8f01387df1d38f2"
+    }
+  },
+  "cues": {
+    "ui_confirm": {
+      "bus": "UI",
+      "priority": 40,
+      "cooldown_ms": 45,
+      "gain": 0.62,
+      "variants": [
+        "res://assets/audio/sfx/ui_confirm.wav",
+        "res://assets/audio/sfx/ui_confirm_02.wav",
+        "res://assets/audio/sfx/ui_confirm_03.wav"
+      ],
+      "files": [
+        {
+          "file": "ui_confirm.wav",
+          "duration": 0.135,
+          "peak": 0.74,
+          "rms": 0.05284,
+          "sha256": "47f90549a4d423b69f15300fc2ae46cc734df18e6122d76ef6a298a55cee5abd"
+        },
+        {
+          "file": "ui_confirm_02.wav",
+          "duration": 0.135,
+          "peak": 0.74,
+          "rms": 0.09732,
+          "sha256": "fa29eba74023bb5f9c42c5ce62251262b15019f999204392939a3e599695b6f2"
+        },
+        {
+          "file": "ui_confirm_03.wav",
+          "duration": 0.135,
+          "peak": 0.74,
+          "rms": 0.09157,
+          "sha256": "5af12b8865e95fcda827225751c3c0d8800d76b8c0054f71ecb463eadcb84290"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-interface/extracted/Audio/click_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/click_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/click_003.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "ui_cancel": {
+      "bus": "UI",
+      "priority": 40,
+      "cooldown_ms": 45,
+      "gain": 0.58,
+      "variants": [
+        "res://assets/audio/sfx/ui_cancel.wav",
+        "res://assets/audio/sfx/ui_cancel_02.wav",
+        "res://assets/audio/sfx/ui_cancel_03.wav"
+      ],
+      "files": [
+        {
+          "file": "ui_cancel.wav",
+          "duration": 0.0622,
+          "peak": 0.74,
+          "rms": 0.05943,
+          "sha256": "67a29cff1da1ac73bf2f145a393a700e680472ba258040c77b92275c5d3d9867"
+        },
+        {
+          "file": "ui_cancel_02.wav",
+          "duration": 0.0784,
+          "peak": 0.74,
+          "rms": 0.1307,
+          "sha256": "fab087a0cc0b7655a21f39b62ffe574c7284ba6a2513b64bf7ffdc5a2126f43c"
+        },
+        {
+          "file": "ui_cancel_03.wav",
+          "duration": 0.068,
+          "peak": 0.74,
+          "rms": 0.0968,
+          "sha256": "37d9cb8a17f9b49777ef64602fe714ea5f28b66fe545aab232b50c6d342f73a2"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-interface/extracted/Audio/back_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/back_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/back_003.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "ui_error": {
+      "bus": "UI",
+      "priority": 85,
+      "cooldown_ms": 160,
+      "gain": 0.78,
+      "variants": [
+        "res://assets/audio/sfx/ui_error.wav",
+        "res://assets/audio/sfx/ui_error_02.wav",
+        "res://assets/audio/sfx/ui_error_03.wav"
+      ],
+      "files": [
+        {
+          "file": "ui_error.wav",
+          "duration": 0.19,
+          "peak": 0.74,
+          "rms": 0.08833,
+          "sha256": "712a02aeee700f5fb66bea1ca8969420c2029c9784a07f1ef9197dc49e991022"
+        },
+        {
+          "file": "ui_error_02.wav",
+          "duration": 0.19,
+          "peak": 0.74,
+          "rms": 0.09339,
+          "sha256": "c5dbdfcecbae3666b6cdc90a72d42f099e251e891becf22576f6d770aa4626bc"
+        },
+        {
+          "file": "ui_error_03.wav",
+          "duration": 0.36,
+          "peak": 0.74,
+          "rms": 0.09225,
+          "sha256": "e738847a756aa22a5ff48eba0a8cacc22d06af57e618cce835c1bd023defd769"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-interface/extracted/Audio/error_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/error_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/error_003.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "queue_add": {
+      "bus": "UI",
+      "priority": 50,
+      "cooldown_ms": 70,
+      "gain": 0.62,
+      "variants": [
+        "res://assets/audio/sfx/queue_add.wav",
+        "res://assets/audio/sfx/queue_add_02.wav",
+        "res://assets/audio/sfx/queue_add_03.wav"
+      ],
+      "files": [
+        {
+          "file": "queue_add.wav",
+          "duration": 0.38,
+          "peak": 0.74,
+          "rms": 0.03804,
+          "sha256": "b1c1b67f67099d0b80a1e705a1ae80ce10f93f2ff25ba206bad832711c5b165b"
+        },
+        {
+          "file": "queue_add_02.wav",
+          "duration": 0.38,
+          "peak": 0.74,
+          "rms": 0.04399,
+          "sha256": "8b069cf48147565ad0eb337430f08531b21408c41b231d384f4ca634f620da59"
+        },
+        {
+          "file": "queue_add_03.wav",
+          "duration": 0.38,
+          "peak": 0.74,
+          "rms": 0.09438,
+          "sha256": "85b6c5c9b99634cff7aa058d13e0e24d5cffa9a5e025f3a73beb4c9eada36d83"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-interface/extracted/Audio/select_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/select_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/select_003.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/metalClick.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "research_complete": {
+      "bus": "UI",
+      "priority": 65,
+      "cooldown_ms": 160,
+      "gain": 0.8,
+      "variants": [
+        "res://assets/audio/sfx/research_complete.wav",
+        "res://assets/audio/sfx/research_complete_02.wav",
+        "res://assets/audio/sfx/research_complete_03.wav"
+      ],
+      "files": [
+        {
+          "file": "research_complete.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.14131,
+          "sha256": "b456dfd4c30a557296df83a0a5a25b710e5be296084b0652656479b7b3cedb81"
+        },
+        {
+          "file": "research_complete_02.wav",
+          "duration": 0.52,
+          "peak": 0.74,
+          "rms": 0.13108,
+          "sha256": "149ff3b2622486b0557f1d0a79ebbba57e0e7aacf5aca8bb5827e7718aa4bd1e"
+        },
+        {
+          "file": "research_complete_03.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.0979,
+          "sha256": "b5100da0fd33c445c2257b10e723833a7a2f3378abd95b692740e42edb66b577"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_003.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "loot_collect": {
+      "bus": "UI",
+      "priority": 35,
+      "cooldown_ms": 170,
+      "gain": 0.5,
+      "variants": [
+        "res://assets/audio/sfx/loot_collect.wav",
+        "res://assets/audio/sfx/loot_collect_02.wav",
+        "res://assets/audio/sfx/loot_collect_03.wav"
+      ],
+      "files": [
+        {
+          "file": "loot_collect.wav",
+          "duration": 0.23,
+          "peak": 0.74,
+          "rms": 0.04995,
+          "sha256": "64c153bfae5c5c8e4cc54a5aa4fdceac7a292a0850ad8e1a16d4f62bf80fbed6"
+        },
+        {
+          "file": "loot_collect_02.wav",
+          "duration": 0.23,
+          "peak": 0.74,
+          "rms": 0.06467,
+          "sha256": "1540259ad31f4e7c58afecc5604868dfd5eb15e26bbb5cd05f6d338bc709e69a"
+        },
+        {
+          "file": "loot_collect_03.wav",
+          "duration": 0.23,
+          "peak": 0.74,
+          "rms": 0.05137,
+          "sha256": "0d75416f3d413da3733b1c5829255efbe2c25d40f090bb6d17fbb96a2514bc9c"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "unit_spawn": {
+      "bus": "Battle",
+      "priority": 25,
+      "cooldown_ms": 220,
+      "gain": 0.42,
+      "variants": [
+        "res://assets/audio/sfx/unit_spawn.wav",
+        "res://assets/audio/sfx/unit_spawn_02.wav",
+        "res://assets/audio/sfx/unit_spawn_03.wav"
+      ],
+      "files": [
+        {
+          "file": "unit_spawn.wav",
+          "duration": 0.23,
+          "peak": 0.74,
+          "rms": 0.1051,
+          "sha256": "80e9eaafb4bb24709453a3dfe5df053ec661bfe6ccbbb7040287dd233b637068"
+        },
+        {
+          "file": "unit_spawn_02.wav",
+          "duration": 0.23,
+          "peak": 0.74,
+          "rms": 0.10439,
+          "sha256": "98c7698a340434255eee47103816cb1a2da1573e2e680069bab140413c1f68a6"
+        },
+        {
+          "file": "unit_spawn_03.wav",
+          "duration": 0.23,
+          "peak": 0.74,
+          "rms": 0.09871,
+          "sha256": "54269b997a7d25f84ea0c4897b9691df2329b308a57d853bca3c2fd6f7f3d15f"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/footstep_wood_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/footstep_wood_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/footstep_wood_002.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/cloth1.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/cloth2.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/cloth3.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "unit_death": {
+      "bus": "Battle",
+      "priority": 30,
+      "cooldown_ms": 90,
+      "gain": 0.55,
+      "variants": [
+        "res://assets/audio/sfx/unit_death.wav",
+        "res://assets/audio/sfx/unit_death_02.wav",
+        "res://assets/audio/sfx/unit_death_03.wav"
+      ],
+      "files": [
+        {
+          "file": "unit_death.wav",
+          "duration": 0.45,
+          "peak": 0.74,
+          "rms": 0.12277,
+          "sha256": "1860a0c4c1ea17afe0998e7dcda5691ff5f5ddabdb168b791e7d47deb08fba97"
+        },
+        {
+          "file": "unit_death_02.wav",
+          "duration": 0.45,
+          "peak": 0.74,
+          "rms": 0.12259,
+          "sha256": "9408f457314a42e79ccb182a9ff94011c856a36b65a0b78dbb1b5bdfaca2f272"
+        },
+        {
+          "file": "unit_death_03.wav",
+          "duration": 0.45,
+          "peak": 0.74,
+          "rms": 0.12752,
+          "sha256": "4d06042a40ecd11848059013f0e68707ec0c9ced0d2830b1a2f6dd4d1d2b4123"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactSoft_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactSoft_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactSoft_heavy_002.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/dropLeather.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "hero_death": {
+      "bus": "Battle",
+      "priority": 95,
+      "cooldown_ms": 750,
+      "gain": 0.95,
+      "variants": [
+        "res://assets/audio/sfx/hero_death.wav",
+        "res://assets/audio/sfx/hero_death_02.wav",
+        "res://assets/audio/sfx/hero_death_03.wav"
+      ],
+      "files": [
+        {
+          "file": "hero_death.wav",
+          "duration": 0.86,
+          "peak": 0.74,
+          "rms": 0.16293,
+          "sha256": "46acdaf95a7c2b1d14c52da33fc35d97b36eaaa06b18c78c0aae7168395227ee"
+        },
+        {
+          "file": "hero_death_02.wav",
+          "duration": 0.86,
+          "peak": 0.74,
+          "rms": 0.16053,
+          "sha256": "0a7f47aca65c0ba97bc1bc349b72a22a5a2d4d16fb2b027b82d52da426b27d7b"
+        },
+        {
+          "file": "hero_death_03.wav",
+          "duration": 0.86,
+          "peak": 0.74,
+          "rms": 0.1563,
+          "sha256": "76fe1937ba7110e860478934efaa1b783060ee1ef591fcd790d2a0134d0ed6aa"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_heavy_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "hero_respawn": {
+      "bus": "Battle",
+      "priority": 75,
+      "cooldown_ms": 700,
+      "gain": 0.85,
+      "variants": [
+        "res://assets/audio/sfx/hero_respawn.wav",
+        "res://assets/audio/sfx/hero_respawn_02.wav",
+        "res://assets/audio/sfx/hero_respawn_03.wav"
+      ],
+      "files": [
+        {
+          "file": "hero_respawn.wav",
+          "duration": 0.81,
+          "peak": 0.74,
+          "rms": 0.17327,
+          "sha256": "646b01dee203134e964d574fe6d6e53d611010f4ea25e16165e851dfd3291324"
+        },
+        {
+          "file": "hero_respawn_02.wav",
+          "duration": 0.81,
+          "peak": 0.74,
+          "rms": 0.18196,
+          "sha256": "2fc8f60dbdfae40b198ece0b1ba5e25f54ebf3acf82985d1849a764e9bb49ba1"
+        },
+        {
+          "file": "hero_respawn_03.wav",
+          "duration": 0.81,
+          "peak": 0.74,
+          "rms": 0.16318,
+          "sha256": "78ba4492bc55a460b1f4ee9aca708142bb0bb38ffe30f213847c7a9da65b7084"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "evolve": {
+      "bus": "Battle",
+      "priority": 100,
+      "cooldown_ms": 800,
+      "gain": 1,
+      "variants": [
+        "res://assets/audio/sfx/evolve.wav",
+        "res://assets/audio/sfx/evolve_02.wav",
+        "res://assets/audio/sfx/evolve_03.wav"
+      ],
+      "files": [
+        {
+          "file": "evolve.wav",
+          "duration": 1.33,
+          "peak": 0.74,
+          "rms": 0.15957,
+          "sha256": "7052d7e040c1147e89fb8ebdc929c8ed80be8859239307c0c9411839aed3cd57"
+        },
+        {
+          "file": "evolve_02.wav",
+          "duration": 1.33,
+          "peak": 0.74,
+          "rms": 0.16721,
+          "sha256": "c9c754fd49a7a43ac49509731a38a5f6d8414c5eb3ba6f8ce14d21ede5d040c2"
+        },
+        {
+          "file": "evolve_03.wav",
+          "duration": 1.23,
+          "peak": 0.74,
+          "rms": 0.15573,
+          "sha256": "9f57ecd0e17dc3ecd968a0fb1bed2059acc3def987016ad0cb55756c7ecee15a"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactBell_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactBell_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactBell_heavy_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/lowFrequency_explosion_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/lowFrequency_explosion_001.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "rush_flag": {
+      "bus": "Battle",
+      "priority": 65,
+      "cooldown_ms": 450,
+      "gain": 0.72,
+      "variants": [
+        "res://assets/audio/sfx/rush_flag.wav",
+        "res://assets/audio/sfx/rush_flag_02.wav",
+        "res://assets/audio/sfx/rush_flag_03.wav"
+      ],
+      "files": [
+        {
+          "file": "rush_flag.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.16287,
+          "sha256": "cc2ee76602fd3099f84e568fddec9b0b84e7936f3fda579fb20866b6bfb53cdc"
+        },
+        {
+          "file": "rush_flag_02.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.1485,
+          "sha256": "3ae93148f1393618492cbd60072d5c908f4331424e4fd5d1044742eb4cad0d36"
+        },
+        {
+          "file": "rush_flag_03.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.19742,
+          "sha256": "0beaf60e54f4bf5be4f74d3e95053825d7480a788886b8a18e6f04fb019d245c"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "shield_hit": {
+      "bus": "Battle",
+      "priority": 55,
+      "cooldown_ms": 80,
+      "gain": 0.7,
+      "variants": [
+        "res://assets/audio/sfx/shield_hit.wav",
+        "res://assets/audio/sfx/shield_hit_02.wav",
+        "res://assets/audio/sfx/shield_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "shield_hit.wav",
+          "duration": 0.5254,
+          "peak": 0.74,
+          "rms": 0.21797,
+          "sha256": "35d242447f9a9ba6655055fe2de3b3125f42729aaacdc6d2126e2ed70d160c65"
+        },
+        {
+          "file": "shield_hit_02.wav",
+          "duration": 0.6,
+          "peak": 0.74,
+          "rms": 0.21507,
+          "sha256": "12b252263b0cd4da9ca85fe0ca947bd48349216246778fbc1718df5f5cdd9f63"
+        },
+        {
+          "file": "shield_hit_03.wav",
+          "duration": 0.5024,
+          "peak": 0.67742,
+          "rms": 0.23,
+          "sha256": "49a7b81c0416ab4f9d94e4aa3223a0e38b6448c75cb177f42d3781ba732a784d"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPlate_medium_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPlate_medium_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPlate_medium_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "shield_break": {
+      "bus": "Battle",
+      "priority": 85,
+      "cooldown_ms": 240,
+      "gain": 0.95,
+      "variants": [
+        "res://assets/audio/sfx/shield_break.wav",
+        "res://assets/audio/sfx/shield_break_02.wav",
+        "res://assets/audio/sfx/shield_break_03.wav"
+      ],
+      "files": [
+        {
+          "file": "shield_break.wav",
+          "duration": 0.6,
+          "peak": 0.74,
+          "rms": 0.22675,
+          "sha256": "92a50156e5bcf744ef7a68a5a2c6401121261e679e59819a2e0b3a1f4b3ad8ef"
+        },
+        {
+          "file": "shield_break_02.wav",
+          "duration": 0.6,
+          "peak": 0.72596,
+          "rms": 0.23,
+          "sha256": "d930bfa6b104e0df704f2712632061637aa6171b8adcdbad5c5097499297cc17"
+        },
+        {
+          "file": "shield_break_03.wav",
+          "duration": 0.6,
+          "peak": 0.71348,
+          "rms": 0.23,
+          "sha256": "7b8fb080b707a704dbfe7ead30591e6aa432f19aab79d32ba4c393fe11f34fb2"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactGlass_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactGlass_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactGlass_heavy_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "stone_hit": {
+      "bus": "Battle",
+      "priority": 45,
+      "cooldown_ms": 65,
+      "gain": 0.75,
+      "variants": [
+        "res://assets/audio/sfx/stone_hit.wav",
+        "res://assets/audio/sfx/stone_hit_02.wav",
+        "res://assets/audio/sfx/stone_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "stone_hit.wav",
+          "duration": 0.4,
+          "peak": 0.74,
+          "rms": 0.10583,
+          "sha256": "573eafc2e603358bbbf38621c91b375fb109580446ad4d126e417fdc0e58b79c"
+        },
+        {
+          "file": "stone_hit_02.wav",
+          "duration": 0.4,
+          "peak": 0.74,
+          "rms": 0.10544,
+          "sha256": "87247c38945678f7e33554c53a95c2e429e8d143a284d2fe02c4ca1bbf039267"
+        },
+        {
+          "file": "stone_hit_03.wav",
+          "duration": 0.4,
+          "peak": 0.74,
+          "rms": 0.08534,
+          "sha256": "64bc662001d9fe36856559852e3297167c72fd94988f98d5a85810c14a04826d"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "wood_hit": {
+      "bus": "Battle",
+      "priority": 45,
+      "cooldown_ms": 65,
+      "gain": 0.72,
+      "variants": [
+        "res://assets/audio/sfx/wood_hit.wav",
+        "res://assets/audio/sfx/wood_hit_02.wav",
+        "res://assets/audio/sfx/wood_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "wood_hit.wav",
+          "duration": 0.267,
+          "peak": 0.74,
+          "rms": 0.10117,
+          "sha256": "9467dfb83afde980e02cfdaa490cca049ea5e930a4ad42b208e59a6a59b05d25"
+        },
+        {
+          "file": "wood_hit_02.wav",
+          "duration": 0.2618,
+          "peak": 0.74,
+          "rms": 0.09964,
+          "sha256": "4b284df83a237da5325ea6cab1cd1d0633f5bf6f3de0c22696f25322ec74f3fa"
+        },
+        {
+          "file": "wood_hit_03.wav",
+          "duration": 0.2656,
+          "peak": 0.74,
+          "rms": 0.08906,
+          "sha256": "b087cc9276ef773ef0189ded7ebd99d9ea02515c1af4f67b851a7934065deae1"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_medium_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_medium_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_medium_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "metal_hit": {
+      "bus": "Battle",
+      "priority": 50,
+      "cooldown_ms": 65,
+      "gain": 0.77,
+      "variants": [
+        "res://assets/audio/sfx/metal_hit.wav",
+        "res://assets/audio/sfx/metal_hit_02.wav",
+        "res://assets/audio/sfx/metal_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "metal_hit.wav",
+          "duration": 0.2744,
+          "peak": 0.74,
+          "rms": 0.09092,
+          "sha256": "206acb1cc2319961ba27415612040a45ea00ae5f9cfa8a54fe2507e57246b15f"
+        },
+        {
+          "file": "metal_hit_02.wav",
+          "duration": 0.144,
+          "peak": 0.74,
+          "rms": 0.12121,
+          "sha256": "66fa1a687c1d9175fa70edb4cdc7513f6e5cbd8f5a6c87510cee8ee09746501a"
+        },
+        {
+          "file": "metal_hit_03.wav",
+          "duration": 0.144,
+          "peak": 0.74,
+          "rms": 0.09402,
+          "sha256": "a355c5242a95db4609abf15cf16146138ee204538a8711830fe1603224170e98"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_medium_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_medium_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_medium_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "flesh_hit": {
+      "bus": "Battle",
+      "priority": 45,
+      "cooldown_ms": 65,
+      "gain": 0.8,
+      "variants": [
+        "res://assets/audio/sfx/flesh_hit.wav",
+        "res://assets/audio/sfx/flesh_hit_02.wav",
+        "res://assets/audio/sfx/flesh_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "flesh_hit.wav",
+          "duration": 0.4,
+          "peak": 0.74,
+          "rms": 0.09986,
+          "sha256": "5f2a5232c7c6cd48920916f1a46db666a4e876fdcd8af424693fde09df7f93d6"
+        },
+        {
+          "file": "flesh_hit_02.wav",
+          "duration": 0.4,
+          "peak": 0.74,
+          "rms": 0.09337,
+          "sha256": "772ac32e0a30064a95ad7f8782f3f1ece360705db7f9e760d1d6dc9fc561ba0d"
+        },
+        {
+          "file": "flesh_hit_03.wav",
+          "duration": 0.3588,
+          "peak": 0.74,
+          "rms": 0.10236,
+          "sha256": "03809d970de943409a351c6e9afe749609dca8558c13eb5695d1607dda6191ee"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_heavy_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "arrow_hit": {
+      "bus": "Battle",
+      "priority": 45,
+      "cooldown_ms": 70,
+      "gain": 0.65,
+      "variants": [
+        "res://assets/audio/sfx/arrow_hit.wav",
+        "res://assets/audio/sfx/arrow_hit_02.wav",
+        "res://assets/audio/sfx/arrow_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "arrow_hit.wav",
+          "duration": 0.2999,
+          "peak": 0.74,
+          "rms": 0.12443,
+          "sha256": "0cb0c51000c65d9eb23209984c29dd3a1f94c6bc86531f59b36ec63f6aee1e66"
+        },
+        {
+          "file": "arrow_hit_02.wav",
+          "duration": 0.2718,
+          "peak": 0.74,
+          "rms": 0.13338,
+          "sha256": "4bcd0f1839f8236be2d72ded74e5ed23d4c600dfbccd375215d064d3ae048dd4"
+        },
+        {
+          "file": "arrow_hit_03.wav",
+          "duration": 0.3643,
+          "peak": 0.74,
+          "rms": 0.11953,
+          "sha256": "23941385f1e5a04b6589d90c13ed79c94931f81d99e9de9af5cb7a354f9316fb"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_medium_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_medium_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_medium_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "sword_swing": {
+      "bus": "Battle",
+      "priority": 20,
+      "cooldown_ms": 90,
+      "gain": 0.46,
+      "variants": [
+        "res://assets/audio/sfx/sword_swing.wav",
+        "res://assets/audio/sfx/sword_swing_02.wav",
+        "res://assets/audio/sfx/sword_swing_03.wav"
+      ],
+      "files": [
+        {
+          "file": "sword_swing.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.1249,
+          "sha256": "ae9801a5f0ba413c8aee463e35288525e44d708f7b8beab3f36cfc78ec8755d9"
+        },
+        {
+          "file": "sword_swing_02.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.06955,
+          "sha256": "7c59804e76bca712187ac0ec6786e9dcd67219439c556122d17913fc5e72bc82"
+        },
+        {
+          "file": "sword_swing_03.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.12759,
+          "sha256": "11eb35b46a7add57e08e18a25a23bd73ecff812a6566e5fbc78134bb67989f97"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "spear_swing": {
+      "bus": "Battle",
+      "priority": 25,
+      "cooldown_ms": 100,
+      "gain": 0.52,
+      "variants": [
+        "res://assets/audio/sfx/spear_swing.wav",
+        "res://assets/audio/sfx/spear_swing_02.wav",
+        "res://assets/audio/sfx/spear_swing_03.wav"
+      ],
+      "files": [
+        {
+          "file": "spear_swing.wav",
+          "duration": 0.255,
+          "peak": 0.74,
+          "rms": 0.12395,
+          "sha256": "25c70a49d47c5f15166b0060601aa33bfc58cced107a3f3c41851d9fd0df329d"
+        },
+        {
+          "file": "spear_swing_02.wav",
+          "duration": 0.255,
+          "peak": 0.74,
+          "rms": 0.07146,
+          "sha256": "9da3f3f24833c62682499f1240d6ddc8aca31ce40ce57b998eb14f81819b816d"
+        },
+        {
+          "file": "spear_swing_03.wav",
+          "duration": 0.255,
+          "peak": 0.74,
+          "rms": 0.12663,
+          "sha256": "36cc9cd31478ef238ebb9809d725cd15ca8c93c522088ff376563086ff9d36eb"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "stone_throw": {
+      "bus": "Battle",
+      "priority": 20,
+      "cooldown_ms": 100,
+      "gain": 0.45,
+      "variants": [
+        "res://assets/audio/sfx/stone_throw.wav",
+        "res://assets/audio/sfx/stone_throw_02.wav",
+        "res://assets/audio/sfx/stone_throw_03.wav"
+      ],
+      "files": [
+        {
+          "file": "stone_throw.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.12939,
+          "sha256": "6dc457c2a6b0ce00c192be0b6b0a5a383460e6e7380eb8c0de274bbb2418e10d"
+        },
+        {
+          "file": "stone_throw_02.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.08588,
+          "sha256": "b72bddbd5e465b58de9cc28f71e43a0793de9b519b2f4c17fed48a93f044f158"
+        },
+        {
+          "file": "stone_throw_03.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.13469,
+          "sha256": "6ad2dd8257a99fa704674fec15f443c06aecefb7de9a226c413855a32a205d24"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-rpg/extracted/Audio/cloth1.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/cloth2.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/cloth3.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "arrow_fire": {
+      "bus": "Battle",
+      "priority": 25,
+      "cooldown_ms": 70,
+      "gain": 0.55,
+      "variants": [
+        "res://assets/audio/sfx/arrow_fire.wav",
+        "res://assets/audio/sfx/arrow_fire_02.wav",
+        "res://assets/audio/sfx/arrow_fire_03.wav"
+      ],
+      "files": [
+        {
+          "file": "arrow_fire.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.10522,
+          "sha256": "81a7b1aa17c2f41c01a2b1301a00c44688a481771eb7be60103538a918acd846"
+        },
+        {
+          "file": "arrow_fire_02.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.12835,
+          "sha256": "90d5dcb5169d4d288f94dd8dd4ed3d2fc6077a3236597ecec0fd3f97eacc49eb"
+        },
+        {
+          "file": "arrow_fire_03.wav",
+          "duration": 0.25,
+          "peak": 0.74,
+          "rms": 0.05485,
+          "sha256": "2d2a40a0fecf94b091c547ee90f49915a1a9ab3acdb0b4a1bcb6dbcd57828219"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-rpg/extracted/Audio/drawKnife1.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/drawKnife2.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/drawKnife3.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "musket_fire": {
+      "bus": "Battle",
+      "priority": 60,
+      "cooldown_ms": 65,
+      "gain": 0.78,
+      "variants": [
+        "res://assets/audio/sfx/musket_fire.wav",
+        "res://assets/audio/sfx/musket_fire_02.wav",
+        "res://assets/audio/sfx/musket_fire_03.wav"
+      ],
+      "files": [
+        {
+          "file": "musket_fire.wav",
+          "duration": 0.24,
+          "peak": 0.74,
+          "rms": 0.19351,
+          "sha256": "0ada6b0c0783b7534c8f59bbc8620d0df129b895d23d52c8eece6154cc48b79d"
+        },
+        {
+          "file": "musket_fire_02.wav",
+          "duration": 0.24,
+          "peak": 0.74,
+          "rms": 0.17168,
+          "sha256": "5536e2ed84a99f83b6dc0ef35edb719e3a6a884f1004a447a15778e0e3846f87"
+        },
+        {
+          "file": "musket_fire_03.wav",
+          "duration": 0.24,
+          "peak": 0.74,
+          "rms": 0.16958,
+          "sha256": "ab73d67721fb8366fdfbc63343d7618149d9fdb2d7a989f3fa32aa141c010cec"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-rpg/extracted/Audio/metalClick.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "cannon_fire": {
+      "bus": "Battle",
+      "priority": 70,
+      "cooldown_ms": 120,
+      "gain": 0.92,
+      "variants": [
+        "res://assets/audio/sfx/cannon_fire.wav",
+        "res://assets/audio/sfx/cannon_fire_02.wav",
+        "res://assets/audio/sfx/cannon_fire_03.wav"
+      ],
+      "files": [
+        {
+          "file": "cannon_fire.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.16511,
+          "sha256": "4da38f3adfcc9e1edbe9a2db87c08b78a4ae972760d6fd27bc28cbd894ce66b0"
+        },
+        {
+          "file": "cannon_fire_02.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.17058,
+          "sha256": "3ab5017260087bf6cbb6563bf4761381cfe2701ccb6ece8d851ff3e6c1c33a43"
+        },
+        {
+          "file": "cannon_fire_03.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.17944,
+          "sha256": "123c59e29dcc2721eb213f288a809b32381119508f44a959de9d3392b5c77dab"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "cannon_hit": {
+      "bus": "Battle",
+      "priority": 75,
+      "cooldown_ms": 120,
+      "gain": 0.92,
+      "variants": [
+        "res://assets/audio/sfx/cannon_hit.wav",
+        "res://assets/audio/sfx/cannon_hit_02.wav",
+        "res://assets/audio/sfx/cannon_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "cannon_hit.wav",
+          "duration": 0.85,
+          "peak": 0.74,
+          "rms": 0.13293,
+          "sha256": "f78af43c77bbd46906c45fb0712e8153ddadce04016d8a9b6ccf13e6d83768af"
+        },
+        {
+          "file": "cannon_hit_02.wav",
+          "duration": 0.85,
+          "peak": 0.74,
+          "rms": 0.14472,
+          "sha256": "580a1606bde89f067f5acf4ec129285cea2dd0f6aeab8e0f98f6aaba4822e030"
+        },
+        {
+          "file": "cannon_hit_03.wav",
+          "duration": 0.85,
+          "peak": 0.74,
+          "rms": 0.14878,
+          "sha256": "b1b2809b54c215e51105bc2d2882f55de49b717183f4f0e6f5d8b8de169b49c3"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "arc_fire": {
+      "bus": "Battle",
+      "priority": 55,
+      "cooldown_ms": 80,
+      "gain": 0.72,
+      "variants": [
+        "res://assets/audio/sfx/arc_fire.wav",
+        "res://assets/audio/sfx/arc_fire_02.wav",
+        "res://assets/audio/sfx/arc_fire_03.wav"
+      ],
+      "files": [
+        {
+          "file": "arc_fire.wav",
+          "duration": 0.26,
+          "peak": 0.74,
+          "rms": 0.16394,
+          "sha256": "f0df3dbe8d70aaa3cec9862b2ab2a682611a4a1fff0a1c84b0bfc13f8216333b"
+        },
+        {
+          "file": "arc_fire_02.wav",
+          "duration": 0.26,
+          "peak": 0.74,
+          "rms": 0.09033,
+          "sha256": "8ccf12ab95276e50c177b2f8c01791a4f00b75f4321004dbab5e551b8fa64ece"
+        },
+        {
+          "file": "arc_fire_03.wav",
+          "duration": 0.3443,
+          "peak": 0.74,
+          "rms": 0.1142,
+          "sha256": "abf17d6042cae8251292cf18a3e3531bc8cca52e9538e874017fa3100b39276f"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserSmall_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserSmall_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserSmall_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "energy_hit": {
+      "bus": "Battle",
+      "priority": 55,
+      "cooldown_ms": 70,
+      "gain": 0.75,
+      "variants": [
+        "res://assets/audio/sfx/energy_hit.wav",
+        "res://assets/audio/sfx/energy_hit_02.wav",
+        "res://assets/audio/sfx/energy_hit_03.wav"
+      ],
+      "files": [
+        {
+          "file": "energy_hit.wav",
+          "duration": 0.26,
+          "peak": 0.68575,
+          "rms": 0.23,
+          "sha256": "398b71f0b2295ea91ba1dd3c3036de8e5cca7a24309690a9a25e68c3cc6bbf04"
+        },
+        {
+          "file": "energy_hit_02.wav",
+          "duration": 0.26,
+          "peak": 0.71224,
+          "rms": 0.23,
+          "sha256": "53b641f7c1cf22356973b6e30043384a0407b48afed7ad64d41e2d8f4743961f"
+        },
+        {
+          "file": "energy_hit_03.wav",
+          "duration": 0.26,
+          "peak": 0.74,
+          "rms": 0.13256,
+          "sha256": "9d9d5f0468185181e90e54244335e19a3372c3acb2200213761a2e7ccc17f501"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserRetro_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserRetro_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserRetro_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "support_pulse": {
+      "bus": "Battle",
+      "priority": 25,
+      "cooldown_ms": 280,
+      "gain": 0.45,
+      "variants": [
+        "res://assets/audio/sfx/support_pulse.wav",
+        "res://assets/audio/sfx/support_pulse_02.wav",
+        "res://assets/audio/sfx/support_pulse_03.wav"
+      ],
+      "files": [
+        {
+          "file": "support_pulse.wav",
+          "duration": 0.35,
+          "peak": 0.58088,
+          "rms": 0.23,
+          "sha256": "43422f6fa278971dce1f2ce448462d94340a439e24990bb3e760923ddba5115b"
+        },
+        {
+          "file": "support_pulse_02.wav",
+          "duration": 0.35,
+          "peak": 0.56949,
+          "rms": 0.23,
+          "sha256": "47192656815a0a86c2c30c3937c871cbc7137ae435060c55415e331078ef276c"
+        },
+        {
+          "file": "support_pulse_03.wav",
+          "duration": 0.35,
+          "peak": 0.57189,
+          "rms": 0.23,
+          "sha256": "e4bab7e110bb516d89f41274fda27568695496c968c6bd4b9a60eee5c240a09c"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "heal": {
+      "bus": "Battle",
+      "priority": 30,
+      "cooldown_ms": 260,
+      "gain": 0.42,
+      "variants": [
+        "res://assets/audio/sfx/heal.wav",
+        "res://assets/audio/sfx/heal_02.wav",
+        "res://assets/audio/sfx/heal_03.wav"
+      ],
+      "files": [
+        {
+          "file": "heal.wav",
+          "duration": 0.35,
+          "peak": 0.58088,
+          "rms": 0.23,
+          "sha256": "43422f6fa278971dce1f2ce448462d94340a439e24990bb3e760923ddba5115b"
+        },
+        {
+          "file": "heal_02.wav",
+          "duration": 0.35,
+          "peak": 0.56949,
+          "rms": 0.23,
+          "sha256": "47192656815a0a86c2c30c3937c871cbc7137ae435060c55415e331078ef276c"
+        },
+        {
+          "file": "heal_03.wav",
+          "duration": 0.35,
+          "peak": 0.57189,
+          "rms": 0.23,
+          "sha256": "e4bab7e110bb516d89f41274fda27568695496c968c6bd4b9a60eee5c240a09c"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "skill_cast": {
+      "bus": "Battle",
+      "priority": 75,
+      "cooldown_ms": 200,
+      "gain": 0.8,
+      "variants": [
+        "res://assets/audio/sfx/skill_cast.wav",
+        "res://assets/audio/sfx/skill_cast_02.wav",
+        "res://assets/audio/sfx/skill_cast_03.wav"
+      ],
+      "files": [
+        {
+          "file": "skill_cast.wav",
+          "duration": 0.65,
+          "peak": 0.74,
+          "rms": 0.21831,
+          "sha256": "02b85dda7c24db35f8cde840a3a67a1668556992ac5f22444a1d3f345747d612"
+        },
+        {
+          "file": "skill_cast_02.wav",
+          "duration": 0.65,
+          "peak": 0.74,
+          "rms": 0.22044,
+          "sha256": "e21b65384bbbbd17fe3349a2ad40f6a63bbd83b8dfc87014d96ae8f8072a23d9"
+        },
+        {
+          "file": "skill_cast_03.wav",
+          "duration": 0.65,
+          "peak": 0.74,
+          "rms": 0.22351,
+          "sha256": "e9bfe45c28e7f45c4aa89502e5badf68fa57fc22fde15c90b61e890f0e185dc2"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "skill_ready": {
+      "bus": "UI",
+      "priority": 55,
+      "cooldown_ms": 900,
+      "gain": 0.65,
+      "variants": [
+        "res://assets/audio/sfx/skill_ready.wav",
+        "res://assets/audio/sfx/skill_ready_02.wav",
+        "res://assets/audio/sfx/skill_ready_03.wav"
+      ],
+      "files": [
+        {
+          "file": "skill_ready.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.14131,
+          "sha256": "b456dfd4c30a557296df83a0a5a25b710e5be296084b0652656479b7b3cedb81"
+        },
+        {
+          "file": "skill_ready_02.wav",
+          "duration": 0.52,
+          "peak": 0.74,
+          "rms": 0.13108,
+          "sha256": "149ff3b2622486b0557f1d0a79ebbba57e0e7aacf5aca8bb5827e7718aa4bd1e"
+        },
+        {
+          "file": "skill_ready_03.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.0979,
+          "sha256": "b5100da0fd33c445c2257b10e723833a7a2f3378abd95b692740e42edb66b577"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_003.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "build": {
+      "bus": "Battle",
+      "priority": 60,
+      "cooldown_ms": 240,
+      "gain": 0.7,
+      "variants": [
+        "res://assets/audio/sfx/build.wav",
+        "res://assets/audio/sfx/build_02.wav",
+        "res://assets/audio/sfx/build_03.wav"
+      ],
+      "files": [
+        {
+          "file": "build.wav",
+          "duration": 0.4558,
+          "peak": 0.74,
+          "rms": 0.1091,
+          "sha256": "db20a3b2574a327c9fca531a7eff8ac51aa15be4dfa4eb4aebc414b0b1270d3f"
+        },
+        {
+          "file": "build_02.wav",
+          "duration": 0.52,
+          "peak": 0.74,
+          "rms": 0.0978,
+          "sha256": "449ecbdee23ada4caab0735d60c793aef8d3d2657a98b34960cd5225a936eb06"
+        },
+        {
+          "file": "build_03.wav",
+          "duration": 0.482,
+          "peak": 0.74,
+          "rms": 0.08962,
+          "sha256": "aa7a6a8bf25bf410a7f7e076cc93910c7b3260aa992c4957daef562298057154"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_003.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/metalLatch.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "arrow_rain": {
+      "bus": "Battle",
+      "priority": 75,
+      "cooldown_ms": 180,
+      "gain": 0.75,
+      "variants": [
+        "res://assets/audio/sfx/arrow_rain.wav",
+        "res://assets/audio/sfx/arrow_rain_02.wav",
+        "res://assets/audio/sfx/arrow_rain_03.wav"
+      ],
+      "files": [
+        {
+          "file": "arrow_rain.wav",
+          "duration": 0.43,
+          "peak": 0.74,
+          "rms": 0.12103,
+          "sha256": "c26edfa0572f0c70e804459ec00313b27be136e5a20b87b91d677c32f62be1a4"
+        },
+        {
+          "file": "arrow_rain_02.wav",
+          "duration": 0.43,
+          "peak": 0.74,
+          "rms": 0.06453,
+          "sha256": "bdaa75b9b4d960cf99472226846488e1b22c87bc87679c43cba19611b9f8afce"
+        },
+        {
+          "file": "arrow_rain_03.wav",
+          "duration": 0.43,
+          "peak": 0.74,
+          "rms": 0.11338,
+          "sha256": "3f336f2c3a2a7b77cc192f89955ce5da264c599fbae4d8064d09b7d8298a033a"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "meteor_impact": {
+      "bus": "Battle",
+      "priority": 90,
+      "cooldown_ms": 220,
+      "gain": 0.95,
+      "variants": [
+        "res://assets/audio/sfx/meteor_impact.wav",
+        "res://assets/audio/sfx/meteor_impact_02.wav",
+        "res://assets/audio/sfx/meteor_impact_03.wav"
+      ],
+      "files": [
+        {
+          "file": "meteor_impact.wav",
+          "duration": 1.1,
+          "peak": 0.74,
+          "rms": 0.12236,
+          "sha256": "a0d297ee1306f129d2686d0ee16624381e872aeb6ab9a2296c1c4d6c5634042f"
+        },
+        {
+          "file": "meteor_impact_02.wav",
+          "duration": 1.1,
+          "peak": 0.74,
+          "rms": 0.15876,
+          "sha256": "388be1f201b5d498b667d8d73d3bde7d3898c65f315c31b7256e5a580ddfae2e"
+        },
+        {
+          "file": "meteor_impact_03.wav",
+          "duration": 1.1,
+          "peak": 0.74,
+          "rms": 0.13069,
+          "sha256": "6bb6c54e4f12b65b08192c82190e71a24c9b714ab9543cccadaf8ecfb01791ba"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "airstrike": {
+      "bus": "Battle",
+      "priority": 90,
+      "cooldown_ms": 200,
+      "gain": 0.95,
+      "variants": [
+        "res://assets/audio/sfx/airstrike.wav",
+        "res://assets/audio/sfx/airstrike_02.wav",
+        "res://assets/audio/sfx/airstrike_03.wav"
+      ],
+      "files": [
+        {
+          "file": "airstrike.wav",
+          "duration": 1.25,
+          "peak": 0.74,
+          "rms": 0.12161,
+          "sha256": "c36c2f38840fb74be5b84872eb539de3fe2bd3beb2e1d5fad0274857b0fcee35"
+        },
+        {
+          "file": "airstrike_02.wav",
+          "duration": 1.25,
+          "peak": 0.74,
+          "rms": 0.14207,
+          "sha256": "b28a7eb97abffbe3aaba950c5c58518ac6e4bb5fcea103f743f3f4e3e1654ff1"
+        },
+        {
+          "file": "airstrike_03.wav",
+          "duration": 1.25,
+          "peak": 0.74,
+          "rms": 0.11615,
+          "sha256": "35fa154cb49d3eb2065535fdca66152ac8d0ce0af91f291119de235c5bdaf1e6"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "orbital_impact": {
+      "bus": "Battle",
+      "priority": 95,
+      "cooldown_ms": 240,
+      "gain": 1,
+      "variants": [
+        "res://assets/audio/sfx/orbital_impact.wav",
+        "res://assets/audio/sfx/orbital_impact_02.wav",
+        "res://assets/audio/sfx/orbital_impact_03.wav"
+      ],
+      "files": [
+        {
+          "file": "orbital_impact.wav",
+          "duration": 1.4,
+          "peak": 0.74,
+          "rms": 0.11203,
+          "sha256": "056b29ad092783ebeb5a7ccfdb1db7adfff094459cd88c4d46390e1036a0ad66"
+        },
+        {
+          "file": "orbital_impact_02.wav",
+          "duration": 1.4,
+          "peak": 0.74,
+          "rms": 0.13323,
+          "sha256": "5a09463d70794d98ce79be4201a1b9c0ecf0c85cd3004ebf69e1f3e7e38cad16"
+        },
+        {
+          "file": "orbital_impact_03.wav",
+          "duration": 1.4,
+          "peak": 0.74,
+          "rms": 0.11381,
+          "sha256": "32de102927c54cf5aa9a112ecda2956fb766be0346907b5aedc1b4bcce6da677"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "item_drum": {
+      "bus": "Battle",
+      "priority": 75,
+      "cooldown_ms": 300,
+      "gain": 0.8,
+      "variants": [
+        "res://assets/audio/sfx/item_drum.wav",
+        "res://assets/audio/sfx/item_drum_02.wav",
+        "res://assets/audio/sfx/item_drum_03.wav"
+      ],
+      "files": [
+        {
+          "file": "item_drum.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.16287,
+          "sha256": "cc2ee76602fd3099f84e568fddec9b0b84e7936f3fda579fb20866b6bfb53cdc"
+        },
+        {
+          "file": "item_drum_02.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.1485,
+          "sha256": "3ae93148f1393618492cbd60072d5c908f4331424e4fd5d1044742eb4cad0d36"
+        },
+        {
+          "file": "item_drum_03.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.19742,
+          "sha256": "0beaf60e54f4bf5be4f74d3e95053825d7480a788886b8a18e6f04fb019d245c"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "item_smoke": {
+      "bus": "Battle",
+      "priority": 70,
+      "cooldown_ms": 250,
+      "gain": 0.65,
+      "variants": [
+        "res://assets/audio/sfx/item_smoke.wav",
+        "res://assets/audio/sfx/item_smoke_02.wav",
+        "res://assets/audio/sfx/item_smoke_03.wav"
+      ],
+      "files": [
+        {
+          "file": "item_smoke.wav",
+          "duration": 0.65,
+          "peak": 0.74,
+          "rms": 0.14387,
+          "sha256": "fd039727f2578f5b76e77d699c25f826cc7f32985258440ce64be0c9a88c473e"
+        },
+        {
+          "file": "item_smoke_02.wav",
+          "duration": 0.65,
+          "peak": 0.74,
+          "rms": 0.16146,
+          "sha256": "d5847e1cfbf6a8c844365d7030738a8cd579680715105421ba500b2c71d27bcf"
+        },
+        {
+          "file": "item_smoke_03.wav",
+          "duration": 0.65,
+          "peak": 0.74,
+          "rms": 0.14334,
+          "sha256": "8676f7407bb1a8fb9c07d3347ab60c87236b4aae45bb8dbd6daebfbed3d82c00"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-scifi/extracted/Audio/thrusterFire_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/thrusterFire_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/thrusterFire_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "item_supply": {
+      "bus": "Battle",
+      "priority": 70,
+      "cooldown_ms": 250,
+      "gain": 0.75,
+      "variants": [
+        "res://assets/audio/sfx/item_supply.wav",
+        "res://assets/audio/sfx/item_supply_02.wav",
+        "res://assets/audio/sfx/item_supply_03.wav"
+      ],
+      "files": [
+        {
+          "file": "item_supply.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.14191,
+          "sha256": "329c9e0e723a22105499ee5eb171f69a4abdff468543a8f06a3c0f39c12d845b"
+        },
+        {
+          "file": "item_supply_02.wav",
+          "duration": 0.52,
+          "peak": 0.74,
+          "rms": 0.13229,
+          "sha256": "60e6820826844bc853fe98cb4c8b4ec9e2a5d08c4c1d97ef87eb0e20ad782c75"
+        },
+        {
+          "file": "item_supply_03.wav",
+          "duration": 0.55,
+          "peak": 0.74,
+          "rms": 0.09868,
+          "sha256": "95770338bb2bcc44b25527484877aaa2f981ddc9dfd4c05585de1f7b7b54a3c3"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_001.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_002.ogg",
+        "output/audio-sources/kenney-interface/extracted/Audio/confirmation_003.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins.ogg",
+        "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins2.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "base_danger": {
+      "bus": "UI",
+      "priority": 100,
+      "cooldown_ms": 6000,
+      "gain": 0.8,
+      "variants": [
+        "res://assets/audio/sfx/base_danger.wav",
+        "res://assets/audio/sfx/base_danger_02.wav",
+        "res://assets/audio/sfx/base_danger_03.wav"
+      ],
+      "files": [
+        {
+          "file": "base_danger.wav",
+          "duration": 0.53,
+          "peak": 0.74,
+          "rms": 0.18,
+          "sha256": "4a970fcf9d0ad40c55acf6c7b08d4e0eeaecc6fce15620f3e5f365d5f4dc133f"
+        },
+        {
+          "file": "base_danger_02.wav",
+          "duration": 0.53,
+          "peak": 0.74,
+          "rms": 0.18014,
+          "sha256": "4bfd9d2bffbf72125bd03e88bd8931f70f0583d71657aab335ed62b1d5aaf918"
+        },
+        {
+          "file": "base_danger_03.wav",
+          "duration": 0.53,
+          "peak": 0.74,
+          "rms": 0.18027,
+          "sha256": "79e5bfea1527d76bef5540d4cb346401bd96303911555ad2ed348708ce002e67"
+        }
+      ],
+      "source_files": [],
+      "provenance": "original_synthesis"
+    },
+    "base_destroyed": {
+      "bus": "Battle",
+      "priority": 100,
+      "cooldown_ms": 1200,
+      "gain": 1,
+      "variants": [
+        "res://assets/audio/sfx/base_destroyed.wav",
+        "res://assets/audio/sfx/base_destroyed_02.wav",
+        "res://assets/audio/sfx/base_destroyed_03.wav"
+      ],
+      "files": [
+        {
+          "file": "base_destroyed.wav",
+          "duration": 2.48,
+          "peak": 0.74,
+          "rms": 0.09617,
+          "sha256": "0c66d2199461609248ebf0d101d6ba55af236c1c3b006f89483b3d51f18fb146"
+        },
+        {
+          "file": "base_destroyed_02.wav",
+          "duration": 2.48,
+          "peak": 0.74,
+          "rms": 0.12132,
+          "sha256": "dd67cd0df9174935e4a9e51ddff624de62134bfe245e29cbaf8abaa8b600b4c8"
+        },
+        {
+          "file": "base_destroyed_03.wav",
+          "duration": 2.48,
+          "peak": 0.74,
+          "rms": 0.09544,
+          "sha256": "9479966538fb6241d8ef48e815acb37fd3168bedaecab800a2d763c3b34c72a1"
+        }
+      ],
+      "source_files": [
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactMining_002.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_000.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_001.ogg",
+        "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_002.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+        "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg"
+      ],
+      "provenance": "cc0_layered_original_synthesis"
+    },
+    "danger_warning": {
+      "bus": "Battle",
+      "priority": 90,
+      "cooldown_ms": 450,
+      "gain": 0.7,
+      "variants": [
+        "res://assets/audio/sfx/danger_warning.wav",
+        "res://assets/audio/sfx/danger_warning_02.wav",
+        "res://assets/audio/sfx/danger_warning_03.wav"
+      ],
+      "files": [
+        {
+          "file": "danger_warning.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.21337,
+          "sha256": "02b860db683087f8df63d98f22fceb9388e98039a3f0268be05594d6a2e5f949"
+        },
+        {
+          "file": "danger_warning_02.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.21315,
+          "sha256": "086a25aaa3b01aaf46c2f3f992fad00c6a763c203f2b1fea2f89e2b5d5a5f3c0"
+        },
+        {
+          "file": "danger_warning_03.wav",
+          "duration": 0.48,
+          "peak": 0.74,
+          "rms": 0.2132,
+          "sha256": "ee2d5c99603927263a68126d93975b17aee5d9c7d0e34073c4785df2a0933fcc"
+        }
+      ],
+      "source_files": [],
+      "provenance": "original_synthesis"
+    }
+  },
+  "sources": [
+    {
+      "id": "kenney-impact",
+      "title": "Impact Sounds",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/impact-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "file": "output/audio-sources/kenney-impact/kenney_impact-sounds.zip",
+      "sha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "bytes": 800850
+    },
+    {
+      "id": "kenney-interface",
+      "title": "Interface Sounds",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "file": "output/audio-sources/kenney-interface/kenney_interface-sounds.zip",
+      "sha256": "f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232",
+      "bytes": 834536
+    },
+    {
+      "id": "kenney-rpg",
+      "title": "RPG Audio",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/rpg-audio",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip",
+      "file": "output/audio-sources/kenney-rpg/kenney_rpg-audio.zip",
+      "sha256": "6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b",
+      "bytes": 964837
+    },
+    {
+      "id": "kenney-scifi",
+      "title": "Sci-Fi Sounds",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/sci-fi-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+      "file": "output/audio-sources/kenney-scifi/kenney_sci-fi-sounds.zip",
+      "sha256": "119340f351a5098ad814f78719438c0da355a9ce8a4c8a3af6a8d48aa3d49e04",
+      "bytes": 5875104
+    },
+    {
+      "id": "kenney-jingles",
+      "title": "Music Jingles",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/music-jingles",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://kenney.nl/media/pages/assets/music-jingles/f37e530b9e-1677590399/kenney_music-jingles.zip",
+      "file": "output/audio-sources/kenney-jingles/kenney_music-jingles.zip",
+      "sha256": "b729ba57959bd58793d2c5cafa348aaf2655d354f3da35ec4729e03ec77197b8",
+      "bytes": 1239525
+    },
+    {
+      "id": "krakatoa",
+      "title": "Krakatoa",
+      "author": "Kistol",
+      "page": "https://opengameart.org/content/krakatoa",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://opengameart.org/sites/default/files/Krakatoa_0.ogg",
+      "file": "output/audio-sources/krakatoa/Krakatoa_0.ogg",
+      "sha256": "3edb66fab6fc80d1d285d274dc018d61f9bbe20ea0063509c8e3a2e772084a21",
+      "bytes": 1136376
+    },
+    {
+      "id": "hope",
+      "title": "Hope (Orchestral battle music)",
+      "author": "MintoDog",
+      "page": "https://opengameart.org/content/hopeorchestral-battle-music",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://opengameart.org/sites/default/files/hope_orchestral_battle_music_bpm165.flac",
+      "file": "output/audio-sources/hope/hope_orchestral_battle_music_bpm165.flac",
+      "sha256": "5da6876e90fb07cd6e7a28fb03b436bbd1ada4d24b9f6cf6284a2104063c4cc3",
+      "bytes": 7592473
+    },
+    {
+      "id": "massive-battle",
+      "title": "Massive Battle",
+      "author": "Eldritch Grim",
+      "page": "https://opengameart.org/content/massive-battle",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://opengameart.org/sites/default/files/massive_hunt.wav",
+      "file": "output/audio-sources/massive-battle/massive_hunt.wav",
+      "sha256": "af68a52870cde52b4170f0ff9c48e332a2134aa18e8b517769aa0f06cbbcf26b",
+      "bytes": 5554254
+    },
+    {
+      "id": "epic-march",
+      "title": "Epic March Loop",
+      "author": "Eldritch Grim",
+      "page": "https://opengameart.org/content/epic-war-loop",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://opengameart.org/sites/default/files/the_march_of_devils_dome_loop.wav",
+      "file": "output/audio-sources/epic-march/the_march_of_devils_dome_loop.wav",
+      "sha256": "7dffcb82140f3aced075b2766f135c17757c60bd8f7a2717b11ab49318c824d6",
+      "bytes": 7687996
+    },
+    {
+      "id": "8bit-battle",
+      "title": "8-Bit Battle Loop",
+      "author": "Theodore Kerr (Wolfgang_)",
+      "page": "https://opengameart.org/content/8-bit-battle-loop",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://opengameart.org/sites/default/files/8BitBattleLoop_0.ogg",
+      "file": "output/audio-sources/8bit-battle/8BitBattleLoop_0.ogg",
+      "sha256": "3ffedb0875b311605321ce00def96d8416c4668e9331ea4ee4abb6430d74ab8b",
+      "bytes": 880906
+    },
+    {
+      "id": "awake",
+      "title": "Awake! (Megawall-10)",
+      "author": "cynicmusic",
+      "page": "https://opengameart.org/content/awake-megawall-10",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://opengameart.org/sites/default/files/awake10_megaWall.mp3",
+      "file": "output/audio-sources/awake/awake10_megaWall.mp3",
+      "sha256": "462c85304df0ea5369cb98aaae158108c92227fa5f442fb63a2da6febbe82ded",
+      "bytes": 2026231
+    },
+    {
+      "id": "relax",
+      "title": "relax_background1",
+      "author": "joaquinton",
+      "page": "https://opengameart.org/content/relaxbackground1-0",
+      "license": "CC0-1.0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "download": "https://opengameart.org/sites/default/files/relax_background1_0.ogg",
+      "file": "output/audio-sources/relax/relax_background1_0.ogg",
+      "sha256": "b362bd0017400836b6dc4b4c581e7516c8e1e4bff1b97e1107e14ae00d02f751",
+      "bytes": 1754942
+    }
+  ],
+  "used_source_files": [
+    "output/audio-sources/8bit-battle/8BitBattleLoop_0.ogg",
+    "output/audio-sources/awake/awake10_megaWall.mp3",
+    "output/audio-sources/epic-march/the_march_of_devils_dome_loop.wav",
+    "output/audio-sources/hope/hope_orchestral_battle_music_bpm165.flac",
+    "output/audio-sources/kenney-impact/extracted/Audio/footstep_wood_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/footstep_wood_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/footstep_wood_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactBell_heavy_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactBell_heavy_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactBell_heavy_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactGlass_heavy_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactGlass_heavy_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactGlass_heavy_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_heavy_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_heavy_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_heavy_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_medium_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_medium_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMetal_medium_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMining_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMining_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactMining_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPlate_medium_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPlate_medium_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPlate_medium_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_heavy_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_heavy_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_heavy_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_medium_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_medium_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactPunch_medium_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactSoft_heavy_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactSoft_heavy_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactSoft_heavy_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactWood_heavy_002.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactWood_medium_000.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactWood_medium_001.ogg",
+    "output/audio-sources/kenney-impact/extracted/Audio/impactWood_medium_002.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/back_001.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/back_002.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/back_003.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/click_001.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/click_002.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/click_003.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/confirmation_001.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/confirmation_002.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/confirmation_003.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/error_001.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/error_002.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/error_003.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/select_001.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/select_002.ogg",
+    "output/audio-sources/kenney-interface/extracted/Audio/select_003.ogg",
+    "output/audio-sources/kenney-jingles/extracted/Audio/Pizzicato jingles/jingles_PIZZI00.ogg",
+    "output/audio-sources/kenney-jingles/extracted/Audio/Pizzicato jingles/jingles_PIZZI11.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/cloth1.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/cloth2.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/cloth3.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/drawKnife1.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/drawKnife2.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/drawKnife3.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/dropLeather.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/handleCoins2.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/knifeSlice2.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/metalClick.ogg",
+    "output/audio-sources/kenney-rpg/extracted/Audio/metalLatch.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_000.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_001.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/explosionCrunch_002.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/forceField_000.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/forceField_001.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/forceField_002.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_000.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_001.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserLarge_002.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserRetro_000.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserRetro_001.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserRetro_002.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserSmall_000.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserSmall_001.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/laserSmall_002.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/lowFrequency_explosion_000.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/lowFrequency_explosion_001.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/thrusterFire_000.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/thrusterFire_001.ogg",
+    "output/audio-sources/kenney-scifi/extracted/Audio/thrusterFire_002.ogg",
+    "output/audio-sources/krakatoa/Krakatoa_0.ogg",
+    "output/audio-sources/relax/relax_background1_0.ogg"
+  ],
+  "method": "CC0 samples layered with original transient/body/tail synthesis; two-pass music mastering"
+}

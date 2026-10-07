@@ -1,0 +1,4594 @@
+{
+  "version": "0.3.0",
+  "actors": {
+    "U11": {
+      "key": "animation.U11",
+      "enemyKey": "animation.U11.enemy",
+      "path": "characters/animations/U11.png",
+      "enemyPath": "characters/animations/U11-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 81,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "9aa07def48c784d6c0061a0bb39c9c5be342317fc0562b674ac9e9cb6407d69e",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U11.png",
+      "atlasSha256": {
+        "own": "2c91ac80c18547217d5a4c1559a5f9c90d04ec151924587ff39da56d37769a20",
+        "enemy": "157956c1e108d06865d29d3090ca118612c3ea4c3acc411ae6d40b515ce11835"
+      },
+      "review": "accepted",
+      "bodyRadius": 22,
+      "muzzle": [
+        65.185,
+        61.867
+      ],
+      "hit": [
+        0,
+        48.83
+      ],
+      "reviewNote": "骨盾战士的身份、骨盾与石锤在五行姿态中一致；待机呼吸、交替行进、抬锤蓄力与前伸接触、受击后仰、倒地死亡清楚可辨。四段真实画面录像覆盖己方和敌方原速/四分之一速，脚底和身体间距稳定，武器挂点与命中特效一致。",
+      "reviewedAtUtc": "2026-10-05T13:41:19.310270+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791207304693.json",
+          "metadataSha256": "75b17d023f8bc107fcc891a68ab64c54682f3c37ca472faacae050e8f35104d8",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791207304693.webm",
+          "videoSha256": "c0d5679c27c01e10156601e9ff3d91511ce6a7878284559f594f49cedcf727e3",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791207422878.json",
+          "metadataSha256": "7dc8f90478089164684a6d2fcdc09501da2a9f0daaadf23da51c59c2dea8ab28",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791207422878.webm",
+          "videoSha256": "ef65791586fe4eb3477f01e2381d71bfabc4efd11ee237e6a0c111499ac6923d",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791207551883.json",
+          "metadataSha256": "e66be00715f3203d120d083a05ea37185c444c641ab946a429b8c8bd93e272f1",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791207551883.webm",
+          "videoSha256": "c8f3cd4a2b25317d0a62218a0bd54f708576ea25a67b37f0aa7a297441ba3d34",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.471,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791207627250.json",
+          "metadataSha256": "814901175f5ed5f57929acbb817744339de7dab6a78bbbc54ee3e51d5753b5f5",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791207627250.webm",
+          "videoSha256": "9b24f53f3287fd80607b0fe7c3d5750c7e9c64846d8903da69c33bd8b6b58726",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.371,
+          "capturedFrames": 251
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U11",
+          "path": "characters/units/U11.png",
+          "sha256": "1e16088037659da7af1bbba398e7f5a4c5fb25939dcc06d59b6dc9048e23f682"
+        },
+        {
+          "key": "unit.U11.enemy",
+          "path": "characters/units/U11-enemy.png",
+          "sha256": "e5394c4dec8aa4f23d17ee7382a8c6a8ef2c3fc7aa28bdf37e302df45131142f"
+        },
+        {
+          "key": "icon.U11",
+          "path": "ui/units/U11.png",
+          "sha256": "7ba717ef81f1156d354bbed49241b4206bd7f5e521800c1b178d5c7e11f3c64f"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U11-9aa07def48c7.json",
+        "sha256": "9f070d44ff645441275616de3b0bafc8fe44d3aba6e38d5260a88d879af8d427"
+      }
+    },
+    "U42": {
+      "key": "animation.U42",
+      "enemyKey": "animation.U42.enemy",
+      "path": "characters/animations/U42.png",
+      "enemyPath": "characters/animations/U42-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 99,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "4337395e2c03f54bac8d1274487a4777e67d1e921cfd4e7cbe4297e3790dc61c",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U42.png",
+      "atlasSha256": {
+        "own": "fc8c0998042c691658930c662173fdb39e7cb307d138a0b522c585aca38ac4d6",
+        "enemy": "a621d482d948ad28d3981fdacf42c9aafd668d2229cce8a01c68bc65a7989106"
+      },
+      "review": "accepted",
+      "bodyRadius": 14,
+      "muzzle": [
+        55.273,
+        65.164
+      ],
+      "hit": [
+        0,
+        42.861
+      ],
+      "reviewNote": "U42 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:42.365205+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.json",
+          "metadataSha256": "d83a0cc4d0b5892bef3cc8c0b4d2b08e1e5a57cb251ef79de4b29cf2295932c2",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.webm",
+          "videoSha256": "390a49fd47b4cdc16078c6e4a38122425e99341501ceecb797e02e55521d13c2",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.373,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.json",
+          "metadataSha256": "245e1701e95822f4ddcd3e00ede99f25df85bf6c34be6edc90a08185e9a159c9",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.webm",
+          "videoSha256": "da3e0ddcd6f4d68c78e01a769b4363c3d3b1f6f2ac04445be4747b7f1ba11c10",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.json",
+          "metadataSha256": "8bce7033944130ccb264a0b53fb59ed098f86b2454323b42972111fb7438b7d6",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.webm",
+          "videoSha256": "64eae2cb8070c5cd0012d6224bab92b92b71f180cdf332cbe7dbcc463d2be050",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.json",
+          "metadataSha256": "1da2729672675cb1c22d366072566e28d877c4883400d30be78cc080645810be",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.webm",
+          "videoSha256": "8d2d4c18198f64ae2b0dbdf4b1b9f7c3f0384209ec06f7bf6fc2112045cf8405",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U42",
+          "path": "characters/units/U42.png",
+          "sha256": "98bcf325b73b423eb5039ee84b8addc82cc99d8019ba3e56c8d6f622f5e9321c"
+        },
+        {
+          "key": "unit.U42.enemy",
+          "path": "characters/units/U42-enemy.png",
+          "sha256": "6feac85fa39691cc7a922174230c0af148a4c6cafef555a706dff719d0b11061"
+        },
+        {
+          "key": "icon.U42",
+          "path": "ui/units/U42.png",
+          "sha256": "60e35b203847a2b2fa61eacdd4e2d55eefd37fc9a9132d731732381309944b42"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U42-4337395e2c03.json",
+        "sha256": "d2bc270d7f9aba5223ba3a2fc27fa8729c5eef3103dc9f745b96670bbe3d7936"
+      }
+    },
+    "U44": {
+      "key": "animation.U44",
+      "enemyKey": "animation.U44.enemy",
+      "path": "characters/animations/U44.png",
+      "enemyPath": "characters/animations/U44-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 118,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "7fe7edb8ef063f1cee4ed4968040128033c19888117f7a922d5a365606bc21f1",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U44.png",
+      "atlasSha256": {
+        "own": "a50e13f2ae844edbacc3601db4592bb81554cf344650effc254108d752c57cb2",
+        "enemy": "66bac2589bc26bd6dcb108bd46beac1e4852c07af6312de8543482241929add4"
+      },
+      "review": "accepted",
+      "bodyRadius": 43,
+      "muzzle": [
+        58.136,
+        55.644
+      ],
+      "hit": [
+        0,
+        43.186
+      ],
+      "reviewNote": "U44 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:44.957425+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.json",
+          "metadataSha256": "d83a0cc4d0b5892bef3cc8c0b4d2b08e1e5a57cb251ef79de4b29cf2295932c2",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.webm",
+          "videoSha256": "390a49fd47b4cdc16078c6e4a38122425e99341501ceecb797e02e55521d13c2",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.373,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.json",
+          "metadataSha256": "245e1701e95822f4ddcd3e00ede99f25df85bf6c34be6edc90a08185e9a159c9",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.webm",
+          "videoSha256": "da3e0ddcd6f4d68c78e01a769b4363c3d3b1f6f2ac04445be4747b7f1ba11c10",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.json",
+          "metadataSha256": "8bce7033944130ccb264a0b53fb59ed098f86b2454323b42972111fb7438b7d6",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.webm",
+          "videoSha256": "64eae2cb8070c5cd0012d6224bab92b92b71f180cdf332cbe7dbcc463d2be050",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.json",
+          "metadataSha256": "1da2729672675cb1c22d366072566e28d877c4883400d30be78cc080645810be",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.webm",
+          "videoSha256": "8d2d4c18198f64ae2b0dbdf4b1b9f7c3f0384209ec06f7bf6fc2112045cf8405",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U44",
+          "path": "characters/units/U44.png",
+          "sha256": "b892a030bd2ab4c44ef6b6db0c93b86e7d1ff29b8143b7e4cb06f61c45b0959a"
+        },
+        {
+          "key": "unit.U44.enemy",
+          "path": "characters/units/U44-enemy.png",
+          "sha256": "2489bf4d9cc31baef1381e7816e0ffc0b81b60a1fb2144950035dc3d0d6600b3"
+        },
+        {
+          "key": "icon.U44",
+          "path": "ui/units/U44.png",
+          "sha256": "b407f2c68df4324f61283d7895180ad60170316e1ea88a828a9bfa78179c5056"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U44-7fe7edb8ef06.json",
+        "sha256": "ca9686c76111986bd7151f819614d2bf83d7fea6a4143a50c2e17e6c79e91c14"
+      }
+    },
+    "U13": {
+      "key": "animation.U13",
+      "enemyKey": "animation.U13.enemy",
+      "path": "characters/animations/U13.png",
+      "enemyPath": "characters/animations/U13-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 81,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "c85da4cd1b9e01f9979e15e80eef566be2b9d77b2384c2b5230dd48786861b15",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U13.png",
+      "atlasSha256": {
+        "own": "248fce4871f1ebf612d3e96cacd9895872a4ca6af06748942173e07f0388bab8",
+        "enemy": "1e281188b4318f8873be87181b24f0a7e37d67edcacdc722fedc91dc0453f7c0"
+      },
+      "review": "accepted",
+      "bodyRadius": 17,
+      "muzzle": [
+        66.37,
+        64.237
+      ],
+      "hit": [
+        0,
+        42.904
+      ],
+      "reviewNote": "U13 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:27.094869+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791221673748.json",
+          "metadataSha256": "41e02024cff430294c021eba37d274a800400fedf4b4cec9a86364ccce280125",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791221673748.webm",
+          "videoSha256": "1834ae4683aae03d90a20f34d232380121f85e79009557fe40454e58659fbab2",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791221737591.json",
+          "metadataSha256": "22e16c1b1c08f028a73b9ea372b5705dbe58b324fb7b1a9cdf73bc46f897f032",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791221737591.webm",
+          "videoSha256": "8bf14e44033573403b7a6c0c874744d5831c90f5220d20180ecb6aaec4bba5b6",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1000
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791221793813.json",
+          "metadataSha256": "1699a1baf36c3e8bb0f973f9c0de36e3b8fc5e0c6de94d5fae8d365eca5e789a",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791221793813.webm",
+          "videoSha256": "236a51248acadab0fc4e35d696a41d4c3dfd90a9b4fbc58075a5acf5f142b477",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791221861088.json",
+          "metadataSha256": "7f9a9ce4875efaa247e493a27d06acc4fccde457b6841c304b66a1cbc6e59c98",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791221861088.webm",
+          "videoSha256": "bbbef10b73b927217337da44e5dadeb147c11603c70aecd924c37d1019afe182",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U13",
+          "path": "characters/units/U13.png",
+          "sha256": "703c49e51cabd1c886593e67ae88a2c1c9c29dc53c9ce6cd5e48a9537b4e4ebf"
+        },
+        {
+          "key": "unit.U13.enemy",
+          "path": "characters/units/U13-enemy.png",
+          "sha256": "e562f23a027e80b0077e4033a455f23d26776ed27f7821d2c1a2fcef2c906330"
+        },
+        {
+          "key": "icon.U13",
+          "path": "ui/units/U13.png",
+          "sha256": "fbb0b5ba7589cc27a73b1758c3e2704c966782776f19d9d98427e5a6e82b7362"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U13-c85da4cd1b9e.json",
+        "sha256": "012b39799b6579e19ba7a4f7cbc784c2855760fe1e6d413c5b16eed114c6d3f1"
+      }
+    },
+    "U23": {
+      "key": "animation.U23",
+      "enemyKey": "animation.U23.enemy",
+      "path": "characters/animations/U23.png",
+      "enemyPath": "characters/animations/U23-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 75,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "63d8a3532e0967e79f56a275d1b822d13355aefc1dee4ca205d08b3268aa8fc0",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U23.png",
+      "atlasSha256": {
+        "own": "ab1b642e8698f29ed25aac86d9a3fab02a2ca5a7702bd99f2e26143061f6e98a",
+        "enemy": "f0cef15e0d63c0d19d5e383adc46bd009d98a086bb22b664ca8b66182ed5b182"
+      },
+      "review": "accepted",
+      "bodyRadius": 16,
+      "muzzle": [
+        71.68,
+        57.856
+      ],
+      "hit": [
+        0,
+        42.496
+      ],
+      "reviewNote": "U23 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:31.972188+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.json",
+          "metadataSha256": "de2c5c352d9d9ce9070401775c499e3aeb87749d11d6291b99775e36ebc51758",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.webm",
+          "videoSha256": "b30a3a20272d447d703d5fa1a85d16fd899845a0c2eb28943bd7a464e216c574",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.json",
+          "metadataSha256": "66a175f7e23fae4341740cc25772bf8a3d80b9222958cd986e73a17b6846d73e",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.webm",
+          "videoSha256": "7a69355dc77d537aae7746eade4b2213b89b3261c0456fe21678514f9377105b",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 999
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.json",
+          "metadataSha256": "ea3966bdb7056f1b8cce66bccc7237100917d563791ef3efdbb8996b528cada1",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.webm",
+          "videoSha256": "3c83e2fa79f1a6468f0c751814314e808fe1aa70c57431bac2e3c91a04678ddf",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.336,
+          "capturedFrames": 250
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.json",
+          "metadataSha256": "82a8db8249004b5aa6d7f4e271b7aea9ebba3787ce88a3a4e3ad45f505c37aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.webm",
+          "videoSha256": "1e910c9c9815b1db6b48395ef81ca1dc216da95d205d1eca98ef31ebced1f155",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U23",
+          "path": "characters/units/U23.png",
+          "sha256": "989ff03b43c10f7bae663ec637e4f0b087522eafa305b02d1997d5e9a409109e"
+        },
+        {
+          "key": "unit.U23.enemy",
+          "path": "characters/units/U23-enemy.png",
+          "sha256": "489f6ed68e2e31d3ff792eab6424084784b6ec59201544680738d7ca66912f68"
+        },
+        {
+          "key": "icon.U23",
+          "path": "ui/units/U23.png",
+          "sha256": "828c66fce951e37b99b3acf584a63eb80dfa7662cc7e2277acbbcfce5c2bd4cc"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U23-63d8a3532e09.json",
+        "sha256": "35b9a7251b3cf5a0f61c750f0a84ff6bec4971d3b6a9b1b863e5e7b721f9b172"
+      }
+    },
+    "U24": {
+      "key": "animation.U24",
+      "enemyKey": "animation.U24.enemy",
+      "path": "characters/animations/U24.png",
+      "enemyPath": "characters/animations/U24-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 103,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "1e363320c57718847d86de105d6def92d96cb0a6ed576f7022c7b4300544eabb",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U24.png",
+      "atlasSha256": {
+        "own": "1405cfc3fa7bc542133323cd45164d2bdf4d4ca1a1fa4f06c03f5ed46618e225",
+        "enemy": "561a0d78df5045c187c2f490ba4c8aad035e47371a65ad25ae1f6a632f36378d"
+      },
+      "review": "accepted",
+      "bodyRadius": 41,
+      "muzzle": [
+        77.709,
+        85.592
+      ],
+      "hit": [
+        0,
+        51.806
+      ],
+      "reviewNote": "U24 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:33.320605+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.json",
+          "metadataSha256": "de2c5c352d9d9ce9070401775c499e3aeb87749d11d6291b99775e36ebc51758",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.webm",
+          "videoSha256": "b30a3a20272d447d703d5fa1a85d16fd899845a0c2eb28943bd7a464e216c574",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.json",
+          "metadataSha256": "66a175f7e23fae4341740cc25772bf8a3d80b9222958cd986e73a17b6846d73e",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.webm",
+          "videoSha256": "7a69355dc77d537aae7746eade4b2213b89b3261c0456fe21678514f9377105b",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 999
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.json",
+          "metadataSha256": "ea3966bdb7056f1b8cce66bccc7237100917d563791ef3efdbb8996b528cada1",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.webm",
+          "videoSha256": "3c83e2fa79f1a6468f0c751814314e808fe1aa70c57431bac2e3c91a04678ddf",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.336,
+          "capturedFrames": 250
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.json",
+          "metadataSha256": "82a8db8249004b5aa6d7f4e271b7aea9ebba3787ce88a3a4e3ad45f505c37aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.webm",
+          "videoSha256": "1e910c9c9815b1db6b48395ef81ca1dc216da95d205d1eca98ef31ebced1f155",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U24",
+          "path": "characters/units/U24.png",
+          "sha256": "b5ffd0a1f4fd7327a6b8bbdfee16e7a51695030a6a92eec61b31736927388522"
+        },
+        {
+          "key": "unit.U24.enemy",
+          "path": "characters/units/U24-enemy.png",
+          "sha256": "cd7500ea7ccbc0fa1d672c7b9a4198bd84ac2b04c7b1119c8a3b31fe647c22b6"
+        },
+        {
+          "key": "icon.U24",
+          "path": "ui/units/U24.png",
+          "sha256": "92221c7f5d4921512f1254509065abc2646f1a57c95f6d7c53d4fe9dbc2b57c8"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U24-1e363320c577.json",
+        "sha256": "ba777c17c1568aeeb2ba4173423ef349fdd58643e0f93e6b98c2cfc69a2b96dc"
+      }
+    },
+    "U12": {
+      "key": "animation.U12",
+      "enemyKey": "animation.U12.enemy",
+      "path": "characters/animations/U12.png",
+      "enemyPath": "characters/animations/U12-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 90,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "9d01585225db05e172d43fd1f09e08fa3caf6e0eabf7320fee4ca9296f217adc",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U12.png",
+      "atlasSha256": {
+        "own": "c390e81df7b83ef67a0d9a3e1aca1e22670374230d5f952270850dc72c0186fa",
+        "enemy": "3d93947021937731db535de7c5fbb4532b83ec0521d4c3e42f582d3992f72979"
+      },
+      "review": "accepted",
+      "bodyRadius": 14,
+      "muzzle": [
+        58.667,
+        57.813
+      ],
+      "hit": [
+        0,
+        41.813
+      ],
+      "reviewNote": "U12 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:25.792697+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791221673748.json",
+          "metadataSha256": "41e02024cff430294c021eba37d274a800400fedf4b4cec9a86364ccce280125",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791221673748.webm",
+          "videoSha256": "1834ae4683aae03d90a20f34d232380121f85e79009557fe40454e58659fbab2",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791221737591.json",
+          "metadataSha256": "22e16c1b1c08f028a73b9ea372b5705dbe58b324fb7b1a9cdf73bc46f897f032",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791221737591.webm",
+          "videoSha256": "8bf14e44033573403b7a6c0c874744d5831c90f5220d20180ecb6aaec4bba5b6",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1000
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791221793813.json",
+          "metadataSha256": "1699a1baf36c3e8bb0f973f9c0de36e3b8fc5e0c6de94d5fae8d365eca5e789a",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791221793813.webm",
+          "videoSha256": "236a51248acadab0fc4e35d696a41d4c3dfd90a9b4fbc58075a5acf5f142b477",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791221861088.json",
+          "metadataSha256": "7f9a9ce4875efaa247e493a27d06acc4fccde457b6841c304b66a1cbc6e59c98",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791221861088.webm",
+          "videoSha256": "bbbef10b73b927217337da44e5dadeb147c11603c70aecd924c37d1019afe182",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U12",
+          "path": "characters/units/U12.png",
+          "sha256": "4708367a4d26a97d2b8ea5bdc40307976e35c8a1d185e42a3f93cf58a484b3c0"
+        },
+        {
+          "key": "unit.U12.enemy",
+          "path": "characters/units/U12-enemy.png",
+          "sha256": "14f364bf542fc69305005bce5826887b8b5907bc6610d33a882ab7c63e92964a"
+        },
+        {
+          "key": "icon.U12",
+          "path": "ui/units/U12.png",
+          "sha256": "3e19ab07a89804a9454c9d825a7c6d8ce3dd780b53809110927eacba6c9b3d20"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U12-9d01585225db.json",
+        "sha256": "83529aee86be62385bdc40c3cdd70e6ff3861164d3067163efeb9ec56e436501"
+      }
+    },
+    "U14": {
+      "key": "animation.U14",
+      "enemyKey": "animation.U14.enemy",
+      "path": "characters/animations/U14.png",
+      "enemyPath": "characters/animations/U14-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 98,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "1749b2a0258faf192f398a94e7cbec5db0052336ec87dca67381c9cd07e9f75f",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U14.png",
+      "atlasSha256": {
+        "own": "1fe27235150acad7590c9bb4fd4fcb958e747a749f258cf52bbd4f8e8963fc70",
+        "enemy": "d36fb7e44c474fa627d4e68aacf282f6745106005e377d0b3c62216abcfa1c4f"
+      },
+      "review": "accepted",
+      "bodyRadius": 37,
+      "muzzle": [
+        88.388,
+        83.408
+      ],
+      "hit": [
+        0,
+        53.531
+      ],
+      "reviewNote": "U14 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:28.608504+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791221673748.json",
+          "metadataSha256": "41e02024cff430294c021eba37d274a800400fedf4b4cec9a86364ccce280125",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-1x-1791221673748.webm",
+          "videoSha256": "1834ae4683aae03d90a20f34d232380121f85e79009557fe40454e58659fbab2",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791221737591.json",
+          "metadataSha256": "22e16c1b1c08f028a73b9ea372b5705dbe58b324fb7b1a9cdf73bc46f897f032",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side0-0.25x-1791221737591.webm",
+          "videoSha256": "8bf14e44033573403b7a6c0c874744d5831c90f5220d20180ecb6aaec4bba5b6",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1000
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791221793813.json",
+          "metadataSha256": "1699a1baf36c3e8bb0f973f9c0de36e3b8fc5e0c6de94d5fae8d365eca5e789a",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-1x-1791221793813.webm",
+          "videoSha256": "236a51248acadab0fc4e35d696a41d4c3dfd90a9b4fbc58075a5acf5f142b477",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791221861088.json",
+          "metadataSha256": "7f9a9ce4875efaa247e493a27d06acc4fccde457b6841c304b66a1cbc6e59c98",
+          "videoPath": "output/qa/v0.3/motion-clips/A1-units-sequence-side1-0.25x-1791221861088.webm",
+          "videoSha256": "bbbef10b73b927217337da44e5dadeb147c11603c70aecd924c37d1019afe182",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U14",
+          "path": "characters/units/U14.png",
+          "sha256": "8e42fe02a188b906fbda221669952568ded3314420e073c4fa5ce09bddde0f44"
+        },
+        {
+          "key": "unit.U14.enemy",
+          "path": "characters/units/U14-enemy.png",
+          "sha256": "85fe9d29d77ca12b21526e96a37f77c2198d52dfb060d6cf890e5bc53d13fdd1"
+        },
+        {
+          "key": "icon.U14",
+          "path": "ui/units/U14.png",
+          "sha256": "01f82c4bd869df5582ef1877d775c67a5d4502a884b6c03da1440e20a29df50c"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U14-1749b2a0258f.json",
+        "sha256": "9dc19bf5cdc057f043465ee4cee06131839959790ff6f65448fb9ed2d25bb960"
+      }
+    },
+    "U21": {
+      "key": "animation.U21",
+      "enemyKey": "animation.U21.enemy",
+      "path": "characters/animations/U21.png",
+      "enemyPath": "characters/animations/U21-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 90,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "c7bbfcb2cfd36f208e7ea417c18891411bbb2a512fb28682ec23daf74e08bffc",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U21.png",
+      "atlasSha256": {
+        "own": "1c9fd3dc55890938c43440f94ede85abdea786bdde86d5a4b0b5cc1befa39e22",
+        "enemy": "d557a8e1419a617d106f849aa0e352c88fc61eda532bc690d8efdda32f573e75"
+      },
+      "review": "accepted",
+      "bodyRadius": 16,
+      "muzzle": [
+        59.733,
+        57.813
+      ],
+      "hit": [
+        0,
+        42.88
+      ],
+      "reviewNote": "U21 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:29.707450+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.json",
+          "metadataSha256": "de2c5c352d9d9ce9070401775c499e3aeb87749d11d6291b99775e36ebc51758",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.webm",
+          "videoSha256": "b30a3a20272d447d703d5fa1a85d16fd899845a0c2eb28943bd7a464e216c574",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.json",
+          "metadataSha256": "66a175f7e23fae4341740cc25772bf8a3d80b9222958cd986e73a17b6846d73e",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.webm",
+          "videoSha256": "7a69355dc77d537aae7746eade4b2213b89b3261c0456fe21678514f9377105b",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 999
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.json",
+          "metadataSha256": "ea3966bdb7056f1b8cce66bccc7237100917d563791ef3efdbb8996b528cada1",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.webm",
+          "videoSha256": "3c83e2fa79f1a6468f0c751814314e808fe1aa70c57431bac2e3c91a04678ddf",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.336,
+          "capturedFrames": 250
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.json",
+          "metadataSha256": "82a8db8249004b5aa6d7f4e271b7aea9ebba3787ce88a3a4e3ad45f505c37aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.webm",
+          "videoSha256": "1e910c9c9815b1db6b48395ef81ca1dc216da95d205d1eca98ef31ebced1f155",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U21",
+          "path": "characters/units/U21.png",
+          "sha256": "f04dddfe79335ef2d34ac480586783b03f29decc99a6d3f37a62316e80a912e1"
+        },
+        {
+          "key": "unit.U21.enemy",
+          "path": "characters/units/U21-enemy.png",
+          "sha256": "b47bedf32e53c0f4bfc76dde81dcb630b82fb274d94e3fddda285faf355de71b"
+        },
+        {
+          "key": "icon.U21",
+          "path": "ui/units/U21.png",
+          "sha256": "25ff0b1c81204df58131248cbef7bdbdd68d50cc3596012e89cdd3288a0f27bb"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U21-c7bbfcb2cfd3.json",
+        "sha256": "747e12a539bef1b7f25f918211db36c9e074550d87e16bb2fa33aa305d210bae"
+      }
+    },
+    "U22": {
+      "key": "animation.U22",
+      "enemyKey": "animation.U22.enemy",
+      "path": "characters/animations/U22.png",
+      "enemyPath": "characters/animations/U22-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 103,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "8d0a47076ce82f7e29c1f7847d59295f4cc97d660d0650155cad528dd66371f5",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U22.png",
+      "atlasSha256": {
+        "own": "27c74c2aee3657a26a44749b39755f15ca7a04a6b30495355dd0b668cea674d8",
+        "enemy": "89216cb3d15ceaaa905a1e89936a3caeffbba4ef8e2dca09a6e3f63755a6723c"
+      },
+      "review": "accepted",
+      "bodyRadius": 14,
+      "muzzle": [
+        36.35,
+        63.565
+      ],
+      "hit": [
+        0,
+        42.128
+      ],
+      "reviewNote": "U22 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:30.732700+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.json",
+          "metadataSha256": "de2c5c352d9d9ce9070401775c499e3aeb87749d11d6291b99775e36ebc51758",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-1x-1791217669682.webm",
+          "videoSha256": "b30a3a20272d447d703d5fa1a85d16fd899845a0c2eb28943bd7a464e216c574",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.json",
+          "metadataSha256": "66a175f7e23fae4341740cc25772bf8a3d80b9222958cd986e73a17b6846d73e",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side0-0.25x-1791216296973.webm",
+          "videoSha256": "7a69355dc77d537aae7746eade4b2213b89b3261c0456fe21678514f9377105b",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 999
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.json",
+          "metadataSha256": "ea3966bdb7056f1b8cce66bccc7237100917d563791ef3efdbb8996b528cada1",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-1x-1791220127056.webm",
+          "videoSha256": "3c83e2fa79f1a6468f0c751814314e808fe1aa70c57431bac2e3c91a04678ddf",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.336,
+          "capturedFrames": 250
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.json",
+          "metadataSha256": "82a8db8249004b5aa6d7f4e271b7aea9ebba3787ce88a3a4e3ad45f505c37aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A2-units-sequence-side1-0.25x-1791220189634.webm",
+          "videoSha256": "1e910c9c9815b1db6b48395ef81ca1dc216da95d205d1eca98ef31ebced1f155",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U22",
+          "path": "characters/units/U22.png",
+          "sha256": "5b9233f18b11d3997eda65b4db30b7fbbd1723b98d3be69dc6c8ee505c4902c8"
+        },
+        {
+          "key": "unit.U22.enemy",
+          "path": "characters/units/U22-enemy.png",
+          "sha256": "28293f0dc76c8f1b20262f5b255071f972c75cd50972dc3da721710852fc7062"
+        },
+        {
+          "key": "icon.U22",
+          "path": "ui/units/U22.png",
+          "sha256": "506ee2dc778a709207a2eb6fa2d2bbbd150ab7e432f94743163ef95d707d4021"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U22-8d0a47076ce8.json",
+        "sha256": "9e5b20499571f660bd7f044ea6773d900692ca3b6cc660a245e960353f278205"
+      }
+    },
+    "U31": {
+      "key": "animation.U31",
+      "enemyKey": "animation.U31.enemy",
+      "path": "characters/animations/U31.png",
+      "enemyPath": "characters/animations/U31-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 109,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "018f7ae1730c2fa6a56df423f139a7a0b37869db2ca22955d2e23e3780b59e74",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U31.png",
+      "atlasSha256": {
+        "own": "76daee1c81ac9b2248f0b25a7e52921f67352c8f693b8686216d08e10bbaf717",
+        "enemy": "d3d94823064568933f3a4a66b768725c0aebaafc2c75d006e4ea042a8f8a87db"
+      },
+      "review": "accepted",
+      "bodyRadius": 16,
+      "muzzle": [
+        44.917,
+        38.048
+      ],
+      "hit": [
+        0,
+        42.451
+      ],
+      "reviewNote": "U31 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:34.938364+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.json",
+          "metadataSha256": "0ba71bcea28a22d84b813c9e1754909c5dc299596058142a9d330af6b45a4124",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.webm",
+          "videoSha256": "c1fc730277cfe981062bde742a7038e3e7ea4f457a1959760432903e020b7572",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.json",
+          "metadataSha256": "c986a2b5c29f0db946676e9afb9f809a672d37375120a54f70c8fccd9e17e41f",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.webm",
+          "videoSha256": "e7c3b92be9fa4b7c8feb0a0011f153df518dd4582a7359c916c04bd44afb09f1",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.json",
+          "metadataSha256": "6023aa8717be63927c3bdfbf1482b220ac4c0916c9fb03b61db4736706a19a3c",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.webm",
+          "videoSha256": "1237f364e51fbee94545feec38d1cd5c00e32ebc6234f4a63a954c9a6e5718e4",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.369,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.json",
+          "metadataSha256": "915e11fae4190452ec526e879195ade7362dd398443974bfdfdce4e5ef1b7663",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.webm",
+          "videoSha256": "876d49019b69dcc51c0c60b2a7554a7fbcd24e8453328f6426388dabc5238779",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U31",
+          "path": "characters/units/U31.png",
+          "sha256": "f29b75969533212c0c259d543c8dccc7a480d6aeb102b0496f44f5638ae67cdd"
+        },
+        {
+          "key": "unit.U31.enemy",
+          "path": "characters/units/U31-enemy.png",
+          "sha256": "0595f87cbed4c228e16cb07bf865367de1cdb83ae8a15467eaab12ed7edf9712"
+        },
+        {
+          "key": "icon.U31",
+          "path": "ui/units/U31.png",
+          "sha256": "f0b110585efe0e4adc7c04a04fc627da490baa1b36e6e423fa3788ed82b4dd3e"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U31-018f7ae1730c.json",
+        "sha256": "e8e8d5dcb0bf63f496b1dd376365c2b3534866ab673b69ea798ef750e09268f6"
+      }
+    },
+    "U32": {
+      "key": "animation.U32",
+      "enemyKey": "animation.U32.enemy",
+      "path": "characters/animations/U32.png",
+      "enemyPath": "characters/animations/U32-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 101,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "fdba530db9973acee5325ff768d2222d658e609ec19b5a501f37d402fd05adee",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U32.png",
+      "atlasSha256": {
+        "own": "4f40c8f60144e69870daf37c10a572938e186d4908e6d1cb59a0753f430db3b9",
+        "enemy": "55f3a8cc0e2c567c38b1b2023fb9bf982ebfa5ac519b710e24afc3af6502912c"
+      },
+      "review": "accepted",
+      "bodyRadius": 15,
+      "muzzle": [
+        48.475,
+        56.269
+      ],
+      "hit": [
+        0,
+        42.012
+      ],
+      "reviewNote": "U32 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:36.945502+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.json",
+          "metadataSha256": "0ba71bcea28a22d84b813c9e1754909c5dc299596058142a9d330af6b45a4124",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.webm",
+          "videoSha256": "c1fc730277cfe981062bde742a7038e3e7ea4f457a1959760432903e020b7572",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.json",
+          "metadataSha256": "c986a2b5c29f0db946676e9afb9f809a672d37375120a54f70c8fccd9e17e41f",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.webm",
+          "videoSha256": "e7c3b92be9fa4b7c8feb0a0011f153df518dd4582a7359c916c04bd44afb09f1",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.json",
+          "metadataSha256": "6023aa8717be63927c3bdfbf1482b220ac4c0916c9fb03b61db4736706a19a3c",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.webm",
+          "videoSha256": "1237f364e51fbee94545feec38d1cd5c00e32ebc6234f4a63a954c9a6e5718e4",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.369,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.json",
+          "metadataSha256": "915e11fae4190452ec526e879195ade7362dd398443974bfdfdce4e5ef1b7663",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.webm",
+          "videoSha256": "876d49019b69dcc51c0c60b2a7554a7fbcd24e8453328f6426388dabc5238779",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U32",
+          "path": "characters/units/U32.png",
+          "sha256": "f679a44277266ea390bde4d375d26f41f32291bc7c1b958b6c5014eac54195e3"
+        },
+        {
+          "key": "unit.U32.enemy",
+          "path": "characters/units/U32-enemy.png",
+          "sha256": "0c2a7d6ee7243ac618ae5fc4bd3795031c595adf67fe3102b87094646de79af0"
+        },
+        {
+          "key": "icon.U32",
+          "path": "ui/units/U32.png",
+          "sha256": "20ed6ebc6046cf814321d7bb68f3db0b5438cee1840e0d36934d6613eae337b5"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U32-fdba530db997.json",
+        "sha256": "91be118c42c8bd0e7906f10a84d45f191a203d9428d83f46d0347aac224de565"
+      }
+    },
+    "U34": {
+      "key": "animation.U34",
+      "enemyKey": "animation.U34.enemy",
+      "path": "characters/animations/U34.png",
+      "enemyPath": "characters/animations/U34-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 119,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "b22bee84a5f25603d3b07cf3e346192fb3e4d4e26902fa6d3907f83902bf1979",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U34.png",
+      "atlasSha256": {
+        "own": "adbe2f200d613c4a9823fd4212ccde2204983f59ec650bcafdfd0471db3eb5f0",
+        "enemy": "3dc3d6fdb26f36a211ed89eace82615a401601b70af0cf2fb057f569ec4d6f14"
+      },
+      "review": "accepted",
+      "bodyRadius": 36,
+      "muzzle": [
+        75.176,
+        70.941
+      ],
+      "hit": [
+        0,
+        55.059
+      ],
+      "reviewNote": "U34 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:39.780377+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.json",
+          "metadataSha256": "0ba71bcea28a22d84b813c9e1754909c5dc299596058142a9d330af6b45a4124",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.webm",
+          "videoSha256": "c1fc730277cfe981062bde742a7038e3e7ea4f457a1959760432903e020b7572",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.json",
+          "metadataSha256": "c986a2b5c29f0db946676e9afb9f809a672d37375120a54f70c8fccd9e17e41f",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.webm",
+          "videoSha256": "e7c3b92be9fa4b7c8feb0a0011f153df518dd4582a7359c916c04bd44afb09f1",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.json",
+          "metadataSha256": "6023aa8717be63927c3bdfbf1482b220ac4c0916c9fb03b61db4736706a19a3c",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.webm",
+          "videoSha256": "1237f364e51fbee94545feec38d1cd5c00e32ebc6234f4a63a954c9a6e5718e4",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.369,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.json",
+          "metadataSha256": "915e11fae4190452ec526e879195ade7362dd398443974bfdfdce4e5ef1b7663",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.webm",
+          "videoSha256": "876d49019b69dcc51c0c60b2a7554a7fbcd24e8453328f6426388dabc5238779",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U34",
+          "path": "characters/units/U34.png",
+          "sha256": "5017b60c33e85c9e28687a464774faa306ed14cb301a3ea68f4f8eeab5250da4"
+        },
+        {
+          "key": "unit.U34.enemy",
+          "path": "characters/units/U34-enemy.png",
+          "sha256": "318eed5fbad464d058d48c8de9ee65bc96ec1cf9b78cf975b148a314eedfa238"
+        },
+        {
+          "key": "icon.U34",
+          "path": "ui/units/U34.png",
+          "sha256": "7a5e793c0505733f6b7a791e3f22ea825774009457b5ea9d0bdfcccc2b615f74"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U34-b22bee84a5f2.json",
+        "sha256": "2ba9d5f7ab7c08bed7115661159c6918d1d8ed61fce5f987a0c244ef7118b96d"
+      }
+    },
+    "U41": {
+      "key": "animation.U41",
+      "enemyKey": "animation.U41.enemy",
+      "path": "characters/animations/U41.png",
+      "enemyPath": "characters/animations/U41-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 90,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "ea37f223ab148fa5aca070931a7f0cf08268f04760135c68bdab895003907afe",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U41.png",
+      "atlasSha256": {
+        "own": "c1072ec0a6000567900b11faf781420b4b1819bebbf29ed779c163311ae8edcc",
+        "enemy": "0622ce54e4b17afafbef0bf9767ec4bbdc5aa2c35fd14a56a165aafba2b1c114"
+      },
+      "review": "accepted",
+      "bodyRadius": 16,
+      "muzzle": [
+        59.733,
+        57.813
+      ],
+      "hit": [
+        0,
+        42.88
+      ],
+      "reviewNote": "U41 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:41.092653+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.json",
+          "metadataSha256": "d83a0cc4d0b5892bef3cc8c0b4d2b08e1e5a57cb251ef79de4b29cf2295932c2",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.webm",
+          "videoSha256": "390a49fd47b4cdc16078c6e4a38122425e99341501ceecb797e02e55521d13c2",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.373,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.json",
+          "metadataSha256": "245e1701e95822f4ddcd3e00ede99f25df85bf6c34be6edc90a08185e9a159c9",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.webm",
+          "videoSha256": "da3e0ddcd6f4d68c78e01a769b4363c3d3b1f6f2ac04445be4747b7f1ba11c10",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.json",
+          "metadataSha256": "8bce7033944130ccb264a0b53fb59ed098f86b2454323b42972111fb7438b7d6",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.webm",
+          "videoSha256": "64eae2cb8070c5cd0012d6224bab92b92b71f180cdf332cbe7dbcc463d2be050",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.json",
+          "metadataSha256": "1da2729672675cb1c22d366072566e28d877c4883400d30be78cc080645810be",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.webm",
+          "videoSha256": "8d2d4c18198f64ae2b0dbdf4b1b9f7c3f0384209ec06f7bf6fc2112045cf8405",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U41",
+          "path": "characters/units/U41.png",
+          "sha256": "d60a9012f033040e8dfd314e873d69733db892338c17810c5d24979c95c00bb4"
+        },
+        {
+          "key": "unit.U41.enemy",
+          "path": "characters/units/U41-enemy.png",
+          "sha256": "13f26e8fe6b2bc2474018c4b4635da07ea8a4930bdc5f02ae5af4a32d3d4e221"
+        },
+        {
+          "key": "icon.U41",
+          "path": "ui/units/U41.png",
+          "sha256": "c04cedf9e58fddbff0ab46ad72a8fe5bde8c86503772f0967d7e0e54a6707402"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U41-ea37f223ab14.json",
+        "sha256": "16d8c68f8701249ad923e181740ec92d217921041e1d11321eb528591edf56c8"
+      }
+    },
+    "U43": {
+      "key": "animation.U43",
+      "enemyKey": "animation.U43.enemy",
+      "path": "characters/animations/U43.png",
+      "enemyPath": "characters/animations/U43-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 71,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "8ff338e9e96e05ad5c682eb7169b0d008ca9097db0d04dacc260e2b737294e99",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U43.png",
+      "atlasSha256": {
+        "own": "d393875451c0cb29076aecee1960f816439a18c40b6b110e7cf9feb226f1caa6",
+        "enemy": "2027a97cb9f897cc13274e88356cf1634334e4ec0d1b7bddc676a506bb216e71"
+      },
+      "review": "accepted",
+      "bodyRadius": 18,
+      "muzzle": [
+        56.789,
+        66.524
+      ],
+      "hit": [
+        0,
+        40.834
+      ],
+      "reviewNote": "U43 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:43.535629+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.json",
+          "metadataSha256": "d83a0cc4d0b5892bef3cc8c0b4d2b08e1e5a57cb251ef79de4b29cf2295932c2",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-1x-1791219610110.webm",
+          "videoSha256": "390a49fd47b4cdc16078c6e4a38122425e99341501ceecb797e02e55521d13c2",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.373,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.json",
+          "metadataSha256": "245e1701e95822f4ddcd3e00ede99f25df85bf6c34be6edc90a08185e9a159c9",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side0-0.25x-1791219671457.webm",
+          "videoSha256": "da3e0ddcd6f4d68c78e01a769b4363c3d3b1f6f2ac04445be4747b7f1ba11c10",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.json",
+          "metadataSha256": "8bce7033944130ccb264a0b53fb59ed098f86b2454323b42972111fb7438b7d6",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-1x-1791220382120.webm",
+          "videoSha256": "64eae2cb8070c5cd0012d6224bab92b92b71f180cdf332cbe7dbcc463d2be050",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.372,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.json",
+          "metadataSha256": "1da2729672675cb1c22d366072566e28d877c4883400d30be78cc080645810be",
+          "videoPath": "output/qa/v0.3/motion-clips/A4-units-sequence-side1-0.25x-1791220444639.webm",
+          "videoSha256": "8d2d4c18198f64ae2b0dbdf4b1b9f7c3f0384209ec06f7bf6fc2112045cf8405",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U43",
+          "path": "characters/units/U43.png",
+          "sha256": "b0fbd68b04a33fdc4fec6edaf8b8cf38a5452bc43e8837fe398b4cbfe776e1ae"
+        },
+        {
+          "key": "unit.U43.enemy",
+          "path": "characters/units/U43-enemy.png",
+          "sha256": "ea4712210281c35265033217575dbb8db2f9186d5e4a362b3854e3f61439dc05"
+        },
+        {
+          "key": "icon.U43",
+          "path": "ui/units/U43.png",
+          "sha256": "d88f6f6b8a4a7afc5cbc9b13d8a56ad01215bf93fb6e34af2fd480a4cb60d5d5"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U43-8ff338e9e96e.json",
+        "sha256": "7951e289ae16baa0fc835585dfee11f707f950ee9c59942a68530ee917b48b49"
+      }
+    },
+    "U52": {
+      "key": "animation.U52",
+      "enemyKey": "animation.U52.enemy",
+      "path": "characters/animations/U52.png",
+      "enemyPath": "characters/animations/U52-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 108,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "649a9d9633ce6df76a2d9f26fc238cd0c63873187a659c5bdd0b4caac703be8b",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U52.png",
+      "atlasSha256": {
+        "own": "3e8cb21a5f2f3095db6e38a3443654998062b4dfae6ed0e7d5ed45abff48e158",
+        "enemy": "86f36f4d7dc80feb74780e2347439827d64512946f253764149c8f33b7b0d932"
+      },
+      "review": "accepted",
+      "bodyRadius": 16,
+      "muzzle": [
+        48.0,
+        53.511
+      ],
+      "hit": [
+        0,
+        42.844
+      ],
+      "reviewNote": "U52 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:48.371290+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.json",
+          "metadataSha256": "fb9be45b52747d8679545727c38d8331cc37d9d7b9af1559813039f1be8d560e",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.webm",
+          "videoSha256": "79e8c8b1e424819e25b08db5b5073452b886ac78853567e449751ef5dec02a42",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.374,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.json",
+          "metadataSha256": "1d4a3464534ae9b82066125c717f6dadc5864a63e2b82adedc3d0d714f06437d",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.webm",
+          "videoSha256": "337efb47b0be8a2f50f8d372a1bee2af77d847397d04043fd75ddf3acea30760",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.json",
+          "metadataSha256": "edba82ac939cff84c2447d78e03ff96b389ff74b4f16d8f4413beef33015ec10",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.webm",
+          "videoSha256": "cb1ae7bf733b32ef18e4f43bd69cd03e382b0dd8f0bb14ad82fff9e4bdad78c7",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.371,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.json",
+          "metadataSha256": "3e0db0b48196909871ec452665ebfcfdd3ad96a099db5299753ea8e7ce132e8f",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.webm",
+          "videoSha256": "6906300a3b6c9284cc38025c836a03d347184c95293167e940bc910c8dd5c9fd",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U52",
+          "path": "characters/units/U52.png",
+          "sha256": "8f51ec0328fcb9c6032ab0107d26983946ebbc07b13c137416f67a67b19afb98"
+        },
+        {
+          "key": "unit.U52.enemy",
+          "path": "characters/units/U52-enemy.png",
+          "sha256": "6eac07a06d86cd306559dfd69328a71873d64c02c3957ca0f14d656ef5b9ab94"
+        },
+        {
+          "key": "icon.U52",
+          "path": "ui/units/U52.png",
+          "sha256": "c8894cd7bd1c1c32e7dc7227694eb1da3a53504084792cea0f457511f58a3436"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U52-649a9d9633ce.json",
+        "sha256": "c98bc940eb227e40804d3db0b873d92fdc7b2185ff21c68e4bc7eb18c9269c53"
+      }
+    },
+    "U54": {
+      "key": "animation.U54",
+      "enemyKey": "animation.U54.enemy",
+      "path": "characters/animations/U54.png",
+      "enemyPath": "characters/animations/U54-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 116,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "828ffe80f5ce5232883a26dc500f237894201d1fe2e792b6474260db38bae5e2",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U54.png",
+      "atlasSha256": {
+        "own": "be326089de2e38b236679b7d91ba3807a809e4576d65bf8984e8ba6ab2807bd9",
+        "enemy": "34ab071e5143b7ec2d75ebc68971775d7aae69bad0d376f56686e6907fd4a04c"
+      },
+      "review": "accepted",
+      "bodyRadius": 37,
+      "muzzle": [
+        67.31,
+        96.0
+      ],
+      "hit": [
+        0,
+        57.379
+      ],
+      "reviewNote": "U54 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:52.165575+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.json",
+          "metadataSha256": "fb9be45b52747d8679545727c38d8331cc37d9d7b9af1559813039f1be8d560e",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.webm",
+          "videoSha256": "79e8c8b1e424819e25b08db5b5073452b886ac78853567e449751ef5dec02a42",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.374,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.json",
+          "metadataSha256": "1d4a3464534ae9b82066125c717f6dadc5864a63e2b82adedc3d0d714f06437d",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.webm",
+          "videoSha256": "337efb47b0be8a2f50f8d372a1bee2af77d847397d04043fd75ddf3acea30760",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.json",
+          "metadataSha256": "edba82ac939cff84c2447d78e03ff96b389ff74b4f16d8f4413beef33015ec10",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.webm",
+          "videoSha256": "cb1ae7bf733b32ef18e4f43bd69cd03e382b0dd8f0bb14ad82fff9e4bdad78c7",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.371,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.json",
+          "metadataSha256": "3e0db0b48196909871ec452665ebfcfdd3ad96a099db5299753ea8e7ce132e8f",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.webm",
+          "videoSha256": "6906300a3b6c9284cc38025c836a03d347184c95293167e940bc910c8dd5c9fd",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U54",
+          "path": "characters/units/U54.png",
+          "sha256": "f16a3baa3edd2b34c3f378dee179d485aec24bc65d920dce89732291e7272ab9"
+        },
+        {
+          "key": "unit.U54.enemy",
+          "path": "characters/units/U54-enemy.png",
+          "sha256": "536bf486f5fb77fc0f77e6381db392607742f225e7edcde1725fc8ef10409e7e"
+        },
+        {
+          "key": "icon.U54",
+          "path": "ui/units/U54.png",
+          "sha256": "395eec59abc69944f2326acde1af8bf6af2baab48b32eb2ec122de94dce74c1c"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U54-828ffe80f5ce.json",
+        "sha256": "870b69ee9974adb9f7266019cbdeeddee491ed8c96c5321a133522ce76c7c1b1"
+      }
+    },
+    "H01": {
+      "key": "animation.H01",
+      "enemyKey": "animation.H01.enemy",
+      "path": "characters/animations/H01.png",
+      "enemyPath": "characters/animations/H01-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 124,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "8b7e934031d3b27c92802eb2497506b9df1e1df06f5024fb5aefd0aee2f5c9f4",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/H01.png",
+      "atlasSha256": {
+        "own": "a582893f22c20747e877242309360d8fd751ba047c609cce8af7efe5a67f900e",
+        "enemy": "d4fdc7980317346c973644deb45ecbace7714710e2ee1830c8dd18da6386e2bf"
+      },
+      "review": "accepted",
+      "bodyRadius": 21,
+      "muzzle": [
+        68.71,
+        62.903
+      ],
+      "hit": [
+        0,
+        53.226
+      ],
+      "reviewNote": "H01 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:53.525742+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.json",
+          "metadataSha256": "c0b31f247e08b88066a691eb149385fa60878523dcaa7eadc170338d4199e1f2",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.webm",
+          "videoSha256": "2cc0a26a7b8e3cc63bfdcdc6d8099654b76b0e44596a0d538b45e5d5caab286c",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.367,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.json",
+          "metadataSha256": "92bbf61c7288b77bf79c1618b878f1e6fd411adf73bd3a6ec13425e419586bdb",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.webm",
+          "videoSha256": "a9ea7b94ad88156b8d980151ba807ada982164b39470804b06dbcf92c9a91af8",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.401,
+          "capturedFrames": 1001
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.json",
+          "metadataSha256": "153343a66594b2168e761d4a6ed5b2115f53d8ae61d432c63162aef334840f24",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.webm",
+          "videoSha256": "c850afc08971bdc9df44af1c97bcc9aff3af9892f73686e4428c9087100029e6",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.34,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.json",
+          "metadataSha256": "f2f3df95fb19de8aba54477b178d8aa31749aee2b146631a5f7258c1c488ff77",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.webm",
+          "videoSha256": "ec98089e00eade23e271ab8a13699c82b7c776324b6b124f376f3e2486ee7ff2",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "hero.H01",
+          "path": "characters/heroes/H01.png",
+          "sha256": "3272b7cbee981eec1b397d24bcbda010f7f4a1ddbf1d9114ad78edf40e7ee5e2"
+        },
+        {
+          "key": "hero.H01.enemy",
+          "path": "characters/heroes/H01-enemy.png",
+          "sha256": "e89f61e82c7e2d586ca532865dc14eef16f5ffa981786445a96c13ebbd088e22"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/H01-8b7e934031d3.json",
+        "sha256": "37d823b13314e9789551f2d10960cfe073f18a7500615519b19d83df165fbf14"
+      }
+    },
+    "H02": {
+      "key": "animation.H02",
+      "enemyKey": "animation.H02.enemy",
+      "path": "characters/animations/H02.png",
+      "enemyPath": "characters/animations/H02-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 124,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "d4f7bdbb6ae0e65880fc64fd064c2e39e06aae1ac3e9eb5c85f0aba3b122fc6f",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/H02.png",
+      "atlasSha256": {
+        "own": "bf6bc9bd7166612d6487deb598e08c072f3e627f77aba734c7dd0820c87a1f46",
+        "enemy": "1b68d4cbc82f391f5c5ccbcab5337debbd479eb7cc2945e0ecf707a80f9f5ced"
+      },
+      "review": "accepted",
+      "bodyRadius": 19,
+      "muzzle": [
+        49.355,
+        84.194
+      ],
+      "hit": [
+        0,
+        53.226
+      ],
+      "reviewNote": "H02 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:54.950836+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.json",
+          "metadataSha256": "c0b31f247e08b88066a691eb149385fa60878523dcaa7eadc170338d4199e1f2",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.webm",
+          "videoSha256": "2cc0a26a7b8e3cc63bfdcdc6d8099654b76b0e44596a0d538b45e5d5caab286c",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.367,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.json",
+          "metadataSha256": "92bbf61c7288b77bf79c1618b878f1e6fd411adf73bd3a6ec13425e419586bdb",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.webm",
+          "videoSha256": "a9ea7b94ad88156b8d980151ba807ada982164b39470804b06dbcf92c9a91af8",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.401,
+          "capturedFrames": 1001
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.json",
+          "metadataSha256": "153343a66594b2168e761d4a6ed5b2115f53d8ae61d432c63162aef334840f24",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.webm",
+          "videoSha256": "c850afc08971bdc9df44af1c97bcc9aff3af9892f73686e4428c9087100029e6",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.34,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.json",
+          "metadataSha256": "f2f3df95fb19de8aba54477b178d8aa31749aee2b146631a5f7258c1c488ff77",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.webm",
+          "videoSha256": "ec98089e00eade23e271ab8a13699c82b7c776324b6b124f376f3e2486ee7ff2",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "hero.H02",
+          "path": "characters/heroes/H02.png",
+          "sha256": "5d874f34ca6ab8c18ba4d9c84f8ae667303040f247316c315a98ccb36034dbff"
+        },
+        {
+          "key": "hero.H02.enemy",
+          "path": "characters/heroes/H02-enemy.png",
+          "sha256": "71fe487f2b79c355cb4578d4428eec51d7007221122811675aeefaceac19e9a9"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/H02-d4f7bdbb6ae0.json",
+        "sha256": "a1129f90d3cf12d18fa40901cf685ba0d69678555dd567585eb4efb0a92aaff8"
+      }
+    },
+    "H04": {
+      "key": "animation.H04",
+      "enemyKey": "animation.H04.enemy",
+      "path": "characters/animations/H04.png",
+      "enemyPath": "characters/animations/H04-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 136,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "164ae9372db2c5cff62ca924149a73ed9400c48592982d469d456802f0ad407f",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/H04.png",
+      "atlasSha256": {
+        "own": "c9a1e3ce5bb9e835e3694d0807dc76d138359d403a833e2b55d6fb1b572551bd",
+        "enemy": "9ede3f373f45f8a5464b69bdacccb1796ce305f7370cfee6564cacc3f72b0e7a"
+      },
+      "review": "accepted",
+      "bodyRadius": 21,
+      "muzzle": [
+        61.765,
+        79.412
+      ],
+      "hit": [
+        0,
+        52.941
+      ],
+      "reviewNote": "H04 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:58.767681+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.json",
+          "metadataSha256": "c0b31f247e08b88066a691eb149385fa60878523dcaa7eadc170338d4199e1f2",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.webm",
+          "videoSha256": "2cc0a26a7b8e3cc63bfdcdc6d8099654b76b0e44596a0d538b45e5d5caab286c",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.367,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.json",
+          "metadataSha256": "92bbf61c7288b77bf79c1618b878f1e6fd411adf73bd3a6ec13425e419586bdb",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.webm",
+          "videoSha256": "a9ea7b94ad88156b8d980151ba807ada982164b39470804b06dbcf92c9a91af8",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.401,
+          "capturedFrames": 1001
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.json",
+          "metadataSha256": "153343a66594b2168e761d4a6ed5b2115f53d8ae61d432c63162aef334840f24",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.webm",
+          "videoSha256": "c850afc08971bdc9df44af1c97bcc9aff3af9892f73686e4428c9087100029e6",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.34,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.json",
+          "metadataSha256": "f2f3df95fb19de8aba54477b178d8aa31749aee2b146631a5f7258c1c488ff77",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.webm",
+          "videoSha256": "ec98089e00eade23e271ab8a13699c82b7c776324b6b124f376f3e2486ee7ff2",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "hero.H04",
+          "path": "characters/heroes/H04.png",
+          "sha256": "3a22d5aa0bb52c047e1e11cb69d173da29ce6e057c9910262e9e87581843681b"
+        },
+        {
+          "key": "hero.H04.enemy",
+          "path": "characters/heroes/H04-enemy.png",
+          "sha256": "e9ebed19a82c3a3d1529a3862434caabec9179992e3439c70cf99bafa7fd1b0b"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/H04-164ae9372db2.json",
+        "sha256": "a2ca0cdf240c8ff8a6e6c372b862dc841088f2e8a768d98f0db27c1c6faf6bec"
+      }
+    },
+    "H05": {
+      "key": "animation.H05",
+      "enemyKey": "animation.H05.enemy",
+      "path": "characters/animations/H05.png",
+      "enemyPath": "characters/animations/H05-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 136,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "221e8ff17695417845eb6a5dcc696905b6649e0d7e3216e19a5dd8fd2abad456",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/H05.png",
+      "atlasSha256": {
+        "own": "2eac3b002053d189889b7d973e3f4ee4b586aa07d090401a7c1b41161ed2a8f1",
+        "enemy": "69b6556050f390250b0205785bce531945730cb678580acada47291f295fe76a"
+      },
+      "review": "accepted",
+      "bodyRadius": 19,
+      "muzzle": [
+        54.721,
+        88.809
+      ],
+      "hit": [
+        0,
+        53.824
+      ],
+      "reviewNote": "H05 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:40:01.865186+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.json",
+          "metadataSha256": "c0b31f247e08b88066a691eb149385fa60878523dcaa7eadc170338d4199e1f2",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.webm",
+          "videoSha256": "2cc0a26a7b8e3cc63bfdcdc6d8099654b76b0e44596a0d538b45e5d5caab286c",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.367,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.json",
+          "metadataSha256": "92bbf61c7288b77bf79c1618b878f1e6fd411adf73bd3a6ec13425e419586bdb",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.webm",
+          "videoSha256": "a9ea7b94ad88156b8d980151ba807ada982164b39470804b06dbcf92c9a91af8",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.401,
+          "capturedFrames": 1001
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.json",
+          "metadataSha256": "153343a66594b2168e761d4a6ed5b2115f53d8ae61d432c63162aef334840f24",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.webm",
+          "videoSha256": "c850afc08971bdc9df44af1c97bcc9aff3af9892f73686e4428c9087100029e6",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.34,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.json",
+          "metadataSha256": "f2f3df95fb19de8aba54477b178d8aa31749aee2b146631a5f7258c1c488ff77",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.webm",
+          "videoSha256": "ec98089e00eade23e271ab8a13699c82b7c776324b6b124f376f3e2486ee7ff2",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "hero.H05",
+          "path": "characters/heroes/H05.png",
+          "sha256": "b80cc8b908b5f0f5d9252a0967a77ed029261b2be5a8e19425c595cfb949634e"
+        },
+        {
+          "key": "hero.H05.enemy",
+          "path": "characters/heroes/H05-enemy.png",
+          "sha256": "1cd5d978badbd999e6765de3068130a8b407ebc4bcbd64a319f1e3f13cf0d617"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/H05-221e8ff17695.json",
+        "sha256": "86d2200974a990d5b79f474fb2aab921f1267e6f852498dfa3face065b71eed9"
+      }
+    },
+    "H06": {
+      "key": "animation.H06",
+      "enemyKey": "animation.H06.enemy",
+      "path": "characters/animations/H06.png",
+      "enemyPath": "characters/animations/H06-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 129,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "555ba367ec043728417757ef4ec692638b38b01cbb671a4401bb31ef387ecfb4",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/H06.png",
+      "atlasSha256": {
+        "own": "f798274b848d3919fc312bb794a670ae5b11de2dd443df0a684470642bc2d18f",
+        "enemy": "9318d48480cb7585b2f7840339e85ea1aa5e7dc7a9bc31accca6a5272cead36d"
+      },
+      "review": "accepted",
+      "bodyRadius": 19,
+      "muzzle": [
+        57.674,
+        73.488
+      ],
+      "hit": [
+        0,
+        53.023
+      ],
+      "reviewNote": "H06 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:40:09.226835+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.json",
+          "metadataSha256": "c0b31f247e08b88066a691eb149385fa60878523dcaa7eadc170338d4199e1f2",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.webm",
+          "videoSha256": "2cc0a26a7b8e3cc63bfdcdc6d8099654b76b0e44596a0d538b45e5d5caab286c",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.367,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.json",
+          "metadataSha256": "92bbf61c7288b77bf79c1618b878f1e6fd411adf73bd3a6ec13425e419586bdb",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.webm",
+          "videoSha256": "a9ea7b94ad88156b8d980151ba807ada982164b39470804b06dbcf92c9a91af8",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.401,
+          "capturedFrames": 1001
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.json",
+          "metadataSha256": "153343a66594b2168e761d4a6ed5b2115f53d8ae61d432c63162aef334840f24",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.webm",
+          "videoSha256": "c850afc08971bdc9df44af1c97bcc9aff3af9892f73686e4428c9087100029e6",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.34,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.json",
+          "metadataSha256": "f2f3df95fb19de8aba54477b178d8aa31749aee2b146631a5f7258c1c488ff77",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.webm",
+          "videoSha256": "ec98089e00eade23e271ab8a13699c82b7c776324b6b124f376f3e2486ee7ff2",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "hero.H06",
+          "path": "characters/heroes/H06.png",
+          "sha256": "c755d9301a53d12f194ece308d35381b131ca6e49ddce0dffb056602fc50cd28"
+        },
+        {
+          "key": "hero.H06.enemy",
+          "path": "characters/heroes/H06-enemy.png",
+          "sha256": "f12e2b118d314223600c83cf522757668aeacb2373102208b80c771d58d0c484"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/H06-555ba367ec04.json",
+        "sha256": "dd65d383a4f867215a908774942436b1fa35f1973df7eec7f6d5e2e15ef2c477"
+      }
+    },
+    "U33": {
+      "key": "animation.U33",
+      "enemyKey": "animation.U33.enemy",
+      "path": "characters/animations/U33.png",
+      "enemyPath": "characters/animations/U33-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 96,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "13cc197993b16dcd8999cf8d09e07db486afd46b09c86f2e82740a3c37de49b4",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U33.png",
+      "atlasSha256": {
+        "own": "abac3742a85622b78de2a993d5834b3d8a3febd3fb62f9a8a05cfb4ebb8fb90f",
+        "enemy": "45a635aa495bec6163af650eaed149bec5714ce23d3451278d99ea28a14d39be"
+      },
+      "review": "accepted",
+      "bodyRadius": 16,
+      "muzzle": [
+        54.0,
+        49.2
+      ],
+      "hit": [
+        0,
+        42.2
+      ],
+      "reviewNote": "U33 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:38.303233+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.json",
+          "metadataSha256": "0ba71bcea28a22d84b813c9e1754909c5dc299596058142a9d330af6b45a4124",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-1x-1791219352908.webm",
+          "videoSha256": "c1fc730277cfe981062bde742a7038e3e7ea4f457a1959760432903e020b7572",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.37,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.json",
+          "metadataSha256": "c986a2b5c29f0db946676e9afb9f809a672d37375120a54f70c8fccd9e17e41f",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side0-0.25x-1791219414114.webm",
+          "videoSha256": "e7c3b92be9fa4b7c8feb0a0011f153df518dd4582a7359c916c04bd44afb09f1",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.json",
+          "metadataSha256": "6023aa8717be63927c3bdfbf1482b220ac4c0916c9fb03b61db4736706a19a3c",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-1x-1791220240770.webm",
+          "videoSha256": "1237f364e51fbee94545feec38d1cd5c00e32ebc6234f4a63a954c9a6e5718e4",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.369,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.json",
+          "metadataSha256": "915e11fae4190452ec526e879195ade7362dd398443974bfdfdce4e5ef1b7663",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-units-sequence-side1-0.25x-1791220303671.webm",
+          "videoSha256": "876d49019b69dcc51c0c60b2a7554a7fbcd24e8453328f6426388dabc5238779",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U33",
+          "path": "characters/units/U33.png",
+          "sha256": "1e72ab92daf5971c9fc84e076e5f6117fda5ab60ab870d79eaef65ec56fafe7b"
+        },
+        {
+          "key": "unit.U33.enemy",
+          "path": "characters/units/U33-enemy.png",
+          "sha256": "5f75ecf5dd769bb0f49265a1029563e7997249444380d575a68812a6e6364263"
+        },
+        {
+          "key": "icon.U33",
+          "path": "ui/units/U33.png",
+          "sha256": "85de458186706d267824882fd322cadf17dd18bca343b7c801430c0c590b69bb"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U33-13cc197993b1.json",
+        "sha256": "71a768f29f02616665d5ffdf447addf3fa186f10acbb1f6036f30a56a01fc8a2"
+      }
+    },
+    "U51": {
+      "key": "animation.U51",
+      "enemyKey": "animation.U51.enemy",
+      "path": "characters/animations/U51.png",
+      "enemyPath": "characters/animations/U51-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 92,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "e14ce4190ca6cdf5258956047220348c7b5cbbbf24634ccc219132ec2eb13c7a",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U51.png",
+      "atlasSha256": {
+        "own": "f57c32081d7f791f5268d579c4acf62c65c1300f10f9e0f73d73b036c9575be0",
+        "enemy": "8d97ebb119a4952dfcaa45df3c8b86300833468a8fdd7eb5584a6416d0a73b72"
+      },
+      "review": "accepted",
+      "bodyRadius": 16,
+      "muzzle": [
+        58.435,
+        42.991
+      ],
+      "hit": [
+        0,
+        42.991
+      ],
+      "reviewNote": "U51 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:46.395290+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.json",
+          "metadataSha256": "fb9be45b52747d8679545727c38d8331cc37d9d7b9af1559813039f1be8d560e",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.webm",
+          "videoSha256": "79e8c8b1e424819e25b08db5b5073452b886ac78853567e449751ef5dec02a42",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.374,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.json",
+          "metadataSha256": "1d4a3464534ae9b82066125c717f6dadc5864a63e2b82adedc3d0d714f06437d",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.webm",
+          "videoSha256": "337efb47b0be8a2f50f8d372a1bee2af77d847397d04043fd75ddf3acea30760",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.json",
+          "metadataSha256": "edba82ac939cff84c2447d78e03ff96b389ff74b4f16d8f4413beef33015ec10",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.webm",
+          "videoSha256": "cb1ae7bf733b32ef18e4f43bd69cd03e382b0dd8f0bb14ad82fff9e4bdad78c7",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.371,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.json",
+          "metadataSha256": "3e0db0b48196909871ec452665ebfcfdd3ad96a099db5299753ea8e7ce132e8f",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.webm",
+          "videoSha256": "6906300a3b6c9284cc38025c836a03d347184c95293167e940bc910c8dd5c9fd",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U51",
+          "path": "characters/units/U51.png",
+          "sha256": "5044747058e67c76cf193d6c80e13215036a29403c689b26aebdad513d5a715c"
+        },
+        {
+          "key": "unit.U51.enemy",
+          "path": "characters/units/U51-enemy.png",
+          "sha256": "b522223408b02570f862793aac501bf1aa01fb836c591888535cd821e540ab4c"
+        },
+        {
+          "key": "icon.U51",
+          "path": "ui/units/U51.png",
+          "sha256": "6577dc64f46ca091dd6c46807a84118317b4ea8ea8b9dc404cb195304165a48f"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U51-e14ce4190ca6.json",
+        "sha256": "99da07a36a82d809eccf25498d514f0f5b2178e105b2f6d7ebdf7dc364a02127"
+      }
+    },
+    "H03": {
+      "key": "animation.H03",
+      "enemyKey": "animation.H03.enemy",
+      "path": "characters/animations/H03.png",
+      "enemyPath": "characters/animations/H03-enemy.png",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "bodyHeight": 82,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "275f44eb13a2755c344f5852505f82c8474d3ad24995ea4e8c416cdc59a6db3b",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/H03.png",
+      "atlasSha256": {
+        "own": "91b437381b3532ec148fab17995489ea1a58d4214657ce3e6d4fd535e5e1a9e5",
+        "enemy": "9d20963295f8d53b9db5fbbe6b3a8667712d6d92ec2f7ecacc04628136b9dd19"
+      },
+      "review": "accepted",
+      "bodyRadius": 24,
+      "muzzle": [
+        107.561,
+        98.341
+      ],
+      "hit": [
+        0,
+        55.317
+      ],
+      "reviewNote": "H03 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:56.733121+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.json",
+          "metadataSha256": "c0b31f247e08b88066a691eb149385fa60878523dcaa7eadc170338d4199e1f2",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-1x-1791220978198.webm",
+          "videoSha256": "2cc0a26a7b8e3cc63bfdcdc6d8099654b76b0e44596a0d538b45e5d5caab286c",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.367,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.json",
+          "metadataSha256": "92bbf61c7288b77bf79c1618b878f1e6fd411adf73bd3a6ec13425e419586bdb",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side0-0.25x-1791221088406.webm",
+          "videoSha256": "a9ea7b94ad88156b8d980151ba807ada982164b39470804b06dbcf92c9a91af8",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.401,
+          "capturedFrames": 1001
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.json",
+          "metadataSha256": "153343a66594b2168e761d4a6ed5b2115f53d8ae61d432c63162aef334840f24",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-1x-1791221138396.webm",
+          "videoSha256": "c850afc08971bdc9df44af1c97bcc9aff3af9892f73686e4428c9087100029e6",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.34,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.json",
+          "metadataSha256": "f2f3df95fb19de8aba54477b178d8aa31749aee2b146631a5f7258c1c488ff77",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-heroes-sequence-side1-0.25x-1791221207683.webm",
+          "videoSha256": "ec98089e00eade23e271ab8a13699c82b7c776324b6b124f376f3e2486ee7ff2",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "hero.H03",
+          "path": "characters/heroes/H03.png",
+          "sha256": "e47178184cfe64ca698f2a651293b0b933a414f8de8a43e7e901cde9ca7c814c"
+        },
+        {
+          "key": "hero.H03.enemy",
+          "path": "characters/heroes/H03-enemy.png",
+          "sha256": "912009e49e4922e69b277e81344db1fb36cad53d11499a30318f07d7b9b89c2e"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/H03-275f44eb13a2.json",
+        "sha256": "b4a5dc6d1609dd9e36098d31ab2f8c6284aae31062fc7d857a86e577a32fce13"
+      }
+    },
+    "U53": {
+      "key": "animation.U53",
+      "enemyKey": "animation.U53.enemy",
+      "path": "characters/animations/U53.png",
+      "enemyPath": "characters/animations/U53-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 68,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "79c17dc41683694ffd79b4a012c9df27be9b50d74cd6505e52dbdf16e01b4e3b",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U53.png",
+      "atlasSha256": {
+        "own": "7be194d7136e3713ea64154c05a7c88b1c0a2728da2a2670f9fe361dbf209d8f",
+        "enemy": "f9b842c06e84e111b4163fd40b6999d78d1d4c9d3aef5dd41a887714d68c32ac"
+      },
+      "review": "accepted",
+      "bodyRadius": 19,
+      "muzzle": [
+        79.059,
+        55.341
+      ],
+      "hit": [
+        0,
+        42.635
+      ],
+      "reviewNote": "U53 已逐帧检查五行动作、武器释放、受击与死亡落地；身体占位排除长武器/披风，敌方换色、左右阵营和原速/0.25倍实机录像均与当前源图哈希一致。",
+      "reviewedAtUtc": "2026-10-05T17:39:50.702336+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.json",
+          "metadataSha256": "fb9be45b52747d8679545727c38d8331cc37d9d7b9af1559813039f1be8d560e",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-1x-1791220498106.webm",
+          "videoSha256": "79e8c8b1e424819e25b08db5b5073452b886ac78853567e449751ef5dec02a42",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.374,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.json",
+          "metadataSha256": "1d4a3464534ae9b82066125c717f6dadc5864a63e2b82adedc3d0d714f06437d",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side0-0.25x-1791220566138.webm",
+          "videoSha256": "337efb47b0be8a2f50f8d372a1bee2af77d847397d04043fd75ddf3acea30760",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.473,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.json",
+          "metadataSha256": "edba82ac939cff84c2447d78e03ff96b389ff74b4f16d8f4413beef33015ec10",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-1x-1791220633590.webm",
+          "videoSha256": "cb1ae7bf733b32ef18e4f43bd69cd03e382b0dd8f0bb14ad82fff9e4bdad78c7",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.371,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.json",
+          "metadataSha256": "3e0db0b48196909871ec452665ebfcfdd3ad96a099db5299753ea8e7ce132e8f",
+          "videoPath": "output/qa/v0.3/motion-clips/A5-units-sequence-side1-0.25x-1791220708735.webm",
+          "videoSha256": "6906300a3b6c9284cc38025c836a03d347184c95293167e940bc910c8dd5c9fd",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.472,
+          "capturedFrames": 1004
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U53",
+          "path": "characters/units/U53.png",
+          "sha256": "24955bb5ee29252c5d17372ed32b460f95c94d398fb5b9d9fadfee9f46f105ed"
+        },
+        {
+          "key": "unit.U53.enemy",
+          "path": "characters/units/U53-enemy.png",
+          "sha256": "94c9ee4331020b1838bd9d4d96964872a16e5c3f8dc2d1f94178dfc690fb9863"
+        },
+        {
+          "key": "icon.U53",
+          "path": "ui/units/U53.png",
+          "sha256": "0cd0b3894a1afb223d2cd63130f806e1ac528c8aeee94bd1cbcdf510fe599c0a"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U53-79c17dc41683.json",
+        "sha256": "d838ba5c1ec6a82621a1034426c8b620736e5ec51cc43894c123affd928ab366"
+      }
+    },
+    "U15": {
+      "key": "animation.U15",
+      "enemyKey": "animation.U15.enemy",
+      "path": "characters/animations/U15.png",
+      "enemyPath": "characters/animations/U15-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 105,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "e18751f638b60985c8bbe6a40a554300b223373c549262e13e3b1ea2344f0d59",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U15.png",
+      "atlasSha256": {
+        "own": "22e95a5debd7f4422572f3feafb497c9378ab201e5bdf464709cb7831f18ed72",
+        "enemy": "31b1b8f6a5d9696353fae3f93d3fbdd63594a6d16577b1e237ca6bd2c68ad168"
+      },
+      "review": "accepted",
+      "bodyRadius": 35,
+      "muzzle": [
+        42.743,
+        5.051
+      ],
+      "hit": [
+        0,
+        22.537
+      ],
+      "reviewNote": "U15 特种单位动作母图逐帧复核：五行状态完整，武器挂点、落脚线和受击/倒地姿态连续。",
+      "reviewedAtUtc": "2026-10-05T20:42:41.124989+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.json",
+          "metadataSha256": "31ab05c101f33035de9bacb1cfa73f72961710e5db265247094ee6ae62c7b5b3",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.webm",
+          "videoSha256": "0f1db9c6d878c3cfa479a7d7f21b0ee6c9899e342790b58a13ef53b8b2abc515",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.471,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.json",
+          "metadataSha256": "ee6833948ace2a2f0078f797ec57f3b87117a4ae1932479e5f128d73c25efde5",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.webm",
+          "videoSha256": "fe24748664a8cf670a3f3084d562e4fa8bdeddc835bab6547a90754e5ef9b256",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.368,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.json",
+          "metadataSha256": "9197e871b2ea910b772bddad91c68544d8440dab495060cc7a54f9283e943aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.webm",
+          "videoSha256": "8103ef1b0795c05c5bf6d483360ecb3015da59aa8cbdf6f2ed29388686aed52b",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.json",
+          "metadataSha256": "45970c2ca06644ff2f56455f4e958e3efd7f4822febc97b1a970fdbc8605bf06",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.webm",
+          "videoSha256": "b8695eddf85a57e4c80f6cb0782d209b703659ed4269da2ba86a138ebefd0e2d",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U15",
+          "path": "characters/units/U15.png",
+          "sha256": "f3171fc60121a5e1e39dec9c7b76657dc4f56b5e03e5a1e88f32de8b071a4d10"
+        },
+        {
+          "key": "unit.U15.enemy",
+          "path": "characters/units/U15-enemy.png",
+          "sha256": "920f8f00df3f78cbf09cb511ce48f40379a5d5a7ed8c1fd7450dcfcfe7b84b18"
+        },
+        {
+          "key": "icon.U15",
+          "path": "ui/units/U15.png",
+          "sha256": "6eb7f8c4230f8ef01574ce2306ae192ef149bb0a0a7318ecf435b78f597163a5"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U15-e18751f638b6.json",
+        "sha256": "eb8921927db6351474591ab74477794d656413d09a2d39490bf9cd26ecc725d9"
+      }
+    },
+    "U25": {
+      "key": "animation.U25",
+      "enemyKey": "animation.U25.enemy",
+      "path": "characters/animations/U25.png",
+      "enemyPath": "characters/animations/U25-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 102,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "aab76f2868d5b59136eb3b7fd7d0bb35346a9a84995fcf9d3b9cfd7b052172c7",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U25.png",
+      "atlasSha256": {
+        "own": "9fb75d24f5bfc360ddad3a3ca6fcc144404968f1d6121bbb92c266d91323cd16",
+        "enemy": "a90af180933ddc152405d9aedf5e53cc6b8f9d9bf4819237054002373a22a891"
+      },
+      "review": "accepted",
+      "bodyRadius": 34,
+      "muzzle": [
+        61.412,
+        49.976
+      ],
+      "hit": [
+        0,
+        24.565
+      ],
+      "reviewNote": "U25 特种单位动作母图逐帧复核：五行状态完整，武器挂点、落脚线和受击/倒地姿态连续。",
+      "reviewedAtUtc": "2026-10-05T20:43:02.086340+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.json",
+          "metadataSha256": "31ab05c101f33035de9bacb1cfa73f72961710e5db265247094ee6ae62c7b5b3",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.webm",
+          "videoSha256": "0f1db9c6d878c3cfa479a7d7f21b0ee6c9899e342790b58a13ef53b8b2abc515",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.471,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.json",
+          "metadataSha256": "ee6833948ace2a2f0078f797ec57f3b87117a4ae1932479e5f128d73c25efde5",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.webm",
+          "videoSha256": "fe24748664a8cf670a3f3084d562e4fa8bdeddc835bab6547a90754e5ef9b256",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.368,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.json",
+          "metadataSha256": "9197e871b2ea910b772bddad91c68544d8440dab495060cc7a54f9283e943aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.webm",
+          "videoSha256": "8103ef1b0795c05c5bf6d483360ecb3015da59aa8cbdf6f2ed29388686aed52b",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.json",
+          "metadataSha256": "45970c2ca06644ff2f56455f4e958e3efd7f4822febc97b1a970fdbc8605bf06",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.webm",
+          "videoSha256": "b8695eddf85a57e4c80f6cb0782d209b703659ed4269da2ba86a138ebefd0e2d",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U25",
+          "path": "characters/units/U25.png",
+          "sha256": "33a1ce6e9fb40c621e20b01ac1da98d3341894fe37394f61b7a4455cd24a5867"
+        },
+        {
+          "key": "unit.U25.enemy",
+          "path": "characters/units/U25-enemy.png",
+          "sha256": "a576ea7c9ed81926b68937e00c749f82169fef769b24ed4b13efc3e654a0eaf1"
+        },
+        {
+          "key": "icon.U25",
+          "path": "ui/units/U25.png",
+          "sha256": "50afaec417e4e62240c67426215d04065451e05b38e1c7d2b3beeb9a86e30cae"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U25-aab76f2868d5.json",
+        "sha256": "5237f95879a5ea79d6958f0208dca254b43fb643e5a09a1079e148d886a3408d"
+      }
+    },
+    "U35": {
+      "key": "animation.U35",
+      "enemyKey": "animation.U35.enemy",
+      "path": "characters/animations/U35.png",
+      "enemyPath": "characters/animations/U35-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 108,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "0e4150f3ea936acd4ca880c9fae276bbed94a8ed8fbf6ce58827fee68037720f",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U35.png",
+      "atlasSha256": {
+        "own": "e178aedd60aff5037dda41694e0e782e199eeb03549f097bcc7bdecc71b58823",
+        "enemy": "917feed80014ee3b607c7413a8751053fdd847f837ff9f4cd464f9d77692ff94"
+      },
+      "review": "accepted",
+      "bodyRadius": 38,
+      "muzzle": [
+        53.704,
+        77.037
+      ],
+      "hit": [
+        0,
+        21.481
+      ],
+      "reviewNote": "U35 特种单位动作母图逐帧复核：五行状态完整，武器挂点、落脚线和受击/倒地姿态连续。",
+      "reviewedAtUtc": "2026-10-05T20:43:04.003060+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.json",
+          "metadataSha256": "31ab05c101f33035de9bacb1cfa73f72961710e5db265247094ee6ae62c7b5b3",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.webm",
+          "videoSha256": "0f1db9c6d878c3cfa479a7d7f21b0ee6c9899e342790b58a13ef53b8b2abc515",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.471,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.json",
+          "metadataSha256": "ee6833948ace2a2f0078f797ec57f3b87117a4ae1932479e5f128d73c25efde5",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.webm",
+          "videoSha256": "fe24748664a8cf670a3f3084d562e4fa8bdeddc835bab6547a90754e5ef9b256",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.368,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.json",
+          "metadataSha256": "9197e871b2ea910b772bddad91c68544d8440dab495060cc7a54f9283e943aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.webm",
+          "videoSha256": "8103ef1b0795c05c5bf6d483360ecb3015da59aa8cbdf6f2ed29388686aed52b",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.json",
+          "metadataSha256": "45970c2ca06644ff2f56455f4e958e3efd7f4822febc97b1a970fdbc8605bf06",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.webm",
+          "videoSha256": "b8695eddf85a57e4c80f6cb0782d209b703659ed4269da2ba86a138ebefd0e2d",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U35",
+          "path": "characters/units/U35.png",
+          "sha256": "d0fccce21cc8a46473533ab0c34a51d8a22ce549efc31f7e2d5bd91a397216d2"
+        },
+        {
+          "key": "unit.U35.enemy",
+          "path": "characters/units/U35-enemy.png",
+          "sha256": "5e57360256c1b9756c71f687d9fda73dbdea544612db03fcd0f81244d3e095a7"
+        },
+        {
+          "key": "icon.U35",
+          "path": "ui/units/U35.png",
+          "sha256": "81adfb9ad8e7f6851afac5283aedac980fd56837eca26724a9024ed47efcff07"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U35-0e4150f3ea93.json",
+        "sha256": "3777c81ed09b6baade485ea8f5b552009d98e597fa14d7dc263600a52331a1ee"
+      }
+    },
+    "U45": {
+      "key": "animation.U45",
+      "enemyKey": "animation.U45.enemy",
+      "path": "characters/animations/U45.png",
+      "enemyPath": "characters/animations/U45-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 109,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "bf7b353e3805d2f6d9780d568552a8634d496e4e1f10120cde2ecb774acd579b",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U45.png",
+      "atlasSha256": {
+        "own": "e0346e73f885351c3c82c2035b52f8b150e63c9264862b0ee75cdce69386a802",
+        "enemy": "25f37ba71bb65c4ca070d503075533d1473c0f7add66c206f948336ff4e26bd5"
+      },
+      "review": "accepted",
+      "bodyRadius": 31,
+      "muzzle": [
+        40.367,
+        75.413
+      ],
+      "hit": [
+        0,
+        21.284
+      ],
+      "reviewNote": "U45 特种单位动作母图逐帧复核：五行状态完整，武器挂点、落脚线和受击/倒地姿态连续。",
+      "reviewedAtUtc": "2026-10-05T20:43:05.737635+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.json",
+          "metadataSha256": "31ab05c101f33035de9bacb1cfa73f72961710e5db265247094ee6ae62c7b5b3",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.webm",
+          "videoSha256": "0f1db9c6d878c3cfa479a7d7f21b0ee6c9899e342790b58a13ef53b8b2abc515",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.471,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.json",
+          "metadataSha256": "ee6833948ace2a2f0078f797ec57f3b87117a4ae1932479e5f128d73c25efde5",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.webm",
+          "videoSha256": "fe24748664a8cf670a3f3084d562e4fa8bdeddc835bab6547a90754e5ef9b256",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.368,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.json",
+          "metadataSha256": "9197e871b2ea910b772bddad91c68544d8440dab495060cc7a54f9283e943aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.webm",
+          "videoSha256": "8103ef1b0795c05c5bf6d483360ecb3015da59aa8cbdf6f2ed29388686aed52b",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.json",
+          "metadataSha256": "45970c2ca06644ff2f56455f4e958e3efd7f4822febc97b1a970fdbc8605bf06",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.webm",
+          "videoSha256": "b8695eddf85a57e4c80f6cb0782d209b703659ed4269da2ba86a138ebefd0e2d",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U45",
+          "path": "characters/units/U45.png",
+          "sha256": "ee5797ee86a94639e527f19d3b5447362bd3b8746de7b058f07d2abcfa96d7dd"
+        },
+        {
+          "key": "unit.U45.enemy",
+          "path": "characters/units/U45-enemy.png",
+          "sha256": "a754999293b41613efe14484a5625d962d6b2acf10b91099c7c7a408df415874"
+        },
+        {
+          "key": "icon.U45",
+          "path": "ui/units/U45.png",
+          "sha256": "342382f7ce7cad3211d46b26f346927670bab8c8892e937b09979bc0a1826dba"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U45-bf7b353e3805.json",
+        "sha256": "cd2140d18597f6f2c1388ef5976947db3cabfc259bf81448727f9fced4a91967"
+      }
+    },
+    "U55": {
+      "key": "animation.U55",
+      "enemyKey": "animation.U55.enemy",
+      "path": "characters/animations/U55.png",
+      "enemyPath": "characters/animations/U55-enemy.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "bodyHeight": 106,
+      "anchor": [
+        0.5,
+        0.9
+      ],
+      "clips": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "walk": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "attack": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "hurt": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "death": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sourceSha256": "a0152f73ea85f71784c28287aa82aa8d8c32c53156eb938038ce318526584557",
+      "sourcePath": "output/imagegen/epoch-rush/v0.3-animation/raw/U55.png",
+      "atlasSha256": {
+        "own": "df84cd62e6bdfe6ccae779b273e44084d1d5b41654759a0fbc549474fab1507c",
+        "enemy": "9f47bfcf1417c2b6b833323db34cde99f9ad8c8107309460ac928f2397293f1e"
+      },
+      "review": "accepted",
+      "bodyRadius": 46,
+      "muzzle": [
+        61.283,
+        67.834
+      ],
+      "hit": [
+        0,
+        24.513
+      ],
+      "reviewNote": "U55 特种单位动作母图逐帧复核：五行状态完整，武器挂点、落脚线和受击/倒地姿态连续。",
+      "reviewedAtUtc": "2026-10-05T20:43:07.423223+00:00",
+      "reviewChecks": {
+        "consistentIdentity": true,
+        "weaponAndEra": true,
+        "idleCycle": true,
+        "walkCycle": true,
+        "attackRelease": true,
+        "hurtAndDeath": true,
+        "floorAndScale": true,
+        "noGridOrMatte": true,
+        "friendlyEnemy": true,
+        "muzzleHitSockets": true,
+        "liveCombat": true
+      },
+      "reviewEvidence": [
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.json",
+          "metadataSha256": "31ab05c101f33035de9bacb1cfa73f72961710e5db265247094ee6ae62c7b5b3",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-0.25x-1791232716723.webm",
+          "videoSha256": "0f1db9c6d878c3cfa479a7d7f21b0ee6c9899e342790b58a13ef53b8b2abc515",
+          "side": 0,
+          "speed": 0.25,
+          "decodedDurationSec": 33.471,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.json",
+          "metadataSha256": "ee6833948ace2a2f0078f797ec57f3b87117a4ae1932479e5f128d73c25efde5",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side0-1x-1791232536708.webm",
+          "videoSha256": "fe24748664a8cf670a3f3084d562e4fa8bdeddc835bab6547a90754e5ef9b256",
+          "side": 0,
+          "speed": 1,
+          "decodedDurationSec": 8.368,
+          "capturedFrames": 251
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.json",
+          "metadataSha256": "9197e871b2ea910b772bddad91c68544d8440dab495060cc7a54f9283e943aed",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-0.25x-1791232626609.webm",
+          "videoSha256": "8103ef1b0795c05c5bf6d483360ecb3015da59aa8cbdf6f2ed29388686aed52b",
+          "side": 1,
+          "speed": 0.25,
+          "decodedDurationSec": 33.437,
+          "capturedFrames": 1004
+        },
+        {
+          "metadataPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.json",
+          "metadataSha256": "45970c2ca06644ff2f56455f4e958e3efd7f4822febc97b1a970fdbc8605bf06",
+          "videoPath": "output/qa/v0.3/motion-clips/A3-specials-sequence-side1-1x-1791232569466.webm",
+          "videoSha256": "b8695eddf85a57e4c80f6cb0782d209b703659ed4269da2ba86a138ebefd0e2d",
+          "side": 1,
+          "speed": 1,
+          "decodedDurationSec": 8.366,
+          "capturedFrames": 251
+        }
+      ],
+      "visualDerivatives": [
+        {
+          "key": "unit.U55",
+          "path": "characters/units/U55.png",
+          "sha256": "76a554175a8a107848b7530db7a2b801a8dcafb13e0761a7300fb7428c1e593d"
+        },
+        {
+          "key": "unit.U55.enemy",
+          "path": "characters/units/U55-enemy.png",
+          "sha256": "e56bcd1601dce288facca954d27e32cf9c98db29447fff8a25d3ab17acbad9e5"
+        },
+        {
+          "key": "icon.U55",
+          "path": "ui/units/U55.png",
+          "sha256": "6dbc6dc48f6e7865424dd1ae7581a4f58409a6e2edaaf44411c76791ce1310f0"
+        }
+      ],
+      "reviewFile": {
+        "path": "output/imagegen/epoch-rush/v0.3-animation/reviews/U55-a0152f73ea85.json",
+        "sha256": "4e72683836a1041af040750f90b9a5e311f3f07686bdc104cd75d015449550bf"
+      }
+    }
+  }
+}

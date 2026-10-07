@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "profileId": "PROFILE-EXAMPLE",
+  "revision": 3,
+  "tutorialComplete": true,
+  "unlockedHeroIds": [
+    "H01",
+    "H02",
+    "H03"
+  ],
+  "unlockedSkillIds": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12"
+  ],
+  "clearedMissionIds": [
+    "M01",
+    "M02",
+    "M03"
+  ],
+  "masteryPoints": 3,
+  "heroProficiency": {
+    "H01": 300,
+    "H02": 0,
+    "H03": 0
+  },
+  "ownedRelicIds": [
+    "I01",
+    "I02",
+    "I03"
+  ],
+  "fragments": 0,
+  "loadouts": [
+    {
+      "heroId": "H01",
+      "specializationId": "P013",
+      "commonSkillIds": [
+        "S04",
+        "S05"
+      ],
+      "relicIds": [
+        "I01",
+        "I03"
+      ],
+      "talentIds": [
+        "T11",
+        "T12",
+        "T13"
+      ]
+    }
+  ],
+  "pity": {
+    "rareMisses": 1,
+    "epicMisses": 3
+  },
+  "settings": {
+    "language": "zh-CN",
+    "masterVolume": 0.8,
+    "musicVolume": 0.65,
+    "sfxVolume": 0.8,
+    "haptics": true,
+    "reducedMotion": false,
+    "quality": "auto"
+  },
+  "rewardJournal": {
+    "lastCommittedSequence": 3,
+    "completedMatchIds": [
+      "ER-EXAMPLE-1",
+      "ER-EXAMPLE-2",
+      "ER-EXAMPLE-3"
+    ]
+  },
+  "exampleOnly": true,
+  "checksum": "34895893cdeb7f3f509e5c81bb748af7bf8e13b4e850706b0d77a0f29b023658"
+}

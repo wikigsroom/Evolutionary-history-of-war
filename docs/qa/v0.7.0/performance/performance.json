@@ -1,0 +1,52 @@
+[
+	{
+		"actors": 24,
+		"camera_x": 266.666666666667,
+		"era": "A10",
+		"frames": 600,
+		"includes_scene_setup_interval": false,
+		"kind": "representative",
+		"living_actors": 13,
+		"longest_frame": {
+			"draw_calls": 278.0,
+			"frame": 304,
+			"ms": 14.729,
+			"reported_process_monitor_ms": 13.584,
+			"simulation_tick": 65
+		},
+		"max_ms": 14.729,
+		"nodes": 138.0,
+		"p50_ms": 6.067,
+		"p95_ms": 8.837,
+		"process_monitor_snapshot_p95_ms": 14.679,
+		"repeated_raids_are_synthetic_stress": true,
+		"static_memory_mib": 67.3963756561279,
+		"visible_actors": 10,
+		"visible_world_width": 1056.31067961165
+	},
+	{
+		"actors": 60,
+		"camera_x": 266.666666666667,
+		"era": "A10",
+		"frames": 540,
+		"includes_scene_setup_interval": true,
+		"kind": "synthetic_render_stress",
+		"living_actors": 36,
+		"longest_frame": {
+			"draw_calls": 258.0,
+			"frame": 721,
+			"ms": 46.896,
+			"reported_process_monitor_ms": 12.047,
+			"simulation_tick": 0
+		},
+		"max_ms": 46.896,
+		"nodes": 237.0,
+		"p50_ms": 6.065,
+		"p95_ms": 14.538,
+		"process_monitor_snapshot_p95_ms": 46.792,
+		"repeated_raids_are_synthetic_stress": true,
+		"static_memory_mib": 68.6522312164307,
+		"visible_actors": 26,
+		"visible_world_width": 1056.31067961165
+	}
+]

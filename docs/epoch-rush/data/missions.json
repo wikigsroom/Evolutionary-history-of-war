@@ -1,0 +1,342 @@
+[
+  {
+    "id": "M01",
+    "chapter": 1,
+    "name": "守住第一团火",
+    "startingEraId": "A1",
+    "maximumEraId": "A2",
+    "enemyProfileId": "AP02",
+    "enemyStartingGold": 240,
+    "playerStartingGold": 260,
+    "teaching": "先用盾兵挡住战线、投石兵在后方输出；通过交战积累经验，完成第一次青铜时代进化。",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I01",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 4,
+      "periodSec": 56,
+      "deploySec": 29
+    }
+  },
+  {
+    "id": "M02",
+    "chapter": 1,
+    "name": "石矛与远影",
+    "startingEraId": "A1",
+    "maximumEraId": "A2",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "前排保护远程，第一次进化",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I02",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 4,
+      "periodSec": 56,
+      "deploySec": 29
+    }
+  },
+  {
+    "id": "M03",
+    "chapter": 1,
+    "name": "铜轮撞门",
+    "startingEraId": "A1",
+    "maximumEraId": "A2",
+    "enemyProfileId": "AP04",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "破甲克制，解锁岚翎与首个传承点",
+    "boss": true,
+    "bossModifier": "enemy_base_hp_plus_20pct",
+    "firstClearRelicId": "I03",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [
+      "H02"
+    ],
+    "bossParameters": {
+      "enemyBaseHpBonus": 0.2
+    },
+    "reinforcements": {
+      "waves": 5,
+      "periodSec": 56,
+      "deploySec": 29
+    }
+  },
+  {
+    "id": "M04",
+    "chapter": 2,
+    "name": "桥前的旗",
+    "startingEraId": "A1",
+    "maximumEraId": "A3",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "三个站位和换代冲锋",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I04",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 5,
+      "periodSec": 60,
+      "deploySec": 32
+    }
+  },
+  {
+    "id": "M05",
+    "chapter": 2,
+    "name": "弩线之间",
+    "startingEraId": "A2",
+    "maximumEraId": "A3",
+    "enemyProfileId": "AP05",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "标记、箭幕与烟幕",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I05",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 5,
+      "periodSec": 60,
+      "deploySec": 32
+    }
+  },
+  {
+    "id": "M06",
+    "chapter": 2,
+    "name": "不倒的城门",
+    "startingEraId": "A1",
+    "maximumEraId": "A3",
+    "enemyProfileId": "AP03",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "守城后反推，解锁绮衡",
+    "boss": true,
+    "bossModifier": "enemy_prebuilt_close_turret_debit_opening_budget",
+    "firstClearRelicId": "I06",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [
+      "H04"
+    ],
+    "bossParameters": {
+      "prebuiltTurretId": "TR11",
+      "debitOpeningBudget": true
+    },
+    "reinforcements": {
+      "waves": 6,
+      "periodSec": 60,
+      "deploySec": 32
+    }
+  },
+  {
+    "id": "M07",
+    "chapter": 3,
+    "name": "炉火重开",
+    "startingEraId": "A2",
+    "maximumEraId": "A4",
+    "enemyProfileId": "AP02",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "火焰与聚拢组合",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I07",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 6,
+      "periodSec": 64,
+      "deploySec": 35
+    }
+  },
+  {
+    "id": "M08",
+    "chapter": 3,
+    "name": "铁轨尽头",
+    "startingEraId": "A2",
+    "maximumEraId": "A4",
+    "enemyProfileId": "AP04",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "炮车对轻兵，穿甲枪对重兵",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I08",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 6,
+      "periodSec": 64,
+      "deploySec": 35
+    }
+  },
+  {
+    "id": "M09",
+    "chapter": 3,
+    "name": "最后一车粮",
+    "startingEraId": "A1",
+    "maximumEraId": "A4",
+    "enemyProfileId": "AP05",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "补给时机，解锁麦穗",
+    "boss": true,
+    "bossModifier": "enemy_artillery_skill_telegraph_plus_0.4sec",
+    "firstClearRelicId": "I09",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [
+      "H06"
+    ],
+    "reinforcements": {
+      "waves": 7,
+      "periodSec": 64,
+      "deploySec": 35
+    }
+  },
+  {
+    "id": "M10",
+    "chapter": 4,
+    "name": "磁轨初鸣",
+    "startingEraId": "A2",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "导电与脉冲链",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I10",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 6,
+      "periodSec": 68,
+      "deploySec": 38
+    }
+  },
+  {
+    "id": "M11",
+    "chapter": 4,
+    "name": "先到的明日",
+    "startingEraId": "A3",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "追赶时代，守城储蓄",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": "I11",
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 6,
+      "periodSec": 68,
+      "deploySec": 38
+    }
+  },
+  {
+    "id": "M12",
+    "chapter": 4,
+    "name": "失落的刻度",
+    "startingEraId": "A1",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "限制连锁和控制，解锁溯青",
+    "boss": true,
+    "bossModifier": "enemy_evolution_choice_visible",
+    "firstClearRelicId": "I12",
+    "firstClearMasteryPoints": 1,
+    "heroUnlockIds": [
+      "H05"
+    ],
+    "reinforcements": {
+      "waves": 7,
+      "periodSec": 68,
+      "deploySec": 38
+    }
+  },
+  {
+    "id": "M13",
+    "chapter": 5,
+    "name": "万年重放",
+    "startingEraId": "A1",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP02",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "完整五时代混编",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 6,
+      "periodSec": 72,
+      "deploySec": 41
+    }
+  },
+  {
+    "id": "M14",
+    "chapter": 5,
+    "name": "六种答案",
+    "startingEraId": "A1",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP01",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "混编与多构筑；附加两角色挑战为可选目标",
+    "boss": false,
+    "bossModifier": null,
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "reinforcements": {
+      "waves": 6,
+      "periodSec": 72,
+      "deploySec": 41
+    }
+  },
+  {
+    "id": "M15",
+    "chapter": 5,
+    "name": "折断定序",
+    "startingEraId": "A1",
+    "maximumEraId": "A5",
+    "enemyProfileId": "AP06",
+    "enemyStartingGold": 180,
+    "playerStartingGold": 180,
+    "teaching": "双阶段核心，完整构筑验证",
+    "boss": true,
+    "bossModifier": "base_hp_threshold_shield_at_65_and_30pct_costs_20_command_for_4sec",
+    "firstClearRelicId": null,
+    "firstClearMasteryPoints": 0,
+    "heroUnlockIds": [],
+    "bossParameters": {
+      "thresholds": [
+        0.65,
+        0.3
+      ],
+      "shieldHpRatio": 0.1,
+      "durationSec": 4,
+      "commandCostPerThreshold": 20,
+      "maximumTriggersPerThreshold": 1
+    },
+    "reinforcements": {
+      "waves": 7,
+      "periodSec": 72,
+      "deploySec": 41
+    }
+  }
+]

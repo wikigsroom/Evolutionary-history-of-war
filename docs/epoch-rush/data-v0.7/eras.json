@@ -1,0 +1,280 @@
+[
+  {
+    "id": "A1",
+    "name": "石器部落",
+    "hpAttackMultiplier": 1,
+    "hpMultiplier": 1,
+    "attackMultiplier": 1,
+    "costMultiplier": 1.0,
+    "incomeMultiplier": 1.0,
+    "knowledgeMultiplier": 1.0,
+    "nextEvolutionKnowledge": 260,
+    "baseHp": 2400,
+    "visual": "Prehistoric stone-age fur, bone, flint, wooden clubs and hide drums",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A1-1.png",
+      "environment/eras/A1-2.png",
+      "environment/eras/A1-3.png"
+    ],
+    "ambient": [
+      "bat",
+      "bird",
+      "pterosaur"
+    ],
+    "eventPool": [
+      "meteor",
+      "dinosaur",
+      "rockfall"
+    ]
+  },
+  {
+    "id": "A2",
+    "name": "青铜城邦",
+    "hpAttackMultiplier": 5,
+    "hpMultiplier": 5,
+    "attackMultiplier": 5,
+    "costMultiplier": 1.28,
+    "incomeMultiplier": 1.28,
+    "knowledgeMultiplier": 1.45,
+    "nextEvolutionKnowledge": 420,
+    "baseHp": 12000,
+    "visual": "Bronze-age crested bronze helmets, linen, round shields, bows and horse chariots",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A2-1.png",
+      "environment/eras/A2-2.png",
+      "environment/eras/A2-3.png"
+    ],
+    "ambient": [
+      "bird"
+    ],
+    "eventPool": [
+      "meteor",
+      "rockfall",
+      "storm"
+    ]
+  },
+  {
+    "id": "A3",
+    "name": "古典帝国",
+    "hpAttackMultiplier": 25,
+    "hpMultiplier": 25,
+    "attackMultiplier": 25,
+    "costMultiplier": 1.6384,
+    "incomeMultiplier": 1.6384,
+    "knowledgeMultiplier": 2.1025,
+    "nextEvolutionKnowledge": 650,
+    "baseHp": 60000,
+    "visual": "Classical Roman-inspired legion helmets, segmented iron armor, rectangular shields, short swords and ballistae",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A3-1.png",
+      "environment/eras/A3-2.png",
+      "environment/eras/A3-3.png"
+    ],
+    "ambient": [
+      "bird"
+    ],
+    "eventPool": [
+      "meteor",
+      "rockfall",
+      "storm"
+    ]
+  },
+  {
+    "id": "A4",
+    "name": "中世纪王国",
+    "hpAttackMultiplier": 125,
+    "hpMultiplier": 125,
+    "attackMultiplier": 125,
+    "costMultiplier": 2.0972,
+    "incomeMultiplier": 2.0972,
+    "knowledgeMultiplier": 3.0486,
+    "nextEvolutionKnowledge": 990,
+    "baseHp": 300000,
+    "visual": "Medieval steel helmets, blue heraldic shields, crossbows, pikemen, armored horses and falcon scouts",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A4-1.png",
+      "environment/eras/A4-2.png",
+      "environment/eras/A4-3.png"
+    ],
+    "ambient": [
+      "bird"
+    ],
+    "eventPool": [
+      "meteor",
+      "rockfall",
+      "storm"
+    ]
+  },
+  {
+    "id": "A5",
+    "name": "火药列阵",
+    "hpAttackMultiplier": 625,
+    "hpMultiplier": 625,
+    "attackMultiplier": 625,
+    "costMultiplier": 2.6844,
+    "incomeMultiplier": 2.6844,
+    "knowledgeMultiplier": 4.4205,
+    "nextEvolutionKnowledge": 1480,
+    "baseHp": 1500000,
+    "visual": "Early modern Napoleonic-inspired line infantry, shakos, navy-blue coats, white crossbelts, flintlock muskets, bayonets and brass field cannons",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A5-1.png",
+      "environment/eras/A5-2.png",
+      "environment/eras/A5-3.png"
+    ],
+    "ambient": [
+      "bird",
+      "balloon"
+    ],
+    "eventPool": [
+      "meteor",
+      "rockfall",
+      "storm"
+    ]
+  },
+  {
+    "id": "A6",
+    "name": "工业战壕",
+    "hpAttackMultiplier": 3125,
+    "hpMultiplier": 3125,
+    "attackMultiplier": 3125,
+    "costMultiplier": 3.436,
+    "incomeMultiplier": 3.436,
+    "knowledgeMultiplier": 6.4097,
+    "nextEvolutionKnowledge": 2180,
+    "baseHp": 7500000,
+    "visual": "Late nineteenth-century and WWI-inspired khaki infantry, steel Brodie helmets, bolt-action rifles, canvas webbing, field guns and riveted early tracked tanks",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A6-1.png",
+      "environment/eras/A6-2.png",
+      "environment/eras/A6-3.png"
+    ],
+    "ambient": [
+      "biplane",
+      "balloon"
+    ],
+    "eventPool": [
+      "meteor",
+      "plane",
+      "storm"
+    ]
+  },
+  {
+    "id": "A7",
+    "name": "二战钢盔",
+    "hpAttackMultiplier": 15625,
+    "hpMultiplier": 15625,
+    "attackMultiplier": 15625,
+    "costMultiplier": 4.398,
+    "incomeMultiplier": 4.398,
+    "knowledgeMultiplier": 9.2941,
+    "nextEvolutionKnowledge": 3180,
+    "baseHp": 37500000,
+    "visual": "WWII-inspired olive drab uniforms, rounded steel helmets, webbing, service rifles, portable anti-tank launchers and medium tanks; no real insignia",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A7-1.png",
+      "environment/eras/A7-2.png",
+      "environment/eras/A7-3.png"
+    ],
+    "ambient": [
+      "fighter",
+      "bomber"
+    ],
+    "eventPool": [
+      "meteor",
+      "plane",
+      "storm"
+    ]
+  },
+  {
+    "id": "A8",
+    "name": "现代机械化",
+    "hpAttackMultiplier": 78125,
+    "hpMultiplier": 78125,
+    "attackMultiplier": 78125,
+    "costMultiplier": 5.6295,
+    "incomeMultiplier": 5.6295,
+    "knowledgeMultiplier": 13.4765,
+    "nextEvolutionKnowledge": 4580,
+    "baseHp": 187500000,
+    "visual": "1991 Gulf War-inspired desert camouflage, kevlar helmets, body armor, assault rifles, anti-tank missiles and angular modern main battle tanks",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A8-1.png",
+      "environment/eras/A8-2.png",
+      "environment/eras/A8-3.png"
+    ],
+    "ambient": [
+      "jet",
+      "helicopter"
+    ],
+    "eventPool": [
+      "meteor",
+      "plane",
+      "storm"
+    ]
+  },
+  {
+    "id": "A9",
+    "name": "无人战术",
+    "hpAttackMultiplier": 390625,
+    "hpMultiplier": 390625,
+    "attackMultiplier": 390625,
+    "costMultiplier": 7.2058,
+    "incomeMultiplier": 7.2058,
+    "knowledgeMultiplier": 19.5409,
+    "nextEvolutionKnowledge": 6520,
+    "baseHp": 937500000,
+    "visual": "Near-future compact charcoal tactical exoskeletons, blue optics, drones, coil rifles, electronic warfare gear and tracked unmanned combat vehicles",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A9-1.png",
+      "environment/eras/A9-2.png",
+      "environment/eras/A9-3.png"
+    ],
+    "ambient": [
+      "drone",
+      "jet"
+    ],
+    "eventPool": [
+      "meteor",
+      "drone",
+      "debris"
+    ]
+  },
+  {
+    "id": "A10",
+    "name": "轨道文明",
+    "hpAttackMultiplier": 1953125,
+    "hpMultiplier": 1953125,
+    "attackMultiplier": 1953125,
+    "costMultiplier": 9.2234,
+    "incomeMultiplier": 9.2234,
+    "knowledgeMultiplier": 28.3343,
+    "nextEvolutionKnowledge": null,
+    "baseHp": 4687500000,
+    "visual": "Orbital science fantasy cream ceramic and warm brass armor, navy-blue panels, cyan phase crystals, compact energy weapons and a two-legged combat mech",
+    "mapVariants": 3,
+    "backgrounds": [
+      "environment/eras/A10-1.png",
+      "environment/eras/A10-2.png",
+      "environment/eras/A10-3.png"
+    ],
+    "ambient": [
+      "shuttle",
+      "drone"
+    ],
+    "eventPool": [
+      "meteor",
+      "drone",
+      "debris"
+    ]
+  }
+]

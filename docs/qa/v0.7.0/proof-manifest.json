@@ -1,0 +1,156 @@
+{
+  "version": "0.7.0",
+  "capturedOn": "2026-10-07",
+  "type": "historical-delivery-evidence",
+  "notes": [
+    "Original full-resolution review boards, logs, AVI/MP4 captures and compiled binaries stay in ignored local output directories.",
+    "These reports describe the tested v0.7.0 delivery build, not every later documentation or tooling commit.",
+    "One machine-specific executable path is replaced by a placeholder; both source and published hashes are recorded."
+  ],
+  "files": [
+    {
+      "path": "rules-regression.json",
+      "source": "output/qa/ten-eras/rules-regression.json",
+      "sourceSha256": "be14a96f1d1836c62b6aa19efffca3a81b91c6fe990e27bde0319bfdca007a13",
+      "publishedSha256": "be14a96f1d1836c62b6aa19efffca3a81b91c6fe990e27bde0319bfdca007a13",
+      "bytes": 50045,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "skills-regression.json",
+      "source": "output/qa/ten-eras/skills-regression.json",
+      "sourceSha256": "488396a43d002d07516a139140591df98c495461ec94eedcf054fe794c959ba1",
+      "publishedSha256": "488396a43d002d07516a139140591df98c495461ec94eedcf054fe794c959ba1",
+      "bytes": 27226,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "restore-regression.json",
+      "source": "output/qa/ten-eras/restore-regression.json",
+      "sourceSha256": "7edecc3e96bbb283950864bdb1b56a5e247462a643d84122873eedb7709a73d3",
+      "publishedSha256": "7edecc3e96bbb283950864bdb1b56a5e247462a643d84122873eedb7709a73d3",
+      "bytes": 51,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "assets/asset-audit.json",
+      "source": "output/qa/ten-eras/assets/asset-audit.json",
+      "sourceSha256": "a66ac9c719cf542cbe98749dd670811c34a893fdb99b7b066e7e36e8bba02122",
+      "publishedSha256": "a66ac9c719cf542cbe98749dd670811c34a893fdb99b7b066e7e36e8bba02122",
+      "bytes": 888765,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "assets/visual-review.json",
+      "source": "output/qa/ten-eras/assets/visual-review.json",
+      "sourceSha256": "e36562d630e2c7197beda9fa9e791cf81f8d9bd6b1ae93fd1a8bd14b3c6a21ef",
+      "publishedSha256": "e36562d630e2c7197beda9fa9e791cf81f8d9bd6b1ae93fd1a8bd14b3c6a21ef",
+      "bytes": 57999,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "assets/body-geometry.json",
+      "source": "output/qa/ten-eras/assets/body-geometry.json",
+      "sourceSha256": "487fe9d11101ac265c772ca473ed34626fef9f046ea8bd8acc188e6228c56c40",
+      "publishedSha256": "487fe9d11101ac265c772ca473ed34626fef9f046ea8bd8acc188e6228c56c40",
+      "bytes": 20348,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "transitions/native-transition-report.json",
+      "source": "output/qa/ten-eras/transitions/native-transition-report.json",
+      "sourceSha256": "dfdf6ddfddd8a6cfcdf99ccfe0997a45865d60b5769b6e90dbf161786d973fc7",
+      "publishedSha256": "dfdf6ddfddd8a6cfcdf99ccfe0997a45865d60b5769b6e90dbf161786d973fc7",
+      "bytes": 25042,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "windows-embedded/embedded-content.json",
+      "source": "output/qa/ten-eras/windows-embedded/embedded-content.json",
+      "sourceSha256": "e6eedfba443655d05f2bcf85bfa33019a99a7999e50fb57a716cf328810cd3e6",
+      "publishedSha256": "3c6cf75f6b2e8736fe617a116df15d46e016680e606e276aedae0126184f3ce5",
+      "bytes": 566,
+      "localPathsSanitized": true
+    },
+    {
+      "path": "windows-embedded/native/native-visual-report.json",
+      "source": "output/qa/ten-eras/windows-embedded/native/native-visual-report.json",
+      "sourceSha256": "5b43ec7ffe5a5d1ff656821d2b88cdabb756fe266b100af6a8a68b3129fde344",
+      "publishedSha256": "5b43ec7ffe5a5d1ff656821d2b88cdabb756fe266b100af6a8a68b3129fde344",
+      "bytes": 14191,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "windows-embedded/interactions/interaction-checks.json",
+      "source": "output/qa/ten-eras/windows-embedded/interactions/interaction-checks.json",
+      "sourceSha256": "878462dad75900d7ccd0a4ff235f26cd42e4b456e4bdc60e203a22e598818dd9",
+      "publishedSha256": "878462dad75900d7ccd0a4ff235f26cd42e4b456e4bdc60e203a22e598818dd9",
+      "bytes": 515,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "audio/native/audio-regression.json",
+      "source": "output/qa/ten-eras/audio/native/audio-regression.json",
+      "sourceSha256": "b1190d48d7a7cc1c343c49fd82c64e724ae216d52a0e53f4cba6aba74427972b",
+      "publishedSha256": "b1190d48d7a7cc1c343c49fd82c64e724ae216d52a0e53f4cba6aba74427972b",
+      "bytes": 1251,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "audio/audio-signal-checks.json",
+      "source": "output/qa/ten-eras/audio/audio-signal-checks.json",
+      "sourceSha256": "8ae33a507a3b2c545022b23418964360967e2fcd84a6945450d1d97c52f0ea5e",
+      "publishedSha256": "8ae33a507a3b2c545022b23418964360967e2fcd84a6945450d1d97c52f0ea5e",
+      "bytes": 28873,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "full-matches/full-battles.json",
+      "source": "output/qa/ten-eras/full-matches/full-battles.json",
+      "sourceSha256": "a51b64f733780394e094489c089fcab37044247be351607998567a95611efa9a",
+      "publishedSha256": "a51b64f733780394e094489c089fcab37044247be351607998567a95611efa9a",
+      "bytes": 4965,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "performance/performance.json",
+      "source": "output/qa/ten-eras/performance/performance.json",
+      "sourceSha256": "4d47a1d3b874ab00a8e32755c44d39ea94981e73caa796b1d3401b8b870fe0b7",
+      "publishedSha256": "4d47a1d3b874ab00a8e32755c44d39ea94981e73caa796b1d3401b8b870fe0b7",
+      "bytes": 1224,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "android-finalization.json",
+      "source": "output/qa/ten-eras/android-finalization.json",
+      "sourceSha256": "ff16541d8b4f95457cf73d2562a6a70f7dfb25bde74971d5e2531a7c5a113ba4",
+      "publishedSha256": "ff16541d8b4f95457cf73d2562a6a70f7dfb25bde74971d5e2531a7c5a113ba4",
+      "bytes": 606,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "packages/package-asset-checks.json",
+      "source": "output/qa/ten-eras/packages/package-asset-checks.json",
+      "sourceSha256": "95e5eb721390714e4aa45f52440fd2cc2de4bf2fbc610ab5b50cb9aa1b63f18c",
+      "publishedSha256": "95e5eb721390714e4aa45f52440fd2cc2de4bf2fbc610ab5b50cb9aa1b63f18c",
+      "bytes": 1799,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "video/showcase-report.json",
+      "source": "output/qa/ten-eras/video/showcase-report.json",
+      "sourceSha256": "d22baa08f9af192cd779c2463f89edd51e5f7d8a2e75ea72080758981ad9f7f1",
+      "publishedSha256": "d22baa08f9af192cd779c2463f89edd51e5f7d8a2e75ea72080758981ad9f7f1",
+      "bytes": 1205,
+      "localPathsSanitized": false
+    },
+    {
+      "path": "delivery-summary.json",
+      "source": "output/qa/ten-eras/delivery-summary.json",
+      "sourceSha256": "d9ba891c47d48ce851ffb456eae94ce319514b5f11604727e1eaa892dc87be90",
+      "publishedSha256": "d9ba891c47d48ce851ffb456eae94ce319514b5f11604727e1eaa892dc87be90",
+      "bytes": 10569,
+      "localPathsSanitized": false
+    }
+  ]
+}

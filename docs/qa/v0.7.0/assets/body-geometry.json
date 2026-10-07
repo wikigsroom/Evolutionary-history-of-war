@@ -1,0 +1,814 @@
+[
+  {
+    "id": "U11",
+    "radius": 22,
+    "standingHalfWidth": 37.93,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U42",
+    "radius": 16,
+    "standingHalfWidth": 35.17,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U44",
+    "radius": 46.0,
+    "standingHalfWidth": 51.06,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U13",
+    "radius": 16,
+    "standingHalfWidth": 39.11,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U23",
+    "radius": 16,
+    "standingHalfWidth": 37.12,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U24",
+    "radius": 57.4,
+    "standingHalfWidth": 63.81,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U12",
+    "radius": 16,
+    "standingHalfWidth": 43.73,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U14",
+    "radius": 45.6,
+    "standingHalfWidth": 50.61,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U21",
+    "radius": 22,
+    "standingHalfWidth": 35.2,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U22",
+    "radius": 16,
+    "standingHalfWidth": 26.1,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U31",
+    "radius": 22,
+    "standingHalfWidth": 38.4,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U32",
+    "radius": 16,
+    "standingHalfWidth": 35.37,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U34",
+    "radius": 64.3,
+    "standingHalfWidth": 71.39,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U41",
+    "radius": 22,
+    "standingHalfWidth": 39.63,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U43",
+    "radius": 16,
+    "standingHalfWidth": 36.0,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U52",
+    "radius": 16,
+    "standingHalfWidth": 34.5,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U54",
+    "radius": 88.9,
+    "standingHalfWidth": 98.78,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "H01",
+    "radius": 24,
+    "standingHalfWidth": 53.13,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02",
+    "radius": 24,
+    "standingHalfWidth": 41.32,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04",
+    "radius": 24,
+    "standingHalfWidth": 31.4,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05",
+    "radius": 24,
+    "standingHalfWidth": 36.73,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06",
+    "radius": 24,
+    "standingHalfWidth": 48.23,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U33",
+    "radius": 16,
+    "standingHalfWidth": 26.18,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U51",
+    "radius": 22,
+    "standingHalfWidth": 18.93,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03",
+    "radius": 24,
+    "standingHalfWidth": 65.46,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U53",
+    "radius": 16,
+    "standingHalfWidth": 38.4,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U15",
+    "radius": 16,
+    "standingHalfWidth": 37.35,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U25",
+    "radius": 16,
+    "standingHalfWidth": 31.18,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U35",
+    "radius": 16,
+    "standingHalfWidth": 36.69,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U45",
+    "radius": 16,
+    "standingHalfWidth": 35.33,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U55",
+    "radius": 16,
+    "standingHalfWidth": 25.49,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U101",
+    "radius": 22,
+    "standingHalfWidth": 42.97,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U102",
+    "radius": 16,
+    "standingHalfWidth": 38.22,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U103",
+    "radius": 16,
+    "standingHalfWidth": 40.35,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U104",
+    "radius": 44.3,
+    "standingHalfWidth": 49.17,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U105",
+    "radius": 16,
+    "standingHalfWidth": 43.0,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A1",
+    "radius": 24,
+    "standingHalfWidth": 54.63,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A2",
+    "radius": 24,
+    "standingHalfWidth": 44.68,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A1",
+    "radius": 24,
+    "standingHalfWidth": 52.03,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A1",
+    "radius": 24,
+    "standingHalfWidth": 66.17,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A1",
+    "radius": 24,
+    "standingHalfWidth": 48.89,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A2",
+    "radius": 24,
+    "standingHalfWidth": 41.17,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A1",
+    "radius": 24,
+    "standingHalfWidth": 60.26,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A2",
+    "radius": 24,
+    "standingHalfWidth": 34.62,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A2",
+    "radius": 24,
+    "standingHalfWidth": 49.91,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A2",
+    "radius": 24,
+    "standingHalfWidth": 36.6,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A2",
+    "radius": 24,
+    "standingHalfWidth": 36.1,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A3",
+    "radius": 24,
+    "standingHalfWidth": 35.32,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A3",
+    "radius": 24,
+    "standingHalfWidth": 47.23,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A3",
+    "radius": 24,
+    "standingHalfWidth": 50.05,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A3",
+    "radius": 24,
+    "standingHalfWidth": 44.78,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A3",
+    "radius": 24,
+    "standingHalfWidth": 45.97,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A3",
+    "radius": 24,
+    "standingHalfWidth": 34.41,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A4",
+    "radius": 24,
+    "standingHalfWidth": 53.61,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A4",
+    "radius": 24,
+    "standingHalfWidth": 48.06,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A4",
+    "radius": 24,
+    "standingHalfWidth": 39.1,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A4",
+    "radius": 24,
+    "standingHalfWidth": 36.6,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A4",
+    "radius": 24,
+    "standingHalfWidth": 48.77,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A5",
+    "radius": 24,
+    "standingHalfWidth": 48.8,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A5",
+    "radius": 24,
+    "standingHalfWidth": 53.28,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A5",
+    "radius": 24,
+    "standingHalfWidth": 48.16,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A5",
+    "radius": 24,
+    "standingHalfWidth": 45.75,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A5",
+    "radius": 24,
+    "standingHalfWidth": 32.78,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A6",
+    "radius": 24,
+    "standingHalfWidth": 30.5,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A6",
+    "radius": 24,
+    "standingHalfWidth": 54.41,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A6",
+    "radius": 24,
+    "standingHalfWidth": 38.12,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A6",
+    "radius": 24,
+    "standingHalfWidth": 41.17,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A6",
+    "radius": 24,
+    "standingHalfWidth": 38.24,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U62",
+    "radius": 16,
+    "standingHalfWidth": 34.8,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U61",
+    "radius": 22,
+    "standingHalfWidth": 25.6,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U64",
+    "radius": 87.0,
+    "standingHalfWidth": 96.68,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U63",
+    "radius": 16,
+    "standingHalfWidth": 64.0,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U65",
+    "radius": 16,
+    "standingHalfWidth": 33.31,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A7",
+    "radius": 24,
+    "standingHalfWidth": 43.7,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A7",
+    "radius": 24,
+    "standingHalfWidth": 47.37,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A7",
+    "radius": 24,
+    "standingHalfWidth": 59.09,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A7",
+    "radius": 24,
+    "standingHalfWidth": 45.74,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A7",
+    "radius": 24,
+    "standingHalfWidth": 33.55,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A7",
+    "radius": 24,
+    "standingHalfWidth": 39.65,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U74",
+    "radius": 66.3,
+    "standingHalfWidth": 73.68,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U72",
+    "radius": 16,
+    "standingHalfWidth": 37.5,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U75",
+    "radius": 16,
+    "standingHalfWidth": 34.69,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A8",
+    "radius": 24,
+    "standingHalfWidth": 38.64,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A8",
+    "radius": 24,
+    "standingHalfWidth": 65.55,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A8",
+    "radius": 24,
+    "standingHalfWidth": 46.79,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A8",
+    "radius": 24,
+    "standingHalfWidth": 33.71,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A8",
+    "radius": 24,
+    "standingHalfWidth": 36.6,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U81",
+    "radius": 22,
+    "standingHalfWidth": 35.15,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A8",
+    "radius": 24,
+    "standingHalfWidth": 38.12,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U83",
+    "radius": 16,
+    "standingHalfWidth": 24.2,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U82",
+    "radius": 16,
+    "standingHalfWidth": 30.4,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U84",
+    "radius": 72.3,
+    "standingHalfWidth": 80.34,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U85",
+    "radius": 16,
+    "standingHalfWidth": 26.5,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U91",
+    "radius": 22,
+    "standingHalfWidth": 28.66,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A9",
+    "radius": 24,
+    "standingHalfWidth": 44.85,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A9",
+    "radius": 24,
+    "standingHalfWidth": 77.46,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A9",
+    "radius": 24,
+    "standingHalfWidth": 62.03,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A9",
+    "radius": 24,
+    "standingHalfWidth": 44.78,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A9",
+    "radius": 24,
+    "standingHalfWidth": 72.09,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U93",
+    "radius": 16,
+    "standingHalfWidth": 37.25,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U92",
+    "radius": 16,
+    "standingHalfWidth": 36.51,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U94",
+    "radius": 67.8,
+    "standingHalfWidth": 75.29,
+    "logicalHeight": 124,
+    "method": "lower standing vehicle hull"
+  },
+  {
+    "id": "U95",
+    "radius": 16,
+    "standingHalfWidth": 39.75,
+    "logicalHeight": 106,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H01-A10",
+    "radius": 24,
+    "standingHalfWidth": 59.09,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A10",
+    "radius": 24,
+    "standingHalfWidth": 53.27,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A10",
+    "radius": 24,
+    "standingHalfWidth": 35.08,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A10",
+    "radius": 24,
+    "standingHalfWidth": 79.93,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A10",
+    "radius": 24,
+    "standingHalfWidth": 36.38,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H05-A10",
+    "radius": 24,
+    "standingHalfWidth": 51.91,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H03-A4",
+    "radius": 24,
+    "standingHalfWidth": 66.35,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A1",
+    "radius": 24,
+    "standingHalfWidth": 51.69,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H04-A5",
+    "radius": 24,
+    "standingHalfWidth": 47.87,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H02-A6",
+    "radius": 24,
+    "standingHalfWidth": 50.43,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U71",
+    "radius": 22,
+    "standingHalfWidth": 26.3,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "U73",
+    "radius": 16,
+    "standingHalfWidth": 45.09,
+    "logicalHeight": 96,
+    "method": "stable humanoid body core; gear is visual overhang"
+  },
+  {
+    "id": "H06-A9",
+    "radius": 24,
+    "standingHalfWidth": 51.37,
+    "logicalHeight": 122,
+    "method": "stable humanoid body core; gear is visual overhang"
+  }
+]

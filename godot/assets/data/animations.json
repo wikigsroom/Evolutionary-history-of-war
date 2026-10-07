@@ -1,0 +1,9350 @@
+{
+  "U11": {
+    "path": "characters/animations/U11.png",
+    "enemyPath": "characters/animations/U11-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 81,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "9aa07def48c784d6c0061a0bb39c9c5be342317fc0562b674ac9e9cb6407d69e",
+    "atlasSha256": {
+      "own": "2c91ac80c18547217d5a4c1559a5f9c90d04ec151924587ff39da56d37769a20",
+      "enemy": "157956c1e108d06865d29d3090ca118612c3ea4c3acc411ae6d40b515ce11835"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U11",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "2c91ac80c18547217d5a4c1559a5f9c90d04ec151924587ff39da56d37769a20",
+      "enemy": "157956c1e108d06865d29d3090ca118612c3ea4c3acc411ae6d40b515ce11835"
+    }
+  },
+  "U42": {
+    "path": "characters/animations/U42.png",
+    "enemyPath": "characters/animations/U42-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 101,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "fdba530db9973acee5325ff768d2222d658e609ec19b5a501f37d402fd05adee",
+    "atlasSha256": {
+      "own": "4f40c8f60144e69870daf37c10a572938e186d4908e6d1cb59a0753f430db3b9",
+      "enemy": "55f3a8cc0e2c567c38b1b2023fb9bf982ebfa5ac519b710e24afc3af6502912c"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U32",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "4f40c8f60144e69870daf37c10a572938e186d4908e6d1cb59a0753f430db3b9",
+      "enemy": "55f3a8cc0e2c567c38b1b2023fb9bf982ebfa5ac519b710e24afc3af6502912c"
+    }
+  },
+  "U44": {
+    "path": "characters/animations/U44.png",
+    "enemyPath": "characters/animations/U44-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 119,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "b22bee84a5f25603d3b07cf3e346192fb3e4d4e26902fa6d3907f83902bf1979",
+    "atlasSha256": {
+      "own": "adbe2f200d613c4a9823fd4212ccde2204983f59ec650bcafdfd0471db3eb5f0",
+      "enemy": "3dc3d6fdb26f36a211ed89eace82615a401601b70af0cf2fb057f569ec4d6f14"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 46.0,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U34",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "adbe2f200d613c4a9823fd4212ccde2204983f59ec650bcafdfd0471db3eb5f0",
+      "enemy": "3dc3d6fdb26f36a211ed89eace82615a401601b70af0cf2fb057f569ec4d6f14"
+    }
+  },
+  "U13": {
+    "path": "characters/animations/U13.png",
+    "enemyPath": "characters/animations/U13-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 81,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "c85da4cd1b9e01f9979e15e80eef566be2b9d77b2384c2b5230dd48786861b15",
+    "atlasSha256": {
+      "own": "248fce4871f1ebf612d3e96cacd9895872a4ca6af06748942173e07f0388bab8",
+      "enemy": "1e281188b4318f8873be87181b24f0a7e37d67edcacdc722fedc91dc0453f7c0"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U13",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "248fce4871f1ebf612d3e96cacd9895872a4ca6af06748942173e07f0388bab8",
+      "enemy": "1e281188b4318f8873be87181b24f0a7e37d67edcacdc722fedc91dc0453f7c0"
+    }
+  },
+  "U23": {
+    "path": "characters/animations/U23.png",
+    "enemyPath": "characters/animations/U23-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 75,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "63d8a3532e0967e79f56a275d1b822d13355aefc1dee4ca205d08b3268aa8fc0",
+    "atlasSha256": {
+      "own": "ab1b642e8698f29ed25aac86d9a3fab02a2ca5a7702bd99f2e26143061f6e98a",
+      "enemy": "f0cef15e0d63c0d19d5e383adc46bd009d98a086bb22b664ca8b66182ed5b182"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U23",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "ab1b642e8698f29ed25aac86d9a3fab02a2ca5a7702bd99f2e26143061f6e98a",
+      "enemy": "f0cef15e0d63c0d19d5e383adc46bd009d98a086bb22b664ca8b66182ed5b182"
+    }
+  },
+  "U24": {
+    "path": "characters/animations/U24.png",
+    "enemyPath": "characters/animations/U24-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 103,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "1e363320c57718847d86de105d6def92d96cb0a6ed576f7022c7b4300544eabb",
+    "atlasSha256": {
+      "own": "1405cfc3fa7bc542133323cd45164d2bdf4d4ca1a1fa4f06c03f5ed46618e225",
+      "enemy": "561a0d78df5045c187c2f490ba4c8aad035e47371a65ad25ae1f6a632f36378d"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 57.4,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U24",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "1405cfc3fa7bc542133323cd45164d2bdf4d4ca1a1fa4f06c03f5ed46618e225",
+      "enemy": "561a0d78df5045c187c2f490ba4c8aad035e47371a65ad25ae1f6a632f36378d"
+    }
+  },
+  "U12": {
+    "path": "characters/animations/U12.png",
+    "enemyPath": "characters/animations/U12-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 90,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "9d01585225db05e172d43fd1f09e08fa3caf6e0eabf7320fee4ca9296f217adc",
+    "atlasSha256": {
+      "own": "c390e81df7b83ef67a0d9a3e1aca1e22670374230d5f952270850dc72c0186fa",
+      "enemy": "3d93947021937731db535de7c5fbb4532b83ec0521d4c3e42f582d3992f72979"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U12",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "c390e81df7b83ef67a0d9a3e1aca1e22670374230d5f952270850dc72c0186fa",
+      "enemy": "3d93947021937731db535de7c5fbb4532b83ec0521d4c3e42f582d3992f72979"
+    }
+  },
+  "U14": {
+    "path": "characters/animations/U14.png",
+    "enemyPath": "characters/animations/U14-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 98,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "1749b2a0258faf192f398a94e7cbec5db0052336ec87dca67381c9cd07e9f75f",
+    "atlasSha256": {
+      "own": "1fe27235150acad7590c9bb4fd4fcb958e747a749f258cf52bbd4f8e8963fc70",
+      "enemy": "d36fb7e44c474fa627d4e68aacf282f6745106005e377d0b3c62216abcfa1c4f"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 45.6,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U14",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "1fe27235150acad7590c9bb4fd4fcb958e747a749f258cf52bbd4f8e8963fc70",
+      "enemy": "d36fb7e44c474fa627d4e68aacf282f6745106005e377d0b3c62216abcfa1c4f"
+    }
+  },
+  "U21": {
+    "path": "characters/animations/U21.png",
+    "enemyPath": "characters/animations/U21-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 90,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "c7bbfcb2cfd36f208e7ea417c18891411bbb2a512fb28682ec23daf74e08bffc",
+    "atlasSha256": {
+      "own": "1c9fd3dc55890938c43440f94ede85abdea786bdde86d5a4b0b5cc1befa39e22",
+      "enemy": "d557a8e1419a617d106f849aa0e352c88fc61eda532bc690d8efdda32f573e75"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U21",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "1c9fd3dc55890938c43440f94ede85abdea786bdde86d5a4b0b5cc1befa39e22",
+      "enemy": "d557a8e1419a617d106f849aa0e352c88fc61eda532bc690d8efdda32f573e75"
+    }
+  },
+  "U22": {
+    "path": "characters/animations/U22.png",
+    "enemyPath": "characters/animations/U22-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 103,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "8d0a47076ce82f7e29c1f7847d59295f4cc97d660d0650155cad528dd66371f5",
+    "atlasSha256": {
+      "own": "27c74c2aee3657a26a44749b39755f15ca7a04a6b30495355dd0b668cea674d8",
+      "enemy": "89216cb3d15ceaaa905a1e89936a3caeffbba4ef8e2dca09a6e3f63755a6723c"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U22",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "27c74c2aee3657a26a44749b39755f15ca7a04a6b30495355dd0b668cea674d8",
+      "enemy": "89216cb3d15ceaaa905a1e89936a3caeffbba4ef8e2dca09a6e3f63755a6723c"
+    }
+  },
+  "U31": {
+    "path": "characters/animations/U31.png",
+    "enemyPath": "characters/animations/U31-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 65,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U31.png",
+    "sourceSha256": "36ccf93d4e3eee5e9ef334f5da8e94d91cbc2ae56f4a7a64e66c9a6069c4f045",
+    "atlasSha256": {
+      "own": "bcc2ee1eaf0b2f023bd26155d282895a3f1c723901db3ce5a2888fd788f6e2f9",
+      "enemy": "4b3c741dc9b6de655e24d7d262efc66512e077c19ea30fd3a95b894da6728a08"
+    },
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "bcc2ee1eaf0b2f023bd26155d282895a3f1c723901db3ce5a2888fd788f6e2f9",
+      "enemy": "4b3c741dc9b6de655e24d7d262efc66512e077c19ea30fd3a95b894da6728a08"
+    }
+  },
+  "U32": {
+    "path": "characters/animations/U32.png",
+    "enemyPath": "characters/animations/U32-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 76,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U32.png",
+    "sourceSha256": "a13eae48eafabdcc0d57ab9d9b9d5ebf3c018ed49c2fdc80d420032d2ff2edc3",
+    "atlasSha256": {
+      "own": "f2462f66067fcc0314601f8cdfeed365d48b2770aaa6e3b77856e6f1196fcf89",
+      "enemy": "966ebb4b40656a89e8008ebc9634895210c3f442dd9dbc8edc1a283b52c842c7"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "f2462f66067fcc0314601f8cdfeed365d48b2770aaa6e3b77856e6f1196fcf89",
+      "enemy": "966ebb4b40656a89e8008ebc9634895210c3f442dd9dbc8edc1a283b52c842c7"
+    }
+  },
+  "U34": {
+    "path": "characters/animations/U34.png",
+    "enemyPath": "characters/animations/U34-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U34.png",
+    "sourceSha256": "7850a526a618c45cdbd74cfff241fa0dec7c6e92e0e7d53d14a2541914b2c461",
+    "atlasSha256": {
+      "own": "c103c8697e125d393e7d8dcd827c34d34744970b5a20c9c47681b5dcf675f160",
+      "enemy": "b8c25471f6a43a9facef264a89baf74941a9f544f4bfd612795ada990ef8cfbc"
+    },
+    "bodyRadius": 64.3,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "c103c8697e125d393e7d8dcd827c34d34744970b5a20c9c47681b5dcf675f160",
+      "enemy": "b8c25471f6a43a9facef264a89baf74941a9f544f4bfd612795ada990ef8cfbc"
+    }
+  },
+  "U41": {
+    "path": "characters/animations/U41.png",
+    "enemyPath": "characters/animations/U41-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 109,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "018f7ae1730c2fa6a56df423f139a7a0b37869db2ca22955d2e23e3780b59e74",
+    "atlasSha256": {
+      "own": "76daee1c81ac9b2248f0b25a7e52921f67352c8f693b8686216d08e10bbaf717",
+      "enemy": "d3d94823064568933f3a4a66b768725c0aebaafc2c75d006e4ea042a8f8a87db"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U31",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "76daee1c81ac9b2248f0b25a7e52921f67352c8f693b8686216d08e10bbaf717",
+      "enemy": "d3d94823064568933f3a4a66b768725c0aebaafc2c75d006e4ea042a8f8a87db"
+    }
+  },
+  "U43": {
+    "path": "characters/animations/U43.png",
+    "enemyPath": "characters/animations/U43-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 96,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "13cc197993b16dcd8999cf8d09e07db486afd46b09c86f2e82740a3c37de49b4",
+    "atlasSha256": {
+      "own": "abac3742a85622b78de2a993d5834b3d8a3febd3fb62f9a8a05cfb4ebb8fb90f",
+      "enemy": "45a635aa495bec6163af650eaed149bec5714ce23d3451278d99ea28a14d39be"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U33",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "abac3742a85622b78de2a993d5834b3d8a3febd3fb62f9a8a05cfb4ebb8fb90f",
+      "enemy": "45a635aa495bec6163af650eaed149bec5714ce23d3451278d99ea28a14d39be"
+    }
+  },
+  "U52": {
+    "path": "characters/animations/U52.png",
+    "enemyPath": "characters/animations/U52-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 64,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U52.png",
+    "sourceSha256": "38f01e3711bb0b0bcbcd72413e657de877d5dbd7e0bba00d284b65e654194e2e",
+    "atlasSha256": {
+      "own": "e901fcf2aa9387bd94358f3f9f646789057d8bd273d7c52aebe226068ef42ede",
+      "enemy": "4af0ff9fea9ed61f5666d96a66b627b2d462fedabd62a41f5369ddf07d85c01d"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e901fcf2aa9387bd94358f3f9f646789057d8bd273d7c52aebe226068ef42ede",
+      "enemy": "4af0ff9fea9ed61f5666d96a66b627b2d462fedabd62a41f5369ddf07d85c01d"
+    }
+  },
+  "U54": {
+    "path": "characters/animations/U54.png",
+    "enemyPath": "characters/animations/U54-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 59,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U54.png",
+    "sourceSha256": "ea06aef697631d7cb0be244f9b25f2a5688977c9dc51312f1012bd31610fe3e6",
+    "atlasSha256": {
+      "own": "bfa091756791b131af2048a2418cbaf29b6c8fdcf7403136f5cd796e28840498",
+      "enemy": "f85873fa355454896e75c07b06a568bc6c6389935de1601ec3dcdf71037c800e"
+    },
+    "bodyRadius": 88.9,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "bfa091756791b131af2048a2418cbaf29b6c8fdcf7403136f5cd796e28840498",
+      "enemy": "f85873fa355454896e75c07b06a568bc6c6389935de1601ec3dcdf71037c800e"
+    }
+  },
+  "H01": {
+    "path": "characters/animations/H01.png",
+    "enemyPath": "characters/animations/H01-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 124,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "8b7e934031d3b27c92802eb2497506b9df1e1df06f5024fb5aefd0aee2f5c9f4",
+    "atlasSha256": {
+      "own": "a582893f22c20747e877242309360d8fd751ba047c609cce8af7efe5a67f900e",
+      "enemy": "d4fdc7980317346c973644deb45ecbace7714710e2ee1830c8dd18da6386e2bf"
+    },
+    "review": "accepted",
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ]
+  },
+  "H02": {
+    "path": "characters/animations/H02.png",
+    "enemyPath": "characters/animations/H02-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 124,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "d4f7bdbb6ae0e65880fc64fd064c2e39e06aae1ac3e9eb5c85f0aba3b122fc6f",
+    "atlasSha256": {
+      "own": "bf6bc9bd7166612d6487deb598e08c072f3e627f77aba734c7dd0820c87a1f46",
+      "enemy": "1b68d4cbc82f391f5c5ccbcab5337debbd479eb7cc2945e0ecf707a80f9f5ced"
+    },
+    "review": "accepted",
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ]
+  },
+  "H04": {
+    "path": "characters/animations/H04.png",
+    "enemyPath": "characters/animations/H04-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 136,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "164ae9372db2c5cff62ca924149a73ed9400c48592982d469d456802f0ad407f",
+    "atlasSha256": {
+      "own": "c9a1e3ce5bb9e835e3694d0807dc76d138359d403a833e2b55d6fb1b572551bd",
+      "enemy": "9ede3f373f45f8a5464b69bdacccb1796ce305f7370cfee6564cacc3f72b0e7a"
+    },
+    "review": "accepted",
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ]
+  },
+  "H05": {
+    "path": "characters/animations/H05.png",
+    "enemyPath": "characters/animations/H05-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 136,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "221e8ff17695417845eb6a5dcc696905b6649e0d7e3216e19a5dd8fd2abad456",
+    "atlasSha256": {
+      "own": "2eac3b002053d189889b7d973e3f4ee4b586aa07d090401a7c1b41161ed2a8f1",
+      "enemy": "69b6556050f390250b0205785bce531945730cb678580acada47291f295fe76a"
+    },
+    "review": "accepted",
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ]
+  },
+  "H06": {
+    "path": "characters/animations/H06.png",
+    "enemyPath": "characters/animations/H06-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 129,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "555ba367ec043728417757ef4ec692638b38b01cbb671a4401bb31ef387ecfb4",
+    "atlasSha256": {
+      "own": "f798274b848d3919fc312bb794a670ae5b11de2dd443df0a684470642bc2d18f",
+      "enemy": "9318d48480cb7585b2f7840339e85ea1aa5e7dc7a9bc31accca6a5272cead36d"
+    },
+    "review": "accepted",
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ]
+  },
+  "U33": {
+    "path": "characters/animations/U33.png",
+    "enemyPath": "characters/animations/U33-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U33.png",
+    "sourceSha256": "c3bf02c068116e345e5c5b0fd5c53212d6c4abe1bd216df61c1326a7ae7d8c84",
+    "atlasSha256": {
+      "own": "b4cddaebdd5613549be655097847022c1555c26d3023ac0cd64c153ba3303131",
+      "enemy": "383527700936a4361297fec5796b0c5afe3a94fde7dc7d84ff5032b869cda2a3"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "b4cddaebdd5613549be655097847022c1555c26d3023ac0cd64c153ba3303131",
+      "enemy": "383527700936a4361297fec5796b0c5afe3a94fde7dc7d84ff5032b869cda2a3"
+    }
+  },
+  "U51": {
+    "path": "characters/animations/U51.png",
+    "enemyPath": "characters/animations/U51-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U51.png",
+    "sourceSha256": "aa78b3730fb2f5b832a6c874d9c6f7edb132925021662b02ed6f5aff317f552a",
+    "atlasSha256": {
+      "own": "9e32e8aa074f5348711821b947a22318d32d700923a218a7c88d2d83b85f2d24",
+      "enemy": "235b73b89608bc059879f2c8f28ec158025acc8fbfafcb17f67f956df58be8e4"
+    },
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "9e32e8aa074f5348711821b947a22318d32d700923a218a7c88d2d83b85f2d24",
+      "enemy": "235b73b89608bc059879f2c8f28ec158025acc8fbfafcb17f67f956df58be8e4"
+    }
+  },
+  "H03": {
+    "path": "characters/animations/H03.png",
+    "enemyPath": "characters/animations/H03-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 82,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "275f44eb13a2755c344f5852505f82c8474d3ad24995ea4e8c416cdc59a6db3b",
+    "atlasSha256": {
+      "own": "91b437381b3532ec148fab17995489ea1a58d4214657ce3e6d4fd535e5e1a9e5",
+      "enemy": "9d20963295f8d53b9db5fbbe6b3a8667712d6d92ec2f7ecacc04628136b9dd19"
+    },
+    "review": "accepted",
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ]
+  },
+  "U53": {
+    "path": "characters/animations/U53.png",
+    "enemyPath": "characters/animations/U53-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 75,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U53.png",
+    "sourceSha256": "7748e497926f358156e350cfb2ab9cb592c15d5e75fbbbbac60657b73f418d27",
+    "atlasSha256": {
+      "own": "b2b3a5e94a73f2cebe0fc16866e1913f6a6449fe429a75b528baf7e62e0ab417",
+      "enemy": "620dd5fb3a686806a35c8b5a0261173499890a3a3f7f4e37fc955ea7bdeb7064"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "b2b3a5e94a73f2cebe0fc16866e1913f6a6449fe429a75b528baf7e62e0ab417",
+      "enemy": "620dd5fb3a686806a35c8b5a0261173499890a3a3f7f4e37fc955ea7bdeb7064"
+    }
+  },
+  "U15": {
+    "path": "characters/animations/U15.png",
+    "enemyPath": "characters/animations/U15-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 105,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "e18751f638b60985c8bbe6a40a554300b223373c549262e13e3b1ea2344f0d59",
+    "atlasSha256": {
+      "own": "22e95a5debd7f4422572f3feafb497c9378ab201e5bdf464709cb7831f18ed72",
+      "enemy": "31b1b8f6a5d9696353fae3f93d3fbdd63594a6d16577b1e237ca6bd2c68ad168"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U15",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "22e95a5debd7f4422572f3feafb497c9378ab201e5bdf464709cb7831f18ed72",
+      "enemy": "31b1b8f6a5d9696353fae3f93d3fbdd63594a6d16577b1e237ca6bd2c68ad168"
+    }
+  },
+  "U25": {
+    "path": "characters/animations/U25.png",
+    "enemyPath": "characters/animations/U25-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 102,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "aab76f2868d5b59136eb3b7fd7d0bb35346a9a84995fcf9d3b9cfd7b052172c7",
+    "atlasSha256": {
+      "own": "9fb75d24f5bfc360ddad3a3ca6fcc144404968f1d6121bbb92c266d91323cd16",
+      "enemy": "a90af180933ddc152405d9aedf5e53cc6b8f9d9bf4819237054002373a22a891"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U25",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "9fb75d24f5bfc360ddad3a3ca6fcc144404968f1d6121bbb92c266d91323cd16",
+      "enemy": "a90af180933ddc152405d9aedf5e53cc6b8f9d9bf4819237054002373a22a891"
+    }
+  },
+  "U35": {
+    "path": "characters/animations/U35.png",
+    "enemyPath": "characters/animations/U35-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 78,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U35.png",
+    "sourceSha256": "c4e515e1647ec4a76ab6305c2dd7d59fb320cbff8db3263e06c75cd34ac8b084",
+    "atlasSha256": {
+      "own": "b1a58ea6da9ddfeee0487a0a73d3621602fbd6e5549dc1040a813d1df14903e4",
+      "enemy": "b9bce072b6f51b6dd7a467c36c03fd4c7ce6e60f98d7183d7a6b15615756a3d9"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "b1a58ea6da9ddfeee0487a0a73d3621602fbd6e5549dc1040a813d1df14903e4",
+      "enemy": "b9bce072b6f51b6dd7a467c36c03fd4c7ce6e60f98d7183d7a6b15615756a3d9"
+    }
+  },
+  "U45": {
+    "path": "characters/animations/U45.png",
+    "enemyPath": "characters/animations/U45-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 108,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "0e4150f3ea936acd4ca880c9fae276bbed94a8ed8fbf6ce58827fee68037720f",
+    "atlasSha256": {
+      "own": "e178aedd60aff5037dda41694e0e782e199eeb03549f097bcc7bdecc71b58823",
+      "enemy": "917feed80014ee3b607c7413a8751053fdd847f837ff9f4cd464f9d77692ff94"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U35",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e178aedd60aff5037dda41694e0e782e199eeb03549f097bcc7bdecc71b58823",
+      "enemy": "917feed80014ee3b607c7413a8751053fdd847f837ff9f4cd464f9d77692ff94"
+    }
+  },
+  "U55": {
+    "path": "characters/animations/U55.png",
+    "enemyPath": "characters/animations/U55-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 79,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U55.png",
+    "sourceSha256": "78c091057bb22dd7f16389ba55f369063049242a8d5e4dce677c7bf9c1a7d06b",
+    "atlasSha256": {
+      "own": "e45d0b40699684df39f8ca1bee37ac2a4c1a02966d096dfc38d1f193b10400fd",
+      "enemy": "5c55477481e538f05ee53d8008c33c466aa984ae6264c9a06378dd47cd287e72"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e45d0b40699684df39f8ca1bee37ac2a4c1a02966d096dfc38d1f193b10400fd",
+      "enemy": "5c55477481e538f05ee53d8008c33c466aa984ae6264c9a06378dd47cd287e72"
+    }
+  },
+  "U101": {
+    "path": "characters/animations/U101.png",
+    "enemyPath": "characters/animations/U101-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 92,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "e14ce4190ca6cdf5258956047220348c7b5cbbbf24634ccc219132ec2eb13c7a",
+    "atlasSha256": {
+      "own": "f57c32081d7f791f5268d579c4acf62c65c1300f10f9e0f73d73b036c9575be0",
+      "enemy": "8d97ebb119a4952dfcaa45df3c8b86300833468a8fdd7eb5584a6416d0a73b72"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U51",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "f57c32081d7f791f5268d579c4acf62c65c1300f10f9e0f73d73b036c9575be0",
+      "enemy": "8d97ebb119a4952dfcaa45df3c8b86300833468a8fdd7eb5584a6416d0a73b72"
+    }
+  },
+  "U102": {
+    "path": "characters/animations/U102.png",
+    "enemyPath": "characters/animations/U102-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 108,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "649a9d9633ce6df76a2d9f26fc238cd0c63873187a659c5bdd0b4caac703be8b",
+    "atlasSha256": {
+      "own": "3e8cb21a5f2f3095db6e38a3443654998062b4dfae6ed0e7d5ed45abff48e158",
+      "enemy": "86f36f4d7dc80feb74780e2347439827d64512946f253764149c8f33b7b0d932"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U52",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "3e8cb21a5f2f3095db6e38a3443654998062b4dfae6ed0e7d5ed45abff48e158",
+      "enemy": "86f36f4d7dc80feb74780e2347439827d64512946f253764149c8f33b7b0d932"
+    }
+  },
+  "U103": {
+    "path": "characters/animations/U103.png",
+    "enemyPath": "characters/animations/U103-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 68,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "79c17dc41683694ffd79b4a012c9df27be9b50d74cd6505e52dbdf16e01b4e3b",
+    "atlasSha256": {
+      "own": "7be194d7136e3713ea64154c05a7c88b1c0a2728da2a2670f9fe361dbf209d8f",
+      "enemy": "f9b842c06e84e111b4163fd40b6999d78d1d4c9d3aef5dd41a887714d68c32ac"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U53",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "7be194d7136e3713ea64154c05a7c88b1c0a2728da2a2670f9fe361dbf209d8f",
+      "enemy": "f9b842c06e84e111b4163fd40b6999d78d1d4c9d3aef5dd41a887714d68c32ac"
+    }
+  },
+  "U104": {
+    "path": "characters/animations/U104.png",
+    "enemyPath": "characters/animations/U104-enemy.png",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "bodyHeight": 116,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "828ffe80f5ce5232883a26dc500f237894201d1fe2e792b6474260db38bae5e2",
+    "atlasSha256": {
+      "own": "be326089de2e38b236679b7d91ba3807a809e4576d65bf8984e8ba6ab2807bd9",
+      "enemy": "34ab071e5143b7ec2d75ebc68971775d7aae69bad0d376f56686e6907fd4a04c"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 44.3,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U54",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "be326089de2e38b236679b7d91ba3807a809e4576d65bf8984e8ba6ab2807bd9",
+      "enemy": "34ab071e5143b7ec2d75ebc68971775d7aae69bad0d376f56686e6907fd4a04c"
+    }
+  },
+  "U105": {
+    "path": "characters/animations/U105.png",
+    "enemyPath": "characters/animations/U105-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "bodyHeight": 106,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourceSha256": "a0152f73ea85f71784c28287aa82aa8d8c32c53156eb938038ce318526584557",
+    "atlasSha256": {
+      "own": "df84cd62e6bdfe6ccae779b273e44084d1d5b41654759a0fbc549474fab1507c",
+      "enemy": "9f47bfcf1417c2b6b833323db34cde99f9ad8c8107309460ac928f2397293f1e"
+    },
+    "review": "accepted_visual_review",
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "columns": 6,
+    "rows": 5,
+    "reusedFrom": "U55",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "df84cd62e6bdfe6ccae779b273e44084d1d5b41654759a0fbc549474fab1507c",
+      "enemy": "9f47bfcf1417c2b6b833323db34cde99f9ad8c8107309460ac928f2397293f1e"
+    }
+  },
+  "H01-A1": {
+    "path": "characters/animations/H01-A1.png",
+    "enemyPath": "characters/animations/H01-A1-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 67,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A1.png",
+    "sourceSha256": "078cfd0681d43419a3abf5f287509048bafbee28a90f08c1b5d2f47b7fd33ee8",
+    "atlasSha256": {
+      "own": "5a240d6cc5e52cbf622d7eb9380d73cd3c4ffa49608fd8cb351a99d24f4048cd",
+      "enemy": "fe1d4d48c27b611569861fcb351978a4f346eb980a2e72e171b98b4bfc148042"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "5a240d6cc5e52cbf622d7eb9380d73cd3c4ffa49608fd8cb351a99d24f4048cd",
+      "enemy": "fe1d4d48c27b611569861fcb351978a4f346eb980a2e72e171b98b4bfc148042"
+    }
+  },
+  "H01-A2": {
+    "path": "characters/animations/H01-A2.png",
+    "enemyPath": "characters/animations/H01-A2-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A2.png",
+    "sourceSha256": "5183d7e6bfea233533e6c764ac8eb32c32544071955f951e3dd5fd243a63a196",
+    "atlasSha256": {
+      "own": "77bedb28d6f52cd3d2f8e4b9abbc7e19da79fdfce31346f2fa2074b52999d141",
+      "enemy": "78cf95d549adf1e9472a098ead75ba9fff8ccfbb93eacb8efe835262bed969bc"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "77bedb28d6f52cd3d2f8e4b9abbc7e19da79fdfce31346f2fa2074b52999d141",
+      "enemy": "78cf95d549adf1e9472a098ead75ba9fff8ccfbb93eacb8efe835262bed969bc"
+    }
+  },
+  "H02-A1": {
+    "path": "characters/animations/H02-A1.png",
+    "enemyPath": "characters/animations/H02-A1-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 68,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A1.png",
+    "sourceSha256": "412533f4b759828432304c4502dae18bcf131e3f494fb94858dd530c4d24db78",
+    "atlasSha256": {
+      "own": "4d0822ba0cc9364a96fdf93b273722712e52154681f460d1f67b6e8ef588e2b9",
+      "enemy": "3183eae8cc6f1155ccb9ca7b3c8630d2cb34254306bd42221503e71d440293a7"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "4d0822ba0cc9364a96fdf93b273722712e52154681f460d1f67b6e8ef588e2b9",
+      "enemy": "3183eae8cc6f1155ccb9ca7b3c8630d2cb34254306bd42221503e71d440293a7"
+    }
+  },
+  "H03-A1": {
+    "path": "characters/animations/H03-A1.png",
+    "enemyPath": "characters/animations/H03-A1-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 59,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A1.png",
+    "sourceSha256": "6c30ace1b2773d57e7b2e5ce7f53743f541ba1c3a2c9b0ca6eff6c4dc2bf42bb",
+    "atlasSha256": {
+      "own": "b73721e64ead03f6e3cd223e1d0e9ca46cc96698949b7a02afa8de07b10dd9bc",
+      "enemy": "be215882dc118318c98ab2638a6a5d1cf774084510f49d010a861a070f583418"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "b73721e64ead03f6e3cd223e1d0e9ca46cc96698949b7a02afa8de07b10dd9bc",
+      "enemy": "be215882dc118318c98ab2638a6a5d1cf774084510f49d010a861a070f583418"
+    }
+  },
+  "H04-A1": {
+    "path": "characters/animations/H04-A1.png",
+    "enemyPath": "characters/animations/H04-A1-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 78,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A1.png",
+    "sourceSha256": "f7f757d81791e29578c487e8a9002610a558b685561c579dded4aa78da377561",
+    "atlasSha256": {
+      "own": "7b236de5d26dec8bd5df7a477941bbcd0f1dd0ae6fc6e5f3150c4884f5249f7b",
+      "enemy": "14cc2dc6f1e7d676a5e2f317d18d1b93b45c76164b6b3eb7ad37823aee4e61c9"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "7b236de5d26dec8bd5df7a477941bbcd0f1dd0ae6fc6e5f3150c4884f5249f7b",
+      "enemy": "14cc2dc6f1e7d676a5e2f317d18d1b93b45c76164b6b3eb7ad37823aee4e61c9"
+    }
+  },
+  "H02-A2": {
+    "path": "characters/animations/H02-A2.png",
+    "enemyPath": "characters/animations/H02-A2-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A2.png",
+    "sourceSha256": "2ae3aa1df65a5b534aa91167d538580fdd1bf79a2486b35760ef223ca31d8be5",
+    "atlasSha256": {
+      "own": "36f916e8ebb19e667f6202866b95b5573600db4aa16b92651590b1efe9e7adbd",
+      "enemy": "9cd34b510ea1f1116713c2c84aabce910e6cfa3d9d7ec8aeba165ca490e7a5be"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "36f916e8ebb19e667f6202866b95b5573600db4aa16b92651590b1efe9e7adbd",
+      "enemy": "9cd34b510ea1f1116713c2c84aabce910e6cfa3d9d7ec8aeba165ca490e7a5be"
+    }
+  },
+  "H05-A1": {
+    "path": "characters/animations/H05-A1.png",
+    "enemyPath": "characters/animations/H05-A1-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 59,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A1.png",
+    "sourceSha256": "024e6c965c5041403af05626090820d4085978a0f2367b87e51c1d9dc31bc692",
+    "atlasSha256": {
+      "own": "005d259b0107b71a152f5212f2339347da44ef20bc7b6910cf6e3858a4d42934",
+      "enemy": "061cb3e2e6394bab898a57b283435f5d9c812a52de878a69d537ab0fb2a67b46"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "005d259b0107b71a152f5212f2339347da44ef20bc7b6910cf6e3858a4d42934",
+      "enemy": "061cb3e2e6394bab898a57b283435f5d9c812a52de878a69d537ab0fb2a67b46"
+    }
+  },
+  "H04-A2": {
+    "path": "characters/animations/H04-A2.png",
+    "enemyPath": "characters/animations/H04-A2-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 74,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A2.png",
+    "sourceSha256": "0906e9471d469a16efdb2b883d8ae52f31414849ba1e00ab39d90763757ba54f",
+    "atlasSha256": {
+      "own": "0a7e51caf0c8fabccda22d2c312fa4455e0497dad9065ca2adf6467eb797eaf6",
+      "enemy": "7cb381b197623319490a945adc9728768ae35f84635f50865ddb21c8ae04ec89"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "0a7e51caf0c8fabccda22d2c312fa4455e0497dad9065ca2adf6467eb797eaf6",
+      "enemy": "7cb381b197623319490a945adc9728768ae35f84635f50865ddb21c8ae04ec89"
+    }
+  },
+  "H03-A2": {
+    "path": "characters/animations/H03-A2.png",
+    "enemyPath": "characters/animations/H03-A2-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A2.png",
+    "sourceSha256": "4fb0e0431f9e1ff2246dc615585ba828e7f37e23eda580081f58dbf72304bf09",
+    "atlasSha256": {
+      "own": "3773d76154e0723a8b59d75c3a8d97290fc5518ca7e1cbb017ef5ec9aa8bc562",
+      "enemy": "98c61a4a98571e0662515e7e61c77f4e96551b1e8049316e8a896bba9975de04"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "3773d76154e0723a8b59d75c3a8d97290fc5518ca7e1cbb017ef5ec9aa8bc562",
+      "enemy": "98c61a4a98571e0662515e7e61c77f4e96551b1e8049316e8a896bba9975de04"
+    }
+  },
+  "H05-A2": {
+    "path": "characters/animations/H05-A2.png",
+    "enemyPath": "characters/animations/H05-A2-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A2.png",
+    "sourceSha256": "2bdf95afb46750147ca52c29cd2d37e273ce922bc71771017a870c985728b970",
+    "atlasSha256": {
+      "own": "284a11a72f36688f8538aaacfeec3e65ff3deb8349f5cbdf6a827c2719d9a2eb",
+      "enemy": "d064ba74b09989bea2b3e0ec0cf6c92dbb04851d64e07c2231907663f22a1663"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "284a11a72f36688f8538aaacfeec3e65ff3deb8349f5cbdf6a827c2719d9a2eb",
+      "enemy": "d064ba74b09989bea2b3e0ec0cf6c92dbb04851d64e07c2231907663f22a1663"
+    }
+  },
+  "H06-A2": {
+    "path": "characters/animations/H06-A2.png",
+    "enemyPath": "characters/animations/H06-A2-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 63,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A2.png",
+    "sourceSha256": "371f273a1ace0e363ec4457ba5f45b66b494802dbad6746c41cbbce2cac7b33d",
+    "atlasSha256": {
+      "own": "c3885f6be7c7dce10ac205e7bd5fd101be76eec69e775acf370959738ae75b48",
+      "enemy": "eab4f4519c4eb7e4e7d3309c06719000f3dd37148b68c0e7460d3076d1a4bd46"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "c3885f6be7c7dce10ac205e7bd5fd101be76eec69e775acf370959738ae75b48",
+      "enemy": "eab4f4519c4eb7e4e7d3309c06719000f3dd37148b68c0e7460d3076d1a4bd46"
+    }
+  },
+  "H02-A3": {
+    "path": "characters/animations/H02-A3.png",
+    "enemyPath": "characters/animations/H02-A3-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 76,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A3.png",
+    "sourceSha256": "0c00e38266a557e5251fabe3b49ae0d15377fc1cba546f032a49022828df548b",
+    "atlasSha256": {
+      "own": "8364998dcda75a7f12835d9e33ea773368934f917298a39602ecb0077b94c03e",
+      "enemy": "565596558aaa2fc4690bbec8bd4898827ca497dee08887f1041ed6c81322b759"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "8364998dcda75a7f12835d9e33ea773368934f917298a39602ecb0077b94c03e",
+      "enemy": "565596558aaa2fc4690bbec8bd4898827ca497dee08887f1041ed6c81322b759"
+    }
+  },
+  "H03-A3": {
+    "path": "characters/animations/H03-A3.png",
+    "enemyPath": "characters/animations/H03-A3-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 62,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A3.png",
+    "sourceSha256": "95a52dcab90eca05302d4aed6e158870987048604c30d5bcabc1e1faa0c4815d",
+    "atlasSha256": {
+      "own": "9717692897e611085a2707fc10f8ac01e9576ab2509f3aa0a496ea8ce845254b",
+      "enemy": "dab0e047b8ad72a58a01c8f1b6463c023b7f102e5607a31e84f9fd1499644c6a"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "9717692897e611085a2707fc10f8ac01e9576ab2509f3aa0a496ea8ce845254b",
+      "enemy": "dab0e047b8ad72a58a01c8f1b6463c023b7f102e5607a31e84f9fd1499644c6a"
+    }
+  },
+  "H01-A3": {
+    "path": "characters/animations/H01-A3.png",
+    "enemyPath": "characters/animations/H01-A3-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 78,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A3.png",
+    "sourceSha256": "e5c60e18d601d3dc490a67cbb3b8e4193ca7a871967421d6ad7c146998b1758d",
+    "atlasSha256": {
+      "own": "8037663b561b47ae54f49cd8ee7f041bbaab5131180b8c9fede38f516594d3c3",
+      "enemy": "e4a43e74fb3bc3499202621aafbc191a718da0787dde543325905f196dbe61c1"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "8037663b561b47ae54f49cd8ee7f041bbaab5131180b8c9fede38f516594d3c3",
+      "enemy": "e4a43e74fb3bc3499202621aafbc191a718da0787dde543325905f196dbe61c1"
+    }
+  },
+  "H04-A3": {
+    "path": "characters/animations/H04-A3.png",
+    "enemyPath": "characters/animations/H04-A3-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 79,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A3.png",
+    "sourceSha256": "ba78d9c94e2057a905d699b5260f852e215237709d8a1d74d8b40b2ecb13067c",
+    "atlasSha256": {
+      "own": "91cd74208786cc9e8be8acb0da0ede2c4755c667da97e806fb1d1c912d95ccc2",
+      "enemy": "18744a066f3c6f85edbb2e09fd2586baa0b1f61af10530c26a8919395fe68629"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "91cd74208786cc9e8be8acb0da0ede2c4755c667da97e806fb1d1c912d95ccc2",
+      "enemy": "18744a066f3c6f85edbb2e09fd2586baa0b1f61af10530c26a8919395fe68629"
+    }
+  },
+  "H05-A3": {
+    "path": "characters/animations/H05-A3.png",
+    "enemyPath": "characters/animations/H05-A3-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 69,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A3.png",
+    "sourceSha256": "b93bb3e3cb73f1663d8ba9cb8bd843d80422ee3793b81d7c9dd2a4881351a99a",
+    "atlasSha256": {
+      "own": "2d04f13aa708651d54a92269bc56e4b10be40b884e5d1c46ef5f977e4c7c47e7",
+      "enemy": "89aa4eba4f26bcdef70ecdf02b425cb2a722c1876eed52d6e0eac59082d7f6e9"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "2d04f13aa708651d54a92269bc56e4b10be40b884e5d1c46ef5f977e4c7c47e7",
+      "enemy": "89aa4eba4f26bcdef70ecdf02b425cb2a722c1876eed52d6e0eac59082d7f6e9"
+    }
+  },
+  "H06-A3": {
+    "path": "characters/animations/H06-A3.png",
+    "enemyPath": "characters/animations/H06-A3-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 78,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A3.png",
+    "sourceSha256": "8e56b21fcbf64aec53dfbaace5fbc8a2e4b5d7b968a155ff3dddc9226f6d160b",
+    "atlasSha256": {
+      "own": "cdb7bbc935b32adebee47abab119ba1bf90822e14813103f2791bdafef2b8daf",
+      "enemy": "f5b2a362ed040b842d335465b59888a490f865b30a3ef7b687b916924ba3c643"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "cdb7bbc935b32adebee47abab119ba1bf90822e14813103f2791bdafef2b8daf",
+      "enemy": "f5b2a362ed040b842d335465b59888a490f865b30a3ef7b687b916924ba3c643"
+    }
+  },
+  "H01-A4": {
+    "path": "characters/animations/H01-A4.png",
+    "enemyPath": "characters/animations/H01-A4-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A4.png",
+    "sourceSha256": "ab7d19bb92680082150cec3c9df75deec7bfd2eb342823d81a7e334f305520e4",
+    "atlasSha256": {
+      "own": "6b8b2000eff9f021acf43bdaf370276df5adfcc98c7e8121ad2a581bea01375a",
+      "enemy": "6e384c0bc37f19b2d1c887648b959d68159554d50ed99313d36394c48dc48e0a"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "6b8b2000eff9f021acf43bdaf370276df5adfcc98c7e8121ad2a581bea01375a",
+      "enemy": "6e384c0bc37f19b2d1c887648b959d68159554d50ed99313d36394c48dc48e0a"
+    }
+  },
+  "H02-A4": {
+    "path": "characters/animations/H02-A4.png",
+    "enemyPath": "characters/animations/H02-A4-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A4.png",
+    "sourceSha256": "d93746a0667afd0b1b23f04ccb76c8519338ef4dbaed3d1d2a7d86f8b244a79c",
+    "atlasSha256": {
+      "own": "e7ac719043deeedf356f8eae02ed940ddd6304da8a52458626c197d11c1af971",
+      "enemy": "548cfcecf2c7995a52f58dd4ef9dd7fc59ce5dfee42dc953e430efceaaf2fb0e"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e7ac719043deeedf356f8eae02ed940ddd6304da8a52458626c197d11c1af971",
+      "enemy": "548cfcecf2c7995a52f58dd4ef9dd7fc59ce5dfee42dc953e430efceaaf2fb0e"
+    }
+  },
+  "H04-A4": {
+    "path": "characters/animations/H04-A4.png",
+    "enemyPath": "characters/animations/H04-A4-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 78,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A4.png",
+    "sourceSha256": "03093abd5dc8676c42638a6f992f06d8089e684cd073f5926477707c063a9dd6",
+    "atlasSha256": {
+      "own": "94f6e01f577aa72a9ad113e5fd2f33f1468ad3f52cfc082b1986974f2c75c507",
+      "enemy": "60cb000201936533e98983e18baed2ea8eaf74c3e3a545bb3a67b13f121eda90"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "94f6e01f577aa72a9ad113e5fd2f33f1468ad3f52cfc082b1986974f2c75c507",
+      "enemy": "60cb000201936533e98983e18baed2ea8eaf74c3e3a545bb3a67b13f121eda90"
+    }
+  },
+  "H05-A4": {
+    "path": "characters/animations/H05-A4.png",
+    "enemyPath": "characters/animations/H05-A4-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A4.png",
+    "sourceSha256": "641da1183b0d4acd7cf4eec1e9499873e3a6a029a23c3c2d742daf2e0fac8df3",
+    "atlasSha256": {
+      "own": "19299cb208c9ccabac9ab96424a6e496c52b44e811dccb37db02a8c53960298b",
+      "enemy": "aa457ae7b7020d6da977c3f8a321dafff051ee40489aaa192098cb50a0f1047a"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "19299cb208c9ccabac9ab96424a6e496c52b44e811dccb37db02a8c53960298b",
+      "enemy": "aa457ae7b7020d6da977c3f8a321dafff051ee40489aaa192098cb50a0f1047a"
+    }
+  },
+  "H06-A4": {
+    "path": "characters/animations/H06-A4.png",
+    "enemyPath": "characters/animations/H06-A4-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 77,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A4.png",
+    "sourceSha256": "cb39b5c1dc0ff32c58da1e396f8fdf5ac49e42bececa8371e2f116433988b3b7",
+    "atlasSha256": {
+      "own": "c262ae8e272ac42141249b977f26014d8fe013213ee483f6abdb0069cb02aa35",
+      "enemy": "56314b827de0e4ad0925a551be8efcb5709b21b27d4a650be723f42147104b70"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "c262ae8e272ac42141249b977f26014d8fe013213ee483f6abdb0069cb02aa35",
+      "enemy": "56314b827de0e4ad0925a551be8efcb5709b21b27d4a650be723f42147104b70"
+    }
+  },
+  "H01-A5": {
+    "path": "characters/animations/H01-A5.png",
+    "enemyPath": "characters/animations/H01-A5-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A5.png",
+    "sourceSha256": "6eedd27d418c08c2caa558490849309a485bc12acded67683af3ecab133a9743",
+    "atlasSha256": {
+      "own": "52c390bb7e76c9791285a0c50fb2c0908d3f825e39ea7744edf86b4c25ac5e87",
+      "enemy": "87f21488c3115e7461050b2eadd907cc908812c66931c837bb11609335a249d1"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "52c390bb7e76c9791285a0c50fb2c0908d3f825e39ea7744edf86b4c25ac5e87",
+      "enemy": "87f21488c3115e7461050b2eadd907cc908812c66931c837bb11609335a249d1"
+    }
+  },
+  "H03-A5": {
+    "path": "characters/animations/H03-A5.png",
+    "enemyPath": "characters/animations/H03-A5-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 61,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A5.png",
+    "sourceSha256": "6623745ce7e8ba43bfbd6da75a3b2e68a8b4f2255d58d647fdb942fdf52a876a",
+    "atlasSha256": {
+      "own": "2b8f0146b18bdf4fde0eb44eb05682af2370c6a4d7cf6103f34b41cfd8f1c19a",
+      "enemy": "ecff9bb1eebf349961fba285112f29748d138b7a626b35d188f2397893cfd368"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "2b8f0146b18bdf4fde0eb44eb05682af2370c6a4d7cf6103f34b41cfd8f1c19a",
+      "enemy": "ecff9bb1eebf349961fba285112f29748d138b7a626b35d188f2397893cfd368"
+    }
+  },
+  "H02-A5": {
+    "path": "characters/animations/H02-A5.png",
+    "enemyPath": "characters/animations/H02-A5-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 76,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A5.png",
+    "sourceSha256": "caca6d6442584727beb00066407f5e2fade3c42b807b4d0d8bfaaf2af6b990c1",
+    "atlasSha256": {
+      "own": "3c5831104577417b373c44b538933d21059deb9d9f342896bc7dedaaaa075d3d",
+      "enemy": "e4ea9f2a7655d178edcd9cde36643786966f457650dceb095dabc93daa0fd90a"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "3c5831104577417b373c44b538933d21059deb9d9f342896bc7dedaaaa075d3d",
+      "enemy": "e4ea9f2a7655d178edcd9cde36643786966f457650dceb095dabc93daa0fd90a"
+    }
+  },
+  "H05-A5": {
+    "path": "characters/animations/H05-A5.png",
+    "enemyPath": "characters/animations/H05-A5-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A5.png",
+    "sourceSha256": "30e10794fcf6450de22104dbe96dec9afb0e7c806a8bc2a6ccb9684f45933804",
+    "atlasSha256": {
+      "own": "e5c936771ebdb24356d2d7bf38bf64afdb78320425c11e81c8bb2bdb5f06c7b1",
+      "enemy": "faa905cfac8bb9d97d1ef3b0f6aa1c8e6fe5c10fd106b5846217b94e9bc558a4"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e5c936771ebdb24356d2d7bf38bf64afdb78320425c11e81c8bb2bdb5f06c7b1",
+      "enemy": "faa905cfac8bb9d97d1ef3b0f6aa1c8e6fe5c10fd106b5846217b94e9bc558a4"
+    }
+  },
+  "H06-A5": {
+    "path": "characters/animations/H06-A5.png",
+    "enemyPath": "characters/animations/H06-A5-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 67,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A5.png",
+    "sourceSha256": "51603016b06f3e1ce266031fae7e006bbe2562bd604ec16cb6054e1c80f42929",
+    "atlasSha256": {
+      "own": "28d508c6521928116914936f21098bae4e9df701593b4d1e7e424ccd62e6d2e2",
+      "enemy": "48690cd5da53d80853d64026bf4e8cbefbbee0b1d0621614c4883f0aff831e87"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "28d508c6521928116914936f21098bae4e9df701593b4d1e7e424ccd62e6d2e2",
+      "enemy": "48690cd5da53d80853d64026bf4e8cbefbbee0b1d0621614c4883f0aff831e87"
+    }
+  },
+  "H01-A6": {
+    "path": "characters/animations/H01-A6.png",
+    "enemyPath": "characters/animations/H01-A6-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 68,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A6.png",
+    "sourceSha256": "98e0f0d8444a24813420ef639a4283c428a19d88566eea63bd168c0c2a104e98",
+    "atlasSha256": {
+      "own": "ac7402d4df54a1f0ec5302f4ef0a35208fcc4807c061d09fbc46e2edbc1c9bb7",
+      "enemy": "bd536323421c33aed5d66a74f99fba015e46606f0e67b30fa2003da66cbdff6b"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "ac7402d4df54a1f0ec5302f4ef0a35208fcc4807c061d09fbc46e2edbc1c9bb7",
+      "enemy": "bd536323421c33aed5d66a74f99fba015e46606f0e67b30fa2003da66cbdff6b"
+    }
+  },
+  "H03-A6": {
+    "path": "characters/animations/H03-A6.png",
+    "enemyPath": "characters/animations/H03-A6-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 74,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A6.png",
+    "sourceSha256": "0be493142c2fbf24567ca1594b380229dcab082cae224db2e8399dc8b8e8648c",
+    "atlasSha256": {
+      "own": "140ad336fa4f8c555c5043d98016f53d665123ed10e40cc677c5bb73ddef0968",
+      "enemy": "e8f97a33ec253d5589c5e476c3e5b55e37ff324b5da423c49664858d4f1fd1f6"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "140ad336fa4f8c555c5043d98016f53d665123ed10e40cc677c5bb73ddef0968",
+      "enemy": "e8f97a33ec253d5589c5e476c3e5b55e37ff324b5da423c49664858d4f1fd1f6"
+    }
+  },
+  "H04-A6": {
+    "path": "characters/animations/H04-A6.png",
+    "enemyPath": "characters/animations/H04-A6-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A6.png",
+    "sourceSha256": "f2be09ebab9a7f0af76ecbfe5f6d1d5e3148df4f12e6a2124655a37e5b7db02b",
+    "atlasSha256": {
+      "own": "88940f0c3248250422fbb50a74e61df608449468897c0370cdf86204d9c883c9",
+      "enemy": "bda29f3e2030275ac261abe52bf0815b62848393abbf1f0b8b10bc09447bf1be"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "88940f0c3248250422fbb50a74e61df608449468897c0370cdf86204d9c883c9",
+      "enemy": "bda29f3e2030275ac261abe52bf0815b62848393abbf1f0b8b10bc09447bf1be"
+    }
+  },
+  "H06-A6": {
+    "path": "characters/animations/H06-A6.png",
+    "enemyPath": "characters/animations/H06-A6-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A6.png",
+    "sourceSha256": "89bccd65dc830ab8e3b4e1682ccd7145b7210f4d64d47d263ee0c0dd7ef2fee2",
+    "atlasSha256": {
+      "own": "175faba432a14358da595c6efaee00768bfa4c3536de18db56bde41298d8817a",
+      "enemy": "4cac6e43ee229cb5c357f747d88e846720301e75f09bee22214a5a66f658f8b9"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "175faba432a14358da595c6efaee00768bfa4c3536de18db56bde41298d8817a",
+      "enemy": "4cac6e43ee229cb5c357f747d88e846720301e75f09bee22214a5a66f658f8b9"
+    }
+  },
+  "H05-A6": {
+    "path": "characters/animations/H05-A6.png",
+    "enemyPath": "characters/animations/H05-A6-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 67,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A6.png",
+    "sourceSha256": "e15641fd1a50a5a5bfd11cc3af0dd7f95968493ccccaf59d90fce5895c40a516",
+    "atlasSha256": {
+      "own": "57208b8e0da522fe7acea299e47be9d2d7c6e7d5822b90a715174b7b9d7e89bf",
+      "enemy": "a9d8776ab5d7fef7da5b60aa827aaddcf0d0d17124c852404feeec475ad7dd78"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "57208b8e0da522fe7acea299e47be9d2d7c6e7d5822b90a715174b7b9d7e89bf",
+      "enemy": "a9d8776ab5d7fef7da5b60aa827aaddcf0d0d17124c852404feeec475ad7dd78"
+    }
+  },
+  "U62": {
+    "path": "characters/animations/U62.png",
+    "enemyPath": "characters/animations/U62-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U62.png",
+    "sourceSha256": "4c5ebcd2a41fbad306458c31601ed2569b9781179323cb47d8ace7dec145710e",
+    "atlasSha256": {
+      "own": "3b2944ebd7bc90849d10ad0ef5d5574ff7fa8f0054f176aa85c54dbf1dff319b",
+      "enemy": "c2b3a149996bd35a5acb236d9f436d28055517ffbc68a2e430538184d585cb87"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "3b2944ebd7bc90849d10ad0ef5d5574ff7fa8f0054f176aa85c54dbf1dff319b",
+      "enemy": "c2b3a149996bd35a5acb236d9f436d28055517ffbc68a2e430538184d585cb87"
+    }
+  },
+  "U61": {
+    "path": "characters/animations/U61.png",
+    "enemyPath": "characters/animations/U61-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 75,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U61.png",
+    "sourceSha256": "18b9379c158583775120290d3106ed7d99bed98dca95112e472540b17f4b72e6",
+    "atlasSha256": {
+      "own": "bab671580ef47fdb5b5bbd0ab66da25139445c0ef72a8a59715e20e674b6cf22",
+      "enemy": "bab671580ef47fdb5b5bbd0ab66da25139445c0ef72a8a59715e20e674b6cf22"
+    },
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "bab671580ef47fdb5b5bbd0ab66da25139445c0ef72a8a59715e20e674b6cf22",
+      "enemy": "bab671580ef47fdb5b5bbd0ab66da25139445c0ef72a8a59715e20e674b6cf22"
+    }
+  },
+  "U64": {
+    "path": "characters/animations/U64.png",
+    "enemyPath": "characters/animations/U64-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 59,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U64.png",
+    "sourceSha256": "fd80bf5d1b69c5028ab32f58a50a007bdc182ec80425809b1da90eebc6827483",
+    "atlasSha256": {
+      "own": "573aaf8dbf5228a156e1d8c06005df44635cad84fe2c076cd62c4ae73c688430",
+      "enemy": "cc07868dd3b420bf6dc571b4ea7e9d4413440240d7d3fcda473b37dc279f7b11"
+    },
+    "bodyRadius": 87.0,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "573aaf8dbf5228a156e1d8c06005df44635cad84fe2c076cd62c4ae73c688430",
+      "enemy": "cc07868dd3b420bf6dc571b4ea7e9d4413440240d7d3fcda473b37dc279f7b11"
+    }
+  },
+  "U63": {
+    "path": "characters/animations/U63.png",
+    "enemyPath": "characters/animations/U63-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 48,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U63.png",
+    "sourceSha256": "39768a34fe763618cb58940ac4fd3431db54ccddc015f737798e8b07706a7c57",
+    "atlasSha256": {
+      "own": "d1b823fc2a9e2c757bf81b98e6796417177093961b7c72ae60786a0e88b3b10f",
+      "enemy": "20c3e3c88a8de36f3b17a8c4f6839bad37e38b9dad26a0f75d1a5d4ff59513ba"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "d1b823fc2a9e2c757bf81b98e6796417177093961b7c72ae60786a0e88b3b10f",
+      "enemy": "20c3e3c88a8de36f3b17a8c4f6839bad37e38b9dad26a0f75d1a5d4ff59513ba"
+    }
+  },
+  "U65": {
+    "path": "characters/animations/U65.png",
+    "enemyPath": "characters/animations/U65-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 70,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U65.png",
+    "sourceSha256": "a7b716f3b3c50209b2bfde1e3eae17f7871c59501ef5afb72bb70327ff50c8cc",
+    "atlasSha256": {
+      "own": "8f2390d1ce1472cee42b2e992210a648a1224a7bd6584513768c1dc702420f48",
+      "enemy": "b4418d8f87e274e0b5799096d93adf96c1b418b2dccfbe961c716f0332fe966c"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "8f2390d1ce1472cee42b2e992210a648a1224a7bd6584513768c1dc702420f48",
+      "enemy": "b4418d8f87e274e0b5799096d93adf96c1b418b2dccfbe961c716f0332fe966c"
+    }
+  },
+  "H01-A7": {
+    "path": "characters/animations/H01-A7.png",
+    "enemyPath": "characters/animations/H01-A7-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 67,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A7.png",
+    "sourceSha256": "b891f49145a3f3d99d0ce21729b3ced4d94cfa370b91f5dec1521105ac7aeab8",
+    "atlasSha256": {
+      "own": "450d729d9a308f12b01db3fa9d8d68fc6a2e42255d607cd4725fac550b26d85a",
+      "enemy": "cd10cc222786b43f310d0698a619c4fe19ab62e684d7d8c864e6a41b096d1670"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "450d729d9a308f12b01db3fa9d8d68fc6a2e42255d607cd4725fac550b26d85a",
+      "enemy": "cd10cc222786b43f310d0698a619c4fe19ab62e684d7d8c864e6a41b096d1670"
+    }
+  },
+  "H02-A7": {
+    "path": "characters/animations/H02-A7.png",
+    "enemyPath": "characters/animations/H02-A7-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 63,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A7.png",
+    "sourceSha256": "87624bda549a337d9b865ea1f24461116f3cb0ae76499de62e9dd833f2d11b61",
+    "atlasSha256": {
+      "own": "4263eec30b2bd170d6594fdb41da6011a7d32f1363ec8d14f50a1d744d006a62",
+      "enemy": "d65d59f99b5c3dfd9c8f29945ecfdbbdd9c6f05d635bd1b7ea71dff115d139e8"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "4263eec30b2bd170d6594fdb41da6011a7d32f1363ec8d14f50a1d744d006a62",
+      "enemy": "d65d59f99b5c3dfd9c8f29945ecfdbbdd9c6f05d635bd1b7ea71dff115d139e8"
+    }
+  },
+  "H03-A7": {
+    "path": "characters/animations/H03-A7.png",
+    "enemyPath": "characters/animations/H03-A7-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 64,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A7.png",
+    "sourceSha256": "8fba64c27885b5f68ee22b1fde9680c51351ad329ad753139779ea07406dad2e",
+    "atlasSha256": {
+      "own": "e08efb384fc8ac43798ae33cde6db32cc69fdacb919724d1681cfd92964a2b60",
+      "enemy": "d7b044550b301aeceef9b63fb7c55d7a2bd03212c90cad651ded854ab20d09df"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e08efb384fc8ac43798ae33cde6db32cc69fdacb919724d1681cfd92964a2b60",
+      "enemy": "d7b044550b301aeceef9b63fb7c55d7a2bd03212c90cad651ded854ab20d09df"
+    }
+  },
+  "H04-A7": {
+    "path": "characters/animations/H04-A7.png",
+    "enemyPath": "characters/animations/H04-A7-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 75,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A7.png",
+    "sourceSha256": "3cd2b8c11621f7ca36ddf9c95912d31fde6c860aaf8ac1b6d877bb80db5e5474",
+    "atlasSha256": {
+      "own": "97cfb1dffbb87da6caad03158c1ac609d3a13baced92a60196f53ff769c70eb0",
+      "enemy": "00e76f9c51f5c522dd31df1dbdfc7b3d295820fa4786f60cf5627049076597c7"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "97cfb1dffbb87da6caad03158c1ac609d3a13baced92a60196f53ff769c70eb0",
+      "enemy": "00e76f9c51f5c522dd31df1dbdfc7b3d295820fa4786f60cf5627049076597c7"
+    }
+  },
+  "H05-A7": {
+    "path": "characters/animations/H05-A7.png",
+    "enemyPath": "characters/animations/H05-A7-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A7.png",
+    "sourceSha256": "9d444af9f0803d0868fde1f0fd7e334cd5a9519e8300530a8a4f5c2ef4e8e0a8",
+    "atlasSha256": {
+      "own": "a94d044a6b4ff0c17c3f4193daf869e7aab1bea86fe2044e09f06d90b27db634",
+      "enemy": "683a5ea7308049b49f678845eadaf9e61522f73d220b8365b0efe27f2ea17c06"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "a94d044a6b4ff0c17c3f4193daf869e7aab1bea86fe2044e09f06d90b27db634",
+      "enemy": "683a5ea7308049b49f678845eadaf9e61522f73d220b8365b0efe27f2ea17c06"
+    }
+  },
+  "H06-A7": {
+    "path": "characters/animations/H06-A7.png",
+    "enemyPath": "characters/animations/H06-A7-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A7.png",
+    "sourceSha256": "7b37d5ebfd6dd2164d729dea67db8b8658d3cb561c85ec95b63cf88ec8049e45",
+    "atlasSha256": {
+      "own": "71525cd24b838e9e6e5bb57020211d3b578b5d2eb9879167f120cfb363ac63fe",
+      "enemy": "9b3ea0ad4ad857659971487303e78c31424ede606848d30a817d44dfec40423e"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "71525cd24b838e9e6e5bb57020211d3b578b5d2eb9879167f120cfb363ac63fe",
+      "enemy": "9b3ea0ad4ad857659971487303e78c31424ede606848d30a817d44dfec40423e"
+    }
+  },
+  "U74": {
+    "path": "characters/animations/U74.png",
+    "enemyPath": "characters/animations/U74-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 69,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U74.png",
+    "sourceSha256": "eb72ee6f0af24fcff607a898f2fd4b44e3c0d5cf45bd296879fa1991fcc4a456",
+    "atlasSha256": {
+      "own": "d96fd47b07177031e40aba262702cb2931c03808d65c591b28a8e9618353edf4",
+      "enemy": "c42bf98b570b1d90670dea7d17fdddc3267123a1226dc98d9825a2eed301e67d"
+    },
+    "bodyRadius": 66.3,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "d96fd47b07177031e40aba262702cb2931c03808d65c591b28a8e9618353edf4",
+      "enemy": "c42bf98b570b1d90670dea7d17fdddc3267123a1226dc98d9825a2eed301e67d"
+    }
+  },
+  "U72": {
+    "path": "characters/animations/U72.png",
+    "enemyPath": "characters/animations/U72-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 64,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U72.png",
+    "sourceSha256": "dbdf447ea91f457f5a69dd6796de38dc90fbd79720cfb11a07f4ed8908a82a82",
+    "atlasSha256": {
+      "own": "e6e67f7ea753d5b62a7ba8fc06ace5c0b4d18e70c2df681e52a525b75eb60f14",
+      "enemy": "e6e67f7ea753d5b62a7ba8fc06ace5c0b4d18e70c2df681e52a525b75eb60f14"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e6e67f7ea753d5b62a7ba8fc06ace5c0b4d18e70c2df681e52a525b75eb60f14",
+      "enemy": "e6e67f7ea753d5b62a7ba8fc06ace5c0b4d18e70c2df681e52a525b75eb60f14"
+    }
+  },
+  "U75": {
+    "path": "characters/animations/U75.png",
+    "enemyPath": "characters/animations/U75-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 55,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U75.png",
+    "sourceSha256": "9730337747770cb641376525c8e035b5460e87b3183c4c3a55fcd8edf69218d6",
+    "atlasSha256": {
+      "own": "6a7b46d6162a24aacb6268823c34de2eeff01882ad16a2d72877cc6a9211e700",
+      "enemy": "027dcbd004dd62873eae9d5458a662836212a44e69f485d07f96ec9611d60889"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "6a7b46d6162a24aacb6268823c34de2eeff01882ad16a2d72877cc6a9211e700",
+      "enemy": "027dcbd004dd62873eae9d5458a662836212a44e69f485d07f96ec9611d60889"
+    }
+  },
+  "H01-A8": {
+    "path": "characters/animations/H01-A8.png",
+    "enemyPath": "characters/animations/H01-A8-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A8.png",
+    "sourceSha256": "2dab896d93731ab2352c81edbf4dd144b124bcb3b160847546c2a818e6384c9c",
+    "atlasSha256": {
+      "own": "b81de4c964b02d06e9c410841ecd02417a254ec1ad08246c28427891e64579f3",
+      "enemy": "2e7a8192ce1015ea053b2a31474117e33b2dfdf37bd635d2f8129b3c4877c174"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "b81de4c964b02d06e9c410841ecd02417a254ec1ad08246c28427891e64579f3",
+      "enemy": "2e7a8192ce1015ea053b2a31474117e33b2dfdf37bd635d2f8129b3c4877c174"
+    }
+  },
+  "H03-A8": {
+    "path": "characters/animations/H03-A8.png",
+    "enemyPath": "characters/animations/H03-A8-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 67,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A8.png",
+    "sourceSha256": "2ba86712f1a25dfb45808d618d8a65ed722bd325a30ab946c3ebb12b3ef6266c",
+    "atlasSha256": {
+      "own": "fb5d25648649252e96a29f76482a2c6ad189a0c2ffd7175163c2de0a556abdbc",
+      "enemy": "5f78d73999b3f6b8be237ca6bdc5dd5674b8f911749b620c9c2fe598e48ae39f"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "fb5d25648649252e96a29f76482a2c6ad189a0c2ffd7175163c2de0a556abdbc",
+      "enemy": "5f78d73999b3f6b8be237ca6bdc5dd5674b8f911749b620c9c2fe598e48ae39f"
+    }
+  },
+  "H02-A8": {
+    "path": "characters/animations/H02-A8.png",
+    "enemyPath": "characters/animations/H02-A8-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 73,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A8.png",
+    "sourceSha256": "a68cd2ebb45ffc5cc7cece118f49a38216ce9f923a445dbb2d277229d533ae79",
+    "atlasSha256": {
+      "own": "e39c6f60f295a60ff5f84418a47dd284d8ca913e02592762d6064af4e0e8d653",
+      "enemy": "97f2845c53d5d3aeaedee48254b0ee2a0ac17f6aec9fc394dac68268e554be5f"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "e39c6f60f295a60ff5f84418a47dd284d8ca913e02592762d6064af4e0e8d653",
+      "enemy": "97f2845c53d5d3aeaedee48254b0ee2a0ac17f6aec9fc394dac68268e554be5f"
+    }
+  },
+  "H04-A8": {
+    "path": "characters/animations/H04-A8.png",
+    "enemyPath": "characters/animations/H04-A8-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 76,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A8.png",
+    "sourceSha256": "c77c48109d7bf771f3154f4f61db757ebd4ca7542d97a64eebe2f5f100ed8f88",
+    "atlasSha256": {
+      "own": "dcc6e90c4a827178cba6e3063be59818992fefd35857058084bbeed69846b707",
+      "enemy": "1a46b0f6097fd417f4938bdd0c374951452028daa3115ad587df5678d3aca0da"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "dcc6e90c4a827178cba6e3063be59818992fefd35857058084bbeed69846b707",
+      "enemy": "1a46b0f6097fd417f4938bdd0c374951452028daa3115ad587df5678d3aca0da"
+    }
+  },
+  "H05-A8": {
+    "path": "characters/animations/H05-A8.png",
+    "enemyPath": "characters/animations/H05-A8-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A8.png",
+    "sourceSha256": "7d2387c0f9e3ebd67fe75ffebd19f962cb8d9e806dbf6e7ebd71deedad713106",
+    "atlasSha256": {
+      "own": "8118055fcac27a890505f9031ffb1d7045279b74d1e52b6c96bef696d953077d",
+      "enemy": "9310717b75406d16059af624b2bc2bd8e2993811eedbc00cf81d1a470592fc44"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "8118055fcac27a890505f9031ffb1d7045279b74d1e52b6c96bef696d953077d",
+      "enemy": "9310717b75406d16059af624b2bc2bd8e2993811eedbc00cf81d1a470592fc44"
+    }
+  },
+  "U81": {
+    "path": "characters/animations/U81.png",
+    "enemyPath": "characters/animations/U81-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U81.png",
+    "sourceSha256": "b4ced07c4f85780a13bdcafc961aec8883d33f06d396ca2757ebea2fccafbd5a",
+    "atlasSha256": {
+      "own": "100d05f1f75a047b9cc7890ad222ea807f3d80b9000b2b1fa23823a46d45889f",
+      "enemy": "555c57a9155c828c2fa8791e16cb7e9cf314ad228cea8b435e07859b4b387caa"
+    },
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "100d05f1f75a047b9cc7890ad222ea807f3d80b9000b2b1fa23823a46d45889f",
+      "enemy": "555c57a9155c828c2fa8791e16cb7e9cf314ad228cea8b435e07859b4b387caa"
+    }
+  },
+  "H06-A8": {
+    "path": "characters/animations/H06-A8.png",
+    "enemyPath": "characters/animations/H06-A8-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A8.png",
+    "sourceSha256": "39e927603a220af19001260d01c2a83f3f06637d5fe9d6dbf422de830935fae6",
+    "atlasSha256": {
+      "own": "0269be61eaa2b2466610bfa4cb5bfe7aa143ef5cc321bf79ff3ec6458f1806fe",
+      "enemy": "5fe08d3cf9063307cf59c64584c6f43ea3ec6d9efd5f40ba1cb786818b7207ff"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "0269be61eaa2b2466610bfa4cb5bfe7aa143ef5cc321bf79ff3ec6458f1806fe",
+      "enemy": "5fe08d3cf9063307cf59c64584c6f43ea3ec6d9efd5f40ba1cb786818b7207ff"
+    }
+  },
+  "U83": {
+    "path": "characters/animations/U83.png",
+    "enemyPath": "characters/animations/U83-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U83.png",
+    "sourceSha256": "698450cbd49a92f16e8f6635cbe89c5a92ad9a10a6cdd994b38714d166275983",
+    "atlasSha256": {
+      "own": "fed898f40f6b8e9ac2b21b80a2f1cb61bcd0143f11fb9f7d2441711d9973c146",
+      "enemy": "9d06365f09b062c3ce1d76d29e27140c106f1d6d67c00131f5ce9a7a8658f893"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "fed898f40f6b8e9ac2b21b80a2f1cb61bcd0143f11fb9f7d2441711d9973c146",
+      "enemy": "9d06365f09b062c3ce1d76d29e27140c106f1d6d67c00131f5ce9a7a8658f893"
+    }
+  },
+  "U82": {
+    "path": "characters/animations/U82.png",
+    "enemyPath": "characters/animations/U82-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 60,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U82.png",
+    "sourceSha256": "c52e5688b276c751b60014db72242b6376ad6372e4705d2216a35461176bd9f6",
+    "atlasSha256": {
+      "own": "1f90d4e51c9d363ecc06f118706c41c617dc7e5c173142f65f5741dd43e21a05",
+      "enemy": "fc4bf6cc0c7c92a02219f990db0897ae09ecee69945eb410ebe2cebd45ff89c0"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "1f90d4e51c9d363ecc06f118706c41c617dc7e5c173142f65f5741dd43e21a05",
+      "enemy": "fc4bf6cc0c7c92a02219f990db0897ae09ecee69945eb410ebe2cebd45ff89c0"
+    }
+  },
+  "U84": {
+    "path": "characters/animations/U84.png",
+    "enemyPath": "characters/animations/U84-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U84.png",
+    "sourceSha256": "2c2e090a8ee355eb2b39f826cafc204c2f1f608253302ab48e2f47dc974b6f4b",
+    "atlasSha256": {
+      "own": "ff2e391976776e59a6a21feba811858852e6fb567019857a86c1133153be4d57",
+      "enemy": "be6ec5e63b0967b30bdbe21d67271505d5c35b6464b8bcf4eef5505c2fa1fe92"
+    },
+    "bodyRadius": 72.3,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "ff2e391976776e59a6a21feba811858852e6fb567019857a86c1133153be4d57",
+      "enemy": "be6ec5e63b0967b30bdbe21d67271505d5c35b6464b8bcf4eef5505c2fa1fe92"
+    }
+  },
+  "U85": {
+    "path": "characters/animations/U85.png",
+    "enemyPath": "characters/animations/U85-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U85.png",
+    "sourceSha256": "a7fccc0606506ba47cefea99f2efa80e701ebd9a875ab8e1d4497f198700b42f",
+    "atlasSha256": {
+      "own": "94563f7b28aeab0d1bc98b1dee9ebdcaf673c18b5619a42a22545c7a185da095",
+      "enemy": "94563f7b28aeab0d1bc98b1dee9ebdcaf673c18b5619a42a22545c7a185da095"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "94563f7b28aeab0d1bc98b1dee9ebdcaf673c18b5619a42a22545c7a185da095",
+      "enemy": "94563f7b28aeab0d1bc98b1dee9ebdcaf673c18b5619a42a22545c7a185da095"
+    }
+  },
+  "U91": {
+    "path": "characters/animations/U91.png",
+    "enemyPath": "characters/animations/U91-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 67,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U91.png",
+    "sourceSha256": "095b5fed6b76a0ede3b2e8afea376477372cb79686625d226765d2e8cfdc7795",
+    "atlasSha256": {
+      "own": "dcf7863769d050e8fbfdebd7d222985c56ef6be67eed38a7a66186f10bde08ea",
+      "enemy": "594e5fd53b536d8b05ea54542c0f90661b67676da623455ed81560a1a8eaa154"
+    },
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "dcf7863769d050e8fbfdebd7d222985c56ef6be67eed38a7a66186f10bde08ea",
+      "enemy": "594e5fd53b536d8b05ea54542c0f90661b67676da623455ed81560a1a8eaa154"
+    }
+  },
+  "H01-A9": {
+    "path": "characters/animations/H01-A9.png",
+    "enemyPath": "characters/animations/H01-A9-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 68,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A9.png",
+    "sourceSha256": "a0bad56cd2696b8006bd013fabd9005ef42629589c0a2c38f649abe1228ec2ac",
+    "atlasSha256": {
+      "own": "faceac219f83d4958a2810857c7d3a804dce6340a3568783e61e599e489ac349",
+      "enemy": "51367db1e2b210b57c620a1055929cc0f4daf35f4f934ceb8bf7ba9ee4585527"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "faceac219f83d4958a2810857c7d3a804dce6340a3568783e61e599e489ac349",
+      "enemy": "51367db1e2b210b57c620a1055929cc0f4daf35f4f934ceb8bf7ba9ee4585527"
+    }
+  },
+  "H02-A9": {
+    "path": "characters/animations/H02-A9.png",
+    "enemyPath": "characters/animations/H02-A9-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 63,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A9.png",
+    "sourceSha256": "09d8ef8e9b3493abd4618b63d7b5b59e39abd089d16cb8c05bd459e2a93d2aa3",
+    "atlasSha256": {
+      "own": "0e6dd78fdf5c64d67774cbf72ba91f7ad3f75c9b083cb213d6b27a85f26f1d09",
+      "enemy": "402cd08d3bfca56a6e673f7617632d6c5c2af2bc314450f1aa32ac14bbcff773"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "0e6dd78fdf5c64d67774cbf72ba91f7ad3f75c9b083cb213d6b27a85f26f1d09",
+      "enemy": "402cd08d3bfca56a6e673f7617632d6c5c2af2bc314450f1aa32ac14bbcff773"
+    }
+  },
+  "H03-A9": {
+    "path": "characters/animations/H03-A9.png",
+    "enemyPath": "characters/animations/H03-A9-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 59,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A9.png",
+    "sourceSha256": "db8bac599fd16497dd8a303b7ef829b8c937bc5937c0d72002fe841dccc166c9",
+    "atlasSha256": {
+      "own": "15de4c62f17ceb2312e4449e8a7934f720d3d45731e87ace725151593ce44816",
+      "enemy": "f6736ad27645f921ba53793478a6b13c20742aa83ff13277ea28be53a60d81d6"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "15de4c62f17ceb2312e4449e8a7934f720d3d45731e87ace725151593ce44816",
+      "enemy": "f6736ad27645f921ba53793478a6b13c20742aa83ff13277ea28be53a60d81d6"
+    }
+  },
+  "H04-A9": {
+    "path": "characters/animations/H04-A9.png",
+    "enemyPath": "characters/animations/H04-A9-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 79,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A9.png",
+    "sourceSha256": "f1a93cdf556e0559f4c7d322209e0b030db8bb49596aa3ae86c8f896c1755de0",
+    "atlasSha256": {
+      "own": "88789e2b4814635a9c04fcac2677861617f6950c2ef0105d725af4ec87ea779a",
+      "enemy": "fda9cdebbdfafbf505cf076067d490b9dd75f24a0ce3f157690eb1d1a119c228"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "88789e2b4814635a9c04fcac2677861617f6950c2ef0105d725af4ec87ea779a",
+      "enemy": "fda9cdebbdfafbf505cf076067d490b9dd75f24a0ce3f157690eb1d1a119c228"
+    }
+  },
+  "H05-A9": {
+    "path": "characters/animations/H05-A9.png",
+    "enemyPath": "characters/animations/H05-A9-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A9.png",
+    "sourceSha256": "218c9c062a3984b403eecfb26ced111ac895ddad280a99e9a690ab5318c66593",
+    "atlasSha256": {
+      "own": "1717a4677ced1eb5016b1ffdb24e388089b7ad6f119ba13dc508c95ef29e50fa",
+      "enemy": "caf1e233bae21dc786578f3ae7d9e32fa6e8b7f5adea031b9cf3aadd7875e75b"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "1717a4677ced1eb5016b1ffdb24e388089b7ad6f119ba13dc508c95ef29e50fa",
+      "enemy": "caf1e233bae21dc786578f3ae7d9e32fa6e8b7f5adea031b9cf3aadd7875e75b"
+    }
+  },
+  "U93": {
+    "path": "characters/animations/U93.png",
+    "enemyPath": "characters/animations/U93-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 67,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U93.png",
+    "sourceSha256": "4aa7660face0702a00ed10dfd4a714581db6da0d22cd18bbb92a7a3bf73a8d01",
+    "atlasSha256": {
+      "own": "f5609e69d59b763c057d7d40b97ed6039fe56544b46506a7c318357e5623420c",
+      "enemy": "b96d243a5332cd08d85a3bf4b94e22c32c96498ae8be6f93a11dc8c8987e6ec9"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "f5609e69d59b763c057d7d40b97ed6039fe56544b46506a7c318357e5623420c",
+      "enemy": "b96d243a5332cd08d85a3bf4b94e22c32c96498ae8be6f93a11dc8c8987e6ec9"
+    }
+  },
+  "U92": {
+    "path": "characters/animations/U92.png",
+    "enemyPath": "characters/animations/U92-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U92.png",
+    "sourceSha256": "e039f2e31687a2b742131a414f602bcebc2e3deaa63200fb96a699faa4900043",
+    "atlasSha256": {
+      "own": "d665cc985e25a3f660cd6dba26910f0730de2117cc2b06291c8b123762318518",
+      "enemy": "e3202c23db59f84e5b7347be0f1c19dd782835e291e31f83524b942f63b6f5cd"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "d665cc985e25a3f660cd6dba26910f0730de2117cc2b06291c8b123762318518",
+      "enemy": "e3202c23db59f84e5b7347be0f1c19dd782835e291e31f83524b942f63b6f5cd"
+    }
+  },
+  "U94": {
+    "path": "characters/animations/U94.png",
+    "enemyPath": "characters/animations/U94-enemy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 84,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U94.png",
+    "sourceSha256": "a597042e13d946f3bc73c1c2819627bf0d8a5f85165091962fc480565f322927",
+    "atlasSha256": {
+      "own": "34300508420e77fd42fdfe9bf4a2c40b7eccef4518e3fcc15caf5e020c421fe1",
+      "enemy": "102c57915b18028d4125c50d6fff63adb281f286098da401a34fdeb142935a75"
+    },
+    "bodyRadius": 67.8,
+    "muzzle": [
+      50,
+      76
+    ],
+    "hit": [
+      0,
+      68
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "34300508420e77fd42fdfe9bf4a2c40b7eccef4518e3fcc15caf5e020c421fe1",
+      "enemy": "102c57915b18028d4125c50d6fff63adb281f286098da401a34fdeb142935a75"
+    }
+  },
+  "U95": {
+    "path": "characters/animations/U95.png",
+    "enemyPath": "characters/animations/U95-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 72,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U95.png",
+    "sourceSha256": "7491040c2378218cc7e737e67f944e034cb5a3bf9448f1b3cb77c22886c33a5f",
+    "atlasSha256": {
+      "own": "dc1ac34266c273af93266b2a6a8c650a577560239e3559b0b3aafe03915e574c",
+      "enemy": "2d98c9d9f23d5246edc61ceb619897be606d12c4d2927d073e6520aae88038b4"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "dc1ac34266c273af93266b2a6a8c650a577560239e3559b0b3aafe03915e574c",
+      "enemy": "2d98c9d9f23d5246edc61ceb619897be606d12c4d2927d073e6520aae88038b4"
+    }
+  },
+  "H01-A10": {
+    "path": "characters/animations/H01-A10.png",
+    "enemyPath": "characters/animations/H01-A10-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 64,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H01-A10.png",
+    "sourceSha256": "099c99f48ed881fb8b6760ae5a8a7f953a00e140aa0bf6cae7d82282b54e8451",
+    "atlasSha256": {
+      "own": "6b13fe9bf0f3bfb512a0bbc402e2a9177813b621604c0146418ffd57a212e36c",
+      "enemy": "6863d122e606bfd4f71d7475bcf26b9416edf98b32b5cc537a8d5b801a4a71f7"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "6b13fe9bf0f3bfb512a0bbc402e2a9177813b621604c0146418ffd57a212e36c",
+      "enemy": "6863d122e606bfd4f71d7475bcf26b9416edf98b32b5cc537a8d5b801a4a71f7"
+    }
+  },
+  "H02-A10": {
+    "path": "characters/animations/H02-A10.png",
+    "enemyPath": "characters/animations/H02-A10-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A10.png",
+    "sourceSha256": "568b00091dc571abd1b5e1630393efe9ae7feea046dbbea1f797b2688cb13f6f",
+    "atlasSha256": {
+      "own": "ef9fe8d1c6c882808ce6145a450b843ee175b73cda3b9b2a317f1fb2a3897e66",
+      "enemy": "a54ce1abadf8a6ddd735c11b851b72569080c2c89a5db3f65140eb54819de13a"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "ef9fe8d1c6c882808ce6145a450b843ee175b73cda3b9b2a317f1fb2a3897e66",
+      "enemy": "a54ce1abadf8a6ddd735c11b851b72569080c2c89a5db3f65140eb54819de13a"
+    }
+  },
+  "H04-A10": {
+    "path": "characters/animations/H04-A10.png",
+    "enemyPath": "characters/animations/H04-A10-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 80,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A10.png",
+    "sourceSha256": "2aa932d637d70164fa1995753b85aa35be59b3855ab2e8be66ecfc8d0e474d57",
+    "atlasSha256": {
+      "own": "5674514769d93fd3fa0ead395a0482abef4ed9588ec8e4b09ad6310895688fd0",
+      "enemy": "4280f3634937e72f6eb5e95ffd2cdb1009be44e98a00296959b6b37cda388188"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "5674514769d93fd3fa0ead395a0482abef4ed9588ec8e4b09ad6310895688fd0",
+      "enemy": "4280f3634937e72f6eb5e95ffd2cdb1009be44e98a00296959b6b37cda388188"
+    }
+  },
+  "H03-A10": {
+    "path": "characters/animations/H03-A10.png",
+    "enemyPath": "characters/animations/H03-A10-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 58,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A10.png",
+    "sourceSha256": "af75c91ed3bfdf97e7c9c1f3c7a341a8a355e0bb8ba632dbf7b1cf998073f735",
+    "atlasSha256": {
+      "own": "31e51e76898780382c776d989fe6b8342e48026c39a04b6116ea424c7a052731",
+      "enemy": "42bb246aea990557fab9a457f99075499927226284d640a5f2efa79186b0f9f3"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "31e51e76898780382c776d989fe6b8342e48026c39a04b6116ea424c7a052731",
+      "enemy": "42bb246aea990557fab9a457f99075499927226284d640a5f2efa79186b0f9f3"
+    }
+  },
+  "H06-A10": {
+    "path": "characters/animations/H06-A10.png",
+    "enemyPath": "characters/animations/H06-A10-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 76,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A10.png",
+    "sourceSha256": "ae9a3ae73e824a0234d03ca496a8962f6314a984de3921da9aa091ae1d69da77",
+    "atlasSha256": {
+      "own": "67d8dd15126533bbac034a3fe269d48c173b98e606467f8f3b8bc38bc178d5a6",
+      "enemy": "81aa2bae5f191628210f03bdca17a6ac986a2d774931ede81c262770811e1cda"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "67d8dd15126533bbac034a3fe269d48c173b98e606467f8f3b8bc38bc178d5a6",
+      "enemy": "81aa2bae5f191628210f03bdca17a6ac986a2d774931ede81c262770811e1cda"
+    }
+  },
+  "H05-A10": {
+    "path": "characters/animations/H05-A10.png",
+    "enemyPath": "characters/animations/H05-A10-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 47,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H05-A10.png",
+    "sourceSha256": "fff2f0c7864277d1664d8b5a41ee18546337c10ab84a762d86d5ca10705d5844",
+    "atlasSha256": {
+      "own": "1380da8a59c1be163232a5663fb7445c1de81fd5eac8b4e8526935ef4259984a",
+      "enemy": "82eeb3e52e2250cfc4e61aefa1b1942cf4f7792e10a199537f9f5aed7089a5fb"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "1380da8a59c1be163232a5663fb7445c1de81fd5eac8b4e8526935ef4259984a",
+      "enemy": "82eeb3e52e2250cfc4e61aefa1b1942cf4f7792e10a199537f9f5aed7089a5fb"
+    }
+  },
+  "H03-A4": {
+    "path": "characters/animations/H03-A4.png",
+    "enemyPath": "characters/animations/H03-A4-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 57,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H03-A4.png",
+    "sourceSha256": "af735c4112ca24df315a1fbd98dd3870a5dd5e375bda67cbf0bbe0d8a22c3fa8",
+    "atlasSha256": {
+      "own": "b6991d00852fa7455882b7bacc0bd66611a0903476533ec194d5a8cbbf8e1c0b",
+      "enemy": "887c70d79e08e060046915b637f68353b9e18d9d67b58acc2051fbfc4e82131c"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "b6991d00852fa7455882b7bacc0bd66611a0903476533ec194d5a8cbbf8e1c0b",
+      "enemy": "887c70d79e08e060046915b637f68353b9e18d9d67b58acc2051fbfc4e82131c"
+    }
+  },
+  "H06-A1": {
+    "path": "characters/animations/H06-A1.png",
+    "enemyPath": "characters/animations/H06-A1-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 59,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A1.png",
+    "sourceSha256": "b8019b8c2ee04183c80e7f00dfd85ac986efbcbf639d9c33cfb5f1abb2c90727",
+    "atlasSha256": {
+      "own": "4fd1db9ec63c5bc56900f6bbfcaf3e256a18d464e8bb3c09aeb41d5f79f1d531",
+      "enemy": "a5f2c1db6254ca9b3bcb378a5e7e41fcfe556cf03055af27fdf7368c906189ff"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "4fd1db9ec63c5bc56900f6bbfcaf3e256a18d464e8bb3c09aeb41d5f79f1d531",
+      "enemy": "a5f2c1db6254ca9b3bcb378a5e7e41fcfe556cf03055af27fdf7368c906189ff"
+    }
+  },
+  "H04-A5": {
+    "path": "characters/animations/H04-A5.png",
+    "enemyPath": "characters/animations/H04-A5-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 79,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H04-A5.png",
+    "sourceSha256": "0862bd00e455a60c9952e091885f3822b672bfc002d072f27c8d7f66e9978da3",
+    "atlasSha256": {
+      "own": "a15fa3068fe6734dd27f818bdf94a43b447760c5a9fa8e3e4bf2e24661c6ca32",
+      "enemy": "25021be7e695c8a930d58262f9173cbad3a0589560f7d0ab08b2b863ae4fe8ec"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "a15fa3068fe6734dd27f818bdf94a43b447760c5a9fa8e3e4bf2e24661c6ca32",
+      "enemy": "25021be7e695c8a930d58262f9173cbad3a0589560f7d0ab08b2b863ae4fe8ec"
+    }
+  },
+  "H02-A6": {
+    "path": "characters/animations/H02-A6.png",
+    "enemyPath": "characters/animations/H02-A6-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 75,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H02-A6.png",
+    "sourceSha256": "3c491344a53a27c539e0245607127c52bc6569283eda9c20684de9bdd173fe7f",
+    "atlasSha256": {
+      "own": "1e94e96770d2f1b7dd48e9aa50e8f86b5b406dd740d84e1f07f4fd2fb8980ae4",
+      "enemy": "3d29742ebf8943c40ce2987917175b426c6b355e8af48859fe172320d9f469da"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "1e94e96770d2f1b7dd48e9aa50e8f86b5b406dd740d84e1f07f4fd2fb8980ae4",
+      "enemy": "3d29742ebf8943c40ce2987917175b426c6b355e8af48859fe172320d9f469da"
+    }
+  },
+  "U71": {
+    "path": "characters/animations/U71.png",
+    "enemyPath": "characters/animations/U71-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 73,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U71.png",
+    "sourceSha256": "f96ccaea637ffff702cd7190f69ead96fee12f2a3a5fc018c775f549174900a9",
+    "atlasSha256": {
+      "own": "27cefc114abee2c1adad032b80f4b276db3f22641db33bcb954908b15e36a694",
+      "enemy": "27cefc114abee2c1adad032b80f4b276db3f22641db33bcb954908b15e36a694"
+    },
+    "bodyRadius": 22,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "27cefc114abee2c1adad032b80f4b276db3f22641db33bcb954908b15e36a694",
+      "enemy": "27cefc114abee2c1adad032b80f4b276db3f22641db33bcb954908b15e36a694"
+    }
+  },
+  "U73": {
+    "path": "characters/animations/U73.png",
+    "enemyPath": "characters/animations/U73-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 66,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/U73.png",
+    "sourceSha256": "4f90d38581225be229c9f4bd3c3ec98ef9236bf5ed6829b33c2d1721f130f99c",
+    "atlasSha256": {
+      "own": "55aafdda80a0fd01c67a123d54f01bdeb938b5bde233e795767abef187923b90",
+      "enemy": "55aafdda80a0fd01c67a123d54f01bdeb938b5bde233e795767abef187923b90"
+    },
+    "bodyRadius": 16,
+    "muzzle": [
+      35,
+      57
+    ],
+    "hit": [
+      0,
+      54
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "55aafdda80a0fd01c67a123d54f01bdeb938b5bde233e795767abef187923b90",
+      "enemy": "55aafdda80a0fd01c67a123d54f01bdeb938b5bde233e795767abef187923b90"
+    }
+  },
+  "H06-A9": {
+    "path": "characters/animations/H06-A9.png",
+    "enemyPath": "characters/animations/H06-A9-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "columns": 6,
+    "rows": 5,
+    "bodyHeight": 76,
+    "anchor": [
+      0.5,
+      0.9
+    ],
+    "clips": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "walk": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "attack": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hurt": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "death": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "sourcePath": "output/imagegen/ten-eras/raw/H06-A9.png",
+    "sourceSha256": "f3bd8576ed87aacb9d6975de95504f23734f223d56ed14614259710e96d3f0a6",
+    "atlasSha256": {
+      "own": "3479efb49e4c00a29c6d30408e1fab3791fe5237e90cbef40bc133b594b287e5",
+      "enemy": "09f1c0a6a123570884b96d88b3867aacc7a02bf481b763c941f3ffd1ce284923"
+    },
+    "bodyRadius": 24,
+    "muzzle": [
+      42,
+      73
+    ],
+    "hit": [
+      0,
+      66
+    ],
+    "review": "accepted_visual_review",
+    "generatedModel": "gpt-image-2.5",
+    "iconNormalization": "standing silhouette fitted inside 88x88 pixels",
+    "reviewedAtlasSha256": {
+      "own": "3479efb49e4c00a29c6d30408e1fab3791fe5237e90cbef40bc133b594b287e5",
+      "enemy": "09f1c0a6a123570884b96d88b3867aacc7a02bf481b763c941f3ffd1ce284923"
+    }
+  },
+  "SUM-A1": {
+    "path": "environment/turrets/TR11.png",
+    "enemyPath": "environment/turrets/TR11-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 64,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 64,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "093697cdb1c23bcf5f9852b8550a3c61ff5168f48df81c9ad453fe9af77f25a4",
+      "enemy": "9e6c909a9cb173c0b8c6fa4d206fc9df8deb9f5b9e42e7e23f2d51c5e448f7e3"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "093697cdb1c23bcf5f9852b8550a3c61ff5168f48df81c9ad453fe9af77f25a4",
+      "enemy": "9e6c909a9cb173c0b8c6fa4d206fc9df8deb9f5b9e42e7e23f2d51c5e448f7e3"
+    }
+  },
+  "SUM-A2": {
+    "path": "environment/turrets/TR21.png",
+    "enemyPath": "environment/turrets/TR21-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 71,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "77d2777600a82ce15ec0c70ff21d0102d97b37e225384e44cf765b94acc907f8",
+      "enemy": "594ed96d450e4b78932864f2a7b5fc0bbb25f5c4909f595be0c39fbc6797cc9a"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "77d2777600a82ce15ec0c70ff21d0102d97b37e225384e44cf765b94acc907f8",
+      "enemy": "594ed96d450e4b78932864f2a7b5fc0bbb25f5c4909f595be0c39fbc6797cc9a"
+    }
+  },
+  "SUM-A3": {
+    "path": "environment/turrets/TR31.png",
+    "enemyPath": "environment/turrets/TR31-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 64,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 64,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "fa1b2d8f3e6bbc5a9000d267c96dc29635f780ae15dff8a7f3a809f0f37d69b4",
+      "enemy": "d60889b0f5ff3a92fd27076ff3ed20d2184027d5a0f95c2f070c6214c2c87fb4"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "fa1b2d8f3e6bbc5a9000d267c96dc29635f780ae15dff8a7f3a809f0f37d69b4",
+      "enemy": "d60889b0f5ff3a92fd27076ff3ed20d2184027d5a0f95c2f070c6214c2c87fb4"
+    }
+  },
+  "SUM-A4": {
+    "path": "environment/turrets/TR41.png",
+    "enemyPath": "environment/turrets/TR41-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 71,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 71,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "5632529ffea02d7ab8115ffde7ac180c601e0ab8bed4d73abe849e9efe90b35e",
+      "enemy": "c66f7fd9fbd1ea29e53d7602d0f351cde9d3200b250ab93225448079fbb87aa9"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "5632529ffea02d7ab8115ffde7ac180c601e0ab8bed4d73abe849e9efe90b35e",
+      "enemy": "c66f7fd9fbd1ea29e53d7602d0f351cde9d3200b250ab93225448079fbb87aa9"
+    }
+  },
+  "SUM-A5": {
+    "path": "environment/turrets/TR51.png",
+    "enemyPath": "environment/turrets/TR51-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 48,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 48,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "b6b8c4bc4aff9add90e4190ecf6222dde7e87609fbb5c2bb92a7c94df9581e95",
+      "enemy": "64de258fae98e847a50fd1b0792867e3f7b7275d2a954eb665ddf1123ade7bc5"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "b6b8c4bc4aff9add90e4190ecf6222dde7e87609fbb5c2bb92a7c94df9581e95",
+      "enemy": "64de258fae98e847a50fd1b0792867e3f7b7275d2a954eb665ddf1123ade7bc5"
+    }
+  },
+  "SUM-A6": {
+    "path": "environment/turrets/TR61.png",
+    "enemyPath": "environment/turrets/TR61-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 47,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 47,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "4f61785c78a2c9c195c6ec24a7ea6e71c3a46d43b91e403cbd7c81c08bc6459c",
+      "enemy": "7053a5fd639c0abca6d2b71154dc6464572adbf8f6671a52817cd689304060f4"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "4f61785c78a2c9c195c6ec24a7ea6e71c3a46d43b91e403cbd7c81c08bc6459c",
+      "enemy": "7053a5fd639c0abca6d2b71154dc6464572adbf8f6671a52817cd689304060f4"
+    }
+  },
+  "SUM-A7": {
+    "path": "environment/turrets/TR71.png",
+    "enemyPath": "environment/turrets/TR71-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 45,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 45,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "d95c25b83455980028fd7b74c623377c38bdd788eb9f2ffcfdfd1d8e5a858dd3",
+      "enemy": "ecb3260e081b3e0280b22a120c572228481d075402c681532510597d8f9256d9"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "d95c25b83455980028fd7b74c623377c38bdd788eb9f2ffcfdfd1d8e5a858dd3",
+      "enemy": "ecb3260e081b3e0280b22a120c572228481d075402c681532510597d8f9256d9"
+    }
+  },
+  "SUM-A8": {
+    "path": "environment/turrets/TR81.png",
+    "enemyPath": "environment/turrets/TR81-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 42,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 42,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "3654bb7a02b9645cc0e4b254c2b847b452d3713e9266608a7a1b721c0b814ca1",
+      "enemy": "68cacbb0ac7e0380a62e0a328a77a39fa8c4130c2f5df7b7688dda62aa609b74"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "3654bb7a02b9645cc0e4b254c2b847b452d3713e9266608a7a1b721c0b814ca1",
+      "enemy": "68cacbb0ac7e0380a62e0a328a77a39fa8c4130c2f5df7b7688dda62aa609b74"
+    }
+  },
+  "SUM-A9": {
+    "path": "environment/turrets/TR91.png",
+    "enemyPath": "environment/turrets/TR91-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 51,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 51,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "6661c4dc22ebf701a75da16339d99e2cecc4cf7ed2f92806a779a22ada608fb2",
+      "enemy": "bc12e097e792cf0103a69b9b05ad65beb0ebfe787b189aa2748dfcfb32934422"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "6661c4dc22ebf701a75da16339d99e2cecc4cf7ed2f92806a779a22ada608fb2",
+      "enemy": "bc12e097e792cf0103a69b9b05ad65beb0ebfe787b189aa2748dfcfb32934422"
+    }
+  },
+  "SUM-A10": {
+    "path": "environment/turrets/TR101.png",
+    "enemyPath": "environment/turrets/TR101-enemy.png",
+    "frameWidth": 96,
+    "frameHeight": 47,
+    "columns": 1,
+    "rows": 1,
+    "bodyHeight": 47,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "bodyRadius": 27,
+    "muzzle": [
+      30,
+      50
+    ],
+    "hit": [
+      0,
+      37
+    ],
+    "atlasSha256": {
+      "own": "28a9984e5caa394a4bf8e2d0509f8a970b3a66a9ede11fc7bda8180c3974ad66",
+      "enemy": "f022e290792aa9d79c91c45d1a7e4d172f4104306b5a28dbd571628869adcc89"
+    },
+    "clips": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0
+      ],
+      "attack": [
+        0
+      ],
+      "hurt": [
+        0
+      ],
+      "death": [
+        0
+      ]
+    },
+    "sourceSha256": "21e57564860d2c4fbe0a3b5366a4dc628beecb326b6988f9c8b6c147b9f27807",
+    "review": "accepted_visual_review",
+    "reviewedAtlasSha256": {
+      "own": "28a9984e5caa394a4bf8e2d0509f8a970b3a66a9ede11fc7bda8180c3974ad66",
+      "enemy": "f022e290792aa9d79c91c45d1a7e4d172f4104306b5a28dbd571628869adcc89"
+    }
+  }
+}

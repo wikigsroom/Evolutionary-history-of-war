@@ -1,0 +1,15 @@
+{
+	"screenshots": [
+		"menu-home.png",
+		"menu-campaign.png",
+		"menu-loadout.png",
+		"menu-codex.png",
+		"menu-settings.png"
+	],
+	"source": "Native Godot UI rendered from shipped Windows embedded PCK",
+	"version": "0.7.0",
+	"viewport": [
+		1280,
+		720
+	]
+}

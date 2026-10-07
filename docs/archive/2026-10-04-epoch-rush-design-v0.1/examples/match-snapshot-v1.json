@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "matchId": "ER-EXAMPLE-4",
+  "mode": "campaign",
+  "missionId": "M04",
+  "difficultyId": "D02",
+  "tick": 1500,
+  "paused": true,
+  "rngState": {
+    "combat": 12345,
+    "loot": 54321
+  },
+  "worldWidth": 1600,
+  "bases": [
+    {
+      "side": "player",
+      "x100": 8000,
+      "eraId": "A2",
+      "hp": 2400,
+      "maxHp": 3200
+    },
+    {
+      "side": "enemy",
+      "x100": 152000,
+      "eraId": "A2",
+      "hp": 2600,
+      "maxHp": 3200
+    }
+  ],
+  "resources": {
+    "player": {
+      "gold1000": 100000,
+      "knowledge1000": 20000,
+      "command1000": 50000
+    },
+    "enemy": {
+      "gold1000": 90000,
+      "knowledge1000": 30000,
+      "command1000": 50000
+    }
+  },
+  "entities": [
+    {
+      "entityId": 1,
+      "side": "player",
+      "kind": "hero",
+      "catalogId": "H01",
+      "birthEraId": "A1",
+      "currentEraId": "A2",
+      "x100": 48000,
+      "hp": 300,
+      "stance": "cover",
+      "statusInstances": []
+    },
+    {
+      "entityId": 2,
+      "side": "player",
+      "kind": "unit",
+      "catalogId": "U11",
+      "birthEraId": "A1",
+      "x100": 53000,
+      "hp": 100,
+      "statusInstances": []
+    }
+  ],
+  "projectiles": [],
+  "queues": {
+    "player": [
+      {
+        "queueId": 1,
+        "unitId": "U22",
+        "birthEraId": "A2",
+        "paidGold": 72,
+        "remainingTicks": 45,
+        "progressSourcesApplied": []
+      }
+    ],
+    "enemy": []
+  },
+  "cooldownUntilTick": {
+    "player": {
+      "HS01": 1800,
+      "S04": 1500,
+      "S05": 1500
+    }
+  },
+  "heroRespawnRemainingTicks": {
+    "player": 0,
+    "enemy": 0
+  },
+  "runUpgradeIds": [
+    "R21"
+  ],
+  "rush": {
+    "remainingEligibilityTicks": 0,
+    "remainingSpawnCount": 0
+  },
+  "loadout": {
+    "heroId": "H01",
+    "specializationId": "P013",
+    "commonSkillIds": [
+      "S04",
+      "S05"
+    ],
+    "relicIds": [
+      "I01",
+      "I03"
+    ],
+    "talentIds": [
+      "T11",
+      "T12",
+      "T13"
+    ]
+  },
+  "actionSequence": 30,
+  "deathSequences": [
+    1,
+    2
+  ],
+  "pendingReward": null,
+  "exampleOnly": true,
+  "checksum": "4d1de6cb733cbbf8072629155fd5a3d2c05c2fefb70f1b6f78e6c27f6191bdba"
+}

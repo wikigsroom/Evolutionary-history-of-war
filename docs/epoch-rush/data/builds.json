@@ -1,0 +1,140 @@
+[
+  {
+    "id": "B01",
+    "name": "旗枪破阵",
+    "heroId": "H01",
+    "specializationId": "P013",
+    "commonSkillIds": [
+      "S04",
+      "S05"
+    ],
+    "relicIds": [
+      "I01",
+      "I03"
+    ],
+    "talentIds": [
+      "T11",
+      "T12",
+      "T13",
+      "T14",
+      "T15",
+      "T16"
+    ],
+    "description": "先破甲再轰击，留钱给新时代招牌兵；缺乏长时间防御"
+  },
+  {
+    "id": "B02",
+    "name": "标记远猎",
+    "heroId": "H02",
+    "specializationId": "P021",
+    "commonSkillIds": [
+      "S10",
+      "S03"
+    ],
+    "relicIds": [
+      "I04",
+      "I06"
+    ],
+    "talentIds": [
+      "T11",
+      "T12",
+      "T13",
+      "T14",
+      "T31",
+      "T32"
+    ],
+    "description": "标记给专属齐射消耗，箭幕清轻兵；怕前排过早倒下"
+  },
+  {
+    "id": "B03",
+    "name": "城门反击",
+    "heroId": "H03",
+    "specializationId": "P032",
+    "commonSkillIds": [
+      "S01",
+      "S11"
+    ],
+    "relicIds": [
+      "I05",
+      "I11"
+    ],
+    "talentIds": [
+      "T21",
+      "T22",
+      "T23",
+      "T24",
+      "T25",
+      "T26"
+    ],
+    "description": "护盾和烟幕扛投射，反击解围；推进速度较慢"
+  },
+  {
+    "id": "B04",
+    "name": "军械节奏",
+    "heroId": "H04",
+    "specializationId": "P042",
+    "commonSkillIds": [
+      "S02",
+      "S04"
+    ],
+    "relicIds": [
+      "I03",
+      "I07"
+    ],
+    "talentIds": [
+      "T31",
+      "T32",
+      "T33",
+      "T34",
+      "T11",
+      "T12"
+    ],
+    "description": "破甲后放炮台与战鼓；临时炮台占人口且有寿命"
+  },
+  {
+    "id": "B05",
+    "name": "时晶共振",
+    "heroId": "H05",
+    "specializationId": "P052",
+    "commonSkillIds": [
+      "S06",
+      "S07"
+    ],
+    "relicIds": [
+      "I07",
+      "I09"
+    ],
+    "talentIds": [
+      "T11",
+      "T12",
+      "T13",
+      "T14",
+      "T15",
+      "T16"
+    ],
+    "description": "网先上导电，再脉冲；能量开销高，不能连续无间隔清场"
+  },
+  {
+    "id": "B06",
+    "name": "远征换代",
+    "heroId": "H06",
+    "specializationId": "P063",
+    "commonSkillIds": [
+      "S12",
+      "S01"
+    ],
+    "relicIds": [
+      "I01",
+      "I08"
+    ],
+    "talentIds": [
+      "T31",
+      "T32",
+      "T33",
+      "T34",
+      "T35",
+      "T36"
+    ],
+    "description": "在新兵训练中补给，利用进化窗口；即时爆发低"
+  }
+]

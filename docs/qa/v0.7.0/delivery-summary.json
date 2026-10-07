@@ -1,0 +1,196 @@
+{
+  "version": "0.7.0",
+  "status": "delivered",
+  "passed": true,
+  "generatedAtUtc": "2026-10-07T11:17:01.992696+00:00",
+  "engine": "Godot 4.7.2",
+  "files": [
+    {
+      "path": "godot/build/windows/Epoch-Rush-Godot.exe",
+      "bytes": 226609904,
+      "sha256": "f4c3cddd6c738e0e0f081665b48e43c49540f0dc2bb4d4116b9ff5d23fdb8810"
+    },
+    {
+      "path": "godot/build/windows/Epoch-Rush-Godot-Windows.zip",
+      "bytes": 154244655,
+      "sha256": "56535cc9ae34a8ab67c6a7ba6895fdf878662d00f528677119e3ea87bf9a61c7"
+    },
+    {
+      "path": "godot/build/android/Epoch-Rush-Godot-debug.apk",
+      "bytes": 145540287,
+      "sha256": "48c9ae97e6a6943587bc4fa9015b20c099715c2b3a137947607c00d83a868bc2"
+    },
+    {
+      "path": "godot/build/android/Epoch-Rush-Godot-release.apk",
+      "bytes": 143725280,
+      "sha256": "7a49301c6ccc7c94bd714b2504a9bf5d48ea96421c95fe856bb0f34962017b97"
+    }
+  ],
+  "checks": {
+    "rules": 420,
+    "skills": 203,
+    "restore": 45,
+    "commanderPaletteForms": 120,
+    "interactions": 159,
+    "nativeAudio": 265,
+    "nativeEraScreenshots": 90,
+    "maps": 30,
+    "completeMatches": 8
+  },
+  "production": {
+    "model": "gpt-image-2.5",
+    "readyJobs": 135,
+    "activeActorDefinitions": 120,
+    "totalAtlasDefinitionsIncludingLegacy": 126,
+    "nonemptyFramesIncludingLegacy": 6980
+  },
+  "runtimeProof": "Final Windows embedded PCK loaded by matching Godot engine; raw release executable startup recorded separately.",
+  "video": {
+    "path": "output/qa/ten-eras/video/ten-era-showcase.mp4",
+    "bytes": 43659656,
+    "sha256": "6d95e6f160b050b8a0f34b0a3a78fa3b34133994468081a9badc4fa364d6bcdd",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_type": "audio",
+          "sample_rate": "48000"
+        }
+      ],
+      "format": {
+        "duration": "81.500000",
+        "size": "43659656"
+      }
+    }
+  },
+  "performance": [
+    {
+      "actors": 24,
+      "camera_x": 266.666666666667,
+      "era": "A10",
+      "frames": 600,
+      "includes_scene_setup_interval": false,
+      "kind": "representative",
+      "living_actors": 13,
+      "longest_frame": {
+        "draw_calls": 278.0,
+        "frame": 304,
+        "ms": 14.729,
+        "reported_process_monitor_ms": 13.584,
+        "simulation_tick": 65
+      },
+      "max_ms": 14.729,
+      "nodes": 138.0,
+      "p50_ms": 6.067,
+      "p95_ms": 8.837,
+      "process_monitor_snapshot_p95_ms": 14.679,
+      "repeated_raids_are_synthetic_stress": true,
+      "static_memory_mib": 67.3963756561279,
+      "visible_actors": 10,
+      "visible_world_width": 1056.31067961165
+    },
+    {
+      "actors": 60,
+      "camera_x": 266.666666666667,
+      "era": "A10",
+      "frames": 540,
+      "includes_scene_setup_interval": true,
+      "kind": "synthetic_render_stress",
+      "living_actors": 36,
+      "longest_frame": {
+        "draw_calls": 258.0,
+        "frame": 721,
+        "ms": 46.896,
+        "reported_process_monitor_ms": 12.047,
+        "simulation_tick": 0
+      },
+      "max_ms": 46.896,
+      "nodes": 237.0,
+      "p50_ms": 6.065,
+      "p95_ms": 14.538,
+      "process_monitor_snapshot_p95_ms": 46.792,
+      "repeated_raids_are_synthetic_stress": true,
+      "static_memory_mib": 68.6522312164307,
+      "visible_actors": 26,
+      "visible_world_width": 1056.31067961165
+    }
+  ],
+  "evidenceSha256": {
+    "rules-regression.json": "be14a96f1d1836c62b6aa19efffca3a81b91c6fe990e27bde0319bfdca007a13",
+    "skills-regression.json": "488396a43d002d07516a139140591df98c495461ec94eedcf054fe794c959ba1",
+    "restore-regression.json": "7edecc3e96bbb283950864bdb1b56a5e247462a643d84122873eedb7709a73d3",
+    "assets/asset-audit.json": "a66ac9c719cf542cbe98749dd670811c34a893fdb99b7b066e7e36e8bba02122",
+    "assets/visual-review.json": "e36562d630e2c7197beda9fa9e791cf81f8d9bd6b1ae93fd1a8bd14b3c6a21ef",
+    "transitions/native-transition-report.json": "dfdf6ddfddd8a6cfcdf99ccfe0997a45865d60b5769b6e90dbf161786d973fc7",
+    "windows-embedded/embedded-content.json": "e6eedfba443655d05f2bcf85bfa33019a99a7999e50fb57a716cf328810cd3e6",
+    "windows-embedded/native/native-visual-report.json": "5b43ec7ffe5a5d1ff656821d2b88cdabb756fe266b100af6a8a68b3129fde344",
+    "windows-embedded/interactions/interaction-checks.json": "878462dad75900d7ccd0a4ff235f26cd42e4b456e4bdc60e203a22e598818dd9",
+    "audio/native/audio-regression.json": "b1190d48d7a7cc1c343c49fd82c64e724ae216d52a0e53f4cba6aba74427972b",
+    "audio/audio-signal-checks.json": "8ae33a507a3b2c545022b23418964360967e2fcd84a6945450d1d97c52f0ea5e",
+    "full-matches/full-battles.json": "a51b64f733780394e094489c089fcab37044247be351607998567a95611efa9a",
+    "performance/performance.json": "4d47a1d3b874ab00a8e32755c44d39ea94981e73caa796b1d3401b8b870fe0b7",
+    "android-finalization.json": "ff16541d8b4f95457cf73d2562a6a70f7dfb25bde74971d5e2531a7c5a113ba4",
+    "packages/package-asset-checks.json": "95e5eb721390714e4aa45f52440fd2cc2de4bf2fbc610ab5b50cb9aa1b63f18c",
+    "video/showcase-report.json": "d22baa08f9af192cd779c2463f89edd51e5f7d8a2e75ea72080758981ad9f7f1"
+  },
+  "sourceSha256": {
+    "godot/assets/data/animations.json": "26a2ff7b8cd7ac7d5e6e3925302de37900e74e042e31579ac57415ea87569777",
+    "godot/assets/data/builds.json": "28fd9b279970f66641e64ab4cc1b92bfe4384ce3d37ac6d4f6f25b0f367827ed",
+    "godot/assets/data/enemy-profiles.json": "d86d3865d0b01cf530c6d62db7e691d7d1a0c506bee3af8af5e91111babeb3ca",
+    "godot/assets/data/era-specials.json": "974d68f196da00145a1ada38519f32cc3510aed58bc2d54d7c8db72e4b4ef3bc",
+    "godot/assets/data/eras.json": "85db6373a8a74c23d7d9d30dfbc0ec008ec579cb91a60d10e18affaeb2b1eb9a",
+    "godot/assets/data/hero-evolutions.json": "a87bf0a9de37f58b6fdf3c8b73f1d150f803b158d9b762ac6506e9bc0be40b71",
+    "godot/assets/data/heroes.json": "b17c4abebdc0d9edd2427d4f5898cea52730621e9a326c8fb1571ee180ca0a3d",
+    "godot/assets/data/loot.json": "465ae862cfdc0c4a21a99d0180ddbb178d2ddc0cf31de72ea80a6d270a70fb26",
+    "godot/assets/data/missions.json": "a1b08898a1f39add96dca776f319a5aa2a2dfdde7ed52fefd313fe5313998d3d",
+    "godot/assets/data/relics.json": "e89b71e5e9bafde5db868810f25356758a098ae8074cb4cdc3cb7a6cd1bca4e6",
+    "godot/assets/data/rules.json": "0f92af75cc7b52a23c7a5e26edd16b65a11e1e0e2e578ebea13b3fc8667331c5",
+    "godot/assets/data/run-upgrades.json": "06e37b646897be0bfabb894cf352f90bb4feca54926992a4830bcaaae8e75494",
+    "godot/assets/data/skills.json": "5e7cc6e2b998df76d45089109ab0cb69fa322aadd15317c31c7f42c743e438b1",
+    "godot/assets/data/specializations.json": "9faa12f351a6cb7665fa017c5e3cfd2cfe602fc210906de70ea115b004bc8518",
+    "godot/assets/data/statuses.json": "4d8d37b184b53203d94cabefe821fc0c74e71157a19487a7e9d92ca840402075",
+    "godot/assets/data/talents.json": "9e6d2b5c616733e7cb38812a625289e446cd237093c46007344c4386f91a5846",
+    "godot/assets/data/turrets.json": "22a3b948432d2fee09793f5aae160bbfaa01a6cb3bec8a3a5802eddbe121405b",
+    "godot/assets/data/units.json": "469bf47a7df929d8880c1a9d8a2c6a9e1239d4d77609dfe71106bb9f06f703ad",
+    "godot/assets/data/weapons.json": "2a55898972ac35f82fdb04455cc571d4e881a9c0548d5d28c4a28a37b45f2791",
+    "godot/scripts/audio_settings.gd": "46ca702d85f966a32392e14123af87177bb1744cf6a8f5e69331b228260f7fd2",
+    "godot/scripts/base_view.gd": "aa605b80549c86979dbe746ec5dd9fc4c117991752a7295226123fc4048bf6c1",
+    "godot/scripts/battle_audio.gd": "7d5e22b4c43cb40543b2d87d22de886b23f84fc33451dd2d9d978c47ba62535a",
+    "godot/scripts/battle_effects.gd": "8bf2a9ead9dfb0fd2339ac0f1dc2089f8e8f7252ea0ccc8c2f7d2c4455fce93e",
+    "godot/scripts/battle_minimap.gd": "11c3584efb801a2958da842bd21089d41426420c6aaffb1ab76b5d86aaf51ca7",
+    "godot/scripts/battle_readout.gd": "c527d7653f4d719fa6093cebba18bdfdbc33ee3db93cc9c1d4a283d4ea6df172",
+    "godot/scripts/battle_screen.gd": "5785a68acc1dd35336169f77a0a77d50cd93f32194683a2eaffe1f2ab12482f8",
+    "godot/scripts/battle_world.gd": "42ff74f7ea2a655cff944c642843a8a723a2ae1651ea92131b2f18ff759cf3ec",
+    "godot/scripts/commander_button.gd": "573dcd897ddbeb46f1422831ae1a0c3cec7a7f80e9c5f2fb8abffb3e3b09c5b6",
+    "godot/scripts/epoch_combat.gd": "90259310832e7ccdebef26d1f82d451b5c15bfdb2095765e151431e168f7644b",
+    "godot/scripts/epoch_environment.gd": "44330bfbfeb737c00524ef3e68863c9c59a8025fdb80a547f99407953981ad7b",
+    "godot/scripts/epoch_skills.gd": "81d39bb6c2cad89aa0fa9cb61d4ed47da26d8cc78591eb2b949eef8175c580f9",
+    "godot/scripts/epoch_snapshot_migration.gd": "6e93185fab09ed423aaba76b26edd870d851f4c60a5a4e4cd4f22c0dd79af40a",
+    "godot/scripts/game_data.gd": "b5624e8c0b1df5fdb20648044161532e1c0972d80153279a028dce7ce1596a04",
+    "godot/scripts/game_model.gd": "f0ff85174b198f719c2cb67a9fe6a482b3a4f885701372c21c1410a708933653",
+    "godot/scripts/game_store.gd": "3791796206f22fc29df845b7dafbaa4ae30714300fec3e7f34e2856a6d921432",
+    "godot/scripts/main.gd": "8c5492222ebd60fa7192cce258fe51fc8e51a112de2b3590159619c4d7d8503e",
+    "godot/scripts/menu_screen.gd": "e290b3b670a05a63f829eae41c7eee3ad88eefaa1882756a354730b1cf58e14d",
+    "godot/scripts/pixel_card.gd": "1e804b817499919260f328f394527b4bedb11df83714829bab7b54a3ee784580",
+    "godot/scripts/pixel_icon.gd": "a74c60ab7dad9acb2ca245ca81d1cc9302dc5d66e2784c74ef1a53144912c4a4",
+    "godot/scripts/pixel_panel.gd": "4589e69f59a7004f193e37058b610d691195d5c206c1af6526369989d212a9ef",
+    "godot/scripts/pixel_theme.gd": "691b2da8490b9fb53a56432bc760301201cf244752045b91771659773020bd85",
+    "godot/scripts/training_queue.gd": "4f029bda969aed648dfc2afa303655e82ec51b29f92f35e2963a0bd5d8922c9d",
+    "godot/scripts/training_slot.gd": "f37b982288992e09854190a45ef60ab6494326200ce1d809aec3d146306ead40",
+    "godot/scripts/unit_view.gd": "7573381d1e82b81fc806b9ceb2dc61f32b007c828771eb4a898d47003571b224"
+  },
+  "limitations": [
+    "No connected Android hardware; no hardware performance or gameplay claims.",
+    "No native Godot iOS IPA.",
+    "Campaign human difficulty tuning is not complete.",
+    "Forced raw release --quit-after reports 4 ObjectDB and 1 resource exit diagnostics.",
+    "Future fair-duel proposal is documented, not implemented.",
+    "Ambient flyers are animated cutouts; summoned turrets use static cutouts with procedural recoil."
+  ]
+}

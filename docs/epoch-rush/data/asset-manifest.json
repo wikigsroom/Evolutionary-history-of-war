@@ -1,0 +1,2940 @@
+{
+  "designVersion": "0.1.0",
+  "productionRootPlanned": "public/assets",
+  "entries": [
+    {
+      "key": "reference.epoch_rush",
+      "kind": "reference",
+      "targetPath": "assets/reference/epoch-rush-concept.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "method": "existing_generated_reference",
+      "ownerId": null,
+      "status": "reference_ready",
+      "milestone": "M0",
+      "priority": "reference"
+    },
+    {
+      "key": "unit.U11",
+      "kind": "sprite",
+      "targetPath": "characters/units/U11.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U11",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U11",
+      "kind": "rig",
+      "targetPath": "characters/units/U11.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U11",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U11",
+      "kind": "icon",
+      "targetPath": "ui/units/U11.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U11",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U12",
+      "kind": "sprite",
+      "targetPath": "characters/units/U12.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U12",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U12",
+      "kind": "rig",
+      "targetPath": "characters/units/U12.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U12",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U12",
+      "kind": "icon",
+      "targetPath": "ui/units/U12.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U12",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U13",
+      "kind": "sprite",
+      "targetPath": "characters/units/U13.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U13",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U13",
+      "kind": "rig",
+      "targetPath": "characters/units/U13.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U13",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U13",
+      "kind": "icon",
+      "targetPath": "ui/units/U13.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U13",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U14",
+      "kind": "sprite",
+      "targetPath": "characters/units/U14.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U14",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U14",
+      "kind": "rig",
+      "targetPath": "characters/units/U14.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U14",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U14",
+      "kind": "icon",
+      "targetPath": "ui/units/U14.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U14",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U21",
+      "kind": "sprite",
+      "targetPath": "characters/units/U21.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U21",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U21",
+      "kind": "rig",
+      "targetPath": "characters/units/U21.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U21",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U21",
+      "kind": "icon",
+      "targetPath": "ui/units/U21.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U21",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U22",
+      "kind": "sprite",
+      "targetPath": "characters/units/U22.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U22",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U22",
+      "kind": "rig",
+      "targetPath": "characters/units/U22.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U22",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U22",
+      "kind": "icon",
+      "targetPath": "ui/units/U22.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U22",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U23",
+      "kind": "sprite",
+      "targetPath": "characters/units/U23.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U23",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U23",
+      "kind": "rig",
+      "targetPath": "characters/units/U23.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U23",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U23",
+      "kind": "icon",
+      "targetPath": "ui/units/U23.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U23",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U24",
+      "kind": "sprite",
+      "targetPath": "characters/units/U24.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U24",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U24",
+      "kind": "rig",
+      "targetPath": "characters/units/U24.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U24",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U24",
+      "kind": "icon",
+      "targetPath": "ui/units/U24.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U24",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U31",
+      "kind": "sprite",
+      "targetPath": "characters/units/U31.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U31",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U31",
+      "kind": "rig",
+      "targetPath": "characters/units/U31.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U31",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U31",
+      "kind": "icon",
+      "targetPath": "ui/units/U31.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U31",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U32",
+      "kind": "sprite",
+      "targetPath": "characters/units/U32.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U32",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U32",
+      "kind": "rig",
+      "targetPath": "characters/units/U32.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U32",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U32",
+      "kind": "icon",
+      "targetPath": "ui/units/U32.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U32",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U33",
+      "kind": "sprite",
+      "targetPath": "characters/units/U33.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U33",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U33",
+      "kind": "rig",
+      "targetPath": "characters/units/U33.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U33",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U33",
+      "kind": "icon",
+      "targetPath": "ui/units/U33.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U33",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U34",
+      "kind": "sprite",
+      "targetPath": "characters/units/U34.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U34",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U34",
+      "kind": "rig",
+      "targetPath": "characters/units/U34.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U34",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U34",
+      "kind": "icon",
+      "targetPath": "ui/units/U34.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U34",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U41",
+      "kind": "sprite",
+      "targetPath": "characters/units/U41.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U41",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U41",
+      "kind": "rig",
+      "targetPath": "characters/units/U41.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U41",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U41",
+      "kind": "icon",
+      "targetPath": "ui/units/U41.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U41",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U42",
+      "kind": "sprite",
+      "targetPath": "characters/units/U42.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U42",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U42",
+      "kind": "rig",
+      "targetPath": "characters/units/U42.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U42",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U42",
+      "kind": "icon",
+      "targetPath": "ui/units/U42.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U42",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U43",
+      "kind": "sprite",
+      "targetPath": "characters/units/U43.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U43",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U43",
+      "kind": "rig",
+      "targetPath": "characters/units/U43.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U43",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U43",
+      "kind": "icon",
+      "targetPath": "ui/units/U43.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U43",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U44",
+      "kind": "sprite",
+      "targetPath": "characters/units/U44.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U44",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.U44",
+      "kind": "rig",
+      "targetPath": "characters/units/U44.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U44",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U44",
+      "kind": "icon",
+      "targetPath": "ui/units/U44.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U44",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "unit.U51",
+      "kind": "sprite",
+      "targetPath": "characters/units/U51.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U51",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U51",
+      "kind": "rig",
+      "targetPath": "characters/units/U51.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U51",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U51",
+      "kind": "icon",
+      "targetPath": "ui/units/U51.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U51",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U52",
+      "kind": "sprite",
+      "targetPath": "characters/units/U52.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U52",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U52",
+      "kind": "rig",
+      "targetPath": "characters/units/U52.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U52",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U52",
+      "kind": "icon",
+      "targetPath": "ui/units/U52.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U52",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U53",
+      "kind": "sprite",
+      "targetPath": "characters/units/U53.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U53",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U53",
+      "kind": "rig",
+      "targetPath": "characters/units/U53.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U53",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U53",
+      "kind": "icon",
+      "targetPath": "ui/units/U53.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U53",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U54",
+      "kind": "sprite",
+      "targetPath": "characters/units/U54.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U54",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.U54",
+      "kind": "rig",
+      "targetPath": "characters/units/U54.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "U54",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U54",
+      "kind": "icon",
+      "targetPath": "ui/units/U54.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "crop_from_unit",
+      "ownerId": "U54",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "hero.H01",
+      "kind": "sprite",
+      "targetPath": "characters/heroes/H01.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H01",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "portrait.H01",
+      "kind": "portrait",
+      "targetPath": "ui/heroes/H01.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H01",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.H01",
+      "kind": "rig",
+      "targetPath": "characters/heroes/H01.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "H01",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "hero.H02",
+      "kind": "sprite",
+      "targetPath": "characters/heroes/H02.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H02",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "portrait.H02",
+      "kind": "portrait",
+      "targetPath": "ui/heroes/H02.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H02",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.H02",
+      "kind": "rig",
+      "targetPath": "characters/heroes/H02.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "H02",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "hero.H03",
+      "kind": "sprite",
+      "targetPath": "characters/heroes/H03.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H03",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "portrait.H03",
+      "kind": "portrait",
+      "targetPath": "ui/heroes/H03.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H03",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "rig.H03",
+      "kind": "rig",
+      "targetPath": "characters/heroes/H03.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "H03",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "hero.H04",
+      "kind": "sprite",
+      "targetPath": "characters/heroes/H04.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H04",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "portrait.H04",
+      "kind": "portrait",
+      "targetPath": "ui/heroes/H04.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H04",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.H04",
+      "kind": "rig",
+      "targetPath": "characters/heroes/H04.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "H04",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "hero.H05",
+      "kind": "sprite",
+      "targetPath": "characters/heroes/H05.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H05",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "portrait.H05",
+      "kind": "portrait",
+      "targetPath": "ui/heroes/H05.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H05",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.H05",
+      "kind": "rig",
+      "targetPath": "characters/heroes/H05.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "H05",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "hero.H06",
+      "kind": "sprite",
+      "targetPath": "characters/heroes/H06.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H06",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "portrait.H06",
+      "kind": "portrait",
+      "targetPath": "ui/heroes/H06.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "H06",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "rig.H06",
+      "kind": "rig",
+      "targetPath": "characters/heroes/H06.rig.json",
+      "size": null,
+      "method": "code_authored",
+      "ownerId": "H06",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "turret.TR11",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR11.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR11",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "turret.TR12",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR12.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR12",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "turret.TR21",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR21.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR21",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "turret.TR22",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR22.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR22",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "turret.TR31",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR31.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR31",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "turret.TR32",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR32.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR32",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "turret.TR41",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR41.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR41",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "turret.TR42",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR42.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR42",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "turret.TR51",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR51.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR51",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "turret.TR52",
+      "kind": "sprite",
+      "targetPath": "environment/turrets/TR52.png",
+      "size": [
+        384,
+        384
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "TR52",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "base.A1",
+      "kind": "sprite",
+      "targetPath": "environment/bases/A1.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A1",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A1.far",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A1-far.png",
+      "size": [
+        2048,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A1",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A1.mid",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A1-mid.png",
+      "size": [
+        2048,
+        640
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A1",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A1.ground",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A1-ground.png",
+      "size": [
+        2048,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A1",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "base.A2",
+      "kind": "sprite",
+      "targetPath": "environment/bases/A2.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A2",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A2.far",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A2-far.png",
+      "size": [
+        2048,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A2",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A2.mid",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A2-mid.png",
+      "size": [
+        2048,
+        640
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A2",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A2.ground",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A2-ground.png",
+      "size": [
+        2048,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A2",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "base.A3",
+      "kind": "sprite",
+      "targetPath": "environment/bases/A3.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A3",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "background.A3.far",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A3-far.png",
+      "size": [
+        2048,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A3",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "background.A3.mid",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A3-mid.png",
+      "size": [
+        2048,
+        640
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A3",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "background.A3.ground",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A3-ground.png",
+      "size": [
+        2048,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A3",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "base.A4",
+      "kind": "sprite",
+      "targetPath": "environment/bases/A4.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A4",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "background.A4.far",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A4-far.png",
+      "size": [
+        2048,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A4",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "background.A4.mid",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A4-mid.png",
+      "size": [
+        2048,
+        640
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A4",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "background.A4.ground",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A4-ground.png",
+      "size": [
+        2048,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A4",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "base.A5",
+      "kind": "sprite",
+      "targetPath": "environment/bases/A5.png",
+      "size": [
+        512,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A5",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A5.far",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A5-far.png",
+      "size": [
+        2048,
+        512
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A5",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A5.mid",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A5-mid.png",
+      "size": [
+        2048,
+        640
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A5",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "background.A5.ground",
+      "kind": "background",
+      "targetPath": "environment/backgrounds/A5-ground.png",
+      "size": [
+        2048,
+        256
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "A5",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S01",
+      "kind": "icon",
+      "targetPath": "ui/skills/S01.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S01",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "skill.S02",
+      "kind": "icon",
+      "targetPath": "ui/skills/S02.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S02",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S03",
+      "kind": "icon",
+      "targetPath": "ui/skills/S03.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S03",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S04",
+      "kind": "icon",
+      "targetPath": "ui/skills/S04.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S04",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "skill.S05",
+      "kind": "icon",
+      "targetPath": "ui/skills/S05.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S05",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "skill.S06",
+      "kind": "icon",
+      "targetPath": "ui/skills/S06.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S06",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S07",
+      "kind": "icon",
+      "targetPath": "ui/skills/S07.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S07",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S08",
+      "kind": "icon",
+      "targetPath": "ui/skills/S08.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S08",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S09",
+      "kind": "icon",
+      "targetPath": "ui/skills/S09.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S09",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S10",
+      "kind": "icon",
+      "targetPath": "ui/skills/S10.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S10",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.S11",
+      "kind": "icon",
+      "targetPath": "ui/skills/S11.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S11",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "skill.S12",
+      "kind": "icon",
+      "targetPath": "ui/skills/S12.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "S12",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.HS01",
+      "kind": "icon",
+      "targetPath": "ui/skills/HS01.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "HS01",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "skill.HS02",
+      "kind": "icon",
+      "targetPath": "ui/skills/HS02.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "HS02",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.HS03",
+      "kind": "icon",
+      "targetPath": "ui/skills/HS03.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "HS03",
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "skill.HS04",
+      "kind": "icon",
+      "targetPath": "ui/skills/HS04.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "HS04",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.HS05",
+      "kind": "icon",
+      "targetPath": "ui/skills/HS05.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "HS05",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "skill.HS06",
+      "kind": "icon",
+      "targetPath": "ui/skills/HS06.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "HS06",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I01",
+      "kind": "icon",
+      "targetPath": "ui/relics/I01.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I01",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I02",
+      "kind": "icon",
+      "targetPath": "ui/relics/I02.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I02",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I03",
+      "kind": "icon",
+      "targetPath": "ui/relics/I03.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I03",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I04",
+      "kind": "icon",
+      "targetPath": "ui/relics/I04.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I04",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I05",
+      "kind": "icon",
+      "targetPath": "ui/relics/I05.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I05",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I06",
+      "kind": "icon",
+      "targetPath": "ui/relics/I06.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I06",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I07",
+      "kind": "icon",
+      "targetPath": "ui/relics/I07.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I07",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I08",
+      "kind": "icon",
+      "targetPath": "ui/relics/I08.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I08",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I09",
+      "kind": "icon",
+      "targetPath": "ui/relics/I09.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I09",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I10",
+      "kind": "icon",
+      "targetPath": "ui/relics/I10.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I10",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I11",
+      "kind": "icon",
+      "targetPath": "ui/relics/I11.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I11",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "relic.I12",
+      "kind": "icon",
+      "targetPath": "ui/relics/I12.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "I12",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST01",
+      "kind": "icon",
+      "targetPath": "ui/status/ST01.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST01",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST02",
+      "kind": "icon",
+      "targetPath": "ui/status/ST02.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST02",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST03",
+      "kind": "icon",
+      "targetPath": "ui/status/ST03.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST03",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST04",
+      "kind": "icon",
+      "targetPath": "ui/status/ST04.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST04",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST05",
+      "kind": "icon",
+      "targetPath": "ui/status/ST05.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST05",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST06",
+      "kind": "icon",
+      "targetPath": "ui/status/ST06.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST06",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST07",
+      "kind": "icon",
+      "targetPath": "ui/status/ST07.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST07",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST08",
+      "kind": "icon",
+      "targetPath": "ui/status/ST08.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST08",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST09",
+      "kind": "icon",
+      "targetPath": "ui/status/ST09.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST09",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "status.ST10",
+      "kind": "icon",
+      "targetPath": "ui/status/ST10.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "ST10",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "resource.gold",
+      "kind": "icon",
+      "targetPath": "ui/resources/gold.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "resource.knowledge",
+      "kind": "icon",
+      "targetPath": "ui/resources/knowledge.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "resource.command",
+      "kind": "icon",
+      "targetPath": "ui/resources/command.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "resource.proficiency",
+      "kind": "icon",
+      "targetPath": "ui/resources/proficiency.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "resource.fragment",
+      "kind": "icon",
+      "targetPath": "ui/resources/fragment.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "resource.mastery",
+      "kind": "icon",
+      "targetPath": "ui/resources/mastery.png",
+      "size": [
+        96,
+        96
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "fx.stone_impact",
+      "kind": "effect_stamp",
+      "targetPath": "fx/stone_impact.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.metal_impact",
+      "kind": "effect_stamp",
+      "targetPath": "fx/metal_impact.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.muzzle",
+      "kind": "effect_stamp",
+      "targetPath": "fx/muzzle.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.dust",
+      "kind": "effect_stamp",
+      "targetPath": "fx/dust.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.arrow_trail",
+      "kind": "effect_stamp",
+      "targetPath": "fx/arrow_trail.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.cannon_shock",
+      "kind": "effect_stamp",
+      "targetPath": "fx/cannon_shock.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.arc_spark",
+      "kind": "effect_stamp",
+      "targetPath": "fx/arc_spark.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.shield_ring",
+      "kind": "effect_stamp",
+      "targetPath": "fx/shield_ring.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.mark_stamp",
+      "kind": "effect_stamp",
+      "targetPath": "fx/mark_stamp.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "fx.chrono_ripple",
+      "kind": "effect_stamp",
+      "targetPath": "fx/chrono_ripple.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "music.menu",
+      "kind": "audio",
+      "targetPath": "audio/music/menu.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "music.age1",
+      "kind": "audio",
+      "targetPath": "audio/music/age1.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "music.age2",
+      "kind": "audio",
+      "targetPath": "audio/music/age2.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "music.age3",
+      "kind": "audio",
+      "targetPath": "audio/music/age3.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "music.age4",
+      "kind": "audio",
+      "targetPath": "audio/music/age4.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "music.age5",
+      "kind": "audio",
+      "targetPath": "audio/music/age5.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "music.victory",
+      "kind": "audio",
+      "targetPath": "audio/music/victory.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "music.defeat",
+      "kind": "audio",
+      "targetPath": "audio/music/defeat.mp3",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "sfx.ui_confirm",
+      "kind": "audio",
+      "targetPath": "audio/sfx/ui_confirm.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.ui_cancel",
+      "kind": "audio",
+      "targetPath": "audio/sfx/ui_cancel.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.ui_error",
+      "kind": "audio",
+      "targetPath": "audio/sfx/ui_error.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.queue_add",
+      "kind": "audio",
+      "targetPath": "audio/sfx/queue_add.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.unit_spawn",
+      "kind": "audio",
+      "targetPath": "audio/sfx/unit_spawn.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.unit_death",
+      "kind": "audio",
+      "targetPath": "audio/sfx/unit_death.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.hero_death",
+      "kind": "audio",
+      "targetPath": "audio/sfx/hero_death.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.hero_respawn",
+      "kind": "audio",
+      "targetPath": "audio/sfx/hero_respawn.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.evolve",
+      "kind": "audio",
+      "targetPath": "audio/sfx/evolve.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.rush_flag",
+      "kind": "audio",
+      "targetPath": "audio/sfx/rush_flag.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.shield_hit",
+      "kind": "audio",
+      "targetPath": "audio/sfx/shield_hit.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.shield_break",
+      "kind": "audio",
+      "targetPath": "audio/sfx/shield_break.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.stone_hit",
+      "kind": "audio",
+      "targetPath": "audio/sfx/stone_hit.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.metal_hit",
+      "kind": "audio",
+      "targetPath": "audio/sfx/metal_hit.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.arrow_fire",
+      "kind": "audio",
+      "targetPath": "audio/sfx/arrow_fire.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.arrow_hit",
+      "kind": "audio",
+      "targetPath": "audio/sfx/arrow_hit.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.musket_fire",
+      "kind": "audio",
+      "targetPath": "audio/sfx/musket_fire.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.cannon_fire",
+      "kind": "audio",
+      "targetPath": "audio/sfx/cannon_fire.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.cannon_hit",
+      "kind": "audio",
+      "targetPath": "audio/sfx/cannon_hit.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.arc_fire",
+      "kind": "audio",
+      "targetPath": "audio/sfx/arc_fire.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.skill_cast",
+      "kind": "audio",
+      "targetPath": "audio/sfx/skill_cast.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.loot_collect",
+      "kind": "audio",
+      "targetPath": "audio/sfx/loot_collect.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.base_danger",
+      "kind": "audio",
+      "targetPath": "audio/sfx/base_danger.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "sfx.base_destroyed",
+      "kind": "audio",
+      "targetPath": "audio/sfx/base_destroyed.wav",
+      "size": null,
+      "method": "local_original_synthesis",
+      "ownerId": null,
+      "status": "planned",
+      "milestone": "M1",
+      "priority": "slice"
+    },
+    {
+      "key": "icon.U15",
+      "kind": "icon",
+      "targetPath": "ui/units/U15.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U15",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U25",
+      "kind": "icon",
+      "targetPath": "ui/units/U25.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U25",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U35",
+      "kind": "icon",
+      "targetPath": "ui/units/U35.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U35",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U45",
+      "kind": "icon",
+      "targetPath": "ui/units/U45.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U45",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "icon.U55",
+      "kind": "icon",
+      "targetPath": "ui/units/U55.png",
+      "size": [
+        128,
+        128
+      ],
+      "method": "sub2_then_local_process",
+      "ownerId": "U55",
+      "status": "planned",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U15",
+      "kind": "sprite",
+      "targetPath": "characters/units/U15.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_first_frame",
+      "ownerId": "U15",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U15.enemy",
+      "kind": "sprite",
+      "targetPath": "characters/units/U15-enemy.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U15",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U15",
+      "kind": "animation",
+      "targetPath": "characters/animations/U15.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_sheet",
+      "ownerId": "U15",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U15.enemy",
+      "kind": "animation",
+      "targetPath": "characters/animations/U15-enemy.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U15",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U25",
+      "kind": "sprite",
+      "targetPath": "characters/units/U25.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_first_frame",
+      "ownerId": "U25",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U25.enemy",
+      "kind": "sprite",
+      "targetPath": "characters/units/U25-enemy.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U25",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U25",
+      "kind": "animation",
+      "targetPath": "characters/animations/U25.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_sheet",
+      "ownerId": "U25",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U25.enemy",
+      "kind": "animation",
+      "targetPath": "characters/animations/U25-enemy.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U25",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U35",
+      "kind": "sprite",
+      "targetPath": "characters/units/U35.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_first_frame",
+      "ownerId": "U35",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U35.enemy",
+      "kind": "sprite",
+      "targetPath": "characters/units/U35-enemy.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U35",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U35",
+      "kind": "animation",
+      "targetPath": "characters/animations/U35.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_sheet",
+      "ownerId": "U35",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U35.enemy",
+      "kind": "animation",
+      "targetPath": "characters/animations/U35-enemy.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U35",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U45",
+      "kind": "sprite",
+      "targetPath": "characters/units/U45.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_first_frame",
+      "ownerId": "U45",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U45.enemy",
+      "kind": "sprite",
+      "targetPath": "characters/units/U45-enemy.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U45",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U45",
+      "kind": "animation",
+      "targetPath": "characters/animations/U45.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_sheet",
+      "ownerId": "U45",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U45.enemy",
+      "kind": "animation",
+      "targetPath": "characters/animations/U45-enemy.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U45",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U55",
+      "kind": "sprite",
+      "targetPath": "characters/units/U55.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_first_frame",
+      "ownerId": "U55",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "unit.U55.enemy",
+      "kind": "sprite",
+      "targetPath": "characters/units/U55-enemy.png",
+      "size": [
+        256,
+        256
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U55",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U55",
+      "kind": "animation",
+      "targetPath": "characters/animations/U55.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_sheet",
+      "ownerId": "U55",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    },
+    {
+      "key": "animation.U55.enemy",
+      "kind": "animation",
+      "targetPath": "characters/animations/U55-enemy.png",
+      "size": [
+        768,
+        640
+      ],
+      "method": "sub2_animation_enemy_variant",
+      "ownerId": "U55",
+      "status": "accepted",
+      "milestone": "M3",
+      "priority": "full_release"
+    }
+  ]
+}

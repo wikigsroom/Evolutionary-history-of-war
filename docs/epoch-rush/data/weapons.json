@@ -1,0 +1,58 @@
+[
+  {
+    "id": "W01",
+    "name": "投石",
+    "projectileSpeed": 360,
+    "hitMode": "swept_segment",
+    "visualFamily": "stone"
+  },
+  {
+    "id": "W02",
+    "name": "近战兵器",
+    "projectileSpeed": 0,
+    "hitMode": "contact_on_release",
+    "visualFamily": "swing"
+  },
+  {
+    "id": "W03",
+    "name": "箭与弩",
+    "projectileSpeed": 600,
+    "hitMode": "swept_segment",
+    "visualFamily": "arrow"
+  },
+  {
+    "id": "W04",
+    "name": "枪弹",
+    "projectileSpeed": 1100,
+    "hitMode": "swept_segment",
+    "visualFamily": "bullet"
+  },
+  {
+    "id": "W05",
+    "name": "炮弹",
+    "projectileSpeed": 400,
+    "hitMode": "swept_segment_then_splash",
+    "visualFamily": "cannon"
+  },
+  {
+    "id": "W06",
+    "name": "骑兵冲击",
+    "projectileSpeed": 0,
+    "hitMode": "first_contact_after_run",
+    "visualFamily": "charge"
+  },
+  {
+    "id": "W07",
+    "name": "电弧",
+    "projectileSpeed": 0,
+    "hitMode": "locked_target_bounded_chain",
+    "visualFamily": "arc"
+  },
+  {
+    "id": "W08",
+    "name": "战鼓冲击",
+    "projectileSpeed": 0,
+    "hitMode": "ranged_pulse",
+    "visualFamily": "drum"
+  }
+]

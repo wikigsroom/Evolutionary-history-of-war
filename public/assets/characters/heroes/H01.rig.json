@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "sourceKey": "hero.H01",
+  "size": [
+    512,
+    512
+  ],
+  "visibleBounds": [
+    77,
+    104,
+    494,
+    461
+  ],
+  "bodyTop": 189.44,
+  "anchor": [
+    0.5,
+    0.9
+  ],
+  "motionClass": "biped",
+  "parts": [
+    {
+      "key": "rig.H01.body",
+      "role": "body",
+      "bounds": [
+        77,
+        104,
+        494,
+        459
+      ],
+      "pivot": [
+        256.0,
+        460.8
+      ]
+    },
+    {
+      "key": "rig.H01.head",
+      "role": "head",
+      "bounds": [
+        307,
+        189,
+        376,
+        267
+      ],
+      "pivot": [
+        337.92,
+        266.24
+      ]
+    },
+    {
+      "key": "rig.H01.weapon",
+      "role": "weapon",
+      "bounds": [
+        368,
+        287,
+        494,
+        374
+      ],
+      "pivot": [
+        373.76,
+        327.68
+      ]
+    },
+    {
+      "key": "rig.H01.leg0",
+      "role": "leg0",
+      "bounds": [
+        223,
+        389,
+        297,
+        461
+      ],
+      "pivot": [
+        262.4,
+        395.264
+      ]
+    },
+    {
+      "key": "rig.H01.leg1",
+      "role": "leg1",
+      "bounds": [
+        322,
+        389,
+        405,
+        460
+      ],
+      "pivot": [
+        357.12,
+        395.264
+      ]
+    },
+    {
+      "key": "rig.H01.cloth",
+      "role": "cloth",
+      "bounds": [
+        152,
+        312,
+        246,
+        383
+      ],
+      "pivot": [
+        245.76,
+        322.56
+      ]
+    }
+  ],
+  "clips": {
+    "idle": {
+      "periodSec": 2.4
+    },
+    "move": {
+      "stride": 46
+    },
+    "windup": {
+      "weaponAngle": -12
+    },
+    "release": {
+      "weaponAngle": 8,
+      "recoil": 7
+    },
+    "hit": {
+      "flashMs": 75
+    },
+    "dead": {
+      "durationSec": 0.8
+    },
+    "skill": {
+      "leanAngle": 7
+    },
+    "respawn": {
+      "fadeSec": 0.35
+    }
+  }
+}

@@ -1,0 +1,51 @@
+Epoch Rush — Audio credits / 音频素材声明
+
+CC0-1.0 public-domain dedication: https://creativecommons.org/publicdomain/zero/1.0/
+Music has been mastered/edited. Sound effects have been layered, filtered and arranged.
+Original synthesis/cadences and game mix: Epoch Rush audio pipeline.
+
+Impact Sounds — Kenney (CC0-1.0)
+https://kenney.nl/assets/impact-sounds
+Source SHA-256: 029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8
+
+Interface Sounds — Kenney (CC0-1.0)
+https://kenney.nl/assets/interface-sounds
+Source SHA-256: f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232
+
+RPG Audio — Kenney (CC0-1.0)
+https://kenney.nl/assets/rpg-audio
+Source SHA-256: 6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b
+
+Sci-Fi Sounds — Kenney (CC0-1.0)
+https://kenney.nl/assets/sci-fi-sounds
+Source SHA-256: 119340f351a5098ad814f78719438c0da355a9ce8a4c8a3af6a8d48aa3d49e04
+
+Music Jingles — Kenney (CC0-1.0)
+https://kenney.nl/assets/music-jingles
+Source SHA-256: b729ba57959bd58793d2c5cafa348aaf2655d354f3da35ec4729e03ec77197b8
+
+Krakatoa — Kistol (CC0-1.0)
+https://opengameart.org/content/krakatoa
+Source SHA-256: 3edb66fab6fc80d1d285d274dc018d61f9bbe20ea0063509c8e3a2e772084a21
+
+Hope (Orchestral battle music) — MintoDog (CC0-1.0)
+https://opengameart.org/content/hopeorchestral-battle-music
+Source SHA-256: 5da6876e90fb07cd6e7a28fb03b436bbd1ada4d24b9f6cf6284a2104063c4cc3
+
+Epic March Loop — Eldritch Grim (CC0-1.0)
+https://opengameart.org/content/epic-war-loop
+Source SHA-256: 7dffcb82140f3aced075b2766f135c17757c60bd8f7a2717b11ab49318c824d6
+
+8-Bit Battle Loop — Theodore Kerr (Wolfgang_) (CC0-1.0)
+https://opengameart.org/content/8-bit-battle-loop
+Source SHA-256: 3ffedb0875b311605321ce00def96d8416c4668e9331ea4ee4abb6430d74ab8b
+
+Awake! (Megawall-10) — cynicmusic (CC0-1.0)
+https://opengameart.org/content/awake-megawall-10
+Artist: https://cynicmusic.com/ ; https://pixelsphere.org/
+Source SHA-256: 462c85304df0ea5369cb98aaae158108c92227fa5f442fb63a2da6febbe82ded
+
+relax_background1 — joaquinton (CC0-1.0)
+https://opengameart.org/content/relaxbackground1-0
+Source SHA-256: b362bd0017400836b6dc4b4c581e7516c8e1e4bff1b97e1107e14ae00d02f751
+

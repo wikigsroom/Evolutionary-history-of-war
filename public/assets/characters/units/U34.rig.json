@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "sourceKey": "unit.U34",
+  "size": [
+    384,
+    384
+  ],
+  "visibleBounds": [
+    33,
+    66,
+    370,
+    346
+  ],
+  "bodyTop": 96.0,
+  "anchor": [
+    0.5,
+    0.9
+  ],
+  "motionClass": "mounted",
+  "parts": [
+    {
+      "key": "rig.U34.body",
+      "role": "body",
+      "bounds": [
+        33,
+        66,
+        370,
+        344
+      ],
+      "pivot": [
+        192.0,
+        345.6
+      ]
+    },
+    {
+      "key": "rig.U34.head",
+      "role": "head",
+      "bounds": [
+        142,
+        96,
+        189,
+        158
+      ],
+      "pivot": [
+        165.12,
+        157.44
+      ]
+    },
+    {
+      "key": "rig.U34.weapon",
+      "role": "weapon",
+      "bounds": [
+        189,
+        145,
+        370,
+        196
+      ],
+      "pivot": [
+        199.68,
+        168.96
+      ]
+    },
+    {
+      "key": "rig.U34.leg0",
+      "role": "leg0",
+      "bounds": [
+        61,
+        284,
+        129,
+        346
+      ],
+      "pivot": [
+        95.03999999999999,
+        288.76800000000003
+      ]
+    },
+    {
+      "key": "rig.U34.leg1",
+      "role": "leg1",
+      "bounds": [
+        129,
+        284,
+        196,
+        346
+      ],
+      "pivot": [
+        162.24,
+        288.76800000000003
+      ]
+    },
+    {
+      "key": "rig.U34.leg2",
+      "role": "leg2",
+      "bounds": [
+        196,
+        284,
+        264,
+        346
+      ],
+      "pivot": [
+        229.43999999999997,
+        288.76800000000003
+      ]
+    },
+    {
+      "key": "rig.U34.leg3",
+      "role": "leg3",
+      "bounds": [
+        264,
+        285,
+        322,
+        346
+      ],
+      "pivot": [
+        296.64,
+        288.76800000000003
+      ]
+    },
+    {
+      "key": "rig.U34.cloth",
+      "role": "cloth",
+      "bounds": [
+        33,
+        102,
+        97,
+        123
+      ],
+      "pivot": [
+        96.0,
+        88.32000000000001
+      ]
+    }
+  ],
+  "clips": {
+    "idle": {
+      "periodSec": 2.4
+    },
+    "move": {
+      "stride": 65
+    },
+    "windup": {
+      "weaponAngle": -12
+    },
+    "release": {
+      "weaponAngle": 8,
+      "recoil": 7
+    },
+    "hit": {
+      "flashMs": 75
+    },
+    "dead": {
+      "durationSec": 0.8
+    },
+    "skill": {
+      "leanAngle": 7
+    },
+    "respawn": {
+      "fadeSec": 0.35
+    }
+  }
+}

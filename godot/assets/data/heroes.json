@@ -1,0 +1,152 @@
+[
+  {
+    "id": "H01",
+    "name": "砺川",
+    "title": "战旗先锋",
+    "hpBase": 390,
+    "attackBase": 30,
+    "armor": 16,
+    "range": 55,
+    "attackPeriodSec": 1.0,
+    "moveSpeed": 72,
+    "damageType": "physical",
+    "signatureSkillId": "HS01",
+    "unlockMissionId": null,
+    "specializationIds": [
+      "P011",
+      "P012",
+      "P013"
+    ],
+    "defaultCommonSkillIds": [
+      "S04",
+      "S05"
+    ],
+    "energyResistance": 0.05,
+    "weaponId": "W02"
+  },
+  {
+    "id": "H02",
+    "name": "岚翎",
+    "title": "鹰眼游侠",
+    "hpBase": 250,
+    "attackBase": 31,
+    "armor": 4,
+    "range": 310,
+    "attackPeriodSec": 1.35,
+    "moveSpeed": 60,
+    "damageType": "pierce",
+    "signatureSkillId": "HS02",
+    "unlockMissionId": "M03",
+    "specializationIds": [
+      "P021",
+      "P022",
+      "P023"
+    ],
+    "defaultCommonSkillIds": [
+      "S10",
+      "S03"
+    ],
+    "energyResistance": 0.05,
+    "weaponId": "W03"
+  },
+  {
+    "id": "H03",
+    "name": "铎山",
+    "title": "铁壁守卫",
+    "hpBase": 540,
+    "attackBase": 21,
+    "armor": 28,
+    "range": 50,
+    "attackPeriodSec": 1.3,
+    "moveSpeed": 50,
+    "damageType": "physical",
+    "signatureSkillId": "HS03",
+    "unlockMissionId": null,
+    "specializationIds": [
+      "P031",
+      "P032",
+      "P033"
+    ],
+    "defaultCommonSkillIds": [
+      "S01",
+      "S11"
+    ],
+    "energyResistance": 0.1,
+    "weaponId": "W02"
+  },
+  {
+    "id": "H04",
+    "name": "绮衡",
+    "title": "军械匠师",
+    "hpBase": 300,
+    "attackBase": 20,
+    "armor": 10,
+    "range": 250,
+    "attackPeriodSec": 1.35,
+    "moveSpeed": 60,
+    "damageType": "physical",
+    "signatureSkillId": "HS04",
+    "unlockMissionId": "M07",
+    "specializationIds": [
+      "P041",
+      "P042",
+      "P043"
+    ],
+    "defaultCommonSkillIds": [
+      "S02",
+      "S04"
+    ],
+    "energyResistance": 0.05,
+    "weaponId": "W04"
+  },
+  {
+    "id": "H05",
+    "name": "溯青",
+    "title": "时序学者",
+    "hpBase": 300,
+    "attackBase": 18,
+    "armor": 6,
+    "range": 240,
+    "attackPeriodSec": 1.5,
+    "moveSpeed": 62,
+    "damageType": "energy",
+    "signatureSkillId": "HS05",
+    "unlockMissionId": "M15",
+    "specializationIds": [
+      "P051",
+      "P052",
+      "P053"
+    ],
+    "defaultCommonSkillIds": [
+      "S06",
+      "S07"
+    ],
+    "energyResistance": 0.05,
+    "weaponId": "W07"
+  },
+  {
+    "id": "H06",
+    "name": "麦穗",
+    "title": "行军统筹",
+    "hpBase": 310,
+    "attackBase": 16,
+    "armor": 10,
+    "range": 220,
+    "attackPeriodSec": 1.3,
+    "moveSpeed": 58,
+    "damageType": "physical",
+    "signatureSkillId": "HS06",
+    "unlockMissionId": "M11",
+    "specializationIds": [
+      "P061",
+      "P062",
+      "P063"
+    ],
+    "defaultCommonSkillIds": [
+      "S12",
+      "S01"
+    ],
+    "energyResistance": 0.05,
+    "weaponId": "W03"
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "id": "R21",
+    "eraId": "A2",
+    "name": "尖锋·青铜城邦",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A2"
+  },
+  {
+    "id": "R22",
+    "eraId": "A2",
+    "name": "护阵·青铜城邦",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A2"
+  },
+  {
+    "id": "R23",
+    "eraId": "A2",
+    "name": "匠学·青铜城邦",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A2"
+  },
+  {
+    "id": "R31",
+    "eraId": "A3",
+    "name": "尖锋·王国骑士",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A3"
+  },
+  {
+    "id": "R32",
+    "eraId": "A3",
+    "name": "护阵·王国骑士",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A3"
+  },
+  {
+    "id": "R33",
+    "eraId": "A3",
+    "name": "匠学·王国骑士",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A3"
+  },
+  {
+    "id": "R41",
+    "eraId": "A4",
+    "name": "尖锋·钢铁工业",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A4"
+  },
+  {
+    "id": "R42",
+    "eraId": "A4",
+    "name": "护阵·钢铁工业",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A4"
+  },
+  {
+    "id": "R43",
+    "eraId": "A4",
+    "name": "匠学·钢铁工业",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A4"
+  },
+  {
+    "id": "R51",
+    "eraId": "A5",
+    "name": "尖锋·轨道文明",
+    "description": "普通兵攻击 +5%",
+    "effects": {
+      "unitAttackBonus": 0.05
+    },
+    "choiceGroup": "evolution_A5"
+  },
+  {
+    "id": "R52",
+    "eraId": "A5",
+    "name": "护阵·轨道文明",
+    "description": "普通兵最大生命 +6%",
+    "effects": {
+      "unitHpBonus": 0.06
+    },
+    "choiceGroup": "evolution_A5"
+  },
+  {
+    "id": "R53",
+    "eraId": "A5",
+    "name": "匠学·轨道文明",
+    "description": "基础军资收入 +5%，学识收入 +4%",
+    "effects": {
+      "incomeBonus": 0.05,
+      "knowledgeIncomeBonus": 0.04
+    },
+    "choiceGroup": "evolution_A5"
+  }
+]

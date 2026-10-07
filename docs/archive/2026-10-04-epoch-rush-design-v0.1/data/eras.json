@@ -1,0 +1,47 @@
+[
+  {
+    "id": "A1",
+    "name": "石器部落",
+    "hpAttackMultiplier": 1,
+    "costMultiplier": 1,
+    "incomeMultiplier": 1,
+    "baseHp": 2400,
+    "nextEvolutionKnowledge": 160
+  },
+  {
+    "id": "A2",
+    "name": "青铜城邦",
+    "hpAttackMultiplier": 1.45,
+    "costMultiplier": 1.15,
+    "incomeMultiplier": 1.2,
+    "baseHp": 3200,
+    "nextEvolutionKnowledge": 260
+  },
+  {
+    "id": "A3",
+    "name": "王国骑士",
+    "hpAttackMultiplier": 2.05,
+    "costMultiplier": 1.3,
+    "incomeMultiplier": 1.45,
+    "baseHp": 4200,
+    "nextEvolutionKnowledge": 400
+  },
+  {
+    "id": "A4",
+    "name": "钢铁工业",
+    "hpAttackMultiplier": 2.9,
+    "costMultiplier": 1.45,
+    "incomeMultiplier": 1.75,
+    "baseHp": 5500,
+    "nextEvolutionKnowledge": 600
+  },
+  {
+    "id": "A5",
+    "name": "轨道文明",
+    "hpAttackMultiplier": 4.1,
+    "costMultiplier": 1.6,
+    "incomeMultiplier": 2.1,
+    "baseHp": 7200,
+    "nextEvolutionKnowledge": null
+  }
+]

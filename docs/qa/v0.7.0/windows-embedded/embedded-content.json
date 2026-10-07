@@ -1,0 +1,28 @@
+{
+  "atlasesLoaded": 252,
+  "checkedData": [
+    "animations.json",
+    "builds.json",
+    "enemy-profiles.json",
+    "era-specials.json",
+    "eras.json",
+    "hero-evolutions.json",
+    "heroes.json",
+    "loot.json",
+    "missions.json",
+    "relics.json",
+    "rules.json",
+    "run-upgrades.json",
+    "skills.json",
+    "specializations.json",
+    "statuses.json",
+    "talents.json",
+    "turrets.json",
+    "units.json",
+    "weapons.json"
+  ],
+  "executable": "<local-build>/Epoch-Rush-Godot.exe",
+  "failures": [],
+  "passed": true,
+  "version": "0.7.0"
+}

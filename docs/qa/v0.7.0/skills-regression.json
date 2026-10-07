@@ -1,0 +1,1582 @@
+{
+	"checks": [
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A1",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A1",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A1",
+			"passed": true
+		},
+		{
+			"detail": 33.0,
+			"name": "Shield skill is finite H03-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A1",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A1",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A1",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A1",
+			"passed": true
+		},
+		{
+			"detail": 78.1666666666667,
+			"name": "Supply scales with era economy H06-A1",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A1",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A2",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A2",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A2",
+			"passed": true
+		},
+		{
+			"detail": 165.0,
+			"name": "Shield skill is finite H03-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A2",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A2",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A2",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A2",
+			"passed": true
+		},
+		{
+			"detail": 100.053333333333,
+			"name": "Supply scales with era economy H06-A2",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A2",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A3",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A3",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A3",
+			"passed": true
+		},
+		{
+			"detail": 825.0,
+			"name": "Shield skill is finite H03-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A3",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A3",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A3",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A3",
+			"passed": true
+		},
+		{
+			"detail": 128.068266666667,
+			"name": "Supply scales with era economy H06-A3",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A3",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A4",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A4",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A4",
+			"passed": true
+		},
+		{
+			"detail": 4125.0,
+			"name": "Shield skill is finite H03-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A4",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A4",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A4",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A4",
+			"passed": true
+		},
+		{
+			"detail": 163.931133333333,
+			"name": "Supply scales with era economy H06-A4",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A4",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A5",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A5",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A5",
+			"passed": true
+		},
+		{
+			"detail": 20625.0,
+			"name": "Shield skill is finite H03-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A5",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A5",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A5",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A5",
+			"passed": true
+		},
+		{
+			"detail": 209.8306,
+			"name": "Supply scales with era economy H06-A5",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A5",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A6",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A6",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A6",
+			"passed": true
+		},
+		{
+			"detail": 103125.0,
+			"name": "Shield skill is finite H03-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A6",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A6",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A6",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A6",
+			"passed": true
+		},
+		{
+			"detail": 268.580666666667,
+			"name": "Supply scales with era economy H06-A6",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A6",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A7",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A7",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A7",
+			"passed": true
+		},
+		{
+			"detail": 515625.0,
+			"name": "Shield skill is finite H03-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A7",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A7",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A7",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A7",
+			"passed": true
+		},
+		{
+			"detail": 343.777,
+			"name": "Supply scales with era economy H06-A7",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A7",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A8",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A8",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A8",
+			"passed": true
+		},
+		{
+			"detail": 2578125.0,
+			"name": "Shield skill is finite H03-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A8",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A8",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A8",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A8",
+			"passed": true
+		},
+		{
+			"detail": 440.03925,
+			"name": "Supply scales with era economy H06-A8",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A8",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A9",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A9",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A9",
+			"passed": true
+		},
+		{
+			"detail": 12890625.0,
+			"name": "Shield skill is finite H03-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A9",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A9",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A9",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A9",
+			"passed": true
+		},
+		{
+			"detail": 563.253366666667,
+			"name": "Supply scales with era economy H06-A9",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A9",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H01-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge actually hits H01-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Charge ends in legal occupied lane H01-A10",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H02-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley uses era weapon H02-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley distinguishes projectile travel from instant beam H02-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Volley deals damage H02-A10",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H03-A10",
+			"passed": true
+		},
+		{
+			"detail": 64453125.0,
+			"name": "Shield skill is finite H03-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Era cover applies H03-A10",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H04-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "One legal era turret is deployed H04-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon art and weapon evolve H04-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Summon expires without infinite stack H04-A10",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H05-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field uses era radius H05-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Field pulse damages and slows H05-A10",
+			"passed": true
+		},
+		{
+			"detail": {
+				"ok": true
+			},
+			"name": "Cast H06-A10",
+			"passed": true
+		},
+		{
+			"detail": 720.962433333334,
+			"name": "Supply scales with era economy H06-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Supply heal shares recovery cap H06-A10",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Invalid environmental save is rejected without partial mutation",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Fractional residual shield is fully broken",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "Garrisoned commander heals in bounded one-second pulses",
+			"passed": true
+		}
+	],
+	"forms": [
+		{
+			"attack": 30.0,
+			"displacement": 30.0,
+			"form": "H01-A1",
+			"maxHp": 390.0,
+			"skill": "骨槌冲锋"
+		},
+		{
+			"attack": 31.0,
+			"damage": 58.0,
+			"form": "H02-A1",
+			"maxHp": 225.0,
+			"skill": "燧石连投"
+		},
+		{
+			"attack": 21.0,
+			"form": "H03-A1",
+			"maxHp": 540.0,
+			"shieldRatio": 0.2,
+			"skill": "祖灵护佑"
+		},
+		{
+			"attack": 20.0,
+			"form": "H04-A1",
+			"lifetime": 18.0,
+			"maxHp": 300.0,
+			"range": 200.0,
+			"skill": "投石机关"
+		},
+		{
+			"attack": 18.0,
+			"duration": 3.0,
+			"form": "H05-A1",
+			"maxHp": 300.0,
+			"radius": 85.0,
+			"skill": "祭仪泥沼"
+		},
+		{
+			"attack": 16.0,
+			"form": "H06-A1",
+			"gold": 78.1666666666667,
+			"maxHp": 310.0,
+			"skill": "草药补给"
+		},
+		{
+			"attack": 150.0,
+			"displacement": 34.0,
+			"form": "H01-A2",
+			"maxHp": 1950.0,
+			"skill": "盾矛突进"
+		},
+		{
+			"attack": 155.0,
+			"damage": 292.0,
+			"form": "H02-A2",
+			"maxHp": 1125.0,
+			"skill": "青铜连矢"
+		},
+		{
+			"attack": 105.0,
+			"form": "H03-A2",
+			"maxHp": 2700.0,
+			"shieldRatio": 0.2,
+			"skill": "青铜誓卫"
+		},
+		{
+			"attack": 100.0,
+			"form": "H04-A2",
+			"lifetime": 18.5,
+			"maxHp": 1500.0,
+			"range": 210.0,
+			"skill": "城邦弩机"
+		},
+		{
+			"attack": 90.0,
+			"duration": 3.25,
+			"form": "H05-A2",
+			"maxHp": 1500.0,
+			"radius": 89.0,
+			"skill": "日轮牵制"
+		},
+		{
+			"attack": 80.0,
+			"form": "H06-A2",
+			"gold": 100.053333333333,
+			"maxHp": 1550.0,
+			"skill": "城邦军需"
+		},
+		{
+			"attack": 750.0,
+			"displacement": 38.0,
+			"form": "H01-A3",
+			"maxHp": 9750.0,
+			"skill": "军团破阵"
+		},
+		{
+			"attack": 775.0,
+			"damage": 1462.0,
+			"form": "H02-A3",
+			"maxHp": 5625.0,
+			"skill": "重弩点射"
+		},
+		{
+			"attack": 525.0,
+			"form": "H03-A3",
+			"maxHp": 13500.0,
+			"shieldRatio": 0.2,
+			"skill": "军团盾阵"
+		},
+		{
+			"attack": 500.0,
+			"form": "H04-A3",
+			"lifetime": 19.0,
+			"maxHp": 7500.0,
+			"range": 220.0,
+			"skill": "帝国重弩"
+		},
+		{
+			"attack": 450.0,
+			"duration": 3.5,
+			"form": "H05-A3",
+			"maxHp": 7500.0,
+			"radius": 93.0,
+			"skill": "阵线扰动"
+		},
+		{
+			"attack": 400.0,
+			"form": "H06-A3",
+			"gold": 128.068266666667,
+			"maxHp": 7750.0,
+			"skill": "军团补给"
+		},
+		{
+			"attack": 3750.0,
+			"displacement": 42.0,
+			"form": "H01-A4",
+			"maxHp": 48750.0,
+			"skill": "王国冲锋"
+		},
+		{
+			"attack": 3875.0,
+			"damage": 10971.0,
+			"form": "H02-A4",
+			"maxHp": 28125.0,
+			"skill": "鹰隼齐射"
+		},
+		{
+			"attack": 2625.0,
+			"form": "H03-A4",
+			"maxHp": 67500.0,
+			"shieldRatio": 0.2,
+			"skill": "城垒誓卫"
+		},
+		{
+			"attack": 2500.0,
+			"form": "H04-A4",
+			"lifetime": 19.5,
+			"maxHp": 37500.0,
+			"range": 230.0,
+			"skill": "折叠弩台"
+		},
+		{
+			"attack": 2250.0,
+			"duration": 3.75,
+			"form": "H05-A4",
+			"maxHp": 37500.0,
+			"radius": 97.0,
+			"skill": "风阵拘束"
+		},
+		{
+			"attack": 2000.0,
+			"form": "H06-A4",
+			"gold": 163.931133333333,
+			"maxHp": 38750.0,
+			"skill": "行军补给"
+		},
+		{
+			"attack": 18750.0,
+			"displacement": 46.0,
+			"form": "H01-A5",
+			"maxHp": 243750.0,
+			"skill": "军旗突击"
+		},
+		{
+			"attack": 19375.0,
+			"damage": 54855.0,
+			"form": "H02-A5",
+			"maxHp": 140625.0,
+			"skill": "线列齐射"
+		},
+		{
+			"attack": 13125.0,
+			"form": "H03-A5",
+			"maxHp": 337500.0,
+			"shieldRatio": 0.2,
+			"skill": "列阵掩护"
+		},
+		{
+			"attack": 12500.0,
+			"form": "H04-A5",
+			"lifetime": 20.0,
+			"maxHp": 187500.0,
+			"range": 240.0,
+			"skill": "火药炮台"
+		},
+		{
+			"attack": 11250.0,
+			"duration": 4.0,
+			"form": "H05-A5",
+			"maxHp": 187500.0,
+			"radius": 101.0,
+			"skill": "硝烟压制"
+		},
+		{
+			"attack": 10000.0,
+			"form": "H06-A5",
+			"gold": 209.8306,
+			"maxHp": 193750.0,
+			"skill": "火药补给"
+		},
+		{
+			"attack": 93750.0,
+			"displacement": 50.0,
+			"form": "H01-A6",
+			"maxHp": 1218750.0,
+			"skill": "刺刀突击"
+		},
+		{
+			"attack": 96875.0,
+			"damage": 274284.0,
+			"form": "H02-A6",
+			"maxHp": 703125.0,
+			"skill": "远距狙击"
+		},
+		{
+			"attack": 65625.0,
+			"form": "H03-A6",
+			"maxHp": 1687500.0,
+			"shieldRatio": 0.2,
+			"skill": "堑壕堡垒"
+		},
+		{
+			"attack": 62500.0,
+			"form": "H04-A6",
+			"lifetime": 20.5,
+			"maxHp": 937500.0,
+			"range": 250.0,
+			"skill": "战壕机枪"
+		},
+		{
+			"attack": 56250.0,
+			"duration": 4.25,
+			"form": "H05-A6",
+			"maxHp": 937500.0,
+			"radius": 105.0,
+			"skill": "磁场扰动"
+		},
+		{
+			"attack": 50000.0,
+			"form": "H06-A6",
+			"gold": 268.580666666667,
+			"maxHp": 968750.0,
+			"skill": "战壕补给"
+		},
+		{
+			"attack": 468750.0,
+			"displacement": 54.0,
+			"form": "H01-A7",
+			"maxHp": 6093750.0,
+			"skill": "突破推进"
+		},
+		{
+			"attack": 484375.0,
+			"damage": 1828576.0,
+			"form": "H02-A7",
+			"maxHp": 3515625.0,
+			"skill": "穿甲连射"
+		},
+		{
+			"attack": 328125.0,
+			"form": "H03-A7",
+			"maxHp": 8437500.0,
+			"shieldRatio": 0.2,
+			"skill": "钢盔守备"
+		},
+		{
+			"attack": 312500.0,
+			"form": "H04-A7",
+			"lifetime": 21.0,
+			"maxHp": 4687500.0,
+			"range": 260.0,
+			"skill": "防御火炮"
+		},
+		{
+			"attack": 281250.0,
+			"duration": 4.5,
+			"form": "H05-A7",
+			"maxHp": 4687500.0,
+			"radius": 109.0,
+			"skill": "电波压制"
+		},
+		{
+			"attack": 250000.0,
+			"form": "H06-A7",
+			"gold": 343.777,
+			"maxHp": 4843750.0,
+			"skill": "前线救护"
+		},
+		{
+			"attack": 2343750.0,
+			"displacement": 58.0,
+			"form": "H01-A8",
+			"maxHp": 30468750.0,
+			"skill": "战术突入"
+		},
+		{
+			"attack": 2421875.0,
+			"damage": 9142888.0,
+			"form": "H02-A8",
+			"maxHp": 17578125.0,
+			"skill": "制导点杀"
+		},
+		{
+			"attack": 1640625.0,
+			"form": "H03-A8",
+			"maxHp": 42187500.0,
+			"shieldRatio": 0.2,
+			"skill": "装甲屏障"
+		},
+		{
+			"attack": 1562500.0,
+			"form": "H04-A8",
+			"lifetime": 21.5,
+			"maxHp": 23437500.0,
+			"range": 270.0,
+			"skill": "遥控炮台"
+		},
+		{
+			"attack": 1406250.0,
+			"duration": 4.75,
+			"form": "H05-A8",
+			"maxHp": 23437500.0,
+			"radius": 113.0,
+			"skill": "战术干扰"
+		},
+		{
+			"attack": 1250000.0,
+			"form": "H06-A8",
+			"gold": 440.03925,
+			"maxHp": 24218750.0,
+			"skill": "空投补给"
+		},
+		{
+			"attack": 11718750.0,
+			"displacement": 62.0,
+			"form": "H01-A9",
+			"maxHp": 152343750.0,
+			"skill": "动力冲锋"
+		},
+		{
+			"attack": 12109375.0,
+			"damage": 45714444.0,
+			"form": "H02-A9",
+			"maxHp": 87890625.0,
+			"skill": "无人追猎"
+		},
+		{
+			"attack": 8203125.0,
+			"form": "H03-A9",
+			"maxHp": 210937500.0,
+			"shieldRatio": 0.2,
+			"skill": "电子护罩"
+		},
+		{
+			"attack": 7812500.0,
+			"form": "H04-A9",
+			"lifetime": 22.0,
+			"maxHp": 117187500.0,
+			"range": 280.0,
+			"skill": "无人炮塔"
+		},
+		{
+			"attack": 7031250.0,
+			"duration": 5.0,
+			"form": "H05-A9",
+			"maxHp": 117187500.0,
+			"radius": 117.0,
+			"skill": "共振封锁"
+		},
+		{
+			"attack": 6250000.0,
+			"form": "H06-A9",
+			"gold": 563.253366666667,
+			"maxHp": 121093750.0,
+			"skill": "无人补给"
+		},
+		{
+			"attack": 58593750.0,
+			"displacement": 66.0,
+			"form": "H01-A10",
+			"maxHp": 761718750.0,
+			"skill": "相位贯阵"
+		},
+		{
+			"attack": 60546875.0,
+			"damage": 285715295.0,
+			"form": "H02-A10",
+			"maxHp": 439453125.0,
+			"skill": "星轨连射"
+		},
+		{
+			"attack": 41015625.0,
+			"form": "H03-A10",
+			"maxHp": 1054687500.0,
+			"shieldRatio": 0.2,
+			"skill": "相位壁垒"
+		},
+		{
+			"attack": 39062500.0,
+			"form": "H04-A10",
+			"lifetime": 22.5,
+			"maxHp": 585937500.0,
+			"range": 290.0,
+			"skill": "轨道哨机"
+		},
+		{
+			"attack": 35156250.0,
+			"duration": 5.25,
+			"form": "H05-A10",
+			"maxHp": 585937500.0,
+			"radius": 121.0,
+			"skill": "裂隙场"
+		},
+		{
+			"attack": 31250000.0,
+			"form": "H06-A10",
+			"gold": 720.962433333334,
+			"maxHp": 605468750.0,
+			"skill": "时序补给"
+		}
+	],
+	"passed": true
+}

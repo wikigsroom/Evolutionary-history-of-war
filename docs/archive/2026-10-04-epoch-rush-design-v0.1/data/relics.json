@@ -1,0 +1,140 @@
+[
+  {
+    "id": "I01",
+    "name": "旧旗扣",
+    "rarity": "common",
+    "description": "换代增益持续 +2秒",
+    "effects": {
+      "rushBuffAddSec": 2
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I02",
+    "name": "护心石",
+    "rarity": "common",
+    "description": "英雄最大生命 +6%",
+    "effects": {
+      "heroHpBonus": 0.06
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I03",
+    "name": "工匠尺",
+    "rarity": "common",
+    "description": "训练时间降低5%",
+    "effects": {
+      "trainingReduction": 0.05
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I04",
+    "name": "斥候哨",
+    "rarity": "common",
+    "description": "通用技能施法距离 +40",
+    "effects": {
+      "commonCastRangeAdd": 40
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I05",
+    "name": "城门铆钉",
+    "rarity": "rare",
+    "description": "基地最大生命 +10%",
+    "effects": {
+      "baseHpBonus": 0.1
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I06",
+    "name": "鹰羽校准环",
+    "rarity": "rare",
+    "description": "标记条件加成增加5个百分点",
+    "effects": {
+      "markConditionalBonus": 0.05
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I07",
+    "name": "蓄压铜瓶",
+    "rarity": "rare",
+    "description": "能量上限 +10",
+    "effects": {
+      "commandMaxAdd": 10
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I08",
+    "name": "行军账本",
+    "rarity": "rare",
+    "description": "军资基础收入 +6%",
+    "effects": {
+      "incomeBonus": 0.06
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I09",
+    "name": "断序晶",
+    "rarity": "epic",
+    "description": "导电支链倍率从0.4增至0.55；能量类通用技能费用 +5",
+    "effects": {
+      "conductiveChainRatio": 0.55,
+      "energyCommonCostAdd": 5
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I10",
+    "name": "炽火芯",
+    "rarity": "epic",
+    "description": "燃烧持续 +1秒；引火罐费用 +3",
+    "effects": {
+      "burnDurationAddSec": 1,
+      "skillCostAdd": {
+        "S08": 3
+      }
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I11",
+    "name": "折叠盾纹",
+    "rarity": "epic",
+    "description": "护盾持续 +2秒；护盾比例减少3个百分点",
+    "effects": {
+      "shieldDurationAddSec": 2,
+      "shieldHpRatioAdd": -0.03
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  },
+  {
+    "id": "I12",
+    "name": "遗忘秒针",
+    "rarity": "epic",
+    "description": "专属冷却降低15%；专属费用 +8",
+    "effects": {
+      "signatureCooldownReduction": 0.15,
+      "signatureCostAdd": 8
+    },
+    "slots": 1,
+    "maximumCopiesEquipped": 1
+  }
+]

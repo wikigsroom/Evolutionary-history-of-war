@@ -1,0 +1,183 @@
+[
+  {
+    "id": "P011",
+    "heroId": "H01",
+    "name": "突袭",
+    "description": "冲锋距离 +80；受到的护盾量 -8%",
+    "effects": {
+      "chargeRangeAdd": 80,
+      "shieldReceivedBonus": -0.08
+    }
+  },
+  {
+    "id": "P012",
+    "heroId": "H01",
+    "name": "军阵",
+    "description": "冲锋击退减半，附近友军攻击 +10%，5秒",
+    "effects": {
+      "knockbackMultiplier": 0.5,
+      "allyAttackBonus": 0.1,
+      "durationSec": 5
+    }
+  },
+  {
+    "id": "P013",
+    "heroId": "H01",
+    "name": "破阵",
+    "description": "专属技对重甲条件伤害 +20%；专属技能量 +5",
+    "effects": {
+      "heavyConditionalBonus": 0.2,
+      "signatureCostAdd": 5
+    }
+  },
+  {
+    "id": "P021",
+    "heroId": "H02",
+    "name": "远猎",
+    "description": "射程 +40；自身最大生命 -10%",
+    "effects": {
+      "rangeAdd": 40,
+      "heroHpBonus": -0.1
+    }
+  },
+  {
+    "id": "P022",
+    "heroId": "H02",
+    "name": "贯羽",
+    "description": "专属箭穿透至第二目标；每次命中伤害 -15%",
+    "effects": {
+      "pierceTargets": 2,
+      "signatureDamageBonus": -0.15
+    }
+  },
+  {
+    "id": "P023",
+    "heroId": "H02",
+    "name": "斥候",
+    "description": "标记时长 +2秒；普攻伤害 -8%",
+    "effects": {
+      "markDurationAddSec": 2,
+      "heroAttackBonus": -0.08
+    }
+  },
+  {
+    "id": "P031",
+    "heroId": "H03",
+    "name": "壁垒",
+    "description": "专属护盾增加5%最大生命；移速 -15%",
+    "effects": {
+      "shieldHpRatioAdd": 0.05,
+      "heroMoveBonus": -0.15
+    }
+  },
+  {
+    "id": "P032",
+    "heroId": "H03",
+    "name": "反击",
+    "description": "护盾被击破时反击，基础伤害40，内置冷却8秒",
+    "effects": {
+      "shieldBreakDamageBase": 40,
+      "internalCooldownSec": 8
+    }
+  },
+  {
+    "id": "P033",
+    "heroId": "H03",
+    "name": "守望",
+    "description": "专属护盾优先保护生命比例最低的三名普通兵，英雄自己的护盾量 -20%",
+    "effects": {
+      "shieldPriority": "lowest_health_3",
+      "selfShieldMultiplier": 0.8
+    }
+  },
+  {
+    "id": "P041",
+    "heroId": "H04",
+    "name": "速装",
+    "description": "炮台持续 +4秒；炮台最大生命 -15%",
+    "effects": {
+      "summonDurationAddSec": 4,
+      "summonHpBonus": -0.15
+    }
+  },
+  {
+    "id": "P042",
+    "heroId": "H04",
+    "name": "重炮",
+    "description": "炮台伤害 +20%；攻击间隔 +15%",
+    "effects": {
+      "summonAttackBonus": 0.2,
+      "summonAttackPeriodBonus": 0.15
+    }
+  },
+  {
+    "id": "P043",
+    "heroId": "H04",
+    "name": "保全",
+    "description": "炮台自然到期回收18军资；持续 -2秒，被摧毁不给回收",
+    "effects": {
+      "naturalExpiryGold": 18,
+      "summonDurationAddSec": -2
+    }
+  },
+  {
+    "id": "P051",
+    "heroId": "H05",
+    "name": "迟滞",
+    "description": "专属减速从30%提高至45%；专属伤害 -10%",
+    "effects": {
+      "signatureSlowMagnitude": 0.45,
+      "signatureDamageBonus": -0.1
+    }
+  },
+  {
+    "id": "P052",
+    "heroId": "H05",
+    "name": "共振",
+    "description": "专属场施加导电；伤害 -15%，仍受单次6目标总上限",
+    "effects": {
+      "signatureAddsConductive": true,
+      "signatureDamageBonus": -0.15
+    }
+  },
+  {
+    "id": "P053",
+    "heroId": "H05",
+    "name": "稳序",
+    "description": "专属命中至少两敌返还8能量；冷却 +3秒",
+    "effects": {
+      "refundCommandOnTwoHits": 8,
+      "signatureCooldownAddSec": 3
+    }
+  },
+  {
+    "id": "P061",
+    "heroId": "H06",
+    "name": "粮道",
+    "description": "补给由60增至78军资；专属能量 +5",
+    "effects": {
+      "signatureGold": 78,
+      "signatureCostAdd": 5
+    }
+  },
+  {
+    "id": "P062",
+    "heroId": "H06",
+    "name": "急援",
+    "description": "治疗从15%提高至20%；训练推进从25%降至10%",
+    "effects": {
+      "healHpRatio": 0.2,
+      "queueProgressRatio": 0.1
+    }
+  },
+  {
+    "id": "P063",
+    "heroId": "H06",
+    "name": "整备",
+    "description": "训练推进从25%提高至40%；军资从60降至40",
+    "effects": {
+      "queueProgressRatio": 0.4,
+      "signatureGold": 40
+    }
+  }
+]
