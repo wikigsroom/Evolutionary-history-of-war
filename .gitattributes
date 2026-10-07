@@ -2,6 +2,7 @@
 
 # Keep recorded evidence byte-identical so published SHA-256 checks survive clones.
 docs/qa/v0.7.0/**/*.json -text
+docs/qa/base-facing/**/*.json -text
 
 # Native Windows command scripts use Windows line endings.
 *.bat text eol=crlf

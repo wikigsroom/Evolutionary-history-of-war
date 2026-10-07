@@ -86,6 +86,7 @@ def authored_content():
         eras.append({'id':era_id,'name':name,'hpAttackMultiplier':power,'hpMultiplier':power,'attackMultiplier':power,
             'costMultiplier':money,'incomeMultiplier':round(1.28**index,4),'knowledgeMultiplier':knowledge,
             'nextEvolutionKnowledge':XP[index],'baseHp':2400*power,'visual':look,'mapVariants':3,
+            'enemyBaseMirrored':number in REUSE,
             'backgrounds':[f'environment/eras/{era_id}-{v}.png' for v in range(1,4)],
             'ambient':(['bat','bird','pterosaur'] if number==1 else ['bird'] if number<5 else ['bird','balloon'] if number==5 else ['biplane','balloon'] if number==6 else ['fighter','bomber'] if number==7 else ['jet','helicopter'] if number==8 else ['drone','jet'] if number==9 else ['shuttle','drone']),
             'eventPool':(['meteor','dinosaur','rockfall'] if number==1 else ['meteor','rockfall','storm'] if number<6 else ['meteor','plane','storm'] if number<9 else ['meteor','drone','debris'])})

@@ -19,6 +19,16 @@ def write(path,value):
     path.parent.mkdir(parents=True,exist_ok=True)
     temp=path.with_suffix(path.suffix+'.tmp');temp.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');os.replace(temp,path)
 
+def set_base_orientation(era_id, enemy_mirrored):
+    """Record whether the enemy PNG already includes its horizontal mirror."""
+    path=ASSETS/'data/eras.json';eras=read(path)
+    for era in eras:
+        if era['id']==era_id:
+            era['enemyBaseMirrored']=enemy_mirrored
+            write(path,eras)
+            return
+    raise ValueError('Unknown base era: '+era_id)
+
 def remove_matte(image):
     data=np.array(image.convert('RGBA'))
     r=data[:,:,0].astype(int);g=data[:,:,1].astype(int);b=data[:,:,2].astype(int)
@@ -126,6 +136,7 @@ def process(job):
             state=ImageEnhance.Brightness(image).enhance(brightness)
             if suffix=='-ruin':state=state.resize((state.width,max(1,round(state.height*.45))),Image.Resampling.NEAREST)
             state.save(folder/f'{job["era"]}{suffix}.png',optimize=True);enemy_palette(state).save(folder/f'{job["era"]}{suffix}-enemy.png',optimize=True)
+        set_base_orientation(job['era'],False)
     elif kind in ['fx','events','ambient','turrets']:
         folder=ASSETS/('fx/eras' if kind=='fx' else 'environment/ambient' if kind=='ambient' else 'fx/events' if kind=='events' else 'environment/turrets');folder.mkdir(parents=True,exist_ok=True)
         names=['carrier','projectile','impact','shock','sparks','smoke'] if kind=='fx' else job.get('names',[])
@@ -170,6 +181,7 @@ def reuse_originals():
             for suffix in ['', '-worn','-critical','-ruin']:
                 for side in ['', '-enemy']:
                     destination=ASSETS/f'base/A{era}{suffix}{side}.png';destination.write_bytes(archive.read(f'godot/assets/base/A{old_era}{suffix}{side}.png'))
+            set_base_orientation('A'+str(era),True)
     write(ASSETS/'data/animations.json',metadata)
     print('Reused 20 approved era unit animation sheets; original identities preserved.',flush=True)
 

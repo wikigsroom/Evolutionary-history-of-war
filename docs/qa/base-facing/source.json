@@ -1,0 +1,415 @@
+{
+	"checks": 527,
+	"failures": [],
+	"passed": true,
+	"states": [
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A1-enemy.png",
+			"era": "A1",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A1.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A1-worn-enemy.png",
+			"era": "A1",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A1-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A1-critical-enemy.png",
+			"era": "A1",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A1-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A1-ruin-enemy.png",
+			"era": "A1",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A1-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A2-enemy.png",
+			"era": "A2",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A2.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A2-worn-enemy.png",
+			"era": "A2",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A2-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A2-critical-enemy.png",
+			"era": "A2",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A2-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A2-ruin-enemy.png",
+			"era": "A2",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A2-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A3-enemy.png",
+			"era": "A3",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A3.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A3-worn-enemy.png",
+			"era": "A3",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A3-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A3-critical-enemy.png",
+			"era": "A3",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A3-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A3-ruin-enemy.png",
+			"era": "A3",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A3-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A4-enemy.png",
+			"era": "A4",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A4.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A4-worn-enemy.png",
+			"era": "A4",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A4-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A4-critical-enemy.png",
+			"era": "A4",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A4-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A4-ruin-enemy.png",
+			"era": "A4",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A4-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A5-enemy.png",
+			"era": "A5",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A5.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A5-worn-enemy.png",
+			"era": "A5",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A5-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A5-critical-enemy.png",
+			"era": "A5",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A5-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A5-ruin-enemy.png",
+			"era": "A5",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A5-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A6-enemy.png",
+			"era": "A6",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A6.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A6-worn-enemy.png",
+			"era": "A6",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A6-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A6-critical-enemy.png",
+			"era": "A6",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A6-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A6-ruin-enemy.png",
+			"era": "A6",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A6-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A7-enemy.png",
+			"era": "A7",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A7.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A7-worn-enemy.png",
+			"era": "A7",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A7-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A7-critical-enemy.png",
+			"era": "A7",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A7-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A7-ruin-enemy.png",
+			"era": "A7",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A7-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A8-enemy.png",
+			"era": "A8",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A8.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A8-worn-enemy.png",
+			"era": "A8",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A8-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A8-critical-enemy.png",
+			"era": "A8",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A8-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A8-ruin-enemy.png",
+			"era": "A8",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A8-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A9-enemy.png",
+			"era": "A9",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A9.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A9-worn-enemy.png",
+			"era": "A9",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A9-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A9-critical-enemy.png",
+			"era": "A9",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A9-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": true,
+			"enemyTexture": "res://assets/base/A9-ruin-enemy.png",
+			"era": "A9",
+			"expectedEnemyFlipFromSilhouette": true,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A9-ruin.png",
+			"state": "ruin"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A10-enemy.png",
+			"era": "A10",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A10.png",
+			"state": "healthy"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A10-worn-enemy.png",
+			"era": "A10",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A10-worn.png",
+			"state": "worn"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A10-critical-enemy.png",
+			"era": "A10",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A10-critical.png",
+			"state": "critical"
+		},
+		{
+			"enemyFlip": false,
+			"enemyTexture": "res://assets/base/A10-ruin-enemy.png",
+			"era": "A10",
+			"expectedEnemyFlipFromSilhouette": false,
+			"ownFlip": false,
+			"ownTexture": "res://assets/base/A10-ruin.png",
+			"state": "ruin"
+		}
+	],
+	"transitions": [
+		{
+			"allyEra": "A1",
+			"enemyEra": "A2",
+			"flip": false
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A3",
+			"flip": true
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A4",
+			"flip": false
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A5",
+			"flip": true
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A6",
+			"flip": true
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A7",
+			"flip": true
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A8",
+			"flip": true
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A9",
+			"flip": true
+		},
+		{
+			"allyEra": "A1",
+			"enemyEra": "A10",
+			"flip": false
+		}
+	],
+	"version": "0.7.0"
+}

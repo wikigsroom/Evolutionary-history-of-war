@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "version": "0.7.0",
+  "revisionLabel": "Base-facing corrective build",
+  "recordedAtUtc": "2026-10-07T13:32:08.945925+00:00",
+  "baselineCommit": "d922406e2df26fdeb5b88c39a936224d35aa9bb0",
+  "nativeChecks": 527,
+  "damageStatePairs": 40,
+  "enemyTransitions": 9,
+  "baselineFailures": 19,
+  "windowsEmbeddedContentVerified": true,
+  "windowsZipVerified": true,
+  "androidDevicePlaytested": false,
+  "packages": [
+    {
+      "file": "windows/Epoch-Rush-Godot.exe",
+      "bytes": 226610304,
+      "sha256": "c282c09a8f7bcfd1b5b32b784626321ec33e6e5ff13be1a1903425cabf9f3d0e"
+    },
+    {
+      "file": "windows/Epoch-Rush-Godot-Windows.zip",
+      "bytes": 154244673,
+      "sha256": "352b7cc54b237d5b1e6654e85f89e74b34b34fe5b612cce4af8f1be23b0a4bf7"
+    },
+    {
+      "file": "android/Epoch-Rush-Godot-release.apk",
+      "bytes": 143725280,
+      "sha256": "c583d633dd58b6e1a97433a8ac04c1977bb2c0cc43be5d62f17aad85ed246de6"
+    },
+    {
+      "file": "android/Epoch-Rush-Godot-debug.apk",
+      "bytes": 145540287,
+      "sha256": "89f7031ad92a432b5f4b1d6b37ca6eda9a2437c8fdb118c793bc7fc8acf2a553"
+    }
+  ],
+  "source": [
+    {
+      "file": "godot/scripts/base_view.gd",
+      "canonicalLfSha256": "924b8aeac0705ce6bc16e7deb7d1c51e6e44ff146f411f3b3c01bb360b26f00f"
+    },
+    {
+      "file": "godot/assets/data/eras.json",
+      "canonicalLfSha256": "115501d2af7f54939da088c4efcb13892e9fe6edf575e4d79fbbee0eff390e9c"
+    },
+    {
+      "file": "godot/qa/base_facing.gd",
+      "canonicalLfSha256": "c1329ce65c9da1112c03222c025fbf87caffe0ff93ca32e687fc8d68a4f0f910"
+    },
+    {
+      "file": "tools/expand_ten_eras.py",
+      "canonicalLfSha256": "5cf4332a4958a22772f36cf3bd3831d0f0593fe1a86508fd1cb652b1f0d402f1"
+    },
+    {
+      "file": "tools/build_ten_era_assets.py",
+      "canonicalLfSha256": "45f51b8b713527f9c1b0fda90481197137cd6f50347cde83befa98a3ba5677ae"
+    }
+  ],
+  "media": [
+    {
+      "file": "docs/media/base-facing/stone-base-before-after.jpg",
+      "bytes": 465757,
+      "sha256": "df4afc534cea16fe334271f8107471b421ac6d15f4492bec4d20cac439adc52e"
+    },
+    {
+      "file": "docs/media/base-facing/ten-era-base-pairs.jpg",
+      "bytes": 1752057,
+      "sha256": "d82c5b9c9d77014d162b670012c0d09563fdf19764bea9468ca5252e72706095"
+    }
+  ],
+  "baselinePackages": [
+    {
+      "file": "windows/Epoch-Rush-Godot.exe",
+      "sha256": "f4c3cddd6c738e0e0f081665b48e43c49540f0dc2bb4d4116b9ff5d23fdb8810",
+      "bytes": 226609904
+    },
+    {
+      "file": "windows/Epoch-Rush-Godot-Windows.zip",
+      "sha256": "56535cc9ae34a8ab67c6a7ba6895fdf878662d00f528677119e3ea87bf9a61c7",
+      "bytes": 154244655
+    },
+    {
+      "file": "android/Epoch-Rush-Godot-debug.apk",
+      "sha256": "48c9ae97e6a6943587bc4fa9015b20c099715c2b3a137947607c00d83a868bc2",
+      "bytes": 145540287
+    },
+    {
+      "file": "android/Epoch-Rush-Godot-release.apk",
+      "sha256": "7a49301c6ccc7c94bd714b2504a9bf5d48ea96421c95fe856bb0f34962017b97",
+      "bytes": 143725280
+    }
+  ]
+}

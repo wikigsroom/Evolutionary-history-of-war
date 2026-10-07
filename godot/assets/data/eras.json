@@ -26,7 +26,8 @@
       "meteor",
       "dinosaur",
       "rockfall"
-    ]
+    ],
+    "enemyBaseMirrored": true
   },
   {
     "id": "A2",
@@ -53,7 +54,8 @@
       "meteor",
       "rockfall",
       "storm"
-    ]
+    ],
+    "enemyBaseMirrored": true
   },
   {
     "id": "A3",
@@ -80,7 +82,8 @@
       "meteor",
       "rockfall",
       "storm"
-    ]
+    ],
+    "enemyBaseMirrored": false
   },
   {
     "id": "A4",
@@ -107,7 +110,8 @@
       "meteor",
       "rockfall",
       "storm"
-    ]
+    ],
+    "enemyBaseMirrored": true
   },
   {
     "id": "A5",
@@ -135,7 +139,8 @@
       "meteor",
       "rockfall",
       "storm"
-    ]
+    ],
+    "enemyBaseMirrored": false
   },
   {
     "id": "A6",
@@ -163,7 +168,8 @@
       "meteor",
       "plane",
       "storm"
-    ]
+    ],
+    "enemyBaseMirrored": false
   },
   {
     "id": "A7",
@@ -191,7 +197,8 @@
       "meteor",
       "plane",
       "storm"
-    ]
+    ],
+    "enemyBaseMirrored": false
   },
   {
     "id": "A8",
@@ -219,7 +226,8 @@
       "meteor",
       "plane",
       "storm"
-    ]
+    ],
+    "enemyBaseMirrored": false
   },
   {
     "id": "A9",
@@ -247,7 +255,8 @@
       "meteor",
       "drone",
       "debris"
-    ]
+    ],
+    "enemyBaseMirrored": false
   },
   {
     "id": "A10",
@@ -275,6 +284,7 @@
       "meteor",
       "drone",
       "debris"
-    ]
+    ],
+    "enemyBaseMirrored": true
   }
 ]

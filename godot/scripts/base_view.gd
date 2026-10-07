@@ -32,7 +32,9 @@ func refresh(ground: float, reduced: bool) -> void:
 	var state = "-ruin" if hp_ratio <= 0.0 else ("-critical" if hp_ratio < 0.32 else ("-worn" if hp_ratio < 0.67 else ""))
 	var path = "res://assets/base/" + era + state + ("-enemy" if side == 1 else "") + ".png"
 	if path != current_path: castle.texture = PixelTheme.texture(path); current_path = path
-	castle.flip_h=side==1
+	# Reused bases have a baked left-facing enemy texture; new ones only recolor it.
+	# Apply exactly one mirror overall, including worn, critical and ruined states.
+	castle.flip_h=side==1 and not bool(model.db.era(era).get("enemyBaseMirrored",false))
 	if era != last_era and not last_era.is_empty() and not reduced: player.play("evolve")
 	last_era = era
 	if entity["phase"] == "dead" and not get_meta("collapsed", false): player.play("collapse"); set_meta("collapsed", true)

@@ -24,14 +24,16 @@
 
 The project takes inspiration from **Age of War 1 and 2**: physical battle lines, base defense and an era race. Commanders, active items, research, relics and battlefield events extend that foundation. Equipment combinations and era scaling belong to a fictional game setting rather than a historical weapons simulation.
 
+**最新修复 / Latest fix：** 双方营寨现已面向战场中央，覆盖十时代、四种损伤状态及连续换代；原生检查 **527 / 527** 通过，本机 Windows 与 Android 包已重新导出。Both camps now face inward across all ten eras, damage states and evolution transitions. See the [修复记录与实机对比 / repair report and native comparison](docs/epoch-rush/godot-base-facing-fix.md). Android validation covers package contents and signatures.
+
 ![现代机械化实机 / Native modern-era gameplay](docs/media/v0.7.0/battle-modern.png)
 
 <a id="media"></a>
 ## 实机展示 / Native screenshots and GIFs
 
-下面的画面来自 **Godot 4.7.2 加载最终 0.7.0 Windows EXE 的内嵌游戏资源**。菜单截图和战斗截图为实际渲染；只有菜单标注、HUD 标注与十时代拼图增加了说明文字。GIF 来自预设起始时代的原生模拟录像，按原速截取、降至 12 fps 和 768px 宽以便阅读，循环播放且无音轨。它们不是概念图，也不是一局对战在数十秒内自然进化十代的记录。
+下面的画面来自 **Godot 4.7.2 加载首次发布的 0.7.0 Windows EXE 的内嵌游戏资源**；最新营寨朝向另见上方修复记录。菜单截图和战斗截图为实际渲染；只有菜单标注、HUD 标注与十时代拼图增加了说明文字。GIF 来自预设起始时代的原生模拟录像，按原速截取、降至 12 fps 和 768px 宽以便阅读，循环播放且无音轨。它们不是概念图，也不是一局对战在数十秒内自然进化十代的记录。
 
-These images were rendered by **Godot 4.7.2 using the final v0.7.0 Windows executable's embedded game resources**. Only the annotated guides and era collage add explanatory labels. GIFs are normal-speed excerpts from native, scripted matches with predefined starting eras, reduced to 12 fps and 768px width. They loop without audio; they do not represent a single match naturally reaching all ten eras in seconds.
+These images were rendered by **Godot 4.7.2 using the initially published v0.7.0 Windows executable's embedded game resources**; the repair report above shows the updated camp orientation. Only the annotated guides and era collage add explanatory labels. GIFs are normal-speed excerpts from native, scripted matches with predefined starting eras, reduced to 12 fps and 768px width. They loop without audio; they do not represent a single match naturally reaching all ten eras in seconds.
 
 ### 菜单示意 / Menu guide
 
