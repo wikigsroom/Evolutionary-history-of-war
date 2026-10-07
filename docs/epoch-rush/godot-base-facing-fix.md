@@ -44,6 +44,6 @@ To repeat against source, run from the repository root with Godot 4.7.2 Standard
 godot --path godot --script res://qa/base_facing.gd
 ```
 
-本机可玩文件位于 `godot/build/windows/` 和 `godot/build/android/`，哈希见本次交付证据；它们由 Git 忽略，未作为 GitHub Release 上传。Android 完成包级校验，尚未进行实体设备游玩验证。首次发布成品和历史 `v0.7.0` 证据保留原哈希；本次修复记录单独存放。
+可玩文件已作为 [v0.7.0 GitHub Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0) 提供；本机副本位于 `godot/build/windows/` 和 `godot/build/android/`，哈希见本次交付证据及 Release 的 `SHA256SUMS.txt`。构建包由 Git 忽略。Android 完成包级校验，尚未进行实体设备游玩验证。首次交付成品和历史 `v0.7.0` 证据保留原哈希；本次修复记录单独存放。
 
-Playable local files are in `godot/build/windows/` and `godot/build/android/`; their hashes are recorded in this repair's delivery evidence. They are ignored by Git and have not been uploaded as GitHub Releases. Android has package verification, without physical-device playtesting. The initial build and historical `v0.7.0` evidence retain their original hashes.
+Playable packages are available in the [v0.7.0 GitHub Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0). Local copies remain in `godot/build/windows/` and `godot/build/android/`, ignored by Git; their hashes are recorded in this repair's delivery evidence and the Release's `SHA256SUMS.txt`. Android has package verification, without physical-device playtesting. The initial local delivery and historical `v0.7.0` evidence retain their original hashes.

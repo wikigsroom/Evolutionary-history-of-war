@@ -2,6 +2,8 @@
 
 这是《纪元急袭 · 像素指挥台》 / Epoch Rush: Pixel Command 的原生 **0.7.0** 线路。完整的中英玩法、菜单示意图、实机截图、GIF、构建步骤与当前限制见 [仓库总览](../README.md)。旧的 Phaser 0.3.1 客户端保留在仓库根目录，两套运行时版本分别维护。
 
+预构建 Windows 与 Android 包见 [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0)，已包含 [十时代营寨朝向修复](../docs/epoch-rush/godot-base-facing-fix.md)。Windows 推荐下载完整 ZIP，解压运行即可；Android 当前完成包与签名验证。
+
 ## 当前实现
 
 - `GameModel` 把我方 `ally_era` 与敌方 `enemy_era` 作为两个独立状态；双方使用各自交战经验支付升级，不以计时器自动追平。

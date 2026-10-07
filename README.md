@@ -4,7 +4,7 @@
 **十个时代，一条战线。组织军团，指挥主将，在文明进化的瞬间反推敌方基地。**  
 **Ten eras. One battle line. Build your army, command your hero, and turn an evolution into a counterattack.**
 
-[中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.0/README.md)
+[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.0/README.md)
 
 | 项目 / Item | 当前状态 / Current state |
 | --- | --- |
@@ -19,6 +19,20 @@
 | 平台 / Platforms | Windows x64 原生实测 / native verification; Android arm64 包验证 / package verification |
 | 历史线路 / Legacy runtime | 根目录 Phaser / TypeScript / Vite **0.3.1**, Electron / Capacitor wrappers |
 | 仓库 / Repository | 源码、运行素材、文档与精简证据 / Source, runtime assets, documentation and compact evidence |
+
+**直接游玩 / Play now — [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0)**
+
+| 平台 / Platform | 下载 / Download | 使用 / Use |
+| --- | --- | --- |
+| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
+| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
+| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
+| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
+| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
+
+预构建版本无需安装 Godot。Release 已包含营寨相向修复；Windows 完成原生验证，Android 完成包与签名验证，实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.0.md) 记录内容、运行方法与验收范围。
+
+Prebuilt downloads need no Godot installation and include the camp orientation fix. Windows has native verification; Android has package and signature verification, with physical-device playtesting pending. See the [bilingual release notes](docs/releases/v0.7.0.md).
 
 本项目参考 **Age of War 1、2** 的横向接敌、兵线占位、基地攻防和时代竞速，再加入主将、主动道具、研究、遗物与环境演出。它是架空的独立游戏工程，军备组合及代差服务于玩法，并非历史武器性能模拟。
 
@@ -349,7 +363,7 @@ $godotExe = 'C:\Tools\Godot\Godot_v4.7.2-stable_win64_console.exe'
 
 ### 15. Windows 与 Android 构建
 
-仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。`godot/build/` 是本机构建输出，不是 GitHub 上现成可下载的文件；本 README 不假定已有 GitHub Release。
+仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
 
 先创建仅用于本机的导出配置：
 
@@ -717,7 +731,7 @@ Node.js, Python and image-generation access are not required for native gameplay
 
 ### 14. Export Windows and Android
 
-This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. `godot/build/` is a local output directory, not a pre-existing GitHub download location; this guide does not assume a published Release.
+This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0). The `godot/build/` paths below refer to local output when building your own packages.
 
 Create an ignored local export configuration from the credential-free template:
 
