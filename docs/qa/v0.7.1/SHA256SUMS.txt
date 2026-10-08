@@ -1,0 +1,4 @@
+fe389950ffb0688c8c5cee03bc0af59189f96938dd83fb49b4e428dcd12831e0  Epoch-Rush-Godot-Windows.zip
+35b3132731641d0d96791e047e4b1d3951d2afc187c474a5e6eb4d13ad01c755  Epoch-Rush-Godot.exe
+833e3aff7d85bdab2f6c83bc92747155f56850ae29393f2eecb4dfc902bf0870  Epoch-Rush-Godot-release.apk
+8967ba27c2a93d92241614401f987fe798e16d9e11e695fa2cc93c885668f209  Epoch-Rush-Godot-debug.apk

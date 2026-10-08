@@ -65,6 +65,11 @@ def main():
         failures.append('Ten-era runtime inventory incomplete')
     textures = {r['path'] for r in asset_audit['textures']+asset_audit['maps']}
     textures.update(m[k] for m in animation.values() for k in ['path','enemyPath'])
+    textures.update(['ui/brand/game-logo.png','ui/pixel/app-icon.png','ui/pixel/launcher-foreground.png',
+                     'ui/pixel/launcher-background.png','ui/pixel/launcher-monochrome.png'])
+    catalog = json.loads((ASSETS/'audio/catalog.json').read_text(encoding='utf-8'))
+    music_imports = [catalog['music'][key]['path'].removeprefix('res://assets/') for key in catalog['bgm_playlist']]
+    textures.update(music_imports)
     for path in sorted((ROOT / "godot/build/android").glob("Epoch-Rush-Godot-*.apk")):
         with zipfile.ZipFile(path) as archive:
             crc = archive.testzip()
@@ -72,6 +77,10 @@ def main():
             for source in data:
                 name = "assets/" + source.relative_to(ROOT / "godot").as_posix()
                 if name not in archive.namelist() or archive.read(name) != source.read_bytes():
+                    differences.append(source.name)
+            for source in [ASSETS/'audio/catalog.json',ASSETS/'audio/Audio-CREDITS.txt']:
+                name = 'assets/' + source.relative_to(ROOT/'godot').as_posix()
+                if name not in archive.namelist() or archive.read(name)!=source.read_bytes():
                     differences.append(source.name)
             forbidden = [name for name in archive.namelist() if any(part in name.casefold() for part in ["/qa/", "/toolchain/", ".keystore", "export_presets.cfg"])]
             missing_textures = []
@@ -93,7 +102,7 @@ def main():
             architectures = sorted({name.split("/")[1] for name in archive.namelist() if name.startswith("lib/") and name.endswith(".so")})
             if crc or differences or forbidden or missing_textures or mismatched_imports or architectures != ["arm64-v8a"]:
                 failures.append(path.name + ": invalid package content")
-            packages.append({"file": path.name, "size": path.stat().st_size, "sha256": sha(path), "checked_data_files": len(data), "checked_textures":len(textures),"missing_textures":missing_textures,"mismatched_imports":mismatched_imports,"data_differences": differences, "forbidden_files": forbidden, "crc_error": crc, "architectures": architectures})
+            packages.append({"file": path.name, "size": path.stat().st_size, "sha256": sha(path), "checked_data_files": len(data), "checked_textures_and_audio":len(textures),"checked_playlist":catalog['bgm_playlist'],"missing_textures":missing_textures,"mismatched_imports":mismatched_imports,"data_differences": differences, "forbidden_files": forbidden, "crc_error": crc, "architectures": architectures})
     if len(packages)!=2:failures.append('Expected both release and debug Android packages')
 
     windows = ROOT / "godot/build/windows"

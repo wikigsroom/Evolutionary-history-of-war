@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "sample_rate": 48000,
   "music": {
     "menu": {
@@ -178,6 +178,166 @@
       "duration": 1.04,
       "peak": 0.55,
       "sha256": "0a3fe7395aa3421f64a275f549e9f240fdbfd547147b1f12f8f01387df1d38f2"
+    },
+    "yourset-01": {
+      "path": "res://assets/audio/music/yourset-01.ogg",
+      "loop": false,
+      "kind": "playlist_bgm",
+      "title": "黑历史 Infetar A1",
+      "artist": "Yourset",
+      "license": "user-provided",
+      "source_filename": "Yourset - 黑历史 Infetar A1.mp3",
+      "source_sha256": "3d53e7ecf9d83b621d9a016f0a1dc5fe807f8d6c0fc866bf28f34edc0a6a2e41",
+      "source_duration": 140.081633,
+      "duration": 140.069646,
+      "sample_rate": 48000,
+      "channels": 2,
+      "target_lufs": -19,
+      "sha256": "166c181813bd0db071ca55cc8eb5984ed8a8df5581adab82638f1e625a1b6668",
+      "source_loudness": {
+        "input_i": "-11.30",
+        "input_tp": "0.04",
+        "input_lra": "7.60",
+        "input_thresh": "-21.63",
+        "output_i": "-18.18",
+        "output_tp": "-3.14",
+        "output_lra": "5.60",
+        "output_thresh": "-28.42",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.82"
+      },
+      "mastered_loudness": {
+        "input_i": "-19.01",
+        "input_tp": "-7.42",
+        "input_lra": "7.60",
+        "input_thresh": "-29.32",
+        "output_i": "-18.18",
+        "output_tp": "-3.17",
+        "output_lra": "5.60",
+        "output_thresh": "-28.41",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.82"
+      }
+    },
+    "yourset-02": {
+      "path": "res://assets/audio/music/yourset-02.ogg",
+      "loop": false,
+      "kind": "playlist_bgm",
+      "title": "Sirirankok 修复版",
+      "artist": "Yourset",
+      "license": "user-provided",
+      "source_filename": "Yourset - Sirirankok 修复版.mp3",
+      "source_sha256": "cb2833c469eadbf2d547c6c98759b621c7a132d5ea402aa13d52efb54769cb15",
+      "source_duration": 136.189388,
+      "duration": 136.177396,
+      "sample_rate": 48000,
+      "channels": 2,
+      "target_lufs": -19,
+      "sha256": "b09e8869b87e24c4ccfc0ed99c63847e32e4b852019d16b7094bc485557b9a9c",
+      "source_loudness": {
+        "input_i": "-14.48",
+        "input_tp": "0.23",
+        "input_lra": "6.80",
+        "input_thresh": "-24.71",
+        "output_i": "-18.34",
+        "output_tp": "-3.08",
+        "output_lra": "6.90",
+        "output_thresh": "-28.51",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.66"
+      },
+      "mastered_loudness": {
+        "input_i": "-18.99",
+        "input_tp": "-4.12",
+        "input_lra": "6.80",
+        "input_thresh": "-29.22",
+        "output_i": "-18.34",
+        "output_tp": "-2.93",
+        "output_lra": "7.00",
+        "output_thresh": "-28.52",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.66"
+      }
+    },
+    "yourset-03": {
+      "path": "res://assets/audio/music/yourset-03.ogg",
+      "loop": false,
+      "kind": "playlist_bgm",
+      "title": "Loth",
+      "artist": "Yourset",
+      "license": "user-provided",
+      "source_filename": "Yourset - Loth.mp3",
+      "source_sha256": "c94e42b101e7631d2c60939a2d42953951422b5510dc35d1c3ae3b13307db119",
+      "source_duration": 106.043107,
+      "duration": 106.043125,
+      "sample_rate": 48000,
+      "channels": 2,
+      "target_lufs": -19,
+      "sha256": "f4d6527e39f3cdb0bd34ce479e54dc05c0679928773ad1ac7b261f5622f01f1d",
+      "source_loudness": {
+        "input_i": "-16.43",
+        "input_tp": "-2.26",
+        "input_lra": "4.70",
+        "input_thresh": "-26.50",
+        "output_i": "-17.91",
+        "output_tp": "-2.00",
+        "output_lra": "3.90",
+        "output_thresh": "-27.96",
+        "normalization_type": "dynamic",
+        "target_offset": "-1.09"
+      },
+      "mastered_loudness": {
+        "input_i": "-18.99",
+        "input_tp": "-4.74",
+        "input_lra": "4.60",
+        "input_thresh": "-29.05",
+        "output_i": "-17.91",
+        "output_tp": "-2.00",
+        "output_lra": "3.90",
+        "output_thresh": "-27.97",
+        "normalization_type": "dynamic",
+        "target_offset": "-1.09"
+      }
+    },
+    "yourset-04": {
+      "path": "res://assets/audio/music/yourset-04.ogg",
+      "loop": false,
+      "kind": "playlist_bgm",
+      "title": "Be A Single Dog Again",
+      "artist": "Yourset",
+      "license": "user-provided",
+      "source_filename": "Yourset - Be A Single Dog Again.mp3",
+      "source_sha256": "b5b61a1d373263709b2f1c5e0ce9cb0cb6ef1dc60b672d2c3842602651eb37cd",
+      "source_duration": 173.570612,
+      "duration": 173.558625,
+      "sample_rate": 48000,
+      "channels": 2,
+      "target_lufs": -19,
+      "sha256": "891c07e7558f2d34f5d6536cbbb355c6fae8b2d8a69d2cd547a87b198f6a9e0b",
+      "source_loudness": {
+        "input_i": "-12.14",
+        "input_tp": "-1.41",
+        "input_lra": "8.40",
+        "input_thresh": "-22.48",
+        "output_i": "-17.19",
+        "output_tp": "-4.07",
+        "output_lra": "7.00",
+        "output_thresh": "-27.45",
+        "normalization_type": "dynamic",
+        "target_offset": "-1.81"
+      },
+      "mastered_loudness": {
+        "input_i": "-19.00",
+        "input_tp": "-7.96",
+        "input_lra": "8.30",
+        "input_thresh": "-29.35",
+        "output_i": "-17.20",
+        "output_tp": "-3.92",
+        "output_lra": "7.00",
+        "output_thresh": "-27.46",
+        "normalization_type": "dynamic",
+        "target_offset": "-1.80"
+      }
     }
   },
   "cues": {
@@ -2177,5 +2337,18 @@
     "output/audio-sources/krakatoa/Krakatoa_0.ogg",
     "output/audio-sources/relax/relax_background1_0.ogg"
   ],
-  "method": "CC0 samples layered with original transient/body/tail synthesis; two-pass music mastering"
+  "method": "CC0 samples layered with original transient/body/tail synthesis; two-pass music mastering",
+  "bgm_playlist": [
+    "yourset-01",
+    "yourset-02",
+    "yourset-03",
+    "yourset-04"
+  ],
+  "playlist_policy": {
+    "shuffle": "each track once per bag",
+    "avoid_adjacent_repeat": true,
+    "crossfade_seconds": 2,
+    "shared_across_menu_and_eras": true,
+    "random_generator": "audio-private; independent of simulation"
+  }
 }

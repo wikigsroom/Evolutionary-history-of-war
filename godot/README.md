@@ -1,8 +1,10 @@
-# 纪元急袭：像素指挥台（Godot 独立重构）
+# 纪元急袭（Godot 独立重构）
 
-这是《纪元急袭 · 像素指挥台》 / Epoch Rush: Pixel Command 的原生 **0.7.0** 线路。完整的中英玩法、菜单示意图、实机截图、GIF、构建步骤与当前限制见 [仓库总览](../README.md)。旧的 Phaser 0.3.1 客户端保留在仓库根目录，两套运行时版本分别维护。
+这是《纪元急袭》 / Epoch Rush: Pixel Command 的原生 **0.7.1** 线路。完整的中英玩法、菜单示意图、实机截图、GIF、构建步骤与当前限制见 [仓库总览](../README.md)。旧的 Phaser 0.3.1 客户端保留在仓库根目录，两套运行时版本分别维护。
 
-预构建 Windows 与 Android 包见 [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0)，已包含 [十时代营寨朝向修复](../docs/epoch-rush/godot-base-facing-fix.md)。Windows 推荐下载完整 ZIP，解压运行即可；Android 当前完成包与签名验证。
+预构建 Windows 与 Android 包见 [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1)，已包含 [十时代营寨朝向修复](../docs/epoch-rush/godot-base-facing-fix.md)。Windows 推荐下载完整 ZIP，解压运行即可；Android 当前完成包与签名验证。
+
+品牌、BGM 更新与实际验证见 [v0.7.1 报告](../docs/epoch-rush/godot-v0.7.1-branding-bgm-report.md)。
 
 ## 当前实现
 
@@ -11,7 +13,7 @@
 - UI 采用方案 1「像素指挥卡组」：深海军蓝底、4px 网格、圆角像素卡片、青蓝我方/红色敌方/琥珀进化提示、图标优先。
 - 战斗包含体积占位与接敌排队、基地耐久、独立时代升级、主动道具、研究与炮塔。招募目录随本方时代更新，旧兵与已付费订单保留原时代。
 - 0.6.1 修正双方朝向与让位速度；提供常驻图标进度队列、左右拖拽地图、小地图定位和道具反馈。下载与验证见 [本版报告](../docs/epoch-rush/godot-v0.6.1-repair-report.md)。
-- 声音沿用五类战斗配乐并按十时代路由，43 类 / 129 个音效变体、材质与武器反馈、声音分组、镜头声像、重大事件混音和结算短曲。[声音设计](SOUND_DESIGN.md) 记录来源、处理规则和事件映射。
+- 最新不透明男性骑士图标与透明“纪元急袭”文字 LOGO 已应用于 Windows 和 Android；菜单、十时代对战共用四首 Yourset 随机 BGM，每轮不重复，跨轮避免连续同曲，曲间 2 秒淡化。保留 43 类 / 129 个音效变体、材质与武器反馈、声音分组、镜头声像、重大事件混音和结算短曲。[声音设计](SOUND_DESIGN.md) 记录来源、处理规则和事件映射。
 - `BattleWorld` 使用现有生成资产的基地、战场背景、单位卡图，同时用 Godot 自绘粒子与状态条保证在 Windows/Android 都能运行。
 
 0.7.0 扩展为十时代、50 兵种、六位主将的 60 套时代形态、20 关战役、30 张候选地图。时代奇袭、动态天空与弱随机事件已接入；图鉴可从指定时代开始标准对战，当前会正常保存与结算，不是无奖励沙盒。医疗和持续护盾共用恢复预算，相邻时代同定位伤害至少五倍。见 [十时代交付报告](../docs/epoch-rush/godot-v0.7-ten-eras-report.md) 和 [公开验收证据](../docs/qa/v0.7.0/README.md)。
@@ -39,7 +41,7 @@ godot --headless --path godot --export-release "Windows Desktop" build/windows/E
 python -X utf8 tools/package_godot_windows.py
 ```
 
-Windows 打包脚本附带引擎、字体、CC0 音频声明，并输出 ZIP 与校验和。安装包不上传源码仓库，`build/` 路径表示本机输出。
+Windows 打包脚本附带引擎、字体、音频声明（CC0 音效与用户提供 BGM 分开标记），并输出 ZIP 与校验和。安装包不上传源码仓库，`build/` 路径表示本机输出。
 
 Android 需要配置自己的签名、SDK、Java 和 debug keystore：
 
@@ -49,7 +51,7 @@ godot --headless --path godot --export-debug "Android" build/android/Epoch-Rush-
 python -X utf8 tools/finalize_android_packages.py
 ```
 
-Android 需要本机 JDK 21 与 Android SDK 36。应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.0 / code 9，arm64、最低 API 24。后处理补齐预构建模板缺失的 adaptive-icon 资源别名，按 16 KB 原生页对齐并以本机密钥重新签名。脚本支持 `JAVA_HOME`、`ANDROID_SDK_ROOT` / `ANDROID_HOME` 及根 README 所列覆盖变量。两个 APK 导出完成后运行一次；已记录包验证，尚无真机试玩结果。
+Android 需要本机 JDK 21 与 Android SDK 36。应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.1 / code 10，arm64、最低 API 24。后处理补齐预构建模板缺失的 adaptive-icon 资源别名，按 16 KB 原生页对齐并以本机密钥重新签名。脚本支持 `JAVA_HOME`、`ANDROID_SDK_ROOT` / `ANDROID_HOME` 及根 README 所列覆盖变量。两个 APK 导出完成后运行一次；已记录包验证，尚无真机试玩结果。
 
 ## 基础回归
 

@@ -1,0 +1,18 @@
+{
+  "name": "纪元急袭",
+  "logo_master": "public/brand/game-logo.png",
+  "logo_alpha_crop": [
+    370,
+    56,
+    1678,
+    455
+  ],
+  "runtime_padding": 16,
+  "runtime_size": [
+    1340,
+    431
+  ],
+  "logo_master_sha256": "c32d538087261ed2bdfb7d88f600e7aac5ef5004278591af973a94fccc190921",
+  "runtime_logo_sha256": "f41c88571cc0456e5d2fbe771aac8b7bf43bca9ca9f329050912b301b4979a46",
+  "opaque_icon_sha256": "4cc1f4d67241bfcf5a0c73c39b11b6a92bd32c5184948e05b3708b02078cecf8"
+}

@@ -1,38 +1,45 @@
-# 纪元急袭 · 像素指挥台
+# 纪元急袭
 # Epoch Rush: Pixel Command
 
-**十个时代，一条战线。组织军团，指挥主将，在文明进化的瞬间反推敌方基地。**  
-**Ten eras. One battle line. Build your army, command your hero, and turn an evolution into a counterattack.**
+**组织军团，指挥主将，在文明进化的瞬间反推敌方基地。**
 
-[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.0/README.md)
+**Build your army, command your hero, and turn an evolution into a counterattack.**
+
+[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.1/README.md)
 
 | 项目 / Item | 当前状态 / Current state |
 | --- | --- |
-| 主线路 / Primary runtime | **Godot 0.7.0**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
+| 主线路 / Primary runtime | **Godot 0.7.1**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
 | 类型 / Genre | 横向单战线战争进化、基地攻防、主将构筑 / Side-view single-lane warfare, base defense and commander builds |
 | 内容 / Content | **10** 时代 / eras · **50** 兵种 / troops · **6** 主将 / commanders · **60** 主将时代形态 / commander-era forms |
 | 战场 / Battlefields | **30** 地图 / maps · **20** 战役关卡 / missions · **20** 炮塔 / turrets · **10** 时代奇袭 / era strikes |
 | 构筑 / Builds | **18** 专精 / specializations · **18** 技能定义 / skill definitions · **12** 遗物 / relics · **18** 天赋 / talents |
 | 主动道具 / Active items | 战鼓令、烟幕罐、时序补给 / War drum, smoke and temporal supplies |
-| 声音 / Audio | **43** 音效族 / SFX families · **129** 变体 / variants · **9** 音乐与结算曲 / music and result tracks |
+| 声音 / Audio | **43** 音效族 / SFX families · **129** 变体 / variants · **4** 随机 BGM / shuffled songs · **3** 结算短曲 / result stings |
 | 界面 / Presentation | 方案 1「像素指挥卡组」/ Direction 1: pixel command cards; current in-game text is **Chinese** |
 | 平台 / Platforms | Windows x64 原生实测 / native verification; Android arm64 包验证 / package verification |
 | 历史线路 / Legacy runtime | 根目录 Phaser / TypeScript / Vite **0.3.1**, Electron / Capacitor wrappers |
 | 仓库 / Repository | 源码、运行素材、文档与精简证据 / Source, runtime assets, documentation and compact evidence |
 
-**直接游玩 / Play now — [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0)**
+**直接游玩 / Play now — [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1)**
 
 | 平台 / Platform | 下载 / Download | 使用 / Use |
 | --- | --- | --- |
-| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
-| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
-| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
-| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
-| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.0/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
+| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
+| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
+| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
+| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
+| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
 
-预构建版本无需安装 Godot。Release 已包含营寨相向修复；Windows 完成原生验证，Android 完成包与签名验证，实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.0.md) 记录内容、运行方法与验收范围。
+预构建版本无需安装 Godot。v0.7.1 已应用最新骑士图标、透明文字 LOGO 和 Yourset 四首随机 BGM，并包含营寨相向修复；Windows 完成原生验证，Android 完成包与签名验证，实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.1.md) 记录内容、运行方法与验收范围。
 
-Prebuilt downloads need no Godot installation and include the camp orientation fix. Windows has native verification; Android has package and signature verification, with physical-device playtesting pending. See the [bilingual release notes](docs/releases/v0.7.0.md).
+Prebuilt downloads need no Godot installation. v0.7.1 includes the latest knight icon, transparent wordmark, four shuffled Yourset songs and the camp orientation fix. Windows has native verification; Android has package and signature verification, with physical-device playtesting pending. See the [bilingual release notes](docs/releases/v0.7.1.md).
+
+**v0.7.1 实机菜单 / Current native menu**
+
+![最新骑士图标与透明文字 LOGO / Latest knight icon and transparent wordmark](docs/media/v0.7.1/menu-home.png)
+
+本次更新与验证见 [品牌和随机配乐报告 / Branding and shuffled BGM report](docs/epoch-rush/godot-v0.7.1-branding-bgm-report.md) 及 [v0.7.1 验收 / QA evidence](docs/qa/v0.7.1/README.md)。下方原有战斗图、标注图及 GIF 保留 0.7.0 采集版本，玩法内容未变。
 
 本项目参考 **Age of War 1、2** 的横向接敌、兵线占位、基地攻防和时代竞速，再加入主将、主动道具、研究、遗物与环境演出。它是架空的独立游戏工程，军备组合及代差服务于玩法，并非历史武器性能模拟。
 
@@ -304,7 +311,7 @@ The top bar shows both bases and eras, your gold, combat XP, command and match t
 
 ### 11. 键鼠与触屏操作
 
-| 操作 | Godot 0.7.0 输入 |
+| 操作 | Godot 0.7.1 输入 |
 | --- | --- |
 | 招募五个卡槽 | `1`–`5`，或点击兵卡 |
 | 战鼓、烟幕、补给 | `Z`、`X`、`C`，或点击道具 |
@@ -330,7 +337,7 @@ UI 使用选定的方案 1「像素指挥卡组」：深海军蓝面板、纸色
 
 打击表现以实际事件驱动：武器释放、弹道、命中闪光、材质碎屑、尘烟、护盾吸收／破裂、伤害文字、受击姿态、死亡与基地反馈。表现层有数量预算，避免将密集粒子或音效重复计入伤害。召唤炮台用静态图配合后坐力与闪光；天空剪影尚未使用逐帧拍翼或螺旋桨图集。
 
-音频含 43 类、129 个变体及九段音乐：菜单一首、五类战斗循环、三段胜负平局短曲。五类战斗配乐映射十时代，并非十首新 BGM。公开源素材采用 CC0，结合合成瞬态和分层混音；攻击、发射、命中、木盾、肉体、金属、破盾与奇袭有不同声音身份。Music / Battle / UI 分组、镜头声像、画外衰减、重要事件压低配乐、暂停与后台恢复均由独立音频模块处理。GIF 没有声音，完整方案见 [声音设计](godot/SOUND_DESIGN.md) 和 [音频来源](godot/assets/audio/Audio-CREDITS.txt)。
+音频含 43 类、129 个音效变体、四首 Yourset 完整 BGM 和三段胜负平局短曲。菜单与十时代共用随机轮播，每轮四首各一次，跨轮避免连续重复；曲间 2 秒等功率淡化，切菜单和时代进化均不断曲。四首 BGM 由项目所有者指定提供并独立标记，实测约 -19 LUFS；旧 CC0 循环曲保留用于历史兼容，但当前原生 BGM 不再使用它们。公开音效采用 CC0，结合合成瞬态和分层混音；攻击、发射、命中、木盾、肉体、金属、破盾与奇袭有不同声音身份。Music / Battle / UI 分组、镜头声像、画外衰减、重要事件压低配乐、暂停与后台恢复均由独立音频模块处理。GIF 没有声音，完整方案见 [声音设计](godot/SOUND_DESIGN.md) 和 [音频来源](godot/assets/audio/Audio-CREDITS.txt)。
 
 ### 13. 存档、继续与数据迁移
 
@@ -363,7 +370,7 @@ $godotExe = 'C:\Tools\Godot\Godot_v4.7.2-stable_win64_console.exe'
 
 ### 15. Windows 与 Android 构建
 
-仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
+仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
 
 先创建仅用于本机的导出配置：
 
@@ -383,7 +390,7 @@ python -X utf8 tools/package_godot_windows.py
 
 第二步用 Python 标准库生成八文件便携 ZIP 和 `SHA256SUMS.txt`，随包附带引擎、字体、音频许可。EXE 内嵌资源，解压运行无需安装 Godot 或启动网页服务。包文件名为 `godot/build/windows/Epoch-Rush-Godot-Windows.zip`。
 
-**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.0、versionCode 9，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
+**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.1、versionCode 10，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
 
 ```powershell
 # 下面两项填入你自己的安装路径。
@@ -438,7 +445,7 @@ New-Item -ItemType Directory -Force output/qa/ten-eras | Out-Null
 Evolutionary-history-of-war/
 ├─ README.md                         中英双语总览与实机展示
 ├─ godot/
-│  ├─ project.godot                  原生 0.7.0 工程入口
+│  ├─ project.godot                  原生 0.7.1 工程入口
 │  ├─ scenes/Main.tscn               主场景
 │  ├─ scripts/                      模拟、战斗、菜单、HUD、音频与存档
 │  ├─ assets/data/                  19 个 JSON 数据表
@@ -477,7 +484,7 @@ Evolutionary-history-of-war/
 
 ### 18. 历史 Web / Electron / Capacitor 0.3.1
 
-根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.7.0** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
+根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.7.1** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
 
 需要本机支持该锁文件的 Node.js（Vite 8 工具链要求的 Node 版本，建议至少 22.12）和 npm：
 
@@ -521,6 +528,7 @@ python -X utf8 tools/build_readme_media.py --help
 | 圆体中文字体 | SIL OFL 1.1，保留源字体版权与声明；[resource-rounded-LICENSE.txt](godot/assets/fonts/resource-rounded-LICENSE.txt) |
 | 得意黑标题字体 | SIL OFL 1.1；[smiley-LICENSE.txt](godot/assets/fonts/smiley-LICENSE.txt) |
 | 公开音效与音乐 | CC0-1.0；Kenney、joaquinton、Kistol、Eldritch Grim、MintoDog、Theodore Kerr、cynicmusic 等；[作者与来源](godot/assets/audio/Audio-CREDITS.txt)、[CC0 文本](godot/assets/audio/Audio-CC0-1.0.txt) |
+| Yourset 四首 BGM | 项目所有者指定提供，独立来源标记；不适用 CC0，不提供单独素材的再分发许可，详见 [音频声明](godot/assets/audio/Audio-CREDITS.txt) |
 | AI 美术与处理后的运行素材 | 指定 Sub2API / `gpt-image-2.5` 制作，运行文件随源码提供；原始生产提示词与审查过程见设计文档，私有接口凭据不入库 |
 | 本项目代码与自制内容 | 尚未选择覆盖整个仓库的统一开源许可证；第三方引擎、字体与音频分别适用自身许可 |
 
@@ -698,7 +706,7 @@ Raster art was produced with the specified **Sub2API `gpt-image-2.5`** workflow.
 
 Actual simulation events trigger weapon release, trajectories, impact flashes, material fragments, dust, shield absorption/breaks, damage text, hit poses and death. Effect budgets limit visual density. Static summoned turrets add procedural recoil and flashes.
 
-Audio includes **43 SFX families / 129 variants and nine tracks**: one menu loop, five battle-loop families routed across ten eras, and three result stings. CC0 source recordings combine with synthesized layers. Swings, shots, impacts, flesh, wood, metal, shields and era strikes have separate identities. Music/Battle/UI buses, camera panning, off-screen attenuation, priority voices, music ducking and pause/background handling are independent of simulation. See [sound design](godot/SOUND_DESIGN.md) and [credits](godot/assets/audio/Audio-CREDITS.txt). GIFs contain no audio.
+Audio includes **43 SFX families / 129 variants, four full-length Yourset BGM songs and three result stings**. Menus and all ten eras share shuffled playback: every song plays once per cycle, consecutive repeats are avoided across cycles, and songs crossfade for two seconds. Menu changes and evolution preserve the current song. The owner-supplied songs are credited separately and mastered to approximately -19 LUFS; legacy CC0 loops remain for compatibility but are no longer selected by native BGM. CC0 SFX recordings combine with synthesized layers. Swings, shots, impacts, flesh, wood, metal, shields and era strikes have separate identities. Music/Battle/UI buses, camera panning, off-screen attenuation, priority voices, music ducking and pause/background handling are independent of simulation. See [sound design](godot/SOUND_DESIGN.md) and [credits](godot/assets/audio/Audio-CREDITS.txt). GIFs contain no audio.
 
 ### 12. Saves and continuation
 
@@ -731,7 +739,7 @@ Node.js, Python and image-generation access are not required for native gameplay
 
 ### 14. Export Windows and Android
 
-This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.0). The `godot/build/` paths below refer to local output when building your own packages.
+This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1). The `godot/build/` paths below refer to local output when building your own packages.
 
 Create an ignored local export configuration from the credential-free template:
 
@@ -756,7 +764,7 @@ $env:ANDROID_SDK_ROOT = "$env:LOCALAPPDATA\Android\Sdk"
 python -X utf8 tools/finalize_android_packages.py
 ```
 
-The preset uses `studio.epochrush.pixelcommand`, version 0.7.0/code 9, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
+The preset uses `studio.epochrush.pixelcommand`, version 0.7.1/code 10, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
 
 Private export settings and signing keys are ignored. Android package verification is complete, but device installation, touch feel, frame pacing and hardware audio are not yet verified.
 
@@ -803,7 +811,7 @@ For delivery-package captures, the same-version editor can use `--main-pack` wit
 
 ### 17. Legacy Web runtime
 
-Root `package.json` version **0.3.1** and native project version **0.7.0** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
+Root `package.json` version **0.3.1** and native project version **0.7.1** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
 
 Use a local Node.js version supported by the locked Vite 8 toolchain, preferably at least 22.12:
 
@@ -822,7 +830,7 @@ Development binds to `127.0.0.1`; production files go to ignored `dist/`. `npm r
 
 Godot uses MIT; its [license](godot/docs/distribution/Godot-LICENSE.txt) and [third-party notices](godot/docs/distribution/Godot-third-party-notices.txt) accompany Windows packages. The rounded Chinese and Smiley Sans subsets retain their [rounded-font](godot/assets/fonts/resource-rounded-LICENSE.txt) and [Smiley Sans](godot/assets/fonts/smiley-LICENSE.txt) SIL OFL notices.
 
-Public audio uses CC0-1.0, including sources by Kenney, joaquinton, Kistol, Eldritch Grim, MintoDog, Theodore Kerr and cynicmusic. See [audio credits](godot/assets/audio/Audio-CREDITS.txt) and the [CC0 text](godot/assets/audio/Audio-CC0-1.0.txt). AI raster production used the designated Sub2API image model; runtime assets are included, service credentials are excluded. System fonts used to annotate screenshots are rendered into images and not redistributed as font files.
+The four owner-supplied Yourset BGM songs are credited separately and are not covered by CC0 or a standalone asset redistribution grant. Legacy public audio uses CC0-1.0, including sources by Kenney, joaquinton, Kistol, Eldritch Grim, MintoDog, Theodore Kerr and cynicmusic. See [audio credits](godot/assets/audio/Audio-CREDITS.txt) and the [CC0 text](godot/assets/audio/Audio-CC0-1.0.txt). AI raster production used the designated Sub2API image model; runtime assets are included, service credentials are excluded. System fonts used to annotate screenshots are rendered into images and not redistributed as font files.
 
 **No repository-wide open-source license has yet been selected for project code and original content.** Third-party engine, font and audio components retain their individual licenses.
 

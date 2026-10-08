@@ -1,0 +1,46 @@
+{
+  "version": "0.7.1",
+  "android_version_code": 10,
+  "passed": true,
+  "windows_standalone_boot": {
+    "exit_code": 0,
+    "driver": "OpenGL 3.3 Compatibility / NVIDIA RTX 3060"
+  },
+  "android_device_playtest": false,
+  "packages": [
+    {
+      "name": "Epoch-Rush-Godot-Windows.zip",
+      "bytes": 163491248,
+      "sha256": "fe389950ffb0688c8c5cee03bc0af59189f96938dd83fb49b4e428dcd12831e0"
+    },
+    {
+      "name": "Epoch-Rush-Godot.exe",
+      "bytes": 236270416,
+      "sha256": "35b3132731641d0d96791e047e4b1d3951d2afc187c474a5e6eb4d13ad01c755"
+    },
+    {
+      "name": "Epoch-Rush-Godot-release.apk",
+      "bytes": 153159547,
+      "sha256": "833e3aff7d85bdab2f6c83bc92747155f56850ae29393f2eecb4dfc902bf0870"
+    },
+    {
+      "name": "Epoch-Rush-Godot-debug.apk",
+      "bytes": 154974554,
+      "sha256": "8967ba27c2a93d92241614401f987fe798e16d9e11e695fa2cc93c885668f209"
+    }
+  ],
+  "content_baseline": "0.7.0; saves remain compatible",
+  "evidence": {
+    "native_audio_checks": 313,
+    "branding_checks_source": 63,
+    "branding_checks_embedded_windows": 63,
+    "launcher_resources": 44,
+    "rules_checks": 420,
+    "restore_checks": 45
+  },
+  "production_platforms": [
+    "Windows x64",
+    "Android arm64"
+  ],
+  "no_virtualization": true
+}

@@ -1,6 +1,6 @@
 Epoch Rush — Audio credits / 音频素材声明
 
-CC0-1.0 public-domain dedication: https://creativecommons.org/publicdomain/zero/1.0/
+Legacy recordings and SFX only — CC0-1.0 public-domain dedication: https://creativecommons.org/publicdomain/zero/1.0/
 Music has been mastered/edited. Sound effects have been layered, filtered and arranged.
 Original synthesis/cadences and game mix: Epoch Rush audio pipeline.
 
@@ -49,3 +49,23 @@ relax_background1 — joaquinton (CC0-1.0)
 https://opengameart.org/content/relaxbackground1-0
 Source SHA-256: b362bd0017400836b6dc4b4c581e7516c8e1e4bff1b97e1107e14ae00d02f751
 
+Yourset playlist / 用户提供曲目 (v0.7.1)
+Artist: Yourset. Sources supplied by the project owner; separate from the CC0 recordings above.
+本次四首曲目由项目所有者指定提供；不属于上方 CC0 素材，不授予独立素材再分发许可。
+Full-length stereo 48 kHz Ogg Vorbis; two-pass -19 LUFS / -2 dBTP mastering.
+
+Yourset - 黑历史 Infetar A1.mp3
+Source SHA-256: 3d53e7ecf9d83b621d9a016f0a1dc5fe807f8d6c0fc866bf28f34edc0a6a2e41
+Ogg SHA-256: 166c181813bd0db071ca55cc8eb5984ed8a8df5581adab82638f1e625a1b6668
+
+Yourset - Sirirankok 修复版.mp3
+Source SHA-256: cb2833c469eadbf2d547c6c98759b621c7a132d5ea402aa13d52efb54769cb15
+Ogg SHA-256: b09e8869b87e24c4ccfc0ed99c63847e32e4b852019d16b7094bc485557b9a9c
+
+Yourset - Loth.mp3
+Source SHA-256: c94e42b101e7631d2c60939a2d42953951422b5510dc35d1c3ae3b13307db119
+Ogg SHA-256: f4d6527e39f3cdb0bd34ce479e54dc05c0679928773ad1ac7b261f5622f01f1d
+
+Yourset - Be A Single Dog Again.mp3
+Source SHA-256: b5b61a1d373263709b2f1c5e0ce9cb0cb6ef1dc60b672d2c3842602651eb37cd
+Ogg SHA-256: 891c07e7558f2d34f5d6536cbbb355c6fae8b2d8a69d2cd547a87b198f6a9e0b

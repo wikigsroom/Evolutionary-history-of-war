@@ -4,7 +4,7 @@ from PIL import Image
 
 root=Path(__file__).resolve().parents[1]
 folder=root/'godot/assets/ui/pixel'
-crest=Image.open(folder/'ally.png').convert('RGBA')
+crest=Image.open(root/'public/brand/approved-knight-crest.png').convert('RGBA')
 crest=crest.crop(crest.getchannel('A').getbbox())
 crest.thumbnail((256,256),Image.Resampling.NEAREST)
 foreground=Image.new('RGBA',(432,432))

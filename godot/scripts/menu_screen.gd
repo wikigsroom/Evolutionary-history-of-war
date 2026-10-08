@@ -15,8 +15,8 @@ func _ready() -> void:
 	audio.set_battle_paused(false)
 	mouse_filter=Control.MOUSE_FILTER_STOP
 	var header=HBoxContainer.new();add_child(header);header.position=Vector2(24,15);header.add_theme_constant_override("separation",13)
-	var crest=TextureRect.new();crest.texture=PixelTheme.icon("ally");crest.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;crest.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;crest.custom_minimum_size=Vector2(50,50);header.add_child(crest)
-	var name=PixelTheme.label("纪元急袭",30,PixelTheme.AMBER);name.add_theme_font_override("font",PixelTheme.display_font());header.add_child(name)
+	var crest=TextureRect.new();crest.name="BrandKnight";crest.texture=PixelTheme.texture("res://assets/ui/pixel/app-icon.png");crest.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;crest.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;crest.custom_minimum_size=Vector2(50,50);header.add_child(crest)
+	_brand_logo(header,Vector2(230,50),"HeaderLogo")
 	var nav=HBoxContainer.new();add_child(nav);nav.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);nav.offset_left=-658;nav.offset_right=-24;nav.offset_top=14;nav.offset_bottom=74;nav.add_theme_constant_override("separation",7)
 	for entry in [["home","出征","sword"],["campaign","战役","research"],["loadout","整军","crown"],["encyclopedia","图鉴","population"],["settings","设置","sound"]]:
 		var card=PixelCard.new();card.compact=true;card.icon_id=entry[2];card.title=entry[1];card.selected=page==entry[0];card.custom_minimum_size=Vector2(118,58);card.tooltip_text=entry[1];nav.add_child(card)
@@ -58,9 +58,11 @@ func _scroll(parent: Control) -> VBoxContainer:
 	var scroll=ScrollContainer.new();scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;parent.add_child(scroll);scroll.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED
 	var box=VBoxContainer.new();box.add_theme_constant_override("separation",12);box.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.add_child(box);return box
+func _brand_logo(parent: Control,minimum: Vector2,node_name: String) -> TextureRect:
+	var logo=TextureRect.new();logo.name=node_name;logo.texture=PixelTheme.texture("res://assets/ui/brand/game-logo.png");logo.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;logo.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;logo.custom_minimum_size=minimum;logo.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST;parent.add_child(logo);return logo
 func _home() -> void:
-	var title=PixelTheme.label("从第一团火\n杀向群星",49,PixelTheme.INK);title.add_theme_font_override("font",PixelTheme.display_font());body.add_child(title);title.position=Vector2(29,25)
-	var tagline=PixelTheme.label("十个时代 · 一条战线 · 每一次进化都改变战局",17,PixelTheme.MUTED);body.add_child(tagline);tagline.position=Vector2(32,150)
+	var title=_brand_logo(body,Vector2(560,175),"HomeLogo");title.position=Vector2(29,7)
+	var tagline=PixelTheme.label("十个时代 · 一条战线 · 每一次进化都改变战局",17,PixelTheme.MUTED);body.add_child(tagline);tagline.position=Vector2(32,192)
 	var panel=_panel(body,"出征");panel.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);panel.offset_left=-395;panel.offset_right=-8;panel.offset_top=20;panel.offset_bottom=480
 	var box=VBoxContainer.new();box.add_theme_constant_override("separation",14);panel.add_child(box)
 	_text(box,"摧毁敌方基地，赢下这场时代竞速。",20,PixelTheme.AMBER)

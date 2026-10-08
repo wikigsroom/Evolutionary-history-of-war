@@ -1,0 +1,433 @@
+{
+  "passed": true,
+  "version": "0.7.1",
+  "resources": [
+    {
+      "platform": "Windows",
+      "size": [
+        16,
+        16
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.078125
+    },
+    {
+      "platform": "Windows",
+      "size": [
+        32,
+        32
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.12272135416666667
+    },
+    {
+      "platform": "Windows",
+      "size": [
+        48,
+        48
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.09722222222222222
+    },
+    {
+      "platform": "Windows",
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.10205078125
+    },
+    {
+      "platform": "Windows",
+      "size": [
+        128,
+        128
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.11808268229166667
+    },
+    {
+      "platform": "Windows",
+      "size": [
+        256,
+        256
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.18145751953125
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-hdpi-v4/icon.webp",
+      "size": [
+        72,
+        72
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.10513117283950617
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-hdpi-v4/icon_background.webp",
+      "size": [
+        162,
+        162
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-hdpi-v4/icon_foreground.webp",
+      "size": [
+        162,
+        162
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.78754508967129
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-mdpi-v4/icon.webp",
+      "size": [
+        48,
+        48
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.09722222222222222
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-mdpi-v4/icon_background.webp",
+      "size": [
+        108,
+        108
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-mdpi-v4/icon_foreground.webp",
+      "size": [
+        108,
+        108
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 1.0884773662551441
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xhdpi-v4/icon.webp",
+      "size": [
+        96,
+        96
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.11852575231481481
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xhdpi-v4/icon_background.webp",
+      "size": [
+        216,
+        216
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xhdpi-v4/icon_foreground.webp",
+      "size": [
+        216,
+        216
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.6898862597165066
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xxhdpi-v4/icon.webp",
+      "size": [
+        144,
+        144
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.15078446502057613
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xxhdpi-v4/icon_background.webp",
+      "size": [
+        324,
+        324
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xxhdpi-v4/icon_foreground.webp",
+      "size": [
+        324,
+        324
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.6938443072702332
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xxxhdpi-v4/icon.webp",
+      "size": [
+        192,
+        192
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.11767578125
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xxxhdpi-v4/icon_background.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap-xxxhdpi-v4/icon_foreground.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.47545689014631914
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap/icon.webp",
+      "size": [
+        192,
+        192
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.11767578125
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap/icon_background.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "resource": "res/mipmap/icon_foreground.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.47545689014631914
+    },
+    {
+      "platform": "Epoch-Rush-Godot-debug.apk",
+      "application_id": "studio.epochrush.pixelcommand",
+      "version": "0.7.1",
+      "version_code": 10
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-hdpi-v4/icon.webp",
+      "size": [
+        72,
+        72
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.10513117283950617
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-hdpi-v4/icon_background.webp",
+      "size": [
+        162,
+        162
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-hdpi-v4/icon_foreground.webp",
+      "size": [
+        162,
+        162
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.78754508967129
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-mdpi-v4/icon.webp",
+      "size": [
+        48,
+        48
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.09722222222222222
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-mdpi-v4/icon_background.webp",
+      "size": [
+        108,
+        108
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-mdpi-v4/icon_foreground.webp",
+      "size": [
+        108,
+        108
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 1.0884773662551441
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xhdpi-v4/icon.webp",
+      "size": [
+        96,
+        96
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.11852575231481481
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xhdpi-v4/icon_background.webp",
+      "size": [
+        216,
+        216
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xhdpi-v4/icon_foreground.webp",
+      "size": [
+        216,
+        216
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.6898862597165066
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xxhdpi-v4/icon.webp",
+      "size": [
+        144,
+        144
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.15078446502057613
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xxhdpi-v4/icon_background.webp",
+      "size": [
+        324,
+        324
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xxhdpi-v4/icon_foreground.webp",
+      "size": [
+        324,
+        324
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.6938443072702332
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xxxhdpi-v4/icon.webp",
+      "size": [
+        192,
+        192
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.11767578125
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xxxhdpi-v4/icon_background.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap-xxxhdpi-v4/icon_foreground.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.47545689014631914
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap/icon.webp",
+      "size": [
+        192,
+        192
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0.11767578125
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap/icon_background.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": true,
+      "mean_rgb_difference": 0
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "resource": "res/mipmap/icon_foreground.webp",
+      "size": [
+        432,
+        432
+      ],
+      "opaque": false,
+      "mean_rgb_difference": 0.47545689014631914
+    },
+    {
+      "platform": "Epoch-Rush-Godot-release.apk",
+      "application_id": "studio.epochrush.pixelcommand",
+      "version": "0.7.1",
+      "version_code": 10
+    }
+  ],
+  "failures": []
+}

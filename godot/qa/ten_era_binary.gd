@@ -5,7 +5,7 @@ func run() -> void:
 	var failures=[]
 	var db=EpochData.new()
 	var version=String(ProjectSettings.get_setting("application/config/version"))
-	if version!="0.7.0":failures.append("Wrong embedded application version")
+	if version!="0.7.1":failures.append("Wrong embedded application version")
 	for pair in [["eras",10],["units",50],["hero-evolutions",60],["missions",20]]:
 		if db.rows[pair[0]].size()!=pair[1]:failures.append("Wrong embedded table count: "+pair[0])
 	var source=OS.get_environment("EPOCH_RUSH_QA_SOURCE_DATA")

@@ -1,7 +1,8 @@
 # 项目文档
 
-当前方向：方向 1。最新原生版本为 Godot 0.7.0《纪元急袭 · 像素指挥台》，提供 Windows 便携包和已签名 Android APK。十时代源码、素材及验收结果见 [0.7.0 交付报告](epoch-rush/godot-v0.7-ten-eras-report.md)；下一轮选择与反制设计见 [玩法深化与对等博弈](epoch-rush/godot-v0.7-gameplay-depth-and-fair-duels.md)。Android 真机与原生 iOS 发行验证尚未完成。以下 v0.1–v0.3 文档及归档保留对应历史状态。
+当前方向：方向 1。最新原生版本为 Godot 0.7.1《纪元急袭》，提供 Windows 便携包和已签名 Android APK。十时代源码、素材及验收结果见 [0.7.0 交付报告](epoch-rush/godot-v0.7-ten-eras-report.md)；下一轮选择与反制设计见 [玩法深化与对等博弈](epoch-rush/godot-v0.7-gameplay-depth-and-fair-duels.md)。Android 真机与原生 iOS 发行验证尚未完成。以下 v0.1–v0.3 文档及归档保留对应历史状态。
 
+- [v0.7.1 品牌与随机 BGM](epoch-rush/godot-v0.7.1-branding-bgm-report.md)：双端最新骑士图标、透明文字 LOGO、Yourset 四首随机轮播与重新打包；[发布说明](releases/v0.7.1.md)。
 - [Age of War前两部复核与重做方案](epoch-rush/20-Age-of-War前两部复核与重做方案.md)：2026-10-05重新检查UI、动作、时代与占位；记录实际缺陷、原作规则、复现证据和后续验收条件。v0.2.0的技术交付不代表这些质量问题已经解决。
 - [方向1完整设计体系](epoch-rush/README.md)：18份主文档，角色、成长、掉落、技能、打击、美术、故事、交互、跨端架构与验收。
 - [v0.2.0界面、战场与动作改版](epoch-rush/19-界面战场与动作改版.md)：整体UI、完整战线平移、流程修复、26套动作、建筑反馈与实际验证。

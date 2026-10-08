@@ -1,0 +1,66 @@
+{
+	"checks": 63,
+	"executable": "E:/dev/vibe-game/战争进化史类/godot/toolchain/editor/Godot_v4.7.2-stable_win64.exe",
+	"failures": [],
+	"passed": true,
+	"playlist": [
+		"yourset-01",
+		"yourset-02",
+		"yourset-03",
+		"yourset-04"
+	],
+	"resources": [
+		{
+			"bytes": 2130837,
+			"import": "res://.godot/imported/yourset-01.ogg-1bdd5c9c9e567140b0d45f0df8d078df.oggvorbisstr",
+			"resource": "res://assets/audio/music/yourset-01.ogg"
+		},
+		{
+			"bytes": 2382849,
+			"import": "res://.godot/imported/yourset-02.ogg-b2e1196b86bc11013e6751b5f5d4c6ac.oggvorbisstr",
+			"resource": "res://assets/audio/music/yourset-02.ogg"
+		},
+		{
+			"bytes": 1702589,
+			"import": "res://.godot/imported/yourset-03.ogg-f77bd9d20c3dc7a17a34822a6efe098e.oggvorbisstr",
+			"resource": "res://assets/audio/music/yourset-03.ogg"
+		},
+		{
+			"bytes": 3055114,
+			"import": "res://.godot/imported/yourset-04.ogg-dfb1448bab28e8418a5e54a35601ec30.oggvorbisstr",
+			"resource": "res://assets/audio/music/yourset-04.ogg"
+		},
+		{
+			"bytes": 11142,
+			"import": "res://.godot/imported/game-logo.png-b26a4b7f08842d122eb269737fd72a57.ctex",
+			"resource": "res://assets/ui/brand/game-logo.png"
+		},
+		{
+			"bytes": 184176,
+			"import": "res://.godot/imported/app-icon.png-cf1888dbfc1ce3cf92cfabc3b7466fd7.ctex",
+			"resource": "res://assets/ui/pixel/app-icon.png"
+		},
+		{
+			"bytes": 85118,
+			"import": "res://.godot/imported/launcher-foreground.png-78d20f75c994a4515b2a0a3bb80a4370.ctex",
+			"resource": "res://assets/ui/pixel/launcher-foreground.png"
+		},
+		{
+			"bytes": 108,
+			"import": "res://.godot/imported/launcher-background.png-d93089711e52d0da7ec07b7dde607bf2.ctex",
+			"resource": "res://assets/ui/pixel/launcher-background.png"
+		},
+		{
+			"bytes": 4082,
+			"import": "res://.godot/imported/launcher-monochrome.png-922573198d33505b93ffd869c806ed0e.ctex",
+			"resource": "res://assets/ui/pixel/launcher-monochrome.png"
+		}
+	],
+	"screenshots": [
+		"home-1280x720.png",
+		"settings-1280x720.png",
+		"home-1920x1080.png",
+		"settings-1920x1080.png"
+	],
+	"version": "0.7.1"
+}

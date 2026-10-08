@@ -2,7 +2,13 @@
 
 Godot 原生线路的最新技术判断见 [全面重构专项评估](godot-system-rebuild-assessment.md)：说明动作、演出与方案 1 UI 的收益、制作边界和验收要求。
 
-最新原生版本为 **Godot 0.7.0《纪元急袭 · 像素指挥台》**：十时代、50 兵种、60 套主将形态、20 关战役、30 张候选地图。Windows / Android 下载、九项需求的修复和实际验收证据见 [十时代交付报告](godot-v0.7-ten-eras-report.md)。声音沿用并适配十时代的系统来源见 [0.6.2 音频报告](godot-v0.6.2-audio-report.md)，历史修复见 [0.6.1 报告](godot-v0.6.1-repair-report.md)。
+最新原生版本为 **Godot 0.7.1《纪元急袭》**：十时代、50 兵种、60 套主将形态、20 关战役、30 张候选地图。Windows / Android 下载、九项需求的修复和实际验收证据见 [十时代交付报告](godot-v0.7-ten-eras-report.md)。0.7.1 最新 LOGO、随机 BGM、重新打包和发布见 [本次更新报告](godot-v0.7.1-branding-bgm-report.md)。原有音效系统来源见 [0.6.2 音频报告](godot-v0.6.2-audio-report.md)，历史修复见 [0.6.1 报告](godot-v0.6.1-repair-report.md)。
+
+面向玩家的完整介绍见 [游戏简介与开发者的话](game-introduction-and-developer-message.zh-CN.md)，使用当前名称《纪元急袭》，按 0.7.0 已实现内容编写。
+
+面向游戏详情页与推广的完整素材见 [宣传素材交付](marketing-materials-delivery.md)：12 张原生截图、120 秒连续录屏、45 秒宣传片、5 张宣传图、横竖封面、无字超分壁纸、无 LOGO 美术及首页推荐语，附文件索引和验收证据。游戏库壁纸已更新为无 Logo、无文字的 6144×1984 超宽版与 6144×3456 完整版，均超过 3840×1240。[制作规格](marketing-materials-plan.md) 保留本次输出范围。
+
+[品牌图片修订](branding-materials-update.md) 对应最新第 2–5 条要求：游戏图标完全不透明，游戏 LOGO 为透明底的“纪元急袭”纯文字图，封面、五张宣传图、Banner 与海报只保留游戏名，另附可直接上传的图片 ZIP。
 
 下一轮玩法构思见 [十时代玩法深化与对等博弈](godot-v0.7-gameplay-depth-and-fair-duels.md)：按 0.7.0 的十时代、五倍伤害代差和时代主将体系，提出有限集结、行为克制、公开进化投资、基础反制、路线构筑与同规则 AI；数值和新增规则待原型验证。[0.6.2 旧提案](godot-gameplay-depth-and-fair-duels.md) 保留为历史构思。
 

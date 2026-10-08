@@ -58,7 +58,8 @@ func run() -> void:
 	root.size=Vector2i(1280,720)
 	app=preload("res://scenes/Main.tscn").instantiate();root.add_child(app)
 	app.store=EpochStore.new(app.model.db,"user://qa-audio-%d/"%Time.get_ticks_usec());audio=app.audio;audio.settings=app.store.settings;audio.apply_settings()
-	capture=AudioEffectCapture.new();capture.buffer_length=1.0
+	# Offline assertions and burst-switch tests may block the main thread briefly.
+	capture=AudioEffectCapture.new();capture.buffer_length=4.0
 	AudioServer.add_bus_effect(AudioServer.get_bus_index("Master"),capture)
 	process_frame.connect(collect)
 	await wait_seconds(1)
@@ -68,21 +69,60 @@ func run() -> void:
 		for path in meta["variants"]:
 			var stream: AudioStreamWAV=audio.streams[path]
 			check(stream!=null and stream.get_length()>.03,"声音样本可播放："+path.get_file())
-	for track in ["menu","age1","age2","age3","age4","age5"]:
-		audio.play_music(track);await wait_seconds(.95)
+	check(audio.playlist_tracks.size()==4,"四首 Yourset 曲目进入随机播放列表")
+	var first_bag: Array=[]
+	for i in range(4):
+		var track=audio.current_music;first_bag.append(track)
 		var player: AudioStreamPlayer=audio.music_players[audio.active_music]
-		check(player.playing and player.stream.loop,"配乐正在循环："+track)
-		player.seek(player.stream.get_length()-.15);await wait_seconds(.35)
-		check(player.playing and player.get_playback_position()<1.1,"原生循环跨过结尾："+track)
-		check(audio.music_players.filter(func(p):return p.playing).size()==1,"淡出完成仅保留一首："+track)
+		var start_pcm=recorded.size();await wait_seconds(.15)
+		check(player.playing and not player.stream.loop and player.stream.get_length()>100,"完整曲目以非单曲循环方式播放："+track)
+		check(signal_after(start_pcm)["peak"]>.0001,"曲目在原生混音中产生实际 PCM："+track)
+		player.seek(player.stream.get_length()-2.05);await wait_seconds(.25)
+		check(audio.current_music!=track,"歌曲尾部自动切入下一首："+track)
+		check(audio.music_players.filter(func(p):return p.playing).size()==2,"曲间交叉淡化同时保留两首："+track)
+		await wait_seconds(2.1)
+		check(audio.music_players.filter(func(p):return p.playing).size()==1,"淡出完成仅保留当前曲目："+track)
+	var bag_unique={}
+	for track in first_bag:bag_unique[track]=true
+	check(bag_unique.size()==4,"一轮四首全部覆盖且无重复")
+	# Observe the public playback API across several shuffled bags, including boundaries.
+	var order=[audio.current_music]
+	for i in range(31):
+		audio.advance_playlist();order.append(audio.current_music);await process_frame;collect()
+	for i in range(1,order.size()):check(order[i]!=order[i-1],"随机轮播不连续重复，第%d首"%i)
+	for start_bag in range(0,order.size(),4):
+		var unique={}
+		for track in order.slice(start_bag,start_bag+4):unique[track]=true
+		check(unique.size()==4,"每轮四首完整覆盖，第%d轮"%(start_bag/4))
+	await wait_seconds(2.1)
+	seed(77481);var expected_random=randf();seed(77481);audio.advance_playlist()
+	check(randf()==expected_random,"音乐随机不消耗战斗全局随机序列")
+	await wait_seconds(2.1)
+	var music_before_era=audio.current_music
 	for age in range(1,11):
-		audio.play_era_music(age);await wait_seconds(.95)
-		check(audio.current_music==BattleAudio.ERA_MUSIC[age-1],"十时代配乐路由：A"+str(age))
+		audio.play_era_music(age);await wait_seconds(.03)
+		check(audio.current_music==music_before_era,"时代进化保持当前曲目：A"+str(age))
 		check(audio.music_players[audio.active_music].playing,"十时代配乐实际播放：A"+str(age))
-	# Rapid screen/era changes must finish on the newest track without orphaned music.
+	var continued_position=audio.music_players[audio.active_music].get_playback_position()
 	for track in ["age1","age4","menu","age2"]:audio.play_music(track);await wait_seconds(.07)
-	await wait_seconds(.95)
-	check(audio.current_music=="age2" and audio.music_players.filter(func(p):return p.playing).size()==1,"快速切换收敛到最后一首")
+	check(audio.current_music==music_before_era and audio.music_players[audio.active_music].get_playback_position()>=continued_position,"快速菜单及时代切换不中断当前音乐")
+	# A paused/muted song near its end must retain position and the remaining bag.
+	var near_end: AudioStreamPlayer=audio.music_players[audio.active_music]
+	near_end.seek(near_end.stream.get_length()-1)
+	audio.settings["music"]=false;audio.apply_settings();var history_count=audio.bgm_history.size()
+	await wait_seconds(.3)
+	check(audio.bgm_history.size()==history_count and near_end.stream_paused,"关闭音乐冻结播放与选曲")
+	audio.settings["music"]=true;audio.apply_settings();audio.set_suspended(true);await wait_seconds(.3)
+	check(audio.bgm_history.size()==history_count and near_end.stream_paused,"后台保留当前曲目与播放列表")
+	audio.set_suspended(false);await wait_seconds(.2)
+	check(audio.bgm_history.size()==history_count+1,"恢复前台后只向下一首推进一次")
+	await wait_seconds(2.1)
+	# Complete an incoming song during its fade-in to exercise the finished-signal fallback.
+	audio.advance_playlist();var unfinished=audio.current_music
+	var incoming: AudioStreamPlayer=audio.music_players[audio.active_music]
+	incoming.seek(incoming.stream.get_length()-.1);await wait_seconds(.4)
+	check(audio.current_music!=unfinished,"淡入期间自然结束仍能继续下一首")
+	await wait_seconds(2.1)
 	for track in ["victory","defeat","draw"]:
 		audio.play_music(track);await wait_seconds(1.55)
 		check(not audio.music_players[audio.active_music].playing,"结算短曲只播一次："+track)
@@ -137,9 +177,9 @@ func run() -> void:
 		await wait_seconds(.12);check(cue_seen(expected,start),"所有八种攻击模组有声音："+weapon)
 	var music_before=audio.current_music
 	model.sides[1]["eraId"]="A2";model.emit_event("evolve",model.BASE_POSITIONS[1],1,{"eraId":"A2","name":"军阵"})
-	await wait_seconds(.13);check(audio.current_music==music_before,"敌方进化不切换我方时代配乐")
+	await wait_seconds(.13);check(audio.current_music==music_before,"敌方进化不打断随机配乐")
 	model.sides[0]["eraId"]="A3";model.emit_event("evolve",model.BASE_POSITIONS[0],0,{"eraId":"A3","name":"王国"})
-	await wait_seconds(.13);check(audio.current_music=="age2","我方古典时代进化更新配乐家族")
+	await wait_seconds(.13);check(audio.current_music==music_before,"我方进化不打断随机配乐")
 	await wait_seconds(.85)
 	var start=audio.played.size();model.emit_event("queue",1500,1,{"unitId":"U11"});await wait_seconds(.13)
 	check(audio.played.size()==start,"敌人招募不触发玩家界面提示")
@@ -199,7 +239,7 @@ func run() -> void:
 	check(capture.get_discarded_frames()==0,"捕获没有缓冲丢帧")
 	collect();var pcm=FileAccess.open(directory+"/native-mix.wav",FileAccess.WRITE)
 	pcm.store_buffer("RIFF".to_ascii_buffer());pcm.store_32(36+recorded.size());pcm.store_buffer("WAVEfmt ".to_ascii_buffer());pcm.store_32(16);pcm.store_16(3);pcm.store_16(2);pcm.store_32(int(AudioServer.get_mix_rate()));pcm.store_32(int(AudioServer.get_mix_rate())*8);pcm.store_16(8);pcm.store_16(32);pcm.store_buffer("data".to_ascii_buffer());pcm.store_32(recorded.size());pcm.store_buffer(recorded);pcm.close()
-	var report={"checks":checks,"passed":failures.is_empty(),"failures":failures,"driver_setting":ProjectSettings.get_setting("audio/driver/driver","Default Windows driver"),"sample_rate":AudioServer.get_mix_rate(),"stats":audio.stats,"capture_slices":capture_slices,"mix_bytes":recorded.size()}
+	var report={"checks":checks,"passed":failures.is_empty(),"failures":failures,"driver_setting":ProjectSettings.get_setting("audio/driver/driver","Default Windows driver"),"sample_rate":AudioServer.get_mix_rate(),"stats":audio.stats,"capture_slices":capture_slices,"mix_bytes":recorded.size(),"captured_frames_dropped":capture.get_discarded_frames(),"playlist":audio.playlist_tracks,"observed_shuffle_order":order,"bgm_history":audio.bgm_history}
 	var file=FileAccess.open(directory+"/audio-regression.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close();print(JSON.stringify(report))
 	process_frame.disconnect(collect);AudioServer.remove_bus_effect(AudioServer.get_bus_index("Master"),0);capture=null
 	app.queue_free();await process_frame;await process_frame;quit(0 if failures.is_empty() else 1)

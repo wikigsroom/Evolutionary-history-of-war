@@ -3,7 +3,8 @@ extends Node
 
 const VOICES = 18
 const MAX_FRAME_CUES = 8
-const ERA_MUSIC = ["age1","age2","age2","age3","age4","age4","age4","age4","age5","age5"]
+const LEGACY_BGM_KEYS = ["menu", "age1", "age2", "age3", "age4", "age5"]
+const BGM_CROSSFADE = 2.0
 const SKILL_CAST_CUES = {
 	"S01":"support_pulse","S02":"item_drum","S03":"arrow_fire","S04":"musket_fire",
 	"S05":"skill_cast","S06":"support_pulse","S07":"arc_fire","S08":"stone_throw",
@@ -17,6 +18,12 @@ var streams: Dictionary = {}
 var music_players: Array = []
 var channels: Array = []
 var current_music = ""
+var playlist_context = ""
+var playlist_tracks: Array[String] = []
+var playlist_queue: Array[String] = []
+var last_bgm = ""
+var bgm_history: Array[String] = []
+var music_rng = RandomNumberGenerator.new()
 var music_gains: Array = [0.0, 0.0]
 var active_music = 0
 var fade_from = 1
@@ -43,6 +50,11 @@ func _ready() -> void:
 	var parsed = JSON.parse_string(FileAccess.get_file_as_string("res://assets/audio/catalog.json"))
 	if parsed is Dictionary: catalog = parsed
 	else: push_error("Audio catalog missing"); return
+	music_rng.randomize()
+	for track in catalog.get("bgm_playlist", []):
+		var key = String(track)
+		if catalog.get("music", {}).has(key) and not playlist_tracks.has(key): playlist_tracks.append(key)
+	if playlist_tracks.is_empty(): push_error("BGM playlist is empty")
 	var prefix = "Epoch%d" % get_instance_id()
 	bus_names["Mix"] = prefix + "Mix"; _make_bus(bus_names["Mix"],"Master")
 	for role in ["Music", "Battle", "UI"]:
@@ -56,6 +68,7 @@ func _ready() -> void:
 		AudioServer.add_bus_effect(master, limiter)
 	for i in range(2):
 		var player = AudioStreamPlayer.new(); player.bus = bus_names["Music"]; add_child(player); music_players.append(player)
+		player.finished.connect(_on_music_finished.bind(i))
 	for i in range(VOICES):
 		var role = "UI" if i >= 15 else "Battle"
 		var bus = prefix + "Voice%d" % i; _make_bus(bus, bus_names[role])
@@ -104,19 +117,63 @@ func apply_settings() -> void:
 
 func _process(delta: float) -> void:
 	if suspended or music_players.is_empty(): return
-	if fade_time < fade_length:
+	var music_enabled = bool(settings.get("music", true))
+	if music_enabled and fade_time < fade_length:
 		fade_time = minf(fade_length, fade_time + delta)
 		var t = fade_time / fade_length
 		music_gains[active_music] = sin(t * PI * 0.5)
 		music_gains[fade_from] = fade_start_gain * cos(t * PI * 0.5)
 		if t >= 1.0: music_players[fade_from].stop(); music_gains[fade_from] = 0.0
 	duck_time = maxf(0.0, duck_time - delta)
-	var looped = bool(catalog.get("music",{}).get(current_music,{}).get("loop",true))
-	var desired = 0.58 if duck_time > 0 else (0.48 if battle_paused and looped else 1.0)
+	var background = not playlist_context.is_empty() or bool(catalog.get("music",{}).get(current_music,{}).get("loop",true))
+	var desired = 0.58 if duck_time > 0 else (0.48 if battle_paused and background else 1.0)
 	duck_gain = lerpf(duck_gain, desired, 1.0-exp(-delta*(18 if desired < duck_gain else 4)))
 	for i in range(2): music_players[i].volume_db = linear_to_db(maxf(0.00001, float(music_gains[i])*duck_gain))
+	if music_enabled and not playlist_context.is_empty() and fade_time >= fade_length:
+		var player: AudioStreamPlayer = music_players[active_music]
+		if player.playing and player.stream != null and player.stream.get_length() - player.get_playback_position() <= BGM_CROSSFADE:
+			advance_playlist()
 
 func play_music(track: String) -> void:
+	# Keep the existing scene API, but menus and all eras share one continuous playlist.
+	if LEGACY_BGM_KEYS.has(track):
+		play_playlist("menu" if track == "menu" else "battle")
+		return
+	if not catalog.get("music",{}).has(track): return
+	playlist_context = ""
+	_start_music(track)
+
+func play_playlist(context: String) -> void:
+	playlist_context = context
+	if playlist_tracks.has(current_music) and music_players[active_music].playing: return
+	advance_playlist()
+
+func _refill_playlist() -> void:
+	playlist_queue.assign(playlist_tracks)
+	# This private RNG never consumes the simulation's random sequence.
+	for i in range(playlist_queue.size() - 1, 0, -1):
+		var j = music_rng.randi_range(0, i)
+		var saved = playlist_queue[i]; playlist_queue[i] = playlist_queue[j]; playlist_queue[j] = saved
+	if playlist_queue.size() > 1 and playlist_queue[0] == last_bgm:
+		var j = music_rng.randi_range(1, playlist_queue.size() - 1)
+		var saved = playlist_queue[0]; playlist_queue[0] = playlist_queue[j]; playlist_queue[j] = saved
+
+func advance_playlist() -> void:
+	if playlist_context.is_empty() or playlist_tracks.is_empty(): return
+	if playlist_queue.is_empty(): _refill_playlist()
+	var track: String = playlist_queue.pop_front()
+	var transition = BGM_CROSSFADE if playlist_tracks.has(current_music) and music_players[active_music].playing else 0.85
+	_start_music(track, transition)
+	last_bgm = track
+	bgm_history.append(track)
+	if bgm_history.size() > 256: bgm_history.pop_front()
+
+func _on_music_finished(index: int) -> void:
+	# An outgoing player's completion must never advance the playlist twice.
+	if index == active_music and not playlist_context.is_empty() and not suspended and settings.get("music",true):
+		advance_playlist()
+
+func _start_music(track: String, transition: float = -1.0) -> void:
 	if current_music == track or not catalog.get("music",{}).has(track): return
 	var meta: Dictionary = catalog["music"][track]
 	var source = _stream(meta["path"])
@@ -128,12 +185,12 @@ func play_music(track: String) -> void:
 	music_players[active_music].stop(); music_players[active_music].stream = stream
 	music_gains[active_music] = 0.0; music_players[active_music].volume_db = -100.0
 	fade_start_gain = float(music_gains[fade_from]); fade_time = 0.0
-	fade_length = 0.18 if not meta["loop"] else 0.85
+	fade_length = transition if transition > 0 else (0.18 if not meta["loop"] else 0.85)
 	current_music = track; music_players[active_music].play()
 	music_players[active_music].stream_paused = suspended or not settings.get("music",true)
 
-func play_era_music(era_number: int) -> void:
-	play_music(ERA_MUSIC[clampi(era_number-1,0,ERA_MUSIC.size()-1)])
+func play_era_music(_era_number: int) -> void:
+	play_playlist("battle")
 
 func begin_battle() -> void:
 	last.clear(); pending.clear(); ready_skills.clear(); danger_clock = 0.0; battle_paused = false

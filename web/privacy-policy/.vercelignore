@@ -1,0 +1,9 @@
+*
+!index.html
+!styles.css
+!vercel.json
+!privacy-policy.docx
+!privacy-policy.md
+!assets
+assets/*
+!assets/knight.png

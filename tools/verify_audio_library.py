@@ -48,7 +48,10 @@ for name,meta in catalog["music"].items():
     meter=json.loads(re.findall(r'\{\s*"input_i".*?\}',loudness,re.S)[-1])
     row={"key":name,"seconds":round(len(signal)/48000,4),"peak":round(float(abs(signal).max()),6),"boundary_jump":round(float(abs(signal[-1]-signal[0]).max()),6),"lufs":float(meter["input_i"]),"true_peak_db":float(meter["input_tp"]),"lra":float(meter["input_lra"]),"loop":meta["loop"]}
     if row["peak"]>=1 or row["true_peak_db"]>-.5 or (meta["loop"] and row["boundary_jump"]>.02):errors.append("Music signal: "+name)
-    if meta["loop"] and abs(row["lufs"]-meta["target_lufs"])>1.5:errors.append("Music loudness: "+name)
+    if (meta["loop"] or meta.get("kind")=="playlist_bgm") and abs(row["lufs"]-meta["target_lufs"])>1.5:errors.append("Music loudness: "+name)
+    if meta.get("kind")=="playlist_bgm":
+        if meta["loop"] or meta.get("license")!="user-provided" or abs(row["seconds"]-meta["source_duration"])>.1:errors.append("User-provided full-track provenance: "+name)
+        if not meta.get("source_sha256") or row["true_peak_db"]>-1:errors.append("User-provided mastering: "+name)
     if sha(path)!=meta["sha256"] or sha(path)!=sha(ROOT/"public/assets/audio/music"/path.name):errors.append("Music hash: "+name)
     music.append(row)
 native=OUT/"native/audio-regression.json"
