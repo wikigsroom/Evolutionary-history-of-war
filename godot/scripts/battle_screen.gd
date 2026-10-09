@@ -135,7 +135,7 @@ func _refresh_hud() -> void:
 	evolve_card.value="终代" if maxed else "%d/%d" % [floori(float(player["knowledge"])),int(cost)]
 	evolve_card.progress=1.0 if maxed else float(player["knowledge"])/cost
 	evolve_card.disabled=maxed or float(player["knowledge"])<cost or model.winner!=-1
-	evolve_card.tooltip_text="已达本局时代上限" if maxed else "进化到 "+model.db.era("A%d"%(model.ally_era+1))["name"]+"\n基地与指挥官保留生命比例；原有兵与训练订单保留原时代"
+	evolve_card.tooltip_text="已达本局时代上限" if maxed else "进化到 "+model.db.era("A%d"%(model.ally_era+1))["name"]+"\n首都生命上限按兵种比例增长，进化后回满；指挥官保留生命比例；原有兵与训练订单保留原时代"
 	evolve_card.update_visual()
 	var hero=model.hero(0)
 	commander.hero_id=model.db.visual_id(player["loadout"]["heroId"],player["eraId"])

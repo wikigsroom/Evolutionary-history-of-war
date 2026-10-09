@@ -1,0 +1,47 @@
+{
+  "version": "0.7.2",
+  "date": "2026-10-10",
+  "tag": "v0.7.2",
+  "android_version_code": 11,
+  "artifacts": [
+    {
+      "path": "godot/build/windows/Epoch-Rush-Godot-Windows.zip",
+      "name": "Epoch-Rush-Godot-Windows.zip",
+      "bytes": 163492311,
+      "sha256": "b68a6a123c710c7febfe053c771d61db60390cecaa29c776909fd06375d041ef"
+    },
+    {
+      "path": "godot/build/windows/Epoch-Rush-Godot.exe",
+      "name": "Epoch-Rush-Godot.exe",
+      "bytes": 236271280,
+      "sha256": "4f3ff1db981ef232d37c3db17894e96068ba5955e114529c6ba89ebe8fb60942"
+    },
+    {
+      "path": "godot/build/android/Epoch-Rush-Godot-release.apk",
+      "name": "Epoch-Rush-Godot-release.apk",
+      "bytes": 153159547,
+      "sha256": "83ea58d4cfea95ec6a4d1a9081b4556563162d491f253fadb7cba70b8b9e164e"
+    },
+    {
+      "path": "godot/build/android/Epoch-Rush-Godot-debug.apk",
+      "name": "Epoch-Rush-Godot-debug.apk",
+      "bytes": 154974554,
+      "sha256": "6c69fb9a2ebe06cd01c8877dd6260388ecf5f8072c712e2c9294cb19fc9f5e17"
+    }
+  ],
+  "validation": {
+    "focused_source_checks": 187,
+    "focused_windows_pack_checks": 187,
+    "core_rules_checks": 420,
+    "legacy_save_checks": 45,
+    "before_after_samples": 18,
+    "extended_hard_seconds": 1500,
+    "extended_hard_era": 6,
+    "launcher_checks": 44,
+    "android_signature_and_16kb_alignment": true,
+    "windows_embedded_data_files": 19,
+    "android_data_files_each": 19,
+    "physical_android_device_tested": false
+  },
+  "windows_shutdown_note": "Forced --quit-after startup retains 4 ObjectDB / 1 resource exit diagnostics; no fatal script or parse errors."
+}

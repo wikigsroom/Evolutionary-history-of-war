@@ -63,8 +63,11 @@ def image_difference(actual, expected):
 
 
 def main():
+    # Read only the public version settings; signing credentials stay private.
+    version = re.search(r'config/version="([^"]+)"', (ROOT / "godot/project.godot").read_text(encoding="utf-8")).group(1)
+    version_code = int(re.search(r'^version/code=(\d+)', (ROOT / "godot/export_presets.example.cfg").read_text(encoding="utf-8"), re.MULTILINE).group(1))
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "output/qa/v0.7.1/packages")
+    parser.add_argument("--output", type=Path, default=ROOT / f"output/qa/v{version}/packages")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     errors, rows = [], []
@@ -88,7 +91,7 @@ def main():
         badging = subprocess.run([str(aapt), "dump", "badging", package.name], cwd=package.parent,
                                  capture_output=True, check=True).stdout.decode("utf-8", errors="replace")
         name = re.search(r"package: name='([^']+)' versionCode='([^']+)' versionName='([^']+)'", badging)
-        if not name or name.groups() != ("studio.epochrush.pixelcommand", "10", "0.7.1"):
+        if not name or name.groups() != ("studio.epochrush.pixelcommand", str(version_code), version):
             errors.append(package.name + ": package version/identity")
         with zipfile.ZipFile(package) as archive:
             for entry in archive.namelist():
@@ -104,10 +107,10 @@ def main():
                     rows.append({"platform":package.name,"resource":entry,"size":list(actual.size),"opaque":opaque,"mean_rgb_difference":difference})
                     if entry == "res/mipmap-xxxhdpi-v4/icon.webp": actual.save(args.output/(package.stem+"-launcher.png"))
             if "res/mipmap-anydpi-v26/themed_icon.xml" not in archive.namelist(): errors.append(package.name+": adaptive icon alias missing")
-        rows.append({"platform":package.name,"application_id":name.group(1) if name else None,"version":"0.7.1","version_code":10})
+        rows.append({"platform":package.name,"application_id":name.group(1) if name else None,"version":version,"version_code":version_code})
     if not any(row["platform"].endswith("release.apk") for row in rows): errors.append("Release APK was not inspected")
     if not any(row["platform"].endswith("debug.apk") for row in rows): errors.append("Debug APK was not inspected")
-    report = {"passed":not errors,"version":"0.7.1","resources":rows,"failures":errors}
+    report = {"passed":not errors,"version":version,"resources":rows,"failures":errors}
     (args.output/"launcher-branding.json").write_text(json.dumps(report, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     print(json.dumps({"passed":not errors,"checked":len(rows),"failures":errors}, ensure_ascii=False))
     raise SystemExit(bool(errors))

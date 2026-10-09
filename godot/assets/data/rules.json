@@ -1,5 +1,5 @@
 {
-  "designVersion": "0.7.0",
+  "designVersion": "0.7.2",
   "status": "ten_eras_rebuild",
   "simulationHz": 30,
   "world": {
@@ -43,9 +43,11 @@
       180
     ],
     "turretSellRefund": 0.6,
-    "evolutionPreservesHealthRatio": true,
+    "evolutionPreservesHealthRatio": false,
     "armor": 20,
-    "energyResistance": 0.1
+    "energyResistance": 0.1,
+    "evolutionRestoresFullHealth": true,
+    "healthGrowthSource": "era.hpMultiplier"
   },
   "evolutionRush": {
     "eligibleSec": 30,
@@ -157,21 +159,24 @@
       "name": "轻松",
       "decisionSec": 2,
       "mistakeProbability": 0.2,
-      "incomeMultiplier": 1
+      "incomeMultiplier": 0.85,
+      "startingGoldMultiplier": 0.8
     },
     {
       "id": "D02",
       "name": "标准",
       "decisionSec": 1,
       "mistakeProbability": 0.08,
-      "incomeMultiplier": 1
+      "incomeMultiplier": 1.35,
+      "startingGoldMultiplier": 1.25
     },
     {
       "id": "D03",
       "name": "挑战",
       "decisionSec": 0.5,
       "mistakeProbability": 0.02,
-      "incomeMultiplier": 1
+      "incomeMultiplier": 1.65,
+      "startingGoldMultiplier": 1.5
     }
   ],
   "loadout": {

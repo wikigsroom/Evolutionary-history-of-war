@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "packages": [
+    {
+      "file": "Epoch-Rush-Godot-release.apk",
+      "bytes": 153159547,
+      "sha256": "83ea58d4cfea95ec6a4d1a9081b4556563162d491f253fadb7cba70b8b9e164e",
+      "adaptiveAliasPresent": true,
+      "signatureVerified": true,
+      "nativePageAlignment": 16384
+    },
+    {
+      "file": "Epoch-Rush-Godot-debug.apk",
+      "bytes": 154974554,
+      "sha256": "6c69fb9a2ebe06cd01c8877dd6260388ecf5f8072c712e2c9294cb19fc9f5e17",
+      "adaptiveAliasPresent": true,
+      "signatureVerified": true,
+      "nativePageAlignment": 16384
+    }
+  ]
+}

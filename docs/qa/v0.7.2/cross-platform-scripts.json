@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "apk": "release",
+      "script": "battle_screen",
+      "sha256": "fd246cacfebbbe94c8775b09ddb605df3fbbe809feddc848f735cc831cabc0a3",
+      "matches_verified_windows_pack": true
+    },
+    {
+      "apk": "release",
+      "script": "game_model",
+      "sha256": "60ddba831c36506423eae19b5cc84ca4b111af284c9af13ab69d22636e229567",
+      "matches_verified_windows_pack": true
+    },
+    {
+      "apk": "release",
+      "script": "menu_screen",
+      "sha256": "c54fd5291c253962cd4fdf2b33c38db6faa86825aea5ebf5bbddae56cfa97cdb",
+      "matches_verified_windows_pack": true
+    },
+    {
+      "apk": "debug",
+      "script": "battle_screen",
+      "sha256": "fd246cacfebbbe94c8775b09ddb605df3fbbe809feddc848f735cc831cabc0a3",
+      "matches_verified_windows_pack": true
+    },
+    {
+      "apk": "debug",
+      "script": "game_model",
+      "sha256": "60ddba831c36506423eae19b5cc84ca4b111af284c9af13ab69d22636e229567",
+      "matches_verified_windows_pack": true
+    },
+    {
+      "apk": "debug",
+      "script": "menu_screen",
+      "sha256": "c54fd5291c253962cd4fdf2b33c38db6faa86825aea5ebf5bbddae56cfa97cdb",
+      "matches_verified_windows_pack": true
+    }
+  ]
+}

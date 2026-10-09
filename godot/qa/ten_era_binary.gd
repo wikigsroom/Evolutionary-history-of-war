@@ -5,7 +5,7 @@ func run() -> void:
 	var failures=[]
 	var db=EpochData.new()
 	var version=String(ProjectSettings.get_setting("application/config/version"))
-	if version!="0.7.1":failures.append("Wrong embedded application version")
+	if version!="0.7.2":failures.append("Wrong embedded application version")
 	for pair in [["eras",10],["units",50],["hero-evolutions",60],["missions",20]]:
 		if db.rows[pair[0]].size()!=pair[1]:failures.append("Wrong embedded table count: "+pair[0])
 	var source=OS.get_environment("EPOCH_RUSH_QA_SOURCE_DATA")
@@ -23,9 +23,14 @@ func run() -> void:
 			if not texture is Texture2D:failures.append("Embedded atlas missing: "+actor[key])
 			elif texture.get_width()!=int(actor["frameWidth"])*int(actor.get("columns",6)) or texture.get_height()!=int(actor["frameHeight"])*int(actor.get("rows",5)):failures.append("Embedded atlas dimensions: "+actor[key])
 			textures+=1
+	var script_hashes={}
+	for name in ["game_model","battle_screen","menu_screen"]:
+		var digest=FileAccess.get_sha256("res://scripts/"+name+".gdc")
+		if digest.is_empty():failures.append("Embedded script missing: "+name)
+		script_hashes[name]=digest
 	var out=OS.get_environment("EPOCH_RUSH_QA_OUTPUT")
 	DirAccess.make_dir_recursive_absolute(out)
-	var report={"passed":failures.is_empty(),"version":version,"executable":OS.get_executable_path(),"checkedData":checked,"atlasesLoaded":textures,"failures":failures}
+	var report={"passed":failures.is_empty(),"version":version,"executable":OS.get_executable_path(),"checkedData":checked,"atlasesLoaded":textures,"scriptSha256":script_hashes,"failures":failures}
 	FileAccess.open(out+"/embedded-content.json",FileAccess.WRITE).store_string(JSON.stringify(report,"\t"))
 	print(JSON.stringify(report))
 	quit(0 if failures.is_empty() else 1)

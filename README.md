@@ -5,11 +5,11 @@
 
 **Build your army, command your hero, and turn an evolution into a counterattack.**
 
-[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.1/README.md)
+[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.2/README.md)
 
 | 项目 / Item | 当前状态 / Current state |
 | --- | --- |
-| 主线路 / Primary runtime | **Godot 0.7.1**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
+| 主线路 / Primary runtime | **Godot 0.7.2**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
 | 类型 / Genre | 横向单战线战争进化、基地攻防、主将构筑 / Side-view single-lane warfare, base defense and commander builds |
 | 内容 / Content | **10** 时代 / eras · **50** 兵种 / troops · **6** 主将 / commanders · **60** 主将时代形态 / commander-era forms |
 | 战场 / Battlefields | **30** 地图 / maps · **20** 战役关卡 / missions · **20** 炮塔 / turrets · **10** 时代奇袭 / era strikes |
@@ -21,25 +21,25 @@
 | 历史线路 / Legacy runtime | 根目录 Phaser / TypeScript / Vite **0.3.1**, Electron / Capacitor wrappers |
 | 仓库 / Repository | 源码、运行素材、文档与精简证据 / Source, runtime assets, documentation and compact evidence |
 
-**直接游玩 / Play now — [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1)**
+**直接游玩 / Play now — [v0.7.2 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2)**
 
 | 平台 / Platform | 下载 / Download | 使用 / Use |
 | --- | --- | --- |
-| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
-| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
-| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
-| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
-| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.1/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
+| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
+| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
+| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
+| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
+| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
 
-预构建版本无需安装 Godot。v0.7.1 已应用最新骑士图标、透明文字 LOGO 和 Yourset 四首随机 BGM，并包含营寨相向修复；Windows 完成原生验证，Android 完成包与签名验证，实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.1.md) 记录内容、运行方法与验收范围。
+预构建版本无需安装 Godot。v0.7.2 调整三档 AI 的开局金币和持续收入，成功进化会按兵种生命比例增加首都最大生命并回满血。保留最新骑士图标、透明文字 LOGO、四首 Yourset 随机 BGM 和营寨相向修复。Android 实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.2.md) 记录内容与验证范围。
 
-Prebuilt downloads need no Godot installation. v0.7.1 includes the latest knight icon, transparent wordmark, four shuffled Yourset songs and the camp orientation fix. Windows has native verification; Android has package and signature verification, with physical-device playtesting pending. See the [bilingual release notes](docs/releases/v0.7.1.md).
+Prebuilt downloads need no Godot installation. v0.7.2 separates AI starting gold and passive income by difficulty; successful evolution scales capital HP with troops and fully heals it. The latest knight icon, transparent wordmark, four shuffled Yourset songs and facing camps remain included. Android physical-device playtesting is pending. See the [bilingual release notes](docs/releases/v0.7.2.md).
 
-**v0.7.1 实机菜单 / Current native menu**
+**v0.7.1 实机菜单 / Menu captured in v0.7.1**
 
 ![最新骑士图标与透明文字 LOGO / Latest knight icon and transparent wordmark](docs/media/v0.7.1/menu-home.png)
 
-本次更新与验证见 [品牌和随机配乐报告 / Branding and shuffled BGM report](docs/epoch-rush/godot-v0.7.1-branding-bgm-report.md) 及 [v0.7.1 验收 / QA evidence](docs/qa/v0.7.1/README.md)。下方原有战斗图、标注图及 GIF 保留 0.7.0 采集版本，玩法内容未变。
+本次难度与首都规则更新见 [v0.7.2 说明 / Balance update](docs/releases/v0.7.2.md) 和 [验收记录 / QA evidence](docs/qa/v0.7.2/README.md)。品牌及随机配乐的原始交付见 [v0.7.1 报告](docs/epoch-rush/godot-v0.7.1-branding-bgm-report.md)。菜单图保留 0.7.1 采集版本，战斗图、标注图和 GIF 保留 0.7.0 采集版本。
 
 本项目参考 **Age of War 1、2** 的横向接敌、兵线占位、基地攻防和时代竞速，再加入主将、主动道具、研究、遗物与环境演出。它是架空的独立游戏工程，军备组合及代差服务于玩法，并非历史武器性能模拟。
 
@@ -159,13 +159,13 @@ The top bar shows both bases and eras, your gold, combat XP, command and match t
 
 原生 Godot 营地默认带主将，不沿用旧 Web 版“经典模式默认不带英雄”的规则。图鉴入口尚未实现独立的无奖励沙盒模式。
 
-三种难度分别为轻松、标准、挑战。当前三者的收入倍率均为 **1.0**，主要改变 AI 决策间隔和失误率：轻松 2 秒 / 20%，标准 1 秒 / 8%，挑战 0.5 秒 / 2%。战役的预设敌军与增援属于关卡规则；正式的公开信息竞技 AI 仍在设计阶段。
+三种难度分别为轻松、标准、挑战。AI 开局金币／持续收入倍率分别为 **0.80／0.85、1.25／1.35、1.50／1.65**；玩家资源不受难度加成影响。AI 决策间隔和失误率分别为轻松 2 秒／20%、标准 1 秒／8%、挑战 0.5 秒／2%。战役在预设敌方金币上应用对应开局系数，增援仍按关卡规则。进化经验仍来自战斗，不因时间或玩家升级免费获得；竞技公平 AI 属于后续设计。
 
 ### 3. 金币、经验与军令
 
 | 资源 | 获取与用途 |
 | --- | --- |
-| 金币 / 军资 | 石器标准开局 240；基础收入 2.5/秒，随时代和构筑调整；用于招募、八类研究、炮塔和扩展炮塔槽 |
+| 金币 / 军资 | 玩家石器开局 240；基础收入 2.5/秒，随时代和构筑调整；用于招募、八类研究、炮塔和扩展炮塔槽 |
 | 交战经验 / XP | 击杀敌方普通兵、己方普通兵阵亡产生；己方阵亡经验系数为 65%；用于进化与时代奇袭，**等待不产生被动 XP** |
 | 军令 / Command | 基础开局 50、上限 100、每秒恢复 3；供主将与通用技能使用，部分构筑提高上限 |
 
@@ -179,7 +179,7 @@ The top bar shows both bases and eras, your gold, combat XP, command and match t
 
 | 进化时的对象 | 实际处理 |
 | --- | --- |
-| 本方基地 | 换成新时代基地与数值，保留当前生命比例 |
+| 本方基地 | 换成新时代基地，最大生命按兵种生命比例增长，并立即恢复满血；不会治疗另一方 |
 | 本方指挥官 | 更新时代形态、装备、数值及专属技能变体；保留生命比例与技能冷却 |
 | 本方招募目录 | 更新为新时代五个兵种 |
 | 已在场普通兵 | 保留出生时代和原有单位身份 |
@@ -311,7 +311,7 @@ The top bar shows both bases and eras, your gold, combat XP, command and match t
 
 ### 11. 键鼠与触屏操作
 
-| 操作 | Godot 0.7.1 输入 |
+| 操作 | Godot 0.7.2 输入 |
 | --- | --- |
 | 招募五个卡槽 | `1`–`5`，或点击兵卡 |
 | 战鼓、烟幕、补给 | `Z`、`X`、`C`，或点击道具 |
@@ -370,7 +370,7 @@ $godotExe = 'C:\Tools\Godot\Godot_v4.7.2-stable_win64_console.exe'
 
 ### 15. Windows 与 Android 构建
 
-仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
+仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.2 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
 
 先创建仅用于本机的导出配置：
 
@@ -390,7 +390,7 @@ python -X utf8 tools/package_godot_windows.py
 
 第二步用 Python 标准库生成八文件便携 ZIP 和 `SHA256SUMS.txt`，随包附带引擎、字体、音频许可。EXE 内嵌资源，解压运行无需安装 Godot 或启动网页服务。包文件名为 `godot/build/windows/Epoch-Rush-Godot-Windows.zip`。
 
-**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.1、versionCode 10，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
+**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.2、versionCode 11，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
 
 ```powershell
 # 下面两项填入你自己的安装路径。
@@ -445,7 +445,7 @@ New-Item -ItemType Directory -Force output/qa/ten-eras | Out-Null
 Evolutionary-history-of-war/
 ├─ README.md                         中英双语总览与实机展示
 ├─ godot/
-│  ├─ project.godot                  原生 0.7.1 工程入口
+│  ├─ project.godot                  原生 0.7.2 工程入口
 │  ├─ scenes/Main.tscn               主场景
 │  ├─ scripts/                      模拟、战斗、菜单、HUD、音频与存档
 │  ├─ assets/data/                  19 个 JSON 数据表
@@ -484,7 +484,7 @@ Evolutionary-history-of-war/
 
 ### 18. 历史 Web / Electron / Capacitor 0.3.1
 
-根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.7.1** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
+根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.7.2** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
 
 需要本机支持该锁文件的 Node.js（Vite 8 工具链要求的 Node 版本，建议至少 22.12）和 npm：
 
@@ -538,7 +538,7 @@ python -X utf8 tools/build_readme_media.py --help
 
 - 当前对手是本机 AI，没有联网 PvP、匹配服务器、回放服务或云档案。
 - 进化是即时的三选一数值增益；公开研发读条、机动／阵地分支和有限集结属于下一轮提案。
-- AI 难度没有额外收入倍率，但尚未实现完全隔离的公开观察快照，因此不宣称已完成竞技公平 AI。
+- AI 难度明确包含开局金币和持续收入系数，属于单机挑战模式；尚未实现完全隔离的公开观察快照，不宣称竞技公平。
 - 图鉴指定时代入口仍用普通对战结算；无奖励沙盒尚未接入。
 - “战术补给”数据描述还含未接入的学识收入加成；当前实际作用为金币收入提升，等待仍不生 XP。
 - Android 仅完成 arm64 包、资源、签名和对齐验证，未完成真机操作、性能与听感；原生 Godot iOS、Linux、macOS 和浏览器导出未做本次交付验收。
@@ -583,11 +583,11 @@ The five menu destinations are **Camp, Campaign, Loadout, Codex and Settings**. 
 
 The native camp enables commanders by default. The legacy Web runtime's default hero-free classic mode does not describe the Godot version.
 
-Easy, Standard and Challenge all use an income multiplier of **1.0**. Their AI decision intervals are 2.0, 1.0 and 0.5 seconds, with mistake rates of 20%, 8% and 2%. Campaign presets and reinforcement waves belong to the mission rules. A strictly public-information competitive AI has not yet been implemented.
+AI starting gold / passive income multipliers are **0.80 / 0.85** on Easy, **1.25 / 1.35** on Standard and **1.50 / 1.65** on Challenge. Player resources are unaffected. Decision intervals remain 2.0, 1.0 and 0.5 seconds, with mistake rates of 20%, 8% and 2%. Campaign enemy starting gold receives the selected multiplier; reinforcement schedules stay mission-specific. XP remains earned through combat, with no free catch-up evolution. A strictly public-information competitive AI has not yet been implemented.
 
 ### 3. Resources and independent evolution
 
-Stone Age defaults are 240 gold, 2.5 gold per second, 0 combat XP and 50 command. Command regenerates at 3 per second, with a base cap of 100. Gold funds troops, research and turrets; command pays for commander and common skills. Era and build modifiers change these values.
+Player Stone Age defaults are 240 gold, 2.5 gold per second, 0 combat XP and 50 command. Command regenerates at 3 per second, with a base cap of 100. Gold funds troops, research and turrets; command pays for commander and common skills. Era and build modifiers change these values.
 
 Combat XP comes from enemy troop kills and ordinary allied troop deaths, with a 65% factor for allied deaths. **There is no passive XP for waiting.** Evolution and era strikes spend the same XP pool, creating a choice between immediate relief and a future power jump.
 
@@ -595,7 +595,7 @@ Combat XP comes from enemy troop kills and ordinary allied troop deaths, with a 
 
 Evolution is instantaneous in v0.7.0. Pay XP and choose one of three stat benefits: +5% ordinary troop attack, +6% ordinary troop maximum HP, or +5% base gold income. Nine transitions provide 27 choice entries. These are existing stat choices; they are not the proposed mobile/entrenched technology branches or a public research timer.
 
-The base and commander update to the new era while keeping their HP fraction; the commander also keeps skill cooldowns. Recruitment cards change immediately. Existing ordinary troops, paid orders and built turrets keep their original era. Sell a turret to replace it with a current-era model.
+The capital updates to the new era, scales maximum HP with troop HP and fully heals on a successful evolution. The commander keeps its HP fraction and skill cooldowns. The opposing capital is unaffected. Recruitment cards change immediately. Existing ordinary troops, paid orders and built turrets keep their original era. Sell a turret to replace it with a current-era model.
 
 The first three eligible new-era troops produced within 30 seconds can trigger an eight-second evolution rush at first actual contact: +25% movement and +20% first attack. Existing troops do not receive a free era conversion.
 
@@ -739,7 +739,7 @@ Node.js, Python and image-generation access are not required for native gameplay
 
 ### 14. Export Windows and Android
 
-This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1). The `godot/build/` paths below refer to local output when building your own packages.
+This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.2 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2). The `godot/build/` paths below refer to local output when building your own packages.
 
 Create an ignored local export configuration from the credential-free template:
 
@@ -764,7 +764,7 @@ $env:ANDROID_SDK_ROOT = "$env:LOCALAPPDATA\Android\Sdk"
 python -X utf8 tools/finalize_android_packages.py
 ```
 
-The preset uses `studio.epochrush.pixelcommand`, version 0.7.1/code 10, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
+The preset uses `studio.epochrush.pixelcommand`, version 0.7.2/code 11, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
 
 Private export settings and signing keys are ignored. Android package verification is complete, but device installation, touch feel, frame pacing and hardware audio are not yet verified.
 
@@ -811,7 +811,7 @@ For delivery-package captures, the same-version editor can use `--main-pack` wit
 
 ### 17. Legacy Web runtime
 
-Root `package.json` version **0.3.1** and native project version **0.7.1** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
+Root `package.json` version **0.3.1** and native project version **0.7.2** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
 
 Use a local Node.js version supported by the locked Vite 8 toolchain, preferably at least 22.12:
 
@@ -838,7 +838,7 @@ The four owner-supplied Yourset BGM songs are credited separately and are not co
 
 - Local AI play is implemented; network PvP, matchmaking, server replays and cloud profiles are not.
 - Evolution currently offers instantaneous stat choices. Public research windups, finite assembly and mobile/entrenched paths are proposals.
-- Difficulty does not add income multipliers, but the AI does not yet consume a fully isolated public-observation snapshot. Competitive fairness is not certified.
+- Difficulty explicitly includes AI starting-gold and passive-income advantages for local challenge play. A fully isolated public-observation snapshot and competitive fairness are not implemented.
 - The codex's era-start match still affects standard results and rewards; a reward-free sandbox is pending.
 - Tactical Supply's data description contains an unused knowledge-income modifier. Its current implemented benefit is gold income, and idle time still yields no XP.
 - Android arm64 package, content, signature and alignment checks are recorded; device operation, performance and sound are pending. Native Godot iOS, Linux, macOS and browser exports were not validated in this delivery.

@@ -70,6 +70,7 @@ func _home() -> void:
 	for option in store.db.rules["difficulty"]:
 		var button=_button(difficulty_row,option["name"],func():difficulty=option["id"];for sibling in difficulty_row.get_children():sibling.modulate=Color.WHITE if sibling.get_meta("difficulty")==difficulty else Color(0.7,0.8,0.9))
 		button.custom_minimum_size.x=111;button.set_meta("difficulty",option["id"]);button.modulate=Color.WHITE if option["id"]==difficulty else Color(0.7,0.8,0.9)
+		button.tooltip_text="AI 金币：开局 ×%.2f，持续收入 ×%.2f"%[float(option.get("startingGoldMultiplier",1.0)),float(option.get("incomeMultiplier",1.0))]
 	var play=_button(box,"开始对战",func():start_battle.emit({"mode":"standard","difficultyId":difficulty}),true);play.name="StartBattle";play.custom_minimum_size.y=69
 	var saved=store.load_match()
 	var continue_button=_button(box,"继续对局",func():resume_battle.emit());continue_button.name="ContinueBattle";continue_button.disabled=saved.is_empty()

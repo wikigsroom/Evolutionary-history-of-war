@@ -1,6 +1,6 @@
 # 纪元急袭 / Epoch Rush: Pixel Command
 
-Godot 0.7.1 · Windows x64
+Godot 0.7.2 · Windows x64
 
 解压后运行 `Epoch-Rush-Godot.exe`。游戏资源已嵌入程序，无需安装 Godot、Node.js 或启动网页服务。
 
@@ -9,6 +9,10 @@ Extract the archive and run `Epoch-Rush-Godot.exe`. Resources are embedded; no G
 v0.7.1 更新不透明男性骑士应用图标和透明“纪元急袭”文字 LOGO。菜单及十时代对战共用四首 Yourset 完整曲目，每轮随机排序并各播放一次；跨轮避免连续重复同一首，曲间 2 秒淡入淡出。进化与菜单切换不会重启音乐，应用后台暂停并保留位置；胜负平局仍有独立结算短曲。
 
 v0.7.1 ships the opaque male-knight app icon and transparent Chinese wordmark. Four full-length Yourset songs share a shuffled playlist across menus and all ten eras: each plays once per cycle, consecutive repeats are avoided across cycles, and songs crossfade for two seconds. Menu/era changes keep the current song; backgrounding pauses at the current position. Result stings remain separate.
+
+v0.7.2 拉开三档 AI 的开局金币与持续收入：轻松 0.80× / 0.85×，标准 1.25× / 1.35×，挑战 1.50× / 1.65×。玩家资源不变。双方成功进化时，首都最大生命与兵种生命倍率一致增长，并恢复满血；双方仍独立赚取战斗经验并升级。
+
+v0.7.2 separates AI starting gold / passive income by difficulty: Easy 0.80× / 0.85×, Standard 1.25× / 1.35×, Challenge 1.50× / 1.65×. Player resources stay unchanged. Each successful evolution scales that side's capital health with troop HP and fully heals it; sides still earn combat XP and evolve independently.
 
 ## 游玩 / Playing
 

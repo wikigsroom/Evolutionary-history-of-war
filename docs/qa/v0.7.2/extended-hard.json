@@ -1,0 +1,67 @@
+[
+	{
+		"difficulty": "D03",
+		"enemy_era": 6,
+		"era_timeline": [
+			{
+				"era": 2,
+				"seconds": 217.033333333333,
+				"side": 0
+			},
+			{
+				"era": 2,
+				"seconds": 232.5,
+				"side": 1
+			},
+			{
+				"era": 3,
+				"seconds": 452.033333333333,
+				"side": 0
+			},
+			{
+				"era": 3,
+				"seconds": 510.5,
+				"side": 1
+			},
+			{
+				"era": 4,
+				"seconds": 764.033333333333,
+				"side": 0
+			},
+			{
+				"era": 4,
+				"seconds": 799.0,
+				"side": 1
+			},
+			{
+				"era": 5,
+				"seconds": 1035.03333333333,
+				"side": 0
+			},
+			{
+				"era": 5,
+				"seconds": 1104.0,
+				"side": 1
+			},
+			{
+				"era": 6,
+				"seconds": 1314.03333333333,
+				"side": 0
+			},
+			{
+				"era": 6,
+				"seconds": 1342.5,
+				"side": 1
+			}
+		],
+		"kills": [
+			164,
+			125
+		],
+		"player_era": 6,
+		"seconds": 1500.0,
+		"seed": 42571,
+		"simulation_ms": 63392,
+		"winner": -1
+	}
+]

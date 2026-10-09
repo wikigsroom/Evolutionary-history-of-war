@@ -1,0 +1,519 @@
+{
+  "date": "2026-10-10",
+  "window_seconds": 600,
+  "player": "fixed balanced recruitment, research, hero skills and consumables; H01 versus AI H03",
+  "random_events": false,
+  "seeds": [
+    42571,
+    27183,
+    3107
+  ],
+  "baseline": [
+    {
+      "difficulty": "D01",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 305.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 336.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        42,
+        41
+      ],
+      "player_era": 2,
+      "seconds": 600.0,
+      "seed": 42571,
+      "simulation_ms": 30263,
+      "winner": -1
+    },
+    {
+      "difficulty": "D01",
+      "enemy_era": 1,
+      "era_timeline": [],
+      "kills": [
+        7,
+        0
+      ],
+      "player_era": 1,
+      "seconds": 217.166666666667,
+      "seed": 27183,
+      "simulation_ms": 7577,
+      "winner": 0
+    },
+    {
+      "difficulty": "D01",
+      "enemy_era": 1,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 306.033333333333,
+          "side": 0
+        }
+      ],
+      "kills": [
+        24,
+        11
+      ],
+      "player_era": 2,
+      "seconds": 331.166666666667,
+      "seed": 3107,
+      "simulation_ms": 13803,
+      "winner": 0
+    },
+    {
+      "difficulty": "D02",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 346.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 365.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        39,
+        32
+      ],
+      "player_era": 2,
+      "seconds": 600.0,
+      "seed": 42571,
+      "simulation_ms": 36094,
+      "winner": -1
+    },
+    {
+      "difficulty": "D02",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 346.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 365.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        39,
+        34
+      ],
+      "player_era": 2,
+      "seconds": 600.0,
+      "seed": 27183,
+      "simulation_ms": 32211,
+      "winner": -1
+    },
+    {
+      "difficulty": "D02",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 346.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 365.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        39,
+        32
+      ],
+      "player_era": 2,
+      "seconds": 600.0,
+      "seed": 3107,
+      "simulation_ms": 33184,
+      "winner": -1
+    },
+    {
+      "difficulty": "D03",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 300.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 304.5,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 572.033333333333,
+          "side": 0
+        }
+      ],
+      "kills": [
+        47,
+        48
+      ],
+      "player_era": 3,
+      "seconds": 600.0,
+      "seed": 42571,
+      "simulation_ms": 16471,
+      "winner": -1
+    },
+    {
+      "difficulty": "D03",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 300.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 304.5,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 572.033333333333,
+          "side": 0
+        }
+      ],
+      "kills": [
+        47,
+        48
+      ],
+      "player_era": 3,
+      "seconds": 600.0,
+      "seed": 27183,
+      "simulation_ms": 16750,
+      "winner": -1
+    },
+    {
+      "difficulty": "D03",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 300.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 304.5,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 552.033333333333,
+          "side": 0
+        }
+      ],
+      "kills": [
+        53,
+        46
+      ],
+      "player_era": 3,
+      "seconds": 600.0,
+      "seed": 3107,
+      "simulation_ms": 16091,
+      "winner": -1
+    }
+  ],
+  "updated": [
+    {
+      "difficulty": "D01",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 341.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 366.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        41,
+        37
+      ],
+      "player_era": 2,
+      "seconds": 600.0,
+      "seed": 42571,
+      "simulation_ms": 17976,
+      "winner": -1
+    },
+    {
+      "difficulty": "D01",
+      "enemy_era": 1,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 314.033333333333,
+          "side": 0
+        }
+      ],
+      "kills": [
+        23,
+        14
+      ],
+      "player_era": 2,
+      "seconds": 336.6,
+      "seed": 27183,
+      "simulation_ms": 8376,
+      "winner": 0
+    },
+    {
+      "difficulty": "D01",
+      "enemy_era": 1,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 255.033333333333,
+          "side": 0
+        }
+      ],
+      "kills": [
+        22,
+        18
+      ],
+      "player_era": 2,
+      "seconds": 266.5,
+      "seed": 3107,
+      "simulation_ms": 7259,
+      "winner": 0
+    },
+    {
+      "difficulty": "D02",
+      "enemy_era": 3,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 278.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 320.5,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 591.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        41,
+        45
+      ],
+      "player_era": 2,
+      "seconds": 600.0,
+      "seed": 42571,
+      "simulation_ms": 40998,
+      "winner": -1
+    },
+    {
+      "difficulty": "D02",
+      "enemy_era": 2,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 231.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 285.5,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 496.033333333333,
+          "side": 0
+        }
+      ],
+      "kills": [
+        53,
+        33
+      ],
+      "player_era": 3,
+      "seconds": 526.933333333333,
+      "seed": 27183,
+      "simulation_ms": 17508,
+      "winner": 0
+    },
+    {
+      "difficulty": "D02",
+      "enemy_era": 3,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 251.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 279.5,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 534.033333333333,
+          "side": 0
+        },
+        {
+          "era": 3,
+          "seconds": 548.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        58,
+        35
+      ],
+      "player_era": 3,
+      "seconds": 600.0,
+      "seed": 3107,
+      "simulation_ms": 27375,
+      "winner": -1
+    },
+    {
+      "difficulty": "D03",
+      "enemy_era": 3,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 217.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 232.5,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 452.033333333333,
+          "side": 0
+        },
+        {
+          "era": 3,
+          "seconds": 510.5,
+          "side": 1
+        }
+      ],
+      "kills": [
+        65,
+        45
+      ],
+      "player_era": 3,
+      "seconds": 600.0,
+      "seed": 42571,
+      "simulation_ms": 21035,
+      "winner": -1
+    },
+    {
+      "difficulty": "D03",
+      "enemy_era": 3,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 211.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 239.0,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 541.033333333333,
+          "side": 0
+        },
+        {
+          "era": 3,
+          "seconds": 552.0,
+          "side": 1
+        }
+      ],
+      "kills": [
+        63,
+        44
+      ],
+      "player_era": 3,
+      "seconds": 600.0,
+      "seed": 27183,
+      "simulation_ms": 28650,
+      "winner": -1
+    },
+    {
+      "difficulty": "D03",
+      "enemy_era": 3,
+      "era_timeline": [
+        {
+          "era": 2,
+          "seconds": 272.033333333333,
+          "side": 0
+        },
+        {
+          "era": 2,
+          "seconds": 282.0,
+          "side": 1
+        },
+        {
+          "era": 3,
+          "seconds": 530.033333333333,
+          "side": 0
+        },
+        {
+          "era": 3,
+          "seconds": 552.0,
+          "side": 1
+        }
+      ],
+      "kills": [
+        60,
+        42
+      ],
+      "player_era": 3,
+      "seconds": 600.0,
+      "seed": 3107,
+      "simulation_ms": 29160,
+      "winner": -1
+    }
+  ],
+  "resource_multipliers": {
+    "D01": [
+      0.8,
+      0.85
+    ],
+    "D02": [
+      1.25,
+      1.35
+    ],
+    "D03": [
+      1.5,
+      1.65
+    ]
+  },
+  "limitations": "Three seeds per difficulty against one scripted player. Surviving samples are censored at 600 seconds; this is not a human win-rate study."
+}

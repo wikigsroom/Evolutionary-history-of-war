@@ -1,0 +1,8 @@
+{
+  "executable": "godot/build/windows/Epoch-Rush-Godot.exe",
+  "source_project_available_in_working_directory": false,
+  "exit_code": 0,
+  "forced_quit_after": 90,
+  "fatal_script_errors": false,
+  "diagnostics": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nWARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).\n   at: cleanup (core/object/object.cpp:2536)\nERROR: 1 resources still in use at exit (run with --verbose for details).\n   at: clear (core/io/resource.cpp:822)\n"
+}

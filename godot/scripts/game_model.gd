@@ -89,15 +89,14 @@ func reset_battle(options: Dictionary = {}) -> void:
 	sides = []
 	for side in range(2):
 		var loadout = config["loadout" if side == 0 else "enemyLoadout"].duplicate(true)
-		var gold = float(mission.get("playerStartingGold" if side == 0 else "enemyStartingGold", 240.0 * float(db.era(starting_era)["costMultiplier"])))
+		var gold = float(mission.get("playerStartingGold" if side == 0 else "enemyStartingGold", float(db.rules["resources"]["startingGold"]) * float(db.era(starting_era)["costMultiplier"])))
+		if side == 1: gold *= float(difficulty_settings().get("startingGoldMultiplier", 1.0))
 		sides.append({"eraId": starting_era, "gold": gold, "knowledge": 0.0, "command": 50.0,
 			"loadout": loadout, "stance": "cover", "stanceReadyAt": 0, "queue": [], "cooldowns": {},
 			"upgrades": [], "research": {}, "unlockedSlots": 1, "turrets": [], "heroRespawnAt": 0,
 			"rushDeadline": 0, "rushSpawns": 0, "kills": 0, "ageSpecialReadyAt": 0, "aiNext": 75,
 			"activeItems": {"war-drum": 2, "smoke-bomb": 2, "chrono-crate": 3}, "itemCooldowns": {}, "damageDealt": 0.0})
-		var bonus = float(modifiers(side).get("baseHpBonus", 0.0))
-		if side == 1: bonus += float(mission.get("bossParameters", {}).get("enemyBaseHpBonus", 0.0))
-		var hp = floorf(float(db.era(starting_era)["baseHp"]) * (1.0 + bonus))
+		var hp = capital_max_hp(side, starting_era)
 		entities.append({"id": id(), "contentId": "base-%d" % side, "side": side, "kind": "base", "eraId": starting_era,
 			"x": BASE_POSITIONS[side], "previousX": BASE_POSITIONS[side], "hp": hp, "maxHp": hp, "radius": 55.0,
 			"armor": 20.0, "energyResistance": 0.1, "phase": "idle", "shields": [], "statuses": [], "role": "base",
@@ -155,6 +154,20 @@ func command_max(side: int) -> float:
 func era_cost(side: int) -> float:
 	var cost = db.era(sides[side]["eraId"])["nextEvolutionKnowledge"]
 	return 0.0 if cost == null else float(cost)
+
+func difficulty_settings() -> Dictionary:
+	for option in db.rules["difficulty"]:
+		if option["id"] == config.get("difficultyId", "D02"): return option
+	return db.rules["difficulty"][1]
+
+func capital_max_hp(side: int, era_id: String) -> float:
+	var first_era = String(db.rows["eras"][0]["id"])
+	var growth = db.hp_multiplier(era_id) / db.hp_multiplier(first_era)
+	var bonus = float(modifiers(side).get("baseHpBonus", 0.0))
+	if side == 1:
+		var mission = db.get_row("missions", String(config["missionId"]))
+		bonus += float(mission.get("bossParameters", {}).get("enemyBaseHpBonus", 0.0))
+	return floorf(float(db.era(first_era)["baseHp"]) * growth * (1.0 + bonus))
 
 func unit_cost(side: int, unit_id: String) -> int:
 	var unit = db.get_row("units", unit_id)
@@ -261,16 +274,12 @@ func act(action: Dictionary, sequence: int = -1) -> Dictionary:
 				break
 			if not found: return fail("训练项目已出营")
 		"evolve":
+			if float(base(side)["hp"]) <= 0.0: return fail("首都已被摧毁")
 			if player["eraId"] == max_era or era_cost(side) <= 0.0: return fail("已达本局时代上限")
 			if float(player["knowledge"]) < era_cost(side): return fail("战斗经验不足")
 			player["knowledge"] = float(player["knowledge"]) - era_cost(side)
 			player["eraId"] = "A%d" % (db.era_index(player["eraId"]) + 2)
 			var own_base = base(side)
-			var ratio = float(own_base["hp"]) / float(own_base["maxHp"])
-			var mission = db.get_row("missions", String(config["missionId"]))
-			var bonus = float(modifiers(side).get("baseHpBonus", 0.0)) + (float(mission.get("bossParameters", {}).get("enemyBaseHpBonus", 0.0)) if side == 1 else 0.0)
-			own_base["maxHp"] = floorf(float(db.era(player["eraId"])["baseHp"]) * (1.0 + bonus))
-			own_base["hp"] = floorf(float(own_base["maxHp"]) * ratio)
 			own_base["eraId"] = player["eraId"]
 			var own_hero = hero(side)
 			if not own_hero.is_empty():
@@ -282,6 +291,8 @@ func act(action: Dictionary, sequence: int = -1) -> Dictionary:
 			if db.get_row("run-upgrades", upgrade_id).get("eraId") == player["eraId"]:
 				player["upgrades"].append(upgrade_id)
 				for actor in living(side,false):refresh(actor)
+			own_base["maxHp"] = capital_max_hp(side, player["eraId"])
+			own_base["hp"] = own_base["maxHp"]
 			environment.on_evolve()
 			emit_event("evolve", BASE_POSITIONS[side], side, {"eraId": player["eraId"], "name": db.era(player["eraId"])["name"]})
 		"research":
@@ -371,7 +382,8 @@ func step_tick() -> void:
 	for side in range(2):
 		var player = sides[side]
 		var mods = modifiers(side)
-		player["gold"] = minf(99999.0, float(player["gold"]) + 2.5 * float(db.era(player["eraId"])["incomeMultiplier"]) * (1.0 + clampf(float(mods.get("incomeBonus", 0.0)), 0.0, 0.25)) / HZ)
+		var income_scale = float(difficulty_settings().get("incomeMultiplier", 1.0)) if side == 1 else 1.0
+		player["gold"] = minf(99999.0, float(player["gold"]) + float(db.rules["resources"]["goldPerSec"]) * float(db.era(player["eraId"])["incomeMultiplier"]) * income_scale * (1.0 + clampf(float(mods.get("incomeBonus", 0.0)), 0.0, 0.25)) / HZ)
 		player["command"] = minf(command_max(side), float(player["command"]) + 3.0 / HZ)
 		if not player["queue"].is_empty():
 			var order = player["queue"][0]
@@ -407,8 +419,9 @@ func step_tick() -> void:
 	if tick % 3 == 0: changed.emit()
 
 func _decide_enemy() -> void:
+	if float(base(1)["hp"]) <= 0.0: return
 	var player = sides[1]
-	var difficulty = db.rules["difficulty"][clampi(int(String(config["difficultyId"]).right(1)) - 1, 0, 2)]
+	var difficulty = difficulty_settings()
 	player["aiNext"] = tick + ceili(float(difficulty["decisionSec"]) * HZ)
 	if random_index(1000) < int(float(difficulty["mistakeProbability"]) * 1000): return
 	var mission = db.get_row("missions", String(config["missionId"]))
