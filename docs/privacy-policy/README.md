@@ -1,6 +1,6 @@
 # 《纪元急袭》隐私政策
 
-本目录保存根据用户提供的 `privacy-policy-template.docx` 更新的正式隐私政策。版本为 **ER-PRIVACY-2026-10-08**，更新日期、生效日期均为 **2026 年 10 月 8 日**。
+本目录保存根据用户提供的 `privacy-policy-template.docx` 更新的正式隐私政策。版本为 **ER-PRIVACY-2026-10-09**，更新日期、生效日期均为 **2026 年 10 月 9 日**。
 
 ## 文档与页面
 
@@ -13,15 +13,15 @@
 
 正式公开 HTTPS 地址：[《纪元急袭》隐私政策](https://jyqx.sidcloud.cn/)。已部署到 `sidcloud` 团队的 `jyqx-privacy-policy` 项目。备用生产地址为 [jyqx-privacy-policy.vercel.app](https://jyqx-privacy-policy.vercel.app)。
 
-自定义域名 `jyqx.sidcloud.cn` 的 DNS 与所有权验证已通过，HTTPS 证书有效。2026 年 10 月 9 日 00:55（UTC+8）完成无登录直连访问复核，页面和文档均返回 HTTP 200；HTTP 自动跳转 HTTPS。准确 DNS 记录及验收证据见 [自定义域名部署记录](custom-domain.md)。
+自定义域名 `jyqx.sidcloud.cn` 的 DNS 与所有权验证已通过，HTTPS 证书有效。2026 年 10 月 9 日 15:24（UTC+8）完成主体修订后的无登录直连访问复核，三个页面入口、样式、图片和下载文件均返回 HTTP 200，并与正式源文件逐字节一致。准确 DNS 记录及验收证据见 [自定义域名部署记录](custom-domain.md)。
 
 此前 Vercel 官方 CLI 创建的临时部署为 `temporary-flying-cello-u61kcq3.vercel.app`，到期时间为 **2026 年 10 月 8 日 12:00:39（UTC+8）**。它已跳转至 Vercel 的“部署已过期”页面，由以上正式部署替代。
 
 ## 适用范围
 
-当前 Godot 原生 **0.7.0** 版本，支持 Windows 和 Android。Android 包名为 `studio.epochrush.pixelcommand`。历史 Web/Electron/Capacitor 版本及未来另行加入的联网功能不应直接套用当前版本说明。
+当前 Godot 原生 **0.7.1** 版本，支持 Windows 和 Android。Android 包名为 `studio.epochrush.pixelcommand`。历史 Web/Electron/Capacitor 版本及未来另行加入的联网功能不应直接套用当前版本说明。
 
-开发者及运营者对外名称为 **Wikig's Room（项目发布账号 wikigsroom）**，隐私联系邮箱为 **carzyg@outlook.com**。两项取自发布账号在 2026 年 10 月 8 日的[公开 GitHub 资料](https://github.com/wikigsroom)，未补造企业登记名称、注册地址或电话。
+开发及运营主体为 **SIDcloud**，与用户在 2026 年 10 月 9 日明确指定的资料页公司主体一致。隐私联系邮箱为 **carzyg@outlook.com**。网页正文、Word 正文与作者信息、Markdown 和结构化来源均使用同一主体名称。
 
 ## 更新依据
 
@@ -44,6 +44,7 @@
 
 - 原始模板保持不变。Word 经本机 Microsoft Word 导出和逐页视觉检查，最终 12 页。
 - Word 的 20 个未编辑 OOXML 包部件与原模板字节一致；正文、补充标题样式及文档元数据按更新需要修改。
+- 本次主体修订只修改 Word 正文及核心元数据两个 OOXML 部件，其余 22 个部件与修订前文档字节一致；原有版式保持，重新导出后逐页检查 12 页。
 - 网页在 1280、390 和 320 像素宽度下验证无页面水平溢出，十个正文主题及目录锚点完整。
 - 实际点击下载的 Word 和 Markdown 与正式文件 SHA-256 一致。
 - 2026 年 10 月 9 日自定义域名 `https://jyqx.sidcloud.cn` 的公开访问复核：`/`、`/privacy`、`/privacy-policy`、样式、骑士图片、Word 和 Markdown 均返回 HTTP 200；所有响应与正式源文件逐字节一致。采用无登录、无代理直连，保持默认 TLS 证书及主机名校验，HTTP 自动跳转 HTTPS。
@@ -53,7 +54,7 @@
 - Vercel 生成的 `.vercel/` 状态目录、环境文件、`.gitignore` 和 `.vercelignore` 不属于公开页面。生产发布采用经过白名单校验的 Build Output API 静态输出；`/.env.local` 与 `/.vercel/anonymous.json` 公开访问均返回 404。
 - 全部操作使用本机 Windows 工具；浏览器检查结束后关闭专用页面、上下文和浏览器进程。
 
-排版、来源核对和检查记录位于 `output/privacy-policy/2026-10-08/`。编写工具位于 `tools/privacy/`。`build_privacy.py` 的模板、结构化编写来源和身份来源保留于工作记录的 `source/` 子目录；修改正文时应同步生成 Word、Markdown 和网页，避免多个版本不一致。
+初始排版、来源核对和检查记录位于 `output/privacy-policy/2026-10-08/`，本次主体修订及公开访问校验记录位于 `output/privacy-policy/2026-10-09/operator-correction/`。编写工具位于 `tools/privacy/`。`build_privacy.py` 优先读取本目录的 `policy.json` 正文及其 `operator` 主体信息；历史模板和编写缓存保留于初始工作记录的 `source/` 子目录。修改正文时应同步 Word、Markdown 和网页，避免多个版本不一致或旧缓存覆盖已修订的主体名称。
 
 ### 本机预览
 
@@ -73,7 +74,7 @@ python tools/privacy/serve_site.py web/privacy-policy
 python tools/privacy/deploy_vercel.py --authenticated --production --scope sidcloud
 ```
 
-该脚本准备 Vercel Build Output API v3 静态输出，以 `--prod --prebuilt` 发布，保留页面路由、安全响应头和下载文件，随后仍应以未登录访客验证公开访问。正式部署 ID 为 `dpl_CNmUmMCA99EntgRe35BCjHYRbVcV`，状态为 `READY`。最新公开访问和 DNS 配置记录保存在 `output/privacy-policy/2026-10-09/domain-binding/`。
+该脚本准备 Vercel Build Output API v3 静态输出，以 `--prod --prebuilt` 发布，保留页面路由、安全响应头和下载文件，随后仍应以未登录访客验证公开访问。当前正式部署 ID 为 `dpl_5JayjyrZLvxb1PdMZa8rkT6JZZya`，状态为 `READY`。本次公开访问校验记录位于 `output/privacy-policy/2026-10-09/operator-correction/public-verification.json`，原 DNS 配置记录位于 `output/privacy-policy/2026-10-09/domain-binding/`。
 
 认证信息只交给 Vercel 官方登录流程，不写入本文、网页或仓库。临时部署仅供认领前访问，不应把未认领的到期地址作为长期发行配置。
 

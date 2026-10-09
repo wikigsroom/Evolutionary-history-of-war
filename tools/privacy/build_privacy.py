@@ -43,15 +43,20 @@ def set_prop(parent: etree._Element, name: str, **attrs: str) -> etree._Element:
 
 
 def load_source() -> tuple[dict, dict]:
-    identity = json.loads((WORK / "source/identity.json").read_text(encoding="utf-8"))
+    canonical = DOCS / "policy.json"
+    source = json.loads(canonical.read_text(encoding="utf-8")) if canonical.exists() else {}
+    if source.get("operator"):
+        # The public, reviewed policy is authoritative after a subject correction.
+        identity = dict(source["operator"])
+    else:
+        identity = json.loads((WORK / "source/identity.json").read_text(encoding="utf-8"))
+        source = json.loads((WORK / "source/policy.json").read_text(encoding="utf-8"))
     if not identity.get("operator_name") or not identity.get("privacy_email"):
         raise SystemExit("Publication blocked: actual operator name and privacy contact email are required.")
     if not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", identity["privacy_email"]):
         raise SystemExit("Publication blocked: invalid privacy contact email.")
     if identity.get("operator_type") == "company" and not identity.get("registered_address"):
         raise SystemExit("Publication blocked: company address is required.")
-    source = json.loads((WORK / "source/policy.json").read_text(encoding="utf-8"))
-
     def replace(value):
         if isinstance(value, str):
             for key in ("operator_name", "privacy_email"):
