@@ -2,6 +2,8 @@
 
 日期：2026-10-08。使用已选 H03 男性骑士与现有像素原画，完成第 2–5 条要求。正式游戏名为“纪元急袭”。
 
+2026-10-09 新增符合“PNG、4 MB 以内、宽 ≥1280 px 或高 ≥720 px”的 [Logo 上传版](logo-upload-spec.md)：推荐 2880×960 主版，另附 1440×480 备用版。两份均为透明底、仅含游戏名；上传使用新版成品。
+
 | 要求 | 已完成调整 | 当前文件 |
 | --- | --- | --- |
 | 2. 游戏图标不得使用透明背景 | 骑士图标铺满深蓝背景，1024、512 PNG 及 ICO 各尺寸完全不透明 | [1024 PNG](../../output/marketing/2026-10-08/brand/game-icon-opaque-1024.png)；[512 PNG](../../output/marketing/2026-10-08/brand/game-icon-opaque-512.png)；[ICO](../../output/marketing/2026-10-08/brand/game-icon-opaque.ico) |

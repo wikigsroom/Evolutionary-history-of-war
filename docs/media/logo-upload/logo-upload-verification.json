@@ -1,0 +1,73 @@
+{
+  "game_name": "纪元急袭",
+  "source": "public/brand/game-logo.png",
+  "source_sha256": "c32d538087261ed2bdfb7d88f600e7aac5ef5004278591af973a94fccc190921",
+  "source_content_bounds": [
+    370,
+    56,
+    1678,
+    455
+  ],
+  "requirements": {
+    "format": "PNG",
+    "max_bytes": 4000000,
+    "minimum_dimensions": "width >= 1280 OR height >= 720",
+    "background": "transparent RGBA",
+    "visible_text": [
+      "纪元急袭"
+    ]
+  },
+  "resampling": "nearest neighbor at integer scale; lossless PNG",
+  "files": [
+    {
+      "file": "game-logo-transparent-2880x960.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "size": [
+        2880,
+        960
+      ],
+      "bytes": 26546,
+      "integer_scale": 2,
+      "content_bounds": [
+        132,
+        81,
+        2748,
+        879
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_pixels_match_expected": true,
+      "dimension_rule_passed": true,
+      "file_size_rule_passed": true,
+      "sha256": "1ddd664ff7d27a06c5aaedce4326215e99e0d7562687ebad7a1b96a5cce62b15"
+    },
+    {
+      "file": "game-logo-transparent-1440x480.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "size": [
+        1440,
+        480
+      ],
+      "bytes": 14239,
+      "integer_scale": 1,
+      "content_bounds": [
+        66,
+        40,
+        1374,
+        439
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_pixels_match_expected": true,
+      "dimension_rule_passed": true,
+      "file_size_rule_passed": true,
+      "sha256": "883f2d90647860e02f7cee4a7bebb4574b9e69ed792414bb2b9a974049664750"
+    }
+  ]
+}
