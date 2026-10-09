@@ -11,7 +11,7 @@ func _ready() -> void:
 	audio=BattleAudio.new();audio.settings=store.settings;add_child(audio)
 	host=Control.new();host.name="ViewHost";host.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);host.theme=PixelTheme.make_theme();add_child(host)
 	get_tree().auto_accept_quit=false
-	if store.settings["fullscreen"]:DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	if OS.has_feature("android") or store.settings["fullscreen"]:DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	show_menu("home")
 func _clear_view() -> void:
 	if is_instance_valid(current_view):host.remove_child(current_view);current_view.queue_free()
@@ -40,7 +40,9 @@ func _show_battle_view(view_state: Dictionary = {}) -> void:
 	view.restore_view(view_state)
 func _notification(what: int) -> void:
 	if what==NOTIFICATION_APPLICATION_PAUSED and is_instance_valid(audio):audio.set_suspended(true)
-	if what==NOTIFICATION_APPLICATION_RESUMED and is_instance_valid(audio):audio.set_suspended(false)
+	if what==NOTIFICATION_APPLICATION_RESUMED:
+		if is_instance_valid(audio):audio.set_suspended(false)
+		if OS.has_feature("android"):DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	if what==NOTIFICATION_WM_GO_BACK_REQUEST:
 		var now=Time.get_ticks_msec()
 		if now-last_back_request<200:return

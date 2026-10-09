@@ -1,6 +1,6 @@
 # 纪元急袭 / Epoch Rush: Pixel Command
 
-Godot 0.7.2 · Windows x64
+Godot 0.7.3 · Windows x64
 
 解压后运行 `Epoch-Rush-Godot.exe`。游戏资源已嵌入程序，无需安装 Godot、Node.js 或启动网页服务。
 
@@ -49,3 +49,6 @@ The repository contains source, runtime assets, native screenshots and GIFs for 
 随包包含 Godot 引擎、字体和音频来源声明。原有公开音效采用 CC0；四首 Yourset 曲目由项目所有者指定提供，分别标记，不适用 CC0。项目源码及自制美术尚未指定统一开源许可，第三方资源分别适用其自身许可。
 
 The package includes Godot, font and audio notices. Legacy public SFX are CC0; the four owner-supplied Yourset tracks are credited separately and are not covered by CC0. No repository-wide open-source license has been selected for the project code and original artwork; third-party resources retain their own licenses.
+
+0.7.3：Android 等比扩展铺满、边到边沉浸模式、交互 UI 安全区与前台恢复。
+0.7.3: proportional full-screen expansion, Android edge-to-edge, safe interactive UI and immersive resume.

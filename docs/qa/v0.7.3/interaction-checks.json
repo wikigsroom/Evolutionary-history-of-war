@@ -1,0 +1,49 @@
+{
+	"checks": 159,
+	"failures": [],
+	"touch_input": true,
+	"windows": [
+		{
+			"captured_pixels": [
+				1280,
+				720
+			],
+			"reported_window": [
+				1280,
+				720
+			],
+			"requested": [
+				1280,
+				720
+			]
+		},
+		{
+			"captured_pixels": [
+				1024,
+				576
+			],
+			"reported_window": [
+				1024,
+				576
+			],
+			"requested": [
+				1024,
+				576
+			]
+		},
+		{
+			"captured_pixels": [
+				2400,
+				1080
+			],
+			"reported_window": [
+				2400,
+				1080
+			],
+			"requested": [
+				2400,
+				1080
+			]
+		}
+	]
+}

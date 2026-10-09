@@ -6,6 +6,7 @@ signal resume_battle
 var page = "home"
 var store: EpochStore
 var audio: BattleAudio
+var safe_ui: SafeUI
 var body: Control
 var difficulty = "D02"
 var encyclopedia_era = "A1"
@@ -14,15 +15,16 @@ func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	audio.set_battle_paused(false)
 	mouse_filter=Control.MOUSE_FILTER_STOP
-	var header=HBoxContainer.new();add_child(header);header.position=Vector2(24,15);header.add_theme_constant_override("separation",13)
+	safe_ui=SafeUI.new();safe_ui.name="SafeUI";add_child(safe_ui)
+	var header=HBoxContainer.new();safe_ui.add_child(header);header.position=Vector2(24,15);header.add_theme_constant_override("separation",13)
 	var crest=TextureRect.new();crest.name="BrandKnight";crest.texture=PixelTheme.texture("res://assets/ui/pixel/app-icon.png");crest.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;crest.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;crest.custom_minimum_size=Vector2(50,50);header.add_child(crest)
 	_brand_logo(header,Vector2(230,50),"HeaderLogo")
-	var nav=HBoxContainer.new();add_child(nav);nav.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);nav.offset_left=-658;nav.offset_right=-24;nav.offset_top=14;nav.offset_bottom=74;nav.add_theme_constant_override("separation",7)
+	var nav=HBoxContainer.new();safe_ui.add_child(nav);nav.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);nav.offset_left=-658;nav.offset_right=-24;nav.offset_top=14;nav.offset_bottom=74;nav.add_theme_constant_override("separation",7)
 	for entry in [["home","出征","sword"],["campaign","战役","research"],["loadout","整军","crown"],["encyclopedia","图鉴","population"],["settings","设置","sound"]]:
 		var card=PixelCard.new();card.compact=true;card.icon_id=entry[2];card.title=entry[1];card.selected=page==entry[0];card.custom_minimum_size=Vector2(118,58);card.tooltip_text=entry[1];nav.add_child(card)
 		card.pressed.connect(func():audio.sfx("ui_confirm",0.5);page_requested.emit(entry[0]))
-	var host=Control.new();add_child(host);host.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);host.offset_left=28;host.offset_right=-28;host.offset_top=101;host.offset_bottom=-42;body=host
-	message=PixelTheme.label("",16,PixelTheme.AMBER);add_child(message);message.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);message.offset_left=28;message.offset_top=-30;message.offset_bottom=-8
+	var host=Control.new();safe_ui.add_child(host);host.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);host.offset_left=28;host.offset_right=-28;host.offset_top=101;host.offset_bottom=-42;body=host
+	message=PixelTheme.label("",16,PixelTheme.AMBER);safe_ui.add_child(message);message.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);message.offset_left=28;message.offset_top=-30;message.offset_bottom=-8
 	match page:
 		"home":_home()
 		"campaign":_campaign()
@@ -183,6 +185,7 @@ func _settings() -> void:
 	AudioSettings.add_rows(box,store,audio)
 	var toggles=GridContainer.new();toggles.columns=2;toggles.add_theme_constant_override("h_separation",25);box.add_child(toggles)
 	for entry in [["music","背景音乐"],["sfx","攻击与界面音效"],["reduced_motion","降低镜头动态"],["fullscreen","全屏显示"]]:
+		if entry[0]=="fullscreen" and OS.has_feature("android"):continue
 		var checkbox=CheckButton.new();checkbox.text=entry[1];checkbox.button_pressed=store.settings[entry[0]];checkbox.custom_minimum_size=Vector2(330,43);toggles.add_child(checkbox)
 		checkbox.toggled.connect(func(value):store.settings[entry[0]]=value;_save_settings();if entry[0]=="fullscreen":DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if value else DisplayServer.WINDOW_MODE_WINDOWED))
 	_text(box,"键盘 1–5 招募 · Q 指挥官 · E 进化 · Esc 暂停\n鼠标 / 触屏选择技能后，点战场落点；暂停后可保留对局返回。",15,PixelTheme.MUTED)

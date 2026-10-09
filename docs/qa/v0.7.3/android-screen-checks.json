@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "packages": [
+    {
+      "package": "release",
+      "arguments": [
+        "--xr_mode_regular",
+        "--xr-mode",
+        "off",
+        "--fullscreen",
+        "--edge_to_edge",
+        "--background_color",
+        "#000000"
+      ],
+      "scriptSha256": {
+        "battle_screen": "ce71e09a4753fd2fbdb23ab1c182279d57a508432f3461bc36a8e1c42653666b",
+        "game_model": "60ddba831c36506423eae19b5cc84ca4b111af284c9af13ab69d22636e229567",
+        "main": "7dda7528eb9a4cc3989b8aa60cc654bcf307ec9dc0b04cd6b79cd3143d859e3b",
+        "menu_screen": "13cf1653308bb3a7b813e5e07048fec587354f1707dacf98c6af150d807dc597",
+        "safe_ui": "66bc35c6495432250cbd922fbaacdd96ec97f486cf5724a02b86270f86d07c6d"
+      },
+      "matchesTestedWindowsPack": true,
+      "passed": true
+    },
+    {
+      "package": "debug",
+      "arguments": [
+        "--xr_mode_regular",
+        "--xr-mode",
+        "off",
+        "--fullscreen",
+        "--edge_to_edge",
+        "--background_color",
+        "#000000"
+      ],
+      "scriptSha256": {
+        "battle_screen": "ce71e09a4753fd2fbdb23ab1c182279d57a508432f3461bc36a8e1c42653666b",
+        "game_model": "60ddba831c36506423eae19b5cc84ca4b111af284c9af13ab69d22636e229567",
+        "main": "7dda7528eb9a4cc3989b8aa60cc654bcf307ec9dc0b04cd6b79cd3143d859e3b",
+        "menu_screen": "13cf1653308bb3a7b813e5e07048fec587354f1707dacf98c6af150d807dc597",
+        "safe_ui": "66bc35c6495432250cbd922fbaacdd96ec97f486cf5724a02b86270f86d07c6d"
+      },
+      "matchesTestedWindowsPack": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 # 项目文档
 
-当前方向：方向 1。最新原生版本为 Godot 0.7.2《纪元急袭》，提供 Windows 便携包和已签名 Android APK。十时代源码、素材及验收结果见 [0.7.0 交付报告](epoch-rush/godot-v0.7-ten-eras-report.md)；下一轮选择与反制设计见 [玩法深化与对等博弈](epoch-rush/godot-v0.7-gameplay-depth-and-fair-duels.md)。Android 真机与原生 iOS 发行验证尚未完成。以下 v0.1–v0.3 文档及归档保留对应历史状态。
+当前方向：方向 1。最新原生版本为 Godot 0.7.3《纪元急袭》，提供 Windows 便携包和已签名 Android APK。十时代源码、素材及验收结果见 [0.7.0 交付报告](epoch-rush/godot-v0.7-ten-eras-report.md)；下一轮选择与反制设计见 [玩法深化与对等博弈](epoch-rush/godot-v0.7-gameplay-depth-and-fair-duels.md)。Android 真机与原生 iOS 发行验证尚未完成。以下 v0.1–v0.3 文档及归档保留对应历史状态。
 
+- [v0.7.3 长屏铺满与安全区](releases/v0.7.3.md)：等比扩展、边到边全屏、UI 挖孔避让；[验收截图](qa/v0.7.3/README.md)。
 - [v0.7.2 难度与首都进化](releases/v0.7.2.md)：三档 AI 经济系数、首都进化按兵种生命比例增长并回满；[验收记录](qa/v0.7.2/README.md)。
 - [v0.7.1 品牌与随机 BGM](epoch-rush/godot-v0.7.1-branding-bgm-report.md)：双端最新骑士图标、透明文字 LOGO、Yourset 四首随机轮播与重新打包；[发布说明](releases/v0.7.1.md)。
 - [Logo 上传版](epoch-rush/logo-upload-spec.md)：透明游戏名 PNG，2880×960 主版和 1440×480 备用版；满足 4 MB 以内、宽 ≥1280 或高 ≥720 的最新规格。

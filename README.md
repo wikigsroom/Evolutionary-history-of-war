@@ -5,11 +5,11 @@
 
 **Build your army, command your hero, and turn an evolution into a counterattack.**
 
-[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.2/README.md)
+[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.3/README.md)
 
 | 项目 / Item | 当前状态 / Current state |
 | --- | --- |
-| 主线路 / Primary runtime | **Godot 0.7.2**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
+| 主线路 / Primary runtime | **Godot 0.7.3**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
 | 类型 / Genre | 横向单战线战争进化、基地攻防、主将构筑 / Side-view single-lane warfare, base defense and commander builds |
 | 内容 / Content | **10** 时代 / eras · **50** 兵种 / troops · **6** 主将 / commanders · **60** 主将时代形态 / commander-era forms |
 | 战场 / Battlefields | **30** 地图 / maps · **20** 战役关卡 / missions · **20** 炮塔 / turrets · **10** 时代奇袭 / era strikes |
@@ -21,19 +21,19 @@
 | 历史线路 / Legacy runtime | 根目录 Phaser / TypeScript / Vite **0.3.1**, Electron / Capacitor wrappers |
 | 仓库 / Repository | 源码、运行素材、文档与精简证据 / Source, runtime assets, documentation and compact evidence |
 
-**直接游玩 / Play now — [v0.7.2 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2)**
+**直接游玩 / Play now — [v0.7.3 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3)**
 
 | 平台 / Platform | 下载 / Download | 使用 / Use |
 | --- | --- | --- |
-| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
-| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
-| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
-| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
-| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.2/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
+| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
+| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
+| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
+| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
+| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
 
-预构建版本无需安装 Godot。v0.7.2 调整三档 AI 的开局金币和持续收入，成功进化会按兵种生命比例增加首都最大生命并回满血。保留最新骑士图标、透明文字 LOGO、四首 Yourset 随机 BGM 和营寨相向修复。Android 实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.2.md) 记录内容与验证范围。
+预构建版本无需安装 Godot。v0.7.3 修复 Android 长屏留边，场景等比扩展铺满，操作 UI 避让系统安全区；[本版说明](docs/releases/v0.7.3.md)。此前 v0.7.2 调整三档 AI 的开局金币和持续收入，成功进化会按兵种生命比例增加首都最大生命并回满血。保留最新骑士图标、透明文字 LOGO、四首 Yourset 随机 BGM 和营寨相向修复。Android 实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.2.md) 记录内容与验证范围。
 
-Prebuilt downloads need no Godot installation. v0.7.2 separates AI starting gold and passive income by difficulty; successful evolution scales capital HP with troops and fully heals it. The latest knight icon, transparent wordmark, four shuffled Yourset songs and facing camps remain included. Android physical-device playtesting is pending. See the [bilingual release notes](docs/releases/v0.7.2.md).
+Prebuilt downloads need no Godot installation. v0.7.3 fills wider Android displays proportionally and keeps controls within the system safe area; see [release notes](docs/releases/v0.7.3.md). Previous v0.7.2 separates AI starting gold and passive income by difficulty; successful evolution scales capital HP with troops and fully heals it. The latest knight icon, transparent wordmark, four shuffled Yourset songs and facing camps remain included. Android physical-device playtesting is pending. See the [bilingual release notes](docs/releases/v0.7.2.md).
 
 **v0.7.1 实机菜单 / Menu captured in v0.7.1**
 
@@ -311,7 +311,7 @@ The top bar shows both bases and eras, your gold, combat XP, command and match t
 
 ### 11. 键鼠与触屏操作
 
-| 操作 | Godot 0.7.2 输入 |
+| 操作 | Godot 0.7.3 输入 |
 | --- | --- |
 | 招募五个卡槽 | `1`–`5`，或点击兵卡 |
 | 战鼓、烟幕、补给 | `Z`、`X`、`C`，或点击道具 |
@@ -370,7 +370,7 @@ $godotExe = 'C:\Tools\Godot\Godot_v4.7.2-stable_win64_console.exe'
 
 ### 15. Windows 与 Android 构建
 
-仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.2 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
+仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.3 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
 
 先创建仅用于本机的导出配置：
 
@@ -390,7 +390,7 @@ python -X utf8 tools/package_godot_windows.py
 
 第二步用 Python 标准库生成八文件便携 ZIP 和 `SHA256SUMS.txt`，随包附带引擎、字体、音频许可。EXE 内嵌资源，解压运行无需安装 Godot 或启动网页服务。包文件名为 `godot/build/windows/Epoch-Rush-Godot-Windows.zip`。
 
-**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.2、versionCode 11，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
+**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.3、versionCode 12，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
 
 ```powershell
 # 下面两项填入你自己的安装路径。
@@ -445,7 +445,7 @@ New-Item -ItemType Directory -Force output/qa/ten-eras | Out-Null
 Evolutionary-history-of-war/
 ├─ README.md                         中英双语总览与实机展示
 ├─ godot/
-│  ├─ project.godot                  原生 0.7.2 工程入口
+│  ├─ project.godot                  原生 0.7.3 工程入口
 │  ├─ scenes/Main.tscn               主场景
 │  ├─ scripts/                      模拟、战斗、菜单、HUD、音频与存档
 │  ├─ assets/data/                  19 个 JSON 数据表
@@ -484,7 +484,7 @@ Evolutionary-history-of-war/
 
 ### 18. 历史 Web / Electron / Capacitor 0.3.1
 
-根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.7.2** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
+根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.7.3** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
 
 需要本机支持该锁文件的 Node.js（Vite 8 工具链要求的 Node 版本，建议至少 22.12）和 npm：
 
@@ -739,7 +739,7 @@ Node.js, Python and image-generation access are not required for native gameplay
 
 ### 14. Export Windows and Android
 
-This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.2 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.2). The `godot/build/` paths below refer to local output when building your own packages.
+This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.3 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3). The `godot/build/` paths below refer to local output when building your own packages.
 
 Create an ignored local export configuration from the credential-free template:
 
@@ -764,7 +764,7 @@ $env:ANDROID_SDK_ROOT = "$env:LOCALAPPDATA\Android\Sdk"
 python -X utf8 tools/finalize_android_packages.py
 ```
 
-The preset uses `studio.epochrush.pixelcommand`, version 0.7.2/code 11, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
+The preset uses `studio.epochrush.pixelcommand`, version 0.7.3/code 12, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
 
 Private export settings and signing keys are ignored. Android package verification is complete, but device installation, touch feel, frame pacing and hardware audio are not yet verified.
 
@@ -811,7 +811,7 @@ For delivery-package captures, the same-version editor can use `--main-pack` wit
 
 ### 17. Legacy Web runtime
 
-Root `package.json` version **0.3.1** and native project version **0.7.2** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
+Root `package.json` version **0.3.1** and native project version **0.7.3** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
 
 Use a local Node.js version supported by the locked Vite 8 toolchain, preferably at least 22.12:
 

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "exitCode": 0,
+  "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\r\n\r\nWARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).\r\n   at: cleanup (core/object/object.cpp:2536)\r\nERROR: 1 resources still in use at exit (run with --verbose for details).\r\n   at: clear (core/io/resource.cpp:822)\r\n",
+  "scope": "Standalone Windows executable from empty working directory"
+}

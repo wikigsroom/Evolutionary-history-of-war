@@ -1,0 +1,80 @@
+{
+  "version": "0.7.3",
+  "passed": true,
+  "actors": 126,
+  "strips": 252,
+  "nonempty_frames": 6980,
+  "fonts": [
+    {
+      "name": "resource-rounded.woff2",
+      "required_chinese_glyphs": 661,
+      "missing": []
+    },
+    {
+      "name": "smiley.woff2",
+      "required_chinese_glyphs": 661,
+      "missing": []
+    }
+  ],
+  "android": [
+    {
+      "file": "Epoch-Rush-Godot-debug.apk",
+      "size": 154974703,
+      "sha256": "3218cf3c2b63ab0d0b2f9d9a58f497cb71a7e57cd3bec74ab1911babe680d67a",
+      "checked_data_files": 19,
+      "checked_textures_and_audio": 579,
+      "checked_playlist": [
+        "yourset-01",
+        "yourset-02",
+        "yourset-03",
+        "yourset-04"
+      ],
+      "missing_textures": [],
+      "mismatched_imports": [],
+      "data_differences": [],
+      "forbidden_files": [],
+      "crc_error": null,
+      "architectures": [
+        "arm64-v8a"
+      ]
+    },
+    {
+      "file": "Epoch-Rush-Godot-release.apk",
+      "size": 153159696,
+      "sha256": "fb2d113cf1b3b53becf5f079e80cbc857ef3c36864c134fb859f0de609f3eb12",
+      "checked_data_files": 19,
+      "checked_textures_and_audio": 579,
+      "checked_playlist": [
+        "yourset-01",
+        "yourset-02",
+        "yourset-03",
+        "yourset-04"
+      ],
+      "missing_textures": [],
+      "mismatched_imports": [],
+      "data_differences": [],
+      "forbidden_files": [],
+      "crc_error": null,
+      "architectures": [
+        "arm64-v8a"
+      ]
+    }
+  ],
+  "windows": {
+    "exe_sha256": "0a87ec65b9f1f87331064a142c3c77e63e6f347b3d44ddfacff572295097a25c",
+    "exe_bytes": 236273344,
+    "zip_sha256": "2e8da516ee631965cebd8ea7404ab7b9f26af6ed60a3abe56cebe59af35d5116",
+    "zip_bytes": 163494519,
+    "files": [
+      "Epoch-Rush-Godot.exe",
+      "README.md",
+      "Godot-LICENSE.txt",
+      "Godot-third-party-notices.txt",
+      "resource-rounded-LICENSE.txt",
+      "smiley-LICENSE.txt",
+      "Audio-CREDITS.txt",
+      "Audio-CC0-1.0.txt"
+    ]
+  },
+  "failures": []
+}

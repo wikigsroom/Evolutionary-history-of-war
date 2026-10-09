@@ -5,6 +5,7 @@ signal replay_requested
 var model
 var store: EpochStore
 var audio: BattleAudio
+var safe_ui: SafeUI
 var world: BattleWorld
 var unit_cards = []
 var item_cards = {}
@@ -32,22 +33,23 @@ func setup(simulation, persistence: EpochStore, sound: BattleAudio) -> void:
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	world = BattleWorld.new(); world.setup(model,audio,store.settings); add_child(world); world.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	safe_ui=SafeUI.new();safe_ui.name="SafeUI";safe_ui.z_index=100;add_child(safe_ui)
 	world.field_clicked.connect(_select_field)
 	world.cancel_requested.connect(_clear_target)
-	var readout = BattleReadout.new(); readout.model = model; add_child(readout); readout.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE); readout.offset_bottom = 78
+	var readout = BattleReadout.new(); readout.model = model; safe_ui.add_child(readout); readout.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE); readout.offset_bottom = 78
 	var pause = PixelTheme.icon_button("pause","暂停 / Esc")
-	add_child(pause); pause.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT); pause.offset_left=-66;pause.offset_right=-17;pause.offset_top=15;pause.offset_bottom=61;pause.pressed.connect(_pause_menu)
-	var utilities = HBoxContainer.new(); utilities.add_theme_constant_override("separation",7); add_child(utilities); utilities.position = Vector2(15,91)
+	safe_ui.add_child(pause); pause.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT); pause.offset_left=-66;pause.offset_right=-17;pause.offset_top=15;pause.offset_bottom=61;pause.pressed.connect(_pause_menu)
+	var utilities = HBoxContainer.new(); utilities.add_theme_constant_override("separation",7); safe_ui.add_child(utilities); utilities.position = Vector2(15,91)
 	world.field_blockers.append(utilities)
 	for item in [["research","战况与时代地图",_battle_map],["target","显示攻击距离",_toggle_ranges],["queue","训练队列 / 取消招募",_queue_menu],["population","兵种图鉴与克制",_unit_info]]:
 		var button = PixelTheme.icon_button(item[0],item[1]); utilities.add_child(button); button.pressed.connect(item[2])
-	var navigation=VBoxContainer.new();navigation.add_theme_constant_override("separation",5);add_child(navigation);navigation.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);navigation.offset_left=-239;navigation.offset_right=-16;navigation.offset_top=89;navigation.offset_bottom=179
+	var navigation=VBoxContainer.new();navigation.add_theme_constant_override("separation",5);safe_ui.add_child(navigation);navigation.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);navigation.offset_left=-239;navigation.offset_right=-16;navigation.offset_top=89;navigation.offset_bottom=179
 	world.field_blockers.append(navigation)
 	minimap=BattleMinimap.new();minimap.world=world;navigation.add_child(minimap)
 	var jumps=HBoxContainer.new();jumps.add_theme_constant_override("separation",7);navigation.add_child(jumps)
 	for entry in [["ally","shield","定位我方基地"],["front","sword","跟随前线"],["hero","crown","跟随指挥官"],["enemy","target","定位敌方基地"]]:
 		var jump_button=PixelTheme.icon_button(entry[1],entry[2]);jumps.add_child(jump_button);jump_button.pressed.connect(func():world.jump(entry[0]))
-	var deck = HBoxContainer.new(); deck.name = "BattleDeck"; add_child(deck); deck.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE); deck.offset_left=12;deck.offset_right=-12;deck.offset_top=-218;deck.offset_bottom=-12
+	var deck = HBoxContainer.new(); deck.name = "BattleDeck"; safe_ui.add_child(deck); deck.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE); deck.offset_left=12;deck.offset_right=-12;deck.offset_top=-218;deck.offset_bottom=-12
 	world.field_blockers.append(deck)
 	deck.add_theme_constant_override("separation",8)
 	var recruit = PixelPanel.new(); recruit.heading="招募";recruit.custom_minimum_size.x=486;recruit.size_flags_horizontal=Control.SIZE_EXPAND_FILL;deck.add_child(recruit)
@@ -73,10 +75,10 @@ func _ready() -> void:
 	var note=PixelTheme.label("交战积累经验\n进化或释放奇袭",12,PixelTheme.MUTED);note.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;buttons.add_child(note)
 	evolve_card=PixelCard.new();evolve_card.gold=true;evolve_card.icon_id="evolve";evolve_card.title="进化";evolve_card.value_icon="xp";evolve_card.custom_minimum_size=Vector2(112,127);command_row.add_child(evolve_card);evolve_card.pressed.connect(_evolve_menu)
 	commander=CommanderButton.new();commander.hero_id=model.sides[0]["loadout"]["heroId"];commander.tooltip_text="指挥官：技能与站位 / Q";deck.add_child(commander);commander.pressed.connect(_toggle_tray)
-	target_label=PixelTheme.label("",17,PixelTheme.AMBER);target_label.mouse_filter=Control.MOUSE_FILTER_IGNORE;add_child(target_label);target_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE);target_label.offset_left=275;target_label.offset_right=-275;target_label.offset_top=84;target_label.offset_bottom=110;target_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
-	target_cancel=PixelTheme.icon_button("back","取消施放");add_child(target_cancel);target_cancel.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);target_cancel.offset_left=-300;target_cancel.offset_right=-248;target_cancel.offset_top=114;target_cancel.offset_bottom=166;target_cancel.visible=false;target_cancel.pressed.connect(_clear_target)
+	target_label=PixelTheme.label("",17,PixelTheme.AMBER);target_label.mouse_filter=Control.MOUSE_FILTER_IGNORE;safe_ui.add_child(target_label);target_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE);target_label.offset_left=275;target_label.offset_right=-275;target_label.offset_top=84;target_label.offset_bottom=110;target_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	target_cancel=PixelTheme.icon_button("back","取消施放");safe_ui.add_child(target_cancel);target_cancel.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);target_cancel.offset_left=-300;target_cancel.offset_right=-248;target_cancel.offset_top=114;target_cancel.offset_bottom=166;target_cancel.visible=false;target_cancel.pressed.connect(_clear_target)
 	world.field_blockers.append(target_cancel)
-	toast_label=PixelTheme.label("",15,PixelTheme.INK);toast_label.mouse_filter=Control.MOUSE_FILTER_IGNORE;add_child(toast_label);toast_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE);toast_label.offset_left=275;toast_label.offset_right=-310;toast_label.offset_top=115;toast_label.offset_bottom=140;toast_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	toast_label=PixelTheme.label("",15,PixelTheme.INK);toast_label.mouse_filter=Control.MOUSE_FILTER_IGNORE;safe_ui.add_child(toast_label);toast_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE);toast_label.offset_left=275;toast_label.offset_right=-310;toast_label.offset_top=115;toast_label.offset_bottom=140;toast_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	audio.play_era_music(model.ally_era);sequence=int(model.last_action_sequence)+1
 	for child in get_children():
 		if child is CanvasItem and child!=world:child.z_index=100
@@ -173,7 +175,7 @@ func _select_field(x: float,target_id: int) -> void:
 func _toggle_tray() -> void:
 	if is_instance_valid(tray):_close_tray();return
 	_clear_target()
-	tray=PixelPanel.new();tray.heading="指挥官";add_child(tray);tray.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT);tray.offset_left=-340;tray.offset_right=-16;tray.offset_top=-385;tray.offset_bottom=-205
+	tray=PixelPanel.new();tray.heading="指挥官";safe_ui.add_child(tray);tray.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT);tray.offset_left=-340;tray.offset_right=-16;tray.offset_top=-385;tray.offset_bottom=-205
 	tray.z_index=110
 	world.field_blockers.append(tray)
 	var body=VBoxContainer.new();body.add_theme_constant_override("separation",7);tray.add_child(body)
@@ -199,7 +201,7 @@ func _skill(id: String) -> void:
 func _modal(title: String,width: float=690.0,height: float=390.0) -> VBoxContainer:
 	_close_modal();_clear_target();_close_tray();model.set_paused(true)
 	audio.set_battle_paused(true)
-	overlay=Control.new();add_child(overlay);overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay=Control.new();safe_ui.add_child(overlay);overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	overlay.z_index=200
 	var shade=ColorRect.new();shade.color=Color(0.015,0.025,0.05,0.82);overlay.add_child(shade);shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var panel=PixelPanel.new();panel.heading=title;overlay.add_child(panel);panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER);panel.offset_left=-width/2;panel.offset_right=width/2;panel.offset_top=-height/2;panel.offset_bottom=height/2
