@@ -3,9 +3,11 @@ extends Control
 signal page_requested(page: String)
 signal start_battle(options: Dictionary)
 signal resume_battle
+signal resume_online
 var page = "home"
 var store: EpochStore
 var audio: BattleAudio
+var online: EpochNetClient
 var safe_ui: SafeUI
 var body: Control
 var difficulty = "D02"
@@ -19,14 +21,16 @@ func _ready() -> void:
 	var header=HBoxContainer.new();safe_ui.add_child(header);header.position=Vector2(24,15);header.add_theme_constant_override("separation",13)
 	var crest=TextureRect.new();crest.name="BrandKnight";crest.texture=PixelTheme.texture("res://assets/ui/pixel/app-icon.png");crest.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;crest.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;crest.custom_minimum_size=Vector2(50,50);header.add_child(crest)
 	_brand_logo(header,Vector2(230,50),"HeaderLogo")
-	var nav=HBoxContainer.new();safe_ui.add_child(nav);nav.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);nav.offset_left=-658;nav.offset_right=-24;nav.offset_top=14;nav.offset_bottom=74;nav.add_theme_constant_override("separation",7)
-	for entry in [["home","出征","sword"],["campaign","战役","research"],["loadout","整军","crown"],["encyclopedia","图鉴","population"],["settings","设置","sound"]]:
-		var card=PixelCard.new();card.compact=true;card.icon_id=entry[2];card.title=entry[1];card.selected=page==entry[0];card.custom_minimum_size=Vector2(118,58);card.tooltip_text=entry[1];nav.add_child(card)
+	var nav=HBoxContainer.new();safe_ui.add_child(nav);nav.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);nav.offset_left=-670;nav.offset_right=-24;nav.offset_top=14;nav.offset_bottom=74;nav.add_theme_constant_override("separation",7)
+	for entry in [["home","出征","sword"],["online","联机","ally"],["campaign","战役","research"],["loadout","整军","crown"],["encyclopedia","图鉴","population"],["settings","设置","sound"]]:
+		var card=PixelCard.new();card.compact=true;card.icon_id=entry[2];card.title=entry[1];card.selected=page==entry[0] or (page=="online-loadout" and entry[0]=="online");card.custom_minimum_size=Vector2(100,58);card.tooltip_text=entry[1];nav.add_child(card)
 		card.pressed.connect(func():audio.sfx("ui_confirm",0.5);page_requested.emit(entry[0]))
 	var host=Control.new();safe_ui.add_child(host);host.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);host.offset_left=28;host.offset_right=-28;host.offset_top=101;host.offset_bottom=-42;body=host
 	message=PixelTheme.label("",16,PixelTheme.AMBER);safe_ui.add_child(message);message.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);message.offset_left=28;message.offset_top=-30;message.offset_bottom=-8
 	match page:
 		"home":_home()
+		"online":_online_menu()
+		"online-loadout":_loadout()
 		"campaign":_campaign()
 		"loadout":_loadout()
 		"encyclopedia":_encyclopedia()
@@ -65,7 +69,7 @@ func _brand_logo(parent: Control,minimum: Vector2,node_name: String) -> TextureR
 func _home() -> void:
 	var title=_brand_logo(body,Vector2(560,175),"HomeLogo");title.position=Vector2(29,7)
 	var tagline=PixelTheme.label("十个时代 · 一条战线 · 每一次进化都改变战局",17,PixelTheme.MUTED);body.add_child(tagline);tagline.position=Vector2(32,192)
-	var panel=_panel(body,"出征");panel.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);panel.offset_left=-395;panel.offset_right=-8;panel.offset_top=20;panel.offset_bottom=480
+	var panel=_panel(body,"出征");panel.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT);panel.offset_left=-395;panel.offset_right=-8;panel.offset_top=15;panel.offset_bottom=522
 	var box=VBoxContainer.new();box.add_theme_constant_override("separation",14);panel.add_child(box)
 	_text(box,"摧毁敌方基地，赢下这场时代竞速。",20,PixelTheme.AMBER)
 	var difficulty_row=HBoxContainer.new();difficulty_row.add_theme_constant_override("separation",7);box.add_child(difficulty_row)
@@ -74,12 +78,19 @@ func _home() -> void:
 		button.custom_minimum_size.x=111;button.set_meta("difficulty",option["id"]);button.modulate=Color.WHITE if option["id"]==difficulty else Color(0.7,0.8,0.9)
 		button.tooltip_text="AI 金币：开局 ×%.2f，持续收入 ×%.2f"%[float(option.get("startingGoldMultiplier",1.0)),float(option.get("incomeMultiplier",1.0))]
 	var play=_button(box,"开始对战",func():start_battle.emit({"mode":"standard","difficultyId":difficulty}),true);play.name="StartBattle";play.custom_minimum_size.y=69
+	var online_button=_button(box,"联机对战",func():page_requested.emit("online"));online_button.name="OnlineBattle";online_button.icon=PixelTheme.icon("ally");online_button.expand_icon=true;online_button.add_theme_constant_override("icon_max_width",25)
 	var saved=store.load_match()
 	var continue_button=_button(box,"继续对局",func():resume_battle.emit());continue_button.name="ContinueBattle";continue_button.disabled=saved.is_empty()
 	_button(box,"战役远征",func():page_requested.emit("campaign"))
 	var hero=store.db.get_row("heroes",store.profile["loadout"]["heroId"])
 	_text(box,"指挥官  "+hero["name"]+"  ·  "+store.db.get_row("specializations",store.profile["loadout"]["specializationId"])["name"],15,PixelTheme.MUTED)
 	_text(box,"胜场 %d  ·  战役 %d/20"%[int(store.profile["wins"]),store.profile["cleared"].size()],14,PixelTheme.MUTED)
+
+func _online_menu() -> void:
+	if online==null:_text(body,"联机服务尚未初始化",20);return
+	var lobby=OnlineMenu.new();lobby.name="OnlineLobby";lobby.client=online;body.add_child(lobby)
+	lobby.build_requested.connect(func():page_requested.emit("online-loadout"))
+	lobby.resume_requested.connect(func():resume_online.emit())
 func _campaign() -> void:
 	var panel=_panel(body,"战役 · 完成前一关，推进远征路线");panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var scroll=_scroll(panel)
@@ -155,7 +166,9 @@ func _toggle_slot(key: String,id: String,maximum: int,allow_empty: bool) -> void
 		ids.append(id)
 	_save_refresh()
 func _save_refresh() -> void:
-	store.save_profile();audio.sfx("ui_confirm",0.5);page_requested.emit(page)
+	store.save_profile()
+	if page=="online-loadout" and online!=null:online.update_loadout(store.profile["loadout"])
+	audio.sfx("ui_confirm",0.5);page_requested.emit(page)
 func _encyclopedia() -> void:
 	var panel=_panel(body,"兵种图鉴 · 前排 · 远程 · 破甲 · 重型 · 支援");panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var box=VBoxContainer.new();box.add_theme_constant_override("separation",14);panel.add_child(box)

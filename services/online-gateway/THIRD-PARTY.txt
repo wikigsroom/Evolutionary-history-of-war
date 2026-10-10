@@ -1,0 +1,25 @@
+Epoch Rush native online server v0.8.0
+
+Godot 4.7.2: MIT; complete Godot LICENSE and engine third-party notices are included.
+Go 1.27.2 runtime: BSD-style; complete Go LICENSE is included.
+github.com/coder/websocket v1.8.15: ISC.
+github.com/jackc/pgx/v5 v5.7.6: MIT.
+github.com/jackc/pgpassfile v1.0.0: MIT.
+github.com/jackc/pgservicefile: MIT.
+github.com/jackc/puddle/v2 v2.2.2: MIT.
+golang.org/x/crypto, x/sync, x/text: BSD-style.
+Complete module license files are copied from the pinned Go module cache.
+
+Native PostgreSQL 18.6 bundle source:
+https://github.com/zonkyio/embedded-postgres-binaries
+https://repo.maven.apache.org/maven2/io/zonky/test/postgres/embedded-postgres-binaries-windows-amd64/18.6.0/
+Artifact SHA-256:
+b7ef2d03588e0439f0d0a2250f43905f7464f1e96ace47703ceaf79094198150
+PostgreSQL: PostgreSQL License.
+Zonky binary packaging project: Apache License 2.0.
+Bundled PostgreSQL runtime DLLs retain their respective open-source licenses.
+License files and upstream source references are under licenses/postgresql/.
+
+The game itself and its generated artwork are not relicensed by these notices.
+The server bundle includes only simulation metadata and scripts, not game music
+or visual assets. Third-party upstream licenses remain authoritative.

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "version": "0.8.0",
+  "packages": [
+    {
+      "platform": "debug",
+      "bytes": 206243378,
+      "sha256": "b0690baab7078fef0b9c543439c67325b36add1315cb82dd440f0aed82a6e850",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "checks": {
+        "identity_version": true,
+        "only_internet_permission": true,
+        "backup_disabled": true,
+        "keystore_plugin_registered": true,
+        "keystore_plugin_methods_in_dex": true,
+        "simulation_manifest_matches": true,
+        "windows_identity_helper_in_pack": true,
+        "native_16kb_load_segments": true,
+        "no_private_configuration": true
+      }
+    },
+    {
+      "platform": "release",
+      "bytes": 200869616,
+      "sha256": "bfa303ed348c4ec53617589e73572c0de5455205d82892cd37f9d53852361b02",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "checks": {
+        "identity_version": true,
+        "only_internet_permission": true,
+        "backup_disabled": true,
+        "keystore_plugin_registered": true,
+        "keystore_plugin_methods_in_dex": true,
+        "simulation_manifest_matches": true,
+        "windows_identity_helper_in_pack": true,
+        "native_16kb_load_segments": true,
+        "no_private_configuration": true
+      }
+    }
+  ],
+  "physical_device_playtested": false
+}

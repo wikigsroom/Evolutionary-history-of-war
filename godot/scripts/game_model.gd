@@ -90,7 +90,7 @@ func reset_battle(options: Dictionary = {}) -> void:
 	for side in range(2):
 		var loadout = config["loadout" if side == 0 else "enemyLoadout"].duplicate(true)
 		var gold = float(mission.get("playerStartingGold" if side == 0 else "enemyStartingGold", float(db.rules["resources"]["startingGold"]) * float(db.era(starting_era)["costMultiplier"])))
-		if side == 1: gold *= float(difficulty_settings().get("startingGoldMultiplier", 1.0))
+		if side == 1 and side_is_ai(side): gold *= float(difficulty_settings().get("startingGoldMultiplier", 1.0))
 		sides.append({"eraId": starting_era, "gold": gold, "knowledge": 0.0, "command": 50.0,
 			"loadout": loadout, "stance": "cover", "stanceReadyAt": 0, "queue": [], "cooldowns": {},
 			"upgrades": [], "research": {}, "unlockedSlots": 1, "turrets": [], "heroRespawnAt": 0,
@@ -159,6 +159,10 @@ func difficulty_settings() -> Dictionary:
 	for option in db.rules["difficulty"]:
 		if option["id"] == config.get("difficultyId", "D02"): return option
 	return db.rules["difficulty"][1]
+
+func side_is_ai(side: int) -> bool:
+	var controls = config.get("controlTypes", ["human", "ai"])
+	return side >= 0 and side < controls.size() and controls[side] == "ai"
 
 func capital_max_hp(side: int, era_id: String) -> float:
 	var first_era = String(db.rows["eras"][0]["id"])
@@ -382,7 +386,7 @@ func step_tick() -> void:
 	for side in range(2):
 		var player = sides[side]
 		var mods = modifiers(side)
-		var income_scale = float(difficulty_settings().get("incomeMultiplier", 1.0)) if side == 1 else 1.0
+		var income_scale = float(difficulty_settings().get("incomeMultiplier", 1.0)) if side == 1 and side_is_ai(side) else 1.0
 		player["gold"] = minf(99999.0, float(player["gold"]) + float(db.rules["resources"]["goldPerSec"]) * float(db.era(player["eraId"])["incomeMultiplier"]) * income_scale * (1.0 + clampf(float(mods.get("incomeBonus", 0.0)), 0.0, 0.25)) / HZ)
 		player["command"] = minf(command_max(side), float(player["command"]) + 3.0 / HZ)
 		if not player["queue"].is_empty():
@@ -405,7 +409,7 @@ func step_tick() -> void:
 	for key in cast_targets.keys():
 		if int(cast_targets[key]["until"]) <= tick: cast_targets.erase(key)
 	_check_boss()
-	if bool(config.get("aiEnabled", true)) and tick >= int(sides[1]["aiNext"]): _decide_enemy()
+	if side_is_ai(1) and bool(config.get("aiEnabled", true)) and tick >= int(sides[1]["aiNext"]): _decide_enemy()
 	if tick >= int(db.rules["overtime"]["burnStartsSec"]) * HZ and tick % HZ == 0:
 		for side in range(2):
 			var own_base = base(side)

@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "name": "All real subscribers finish loading at capacity",
+      "passed": true
+    },
+    {
+      "name": "Every player receives a committed recruitment ACK",
+      "passed": true
+    },
+    {
+      "name": "Every match sustains at least 28.5 simulation ticks per second",
+      "passed": true
+    },
+    {
+      "name": "Every capacity match produces one shared final result",
+      "passed": true
+    }
+  ],
+  "failed": null,
+  "measurements": {
+    "matches": 10,
+    "subscribers": 20,
+    "seconds": 30.042513199616224,
+    "simulation_hz_min": 29.957546960868008,
+    "simulation_hz_mean": 30.138956550797708,
+    "local_command_ack_ms_p95": 260.12140000239015,
+    "local_command_ack_ms_max": 260.23179991170764,
+    "scope": "Local native Windows, not a public-host capacity claim"
+  }
+}

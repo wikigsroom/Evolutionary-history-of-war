@@ -1,0 +1,9 @@
+[config]
+name="EpochSecureStore"
+binary_type="local"
+binary="EpochSecureStore.aar"
+
+[dependencies]
+local=[]
+remote=[]
+custom_maven_repos=[]

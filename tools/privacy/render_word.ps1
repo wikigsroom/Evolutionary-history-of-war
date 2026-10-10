@@ -17,7 +17,8 @@ try {
     $privacyWordDocument.ExportAsFixedFormat($privacyPdfPath, 17)
     [PSCustomObject]@{ Pages = $privacyWordDocument.ComputeStatistics(2); PDF = $privacyPdfPath } | ConvertTo-Json -Compress
 } finally {
-    if ($null -ne $privacyWordDocument) { $privacyWordDocument.Close(0) }
-    $privacyWordApplication.Quit(0)
+    $privacySaveChanges = 0
+    if ($null -ne $privacyWordDocument) { $privacyWordDocument.Close([ref]$privacySaveChanges) }
+    $privacyWordApplication.Quit([ref]$privacySaveChanges)
     [void][Runtime.InteropServices.Marshal]::FinalReleaseComObject($privacyWordApplication)
 }

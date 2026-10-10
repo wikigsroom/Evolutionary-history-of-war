@@ -3,6 +3,10 @@ extends Control
 signal back_to_menu
 signal replay_requested
 var model
+var online_client: EpochNetClient
+var connection_label: Label
+var is_online: bool:
+	get:return model is OnlineBattleState
 var store: EpochStore
 var audio: BattleAudio
 var safe_ui: SafeUI
@@ -83,9 +87,14 @@ func _ready() -> void:
 	for child in get_children():
 		if child is CanvasItem and child!=world:child.z_index=100
 	_refresh_hud()
+	if is_online:
+		connection_label=PixelTheme.label("同步战局",14,PixelTheme.CYAN);safe_ui.add_child(connection_label);connection_label.position=Vector2(18,151);connection_label.custom_minimum_size=Vector2(260,29);connection_label.mouse_filter=Control.MOUSE_FILTER_IGNORE
+		model.command_feedback.connect(_online_feedback)
+		model.connection_changed.connect(_online_connection_changed)
 	if model.tick == 0: notify("拖动战场 · 1–5 招募 · Z/X/C 道具",6.0)
 func _process(delta: float) -> void:
 	model.advance(delta)
+	if is_online and is_instance_valid(connection_label):connection_label.text=model.connection_status;connection_label.modulate=PixelTheme.CYAN if model.connected else PixelTheme.AMBER
 	_refresh_hud()
 	if toast_time>0:toast_time-=delta;toast_label.visible=toast_time>0
 	if not model.paused and model.winner==-1:
@@ -98,6 +107,7 @@ func _process(delta: float) -> void:
 func notify(message: String, seconds: float=2.0) -> void:
 	toast_label.text=message;toast_label.visible=true;toast_time=seconds
 func save_current() -> void:
+	if is_online:return
 	var saved=model.snapshot();saved["view"]={"cameraX":world.camera_x,"tracking":world.tracking};store.save_match(saved)
 func restore_view(state: Dictionary) -> void:
 	var x=float(state.get("cameraX",world.MAP_LEFT))
@@ -107,36 +117,49 @@ func _dispatch(action: Dictionary) -> bool:
 	sequence+=1
 	var result=model.act(action,sequence)
 	if not result["ok"]:notify(result.get("reason","指令未生效"));audio.sfx("ui_error");return false
+	if result.get("pending",false):notify("正在提交指令",0.7);return true
 	if String(action.get("type","")) == "stance":audio.sfx("rush_flag" if action.get("stance")=="rush" else "ui_confirm",.7)
 	elif String(action.get("type","")) not in ["train","evolve","research","turret","cast","item","ageSpecial"]:audio.sfx("ui_confirm",.45)
 	_refresh_hud();return true
+
+func _online_feedback(result: Dictionary) -> void:
+	if result.get("ok",false):notify("指令已确认",0.7)
+	else:notify(String(result.get("reason","指令未生效")));audio.sfx("ui_error")
+	_refresh_hud()
+
+func _online_connection_changed() -> void:
+	if model.connected:return
+	_clear_target();_close_tray();world.cancel_pointer()
+	world.effects.effects.clear()
+	for burst in world.effects.native_bursts:burst.emitting=false
 func _refresh_hud() -> void:
 	if not is_instance_valid(evolve_card):return
 	var player=model.sides[0]
+	var input_locked=is_online and (not model.connected or model.paused)
 	var rows=model.db.unit_slots(player["eraId"])
 	for i in range(5):
 		var row=rows[i];var card=unit_cards[i]
 		card.title=row["name"];card.art_path="res://assets/ui/units/"+row["id"]+".png";card.value=str(model.unit_cost(0,row["id"]))
 		card.locked=bool(row["heavy"]) and not model.heavy_unlocked(0)
-		card.disabled=(float(player["gold"])<model.unit_cost(0,row["id"]) or player["queue"].size()>=5 or model.winner!=-1) and not card.locked
+		card.disabled=input_locked or ((float(player["gold"])<model.unit_cost(0,row["id"]) or player["queue"].size()>=5 or model.winner!=-1) and not card.locked)
 		var multiplier=float(model.db.era(row["eraId"])["hpAttackMultiplier"])
 		card.tooltip_text="%s · %s\n生命 %s / 攻击 %s / 射程 %d\n%s" % [row["name"],EpochData.ROLES.get(row["role"],"特种"),PixelTheme.number(float(row["hpBase"])*multiplier),PixelTheme.number(float(row["attackBase"])*multiplier),int(row["range"]),"先研究重型军团" if card.locked else row.get("special",{}).get("auraLabel","点击招募，按队列依次出营")]
 		card.update_visual()
 	training_queue.refresh(model)
 	for id in item_cards.keys():
-		var card=item_cards[id];card.charges=int(player["activeItems"][id]);card.cooldown=maxf(0.0,float(int(player["itemCooldowns"].get(id,0))-model.tick)/30.0);card.disabled=card.charges<=0 or card.cooldown>0 or model.winner!=-1;card.update_visual()
+		var card=item_cards[id];card.charges=int(player["activeItems"][id]);card.cooldown=maxf(0.0,float(int(player["itemCooldowns"].get(id,0))-model.tick)/30.0);card.disabled=input_locked or card.charges<=0 or card.cooldown>0 or model.winner!=-1;card.update_visual()
 		card.selected=target_action.get("itemId","")==id
 		var active=int(player.get("itemActiveUntil",{}).get(id,0))-model.tick
 		card.active_progress=float(active)/(150.0 if id=="smoke-bomb" else 240.0) if active>0 else -1.0
 		card.tooltip_text=EpochData.ITEMS[id]["name"]+"\n"+EpochData.ITEMS[id]["description"]+("\n点击道具，再点战场；拖动只移动镜头" if EpochData.ITEMS[id]["target"] else "\n点击立即使用")
 	var special=model.db.age_special(player["eraId"])
-	age_card.cooldown=maxf(0.0,float(int(player["ageSpecialReadyAt"])-model.tick)/30.0);age_card.disabled=age_card.cooldown>0 or float(player["knowledge"])<float(special["cost"]) or model.winner!=-1
+	age_card.cooldown=maxf(0.0,float(int(player["ageSpecialReadyAt"])-model.tick)/30.0);age_card.disabled=input_locked or age_card.cooldown>0 or float(player["knowledge"])<float(special["cost"]) or model.winner!=-1
 	age_card.tooltip_text="%s\n消耗 %d 战斗经验；与进化共用经验\n%d 秒冷却" % [special["name"],int(special["cost"]),int(special["cooldown"])];age_card.update_visual()
 	var cost=model.era_cost(0)
 	var maxed=player["eraId"]==model.max_era or cost<=0
 	evolve_card.value="终代" if maxed else "%d/%d" % [floori(float(player["knowledge"])),int(cost)]
 	evolve_card.progress=1.0 if maxed else float(player["knowledge"])/cost
-	evolve_card.disabled=maxed or float(player["knowledge"])<cost or model.winner!=-1
+	evolve_card.disabled=input_locked or maxed or float(player["knowledge"])<cost or model.winner!=-1
 	evolve_card.tooltip_text="已达本局时代上限" if maxed else "进化到 "+model.db.era("A%d"%(model.ally_era+1))["name"]+"\n首都生命上限按兵种比例增长，进化后回满；指挥官保留生命比例；原有兵与训练订单保留原时代"
 	evolve_card.update_visual()
 	var hero=model.hero(0)
@@ -148,7 +171,7 @@ func _refresh_hud() -> void:
 			card.art_path="res://assets/ui/heroes/"+model.db.visual_id(player["loadout"]["heroId"],player["eraId"])+".png"
 			card.tooltip_text=card.title+" · "+model.db.era(player["eraId"])["name"]+"\n"+model.db.get_row("skills",card.get_meta("skill"))["description"]
 		card.cooldown=maxf(0.0,float(int(player["cooldowns"].get(card.get_meta("skill"),0))-model.tick)/30.0)
-		card.disabled=hero.is_empty() or hero.get("garrisoned",false) or card.cooldown>0 or float(player["command"])<model.abilities.cost(0,card.get_meta("skill"));card.update_visual()
+		card.disabled=input_locked or hero.is_empty() or hero.get("garrisoned",false) or card.cooldown>0 or float(player["command"])<model.abilities.cost(0,card.get_meta("skill"));card.update_visual()
 func _recruit(index: int) -> void:
 	if unit_cards[index].locked:_research_menu();return
 	_dispatch({"type":"train","unitId":model.db.unit_slots(model.sides[0]["eraId"])[index]["id"]})
@@ -159,7 +182,7 @@ func _use_item(id: String) -> void:
 	if target_action.get("itemId","")==id:_clear_target();return
 	_clear_target()
 	if EpochData.ITEMS[id]["target"]:_arm({"type":"item","itemId":id},EpochData.ITEMS[id]["name"],135.0,1600.0)
-	elif _dispatch({"type":"item","itemId":id}):notify("战鼓令 · 全军强化 8 秒" if id=="war-drum" else "补给 +%s 金币 · +15 军令 · 加速训练" % PixelTheme.number(65.0*float(model.db.era(model.sides[0]["eraId"])["costMultiplier"])))
+	elif _dispatch({"type":"item","itemId":id}) and not is_online:notify("战鼓令 · 全军强化 8 秒" if id=="war-drum" else "补给 +%s 金币 · +15 军令 · 加速训练" % PixelTheme.number(65.0*float(model.db.era(model.sides[0]["eraId"])["costMultiplier"])))
 func _age_special() -> void:_arm({"type":"ageSpecial"},model.db.age_special(model.sides[0]["eraId"])["name"],float(model.db.age_special(model.sides[0]["eraId"])["radius"]),1600)
 func _arm(action: Dictionary,title: String,radius: float,cast_range: float) -> void:
 	_clear_target();target_action=action;world.target_preview={"radius":radius,"range":cast_range,"heroRange":action["type"]=="cast"};target_label.text=title+" · 点战场施放 · 拖动移动镜头";target_cancel.visible=true;_close_tray();_refresh_hud()
@@ -171,7 +194,7 @@ func _select_field(x: float,target_id: int) -> void:
 	var action=target_action.duplicate(true);action["x"]=x;action["targetId"]=target_id
 	if _dispatch(action):
 		_clear_target()
-		if action.get("itemId")=="smoke-bomb":notify("烟幕已部署 · 范围减速 5 秒")
+		if action.get("itemId")=="smoke-bomb" and not is_online:notify("烟幕已部署 · 范围减速 5 秒")
 func _toggle_tray() -> void:
 	if is_instance_valid(tray):_close_tray();return
 	_clear_target()
@@ -200,7 +223,7 @@ func _skill(id: String) -> void:
 	else:_arm({"type":"cast","skillId":id},model.db.skill_name(id,model.sides[0]["loadout"]["heroId"],model.sides[0]["eraId"]),float(row["radius"]),float(row["castRange"])+(float(model.modifiers(0).get("commonCastRangeAdd",0.0)) if row["category"]=="common" else 0.0))
 func _modal(title: String,width: float=690.0,height: float=390.0) -> VBoxContainer:
 	_close_modal();_clear_target();_close_tray();model.set_paused(true)
-	audio.set_battle_paused(true)
+	if not is_online:audio.set_battle_paused(true)
 	overlay=Control.new();safe_ui.add_child(overlay);overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	overlay.z_index=200
 	var shade=ColorRect.new();shade.color=Color(0.015,0.025,0.05,0.82);overlay.add_child(shade);shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -256,7 +279,7 @@ func _evolve_menu() -> void:
 		var id="R%d%d"%[model.ally_era+1,index];var upgrade=model.db.get_row("run-upgrades",id)
 		var card=PixelCard.new();card.gold=index==1;card.icon_id=["sword","shield","research"][index-1];card.title=upgrade["name"].split("·")[0];card.value=str(int(model.era_cost(0)));card.value_icon="xp";card.custom_minimum_size=Vector2(208,160);card.tooltip_text=upgrade["description"];row.add_child(card)
 		card.pressed.connect(func():if _dispatch({"type":"evolve","upgradeId":id}):_close_modal())
-	body.add_child(PixelTheme.label("基地 / 指挥官保持生命比例；新兵获得换代冲锋加成。",14,PixelTheme.MUTED))
+	body.add_child(PixelTheme.label("首都升级后回满；指挥官保留生命比例，新兵获得换代冲锋。",14,PixelTheme.MUTED))
 func _queue_menu() -> void:
 	var body=_modal("训练队列",640,390)
 	var queue=model.sides[0]["queue"]
@@ -281,23 +304,32 @@ func _pause_menu() -> void:
 	if model.winner!=-1:return
 	audio.sfx("ui_confirm",.6)
 	save_current()
-	var body=_modal("暂停",540,455)
+	var body=_modal("对战设置" if is_online else "暂停",540,490 if is_online else 455)
 	_button(body,"继续战斗",_close_modal,true)
-	_button(body,"保留对局 · 返回菜单",func():save_current();back_to_menu.emit())
+	_button(body,"返回大厅 · 战斗继续" if is_online else "保留对局 · 返回菜单",func():save_current();back_to_menu.emit())
+	if is_online:_button(body,"投降并结束对战",_confirm_surrender)
 	var reduced=CheckButton.new();reduced.text="降低镜头动态";reduced.button_pressed=store.settings["reduced_motion"];body.add_child(reduced);reduced.toggled.connect(func(value):store.settings["reduced_motion"]=value;store.save_settings())
 	AudioSettings.add_rows(body,store,audio)
 func _result_menu() -> void:
 	result_shown=true;result_delay=-1.0
-	store.record_result(model.config,model.winner,{"elapsed":model.elapsed,"kills":int(model.sides[0]["kills"])})
-	audio.play_music("victory" if model.winner==0 else ("draw" if model.winner==2 else "defeat"))
+	if not is_online:store.record_result(model.config,model.winner,{"elapsed":model.elapsed,"kills":int(model.sides[0]["kills"])})
+	var closed=is_online and model.result_reason in ["ABANDONED","SERVER_ABORTED","LOADING_TIMEOUT"]
+	audio.play_music("menu" if closed else ("victory" if model.winner==0 else ("draw" if model.winner==2 else "defeat")))
 	var body=_modal("战斗结束",540,350)
-	body.add_child(PixelTheme.label("胜利" if model.winner==0 else ("平局" if model.winner==2 else "再整军旗"),44,PixelTheme.AMBER if model.winner==0 else PixelTheme.RED))
+	body.add_child(PixelTheme.label("本局已关闭" if closed else ("胜利" if model.winner==0 else ("平局" if model.winner==2 else "再整军旗")),44,PixelTheme.AMBER if model.winner==0 or closed else PixelTheme.RED))
+	if closed:body.add_child(PixelTheme.label("双方离线或服务器未能恢复；本局不判胜负。",16,PixelTheme.MUTED))
 	body.add_child(PixelTheme.label("%02d:%02d · 击破%d · 时代%s"%[int(model.elapsed)/60,int(model.elapsed)%60,int(model.sides[0]["kills"]),EpochData.ROMAN[model.ally_era-1]],18))
 	if model.winner==0 and not String(model.config["missionId"]).is_empty():body.add_child(PixelTheme.label("战役奖励与解锁已保存",16,PixelTheme.GREEN))
-	if not store.last_rewards.is_empty():
+	if not is_online and not store.last_rewards.is_empty():
 		var rewards=PixelTheme.label("遗物："+" · ".join(store.last_rewards),15,PixelTheme.AMBER);rewards.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;body.add_child(rewards)
 	_button(body,"再次出征",func():replay_requested.emit(),true)
 	_button(body,"返回菜单",func():back_to_menu.emit())
+
+func _confirm_surrender() -> void:
+	var body=_modal("确认投降",540,270)
+	body.add_child(PixelTheme.label("投降会结束本局，并判对手获胜。",20,PixelTheme.AMBER))
+	_button(body,"继续战斗",_close_modal,true)
+	_button(body,"确认投降",func():online_client.surrender();_close_modal())
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_RIGHT and event.pressed:_clear_target()
 	if not event is InputEventKey or not event.pressed or event.echo:return

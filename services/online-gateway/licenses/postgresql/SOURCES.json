@@ -1,0 +1,27 @@
+{
+  "license_sources": {
+    "PostgreSQL-COPYRIGHT.txt": "https://raw.githubusercontent.com/postgres/postgres/REL_18_STABLE/COPYRIGHT",
+    "Zonky-Apache-2.0.txt": "https://raw.githubusercontent.com/zonkyio/embedded-postgres-binaries/master/LICENSE",
+    "OpenSSL-LICENSE.txt": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.4/LICENSE.txt",
+    "ICU-LICENSE.txt": "https://raw.githubusercontent.com/unicode-org/icu/release-77-1/LICENSE",
+    "libxml2-LICENSE.txt": "https://raw.githubusercontent.com/GNOME/libxml2/master/Copyright",
+    "zstd-LICENSE.txt": "https://raw.githubusercontent.com/facebook/zstd/v1.5.7/LICENSE",
+    "lz4-LICENSE.txt": "https://raw.githubusercontent.com/lz4/lz4/v1.10.0/lib/LICENSE",
+    "zlib-LICENSE.txt": "https://raw.githubusercontent.com/madler/zlib/v1.3.1/LICENSE",
+    "winpthreads-COPYING.txt": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/master/mingw-w64-libraries/winpthreads/COPYING",
+    "GNU-LGPL-2.1.txt": "https://raw.githubusercontent.com/autotools-mirror/gettext/master/gettext-runtime/intl/COPYING.LIB"
+  },
+  "runtime_sources": {
+    "PostgreSQL": "https://ftp.postgresql.org/pub/source/v18.6/",
+    "OpenSSL": "https://github.com/openssl/openssl",
+    "ICU": "https://github.com/unicode-org/icu/tree/release-77-1",
+    "libxml2": "https://gitlab.gnome.org/GNOME/libxml2",
+    "libiconv": "https://ftp.gnu.org/pub/gnu/libiconv/",
+    "libintl/gettext": "https://ftp.gnu.org/pub/gnu/gettext/",
+    "winpthreads": "https://github.com/mingw-w64/mingw-w64/tree/master/mingw-w64-libraries/winpthreads",
+    "zstd": "https://github.com/facebook/zstd",
+    "lz4": "https://github.com/lz4/lz4",
+    "zlib": "https://github.com/madler/zlib"
+  },
+  "note": "Native PostgreSQL binary package is unmodified. Source archives and exact build configuration are available from the pinned Zonky upstream package project. Runtime GPL/LGPL libraries retain their upstream licenses; they are dynamically linked."
+}

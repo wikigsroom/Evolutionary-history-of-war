@@ -1,8 +1,8 @@
 # 纪元急袭（Godot 独立重构）
 
-这是《纪元急袭》 / Epoch Rush: Pixel Command 的原生 **0.7.1** 线路。完整的中英玩法、菜单示意图、实机截图、GIF、构建步骤与当前限制见 [仓库总览](../README.md)。旧的 Phaser 0.3.1 客户端保留在仓库根目录，两套运行时版本分别维护。
+这是《纪元急袭》 / Epoch Rush: Pixel Command 的原生 **0.8.0** 线路。完整的中英玩法、菜单示意图、实机截图、GIF、构建步骤与当前限制见 [仓库总览](../README.md)。旧的 Phaser 0.3.1 客户端保留在仓库根目录，两套运行时版本分别维护。
 
-预构建 Windows 与 Android 包见 [v0.7.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.1)，已包含 [十时代营寨朝向修复](../docs/epoch-rush/godot-base-facing-fix.md)。Windows 推荐下载完整 ZIP，解压运行即可；Android 当前完成包与签名验证。
+预构建 Windows 与 Android 包见 [v0.8.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.0)，已包含 [十时代营寨朝向修复](../docs/epoch-rush/godot-base-facing-fix.md)。Windows 推荐下载完整 ZIP，解压运行即可；Android 当前完成包与签名验证。
 
 品牌、BGM 更新与实际验证见 [v0.7.1 报告](../docs/epoch-rush/godot-v0.7.1-branding-bgm-report.md)。
 
@@ -17,6 +17,12 @@
 - `BattleWorld` 使用现有生成资产的基地、战场背景、单位卡图，同时用 Godot 自绘粒子与状态条保证在 Windows/Android 都能运行。
 
 0.7.0 扩展为十时代、50 兵种、六位主将的 60 套时代形态、20 关战役、30 张候选地图。时代奇袭、动态天空与弱随机事件已接入；图鉴可从指定时代开始标准对战，当前会正常保存与结算，不是无奖励沙盒。医疗和持续护盾共用恢复预算，相邻时代同定位伤害至少五倍。见 [十时代交付报告](../docs/epoch-rush/godot-v0.7-ten-eras-report.md) 和 [公开验收证据](../docs/qa/v0.7.0/README.md)。
+
+## 联机
+
+主菜单新增联机入口：真实玩家自由匹配、六位数字创建/加入、构筑与双方准备、自动原局重连和重启恢复。双端资源由服务器裁判计算，双方同等经济与构筑预算。完整操作见 [服务端 README](../services/online-gateway/README.md) 与 [v0.8.0 实现报告](../docs/epoch-rush/godot-v0.8-online-report.md)。离线游戏仍可直接运行；线上结算不写入单机养成。
+
+服务端 ZIP 解压后用原生 PowerShell 执行 Start-Server.ps1，客户端填写 http://服务器局域网IPv4:28187。默认十局并发，无 Docker/WSL/虚拟机。公网 HTTPS/WSS 对战主机需自行部署；隐私网页不是对战服务器。
 
 ## 运行
 
@@ -46,12 +52,14 @@ Windows 打包脚本附带引擎、字体、音频声明（CC0 音效与用户�
 Android 需要配置自己的签名、SDK、Java 和 debug keystore：
 
 ```powershell
+python -X utf8 tools/online/prepare_android_build.py
+python -X utf8 tools/online/build_android_secure_store.py
 godot --headless --path godot --export-release "Android" build/android/Epoch-Rush-Godot-release.apk
 godot --headless --path godot --export-debug "Android" build/android/Epoch-Rush-Godot-debug.apk
 python -X utf8 tools/finalize_android_packages.py
 ```
 
-Android 需要本机 JDK 21 与 Android SDK 36。应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.1 / code 10，arm64、最低 API 24。后处理补齐预构建模板缺失的 adaptive-icon 资源别名，按 16 KB 原生页对齐并以本机密钥重新签名。脚本支持 `JAVA_HOME`、`ANDROID_SDK_ROOT` / `ANDROID_HOME` 及根 README 所列覆盖变量。两个 APK 导出完成后运行一次；已记录包验证，尚无真机试玩结果。
+Android 需要本机 JDK 21 与 Android SDK 36。应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.8.0 / code 13，arm64、最低 API 24。Android 使用自定义 Gradle 模板与自有 Keystore 插件，仅声明 INTERNET 权限；构建准备脚本删除引擎继承的电话/共享存储权限。后处理检查 adaptive-icon 资源别名，按 16 KB 原生页对齐并以本机密钥重新签名。脚本支持 `JAVA_HOME`、`ANDROID_SDK_ROOT` / `ANDROID_HOME` 及根 README 所列覆盖变量。两个 APK 导出完成后运行一次；已记录包验证，尚无真机试玩结果。
 
 ## 基础回归
 

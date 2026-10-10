@@ -26,6 +26,9 @@ __pycache__/
 # Generated builds, raw production media, QA runs and distribution artifacts
 /output/
 /godot/build/
+/godot/output/
+/godot/android/build/
+/godot/android/.build_version
 android/app/src/main/assets/public/
 ios/App/App/public/
 ios/App/App/config.xml

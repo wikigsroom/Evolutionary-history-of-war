@@ -1,0 +1,145 @@
+{
+	"checks": [
+		{
+			"name": "Equal human initial gold D01",
+			"passed": true
+		},
+		{
+			"name": "Equal human income D01",
+			"passed": true
+		},
+		{
+			"name": "No AI actions D01",
+			"passed": true
+		},
+		{
+			"name": "Equal human initial gold D02",
+			"passed": true
+		},
+		{
+			"name": "Equal human income D02",
+			"passed": true
+		},
+		{
+			"name": "No AI actions D02",
+			"passed": true
+		},
+		{
+			"name": "Equal human initial gold D03",
+			"passed": true
+		},
+		{
+			"name": "Equal human income D03",
+			"passed": true
+		},
+		{
+			"name": "No AI actions D03",
+			"passed": true
+		},
+		{
+			"name": "Wrong-era upgrade rejected before spending",
+			"passed": true
+		},
+		{
+			"name": "Untrusted side rejected",
+			"passed": true
+		},
+		{
+			"name": "No authority setters",
+			"passed": true
+		},
+		{
+			"name": "Nonfinite target rejected",
+			"passed": true
+		},
+		{
+			"name": "Both human sides can recruit",
+			"passed": true
+		},
+		{
+			"name": "Both human sides can recruit",
+			"passed": true
+		},
+		{
+			"name": "Enemy private state absent side 0",
+			"passed": true
+		},
+		{
+			"name": "Projection renders without full restore side 0",
+			"passed": true
+		},
+		{
+			"name": "Own capital left for both seats 0",
+			"passed": true
+		},
+		{
+			"name": "Own private queue visible side 0",
+			"passed": true
+		},
+		{
+			"name": "Replica never simulates money or combat side 0",
+			"passed": true
+		},
+		{
+			"name": "Local popup cannot pause online side 0",
+			"passed": true
+		},
+		{
+			"name": "Aim maps to server world side 0",
+			"passed": true
+		},
+		{
+			"name": "Enemy private state absent side 1",
+			"passed": true
+		},
+		{
+			"name": "Projection renders without full restore side 1",
+			"passed": true
+		},
+		{
+			"name": "Own capital left for both seats 1",
+			"passed": true
+		},
+		{
+			"name": "Own private queue visible side 1",
+			"passed": true
+		},
+		{
+			"name": "Replica never simulates money or combat side 1",
+			"passed": true
+		},
+		{
+			"name": "Local popup cannot pause online side 1",
+			"passed": true
+		},
+		{
+			"name": "Aim maps to server world side 1",
+			"passed": true
+		},
+		{
+			"name": "PvP evolution allowed with own experience",
+			"passed": true
+		},
+		{
+			"name": "Own capital heals; opposite capital independent",
+			"passed": true
+		},
+		{
+			"name": "Human controls survive snapshot",
+			"passed": true
+		},
+		{
+			"name": "Restored right side remains human",
+			"passed": true
+		},
+		{
+			"name": "Windows DPAPI creates a CSPRNG credential",
+			"passed": true
+		},
+		{
+			"name": "Windows DPAPI restores the same identity",
+			"passed": true
+		}
+	],
+	"failed": 0
+}

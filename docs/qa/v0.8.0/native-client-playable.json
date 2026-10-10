@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "name": "Native client A authenticates using Windows protected identity",
+      "passed": true
+    },
+    {
+      "name": "Native client B authenticates using separate protected identity",
+      "passed": true
+    },
+    {
+      "name": "Two clients have independent player identities",
+      "passed": true
+    },
+    {
+      "name": "Hall buttons fit 1280×720 safe layout",
+      "passed": true
+    },
+    {
+      "name": "Both native clients occupy the same room",
+      "passed": true
+    },
+    {
+      "name": "Rapid build edits synchronize the latest selection before ready",
+      "passed": true
+    },
+    {
+      "name": "Room buttons fit 1280×720 safe layout",
+      "passed": true
+    },
+    {
+      "name": "Room fits long screen (1600, 720)",
+      "passed": true
+    },
+    {
+      "name": "Room fits long screen (2400, 1080)",
+      "passed": true
+    },
+    {
+      "name": "Both native Godot clients enter one authoritative battle",
+      "passed": true
+    },
+    {
+      "name": "Each client displays its own faction on the left",
+      "passed": true
+    },
+    {
+      "name": "Online settings overlay leaves the shared battle running",
+      "passed": true
+    },
+    {
+      "name": "Battle button and opponent action both recruit through the server",
+      "passed": true
+    },
+    {
+      "name": "Native client reconnects automatically to the same match",
+      "passed": true
+    },
+    {
+      "name": "Native reconnect keeps command cursor and clears old pending click",
+      "passed": true
+    },
+    {
+      "name": "A fresh client node automatically resumes the saved active match",
+      "passed": true
+    },
+    {
+      "name": "Protected identity, original seat and durable cursor survive client restart",
+      "passed": true
+    },
+    {
+      "name": "Both native clients receive authoritative final result",
+      "passed": true
+    },
+    {
+      "name": "Both native clients can leave result and create another match",
+      "passed": true
+    }
+  ],
+  "failures": []
+}

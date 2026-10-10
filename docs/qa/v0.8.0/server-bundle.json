@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "name": "Every shipped server file matches the release bundle manifest",
+      "passed": true
+    },
+    {
+      "name": "Extracted native server starts after a fully stopped database",
+      "passed": true
+    },
+    {
+      "name": "Shipped gateway and minimal referee pass the 23 real network checks",
+      "passed": true
+    },
+    {
+      "name": "Stop script drains admission and retains the running battle",
+      "passed": true
+    },
+    {
+      "name": "New rooms are refused during drain",
+      "passed": true
+    },
+    {
+      "name": "An existing battle still applies committed commands while draining",
+      "passed": true
+    },
+    {
+      "name": "Draining battle ends with one shared authoritative result",
+      "passed": true
+    },
+    {
+      "name": "Resume script reopens admission without resetting data",
+      "passed": true
+    },
+    {
+      "name": "Stopping retains the database and protected server credential",
+      "passed": true
+    },
+    {
+      "name": "A full native server/database restart retains the finished result",
+      "passed": true
+    }
+  ],
+  "failed": null,
+  "url": "http://127.0.0.1:28188",
+  "native": true
+}

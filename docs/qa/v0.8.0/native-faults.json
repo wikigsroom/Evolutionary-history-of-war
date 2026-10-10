@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "name": "Fault fixture has a verified match identity",
+      "passed": true
+    },
+    {
+      "name": "Killed referee restores a monotonic committed tick",
+      "passed": true
+    },
+    {
+      "name": "Referee crash preserves the original acknowledged command result",
+      "passed": true
+    },
+    {
+      "name": "Gateway hard restart restores the same battle and durable cursor",
+      "passed": true
+    },
+    {
+      "name": "Gateway crash cannot roll back a published command ACK",
+      "passed": true
+    },
+    {
+      "name": "Crash target stays within this workspace's isolated PostgreSQL cluster",
+      "passed": true
+    },
+    {
+      "name": "PostgreSQL immediate crash preserves committed battle and command ACK",
+      "passed": true
+    },
+    {
+      "name": "Recovery produces one final result for both subscribers",
+      "passed": true
+    },
+    {
+      "name": "An unsent old click is abandoned durably on resume",
+      "passed": true
+    },
+    {
+      "name": "Abandoned old click never recruits after reconnect",
+      "passed": true
+    }
+  ],
+  "failed": null,
+  "seconds": 14.505219599697739
+}

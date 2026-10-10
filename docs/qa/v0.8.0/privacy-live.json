@@ -1,0 +1,11 @@
+{
+  "url": "https://jyqx.sidcloud.cn",
+  "http_status": 200,
+  "checks": {
+    "https": true,
+    "operator": true,
+    "version": true,
+    "online_notice": true,
+    "private_credential_absent": true
+  }
+}

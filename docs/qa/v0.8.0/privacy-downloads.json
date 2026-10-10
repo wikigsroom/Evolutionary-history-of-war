@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "content_matches": true
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "content_matches": true
+    },
+    {
+      "route": "/privacy-policy",
+      "status": 200,
+      "content_matches": true
+    },
+    {
+      "route": "/styles.css",
+      "status": 200,
+      "content_matches": true
+    },
+    {
+      "route": "/privacy-policy.docx",
+      "status": 200,
+      "content_matches": true
+    },
+    {
+      "route": "/privacy-policy.md",
+      "status": 200,
+      "content_matches": true
+    }
+  ]
+}

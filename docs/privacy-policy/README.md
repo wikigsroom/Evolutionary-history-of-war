@@ -1,12 +1,12 @@
 # 《纪元急袭》隐私政策
 
-本目录保存根据用户提供的 `privacy-policy-template.docx` 更新的正式隐私政策。版本为 **ER-PRIVACY-2026-10-09**，更新日期、生效日期均为 **2026 年 10 月 9 日**。
+本目录保存根据用户提供的 `privacy-policy-template.docx` 更新的正式隐私政策。版本为 **ER-PRIVACY-2026-10-11**，更新日期、生效日期均为 **2026 年 10 月 11 日**。
 
 ## 文档与页面
 
 | 文件 | 用途 |
 | --- | --- |
-| `纪元急袭隐私政策.docx` | 保留原模板版式的 Word 正文，共 12 页 |
+| `纪元急袭隐私政策.docx` | 保留原模板版式的 Word 正文，共 14 页 |
 | `privacy-policy.zh-CN.md` | 便于阅读和审阅的同版 Markdown 正文 |
 | `policy.json` | 已填入运营者信息的结构化正文 |
 | `../../web/privacy-policy/` | 独立静态网页、Word/Markdown 下载及 Vercel 配置 |
@@ -19,7 +19,7 @@
 
 ## 适用范围
 
-当前 Godot 原生 **0.7.1** 版本，支持 Windows 和 Android。Android 包名为 `studio.epochrush.pixelcommand`。历史 Web/Electron/Capacitor 版本及未来另行加入的联网功能不应直接套用当前版本说明。
+当前 Godot 原生 **0.8.0** 版本，支持 Windows 和 Android。Android 包名为 `studio.epochrush.pixelcommand`。旧 0.7.x 离线版本、历史 Web/Electron/Capacitor 和其他新增功能应查阅对应版本说明。
 
 开发及运营主体为 **SIDcloud**，与用户在 2026 年 10 月 9 日明确指定的资料页公司主体一致。隐私联系邮箱为 **carzyg@outlook.com**。网页正文、Word 正文与作者信息、Markdown 和结构化来源均使用同一主体名称。
 
@@ -38,7 +38,7 @@
 9. 更新告知、未来联网功能变更及必要的重新同意。
 10. 真实联系邮箱、请求方式、合理核验和答复期限。
 
-本版本代码未接入在线账号、云存档、广告、支付、统计或自动日志上传。APK 未声明 `uses-permission`，且自动备份关闭。游戏的离线行为与用户主动访问隐私网页、主动发邮件的网络行为分别说明。
+本版联机使用受保护的随机匿名身份，未接入单机云存档、广告、支付、统计或自动日志上传。APK 仅声明 `INTERNET`，自动备份关闭。主动联机、离线存档、隐私网页和主动邮件分别说明。
 
 ## 校验与部署
 
@@ -86,3 +86,7 @@ python tools/privacy/deploy_vercel.py --authenticated --production --scope sidcl
 - [Vercel 官方 CLI 登录说明](https://vercel.com/docs/cli/login)
 
 后续若新增 SDK、联网、广告、支付、敏感权限或不同运营主体，应按真实变化修订政策，并实现相应的产品告知与同意流程。
+
+## 0.8.0 联机修订
+
+2026-10-11 更新匿名身份、DPAPI/Keystore 保护、所选对战服务器的数据范围、私有状态过滤、指令/检查点/结果保留、停止使用与删除请求规则，以及 Android INTERNET 权限。单机进度不上传。公共匹配服务尚未部署，隐私网站保持静态网页。Word 原生渲染 14 页逐页检查，正式域名三个页面入口与下载逐字节 HTTP 200 验证；证据见 [v0.8.0 QA](../qa/v0.8.0/README.md)。

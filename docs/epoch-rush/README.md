@@ -1,5 +1,7 @@
 # 一线万年：文明冲锋 · Epoch Rush
 
+当前原生版本 **0.8.0** 已实现真人自由匹配、六位码房间、原局重连与重启恢复。详见 [实际实现与交付](godot-v0.8-online-report.md)、[服务端操作](../../services/online-gateway/README.md) 和 [验收](../qa/v0.8.0/README.md)。
+
 Godot 原生线路的最新技术判断见 [全面重构专项评估](godot-system-rebuild-assessment.md)：说明动作、演出与方案 1 UI 的收益、制作边界和验收要求。
 
 最新原生版本为 **Godot 0.7.1《纪元急袭》**：十时代、50 兵种、60 套主将形态、20 关战役、30 张候选地图。Windows / Android 下载、九项需求的修复和实际验收证据见 [十时代交付报告](godot-v0.7-ten-eras-report.md)。0.7.1 最新 LOGO、随机 BGM、重新打包和发布见 [本次更新报告](godot-v0.7.1-branding-bgm-report.md)。原有音效系统来源见 [0.6.2 音频报告](godot-v0.6.2-audio-report.md)，历史修复见 [0.6.1 报告](godot-v0.6.1-repair-report.md)。

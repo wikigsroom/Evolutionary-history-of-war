@@ -5,11 +5,11 @@
 
 **Build your army, command your hero, and turn an evolution into a counterattack.**
 
-[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.7.3/README.md)
+[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.0) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.8.0/README.md)
 
 | 项目 / Item | 当前状态 / Current state |
 | --- | --- |
-| 主线路 / Primary runtime | **Godot 0.7.3**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
+| 主线路 / Primary runtime | **Godot 0.8.0**, Godot **4.7.2**, GDScript, 2D Compatibility renderer |
 | 类型 / Genre | 横向单战线战争进化、基地攻防、主将构筑 / Side-view single-lane warfare, base defense and commander builds |
 | 内容 / Content | **10** 时代 / eras · **50** 兵种 / troops · **6** 主将 / commanders · **60** 主将时代形态 / commander-era forms |
 | 战场 / Battlefields | **30** 地图 / maps · **20** 战役关卡 / missions · **20** 炮塔 / turrets · **10** 时代奇袭 / era strikes |
@@ -21,19 +21,28 @@
 | 历史线路 / Legacy runtime | 根目录 Phaser / TypeScript / Vite **0.3.1**, Electron / Capacitor wrappers |
 | 仓库 / Repository | 源码、运行素材、文档与精简证据 / Source, runtime assets, documentation and compact evidence |
 
-**直接游玩 / Play now — [v0.7.3 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3)**
+**直接游玩 / Play now — [v0.8.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.0)**
 
 | 平台 / Platform | 下载 / Download | 使用 / Use |
 | --- | --- | --- |
-| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
-| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
-| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
-| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
-| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.7.3/SHA256SUMS.txt) | 四个安装包的 SHA-256 / SHA-256 for all four packages |
+| Windows x64（推荐 / recommended） | [完整便携 ZIP / Portable bundle](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.0/Epoch-Rush-Godot-Windows.zip) | 解压后运行 EXE，附带第三方许可 / Extract and run the EXE; third-party notices included |
+| Windows x64 | [独立 EXE / Standalone EXE](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.0/Epoch-Rush-Godot.exe) | 内嵌游戏资源 / Embedded game resources |
+| Android arm64 | [正式 APK / Release APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.0/Epoch-Rush-Godot-release.apk) | Android 7.0+，仅 arm64 / Android 7.0+, arm64 only |
+| Android 调试 / debugging | [Debug APK](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.0/Epoch-Rush-Godot-debug.apk) | 调试使用 / Diagnostic build |
+| 原生服务端 / Native server | [Windows x64 Server ZIP](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.0/Epoch-Rush-Server-0.8.0-Windows-x64.zip) | 接入、裁判、数据库和启停脚本 / Gateway, referee, database and admin scripts |
+| 校验 / Verification | [SHA256SUMS.txt](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.0/SHA256SUMS.txt) | 五个二进制包的 SHA-256 / SHA-256 for all five binary packages |
 
-预构建版本无需安装 Godot。v0.7.3 修复 Android 长屏留边，场景等比扩展铺满，操作 UI 避让系统安全区；[本版说明](docs/releases/v0.7.3.md)。此前 v0.7.2 调整三档 AI 的开局金币和持续收入，成功进化会按兵种生命比例增加首都最大生命并回满血。保留最新骑士图标、透明文字 LOGO、四首 Yourset 随机 BGM 和营寨相向修复。Android 实体设备游玩尚未验收。[中英发布说明](docs/releases/v0.7.2.md) 记录内容与验证范围。
+v0.8.0 新增真人联机、自由匹配、六位码房间、双方构筑和准备、原局自动重连及客户端重启恢复。Windows 导出资源双客户端 19 项检查通过；实际 HTTP/WSS、数据库与原生崩溃恢复有独立证据。保留十时代、三档 AI、独立进化与首都回满、长屏安全区、骑士品牌和 Yourset 随机 BGM。Android 实体设备验收仍待完成。
 
-Prebuilt downloads need no Godot installation. v0.7.3 fills wider Android displays proportionally and keeps controls within the system safe area; see [release notes](docs/releases/v0.7.3.md). Previous v0.7.2 separates AI starting gold and passive income by difficulty; successful evolution scales capital HP with troops and fully heals it. The latest knight icon, transparent wordmark, four shuffled Yourset songs and facing camps remain included. Android physical-device playtesting is pending. See the [bilingual release notes](docs/releases/v0.7.2.md).
+v0.8.0 adds real-player online battles, matchmaking, six-digit rooms, loadouts/readiness, automatic reconnect and client-restart resume. Nineteen real-client checks using the exported Windows resource pack passed, alongside network and native process-crash checks. Existing ten-era gameplay, AI difficulties, independent evolution, capital healing, safe areas, knight branding and shuffled BGM remain available. Physical Android validation is pending.
+
+**联机开始 / Start online**：解压 Server ZIP，运行 `Start-Server.ps1`；两台客户端在联机菜单连接 `http://<服务器局域网 IPv4>:28187`，选择自由匹配或相同六位码，双方准备。服务器默认最多十局，原生运行，不使用 Docker/WSL/虚拟机。没有随包提供公共匹配服务器；公网部署需要自己的常驻服务器与 HTTPS/WSS。
+
+Extract the Server ZIP and run `Start-Server.ps1`; connect both clients to `http://<server LAN IPv4>:28187`, use matchmaking or the same six-digit code and ready up. Ten-match admission is the default. All components run natively. No hosted public matchmaking endpoint is included; public deployment needs an operator-owned persistent host and HTTPS/WSS.
+
+[联机交付报告 / Online report](docs/epoch-rush/godot-v0.8-online-report.md) · [服务端中英操作 / Server guide](services/online-gateway/README.md) · [v0.8.0 发布说明 / Release notes](docs/releases/v0.8.0.md) · [SIDcloud 隐私政策 / Privacy](https://jyqx.sidcloud.cn)
+
+![联机大厅 / Online hall](docs/media/v0.8.0/online-hall.png)
 
 **v0.7.1 实机菜单 / Menu captured in v0.7.1**
 
@@ -67,6 +76,7 @@ These images were rendered by **Godot 4.7.2 using the initially published v0.7.0
 | 3 | 整军 / Loadout | 主将、专精、两个通用技能、遗物与天赋 / Commander, specialization, two common skills, relics and talents |
 | 4 | 图鉴 / Codex | 十时代兵种信息、指定起始时代对战 / Ten-era troop information and an era-specific match start |
 | 5 | 设置 / Settings | 四组音量、音效开关、镜头动态与全屏 / Four audio groups, audio toggles, camera motion and fullscreen |
+| 6 | 联机 / Online | 真人匹配、六位码、构筑准备与原局恢复 / Matchmaking, six-digit rooms, builds/readiness and resume |
 
 <details>
 <summary>查看各页面原生截图 / Expand native menu screenshots</summary>
@@ -311,7 +321,7 @@ The top bar shows both bases and eras, your gold, combat XP, command and match t
 
 ### 11. 键鼠与触屏操作
 
-| 操作 | Godot 0.7.3 输入 |
+| 操作 | Godot 0.8.0 输入 |
 | --- | --- |
 | 招募五个卡槽 | `1`–`5`，或点击兵卡 |
 | 战鼓、烟幕、补给 | `Z`、`X`、`C`，或点击道具 |
@@ -345,7 +355,7 @@ Godot 使用本机 `user://` 数据目录保存：`profile.json` 记录构筑、
 
 暂停菜单可以保留对局返回营地，然后使用“继续对局”。快照 v2 包含双方时代、金币、经验、队列、实体、生命／护盾、技能冷却、随机环境、随机流及镜头。旧 Godot 五时代快照映射为新 I / II / IV / VI / X，保留旧订单、生命比例与冷却；它不意味着可以直接导入任意 Web 存档。
 
-Windows 与 Android 档案分别存于各自应用数据目录，目前没有云同步、账号服务器或跨平台自动迁移。游戏不需要联网即可对战。
+Windows 与 Android 档案分别存于各自应用数据目录，单机进度没有云同步或跨平台自动迁移。单人对战可离线运行；联机仅保存所选服务端的随机匿名身份与会话状态。
 
 ### 14. 从源码启动原生 Godot 版
 
@@ -370,7 +380,7 @@ $godotExe = 'C:\Tools\Godot\Godot_v4.7.2-stable_win64_console.exe'
 
 ### 15. Windows 与 Android 构建
 
-仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.7.3 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
+仓库包含源码与运行素材，**未把本机 EXE、APK、安装工具链和大体积原始录像提交到 Git**。可直接游玩的安装包通过 [v0.8.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.0) 下载；以下 `godot/build/` 路径表示自行构建时的本机输出。
 
 先创建仅用于本机的导出配置：
 
@@ -390,7 +400,7 @@ python -X utf8 tools/package_godot_windows.py
 
 第二步用 Python 标准库生成八文件便携 ZIP 和 `SHA256SUMS.txt`，随包附带引擎、字体、音频许可。EXE 内嵌资源，解压运行无需安装 Godot 或启动网页服务。包文件名为 `godot/build/windows/Epoch-Rush-Godot-Windows.zip`。
 
-**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.7.3、versionCode 12，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
+**Android arm64：**需要本机 JDK 21、Android SDK / platform 36、Godot 的 Android 导出模板和本机签名配置。当前 Gradle 预设应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.8.0、versionCode 13，最低 API 24、target SDK 36，仅 arm64。Godot 编辑器中的 SDK、Java 与 debug keystore 路径也需正确设置。
 
 ```powershell
 # 下面两项填入你自己的安装路径。
@@ -445,7 +455,7 @@ New-Item -ItemType Directory -Force output/qa/ten-eras | Out-Null
 Evolutionary-history-of-war/
 ├─ README.md                         中英双语总览与实机展示
 ├─ godot/
-│  ├─ project.godot                  原生 0.7.3 工程入口
+│  ├─ project.godot                  原生 0.8.0 工程入口
 │  ├─ scenes/Main.tscn               主场景
 │  ├─ scripts/                      模拟、战斗、菜单、HUD、音频与存档
 │  ├─ assets/data/                  19 个 JSON 数据表
@@ -484,7 +494,7 @@ Evolutionary-history-of-war/
 
 ### 18. 历史 Web / Electron / Capacitor 0.3.1
 
-根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.7.3** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
+根目录 `package.json` 的 **0.3.1** 对应历史 Web 线路；`godot/project.godot` 的 **0.8.0** 对应原生重构，两个版本号属于不同运行时。历史线路有五时代、25 兵种、6 英雄、10 炮塔、18 技能、三个主动道具与 15 战役关卡；旧快捷键、默认无英雄经典模式和存档格式与 Godot 不完全一致。
 
 需要本机支持该锁文件的 Node.js（Vite 8 工具链要求的 Node 版本，建议至少 22.12）和 npm：
 
@@ -534,9 +544,9 @@ python -X utf8 tools/build_readme_media.py --help
 
 ### 20. 当前边界与下一步
 
-本版已实现独立时代、真实占位、同代研究、主将构筑、主动道具、十时代演出和本机存档。以下边界可在源码与验收中确认：
+本版已实现独立时代、真实占位、同代研究、主将构筑、主动道具、十时代演出、本机存档和真人联机。以下边界可在源码与验收中确认：
 
-- 当前对手是本机 AI，没有联网 PvP、匹配服务器、回放服务或云档案。
+- 单人模式对手为本机 AI；联机模式提供真实 PvP、自由匹配与六位码，需运行自己的服务端。没有已部署公共匹配服、回放服务或单机云档案。
 - 进化是即时的三选一数值增益；公开研发读条、机动／阵地分支和有限集结属于下一轮提案。
 - AI 难度明确包含开局金币和持续收入系数，属于单机挑战模式；尚未实现完全隔离的公开观察快照，不宣称竞技公平。
 - 图鉴指定时代入口仍用普通对战结算；无奖励沙盒尚未接入。
@@ -565,7 +575,7 @@ python -X utf8 tools/build_readme_media.py --help
 
 ### 1. Objective and match flow
 
-Epoch Rush is a single-player, side-view army and base battle against local AI. Regular troops move and fight automatically. You manage recruitment order, unit composition, research, turrets, commander skills, item timing and evolution. Destroy the opposing base to win.
+Epoch Rush is a side-view army and base battle with offline AI modes and real-player online 1v1. Online play uses an operator-run authoritative server. Regular troops move and fight automatically. You manage recruitment order, unit composition, research, turrets, commander skills, item timing and evolution. Destroy the opposing base to win.
 
 Build a front line to protect ranged and anti-armor troops, earn combat XP, then decide whether to spend it on an era strike or save it for evolution. A successful evolution creates a large power jump, but old troops and paid orders still occupy your army's space. Commander placement, targeted skills and limited items help convert that advantage into a push.
 
@@ -714,7 +724,7 @@ Godot stores `profile.json`, `settings.json` and `match.json` in the platform's 
 
 Version-two snapshots retain eras, resources, queues, actors, HP/shields, cooldowns, environment events, RNG and camera state. Legacy five-era **Godot** snapshots map to new eras I / II / IV / VI / X while retaining orders, HP fractions and cooldowns. This is not a claim of arbitrary Web-save import compatibility.
 
-Windows and Android keep separate application data. There is no account server or cloud synchronization. Offline play is supported.
+Windows and Android keep separate application data. Offline saves have no cloud synchronization. Optional online play uses a random anonymous identity on the selected authoritative server; offline play remains supported.
 
 ### 13. Run the native project from source
 
@@ -739,7 +749,7 @@ Node.js, Python and image-generation access are not required for native gameplay
 
 ### 14. Export Windows and Android
 
-This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.7.3 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.7.3). The `godot/build/` paths below refer to local output when building your own packages.
+This repository contains source and runtime assets. Local executables, APKs, toolchains and long raw recordings are excluded from Git. Ready-to-play packages are available in the [v0.8.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.0). The `godot/build/` paths below refer to local output when building your own packages.
 
 Create an ignored local export configuration from the credential-free template:
 
@@ -764,7 +774,7 @@ $env:ANDROID_SDK_ROOT = "$env:LOCALAPPDATA\Android\Sdk"
 python -X utf8 tools/finalize_android_packages.py
 ```
 
-The preset uses `studio.epochrush.pixelcommand`, version 0.7.3/code 12, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
+The preset uses `studio.epochrush.pixelcommand`, version 0.8.0/code 13, minimum API 24, target SDK 36 and arm64 only. The tested prebuilt template needed an adaptive-icon alias repair; the postprocessor fixes it, applies 16 KB native-page alignment and re-signs with your local keys. Both APKs and signing configurations must exist before running it. It resolves `JAVA_HOME` and `ANDROID_SDK_ROOT` / `ANDROID_HOME`; overrides are `EPOCH_RUSH_JAVA`, `EPOCH_RUSH_ANDROID_BUILD_TOOLS` and `EPOCH_RUSH_GODOT_EDITOR_SETTINGS`.
 
 Private export settings and signing keys are ignored. Android package verification is complete, but device installation, touch feel, frame pacing and hardware audio are not yet verified.
 
@@ -811,7 +821,7 @@ For delivery-package captures, the same-version editor can use `--main-pack` wit
 
 ### 17. Legacy Web runtime
 
-Root `package.json` version **0.3.1** and native project version **0.7.3** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
+Root `package.json` version **0.3.1** and native project version **0.8.0** identify separate runtimes. The legacy Phaser/TypeScript/Vite game has five eras, 25 troops, six heroes, ten turrets, 18 skills, three items and 15 missions. Its controls, default classic mode and save format differ.
 
 Use a local Node.js version supported by the locked Vite 8 toolchain, preferably at least 22.12:
 
@@ -836,7 +846,7 @@ The four owner-supplied Yourset BGM songs are credited separately and are not co
 
 ### 19. Current limits and roadmap
 
-- Local AI play is implemented; network PvP, matchmaking, server replays and cloud profiles are not.
+- Offline AI and real-player PvP with matchmaking and six-digit rooms are implemented. The server must be operator-run; hosted public matchmaking, server replays and offline cloud profiles are not included.
 - Evolution currently offers instantaneous stat choices. Public research windups, finite assembly and mobile/entrenched paths are proposals.
 - Difficulty explicitly includes AI starting-gold and passive-income advantages for local challenge play. A fully isolated public-observation snapshot and competitive fairness are not implemented.
 - The codex's era-start match still affects standard results and rewards; a reward-free sandbox is pending.
@@ -851,4 +861,4 @@ The [next gameplay and fair-duel proposal](docs/epoch-rush/godot-v0.7-gameplay-d
 
 Start with the [native project guide](godot/README.md), [sound design](godot/SOUND_DESIGN.md), [v0.7.0 delivery report](docs/epoch-rush/godot-v0.7-ten-eras-report.md), [public QA index](docs/qa/v0.7.0/README.md), [architecture](godot/docs/rebuild-architecture.md) and [design archive index](docs/epoch-rush/README.md).
 
-Some historical documents reference ignored local `output/` evidence, workstation skill paths or older versions. For the current public project, use this README, native source and `docs/qa/v0.7.0/`. When reporting an issue, include runtime/version, platform, mode/mission, both eras, your build, reproduction steps and a screenshot or save when available; exclude signing credentials and private files.
+Some historical documents reference ignored local `output/` evidence, workstation skill paths or older versions. For the current public project, use this README, native source and `docs/qa/v0.8.0/`. When reporting an issue, include runtime/version, platform, mode/mission, both eras, your build, reproduction steps and a screenshot or save when available; exclude signing credentials and private files.

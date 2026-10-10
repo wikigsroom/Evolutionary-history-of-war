@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="studio.epochrush.security">
+    <application>
+        <meta-data android:name="org.godotengine.plugin.v2.EpochSecureStore" android:value="studio.epochrush.security.EpochSecureStore" />
+    </application>
+</manifest>
