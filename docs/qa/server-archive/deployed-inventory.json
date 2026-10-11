@@ -1,0 +1,466 @@
+{
+  "server_version": "0.8.1",
+  "simulation_hash": "085a54fd2558352356ef9b46a001bb751db74c5638e50f4a31d96e633071395c",
+  "release_directory": "/opt/epochrush/releases/0.8.1",
+  "service_active": true,
+  "secret_configuration_permissions": "0o600",
+  "secret_configuration_owner_is_root": true,
+  "files": {
+    "bin/epoch-online": {
+      "bytes": 16666297,
+      "sha256": "08234662947147d36c415b26ba0274021db7ce6a816bd040376f26c98bd619c4",
+      "normalized_sha256": "bd6467d4af64c81bed175d2ac35a0787fbe183ae894cbeebe1feb5b9e9f8e9a2",
+      "matches_original_package": true
+    },
+    "licenses/Go-LICENSE.txt": {
+      "bytes": 1453,
+      "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "normalized_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/github.com_coder_websocket_v1.8.15_LICENSE.txt": {
+      "bytes": 720,
+      "sha256": "cc0975a5f6305145bdd7b41ce9479632fdac3870e6ac4281f28017f18c767c4e",
+      "normalized_sha256": "cc0975a5f6305145bdd7b41ce9479632fdac3870e6ac4281f28017f18c767c4e",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/github.com_jackc_pgpassfile_v1.0.0_LICENSE": {
+      "bytes": 1073,
+      "sha256": "adb1663fda031df8f4344aa68f299fd87d80353e31339406742ded21dae65702",
+      "normalized_sha256": "adb1663fda031df8f4344aa68f299fd87d80353e31339406742ded21dae65702",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/github.com_jackc_pgservicefile_v0.0.0-20240606120523-5a60cdf6a761_LICENSE": {
+      "bytes": 1073,
+      "sha256": "fc505773403fe869ed64cc2235cdd13988a427bb7e3a7e7004a3f4b27420f8fc",
+      "normalized_sha256": "fc505773403fe869ed64cc2235cdd13988a427bb7e3a7e7004a3f4b27420f8fc",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/github.com_jackc_pgx_v5_v5.7.6_LICENSE": {
+      "bytes": 1078,
+      "sha256": "467f95e074fe23079a5623ed652619682692041b8551da27e3c2ddb9659a1507",
+      "normalized_sha256": "467f95e074fe23079a5623ed652619682692041b8551da27e3c2ddb9659a1507",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/github.com_jackc_puddle_v2_v2.2.2_LICENSE": {
+      "bytes": 1073,
+      "sha256": "2d50e98a4900b4d6457a38d39c1432fdc156fc2f7b365f2e33ec9344acbb0057",
+      "normalized_sha256": "2d50e98a4900b4d6457a38d39c1432fdc156fc2f7b365f2e33ec9344acbb0057",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/golang.org_x_crypto_v0.37.0_LICENSE": {
+      "bytes": 1453,
+      "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "normalized_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/golang.org_x_sync_v0.13.0_LICENSE": {
+      "bytes": 1453,
+      "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "normalized_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "matches_original_package": true
+    },
+    "licenses/go-modules/golang.org_x_text_v0.24.0_LICENSE": {
+      "bytes": 1453,
+      "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "normalized_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "matches_original_package": true
+    },
+    "licenses/Godot-LICENSE.txt": {
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "normalized_sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "matches_original_package": true
+    },
+    "licenses/Godot-third-party-notices.txt": {
+      "bytes": 106482,
+      "sha256": "16b04e9a985e71ff5ce5fb2274589132d3eac526eb95463fdedf12b632287779",
+      "normalized_sha256": "16b04e9a985e71ff5ce5fb2274589132d3eac526eb95463fdedf12b632287779",
+      "matches_original_package": true
+    },
+    "licenses/THIRD-PARTY.txt": {
+      "bytes": 1261,
+      "sha256": "d3898b683019b134b5b25409f46b8f0d0f42c87e61d22fe6b82db50ef6a6c4f6",
+      "normalized_sha256": "d3898b683019b134b5b25409f46b8f0d0f42c87e61d22fe6b82db50ef6a6c4f6",
+      "matches_original_package": true
+    },
+    "ops/backup.sh": {
+      "bytes": 517,
+      "sha256": "244d2d400678db6ac4a1e8060986789e6b4ed1e95c6b8467956db4c5551b988f",
+      "normalized_sha256": "244d2d400678db6ac4a1e8060986789e6b4ed1e95c6b8467956db4c5551b988f",
+      "matches_original_package": true
+    },
+    "ops/epochrush-backup.service": {
+      "bytes": 206,
+      "sha256": "f607bfa95386209f67f50128dfd3ec0ef056cccad313e22ab640d666e259d1d4",
+      "normalized_sha256": "f607bfa95386209f67f50128dfd3ec0ef056cccad313e22ab640d666e259d1d4",
+      "matches_original_package": true
+    },
+    "ops/epochrush-backup.timer": {
+      "bytes": 167,
+      "sha256": "c8ff59b84132bf6370afe9e54be23e790fb63b17ab6c6e716643f8bc17de73e0",
+      "normalized_sha256": "c8ff59b84132bf6370afe9e54be23e790fb63b17ab6c6e716643f8bc17de73e0",
+      "matches_original_package": true
+    },
+    "ops/epochrush-health.service": {
+      "bytes": 171,
+      "sha256": "6663e9b2016974fd4113a4362871c6154f84d8be8a92cea39f26a5361745440c",
+      "normalized_sha256": "6663e9b2016974fd4113a4362871c6154f84d8be8a92cea39f26a5361745440c",
+      "matches_original_package": true
+    },
+    "ops/epochrush-health.timer": {
+      "bytes": 127,
+      "sha256": "713694067259b2c75b9693df1471601e7ddf0657e0df6c9b1e032fafd55053d7",
+      "normalized_sha256": "713694067259b2c75b9693df1471601e7ddf0657e0df6c9b1e032fafd55053d7",
+      "matches_original_package": true
+    },
+    "ops/epochrush-logrotate.conf": {
+      "bytes": 150,
+      "sha256": "779821076136bcd6b81992de2ed824a13752de44663098d7b49636695c08d768",
+      "normalized_sha256": "779821076136bcd6b81992de2ed824a13752de44663098d7b49636695c08d768",
+      "matches_original_package": true
+    },
+    "ops/epochrush-online.service": {
+      "bytes": 1249,
+      "sha256": "8abf5e0c22d90040b8a5fd72008666c4deed70e52ea971140d8dfb11ff8ba1b8",
+      "normalized_sha256": "8abf5e0c22d90040b8a5fd72008666c4deed70e52ea971140d8dfb11ff8ba1b8",
+      "matches_original_package": true
+    },
+    "ops/health.sh": {
+      "bytes": 956,
+      "sha256": "e9993a1de297c1291b36cc7bbc4485b8ecaca9818206eb1d960211d4c17602da",
+      "normalized_sha256": "e9993a1de297c1291b36cc7bbc4485b8ecaca9818206eb1d960211d4c17602da",
+      "matches_original_package": true
+    },
+    "ops/nginx-public.conf": {
+      "bytes": 1495,
+      "sha256": "9c8afba3eff5c0d1c07633e9229df4046b7fb3196ed2c046c11ac108843f158e",
+      "normalized_sha256": "9c8afba3eff5c0d1c07633e9229df4046b7fb3196ed2c046c11ac108843f158e",
+      "matches_original_package": true
+    },
+    "ops/README.md": {
+      "bytes": 9336,
+      "sha256": "29d4cd1f5f41029aabe20be7b1ab6c887c16b18847ba77484f953106d813d3d6",
+      "normalized_sha256": "29d4cd1f5f41029aabe20be7b1ab6c887c16b18847ba77484f953106d813d3d6",
+      "matches_original_package": true
+    },
+    "ops/renew-proxy.sh": {
+      "bytes": 310,
+      "sha256": "da8a97a4c38328c8c83d12e39d53e9098090a48f9fd3f314c2a8b8b445e7803f",
+      "normalized_sha256": "da8a97a4c38328c8c83d12e39d53e9098090a48f9fd3f314c2a8b8b445e7803f",
+      "matches_original_package": true
+    },
+    "README.md": {
+      "bytes": 11369,
+      "sha256": "9426ced9838399f90f2154d51ea454838bba0f9afa53384ba27c3a8b79036b53",
+      "normalized_sha256": "9426ced9838399f90f2154d51ea454838bba0f9afa53384ba27c3a8b79036b53",
+      "matches_original_package": true
+    },
+    "referee/assets/data/animations.json": {
+      "bytes": 196403,
+      "sha256": "26a2ff7b8cd7ac7d5e6e3925302de37900e74e042e31579ac57415ea87569777",
+      "normalized_sha256": "ea061515afbfa74d22552006636ebac0a33d7d9a54112b53ead26ae02e8ff5fc",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/builds.json": {
+      "bytes": 2573,
+      "sha256": "28fd9b279970f66641e64ab4cc1b92bfe4384ce3d37ac6d4f6f25b0f367827ed",
+      "normalized_sha256": "b7d2870aad7eb1dc832a359ab3040616ae1597adb20128d879dc2b207d629fc9",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/enemy-profiles.json": {
+      "bytes": 2903,
+      "sha256": "d86d3865d0b01cf530c6d62db7e691d7d1a0c506bee3af8af5e91111babeb3ca",
+      "normalized_sha256": "9c177d308e6316a23a08b12d7afe1d491a88d9ee4d147fd2d726134429f2cf83",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/era-specials.json": {
+      "bytes": 3452,
+      "sha256": "974d68f196da00145a1ada38519f32cc3510aed58bc2d54d7c8db72e4b4ef3bc",
+      "normalized_sha256": "195df15b3f9d99bc620240f7054531ee1a5b81755ae8a3a1a0698f81467ba90b",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/eras.json": {
+      "bytes": 7747,
+      "sha256": "3325ae8f86a62779b100bd792d16697f34d65841bab19918178523065fef3c38",
+      "normalized_sha256": "115501d2af7f54939da088c4efcb13892e9fe6edf575e4d79fbbee0eff390e9c",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/hero-evolutions.json": {
+      "bytes": 66364,
+      "sha256": "a87bf0a9de37f58b6fdf3c8b73f1d150f803b158d9b762ac6506e9bc0be40b71",
+      "normalized_sha256": "41def3e6ad0cac1200940992751c03989e4f5d1351244788b58bc2d85518f66a",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/heroes.json": {
+      "bytes": 3050,
+      "sha256": "b17c4abebdc0d9edd2427d4f5898cea52730621e9a326c8fb1571ee180ca0a3d",
+      "normalized_sha256": "d0c80073e6692dfdd39d477b58467afd88a72743eb02fec471b7c62b3e66f470",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/loot.json": {
+      "bytes": 1550,
+      "sha256": "465ae862cfdc0c4a21a99d0180ddbb178d2ddc0cf31de72ea80a6d270a70fb26",
+      "normalized_sha256": "e7c06b33fd26e63eb0f1c746a6ff5150cbc7ea3d362388e2d2049a884d4a6746",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/missions.json": {
+      "bytes": 12780,
+      "sha256": "a1b08898a1f39add96dca776f319a5aa2a2dfdde7ed52fefd313fe5313998d3d",
+      "normalized_sha256": "f405880689222ff6a045f495c716c46f84813356f7dac331b221e8ba0dc50909",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/online-manifest.json": {
+      "bytes": 3625,
+      "sha256": "fdc0bd57d8ad46a70a983ab27f0a3b80ca98816c6d1c55996c5573facf8e5be5",
+      "normalized_sha256": "59a0571a41df42a0c1787a0013cd23a852903f448eb028f1f43863f554bd723d",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/relics.json": {
+      "bytes": 3074,
+      "sha256": "e89b71e5e9bafde5db868810f25356758a098ae8074cb4cdc3cb7a6cd1bca4e6",
+      "normalized_sha256": "66ca19b08a8a9edc29f2dfb4a0a18e5ad699530bfdb2ff192605ff108f48f71d",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/rules.json": {
+      "bytes": 5021,
+      "sha256": "b3667934d843190a51ba8c254af228f97db5f3514c55d0430eed6b030f5051d2",
+      "normalized_sha256": "95b7506e9618bad484a2563818b0074e648481ec6d9e0af844d63328d1dd0153",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/run-upgrades.json": {
+      "bytes": 6728,
+      "sha256": "06e37b646897be0bfabb894cf352f90bb4feca54926992a4830bcaaae8e75494",
+      "normalized_sha256": "15487e54b125cc60a363707e34df48071a22a16927c59d0d87c13552ba7cf5f4",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/skills.json": {
+      "bytes": 11560,
+      "sha256": "5e7cc6e2b998df76d45089109ab0cb69fa322aadd15317c31c7f42c743e438b1",
+      "normalized_sha256": "d6233f8cf162a4fe5da5a68784b36f29c67246397e9de59aa3a804da24c40eb9",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/specializations.json": {
+      "bytes": 4394,
+      "sha256": "9faa12f351a6cb7665fa017c5e3cfd2cfe602fc210906de70ea115b004bc8518",
+      "normalized_sha256": "d73d1c4fdf1c7868850956caaf14de8d638213a6cbf6539215f1eac7cbf1c56d",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/statuses.json": {
+      "bytes": 1862,
+      "sha256": "4d8d37b184b53203d94cabefe821fc0c74e71157a19487a7e9d92ca840402075",
+      "normalized_sha256": "ff34e55804c88c10b5de71b02a3a99036f69f54e82dd1941d4593cf5000e2da3",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/talents.json": {
+      "bytes": 3836,
+      "sha256": "9e6d2b5c616733e7cb38812a625289e446cd237093c46007344c4386f91a5846",
+      "normalized_sha256": "2d2ad88f2d0b68cad53916d9e07f7ce58f9e3ffb35b3589f58b5e7657e8e5128",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/turrets.json": {
+      "bytes": 6061,
+      "sha256": "22a3b948432d2fee09793f5aae160bbfaa01a6cb3bec8a3a5802eddbe121405b",
+      "normalized_sha256": "31706bc4733d8a938f344f7feb4fcd001e2b5cea827c18e9e5d35ed78dd7fbea",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/units.json": {
+      "bytes": 36355,
+      "sha256": "469bf47a7df929d8880c1a9d8a2c6a9e1239d4d77609dfe71106bb9f06f703ad",
+      "normalized_sha256": "5ab106ad9212fa925598a91dc68f47221db9bad48467fee8c22edf6dc8f427a0",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/assets/data/weapons.json": {
+      "bytes": 1203,
+      "sha256": "2a55898972ac35f82fdb04455cc571d4e881a9c0548d5d28c4a28a37b45f2791",
+      "normalized_sha256": "e5d5ebf22d05d84768b75b9154c962cd80cf672bb5b4294250b12f7c8bb8b4dd",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/project.godot": {
+      "bytes": 222,
+      "sha256": "1bd288d89d31b88513df2435196163c62302e546af8a5a3b4f8149a668984e6e",
+      "normalized_sha256": "1bd288d89d31b88513df2435196163c62302e546af8a5a3b4f8149a668984e6e",
+      "matches_original_package": true
+    },
+    "referee/scripts/epoch_combat.gd": {
+      "bytes": 28326,
+      "sha256": "90259310832e7ccdebef26d1f82d451b5c15bfdb2095765e151431e168f7644b",
+      "normalized_sha256": "90259310832e7ccdebef26d1f82d451b5c15bfdb2095765e151431e168f7644b",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/epoch_combat.gd.uid": {
+      "bytes": 20,
+      "sha256": "018e0b811cc155d4c37955622dc028d07c70d330a2ae4b28ae05a9b031a28187",
+      "normalized_sha256": "018e0b811cc155d4c37955622dc028d07c70d330a2ae4b28ae05a9b031a28187",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/epoch_environment.gd": {
+      "bytes": 5647,
+      "sha256": "44330bfbfeb737c00524ef3e68863c9c59a8025fdb80a547f99407953981ad7b",
+      "normalized_sha256": "44330bfbfeb737c00524ef3e68863c9c59a8025fdb80a547f99407953981ad7b",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/epoch_environment.gd.uid": {
+      "bytes": 20,
+      "sha256": "153193db38dfba43000c62ea72e71826c85eafeb0a589b79ff3d534b198137c5",
+      "normalized_sha256": "153193db38dfba43000c62ea72e71826c85eafeb0a589b79ff3d534b198137c5",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/epoch_skills.gd": {
+      "bytes": 24945,
+      "sha256": "81d39bb6c2cad89aa0fa9cb61d4ed47da26d8cc78591eb2b949eef8175c580f9",
+      "normalized_sha256": "81d39bb6c2cad89aa0fa9cb61d4ed47da26d8cc78591eb2b949eef8175c580f9",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/epoch_skills.gd.uid": {
+      "bytes": 20,
+      "sha256": "b970616d5d1612abf90140fd93b3dc132c95d94d0bbfde39eb84c0736af261be",
+      "normalized_sha256": "b970616d5d1612abf90140fd93b3dc132c95d94d0bbfde39eb84c0736af261be",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/epoch_snapshot_migration.gd": {
+      "bytes": 3523,
+      "sha256": "6e93185fab09ed423aaba76b26edd870d851f4c60a5a4e4cd4f22c0dd79af40a",
+      "normalized_sha256": "6e93185fab09ed423aaba76b26edd870d851f4c60a5a4e4cd4f22c0dd79af40a",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/epoch_snapshot_migration.gd.uid": {
+      "bytes": 20,
+      "sha256": "0cf47fb5a1eef7fae4045ab5e92c11f43841931d759ebcb9555adb1d46f9d8ea",
+      "normalized_sha256": "0cf47fb5a1eef7fae4045ab5e92c11f43841931d759ebcb9555adb1d46f9d8ea",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/game_data.gd": {
+      "bytes": 9013,
+      "sha256": "b5624e8c0b1df5fdb20648044161532e1c0972d80153279a028dce7ce1596a04",
+      "normalized_sha256": "b5624e8c0b1df5fdb20648044161532e1c0972d80153279a028dce7ce1596a04",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/game_data.gd.uid": {
+      "bytes": 20,
+      "sha256": "585d809555a23233b2787a9f5fb01902bbecee494e0b363312825a8ae36f6e41",
+      "normalized_sha256": "585d809555a23233b2787a9f5fb01902bbecee494e0b363312825a8ae36f6e41",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/game_model.gd": {
+      "bytes": 33760,
+      "sha256": "c1d0694f05b86e98328b57f742bdfac7728f3688f64b01afda738c75c2174631",
+      "normalized_sha256": "c1d0694f05b86e98328b57f742bdfac7728f3688f64b01afda738c75c2174631",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/scripts/game_model.gd.uid": {
+      "bytes": 20,
+      "sha256": "1dcb3737b09dca8c5cd0e2ac89af62495fdceb04308662a4b938cbf6c47071fd",
+      "normalized_sha256": "1dcb3737b09dca8c5cd0e2ac89af62495fdceb04308662a4b938cbf6c47071fd",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/server/command_router.gd": {
+      "bytes": 2131,
+      "sha256": "91956d48c6118282ba9b134e23dc6e223d7d562e9a1253ee4faa9b7259791da3",
+      "normalized_sha256": "91956d48c6118282ba9b134e23dc6e223d7d562e9a1253ee4faa9b7259791da3",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/server/network_projection.gd": {
+      "bytes": 1182,
+      "sha256": "4409d652a011ef793e7f4652d297e82be3fc5f996984ce6940a17883dd5b8b7a",
+      "normalized_sha256": "4409d652a011ef793e7f4652d297e82be3fc5f996984ce6940a17883dd5b8b7a",
+      "matches_original_package": true,
+      "matches_current_source": true
+    },
+    "referee/server/server_main.gd": {
+      "bytes": 3870,
+      "sha256": "84c75d014da9d3d56e0f3c02c2a15606c61e75a414514c4288cd78ec593b0c94",
+      "normalized_sha256": "84c75d014da9d3d56e0f3c02c2a15606c61e75a414514c4288cd78ec593b0c94",
+      "matches_original_package": true,
+      "matches_current_source": true
+    }
+  },
+  "operations": {
+    "epochrush-online.service": {
+      "remote_sha256": "8abf5e0c22d90040b8a5fd72008666c4deed70e52ea971140d8dfb11ff8ba1b8",
+      "repository_sha256": "8abf5e0c22d90040b8a5fd72008666c4deed70e52ea971140d8dfb11ff8ba1b8",
+      "matches_repository": true
+    },
+    "epochrush-health.service": {
+      "remote_sha256": "6663e9b2016974fd4113a4362871c6154f84d8be8a92cea39f26a5361745440c",
+      "repository_sha256": "6663e9b2016974fd4113a4362871c6154f84d8be8a92cea39f26a5361745440c",
+      "matches_repository": true
+    },
+    "epochrush-health.timer": {
+      "remote_sha256": "713694067259b2c75b9693df1471601e7ddf0657e0df6c9b1e032fafd55053d7",
+      "repository_sha256": "713694067259b2c75b9693df1471601e7ddf0657e0df6c9b1e032fafd55053d7",
+      "matches_repository": true
+    },
+    "epochrush-backup.service": {
+      "remote_sha256": "f607bfa95386209f67f50128dfd3ec0ef056cccad313e22ab640d666e259d1d4",
+      "repository_sha256": "f607bfa95386209f67f50128dfd3ec0ef056cccad313e22ab640d666e259d1d4",
+      "matches_repository": true
+    },
+    "epochrush-backup.timer": {
+      "remote_sha256": "c8ff59b84132bf6370afe9e54be23e790fb63b17ab6c6e716643f8bc17de73e0",
+      "repository_sha256": "c8ff59b84132bf6370afe9e54be23e790fb63b17ab6c6e716643f8bc17de73e0",
+      "matches_repository": true
+    },
+    "epochrush-logrotate.conf": {
+      "remote_sha256": "779821076136bcd6b81992de2ed824a13752de44663098d7b49636695c08d768",
+      "repository_sha256": "779821076136bcd6b81992de2ed824a13752de44663098d7b49636695c08d768",
+      "matches_repository": true
+    },
+    "nginx-public.conf": {
+      "remote_sha256": "9c8afba3eff5c0d1c07633e9229df4046b7fb3196ed2c046c11ac108843f158e",
+      "repository_sha256": "9c8afba3eff5c0d1c07633e9229df4046b7fb3196ed2c046c11ac108843f158e",
+      "matches_repository": true
+    },
+    "renew-proxy.sh": {
+      "remote_sha256": "da8a97a4c38328c8c83d12e39d53e9098090a48f9fd3f314c2a8b8b445e7803f",
+      "repository_sha256": "da8a97a4c38328c8c83d12e39d53e9098090a48f9fd3f314c2a8b8b445e7803f",
+      "matches_repository": true
+    },
+    "health.sh": {
+      "remote_sha256": "e9993a1de297c1291b36cc7bbc4485b8ecaca9818206eb1d960211d4c17602da",
+      "repository_sha256": "e9993a1de297c1291b36cc7bbc4485b8ecaca9818206eb1d960211d4c17602da",
+      "matches_repository": true
+    },
+    "backup.sh": {
+      "remote_sha256": "244d2d400678db6ac4a1e8060986789e6b4ed1e95c6b8467956db4c5551b988f",
+      "repository_sha256": "244d2d400678db6ac4a1e8060986789e6b4ed1e95c6b8467956db4c5551b988f",
+      "matches_repository": true
+    }
+  },
+  "public_simulation_hash_matches": true,
+  "audit_scope": "Hashes, unit state and config permissions only; no DB, logs, secret values or TLS keys read.",
+  "audit_date": "2026-10-11"
+}

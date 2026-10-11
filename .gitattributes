@@ -4,6 +4,10 @@
 docs/qa/v0.7.0/**/*.json -text
 docs/qa/base-facing/**/*.json -text
 
+# Simulation JSON hashes are byte-sensitive. Preserve deployed CRLF/LF bytes
+# instead of silently rewriting them when the repository is cloned.
+godot/assets/data/*.json -text whitespace=cr-at-eol
+
 # Native Windows command scripts use Windows line endings.
 *.bat text eol=crlf
 *.cmd text eol=crlf

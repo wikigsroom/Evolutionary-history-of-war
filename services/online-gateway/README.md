@@ -20,7 +20,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Server.ps1
 
 原生 PostgreSQL 依赖系统的 Microsoft Visual C++ 2015–2022 x64 运行库，启动脚本会检查；缺少时安装 [微软官方运行库](https://aka.ms/vs/17/release/vc_redist.x64.exe) 后再启动。随包数据库只用于本游戏，未提供全部可选扩展。
 
-两台客户端连接同一服务端：主菜单 → **联机** → 填入 `http://服务器局域网IPv4:28187` → **连接**。选择自由匹配，或双方填写相同的六位数字并点击创建/加入；`042731` 的前导零会保留。双方准备后开始，六位房间码只是找房方式，不是账号密码；第三人不能加入已满房间。
+正式 0.8.2 客户端固定连接官方服，不提供地址编辑。在原生 Godot 编辑器测试私人服时，可以设置 `EPOCH_ONLINE_URL=http://服务器局域网IPv4:28187`；分发私人客户端须修改 `EpochNetClient.DEFAULT_ENDPOINT` 后重新构建，并更新运营与隐私信息。发行包忽略该环境变量。进入联机后选择自由匹配，或双方填写相同的六位数字并点击创建/加入；`042731` 的前导零会保留。双方准备后开始，六位房间码只是找房方式，不是账号密码；第三人不能加入已满房间。
 
 只在同一台电脑测试时可使用 `-LocalOnly` 与 `http://127.0.0.1:28187`。同一 Windows 用户的普通客户端共用匿名身份；测试两人应使用两台设备或不同 Windows 用户，不能把同一身份的两个窗口当成双方。
 
@@ -95,6 +95,8 @@ python -X utf8 tools/online/package_server.py
 ```
 
 Go 模块由 `go.mod/go.sum` 固定；工具链与数据库缓存被 Git 忽略。Manifest 校验六个战斗脚本、规则 JSON、裁判脚本，修改它们后要重新生成，再统一导出客户端与服务端。程序化故障测试只停止属于本工作目录、路径已经核验的原生进程，不操作其他数据库或系统服务。
+
+完整版本依据、文件索引、独立源码 ZIP 生成方法与凭据排除规则见 [服务端归档 / Server archive](../../server/README.md)。
 
 ## English quick start
 

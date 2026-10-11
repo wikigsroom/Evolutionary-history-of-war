@@ -5,7 +5,7 @@
 
 **Build your army, command your hero, and turn an evolution into a counterattack.**
 
-[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.2) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.8.2/README.md)
+[下载 / Download](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.2) · [中文说明](#zh-guide) · [English guide](#en-guide) · [实机图与 GIF / Screenshots & GIFs](#media) · [完整兵种表 / Full roster](#roster) · [验收证据 / QA evidence](docs/qa/v0.8.2/README.md) · [服务端归档 / Server archive](server/README.md)
 
 | 项目 / Item | 当前状态 / Current state |
 | --- | --- |

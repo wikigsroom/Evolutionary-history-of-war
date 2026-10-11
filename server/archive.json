@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "archived_on": "2026-10-11",
+  "game": "纪元急袭 / Epoch Rush",
+  "operator": "SIDcloud",
+  "deployed_server_version": "0.8.1",
+  "compatible_client_version": "0.8.2",
+  "protocol_version": "1.0",
+  "ruleset_id": "pvp-classic-v1",
+  "simulation_hash": "085a54fd2558352356ef9b46a001bb751db74c5638e50f4a31d96e633071395c",
+  "original_release_source_commit": "e009e707c953fe64b56f1a8d08141b1ee024f710",
+  "source_archive_ref": "The commit containing this manifest; recorded precisely in generated SERVER-SOURCE-MANIFEST.json.",
+  "components": {
+    "gateway_and_migrations": "services/online-gateway",
+    "authoritative_referee": "godot/server",
+    "shared_simulation_scripts": [
+      "godot/scripts/game_model.gd",
+      "godot/scripts/game_data.gd",
+      "godot/scripts/epoch_combat.gd",
+      "godot/scripts/epoch_skills.gd",
+      "godot/scripts/epoch_environment.gd",
+      "godot/scripts/epoch_snapshot_migration.gd"
+    ],
+    "rules_and_simulation_manifest": "godot/assets/data",
+    "windows_deployment": "services/online-gateway/deploy",
+    "linux_deployment": "services/online-gateway/deploy/linux",
+    "source_archive_tool": "tools/online/archive_server.py",
+    "read_only_deployment_audit": "tools/online/audit_server_archive.py",
+    "protocol_and_design": "docs/epoch-rush/online-protocol.md",
+    "archive_evidence": "docs/qa/server-archive/deployed-inventory.json"
+  },
+  "toolchains": {
+    "go": "1.27.2",
+    "godot": "4.7.2 Standard",
+    "linux_postgresql": "16",
+    "windows_bundled_postgresql": "18.6",
+    "godot_linux_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip",
+    "godot_linux_archive_sha256": "cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4"
+  },
+  "published_server_packages": [
+    {
+      "platform": "linux-amd64",
+      "url": "https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.1/Epoch-Rush-Server-0.8.1-Linux-x64.tar.gz",
+      "bytes": 8453902,
+      "sha256": "e68a4418447aaa9c9022dc478b481c4d9e239ab1c3a8155024a0067a98ee7ccb"
+    },
+    {
+      "platform": "windows-amd64",
+      "url": "https://github.com/wikigsroom/Evolutionary-history-of-war/releases/download/v0.8.1/Epoch-Rush-Server-0.8.1-Windows-x64.zip",
+      "bytes": 128132310,
+      "sha256": "fc6a7e2a824dd64a3c8842ef488320efd17e14bea7f9f17edf244e619684cd2f"
+    }
+  ],
+  "exclusions": [
+    "Database contents, dumps, player records and anonymous identity credentials",
+    "Real environment files, DSNs, passwords, DPAPI state and signing material",
+    "SSH credentials, host-specific known_hosts, TLS certificates and private keys",
+    "Application/access logs, local runtime caches and downloaded binary toolchains"
+  ],
+  "disaster_recovery_scope": "Code and deployment reconstruction only. Live player database backups stay private and are not included."
+}

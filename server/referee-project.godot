@@ -1,0 +1,13 @@
+; Minimal headless project for the standalone source archive.
+; Copy to godot/project.godot ONLY inside an extracted server-only archive.
+config_version=5
+
+[application]
+config/name="Epoch Rush Authority"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[threading]
+worker_pool/max_threads=2
+
+[rendering]
+renderer/rendering_method="gl_compatibility"

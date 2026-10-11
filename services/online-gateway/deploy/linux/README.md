@@ -27,7 +27,7 @@ Linux TAR 包包含 Go ELF、纯模拟工程、运维模板和许可；**不包�
 1. 解压 `Epoch-Rush-Server-0.8.1-Linux-x64.tar.gz`，逐个校验 manifest 中的文件哈希；将 `Epoch-Rush-Server` 内容安装到 `/opt/epochrush/releases/0.8.1`。赋予 `bin/epoch-online` 和 `ops/*.sh` 执行权限，代码保持 root 所有。
 2. 创建无登录系统用户 epochrush，以及该用户可写的 `/var/lib/epochrush`。引擎初次导入使用 `runuser -u epochrush -- <引擎> --headless --editor --path <referee> --import`；新版本目录导入阶段允许该用户写入 `.godot` 缓存，完成后收回对源码的写权限。纯裁判 project 限制 worker 线程为 2，避免小主机导入时产生过多线程。
 3. PostgreSQL 只监听 loopback。使用管理员 psql 创建专用 `epochrush_server` LOGIN 角色，NOSUPERUSER / NOCREATEDB / NOCREATEROLE / NOREPLICATION、CONNECTION LIMIT 4；用交互式 `\password epochrush_server` 设置强密码，不把密码写在 shell 命令、历史、文档或 URL 中。创建该角色拥有的 epochrush_online 库并撤销 PUBLIC 数据库权限。共享 PostgreSQL 不应因本游戏部署而重启或改变全局调优参数。
-4. 用 root 编辑 `/etc/epochrush/online.env`，设置 `EPOCH_DATABASE_URL`、`EPOCH_MAX_MATCHES=2`、`EPOCH_DB_CONNECTIONS=4`。DSN 的密码需 URL 编码。文件仅 root 可读，由 systemd 注入给服务；不要 cat 它或发布其副本。
+4. 参考仓库内 `environment.example`，用 root 编辑 `/etc/epochrush/online.env`，设置 `EPOCH_DATABASE_URL`、`EPOCH_MAX_MATCHES=2`、`EPOCH_DB_CONNECTIONS=4`。示例密码只是占位符，实际 DSN 密码需 URL 编码。文件权限为 0600，仅 root 可读，由 systemd 注入给服务；不要 cat 它或发布其副本。历史 0.8.1 TAR 没有此后新增的环境示例，可从仓库取得。
 5. 将 current 链接指向新版本。建立 root 管理的 `/var/log/epochrush` 与仅 root 可读的 `/var/backups/epochrush`。复制 `epochrush-*.service` / `epochrush-*.timer` 到 `/etc/systemd/system/`，logrotate 模板到 `/etc/logrotate.d/epochrush`。
 6. 先配置域名的 A 记录，再以 webroot `/var/www/epochrush` 申请证书，证书名 epochrush-public。导入 `nginx-public.conf`，校验并 reload；公网只开放 80/443。把 renew-proxy.sh 放入 Certbot deploy-hooks，并启用 certbot.timer。
 7. 执行下面的启用与本机检查。初始化表结构由网关完成；不要使用客户端离线存档初始化服务端。

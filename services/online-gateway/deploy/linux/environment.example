@@ -1,0 +1,5 @@
+# Template only. Create /etc/epochrush/online.env privately as root, mode 0600.
+# Replace the placeholder with a URL-encoded password; never commit real values.
+EPOCH_DATABASE_URL=postgres://epochrush_server:__SET_PRIVATE_PASSWORD__@127.0.0.1:5432/epochrush_online?sslmode=disable
+EPOCH_MAX_MATCHES=2
+EPOCH_DB_CONNECTIONS=4

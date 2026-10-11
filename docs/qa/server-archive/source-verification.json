@@ -1,0 +1,90 @@
+{
+  "verified_on": "2026-10-11",
+  "source_origin": "Staged Git blobs before the archive commit",
+  "simulation_hash": "085a54fd2558352356ef9b46a001bb751db74c5638e50f4a31d96e633071395c",
+  "go_tests_passed": 7,
+  "checks": [
+    {
+      "name": "Complete staged server source passes allowlist, secret and simulation checks",
+      "passed": true
+    },
+    {
+      "name": "Native Python scripts parse",
+      "passed": true
+    },
+    {
+      "name": "Reject injected private environment",
+      "passed": true
+    },
+    {
+      "name": "Reject injected protected credential",
+      "passed": true
+    },
+    {
+      "name": "Reject injected database dump",
+      "passed": true
+    },
+    {
+      "name": "Reject injected runtime player data",
+      "passed": true
+    },
+    {
+      "name": "Reject injected SSH credentials",
+      "passed": true
+    },
+    {
+      "name": "Reject injected DB literal credential",
+      "passed": true
+    },
+    {
+      "name": "Reject injected private key content",
+      "passed": true
+    },
+    {
+      "name": "Reject injected GitHub key content",
+      "passed": true
+    },
+    {
+      "name": "Reject injected secret env content",
+      "passed": true
+    },
+    {
+      "name": "Reject injected path escape",
+      "passed": true
+    },
+    {
+      "name": "Public placeholder template remains accepted",
+      "passed": true
+    },
+    {
+      "name": "Git ignores all 16 representative private-state paths",
+      "passed": true
+    },
+    {
+      "name": "Public deployment source and template remain trackable",
+      "passed": true
+    },
+    {
+      "name": "Actual local operator credential absent from every selected Git blob",
+      "passed": true
+    },
+    {
+      "name": "Native extraction stays within the QA workspace",
+      "passed": true
+    },
+    {
+      "name": "Extracted server-only Go source passes all seven native tests",
+      "passed": true
+    },
+    {
+      "name": "Extracted source builds native Windows gateway",
+      "passed": true
+    },
+    {
+      "name": "Extracted minimal headless Godot referee imports without client art or UI",
+      "passed": true
+    }
+  ],
+  "private_values_in_report": false,
+  "scope": "Archive safety and native standalone source reconstruction; no live service changes or player DB access"
+}
