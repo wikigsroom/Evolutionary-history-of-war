@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "fonts": [
+    {
+      "font": "resource-rounded.woff2",
+      "missing": "",
+      "passed": true
+    },
+    {
+      "font": "smiley.woff2",
+      "missing": "",
+      "passed": true
+    }
+  ],
+  "source": "All Chinese characters in current native game scripts"
+}

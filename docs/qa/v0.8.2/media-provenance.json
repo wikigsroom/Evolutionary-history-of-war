@@ -1,0 +1,56 @@
+{
+  "version": "0.8.2",
+  "windows_executable_sha256": "006066f6dbdcf4913bd53fe9d61253d2a4c86235f5e2d31c4539e03af1486242",
+  "captures": [
+    {
+      "file": "docs/media/v0.8.2/online-hall.png",
+      "sha256": "f20c1e7450f2a4f5f203f24291096b187d45c0402df109712ed80fcf60710b6f",
+      "source": "Final exported Windows resource pack; real public two-player match"
+    },
+    {
+      "file": "docs/media/v0.8.2/online-room.png",
+      "sha256": "753197578e2d0829dbc375a1e017efeeaa4180c89c99953c998a71b63518bdf1",
+      "source": "Final exported Windows resource pack; real public two-player match"
+    },
+    {
+      "file": "docs/media/v0.8.2/online-battle.png",
+      "sha256": "0971851c3586581556366ce6f6332bed324831007b9f9e3c99749431de2c6b95",
+      "source": "Final exported Windows resource pack; real public two-player match"
+    },
+    {
+      "file": "docs/media/v0.8.2/online-result.png",
+      "sha256": "0439815934d6535b047697a3bff317ca778b9643cfc7cc8748d4c22c0d6f56af",
+      "source": "Final exported Windows resource pack; real public two-player match"
+    },
+    {
+      "file": "docs/media/v0.8.2/layout-hall.png",
+      "sha256": "f20c1e7450f2a4f5f203f24291096b187d45c0402df109712ed80fcf60710b6f",
+      "source": "Final exported Windows resource pack; explicit UI-state fixture"
+    },
+    {
+      "file": "docs/media/v0.8.2/layout-room.png",
+      "sha256": "01bd880330ee2b2ee35aa80dead2e73af521b6bf3307d5adb144d2bde77c1dd1",
+      "source": "Final exported Windows resource pack; explicit UI-state fixture"
+    },
+    {
+      "file": "docs/media/v0.8.2/layout-room-waiting.png",
+      "sha256": "b413fe6b496d61a0fba8409960c477281db0b8092acf11fed99278db61ac3c35",
+      "source": "Final exported Windows resource pack; explicit UI-state fixture"
+    },
+    {
+      "file": "docs/media/v0.8.2/layout-offer.png",
+      "sha256": "e9a29b5ef7671c40e0611f99aeed1734ea42d10de8816337b220985589a3a0c2",
+      "source": "Final exported Windows resource pack; explicit UI-state fixture"
+    },
+    {
+      "file": "docs/media/v0.8.2/layout-queue.png",
+      "sha256": "d6e004aa00746fcfd6b407e1f532712f8bf08bc03fc7e9425d81ef38b95b9ad8",
+      "source": "Final exported Windows resource pack; explicit UI-state fixture"
+    },
+    {
+      "file": "docs/media/v0.8.2/layout-retrying.png",
+      "sha256": "d699134cf6d250abd898027be128cf832ef05f9c9961ceacd6cbb45367113865",
+      "source": "Final exported Windows resource pack; explicit UI-state fixture"
+    }
+  ]
+}

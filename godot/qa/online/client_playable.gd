@@ -59,16 +59,18 @@ func run() -> void:
 	var test_endpoint = OS.get_environment("EPOCH_ONLINE_URL")
 	if test_endpoint.is_empty(): test_endpoint = EpochNetClient.DEFAULT_ENDPOINT
 	check(first.endpoint == test_endpoint and second.endpoint == test_endpoint, "Both native clients select the official endpoint or explicit test endpoint")
+	check(not first.service_requested and not first.authenticated and not second.service_requested, "Offline menu does not initiate networking without a saved match")
 	app.show_menu("online"); await settle()
-	await create_timer(0.3).timeout
-	check(not first.authenticated and first.player_id.is_empty() and not first.busy, "Opening the online hall does not create or transmit a new anonymous identity")
-	check(online_controls_disabled(app.current_view), "Matchmaking and room admission wait for the explicit connect action")
-	await capture("native-online-consent")
-	first.set_endpoint(test_endpoint); second.set_endpoint(test_endpoint)
-	check(await first.connect_service(), "Native client A authenticates using Windows protected identity")
-	check(await second.connect_service(), "Native client B authenticates using separate protected identity")
+	check(first.service_requested and not second.service_requested, "Opening the online page requests connection without a connect button")
+	check(await wait_for(func():return first.authenticated and first.service_state == "connected", 30), "Page entry authenticates native client A automatically using protected identity")
+	second.request_connection()
+	check(await wait_for(func():return second.authenticated and second.service_state == "connected", 30), "Native client B authenticates automatically using separate protected identity")
 	check(first.player_id != second.player_id, "Two clients have independent player identities")
 	app.show_menu("online"); await capture("native-online-hall")
+	var identity = first.player_id
+	first.access_token = "expired-token-for-native-qa"
+	await first.refresh_activity()
+	check(await wait_for(func():return first.authenticated and first.service_state == "connected" and first.player_id == identity, 20), "Empty lobby automatically renews an expired identity token and preserves the player")
 	check(controls_inside(app.current_view, app.current_view.get_global_rect()), "Hall buttons fit 1280×720 safe layout")
 	var code = "%06d" % (randi() % 1000000)
 	await first.join_code(code); await second.join_code(code); await first.refresh_activity()
@@ -122,6 +124,8 @@ func run() -> void:
 	await capture("native-online-result")
 	await first.acknowledge_result(); await second.acknowledge_result()
 	check(first.activity.get("kind","")=="" and second.activity.get("kind","")=="", "Both native clients can leave result and create another match")
+	first._lose_connection()
+	check(first.finished and not first.syncing and first.retry_at < 0, "Finished battle never schedules a spurious match reconnect")
 	finish()
 
 func finish() -> void:

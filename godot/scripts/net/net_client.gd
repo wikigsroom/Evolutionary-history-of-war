@@ -7,11 +7,12 @@ signal battle_available(state)
 signal result_available(result: Dictionary)
 
 const RETRIES = [0.0, 1.0, 2.0, 4.0]
+const SERVICE_RETRIES = [2.0, 4.0, 8.0]
 const DEFAULT_ENDPOINT = "https://jyqx-server.sidcloud.cn"
 const ERRORS = {"ROOM_FULL":"房间已满", "INVALID_ROOM_CODE":"请输入六位数字", "CODE_COOLDOWN":"该房间码刚结束，请稍后使用", "VERSION_MISMATCH":"双方需要使用相同游戏版本", "ROOM_REVISION_CHANGED":"房间已变化，请重新准备", "SERVER_FULL":"服务器对战席位已满", "MAINTENANCE":"服务器正在维护", "OFFER_EXPIRED":"对战邀请已过期", "UNAUTHORIZED":"身份需要重新验证", "NOT_MEMBER":"无法进入其他玩家的对局", "INPUT_LOCKED":"正在同步战局", "SEQUENCE_GAP":"正在核对指令", "RATE_LIMITED":"操作过快，请稍后重试"}
 
 var endpoint = ""
-var status = "连接服务器，开始真人对战"
+var status = "进入联机，自动连接"
 var busy = false
 var authenticated = false
 var activity = {"kind":"", "id":""}
@@ -45,6 +46,12 @@ var finished = false
 var session_directory = "user://"
 var loadout_dirty = false
 var loadout_flushing = false
+var service_requested = false
+var service_state = "idle"
+var service_retry_at = -1.0
+var service_retry_index = 0
+var activity_refreshing = false
+var activity_generation = 0
 
 func _ready() -> void:
 	credentials = SessionCredentials.new()
@@ -53,13 +60,15 @@ func _ready() -> void:
 	add_child(credentials)
 	manifest = JSON.parse_string(FileAccess.get_file_as_string("res://assets/data/online-manifest.json"))
 	var preferences = _read_session()
-	endpoint = String(preferences.get("endpoint", DEFAULT_ENDPOINT))
-	if endpoint.is_empty(): endpoint = DEFAULT_ENDPOINT
+	# The shipped client always uses the official service, including old installs.
+	endpoint = DEFAULT_ENDPOINT
 	loadout = preferences.get("loadout", EpochData.new().default_loadout("H03"))
 	var from_environment = OS.get_environment("EPOCH_ONLINE_URL")
-	if not from_environment.is_empty(): endpoint = from_environment
+	# Native editor QA can use an isolated fixture; release players cannot override it.
+	if OS.has_feature("editor") and not from_environment.is_empty(): endpoint = from_environment
 	# Returning players reconnect as soon as the application starts.
-	if not endpoint.is_empty() and not String(preferences.get("match_id", "")).is_empty(): connect_service()
+	var legacy_endpoint = String(preferences.get("endpoint", endpoint))
+	if legacy_endpoint == endpoint and not String(preferences.get("match_id", "")).is_empty(): request_connection()
 
 func _read_session() -> Dictionary:
 	var path = session_directory + "online-session.json"
@@ -72,43 +81,50 @@ func _read_session() -> Dictionary:
 func _save_session() -> bool:
 	var file = FileAccess.open(session_directory + "online-session.json.tmp", FileAccess.WRITE)
 	if file == null: return false
-	file.store_string(JSON.stringify({"endpoint":endpoint,"loadout":loadout,"match_id":match_id,"pending":pending},"",true,true))
+	file.store_string(JSON.stringify({"loadout":loadout,"match_id":match_id,"pending":pending},"",true,true))
 	file.flush();file.close()
 	return DirAccess.rename_absolute(session_directory + "online-session.json.tmp", session_directory + "online-session.json") == OK
 
-func set_endpoint(value: String) -> bool:
-	var url = value.strip_edges().trim_suffix("/")
-	var valid = RegEx.new()
-	valid.compile("^https://[A-Za-z0-9.-]+(:[0-9]{1,5})?$")
-	var local = RegEx.new()
-	local.compile("^http://(localhost|127\\.0\\.0\\.1|10\\.[0-9]+\\.[0-9]+\\.[0-9]+|192\\.168\\.[0-9]+\\.[0-9]+|172\\.(1[6-9]|2[0-9]|3[01])\\.[0-9]+\\.[0-9]+)(:[0-9]{1,5})?$")
-	if not valid.search(url) and not local.search(url): _set_status("公网地址需使用 HTTPS；局域网可使用 HTTP"); return false
-	if match_id != "" and not finished and endpoint != url: _set_status("请先结束当前对局再切换服务器"); return false
-	if endpoint != url:
-		access_token = ""; authenticated = false; player_id = ""; activity = {"kind":"", "id":""}
-	endpoint = url
-	_save_session()
-	return true
+func request_connection() -> void:
+	service_requested = true
+	if authenticated or busy or backgrounded or service_state == "blocked" or service_retry_at >= 0: return
+	connect_service()
+
+func _retry_service() -> void:
+	if not service_requested or service_state == "blocked" or service_retry_at >= 0: return
+	var delay = SERVICE_RETRIES[mini(service_retry_index, SERVICE_RETRIES.size() - 1)]
+	service_retry_index += 1
+	service_retry_at = Time.get_ticks_msec() / 1000.0 + delay
+	service_state = "retrying"
+	_set_status("连接中断 · 正在自动重连")
+
+func _network_failure() -> Dictionary:
+	authenticated = false
+	if socket != null and not socket_connecting and not finished: _lose_connection()
+	_retry_service()
+	return {"ok":false,"retryable":true}
 
 func _set_status(text: String) -> void:
 	status = text
 	status_changed.emit()
 
 func connect_service() -> bool:
-	if busy or endpoint.is_empty(): return false
-	busy = true; _set_status("正在连接服务器")
+	if busy or backgrounded or endpoint.is_empty(): return false
+	service_requested = true; service_retry_at = -1.0; service_state = "connecting"
+	busy = true; authenticated = false; _set_status("正在连接 · 请稍候")
 	var bootstrap = await _http("GET", "/v1/bootstrap", {}, false)
-	if not bootstrap.get("ok", false): busy = false; return false
+	if not bootstrap.get("ok", false): busy = false; _retry_service(); return false
 	if bootstrap.get("protocol_version") != manifest["protocol_version"] or bootstrap.get("simulation_hash") != manifest["simulation_hash"]:
-		busy = false; _set_status(ERRORS["VERSION_MISMATCH"]); return false
+		busy = false; service_state = "blocked"; _set_status(ERRORS["VERSION_MISMATCH"]); return false
 	var key = await credentials.installation_key(endpoint)
-	if key.is_empty(): busy = false; _set_status(credentials.last_error); return false
+	if key.is_empty(): busy = false; service_state = "blocked"; _set_status(credentials.last_error); return false
 	var identity = await _http("POST", "/v1/auth/guest", {"installation_key":key}, false)
-	if not identity.get("ok", false): busy = false; return false
+	if not identity.get("ok", false): busy = false; _retry_service(); return false
 	access_token = identity["access_token"]; player_id = identity["player_id"]; authenticated = true
-	busy = false; _set_status("已连接 · 真人对战")
+	busy = false; service_state = "connected"; service_retry_index = 0; service_retry_at = -1.0
+	_set_status("已连接 · 真人对战")
 	await refresh_activity()
-	return true
+	return authenticated
 
 func _http(method: String, path: String, body: Dictionary = {}, authorize: bool = true) -> Dictionary:
 	var request = HTTPRequest.new(); request.timeout = 8.0; request.body_size_limit = 524288
@@ -117,21 +133,23 @@ func _http(method: String, path: String, body: Dictionary = {}, authorize: bool 
 	if authorize: headers.append("Authorization: Bearer " + access_token)
 	var verbs = {"GET":HTTPClient.METHOD_GET,"POST":HTTPClient.METHOD_POST,"PATCH":HTTPClient.METHOD_PATCH,"DELETE":HTTPClient.METHOD_DELETE}
 	var error = request.request(endpoint + path, headers, verbs[method], "" if method == "GET" else JSON.stringify(body))
-	if error != OK: request.queue_free(); _set_status("服务器暂时无法连接"); return {"ok":false}
+	if error != OK: request.queue_free(); return _network_failure()
 	var response = await request.request_completed
 	request.queue_free()
-	if response[0] != HTTPRequest.RESULT_SUCCESS: _set_status("连接中断，正在等待网络恢复"); return {"ok":false,"retryable":true}
+	if response[0] != HTTPRequest.RESULT_SUCCESS: return _network_failure()
 	# Reverse proxies can return HTML or an empty body while the gateway restarts.
 	# Parse quietly and let reconnection handle it as a temporary network failure.
 	var decoder = JSON.new()
 	if decoder.parse(response[3].get_string_from_utf8()) != OK:
-		_set_status("连接中断，正在等待网络恢复"); return {"ok":false,"retryable":true}
+		return _network_failure()
 	var parsed = decoder.data
-	if not parsed is Dictionary: _set_status("服务器响应无效"); return {"ok":false,"retryable":true}
+	if not parsed is Dictionary: return _network_failure()
 	if not parsed.get("ok", false):
 		_set_status(String(ERRORS.get(parsed.get("error", ""), "服务器暂时无法完成请求")))
-		if int(response[1]) == 401: authenticated = false
-		if int(response[1]) == 503 and parsed.get("error") != "MAINTENANCE": parsed["retryable"] = true
+		if int(response[1]) == 401:
+			authenticated = false; _retry_service()
+		if int(response[1]) >= 500:
+			return _network_failure()
 	return parsed
 
 func _contract(body: Dictionary) -> Dictionary:
@@ -146,6 +164,8 @@ func _change(method: String, path: String, body: Dictionary) -> Dictionary:
 	if not authenticated:
 		if not await connect_service(): return {"ok":false}
 	busy = true
+	# A lobby poll started before this mutation must not overwrite its new room state.
+	activity_generation += 1
 	var request_body = _contract(body)
 	var result = await _http(method, path, request_body)
 	# A lost response repeats the same idempotency key, never invents a new room/action.
@@ -196,10 +216,16 @@ func acknowledge_result() -> void:
 		match_id = ""; pending.clear(); _save_session()
 
 func refresh_activity() -> void:
-	if not authenticated or busy: return
-	activity_poll_at = Time.get_ticks_msec() / 1000.0 + 1.0
+	if not authenticated or busy or backgrounded: return
+	while activity_refreshing:
+		await get_tree().process_frame
+		if not authenticated or busy or backgrounded: return
+	activity_refreshing = true
+	var generation = activity_generation
+	activity_poll_at = Time.get_ticks_msec() / 1000.0 + 2.0
 	var result = await _http("GET", "/v1/activities/me")
-	if result.get("ok", false): _apply_activity(result["activity"])
+	activity_refreshing = false
+	if generation == activity_generation and result.get("ok", false): _apply_activity(result["activity"])
 
 func _apply_activity(value: Dictionary) -> void:
 	activity = value
@@ -281,6 +307,7 @@ func _message(message: Dictionary) -> void:
 			next_seq = int(payload["next_client_seq"])
 			for result in payload.get("results", []): _feedback(result)
 			syncing = false; retry_index = 0; retry_at = -1.0
+			service_state = "connected"; _set_status("已连接 · 真人对战")
 			battle_state.mark_connection(true, "联机对战")
 		"connection_status":
 			if payload.get("server_recovering", false): battle_state.mark_connection(false, "服务器正在恢复战局")
@@ -341,16 +368,19 @@ func _schedule_retry() -> void:
 	if finished or backgrounded: return
 	var delay = RETRIES[mini(retry_index, RETRIES.size() - 1)] * randf_range(0.8, 1.2)
 	retry_index += 1; retry_at = Time.get_ticks_msec() / 1000.0 + delay
+	service_state = "retrying"
 	_set_status("连接中断，正在返回原对局")
 
 func _lose_connection() -> void:
 	if socket != null: socket.close()
+	if finished: socket = null; return
 	socket = null; syncing = true; chunks.clear(); state_cache.clear(); resume_sent = false
 	if battle_state != null: battle_state.mark_connection(false, "连接中断 · 自动重连")
 	_schedule_retry()
 
 func _finish(result: Dictionary) -> void:
 	if finished: return
+	activity_generation += 1
 	finished = true; retry_at = -1.0; syncing = false
 	if socket != null: socket.close(); socket = null
 	if battle_state != null:
@@ -378,12 +408,12 @@ func _process(_delta: float) -> void:
 		if socket != null and (socket.get_ready_state() == WebSocketPeer.STATE_CLOSED or now - last_packet_at > 8.0): _lose_connection()
 		elif socket != null and not syncing and now - last_state_at > 1.5:
 			battle_state.mark_connection(false, "等待服务器恢复战局")
-	if retry_at >= 0 and now >= retry_at and not socket_connecting and not backgrounded:
+	if service_requested and not authenticated and not busy and not backgrounded and service_state != "blocked" and now >= service_retry_at:
+		connect_service()
+	if retry_at >= 0 and now >= retry_at and authenticated and not busy and not socket_connecting and not backgrounded:
 		retry_at = -1.0; _open_socket()
-	if authenticated and not busy and not backgrounded and now >= activity_poll_at and (socket == null or finished):
+	if authenticated and not busy and not activity_refreshing and not backgrounded and now >= activity_poll_at and (socket == null or finished):
 		activity_poll_at = now + 2.0; refresh_activity()
-	elif not authenticated and not busy and not backgrounded and not endpoint.is_empty() and activity.get("kind","") != "" and now >= activity_poll_at:
-		activity_poll_at = now + 4.0; connect_service()
 	for seq in chunks.keys():
 		if Time.get_ticks_msec() - int(chunks[seq]["at"]) > 10000: _lose_connection(); break
 
@@ -391,7 +421,9 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_APPLICATION_PAUSED:
 		backgrounded = true; _send("suspend", {}); _save_session()
 		if socket != null: socket.close(); socket = null
-		if battle_state != null: battle_state.mark_connection(false, "回到前台后恢复原局")
+		if battle_state != null and not finished: battle_state.mark_connection(false, "回到前台后恢复原局")
 	if what == NOTIFICATION_APPLICATION_RESUMED:
 		backgrounded = false
+		if service_requested:
+			authenticated = false; service_retry_at = -1.0
 		if not finished and not match_id.is_empty(): retry_at = Time.get_ticks_msec() / 1000.0

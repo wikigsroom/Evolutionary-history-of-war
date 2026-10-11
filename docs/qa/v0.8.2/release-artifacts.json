@@ -1,0 +1,27 @@
+{
+  "version": "0.8.2",
+  "android_version_code": 15,
+  "server_release": "0.8.1",
+  "artifacts": [
+    {
+      "name": "Epoch-Rush-Godot.exe",
+      "bytes": 236341544,
+      "sha256": "006066f6dbdcf4913bd53fe9d61253d2a4c86235f5e2d31c4539e03af1486242"
+    },
+    {
+      "name": "Epoch-Rush-Godot-Windows.zip",
+      "bytes": 163556639,
+      "sha256": "6e2d0c23a44cafb80d262d97d42633b885e094d7a7fb3139b3d1f9731f2361de"
+    },
+    {
+      "name": "Epoch-Rush-Godot-debug.apk",
+      "bytes": 206267954,
+      "sha256": "ab646a4245abdcbfff77cb3954040fd1d821af66310ef2ca7f9342fb1f1d8a67"
+    },
+    {
+      "name": "Epoch-Rush-Godot-release.apk",
+      "bytes": 200890096,
+      "sha256": "2dd8a5dd3e44b1b6a09d2ba61120c5d61968807b31d7cbf52b40405512101a0e"
+    }
+  ]
+}

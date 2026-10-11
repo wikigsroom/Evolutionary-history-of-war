@@ -4,7 +4,7 @@ v0.8.1，协议 1.0，规则 `pvp-classic-v1`。Go 接入与 PostgreSQL 持久�
 
 ## 官方公网服务
 
-SIDcloud 正式地址 **https://jyqx-server.sidcloud.cn**，双端 0.8.1 默认选择。主菜单 → 联机 → 同意并连接 → 自由匹配或双方相同六位码 → 双方准备/接受。无需解压服务端即可使用官方服。数据在新加坡处理；首次连接前有明确提示，离线进度不上传。当前共享 1 GB 主机限制 **两局 / 四玩家**，不是 Windows 私有服的十局默认容量。
+SIDcloud 正式地址 **https://jyqx-server.sidcloud.cn**，服务端 0.8.1 兼容双端 0.8.2。主菜单 → 联机（自动连接）→ 自由匹配或双方相同六位码 → 双方准备/接受。无需解压服务端即可使用官方服。数据在新加坡处理；联机页保留运营者与隐私说明，正式客户端不显示或开放地址编辑；离线进度不上传。当前共享 1 GB 主机限制 **两局 / 四玩家**，不是 Windows 私有服的十局默认容量。
 
 已部署可信 HTTPS/WSS、systemd 自启与重启、专用 PostgreSQL 16 库、健康与磁盘检查、每日备份及实际隔离恢复验证。Linux TAR 包和 [运维说明](deploy/linux/README.md) 提供纯模拟与配置模板，Godot 引擎与数据库需另外安装；Windows ZIP 保留完整原生运行环境。
 
@@ -100,7 +100,7 @@ Go 模块由 `go.mod/go.sum` 固定；工具链与数据库缓存被 Git 忽略�
 
 Extract the complete Windows x64 server ZIP, then run `Start-Server.ps1` with native PowerShell. It bundles the gateway, headless Godot authority and isolated native PostgreSQL; no containers, WSL, virtual machines, Python or Go installation are required by the packaged server. Default game port is 28187, private database port is 54329, and admission is capped at ten simultaneous matches.
 
-Connect both clients to `http://<server LAN IPv4>:28187` from the new Online menu. Use real-player matchmaking or enter the same six-digit room code; the first player creates the room, the second joins, and both must ready. Leading zeros are preserved. One anonymous identity cannot occupy both seats. Online builds have equal access to all commanders and six talent points; offline progression does not grant online advantages.
+Official 0.8.2 release clients have a fixed endpoint and no address editor. For native editor development or private-server QA, set `EPOCH_ONLINE_URL` to `http://<server LAN IPv4>:28187`; to distribute a private client, change `EpochNetClient.DEFAULT_ENDPOINT` and rebuild. The runtime override is ignored by shipped executable builds. Use real-player matchmaking or enter the same six-digit room code; the first player creates the room, the second joins, and both must ready. Leading zeros are preserved. One anonymous identity cannot occupy both seats. Online builds have equal access to all commanders and six talent points; offline progression does not grant online advantages.
 
 Windows DPAPI and Android Keystore protect persistent anonymous credentials. The authority executes 30 ticks per second and commits command outcomes and exact snapshots before acknowledging them. Disconnects resume the original match and seat; already executed actions remain executed, while unexecuted stale clicks are sealed rather than replayed. Client restart recovers the protected identity and match. Local settings panels do not pause online battles. Each player's private resources and queue are filtered from the opponent's subscription.
 

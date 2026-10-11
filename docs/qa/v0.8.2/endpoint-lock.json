@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "name": "Official endpoint overrides a legacy editable preference after upgrading",
+      "passed": true
+    },
+    {
+      "name": "Connection editing API has been removed",
+      "passed": true
+    },
+    {
+      "name": "Existing loadout survives endpoint migration",
+      "passed": true
+    },
+    {
+      "name": "Offline start without an active match does not request a connection",
+      "passed": true
+    },
+    {
+      "name": "Saved preferences have no editable endpoint",
+      "passed": true
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "name": "Cold offline client makes no connection request",
+      "passed": true
+    },
+    {
+      "name": "Initial HTML proxy errors trigger periodic retries even with no activity",
+      "passed": true
+    },
+    {
+      "name": "Network actions remain unauthenticated during retry delay",
+      "passed": true
+    },
+    {
+      "name": "Initial connection recovers automatically after the service becomes available",
+      "passed": true
+    },
+    {
+      "name": "Recovered empty lobby retains a protected anonymous identity",
+      "passed": true
+    },
+    {
+      "name": "Connection loss in an empty lobby is detected and schedules reconnect",
+      "passed": true
+    },
+    {
+      "name": "Lobby keeps retrying after repeated connection failures",
+      "passed": true
+    },
+    {
+      "name": "Restored service reconnects the same player without another click",
+      "passed": true
+    },
+    {
+      "name": "Application background pauses service polling and retries",
+      "passed": true
+    },
+    {
+      "name": "Returning to the foreground reconnects the lobby automatically",
+      "passed": true
+    },
+    {
+      "name": "Unauthorized token is renewed automatically without changing identity",
+      "passed": true
+    },
+    {
+      "name": "Preferences no longer store a user-editable server address",
+      "passed": true
+    }
+  ],
+  "failures": []
+}

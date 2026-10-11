@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "protocol_version": "1.0",
+  "simulation_hash": "085a54fd2558352356ef9b46a001bb751db74c5638e50f4a31d96e633071395c",
+  "ruleset_id": "pvp-classic-v1",
+  "server_release": "0.8.1",
+  "client_release": "0.8.2"
+}

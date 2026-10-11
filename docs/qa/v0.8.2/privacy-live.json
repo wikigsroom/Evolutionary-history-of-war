@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "name": "/ matches the current reviewed policy",
+      "passed": true
+    },
+    {
+      "name": "/privacy matches the current reviewed policy",
+      "passed": true
+    },
+    {
+      "name": "/privacy-policy matches the current reviewed policy",
+      "passed": true
+    },
+    {
+      "name": "/privacy-policy.md matches the current reviewed policy",
+      "passed": true
+    },
+    {
+      "name": "/privacy-policy.docx matches the current reviewed policy",
+      "passed": true
+    },
+    {
+      "name": "/styles.css matches the current reviewed policy",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "version": "ER-PRIVACY-2026-10-11-AUTOCONNECT",
+  "docx_pages_reviewed": 15
+}

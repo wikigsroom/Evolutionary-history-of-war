@@ -1,12 +1,12 @@
 # 《纪元急袭》隐私政策
 
-本目录保存根据用户提供的 `privacy-policy-template.docx` 更新的正式隐私政策。版本为 **ER-PRIVACY-2026-10-11**，更新日期、生效日期均为 **2026 年 10 月 11 日**。
+本目录保存根据用户提供的 `privacy-policy-template.docx` 更新的正式隐私政策。版本为 **ER-PRIVACY-2026-10-11-AUTOCONNECT**，更新日期、生效日期均为 **2026 年 10 月 11 日**。说明 0.8.2 进入联机页自动连接、断开定时重连及固定连接配置的实际行为。
 
 ## 文档与页面
 
 | 文件 | 用途 |
 | --- | --- |
-| `纪元急袭隐私政策.docx` | 保留原模板版式的 Word 正文，共 14 页 |
+| `纪元急袭隐私政策.docx` | 保留原模板版式的 Word 正文，共 15 页 |
 | `privacy-policy.zh-CN.md` | 便于阅读和审阅的同版 Markdown 正文 |
 | `policy.json` | 已填入运营者信息的结构化正文 |
 | `../../web/privacy-policy/` | 独立静态网页、Word/Markdown 下载及 Vercel 配置 |
@@ -19,7 +19,7 @@
 
 ## 适用范围
 
-当前 Godot 原生 **0.8.0** 版本，支持 Windows 和 Android。Android 包名为 `studio.epochrush.pixelcommand`。旧 0.7.x 离线版本、历史 Web/Electron/Capacitor 和其他新增功能应查阅对应版本说明。
+当前 Godot 原生 **0.8.2** 版本，支持 Windows 和 Android。Android 包名为 `studio.epochrush.pixelcommand`。旧 0.7.x 离线版本、历史 Web/Electron/Capacitor 和其他新增功能应查阅对应版本说明。
 
 开发及运营主体为 **SIDcloud**，与用户在 2026 年 10 月 9 日明确指定的资料页公司主体一致。隐私联系邮箱为 **carzyg@outlook.com**。网页正文、Word 正文与作者信息、Markdown 和结构化来源均使用同一主体名称。
 

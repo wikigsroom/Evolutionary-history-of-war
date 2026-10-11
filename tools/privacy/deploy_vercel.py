@@ -89,8 +89,13 @@ def main():
         command.extend(["--scope", args.scope])
     environment = dict(os.environ)
     environment["VERCEL_TELEMETRY_DISABLED"] = "1"
-    result = subprocess.run(command, cwd=ROOT, env=environment, timeout=600, check=True,
+    result = subprocess.run(command, cwd=ROOT, env=environment, timeout=600,
                             capture_output=True, text=True, encoding="utf-8")
+    if result.returncode:
+        # Keep authentication state private; show only the CLI's actionable error.
+        detail = result.stderr.strip() or result.stdout.strip()
+        detail = re.sub(r'(?i)(bearer\s+|token[=:]\s*)[^\s"\']+', r'\1[redacted]', detail)
+        raise SystemExit("Vercel deployment failed: " + detail[-1600:])
     try:
         response = json.loads(result.stdout[result.stdout.index("{"):])
     except (json.JSONDecodeError, ValueError):

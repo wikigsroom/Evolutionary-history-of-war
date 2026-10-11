@@ -1,0 +1,265 @@
+{
+  "checks": [
+    {
+      "name": "hall has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "hall controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "hall fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "hall fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "hall fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "hall fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "queue has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "queue controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "queue fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "queue fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "queue fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "queue fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-waiting has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "room-waiting controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "room-waiting fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-waiting fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-waiting fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-waiting fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "room controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "room fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-ready has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "room-ready controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "room-ready fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-ready fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-ready fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "room-ready fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "offer controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "offer fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer-accepted has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "offer-accepted controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "offer-accepted fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer-accepted fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer-accepted fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "offer-accepted fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "resume has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "resume controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "resume fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "resume fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "resume fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "resume fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "result has no endpoint editor",
+      "passed": true
+    },
+    {
+      "name": "result controls and images fit the page with consistent icon and touch sizes",
+      "passed": true
+    },
+    {
+      "name": "result fits window (1600, 720) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "result fits window (2400, 1080) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "result fits window (960, 540) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "result fits window (800, 450) including safe insets",
+      "passed": true
+    },
+    {
+      "name": "Commander H01 fits without distorting or clipping its portrait",
+      "passed": true
+    },
+    {
+      "name": "Commander H02 fits without distorting or clipping its portrait",
+      "passed": true
+    },
+    {
+      "name": "Commander H03 fits without distorting or clipping its portrait",
+      "passed": true
+    },
+    {
+      "name": "Commander H04 fits without distorting or clipping its portrait",
+      "passed": true
+    },
+    {
+      "name": "Commander H05 fits without distorting or clipping its portrait",
+      "passed": true
+    },
+    {
+      "name": "Commander H06 fits without distorting or clipping its portrait",
+      "passed": true
+    },
+    {
+      "name": "Room admission disabled for an empty code",
+      "passed": true
+    },
+    {
+      "name": "Incomplete code has a nearby hint and cannot be submitted",
+      "passed": true
+    },
+    {
+      "name": "Room input strips letters and spaces",
+      "passed": true
+    },
+    {
+      "name": "Six digits enable room admission and preserve a leading zero",
+      "passed": true
+    },
+    {
+      "name": "Disconnected page locks network actions and displays the automatic retry countdown",
+      "passed": true
+    }
+  ],
+  "failures": []
+}

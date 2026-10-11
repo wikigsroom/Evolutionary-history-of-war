@@ -1,0 +1,10 @@
+{
+  "files": {
+    ".godot/imported/resource-rounded.woff2-402ae7f15b29f5fe9d2f60f56ad514cf.fontdata": "258a5e704c11a22f09a94afa80ac99f9e2a50ab5cb991123617bdc515f7aacf9",
+    ".godot/imported/smiley.woff2-88d7ccea732b7120fb320f70da68e2fe.fontdata": "7e294ec5bdac0c04943a8b7fc981b3458e698c8e9ecbc10a33598d6e0fb31c36",
+    "scripts/net/net_client.gdc": "1d439e13dddc8a6c7066a599d884db567b7c1cea0f682ea2e6f476cd757eb812",
+    "scripts/ui/online_menu.gdc": "f5133b943b4bb60628a4b3f0ae1ae7ab7b757c6e7d1b9ee3c508e8c6767e0fb8"
+  },
+  "passed": true,
+  "version": "0.8.2"
+}

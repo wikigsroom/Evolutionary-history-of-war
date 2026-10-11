@@ -1,16 +1,16 @@
 # 纪元急袭 / Epoch Rush: Pixel Command
 
-Godot 0.8.1 · Windows x64
+Godot 0.8.2 · Windows x64
 
 解压后运行 `Epoch-Rush-Godot.exe`。游戏资源已嵌入程序，无需安装 Godot、Node.js 或启动网页服务。
 
 Extract the archive and run `Epoch-Rush-Godot.exe`. Resources are embedded; no Godot or Node.js installation or web server is required.
 
-v0.8.1 正式联机：主菜单 → 联机 → 同意并连接 → 自由匹配，或双方输入同一个六位数字 → 双方准备/接受。默认官方地址为 https://jyqx-server.sidcloud.cn，由 SIDcloud 在新加坡运营，当前同时两局/四人。首次打开大厅不会创建新的线上身份；加入的原局可自动重连和重启恢复。单人模式继续离线可用。隐私政策：https://jyqx.sidcloud.cn。
+v0.8.2 正式联机：主菜单 → 联机（自动连接）→ 自由匹配，或双方输入同一个六位数字 → 双方准备/接受。正式客户端固定使用 SIDcloud 在新加坡运营的公共服务，不显示或开放地址编辑，当前同时两局/四人。进入大厅即自动连接；大厅断开后按 2 / 4 / 8 秒递增重试，随后每 8 秒重试；原局可自动重连和重启恢复。单人模式继续离线可用。隐私政策：https://jyqx.sidcloud.cn。
 
-v0.8.1 public online: Online → Agree and connect → matchmaking or the same six-digit room code → both ready/accept. SIDcloud hosts the default https://jyqx-server.sidcloud.cn endpoint in Singapore, capped at two matches/four players. New identities require explicit connection; active matches can reconnect or resume after client restart. Single-player remains available offline. Privacy: https://jyqx.sidcloud.cn.
+v0.8.2 public online: Online (automatic connection) → matchmaking or the same six-digit room code → both ready/accept. SIDcloud hosts the fixed public endpoint in Singapore, capped at two matches/four players. Opening Online connects automatically without an editable endpoint; lobby connections retry periodically; active matches can reconnect or resume after client restart. Single-player remains available offline. Privacy: https://jyqx.sidcloud.cn.
 
-同版本游戏进程崩溃及短暂数据库连接中断恢复已经实测；同机备份不能保障整台主机或磁盘丢失时零丢失。Android 实体设备操作仍待验收。安装包的版本、哈希与详细证据见 https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.1。
+0.8.1 公共服务的游戏进程崩溃及短暂数据库连接中断恢复已有实测记录；0.8.2 客户端的连接、原局重连和重启恢复已复核。同机备份不能保障整台主机或磁盘丢失时零丢失。Android 实体设备操作仍待验收。安装包的版本、哈希与详细证据见 https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.2。
 
 v0.7.1 更新不透明男性骑士应用图标和透明“纪元急袭”文字 LOGO。菜单及十时代对战共用四首 Yourset 完整曲目，每轮随机排序并各播放一次；跨轮避免连续重复同一首，曲间 2 秒淡入淡出。进化与菜单切换不会重启音乐，应用后台暂停并保留位置；胜负平局仍有独立结算短曲。
 
