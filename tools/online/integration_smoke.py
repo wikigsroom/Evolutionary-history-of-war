@@ -64,7 +64,7 @@ class Peer:
         self.resume = None
         self.next_ping = 0
         ticket = player.change("POST", "/v1/ws-tickets", {"match_id": match})
-        self.socket = connect(player.url.replace("http://", "ws://") + "/v1/socket", additional_headers={"Authorization": "Bearer " + ticket["ticket"]}, subprotocols=["epoch-rush.v1"], max_size=1048576, open_timeout=10, close_timeout=0.5)
+        self.socket = connect(player.url.replace("https://", "wss://").replace("http://", "ws://") + "/v1/socket", additional_headers={"Authorization": "Bearer " + ticket["ticket"]}, subprotocols=["epoch-rush.v1"], max_size=1048576, open_timeout=10, close_timeout=0.5)
 
     def send(self, kind, payload):
         self.socket.send(json.dumps({"v": "1.0", "type": kind, "match_id": self.match, "connection_epoch": self.epoch, "payload": payload}))

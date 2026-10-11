@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "name": "All real subscribers finish loading at capacity",
+      "passed": true
+    },
+    {
+      "name": "Every player receives a committed recruitment ACK",
+      "passed": true
+    },
+    {
+      "name": "Every match sustains at least 28.5 simulation ticks per second",
+      "passed": true
+    },
+    {
+      "name": "Every capacity match produces one shared final result",
+      "passed": true
+    }
+  ],
+  "failed": null,
+  "measurements": {
+    "endpoint": "https://jyqx-server.sidcloud.cn",
+    "matches": 2,
+    "subscribers": 4,
+    "seconds": 30.032021099701524,
+    "simulation_hz_min": 30.10120421129381,
+    "simulation_hz_mean": 30.858728985416523,
+    "command_ack_ms_p95": 409.1794998385012,
+    "command_ack_ms_max": 485.9929997473955,
+    "scope": "Public Singapore host, real HTTPS/WSS subscribers from the test workstation"
+  }
+}

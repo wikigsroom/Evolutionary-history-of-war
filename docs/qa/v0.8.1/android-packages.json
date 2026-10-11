@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "version": "0.8.1",
+  "packages": [
+    {
+      "platform": "debug",
+      "bytes": 206267954,
+      "sha256": "2a9ddd420434c83425d75a14181742d68dc55422a0e094890e7e0693c1b61b99",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "checks": {
+        "identity_version": true,
+        "only_internet_permission": true,
+        "backup_disabled": true,
+        "keystore_plugin_registered": true,
+        "keystore_plugin_methods_in_dex": true,
+        "simulation_manifest_matches": true,
+        "online_client_matches_verified_windows": true,
+        "connect_menu_matches_verified_windows": true,
+        "font_data_matches_verified_windows": true,
+        "windows_identity_helper_in_pack": true,
+        "native_16kb_load_segments": true,
+        "no_private_configuration": true
+      }
+    },
+    {
+      "platform": "release",
+      "bytes": 200890096,
+      "sha256": "4b60ba998fdc04645de5e4008f6df263b47a2e7b558993cee9e091c07e93e912",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "checks": {
+        "identity_version": true,
+        "only_internet_permission": true,
+        "backup_disabled": true,
+        "keystore_plugin_registered": true,
+        "keystore_plugin_methods_in_dex": true,
+        "simulation_manifest_matches": true,
+        "online_client_matches_verified_windows": true,
+        "connect_menu_matches_verified_windows": true,
+        "font_data_matches_verified_windows": true,
+        "windows_identity_helper_in_pack": true,
+        "native_16kb_load_segments": true,
+        "no_private_configuration": true
+      }
+    }
+  ],
+  "physical_device_playtested": false
+}

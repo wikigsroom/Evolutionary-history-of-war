@@ -7,10 +7,11 @@ signal battle_available(state)
 signal result_available(result: Dictionary)
 
 const RETRIES = [0.0, 1.0, 2.0, 4.0]
+const DEFAULT_ENDPOINT = "https://jyqx-server.sidcloud.cn"
 const ERRORS = {"ROOM_FULL":"房间已满", "INVALID_ROOM_CODE":"请输入六位数字", "CODE_COOLDOWN":"该房间码刚结束，请稍后使用", "VERSION_MISMATCH":"双方需要使用相同游戏版本", "ROOM_REVISION_CHANGED":"房间已变化，请重新准备", "SERVER_FULL":"服务器对战席位已满", "MAINTENANCE":"服务器正在维护", "OFFER_EXPIRED":"对战邀请已过期", "UNAUTHORIZED":"身份需要重新验证", "NOT_MEMBER":"无法进入其他玩家的对局", "INPUT_LOCKED":"正在同步战局", "SEQUENCE_GAP":"正在核对指令", "RATE_LIMITED":"操作过快，请稍后重试"}
 
 var endpoint = ""
-var status = "设置服务器地址，开始真人对战"
+var status = "连接服务器，开始真人对战"
 var busy = false
 var authenticated = false
 var activity = {"kind":"", "id":""}
@@ -52,7 +53,8 @@ func _ready() -> void:
 	add_child(credentials)
 	manifest = JSON.parse_string(FileAccess.get_file_as_string("res://assets/data/online-manifest.json"))
 	var preferences = _read_session()
-	endpoint = String(preferences.get("endpoint", ""))
+	endpoint = String(preferences.get("endpoint", DEFAULT_ENDPOINT))
+	if endpoint.is_empty(): endpoint = DEFAULT_ENDPOINT
 	loadout = preferences.get("loadout", EpochData.new().default_loadout("H03"))
 	var from_environment = OS.get_environment("EPOCH_ONLINE_URL")
 	if not from_environment.is_empty(): endpoint = from_environment
@@ -119,8 +121,13 @@ func _http(method: String, path: String, body: Dictionary = {}, authorize: bool 
 	var response = await request.request_completed
 	request.queue_free()
 	if response[0] != HTTPRequest.RESULT_SUCCESS: _set_status("连接中断，正在等待网络恢复"); return {"ok":false,"retryable":true}
-	var parsed = JSON.parse_string(response[3].get_string_from_utf8())
-	if not parsed is Dictionary: _set_status("服务器响应无效"); return {"ok":false}
+	# Reverse proxies can return HTML or an empty body while the gateway restarts.
+	# Parse quietly and let reconnection handle it as a temporary network failure.
+	var decoder = JSON.new()
+	if decoder.parse(response[3].get_string_from_utf8()) != OK:
+		_set_status("连接中断，正在等待网络恢复"); return {"ok":false,"retryable":true}
+	var parsed = decoder.data
+	if not parsed is Dictionary: _set_status("服务器响应无效"); return {"ok":false,"retryable":true}
 	if not parsed.get("ok", false):
 		_set_status(String(ERRORS.get(parsed.get("error", ""), "服务器暂时无法完成请求")))
 		if int(response[1]) == 401: authenticated = false

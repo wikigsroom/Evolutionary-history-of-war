@@ -52,6 +52,10 @@ func (s *Server) activity(ctx context.Context, q Querier, player string) (Object
 	return activity, nil
 }
 func (s *Server) activityHTTP(w http.ResponseWriter, r *http.Request, player string) {
+	if _, err := s.store.pool.Exec(r.Context(), "UPDATE online_players SET last_seen=now() WHERE id=$1", player); err != nil {
+		errorResponse(w, err)
+		return
+	}
 	_, _ = s.store.pool.Exec(r.Context(), "UPDATE online_seats SET last_seen=now() WHERE player_id=$1 AND room_id IN(SELECT id FROM online_rooms WHERE closed_at IS NULL)", player)
 	activity, err := s.activity(r.Context(), s.store.pool, player)
 	if err != nil {
@@ -231,7 +235,7 @@ func (s *Server) queueHTTP(w http.ResponseWriter, r *http.Request, player string
 			return nil, err
 		}
 		if kind == "" {
-			_, err = tx.Exec(ctx, "UPDATE online_players SET activity_kind='queue',activity_id=$2,queued_at=now(),loadout=$3,simulation_hash=$4 WHERE id=$1", player, identifier(), encode(build), s.rules.Manifest["simulation_hash"])
+			_, err = tx.Exec(ctx, "UPDATE online_players SET activity_kind='queue',activity_id=$2,queued_at=now(),last_seen=now(),loadout=$3,simulation_hash=$4 WHERE id=$1", player, identifier(), encode(build), s.rules.Manifest["simulation_hash"])
 			if err != nil {
 				return nil, err
 			}

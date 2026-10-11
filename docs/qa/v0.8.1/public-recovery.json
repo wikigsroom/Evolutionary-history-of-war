@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "name": "Exported clients authenticate to the public TLS endpoint",
+      "passed": true
+    },
+    {
+      "name": "Both exported clients enter the public authoritative match",
+      "passed": true
+    },
+    {
+      "name": "Recruitment is committed before fault injection",
+      "passed": true
+    },
+    {
+      "name": "Supervisor kills only the game gateway process",
+      "passed": true
+    },
+    {
+      "name": "Native clients automatically reconnect after systemd process-crash recovery",
+      "passed": true
+    },
+    {
+      "name": "Original seat and committed cursor survive the server crash",
+      "passed": true
+    },
+    {
+      "name": "Acknowledged battle state never rolls back",
+      "passed": true
+    },
+    {
+      "name": "Only the game's database connections are interrupted",
+      "passed": true
+    },
+    {
+      "name": "Native clients recover a current projection after database interruption",
+      "passed": true
+    },
+    {
+      "name": "Another action commits after recovery without replaying the original action",
+      "passed": true
+    },
+    {
+      "name": "Both clients finish with one authoritative result after both faults",
+      "passed": true
+    }
+  ],
+  "endpoint": "https://jyqx-server.sidcloud.cn"
+}

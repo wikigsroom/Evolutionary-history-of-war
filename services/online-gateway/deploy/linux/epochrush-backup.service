@@ -1,0 +1,10 @@
+[Unit]
+Description=Back up the dedicated Epoch Rush online database
+After=postgresql.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/epochrush/current/ops/backup.sh
+Nice=10
+IOSchedulingClass=idle
+UMask=0077

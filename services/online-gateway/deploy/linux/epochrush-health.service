@@ -1,0 +1,8 @@
+[Unit]
+Description=Epoch Rush local health and disk guard
+After=epochrush-online.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/epochrush/current/ops/health.sh
+UMask=0077

@@ -34,11 +34,15 @@ func main() {
 	project := flag.String("project", "../../godot", "Godot simulation project")
 	godot := flag.String("godot", "../../godot/toolchain/editor/Godot_v4.7.2-stable_win64_console.exe", "native Godot executable")
 	maxMatches := flag.Int("max-matches", 10, "capacity gate; raise only after load tests")
+	databaseConnections := flag.Int("db-max-connections", 24, "dedicated database connection budget (2..64)")
 	drainFile := flag.String("drain-file", "", "presence of this local file disables new matches")
 	trustProxy := flag.Bool("trust-local-proxy", false, "trust X-Real-IP only from a loopback reverse proxy")
 	flag.Parse()
 	if *maxMatches < 1 || *maxMatches > 500 {
 		log.Fatal("max-matches must be between 1 and 500")
+	}
+	if *databaseConnections < 2 || *databaseConnections > 64 {
+		log.Fatal("db-max-connections must be between 2 and 64")
 	}
 	if os.Getenv("EPOCH_DATABASE_URL") == "" {
 		log.Fatal("EPOCH_DATABASE_URL is required; credentials are never logged")
@@ -57,7 +61,7 @@ func main() {
 	}
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer cancel()
-	store, err := openStore(ctx, os.Getenv("EPOCH_DATABASE_URL"))
+	store, err := openStore(ctx, os.Getenv("EPOCH_DATABASE_URL"), int32(*databaseConnections))
 	if err != nil {
 		log.Fatal(err)
 	}

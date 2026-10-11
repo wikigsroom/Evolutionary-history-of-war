@@ -1,6 +1,6 @@
 # 一线万年：文明冲锋 · Epoch Rush
 
-当前原生版本 **0.8.0** 已实现真人自由匹配、六位码房间、原局重连与重启恢复。详见 [实际实现与交付](godot-v0.8-online-report.md)、[服务端操作](../../services/online-gateway/README.md) 和 [验收](../qa/v0.8.0/README.md)。
+当前原生版本 **0.8.1** 已上线 SIDcloud 官方公网服务 **https://jyqx-server.sidcloud.cn**，默认双端接入，支持真人自由匹配、六位码房间、原局重连与重启恢复。详见 [实际实现与交付](godot-v0.8.1-public-online-report.md)、[服务端操作](../../services/online-gateway/README.md) 和 [验收](../qa/v0.8.1/README.md)。
 
 Godot 原生线路的最新技术判断见 [全面重构专项评估](godot-system-rebuild-assessment.md)：说明动作、演出与方案 1 UI 的收益、制作边界和验收要求。
 

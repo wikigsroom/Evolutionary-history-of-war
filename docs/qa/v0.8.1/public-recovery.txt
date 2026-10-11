@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PUBLIC_RECOVERY_CHECK true Exported clients authenticate to the public TLS endpoint
+PUBLIC_RECOVERY_CHECK true Both exported clients enter the public authoritative match
+PUBLIC_RECOVERY_CHECK true Recruitment is committed before fault injection
+PUBLIC_RECOVERY_CHECK true Supervisor kills only the game gateway process
+PUBLIC_RECOVERY_CHECK true Native clients automatically reconnect after systemd process-crash recovery
+PUBLIC_RECOVERY_CHECK true Original seat and committed cursor survive the server crash
+PUBLIC_RECOVERY_CHECK true Acknowledged battle state never rolls back
+PUBLIC_RECOVERY_CHECK true Only the game's database connections are interrupted
+PUBLIC_RECOVERY_CHECK true Native clients recover a current projection after database interruption
+PUBLIC_RECOVERY_POST_FAULT {"accepted_locally":true,"finished":false,"next_seq":3,"pending":1,"tick":126,"winner":-1}
+PUBLIC_RECOVERY_CHECK true Another action commits after recovery without replaying the original action
+PUBLIC_RECOVERY_CHECK true Both clients finish with one authoritative result after both faults

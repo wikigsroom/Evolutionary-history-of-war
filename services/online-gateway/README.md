@@ -1,10 +1,16 @@
 # 纪元急袭原生联机服务端 / Epoch Rush online authority
 
-v0.8.0，协议 1.0，规则 `pvp-classic-v1`。Go 接入与 PostgreSQL 持久化配合独立 Godot Headless 裁判，运行在原生 Windows x64，不需要 Docker、WSL、虚拟机、Node.js 或浏览器。游戏客户端另行下载。
+v0.8.1，协议 1.0，规则 `pvp-classic-v1`。Go 接入与 PostgreSQL 持久化配合独立 Godot Headless 裁判，支持原生 Windows x64 自部署和 Linux amd64 正式服务，不需要 Docker、WSL、虚拟机、Node.js 或浏览器。游戏客户端另行下载。
+
+## 官方公网服务
+
+SIDcloud 正式地址 **https://jyqx-server.sidcloud.cn**，双端 0.8.1 默认选择。主菜单 → 联机 → 同意并连接 → 自由匹配或双方相同六位码 → 双方准备/接受。无需解压服务端即可使用官方服。数据在新加坡处理；首次连接前有明确提示，离线进度不上传。当前共享 1 GB 主机限制 **两局 / 四玩家**，不是 Windows 私有服的十局默认容量。
+
+已部署可信 HTTPS/WSS、systemd 自启与重启、专用 PostgreSQL 16 库、健康与磁盘检查、每日备份及实际隔离恢复验证。Linux TAR 包和 [运维说明](deploy/linux/README.md) 提供纯模拟与配置模板，Godot 引擎与数据库需另外安装；Windows ZIP 保留完整原生运行环境。
 
 ## 解压即用
 
-下载 `Epoch-Rush-Server-0.8.0-Windows-x64.zip`，完整解压，使用 Windows PowerShell：
+下载 `Epoch-Rush-Server-0.8.1-Windows-x64.zip`，完整解压，使用 Windows PowerShell：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Server.ps1
@@ -45,7 +51,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Server.ps1 -LocalOnl
 
 将 `Caddyfile.example` 中的域名环境变量配置为自己的域名，用原生 Caddy 反向代理至 `127.0.0.1:28187`。只开放 80/443，数据库与内部裁判 TCP 端口不对公网开放。Caddy 未随包提供；模板明确隐藏 `/healthz`、`/metrics`、`/admin`。`-TrustLocalProxy` 仅允许可信的本机反向代理提供真实来源 IP。
 
-当前交付是可玩本机/局域网版本，**没有随 Release 提供已部署的公共匹配服务器**。`jyqx.sidcloud.cn` 是隐私政策网页，不是游戏对战地址。Vercel 静态网页不运行本项目的常驻裁判。需要全天候运营时再配置服务开机自启、健康监控、数据库备份、磁盘告警和受测的同步副本/故障切换；本机崩溃恢复测试不能证明整台主机或磁盘损坏后零丢失。
+正式公共匹配服务器已部署于 `jyqx-server.sidcloud.cn`；`jyqx.sidcloud.cn` 仍是独立的 Vercel 隐私政策网页。官方进程与数据库连接中断恢复已经实测，备份仍在同一主机，未配置数据库同步副本、跨机故障切换或异地备份，不能承诺整机或磁盘损坏后零丢失。
 
 ## 对战与恢复契约
 
@@ -100,4 +106,4 @@ Windows DPAPI and Android Keystore protect persistent anonymous credentials. The
 
 `Stop-Server.ps1` drains new admissions first and keeps active matches alive. Run it again once empty, then replace the bundle, retain the same data directory, restart and run `Resume-Admissions.ps1`. Use the same data directory argument for every administrative command. Exact simulation hashes must match; drain old-version matches before upgrading.
 
-Public hosting requires an operator-owned native server and HTTPS/WSS reverse proxy; use the included Caddy example and bind the gateway locally with `-LocalOnly -TrustLocalProxy`. The Release does not provide a hosted public matchmaking endpoint. Local ten-match load and process-crash tests are not public-host capacity or whole-machine disaster-recovery certification. Physical Android-device validation is pending. Full source, implementation notes and compact QA evidence are in the repository.
+Public hosting requires an operator-owned native server and HTTPS/WSS reverse proxy; use the included Caddy example and bind the gateway locally with `-LocalOnly -TrustLocalProxy`. The public SIDcloud endpoint is now available at https://jyqx-server.sidcloud.cn and selected by default. It runs natively on a shared Singapore host, capped at two matches. The Linux archive provides the gateway, pure simulation and operation templates; install Godot and PostgreSQL separately. Local ten-match tests do not establish capacity for that public host. Public process-crash recovery does not certify host or disk disaster recovery. Physical Android-device validation is pending. Full source, implementation notes and compact QA evidence are in the repository.

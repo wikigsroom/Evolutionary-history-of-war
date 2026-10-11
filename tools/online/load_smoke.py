@@ -1,4 +1,4 @@
-"""Measure the native 10-match capacity gate with real subscribed players."""
+"""Measure a target host's capacity gate with real subscribed players."""
 import argparse
 import concurrent.futures
 import json
@@ -8,17 +8,26 @@ import time
 from integration_smoke import Player,Peer,pump,check,checks,ROOT
 
 
+def prepare_pair(url):
+    a,b=Player(url),Player(url)
+    code=str(secrets.randbelow(1000000)).zfill(6)
+    a.change("POST","/v1/rooms/by-code",{"code":code,"loadout":a.loadout})
+    room=b.change("POST","/v1/rooms/by-code",{"code":code,"loadout":b.loadout})["activity"]["room"]
+    for player in [a,b]:player.change("POST",f"/v1/rooms/{room['id']}/ready",{"ready":True,"expected_revision":room["revision"]})
+    match=a.activity()["id"]
+    peers=[Peer(a,match),Peer(b,match)]
+    # Over a public network, serially creating every other pair can consume the
+    # first match's 30-second loading deadline before it receives resume_ready.
+    # Complete each real client's loading handshake as soon as it subscribes.
+    pump(peers,lambda:all(p.resume and p.current and p.current["connection"]["phase"]=="RUNNING" for p in peers),30)
+    return (a,b,match),peers
+
+
 def main(url,matches,seconds):
-    pairs=[];peers=[]
-    for i in range(matches):
-        a,b=Player(url),Player(url)
-        code=str(secrets.randbelow(1000000)).zfill(6)
-        a.change("POST","/v1/rooms/by-code",{"code":code,"loadout":a.loadout})
-        room=b.change("POST","/v1/rooms/by-code",{"code":code,"loadout":b.loadout})["activity"]["room"]
-        for player in [a,b]:player.change("POST",f"/v1/rooms/{room['id']}/ready",{"ready":True,"expected_revision":room["revision"]})
-        match=a.activity()["id"]
-        pairs.append((a,b,match))
-        peers.extend([Peer(a,match),Peer(b,match)])
+    with concurrent.futures.ThreadPoolExecutor(max_workers=matches) as pool:
+        prepared=list(pool.map(prepare_pair,[url]*matches))
+    pairs=[pair for pair,subscribers in prepared]
+    peers=[peer for pair,subscribers in prepared for peer in subscribers]
     pump(peers,lambda:all(p.resume and p.current and p.current["connection"]["phase"]=="RUNNING" for p in peers),30)
     check(len(peers)==matches*2,"All real subscribers finish loading at capacity")
     start=time.monotonic();initial=[p.current["tick"] for p in peers]
@@ -43,7 +52,7 @@ def main(url,matches,seconds):
     for a,b,match in pairs:
         for player in [a,b]:player.change("POST",f"/v1/matches/{match}/ack-result")
     ordered=sorted(latencies.values())
-    return {"matches":matches,"subscribers":matches*2,"seconds":elapsed,"simulation_hz_min":min(rates),"simulation_hz_mean":statistics.mean(rates),"local_command_ack_ms_p95":ordered[max(0,int(len(ordered)*.95)-1)],"local_command_ack_ms_max":max(ordered),"scope":"Local native Windows, not a public-host capacity claim"}
+    return {"endpoint":url,"matches":matches,"subscribers":matches*2,"seconds":elapsed,"simulation_hz_min":min(rates),"simulation_hz_mean":statistics.mean(rates),"command_ack_ms_p95":ordered[max(0,int(len(ordered)*.95)-1)],"command_ack_ms_max":max(ordered),"scope":"Public Singapore host, real HTTPS/WSS subscribers from the test workstation" if url.startswith("https://jyqx-server.sidcloud.cn") else "Native self-hosted endpoint; capacity evidence applies only to the tested machine"}
 
 
 if __name__=="__main__":

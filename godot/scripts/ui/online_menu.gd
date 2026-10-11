@@ -15,10 +15,13 @@ var activity_signature = ""
 var wait_label: Label
 var clock_label: Label
 var build_button: Button
+var connection_panel: PixelPanel
+var privacy_button: LinkButton
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var connection = PixelPanel.new(); connection.heading = "联机对战"; add_child(connection)
+	var connection = PixelPanel.new(); connection.heading = "联机对战 · 官方服务器" if client.endpoint == EpochNetClient.DEFAULT_ENDPOINT else "联机对战 · 自定义服务器"; add_child(connection)
+	connection_panel = connection
 	connection.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE); connection.offset_bottom = 85
 	var connection_row = HBoxContainer.new(); connection_row.add_theme_constant_override("separation", 12); connection.add_child(connection_row)
 	var icon = TextureRect.new(); icon.texture = PixelTheme.icon("ally"); icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE; icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED; icon.custom_minimum_size = Vector2(42,42); connection_row.add_child(icon)
@@ -44,6 +47,9 @@ func _ready() -> void:
 	build_button = build
 	build.tooltip_text = "六位指挥官、六点天赋；双方相同经济与时代规则"
 	var privacy = LinkButton.new(); privacy.text = "隐私说明 · 匿名身份用于联机"; privacy.custom_minimum_size.y = 28; privacy.add_theme_font_size_override("font_size", 13); choices.add_child(privacy)
+	privacy_button = privacy
+	server_input.text_changed.connect(_address_notice)
+	_address_notice(server_input.text)
 	privacy.tooltip_text = "联网仅用于你选择的对战服务器；离线进度不会上传。"
 	privacy.pressed.connect(func():OS.shell_open("https://jyqx.sidcloud.cn"))
 	var panel = PixelPanel.new(); panel.heading = "对战大厅"; panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL; content.add_child(panel)
@@ -51,12 +57,19 @@ func _ready() -> void:
 	client.status_changed.connect(_status)
 	client.activity_changed.connect(_refresh)
 	_refresh()
-	if not client.endpoint.is_empty() and not client.authenticated and not client.busy: client.connect_service()
+	# First-time networking starts only after the player's explicit connect action.
 
 func _button(parent: Node, title: String, icon_id: String, callback: Callable) -> Button:
 	var button = Button.new(); button.text = title; button.icon = PixelTheme.icon(icon_id); button.expand_icon = true; button.add_theme_constant_override("icon_max_width", 24); button.custom_minimum_size.y = 48; PixelTheme.apply_button(button, PixelTheme.CYAN, true); parent.add_child(button); button.pressed.connect(callback); return button
 
 func _status() -> void: status_label.text = client.status
+
+func _address_notice(address: String) -> void:
+	var official = address.strip_edges().trim_suffix("/") == EpochNetClient.DEFAULT_ENDPOINT
+	connection_panel.heading = "联机对战 · 官方服务器" if official else "联机对战 · 自定义服务器"
+	connect_button.text = "同意并连接" if official else "连接"
+	connect_button.tooltip_text = "同意将随机匿名身份、必要网络信息及对战数据发送至 SIDcloud 的新加坡服务器，用于匹配、战斗与断线恢复。可先阅读隐私说明；单机进度留在本机。" if official else "连接所选服务器会创建匿名对战身份，并传输构筑与对战指令；请确认其运营者和隐私规则。"
+	privacy_button.text = "隐私说明 · 官方数据存于新加坡" if official else "隐私说明 · 请确认服务器运营者"
 
 func _refresh() -> void:
 	if activity_host == null: return
@@ -124,7 +137,7 @@ func _room(room: Dictionary) -> void:
 func _process(_delta: float) -> void:
 	connect_button.disabled = client.busy
 	build_button.disabled = client.busy or client.activity.get("kind", "") in ["queue", "match"] or client.activity.get("room",{}).get("phase") == "OFFER"
-	for button in action_buttons: button.disabled = client.busy or client.activity.get("kind", "") != ""
+	for button in action_buttons: button.disabled = not client.authenticated or client.busy or client.activity.get("kind", "") != ""
 	if is_instance_valid(wait_label):
 		var wait = int(client.activity.get("wait_seconds", 0)); wait_label.text = "%02d:%02d" % [wait/60, wait%60]
 		if wait >= 75: wait_label.text += " · 暂无对手，可继续等待"

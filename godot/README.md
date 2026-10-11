@@ -1,8 +1,8 @@
 # 纪元急袭（Godot 独立重构）
 
-这是《纪元急袭》 / Epoch Rush: Pixel Command 的原生 **0.8.0** 线路。完整的中英玩法、菜单示意图、实机截图、GIF、构建步骤与当前限制见 [仓库总览](../README.md)。旧的 Phaser 0.3.1 客户端保留在仓库根目录，两套运行时版本分别维护。
+这是《纪元急袭》 / Epoch Rush: Pixel Command 的原生 **0.8.1** 线路。完整的中英玩法、菜单示意图、实机截图、GIF、构建步骤与当前限制见 [仓库总览](../README.md)。旧的 Phaser 0.3.1 客户端保留在仓库根目录，两套运行时版本分别维护。
 
-预构建 Windows 与 Android 包见 [v0.8.0 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.0)，已包含 [十时代营寨朝向修复](../docs/epoch-rush/godot-base-facing-fix.md)。Windows 推荐下载完整 ZIP，解压运行即可；Android 当前完成包与签名验证。
+预构建 Windows 与 Android 包见 [v0.8.1 Release](https://github.com/wikigsroom/Evolutionary-history-of-war/releases/tag/v0.8.1)，已包含 [十时代营寨朝向修复](../docs/epoch-rush/godot-base-facing-fix.md)。Windows 推荐下载完整 ZIP，解压运行即可；Android 当前完成包与签名验证。
 
 品牌、BGM 更新与实际验证见 [v0.7.1 报告](../docs/epoch-rush/godot-v0.7.1-branding-bgm-report.md)。
 
@@ -20,9 +20,9 @@
 
 ## 联机
 
-主菜单新增联机入口：真实玩家自由匹配、六位数字创建/加入、构筑与双方准备、自动原局重连和重启恢复。双端资源由服务器裁判计算，双方同等经济与构筑预算。完整操作见 [服务端 README](../services/online-gateway/README.md) 与 [v0.8.0 实现报告](../docs/epoch-rush/godot-v0.8-online-report.md)。离线游戏仍可直接运行；线上结算不写入单机养成。
+主菜单新增联机入口：真实玩家自由匹配、六位数字创建/加入、构筑与双方准备、自动原局重连和重启恢复。双端资源由服务器裁判计算，双方同等经济与构筑预算。完整操作见 [服务端 README](../services/online-gateway/README.md) 与 [v0.8.1 实现报告](../docs/epoch-rush/godot-v0.8.1-public-online-report.md)。离线游戏仍可直接运行；线上结算不写入单机养成。
 
-服务端 ZIP 解压后用原生 PowerShell 执行 Start-Server.ps1，客户端填写 http://服务器局域网IPv4:28187。默认十局并发，无 Docker/WSL/虚拟机。公网 HTTPS/WSS 对战主机需自行部署；隐私网页不是对战服务器。
+正式客户端默认连接 **https://jyqx-server.sidcloud.cn**。主菜单 → 联机 → 同意并连接 → 自由匹配或相同六位码 → 双方准备/接受。SIDcloud 在新加坡运营，当前最多两局/四人同时对战。首次进入联机页不创建线上身份，明确连接后启用；已加入的原局可自动恢复。Windows 私有服包可解压用原生 PowerShell 启动，Linux 部署见 [运维说明](../services/online-gateway/deploy/linux/README.md)。所有组件原生运行，不使用 Docker/WSL/虚拟机。
 
 ## 运行
 
@@ -59,7 +59,7 @@ godot --headless --path godot --export-debug "Android" build/android/Epoch-Rush-
 python -X utf8 tools/finalize_android_packages.py
 ```
 
-Android 需要本机 JDK 21 与 Android SDK 36。应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.8.0 / code 13，arm64、最低 API 24。Android 使用自定义 Gradle 模板与自有 Keystore 插件，仅声明 INTERNET 权限；构建准备脚本删除引擎继承的电话/共享存储权限。后处理检查 adaptive-icon 资源别名，按 16 KB 原生页对齐并以本机密钥重新签名。脚本支持 `JAVA_HOME`、`ANDROID_SDK_ROOT` / `ANDROID_HOME` 及根 README 所列覆盖变量。两个 APK 导出完成后运行一次；已记录包验证，尚无真机试玩结果。
+Android 需要本机 JDK 21 与 Android SDK 36。应用 ID 为 `studio.epochrush.pixelcommand`，版本 0.8.1 / code 14，arm64、最低 API 24。Android 使用自定义 Gradle 模板与自有 Keystore 插件，仅声明 INTERNET 权限；构建准备脚本删除引擎继承的电话/共享存储权限。后处理检查 adaptive-icon 资源别名，按 16 KB 原生页对齐并以本机密钥重新签名。脚本支持 `JAVA_HOME`、`ANDROID_SDK_ROOT` / `ANDROID_HOME` 及根 README 所列覆盖变量。两个 APK 导出完成后运行一次；已记录包验证，尚无真机试玩结果。
 
 ## 基础回归
 

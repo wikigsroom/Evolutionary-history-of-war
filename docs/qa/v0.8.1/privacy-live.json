@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "route": "/",
+      "passed": true
+    },
+    {
+      "route": "/privacy",
+      "passed": true
+    },
+    {
+      "route": "/privacy-policy",
+      "passed": true
+    },
+    {
+      "route": "/styles.css",
+      "passed": true
+    },
+    {
+      "route": "/privacy-policy.docx",
+      "passed": true
+    },
+    {
+      "route": "/privacy-policy.md",
+      "passed": true
+    }
+  ],
+  "url": "https://jyqx.sidcloud.cn",
+  "policy_version": "ER-PRIVACY-2026-10-11-PUBLIC",
+  "reviewed_pdf_pages": 15
+}

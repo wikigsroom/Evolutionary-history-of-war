@@ -41,6 +41,13 @@ func controls_inside(node: Node, rectangle: Rect2) -> bool:
 		if not controls_inside(child, rectangle): return false
 	return true
 
+func online_controls_disabled(node: Node) -> bool:
+	if node is OnlineMenu: return node.action_buttons.all(func(button):return button.disabled)
+	for child in node.get_children():
+		if child is OnlineMenu: return online_controls_disabled(child)
+		if online_controls_disabled(child): return true
+	return false
+
 func run() -> void:
 	root.size = Vector2i(1280,720)
 	app = preload("res://scenes/Main.tscn").instantiate(); root.add_child(app)
@@ -49,7 +56,15 @@ func run() -> void:
 	second = EpochNetClient.new(); second.session_directory = "user://qa-online-b-%d/" % Time.get_ticks_usec(); app.add_child(second)
 	app.online = first; first.battle_available.connect(app.show_online_battle)
 	await settle()
-	first.set_endpoint("http://127.0.0.1:28187"); second.set_endpoint("http://127.0.0.1:28187")
+	var test_endpoint = OS.get_environment("EPOCH_ONLINE_URL")
+	if test_endpoint.is_empty(): test_endpoint = EpochNetClient.DEFAULT_ENDPOINT
+	check(first.endpoint == test_endpoint and second.endpoint == test_endpoint, "Both native clients select the official endpoint or explicit test endpoint")
+	app.show_menu("online"); await settle()
+	await create_timer(0.3).timeout
+	check(not first.authenticated and first.player_id.is_empty() and not first.busy, "Opening the online hall does not create or transmit a new anonymous identity")
+	check(online_controls_disabled(app.current_view), "Matchmaking and room admission wait for the explicit connect action")
+	await capture("native-online-consent")
+	first.set_endpoint(test_endpoint); second.set_endpoint(test_endpoint)
 	check(await first.connect_service(), "Native client A authenticates using Windows protected identity")
 	check(await second.connect_service(), "Native client B authenticates using separate protected identity")
 	check(first.player_id != second.player_id, "Two clients have independent player identities")

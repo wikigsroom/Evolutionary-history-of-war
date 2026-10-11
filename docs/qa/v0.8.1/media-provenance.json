@@ -1,0 +1,27 @@
+{
+  "version": "0.8.1",
+  "windows_executable_sha256": "a9bb5c3e3da64ad0edf9fd50178311be09c224099a0bf3b5bb63813fff3b2b56",
+  "source": "Final exported Windows resource pack; actual public matches from the 22-check client run",
+  "captures": [
+    {
+      "file": "docs/media/v0.8.1/online-consent.png",
+      "sha256": "3b30b755752ab9b6dd4922b05a286eee8b88b65c23d9f04df0b79e52e2f3ecb0"
+    },
+    {
+      "file": "docs/media/v0.8.1/online-hall.png",
+      "sha256": "65abb0f9b576244616fc88fdd70f87c6ddb44c346685372866da7f7ddb044e2e"
+    },
+    {
+      "file": "docs/media/v0.8.1/online-room.png",
+      "sha256": "c0092c8e0b3092a020d871faa04151aa7b7d52bbfedb305640d16c7ca8117d0d"
+    },
+    {
+      "file": "docs/media/v0.8.1/online-battle.png",
+      "sha256": "ca775bb150adb5a9be48ae5e816206238689e7ba36d095aedec8a6c0fb3795ff"
+    },
+    {
+      "file": "docs/media/v0.8.1/online-result.png",
+      "sha256": "fbd68c95740d76982d2dd56338d86eec1a83dca14a0bdef1c4c35bcce543a120"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-Epoch Rush native online server v0.8.0
+Epoch Rush native online server v0.8.1
 
 Godot 4.7.2: MIT; complete Godot LICENSE and engine third-party notices are included.
 Go 1.27.2 runtime: BSD-style; complete Go LICENSE is included.

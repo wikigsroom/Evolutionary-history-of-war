@@ -1,0 +1,39 @@
+[Unit]
+Description=Epoch Rush authoritative online service
+After=network-online.target postgresql.service
+Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=10
+
+[Service]
+Type=simple
+User=epochrush
+Group=epochrush
+WorkingDirectory=/var/lib/epochrush
+EnvironmentFile=/etc/epochrush/online.env
+Environment=XDG_DATA_HOME=/var/lib/epochrush/data
+Environment=XDG_CONFIG_HOME=/var/lib/epochrush/config
+Environment=GOMEMLIMIT=96MiB
+Environment=GOMAXPROCS=2
+ExecStart=/opt/epochrush/current/bin/epoch-online --listen 127.0.0.1:28187 --max-matches ${EPOCH_MAX_MATCHES} --db-max-connections ${EPOCH_DB_CONNECTIONS} --project /opt/epochrush/current/referee --godot /opt/epochrush/runtime/Godot_v4.7.2-stable_linux.x86_64 --drain-file /var/lib/epochrush/draining.flag --trust-local-proxy
+Restart=always
+RestartSec=3
+TimeoutStopSec=15
+KillMode=mixed
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/epochrush
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+MemoryAccounting=true
+MemoryHigh=192M
+MemoryMax=320M
+TasksMax=96
+LimitNOFILE=4096
+StandardOutput=append:/var/log/epochrush/gateway.log
+StandardError=append:/var/log/epochrush/gateway.log
+
+[Install]
+WantedBy=multi-user.target

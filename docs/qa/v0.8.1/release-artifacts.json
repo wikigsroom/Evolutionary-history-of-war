@@ -1,0 +1,37 @@
+{
+  "version": "0.8.1",
+  "android_version_code": 14,
+  "official_endpoint": "https://jyqx-server.sidcloud.cn",
+  "artifacts": [
+    {
+      "name": "Epoch-Rush-Godot.exe",
+      "bytes": 236341224,
+      "sha256": "a9bb5c3e3da64ad0edf9fd50178311be09c224099a0bf3b5bb63813fff3b2b56"
+    },
+    {
+      "name": "Epoch-Rush-Godot-Windows.zip",
+      "bytes": 163555733,
+      "sha256": "79dfa52c97843569c3a39978aee8fd4898bc810b15cf3f2b530b8b9f56a05ccc"
+    },
+    {
+      "name": "Epoch-Rush-Godot-debug.apk",
+      "bytes": 206267954,
+      "sha256": "2a9ddd420434c83425d75a14181742d68dc55422a0e094890e7e0693c1b61b99"
+    },
+    {
+      "name": "Epoch-Rush-Godot-release.apk",
+      "bytes": 200890096,
+      "sha256": "4b60ba998fdc04645de5e4008f6df263b47a2e7b558993cee9e091c07e93e912"
+    },
+    {
+      "name": "Epoch-Rush-Server-0.8.1-Windows-x64.zip",
+      "bytes": 128132310,
+      "sha256": "fc6a7e2a824dd64a3c8842ef488320efd17e14bea7f9f17edf244e619684cd2f"
+    },
+    {
+      "name": "Epoch-Rush-Server-0.8.1-Linux-x64.tar.gz",
+      "bytes": 8453902,
+      "sha256": "e68a4418447aaa9c9022dc478b481c4d9e239ab1c3a8155024a0067a98ee7ccb"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "endpoint": "https://jyqx-server.sidcloud.cn",
+  "checks": [
+    {
+      "name": "An identity authenticated over 60 seconds ago can enter matchmaking",
+      "passed": true
+    },
+    {
+      "name": "Queue admission refreshes the old identity before maintenance expires it",
+      "passed": true
+    },
+    {
+      "name": "Polling keeps a real player queued for more than 60 seconds",
+      "passed": true
+    },
+    {
+      "name": "The long-waiting player receives the arriving real opponent's offer",
+      "passed": true
+    },
+    {
+      "name": "Both accepted offers start one authoritative battle",
+      "passed": true
+    },
+    {
+      "name": "Both long-queue subscribers load and run the battle",
+      "passed": true
+    },
+    {
+      "name": "Accepted matchmaking ends with one shared result",
+      "passed": true
+    }
+  ],
+  "failed": null,
+  "seconds": 149.81495389994234
+}

@@ -26,7 +26,8 @@ def main():
     copy(PROJECT/"toolchain/editor/Godot_v4.7.2-stable_win64.exe",bundle/"engine/Godot.exe")
     for script in (ROOT/"services/online-gateway/deploy").iterdir():
         if script.is_file():copy(script,bundle/script.name)
-    copy(ROOT/"services/online-gateway/README.md",bundle/"README.md")
+    (bundle/"README.md").write_text((ROOT/"services/online-gateway/README.md").read_text(encoding="utf-8").replace("deploy/linux/README.md","docs/linux/README.md"),encoding="utf-8",newline="\n")
+    copy(ROOT/"services/online-gateway/deploy/linux/README.md",bundle/"docs/linux/README.md")
     referee=bundle/"referee"
     core=["game_model.gd","game_data.gd","epoch_combat.gd","epoch_skills.gd","epoch_environment.gd","epoch_snapshot_migration.gd"]
     for name in core:

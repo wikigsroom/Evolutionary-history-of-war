@@ -1,0 +1,26 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 595.95 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3060
+
+CLIENT_CHECK 1 true Both native clients select the official endpoint or explicit test endpoint
+CLIENT_CHECK 2 true Opening the online hall does not create or transmit a new anonymous identity
+CLIENT_CHECK 3 true Matchmaking and room admission wait for the explicit connect action
+CLIENT_CHECK 4 true Native client A authenticates using Windows protected identity
+CLIENT_CHECK 5 true Native client B authenticates using separate protected identity
+CLIENT_CHECK 6 true Two clients have independent player identities
+CLIENT_CHECK 7 true Hall buttons fit 1280×720 safe layout
+CLIENT_CHECK 8 true Both native clients occupy the same room
+CLIENT_CHECK 9 true Rapid build edits synchronize the latest selection before ready
+CLIENT_CHECK 10 true Room buttons fit 1280×720 safe layout
+CLIENT_CHECK 11 true Room fits long screen (1600, 720)
+CLIENT_CHECK 12 true Room fits long screen (2400, 1080)
+CLIENT_CHECK 13 true Both native Godot clients enter one authoritative battle
+CLIENT_CHECK 14 true Each client displays its own faction on the left
+CLIENT_CHECK 15 true Online settings overlay leaves the shared battle running
+CLIENT_CHECK 16 true Battle button and opponent action both recruit through the server
+CLIENT_CHECK 17 true Native client reconnects automatically to the same match
+CLIENT_CHECK 18 true Native reconnect keeps command cursor and clears old pending click
+CLIENT_CHECK 19 true A fresh client node automatically resumes the saved active match
+CLIENT_CHECK 20 true Protected identity, original seat and durable cursor survive client restart
+CLIENT_CHECK 21 true Both native clients receive authoritative final result
+CLIENT_CHECK 22 true Both native clients can leave result and create another match
+NATIVE_CLIENT_PLAYABLE 22 checks, 0 failures

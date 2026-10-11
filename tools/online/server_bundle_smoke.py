@@ -7,6 +7,7 @@ import subprocess
 import time
 import zipfile
 import hashlib
+import re
 import requests
 from integration_smoke import ROOT,Player,Peer,pump,check,checks
 
@@ -15,6 +16,7 @@ DATA=pathlib.Path(os.environ["LOCALAPPDATA"])/"EpochRushStandaloneQA"
 STAGE=ROOT/"output/qa/online/server-bundle"
 BUNDLE=STAGE/"Epoch-Rush-Server"
 FLAGS=getattr(subprocess,"CREATE_NO_WINDOW",0)
+VERSION=re.search(r'config/version="([^"]+)"',(ROOT/"godot/project.godot").read_text(encoding="utf-8")).group(1)
 
 
 def administrative(name,extra=()):
@@ -35,7 +37,7 @@ def start():
 
 def main():
     if (DATA/"gateway.pid").exists():administrative("Stop-Server.ps1")
-    archive=ROOT/"output/releases/v0.8.0/server/Epoch-Rush-Server-0.8.0-Windows-x64.zip"
+    archive=ROOT/"output/releases"/f"v{VERSION}"/"server"/f"Epoch-Rush-Server-{VERSION}-Windows-x64.zip"
     with zipfile.ZipFile(archive) as zipped:
         assert STAGE.resolve().is_relative_to(ROOT.resolve())
         assert all((STAGE/n).resolve().is_relative_to(STAGE.resolve()) for n in zipped.namelist())

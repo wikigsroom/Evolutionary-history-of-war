@@ -19,12 +19,12 @@ var migrations embed.FS
 
 type Store struct{ pool *pgxpool.Pool }
 
-func openStore(ctx context.Context, url string) (*Store, error) {
+func openStore(ctx context.Context, url string, maxConnections int32) (*Store, error) {
 	config, err := pgxpool.ParseConfig(url)
 	if err != nil {
 		return nil, fmt.Errorf("invalid database configuration")
 	}
-	config.MaxConns = 24
+	config.MaxConns = maxConnections
 	config.ConnConfig.ConnectTimeout = 5 * time.Second
 	config.ConnConfig.RuntimeParams["synchronous_commit"] = "on"
 	config.ConnConfig.RuntimeParams["statement_timeout"] = "5000"

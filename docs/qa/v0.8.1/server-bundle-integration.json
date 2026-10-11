@@ -1,0 +1,100 @@
+{
+  "checks": [
+    {
+      "name": "Lost create response reuses one room",
+      "passed": true
+    },
+    {
+      "name": "Six-digit code preserves leading zero",
+      "passed": true
+    },
+    {
+      "name": "One room contains exactly two seats",
+      "passed": true
+    },
+    {
+      "name": "Third identity cannot occupy full room",
+      "passed": true
+    },
+    {
+      "name": "One player cannot queue while occupying a room",
+      "passed": true
+    },
+    {
+      "name": "Both members start the same match UUID",
+      "passed": true
+    },
+    {
+      "name": "Seats are assigned by authenticated identity",
+      "passed": true
+    },
+    {
+      "name": "Subscriber projection hides enemy private state",
+      "passed": true
+    },
+    {
+      "name": "Subscriber projection hides enemy private state",
+      "passed": true
+    },
+    {
+      "name": "Both independent seq=1 recruit successfully",
+      "passed": true
+    },
+    {
+      "name": "100 repeated recruitment packets spend and train once",
+      "passed": true
+    },
+    {
+      "name": "Opponent recruitment remains independent",
+      "passed": true
+    },
+    {
+      "name": "Detected disconnect enters bounded technical pause",
+      "passed": true
+    },
+    {
+      "name": "Reconnect retains match and fences old connection epoch",
+      "passed": true
+    },
+    {
+      "name": "Reconnect retains durable per-player command cursor",
+      "passed": true
+    },
+    {
+      "name": "Reconnect never replays the old recruitment",
+      "passed": true
+    },
+    {
+      "name": "Invalid evolution changes neither player's era",
+      "passed": true
+    },
+    {
+      "name": "Both clients receive one durable surrender result",
+      "passed": true
+    },
+    {
+      "name": "App restart can retrieve the same final result",
+      "passed": true
+    },
+    {
+      "name": "20 simultaneous same-code requests create one room and two members",
+      "passed": true
+    },
+    {
+      "name": "18 overflow members get explicit ROOM_FULL",
+      "passed": true
+    },
+    {
+      "name": "Free matchmaking offers a real human opponent",
+      "passed": true
+    },
+    {
+      "name": "Declining an offer releases both reservations",
+      "passed": true
+    }
+  ],
+  "failed": null,
+  "seconds": 9.733671300113201,
+  "native_postgresql": true,
+  "native_godot_worker": true
+}

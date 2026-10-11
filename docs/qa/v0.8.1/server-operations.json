@@ -1,0 +1,82 @@
+{
+  "endpoint": "https://jyqx-server.sidcloud.cn",
+  "checks": [
+    {
+      "name": "Public DNS resolves to the authorized host",
+      "passed": true
+    },
+    {
+      "name": "Trusted public HTTPS returns the current simulation manifest",
+      "passed": true
+    },
+    {
+      "name": "Public proxy hides health, metrics and administration",
+      "passed": true
+    },
+    {
+      "name": "Native systemd gateway and dedicated database are healthy",
+      "passed": true
+    },
+    {
+      "name": "Game service, health, backup and certificate timers are enabled",
+      "passed": true
+    },
+    {
+      "name": "Two-match admission is healthy and QA leaves no active matches",
+      "passed": true
+    },
+    {
+      "name": "Dedicated database role is restricted and environment remains root-only",
+      "passed": true
+    },
+    {
+      "name": "Every deployed authority file matches the final Linux release manifest",
+      "passed": true
+    },
+    {
+      "name": "Fresh database dump verifies and restores real records into an isolated database",
+      "passed": true
+    },
+    {
+      "name": "Trusted certificate has over 30 days remaining and its renewal hook is installed",
+      "passed": true
+    },
+    {
+      "name": "Gateway and database listen on loopback rather than public ports",
+      "passed": true
+    },
+    {
+      "name": "Proxy ticket logging is disabled and native resource/disk guards are configured",
+      "passed": true
+    }
+  ],
+  "observations": {
+    "active": true,
+    "enabled": true,
+    "health": {
+      "active_matches": 0,
+      "draining": false,
+      "max_matches": 2,
+      "ok": true,
+      "service": "epoch-rush-online"
+    },
+    "role": "4|false|false|false|false",
+    "secret_permissions": true,
+    "files_ok": true,
+    "release_version": "0.8.1",
+    "backup_sha256_verified": true,
+    "backup_restore_verified": true,
+    "restore_rows": {
+      "players": 74,
+      "results": 15
+    },
+    "certificate_expiry": "2027-01-09T00:02:25+00:00",
+    "certificate_valid_30_days": true,
+    "renewal_configured": true,
+    "private_gateway": true,
+    "private_database": true,
+    "logs_and_limits": true,
+    "health_guards": true
+  },
+  "same_host_backup_only": true
+}
