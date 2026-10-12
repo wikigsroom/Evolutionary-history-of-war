@@ -60,10 +60,12 @@ PY
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--host", default="124.221.198.220",
+                        help="SSH host to audit (default: current Shanghai production host)")
     parser.add_argument("--output", type=Path,
                         default=ROOT / "output/qa/server-archive/deployed-inventory.json")
     args = parser.parse_args()
-    client, password = connect()
+    client, password = connect(host=args.host)
     try:
         # remote_admin normally streams output. Keep the inventory quiet and
         # persist only the explicitly selected, non-sensitive metadata below.

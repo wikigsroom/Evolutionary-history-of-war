@@ -1,22 +1,22 @@
 # Linux 公网部署与运维 / Linux public operations
 
-v0.8.1 正式服务为 **https://jyqx-server.sidcloud.cn**，由 SIDcloud 在新加坡运营。运行路径是现有 Nginx → 本机 Go 接入 → 原生 Godot Headless 裁判 → 独立 PostgreSQL 库。没有容器、WSL 或虚拟机。
+v0.8.1 正式服务为 **https://jyqx-server.sidcloud.cn**，由 SIDcloud 在腾讯云中国（上海）运营。运行路径是现有 Nginx → 本机 Go 接入 → 原生 Godot Headless 裁判 → 独立 PostgreSQL 库。没有容器、WSL 或虚拟机。
 
 ## 已部署实例
 
 | 项目 | 配置 |
 | --- | --- |
-| 系统与容量 | Ubuntu 24.04 / amd64，2 vCPU、1 GB 内存；与原有服务共存 |
+| 系统与容量 | Ubuntu 22.04.5 / amd64，2 vCPU、约 1 GB 内存；上海独立主机 |
 | 对战限制 | 同时 2 局 / 4 玩家；数据库连接池 4；容量不足明确返回 SERVER_FULL |
-| HTTPS/WSS | jyqx-server.sidcloud.cn，Let’s Encrypt，80 自动跳转 443 |
+| HTTPS/WSS | jyqx-server.sidcloud.cn，Let’s Encrypt；Nginx 配置 80 → 443，当前 DNSPod web 防护可能在 80 端口拦截并返回平台页，HTTPS/WSS 正常 |
 | 接入 | 127.0.0.1:28187；数据库 127.0.0.1:5432；裁判 IPC 仅本机 |
 | 当前版本 | /opt/epochrush/current → /opt/epochrush/releases/0.8.1 |
 | 引擎 | /opt/epochrush/runtime/Godot_v4.7.2-stable_linux.x86_64 |
 | 系统用户 | epochrush，非 root；应用数据 /var/lib/epochrush |
 | 私密配置 | /etc/epochrush/online.env，root:root / 0600，不在发布包中 |
-| 数据库 | PostgreSQL 16；epochrush_online 库 / epochrush_server 专用受限账号 |
+| 数据库 | PostgreSQL 14；epochrush_online 库 / epochrush_server 专用受限账号 |
 | 进程管理 | epochrush-online.service，崩溃后 3 秒重启；开机自启 |
-| 内存约束 | Go 96 MiB 目标，服务 MemoryHigh 192 MiB / MemoryMax 320 MiB |
+| 内存约束 | Go 96 MiB 目标，服务 MemoryHigh 192 MiB / MemoryMax 320 MiB；系统交换空间合计 6 GiB |
 
 当前 Nginx 来自服务器已有的宝塔安装，虚拟主机在 `/www/server/panel/vhost/nginx/jyqx-server.sidcloud.cn.conf`。只改本游戏虚拟主机并校验后 reload，不能覆盖全局配置或停止其他站点。新机器可以使用系统 Nginx，但需要相应调整配置目录与 reload 命令。
 
@@ -39,7 +39,7 @@ curl --fail http://127.0.0.1:28187/healthz
 curl --fail https://jyqx-server.sidcloud.cn/v1/bootstrap
 ```
 
-复用这组模板时请替换域名、版本与系统路径，并在自己的机器重新验收。首次部署不能只启动 HTTP 网关后就宣布公网可用；应检查可信 TLS、真实 WSS 对局、断线恢复和存储恢复。
+复用这组模板时请替换域名、版本与系统路径，并在自己的机器重新验收。首次部署不能只启动 HTTP 网关后就宣布公网可用；应检查可信 TLS、真实 WSS 对局、断线恢复和存储恢复。当前生产机已从旧节点迁移到上海节点，旧节点服务已排空、停止并禁用；迁移结果和验收证据见仓库 `docs/qa/server-migration-2026-10-12/README.md`。由于当前域名的 HTTP 80 请求会被 DNSPod web 防护接管，Certbot 的 HTTP-01 自动续期不可依赖该端口；证书到期前应解除该拦截或改用 DNS-01。
 
 ## 日常检查
 
@@ -93,9 +93,9 @@ sudo -u postgres psql -d epochrush_restorecheck -c 'SELECT count(*) FROM online_
 
 ## English
 
-The public SIDcloud endpoint is `https://jyqx-server.sidcloud.cn`, hosted in Singapore. Native Nginx proxies to a loopback Go gateway; headless Godot runs the authority and PostgreSQL 16 stores committed commands, checkpoints and unique results. The shared 1 GB / two-vCPU host admits **two simultaneous matches / four players**, with a four-connection database pool. This is an admission cap, not a large-scale availability guarantee.
+The public SIDcloud endpoint is `https://jyqx-server.sidcloud.cn`, hosted on Tencent Cloud in Shanghai, China. Native Nginx proxies to a loopback Go gateway; headless Godot runs the authority and PostgreSQL 14 stores committed commands, checkpoints and unique results. The 1 GB / two-vCPU host admits **two simultaneous matches / four players**, with a four-connection database pool. This is an admission cap, not a large-scale availability guarantee. The host has a combined 6 GiB of swap and runs without Docker, WSL or a virtual machine.
 
-The Linux archive contains the gateway, pure simulation project, operation templates and license notices. Install the pinned Godot runtime and PostgreSQL natively, create an isolated database and restricted role, protect the root-only environment file, import the referee, configure TLS, and enable the supplied systemd units. Preserve unrelated applications and database services.
+The Linux archive contains the gateway, pure simulation project, operation templates and license notices. Install the pinned Godot runtime and PostgreSQL 14 natively, create an isolated database and restricted role, protect the root-only environment file, import the referee, configure TLS, and enable the supplied systemd units. Preserve unrelated applications and database services.
 
 Systemd restarts a crashed game process after three seconds. Health checks run every minute; three failures restart only this game, while low disk space drains new admissions. Daily database dumps retain seven days of backups, up to eight days with daily cleanup. The actual dump was restored to an isolated test database. Backups remain on-host; disk loss, host loss, off-site disaster recovery and multi-host failover are not covered.
 
