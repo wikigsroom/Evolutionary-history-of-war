@@ -2,7 +2,7 @@
   "protocol_version": "1.0",
   "ruleset_id": "pvp-classic-v1",
   "ruleset_hash": "1c51f1945f5a8620ef651d62db318c8607f10908071c3c8566220987d98f8122",
-  "simulation_hash": "51bfa2b4b3b33f8fd5f4f1eb6bbb9782597ea3a012e6cef65ac665c33d652ae3",
+  "simulation_hash": "c4cc669cf72e3436ead02be38f264934e399670d552197dff8dcb12de203f766",
   "engine": "Godot 4.7.2 ed1daf0bf",
   "files": {
     "assets/data/animations.json": "26a2ff7b8cd7ac7d5e6e3925302de37900e74e042e31579ac57415ea87569777",
@@ -24,15 +24,15 @@
     "assets/data/turrets.json": "22a3b948432d2fee09793f5aae160bbfaa01a6cb3bec8a3a5802eddbe121405b",
     "assets/data/units.json": "469bf47a7df929d8880c1a9d8a2c6a9e1239d4d77609dfe71106bb9f06f703ad",
     "assets/data/weapons.json": "2a55898972ac35f82fdb04455cc571d4e881a9c0548d5d28c4a28a37b45f2791",
-    "scripts/game_model.gd": "c71b9eaee29fb5e1cc6a2a68f06c95a1115caf8eeb8aba5d4acc108372002bf1",
+    "scripts/game_model.gd": "395ad8d44bbd7ea26b66703c27b3ecf5c5e39a60f11493652421de420990a53e",
     "scripts/game_data.gd": "b5624e8c0b1df5fdb20648044161532e1c0972d80153279a028dce7ce1596a04",
-    "scripts/epoch_combat.gd": "375ce17f2216d809126ed3bba18d7986a8036c55745903d3a4f4f61253664446",
-    "scripts/epoch_skills.gd": "9af082a2900f0ddec13daf19adb74a6953109225a5750d811c4f060897a60542",
+    "scripts/epoch_combat.gd": "e00717fe81fc33d8845d7d5991cf0855c0d5e1bc9be3bddf03c45225533b179d",
+    "scripts/epoch_skills.gd": "718201a004f55c153dbf0f57e12b90a299fc95f8bd70086f79e9a3de176a9756",
     "scripts/epoch_environment.gd": "44330bfbfeb737c00524ef3e68863c9c59a8025fdb80a547f99407953981ad7b",
-    "scripts/epoch_snapshot_migration.gd": "6e93185fab09ed423aaba76b26edd870d851f4c60a5a4e4cd4f22c0dd79af40a",
-    "server/command_router.gd": "91956d48c6118282ba9b134e23dc6e223d7d562e9a1253ee4faa9b7259791da3",
+    "scripts/epoch_snapshot_migration.gd": "bf3329b473941497f41ea1efe3348253f48dcde9d03b094b1afd998310c2c1a6",
+    "server/command_router.gd": "b6cbefaf41d35821fcce57012db5a7e7fd2677f7a19ffe8e4fd3ff09cbb8a3a9",
     "server/network_projection.gd": "4409d652a011ef793e7f4652d297e82be3fc5f996984ce6940a17883dd5b8b7a",
-    "server/server_main.gd": "84c75d014da9d3d56e0f3c02c2a15606c61e75a414514c4288cd78ec593b0c94"
+    "server/server_main.gd": "ed25b487b7763063d410a749b7749a3b7fc9f29e5d5564bd0bcac141ccbaa207"
   },
   "ruleset": {
     "id": "pvp-classic-v1",

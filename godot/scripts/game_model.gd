@@ -1,6 +1,14 @@
 class_name GameModel
 extends Node
 
+# The authority bundle is intentionally a minimal Godot project without the
+# editor's global class cache.  Keep simulation dependencies explicit so the
+# headless referee can start from a clean release directory.
+const EpochData = preload("res://scripts/game_data.gd")
+const EpochCombat = preload("res://scripts/epoch_combat.gd")
+const EpochSkills = preload("res://scripts/epoch_skills.gd")
+const EpochEnvironment = preload("res://scripts/epoch_environment.gd")
+
 signal changed
 signal event_emitted(event: Dictionary)
 

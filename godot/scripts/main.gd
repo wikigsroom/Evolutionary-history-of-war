@@ -64,9 +64,12 @@ func show_online_battle(state) -> void:
 	view.replay_requested.connect(_leave_online_battle)
 	host.add_child(view);current_view=view
 func _leave_online_battle() -> void:
-	# Active matches may be temporarily viewed from the lobby; only a finished
-	# result needs the server acknowledgement that clears the activity record.
-	if online.finished: await online.acknowledge_result()
+	# Detach the battle view before acknowledging a finished result.  The
+	# acknowledgement clears online.battle_state; leaving the view alive across
+	# that await would let BattleScreen._process call advance() on freed state.
+	var should_ack = online.finished
+	_clear_view()
+	if should_ack: await online.acknowledge_result()
 	show_menu("online")
 func _notification(what: int) -> void:
 	if what==NOTIFICATION_APPLICATION_PAUSED and is_instance_valid(audio):audio.set_suspended(true)

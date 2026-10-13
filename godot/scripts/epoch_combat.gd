@@ -1,6 +1,8 @@
 class_name EpochCombat
 extends RefCounted
 
+const EpochData = preload("res://scripts/game_data.gd")
+
 var m
 func _init(model) -> void: m = model
 

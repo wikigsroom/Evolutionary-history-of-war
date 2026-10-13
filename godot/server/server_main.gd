@@ -3,6 +3,7 @@ extends SceneTree
 # Private IPC is bound by the gateway to loopback only. No public RPC surface.
 const Router = preload("res://server/command_router.gd")
 const NetProjection = preload("res://server/network_projection.gd")
+const GameModel = preload("res://scripts/game_model.gd")
 const MAX_FRAME = 4194304
 var socket = StreamPeerTCP.new()
 var model: GameModel

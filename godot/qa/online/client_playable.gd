@@ -125,7 +125,7 @@ func run() -> void:
 	await first.acknowledge_result(); await second.acknowledge_result()
 	check(first.activity.get("kind","")=="" and second.activity.get("kind","")=="", "Both native clients can leave result and create another match")
 	first._lose_connection()
-	check(first.finished and not first.syncing and first.retry_at < 0, "Finished battle never schedules a spurious match reconnect")
+	check(not first.finished and first.match_id.is_empty() and first.battle_state == null and not first.syncing and first.retry_at < 0, "Acknowledged result stays closed without scheduling a match reconnect")
 	finish()
 
 func finish() -> void:

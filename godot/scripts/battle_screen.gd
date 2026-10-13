@@ -93,6 +93,12 @@ func _ready() -> void:
 		model.connection_changed.connect(_online_connection_changed)
 	if model.tick == 0: notify("拖动战场 · 1–5 招募 · Z/X/C 道具",6.0)
 func _process(delta: float) -> void:
+	if not is_instance_valid(model):
+		# The online result acknowledgement can release its projection while an
+		# async UI action is unwinding.  Stop this stale view before it can call
+		# advance() on the freed simulation.
+		set_process(false)
+		return
 	model.advance(delta)
 	if is_online and is_instance_valid(connection_label):connection_label.text=model.connection_status;connection_label.modulate=PixelTheme.CYAN if model.connected else PixelTheme.AMBER
 	_refresh_hud()

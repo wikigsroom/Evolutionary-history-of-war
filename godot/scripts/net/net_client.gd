@@ -397,6 +397,13 @@ func _schedule_retry() -> void:
 	_set_status("连接中断，正在返回原对局")
 
 func _lose_connection() -> void:
+	# Acknowledging a finished result intentionally clears the match projection.
+	# A later socket/event callback must not turn that terminal state into a new
+	# reconnect attempt when there is no match left to resume.
+	if match_id.is_empty() or not is_instance_valid(battle_state):
+		if socket != null: socket.close()
+		socket = null; battle_state = null; syncing = false; retry_at = -1.0
+		return
 	if socket != null: socket.close()
 	if finished: socket = null; return
 	socket = null; syncing = true; chunks.clear(); state_cache.clear(); resume_sent = false

@@ -11,8 +11,10 @@ import re
 import requests
 from integration_smoke import ROOT,Player,Peer,pump,check,checks
 
-URL="http://127.0.0.1:28188"
-DATA=pathlib.Path(os.environ["LOCALAPPDATA"])/"EpochRushStandaloneQA"
+SMOKE_PORT=int(os.environ.get("EPOCH_SMOKE_PORT","28188"))
+SMOKE_DB_PORT=os.environ.get("EPOCH_SMOKE_DB_PORT","54330")
+URL=f"http://127.0.0.1:{SMOKE_PORT}"
+DATA=pathlib.Path(os.environ.get("EPOCH_SMOKE_DATA",str(pathlib.Path(os.environ["LOCALAPPDATA"])/"EpochRushStandaloneQA")))
 STAGE=ROOT/"output/qa/online/server-bundle"
 BUNDLE=STAGE/"Epoch-Rush-Server"
 FLAGS=getattr(subprocess,"CREATE_NO_WINDOW",0)
@@ -32,7 +34,7 @@ def administrative(name,extra=()):
 
 
 def start():
-    administrative("Start-Server.ps1",["-LocalOnly","-Port","28188","-DatabasePort","54330"])
+    administrative("Start-Server.ps1",["-LocalOnly","-Port",str(SMOKE_PORT),"-DatabasePort",SMOKE_DB_PORT])
 
 
 def main():

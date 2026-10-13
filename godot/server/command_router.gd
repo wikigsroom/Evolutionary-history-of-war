@@ -1,5 +1,7 @@
 extends RefCounted
 
+const EpochData = preload("res://scripts/game_data.gd")
+
 const FIELDS = {
 	"train": {"unitId": "units"}, "cancel": {"queueId": "integer"},
 	"evolve": {"upgradeId": "run-upgrades"}, "research": {"researchId": "research"},

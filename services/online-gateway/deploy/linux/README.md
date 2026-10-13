@@ -1,6 +1,6 @@
 # Linux 公网部署与运维 / Linux public operations
 
-v0.8.1 正式服务为 **https://jyqx-server.sidcloud.cn**，由 SIDcloud 在腾讯云中国（上海）运营。运行路径是现有 Nginx → 本机 Go 接入 → 原生 Godot Headless 裁判 → 独立 PostgreSQL 库。没有容器、WSL 或虚拟机。
+v0.8.4 正式服务为 **https://jyqx-server.sidcloud.cn**，由 SIDcloud 在腾讯云中国（上海）运营。运行路径是现有 Nginx → 本机 Go 接入 → 原生 Godot Headless 裁判 → 独立 PostgreSQL 库。没有容器、WSL 或虚拟机。
 
 ## 已部署实例
 
@@ -10,7 +10,7 @@ v0.8.1 正式服务为 **https://jyqx-server.sidcloud.cn**，由 SIDcloud 在腾
 | 对战限制 | 同时 2 局 / 4 玩家；数据库连接池 4；容量不足明确返回 SERVER_FULL |
 | HTTPS/WSS | jyqx-server.sidcloud.cn，Let’s Encrypt；Nginx 配置 80 → 443，当前 DNSPod web 防护可能在 80 端口拦截并返回平台页，HTTPS/WSS 正常 |
 | 接入 | 127.0.0.1:28187；数据库 127.0.0.1:5432；裁判 IPC 仅本机 |
-| 当前版本 | /opt/epochrush/current → /opt/epochrush/releases/0.8.1 |
+| 当前版本 | /opt/epochrush/current → /opt/epochrush/releases/0.8.4 |
 | 引擎 | /opt/epochrush/runtime/Godot_v4.7.2-stable_linux.x86_64 |
 | 系统用户 | epochrush，非 root；应用数据 /var/lib/epochrush |
 | 私密配置 | /etc/epochrush/online.env，root:root / 0600，不在发布包中 |
@@ -24,8 +24,8 @@ v0.8.1 正式服务为 **https://jyqx-server.sidcloud.cn**，由 SIDcloud 在腾
 
 Linux TAR 包包含 Go ELF、纯模拟工程、运维模板和许可；**不包含 Godot 引擎、PostgreSQL 或服务器凭据**。需要原生 PostgreSQL 16、Python 3、curl、Nginx、Certbot，以及固定版本 Godot 4.7.2 Standard。引擎下载 URL 与压缩包 SHA-256 写在 `BUNDLE-MANIFEST.json`；下载后校验，再解压到上述 runtime 目录。
 
-1. 解压 `Epoch-Rush-Server-0.8.1-Linux-x64.tar.gz`，逐个校验 manifest 中的文件哈希；将 `Epoch-Rush-Server` 内容安装到 `/opt/epochrush/releases/0.8.1`。赋予 `bin/epoch-online` 和 `ops/*.sh` 执行权限，代码保持 root 所有。
-2. 创建无登录系统用户 epochrush，以及该用户可写的 `/var/lib/epochrush`。引擎初次导入使用 `runuser -u epochrush -- <引擎> --headless --editor --path <referee> --import`；新版本目录导入阶段允许该用户写入 `.godot` 缓存，完成后收回对源码的写权限。纯裁判 project 限制 worker 线程为 2，避免小主机导入时产生过多线程。
+1. 解压 `Epoch-Rush-Server-0.8.4-Linux-x64.tar.gz`，逐个校验 manifest 中的文件哈希；将 `Epoch-Rush-Server` 内容安装到 `/opt/epochrush/releases/0.8.4`。赋予 `bin/epoch-online` 和 `ops/*.sh` 执行权限，代码保持 root 所有。
+2. 创建无登录系统用户 epochrush，以及该用户可写的 `/var/lib/epochrush`。Linux 包内的裁判脚本显式预加载依赖，不依赖编辑器全局类缓存；首次验收使用一次限时的 `server_main.gd` 本地 IPC 握手，避免在小主机上执行会无限等待的编辑器导入。纯裁判 project 限制 worker 线程为 2。
 3. PostgreSQL 只监听 loopback。使用管理员 psql 创建专用 `epochrush_server` LOGIN 角色，NOSUPERUSER / NOCREATEDB / NOCREATEROLE / NOREPLICATION、CONNECTION LIMIT 4；用交互式 `\password epochrush_server` 设置强密码，不把密码写在 shell 命令、历史、文档或 URL 中。创建该角色拥有的 epochrush_online 库并撤销 PUBLIC 数据库权限。共享 PostgreSQL 不应因本游戏部署而重启或改变全局调优参数。
 4. 参考仓库内 `environment.example`，用 root 编辑 `/etc/epochrush/online.env`，设置 `EPOCH_DATABASE_URL`、`EPOCH_MAX_MATCHES=2`、`EPOCH_DB_CONNECTIONS=4`。示例密码只是占位符，实际 DSN 密码需 URL 编码。文件权限为 0600，仅 root 可读，由 systemd 注入给服务；不要 cat 它或发布其副本。历史 0.8.1 TAR 没有此后新增的环境示例，可从仓库取得。
 5. 将 current 链接指向新版本。建立 root 管理的 `/var/log/epochrush` 与仅 root 可读的 `/var/backups/epochrush`。复制 `epochrush-*.service` / `epochrush-*.timer` 到 `/etc/systemd/system/`，logrotate 模板到 `/etc/logrotate.d/epochrush`。
@@ -95,7 +95,7 @@ sudo -u postgres psql -d epochrush_restorecheck -c 'SELECT count(*) FROM online_
 
 The public SIDcloud endpoint is `https://jyqx-server.sidcloud.cn`, hosted on Tencent Cloud in Shanghai, China. Native Nginx proxies to a loopback Go gateway; headless Godot runs the authority and PostgreSQL 14 stores committed commands, checkpoints and unique results. The 1 GB / two-vCPU host admits **two simultaneous matches / four players**, with a four-connection database pool. This is an admission cap, not a large-scale availability guarantee. The host has a combined 6 GiB of swap and runs without Docker, WSL or a virtual machine.
 
-The Linux archive contains the gateway, pure simulation project, operation templates and license notices. Install the pinned Godot runtime and PostgreSQL 14 natively, create an isolated database and restricted role, protect the root-only environment file, import the referee, configure TLS, and enable the supplied systemd units. Preserve unrelated applications and database services.
+The Linux archive contains the gateway, pure simulation project, operation templates and license notices. Install the pinned Godot runtime and PostgreSQL 14 natively, create an isolated database and restricted role, protect the root-only environment file, run the bounded referee IPC preflight, configure TLS, and enable the supplied systemd units. The referee explicitly preloads its dependencies and does not require an editor global-class cache. Preserve unrelated applications and database services.
 
 Systemd restarts a crashed game process after three seconds. Health checks run every minute; three failures restart only this game, while low disk space drains new admissions. Daily database dumps retain seven days of backups, up to eight days with daily cleanup. The actual dump was restored to an isolated test database. Backups remain on-host; disk loss, host loss, off-site disaster recovery and multi-host failover are not covered.
 

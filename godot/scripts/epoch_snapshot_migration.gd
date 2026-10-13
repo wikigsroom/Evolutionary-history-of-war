@@ -1,6 +1,8 @@
 class_name EpochSnapshotMigration
 extends RefCounted
 
+const EpochData = preload("res://scripts/game_data.gd")
+
 const ERA_MAP = {"A1":"A1","A2":"A2","A3":"A4","A4":"A6","A5":"A10"}
 const OLD_POWER = {"A1":1.0,"A2":1.6,"A3":2.55,"A4":4.05,"A5":6.4}
 

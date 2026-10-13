@@ -37,7 +37,13 @@ if (Test-Path -LiteralPath $serverCredentialFile) {
     $serverRandom = [Security.Cryptography.RandomNumberGenerator]::Create()
     $serverRandom.GetBytes($serverRandomBytes); $serverRandom.Dispose()
     $serverPassword = ([BitConverter]::ToString($serverRandomBytes)).Replace('-','').ToLowerInvariant()
-    $serverDatabaseCredential = New-Object System.Management.Automation.PSCredential('epoch',(ConvertTo-SecureString $serverPassword -AsPlainText -Force))
+    # Some bundled PowerShell hosts do not autoload Microsoft.PowerShell.Security.
+    # Build the SecureString directly so a clean data directory can start without
+    # relying on the optional ConvertTo-SecureString cmdlet.
+    $serverSecurePassword = New-Object System.Security.SecureString
+    foreach ($serverPasswordCharacter in $serverPassword.ToCharArray()) { $serverSecurePassword.AppendChar($serverPasswordCharacter) }
+    $serverSecurePassword.MakeReadOnly()
+    $serverDatabaseCredential = New-Object System.Management.Automation.PSCredential('epoch',$serverSecurePassword)
     $serverDatabaseCredential | Export-Clixml -LiteralPath $serverCredentialFile
 }
 $serverPassword = $serverDatabaseCredential.GetNetworkCredential().Password
