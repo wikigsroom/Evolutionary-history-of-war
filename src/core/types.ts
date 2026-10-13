@@ -4,7 +4,7 @@ export type Stance = 'cover' | 'rush' | 'retreat';
 export type ActiveItemId = 'war-drum' | 'smoke-bomb' | 'chrono-crate';
 export type Effects = Record<string, unknown>;
 export interface Named { id: string; name: string }
-export interface Era extends Named { hpAttackMultiplier: number; costMultiplier: number; incomeMultiplier: number; baseHp: number; nextEvolutionKnowledge: number | null }
+export interface Era extends Named { hpAttackMultiplier: number; hpMultiplier?: number; attackMultiplier?: number; costMultiplier: number; incomeMultiplier: number; baseHp: number; nextEvolutionKnowledge: number | null }
 export interface Fighter extends Named { hpBase: number; attackBase: number; armor: number; range: number; moveSpeed: number; attackPeriodSec: number; damageType: DamageType; energyResistance: number; weaponId: string }
 export interface Unit extends Fighter { eraId: string; role: string; windupSec: number; costBase: number; trainSec: number; heavy: boolean; bountyGold: number; killKnowledge: number; visual: string; special: Effects }
 export interface Hero extends Fighter { title: string; signatureSkillId: string; unlockMissionId: string | null; specializationIds: string[]; defaultCommonSkillIds: string[] }

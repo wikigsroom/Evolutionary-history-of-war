@@ -22,7 +22,8 @@
     "commandPerSec": 3,
     "commandMax": 100,
     "experienceFromOwnLossRatio": 0.65,
-    "experienceFromCombatOnly": true
+    "experienceFromCombatOnly": true,
+    "commanderDeathKnowledgeLossRatio": 0.2
   },
   "queue": {
     "unstartedCancelRefund": 1,
@@ -155,23 +156,26 @@
     {
       "id": "D01",
       "name": "轻松",
-      "decisionSec": 2,
-      "mistakeProbability": 0.2,
-      "incomeMultiplier": 1
+      "decisionSec": 2.8,
+      "mistakeProbability": 0.35,
+      "incomeMultiplier": 1.0,
+      "startingGoldMultiplier": 1.0
     },
     {
       "id": "D02",
       "name": "标准",
-      "decisionSec": 1,
-      "mistakeProbability": 0.08,
-      "incomeMultiplier": 1
+      "decisionSec": 1.6,
+      "mistakeProbability": 0.16,
+      "incomeMultiplier": 1.0,
+      "startingGoldMultiplier": 1.0
     },
     {
       "id": "D03",
       "name": "挑战",
       "decisionSec": 0.5,
       "mistakeProbability": 0.02,
-      "incomeMultiplier": 1
+      "incomeMultiplier": 1.65,
+      "startingGoldMultiplier": 1.5
     }
   ],
   "loadout": {

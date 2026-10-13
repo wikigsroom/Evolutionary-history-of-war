@@ -193,7 +193,9 @@ func spawn_x(side: int, content_id: String) -> float:
 
 func spawn_blocked(side: int, content_id: String) -> String:
 	if population(side) >= 29: return "人口已满"
-	return "出口堵塞" if not combat.space_free(spawn_x(side, content_id), float(db.profile(content_id)["radius"])) else ""
+	# A completed order may use the nearest legal gap in the lane.  Checking
+	# only the gate coordinate let an enemy body permanently seal the exit.
+	return "出口堵塞" if is_nan(combat.nearest_spawn_space(spawn_x(side, content_id), float(db.profile(content_id)["radius"]), -1, side)) else ""
 
 func spawn(side: int, content_id: String, era_id: String, kind: String = "unit", spawn_position: float = NAN) -> Dictionary:
 	var content = db.actor_content(content_id, era_id, kind)
@@ -392,11 +394,15 @@ func step_tick() -> void:
 		if not player["queue"].is_empty():
 			var order = player["queue"][0]
 			order["remaining"] = maxi(0, int(order["remaining"]) - 1)
-			if int(order["remaining"]) == 0 and spawn_blocked(side, order["unitId"]).is_empty():
+			var unit_radius = float(db.profile(order["unitId"])["radius"])
+			var legal_spawn = combat.nearest_spawn_space(spawn_x(side, order["unitId"]), unit_radius, -1, side)
+			if int(order["remaining"]) == 0 and population(side) < 29 and not is_nan(legal_spawn):
 				player["queue"].pop_front()
-				spawn(side, order["unitId"], order["eraId"])
-		if int(player["heroRespawnAt"]) > 0 and tick >= int(player["heroRespawnAt"]) and combat.space_free(spawn_x(side, player["loadout"]["heroId"]), float(db.profile(player["loadout"]["heroId"])["radius"])):
-			spawn(side, player["loadout"]["heroId"], player["eraId"], "hero")
+				spawn(side, order["unitId"], order["eraId"], "unit", legal_spawn)
+		var hero_radius = float(db.profile(player["loadout"]["heroId"])["radius"])
+		var hero_spawn = combat.nearest_spawn_space(spawn_x(side, player["loadout"]["heroId"]), hero_radius)
+		if int(player["heroRespawnAt"]) > 0 and tick >= int(player["heroRespawnAt"]) and not is_nan(hero_spawn):
+			spawn(side, player["loadout"]["heroId"], player["eraId"], "hero", hero_spawn)
 			player["heroRespawnAt"] = 0
 			player["stance"] = "cover"
 	combat.update_statuses()

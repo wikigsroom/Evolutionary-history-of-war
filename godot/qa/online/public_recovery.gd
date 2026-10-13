@@ -61,6 +61,8 @@ func run() -> void:
 	await first.surrender()
 	check(await wait_for(func():return first.finished and second.finished), "Both clients finish with one authoritative result after both faults")
 	await first.acknowledge_result(); await second.acknowledge_result()
+	check(first.activity.get("kind", "") != "match" and first.match_id.is_empty() and not first.finished and first.battle_state == null, "First seat acknowledgement clears terminal match projection")
+	check(second.activity.get("kind", "") != "match" and second.match_id.is_empty() and not second.finished and second.battle_state == null, "Second seat acknowledgement clears terminal match projection")
 	var file = FileAccess.open(directory + "public-native-recovery.json", FileAccess.WRITE)
 	file.store_string(JSON.stringify({"endpoint":EpochNetClient.DEFAULT_ENDPOINT,"checks":checks},"  ")); file.close()
 	quit(0 if checks.all(func(row):return row["passed"]) else 1)

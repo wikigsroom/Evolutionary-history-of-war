@@ -1,4 +1,4 @@
-import { catalog } from '../content/catalog';
+import { catalog, eraAttackMultiplier } from '../content/catalog';
 import { position, ticks, worldX } from './types';
 import type { Battle } from './battle';
 export const ageSpecials = {
@@ -14,7 +14,7 @@ export function updateAgeSpecials(battle: Battle) {
     const special = ageSpecials[strike.eraId as keyof typeof ageSpecials];
     const targets = battle.living(strike.side === 0 ? 1 : 0).filter(target => target.kind !== 'base' && Math.abs(target.x - position(strike.x)) <= position(special.radius)).sort((a, b) => Math.abs(a.x - position(strike.x)) - Math.abs(b.x - position(strike.x)) || a.id - b.id).slice(0, 6);
     const castId = battle.id();
-    for (const target of targets) battle.state.pendingHits.push({ sourceId: battle.base(strike.side).id, side: strike.side, targetId: target.id, raw: special.damage * catalog.eras[strike.eraId].hpAttackMultiplier, damageType: special.type, projectile: false, conductive: false, castId });
+    for (const target of targets) battle.state.pendingHits.push({ sourceId: battle.base(strike.side).id, side: strike.side, targetId: target.id, raw: special.damage * eraAttackMultiplier(catalog.eras[strike.eraId]), damageType: special.type, projectile: false, conductive: false, castId });
     battle.event('ageImpact', strike.x, strike.side, { text: strike.eraId, amount: special.radius });
     for (const target of targets) battle.event('ageTrail', worldX(target), strike.side, { text: strike.eraId, targetId: target.id });
     strike.remaining--; strike.due += ticks(.28);

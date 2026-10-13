@@ -1,16 +1,17 @@
-import { catalog, rules } from '../content/catalog';
+import { catalog, eraAttackMultiplier, rules } from '../content/catalog';
 import { clamp, position, ticks, value, worldX, type Entity, type Hit, type Side, type Status } from './types';
 import type { Battle } from './battle';
 import { fighterProfile } from './fighter-profiles';
-import { BODY_GAP, constrainedGoal, displace, grounded, legalContact, nearestSpace, settleExceptionalMove, spaceFree, spawnX } from './occupancy';
+import { BODY_GAP, constrainedGoal, displace, grounded, legalContact, nearestSpace, settleExceptionalMove, spaceFree, spawnSpaceFree, spawnX } from './occupancy';
 import { researchLevel } from './research';
 
 const magnitude = (entity: Entity, id: string) => Math.max(0,...entity.statuses.filter(item => item.id === id).map(item => item.magnitude));
 const distance = (left: Entity, right: Entity) => Math.abs(left.x-right.x)/100-left.radius-right.radius;
 const opponent = (side: Side) => (1-side) as Side;
 export function nearestEnemy(battle: Battle, entity: Entity): Entity | undefined {
-  const direction = entity.side === 0 ? 1 : -1;
-  return battle.living(opponent(entity.side)).filter(enemy => (enemy.x-entity.x)*direction >= -position(entity.radius+enemy.radius))
+  // A unit may spawn in a legal gap behind a gate blocker. Target the closest
+  // opposing body in either direction so it can turn and clear the lane.
+  return battle.living(opponent(entity.side))
     .sort((a,b) => Math.abs(a.x-entity.x)-Math.abs(b.x-entity.x) || a.id-b.id)[0];
 }
 
@@ -103,25 +104,34 @@ export function updateCombat(battle: Battle) {
       battle.event('rejoin', worldX(hero), hero.side, { targetId: hero.id });
     }
   }
-  // Normalize any stale/imported formation once per tick from the front body
-  // backwards. This preserves the front fighter's contact point while moving
-  // every rear body to the first legal slot, including the one-pixel rounding
-  // margin introduced by measured sprite footprints.
+  // Normal recruitment enters at the rear, so collision preserves production
+  // order. A stale overlap is repaired only when a legal gap exists.
   for (const side of [0,1] as Side[]) {
     const direction = side===0 ? 1 : -1;
-    const formation = battle.living(side).filter(entity => entity.kind!=='base' && grounded(entity) && entity.speed>0)
-      .sort((a,b)=>direction*(b.x-a.x) || a.bornTick-b.bornTick || a.id-b.id);
+    const formation = battle.living(side).filter(entity => entity.kind==='unit' && grounded(entity) && entity.speed>0)
+      .sort((a,b)=>a.bornTick-b.bornTick || a.id-b.id);
     for (let index=1;index<formation.length;index++) {
       const front=formation[index-1],rear=formation[index];
       const required=position(front.radius+rear.radius+BODY_GAP);
       if ((front.x-rear.x)*direction < required) {
-        rear.x=front.x-direction*required;rear.previousX=rear.x;rear.moveRemainder=0;
-        rear.yielding=false;delete rear.settlementPending;
+        const [min,max]=[position(rules.world.basePositions[0]+55+rear.radius+BODY_GAP),position(rules.world.basePositions[1]-55-rear.radius-BODY_GAP)];
+        const desired=front.x-direction*required;
+        if (desired>=min && desired<=max && spawnSpaceFree(battle.state,desired,rear.radius,rear.side,rear.id,true,front.id)) {
+          rear.x=desired;rear.previousX=rear.x;rear.moveRemainder=0;
+          rear.yielding=false;delete rear.settlementPending;
+        }
       }
     }
   }
   // Front bodies move first, so rear bodies can fill newly opened space this tick.
-  const actors = battle.living().sort((a, b) => a.side - b.side || (a.side === 0 ? b.x-a.x : a.x-b.x) || a.bornTick-b.bornTick || a.id-b.id);
+  const actors = battle.living().sort((a, b) => {
+    if (a.side !== b.side) return a.side - b.side;
+    const rank = (entity: Entity) => entity.kind === 'unit' ? 0 : entity.kind === 'hero' ? 1 : 2;
+    const rankDiff = rank(a) - rank(b);
+    if (rankDiff) return rankDiff;
+    if (a.kind === 'unit' && b.kind === 'unit') return a.bornTick-b.bornTick || a.id-b.id;
+    return (a.side === 0 ? b.x-a.x : a.x-b.x) || a.bornTick-b.bornTick || a.id-b.id;
+  });
   for (const entity of actors) {
     if (entity.kind === 'base') continue;
     const player = battle.state.sides[entity.side], direction = entity.side === 0 ? 1 : -1;
@@ -159,18 +169,19 @@ export function updateCombat(battle: Battle) {
     if (entity.statuses.some(status => status.id === 'ST09')) continue;
     const target = nearestEnemy(battle,entity);
     if(entity.kind==='hero' && player.stance==='cover'){
-      const front=battle.living(entity.side).filter(ally=>ally.kind==='unit').sort((a,b)=>direction*(b.x-a.x))[0];
-      if(front){
-        const desired=front.x-direction*position(entity.radius+front.radius+8);
-        if((entity.x-desired)*direction>0){
+      const soldiers=battle.living(entity.side).filter(ally=>ally.kind==='unit');
+      // The commander must stay behind the rear-most produced unit, and must
+      // also resolve imported/old snapshots where a unit already overlaps it.
+      const rear=soldiers.sort((a,b)=>direction*(a.x-b.x))[0];
+      if(rear){
+        const desired=rear.x-direction*position(entity.radius+rear.radius+8);
+        const overlaps=soldiers.some(ally=>Math.abs(ally.x-entity.x)<position(ally.radius+entity.radius+BODY_GAP)-1);
+        if((entity.x-desired)*direction>0 || overlaps){
           const gap=nearestSpace(battle.state,desired,entity.radius,entity.id);
-          if(gap!==undefined && (gap-front.x)*direction<0 || !target || distance(entity,target)>entity.range){
-            entity.releaseAt=0;entity.targetId=null;entity.yielding=true;
-            if(gap!==undefined && (gap-front.x)*direction<0){move(battle,entity,gap);if(entity.x===gap && spaceFree(battle.state,entity.x,entity.radius,entity.id))entity.yielding=false;}
-            else entity.phase='idle';
-            continue;
-          }
-          if(entity.yielding)settleExceptionalMove(battle.state,entity);
+          entity.releaseAt=0;entity.targetId=null;entity.yielding=true;
+          if(gap!==undefined){move(battle,entity,gap);if(entity.x===gap && spaceFree(battle.state,entity.x,entity.radius,entity.id))entity.yielding=false;}
+          else entity.phase='idle';
+          continue;
         }
         if(entity.yielding && spaceFree(battle.state,entity.x,entity.radius,entity.id))entity.yielding=false;
       }
@@ -187,13 +198,6 @@ export function updateCombat(battle: Battle) {
     }
     if (!target) { entity.phase = 'idle'; continue; }
     const desiredRange=entity.kind==='hero' && player.stance==='rush' && entity.range>=100 ? entity.range*.65 : entity.range;
-    // Support troops close behind the shield line instead of stopping at maximum
-    // range and leaving every following archer outside firing distance.
-    if(entity.kind==='unit' && entity.range>=100 && !fighterProfile(entity.contentId).overShoulder){
-      const formationRange=Math.max(80,entity.range*.55);
-      const closeGoal=constrainedGoal(battle.state,entity,target.x-direction*position(formationRange+entity.radius+target.radius-1));
-      if((closeGoal-entity.x)*direction>position(1)){move(battle,entity,closeGoal);continue;}
-    }
     if (distance(entity,target) <= desiredRange) {
       if (now >= entity.nextAttack && legalContact(battle.state, entity, target) && !entity.yielding) {
         if(entity.rushArmed){entity.rushArmed=false;entity.rushUntil=now+ticks(rules.evolutionRush.buffSec+value(battle.modifiers(entity.side),'rushBuffAddSec'));battle.event('rushContact',worldX(entity),entity.side,{targetId:entity.id});}
@@ -202,7 +206,8 @@ export function updateCombat(battle: Battle) {
       continue;
     }
     if (entity.speed === 0) continue;
-    let goal = target.x-direction*position(desiredRange+entity.radius+target.radius-1);
+    const travelDirection = Math.sign(target.x-entity.x) || direction;
+    let goal = target.x-travelDirection*position(desiredRange+entity.radius+target.radius-1);
     if (entity.kind === 'hero' && player.stance === 'cover') {
       const soldiers = battle.living(entity.side).filter(item => item.kind === 'unit');
       const front = soldiers.sort((a,b) => direction*(b.x-a.x))[0];
@@ -224,7 +229,7 @@ export function updateCombat(battle: Battle) {
       const target = battle.living(opponent(side)).filter(enemy => enemy.kind !== 'base' && Math.abs(enemy.x-base.x) <= position(turret.range+enemy.radius))
         .sort((a,b) => Math.abs(a.x-base.x)-Math.abs(b.x-base.x) || a.id-b.id)[0];
       if (!target) continue;
-      const raw = turret.attackBase*catalog.eras[turret.eraId].hpAttackMultiplier*(1+value(modifier,'turretAttackBonus')+researchLevel(battle.state.sides[side],'tower-attack')*.15);
+      const raw = turret.attackBase*eraAttackMultiplier(catalog.eras[turret.eraId])*(1+value(modifier,'turretAttackBonus')+researchLevel(battle.state.sides[side],'tower-attack')*.15);
       fire(battle,base,target,{ sourceId: instance.id, side, targetId: target.id, raw, damageType: turret.damageType, projectile: true },turret.mode === 'siege' ? 'W05' : 'W04',turret.splashRadius,turret.maxTargets);
       instance.nextAttack = now+ticks(turret.attackPeriodSec);
     }
@@ -328,7 +333,7 @@ export function applyHits(battle: Battle) {
       const spec = battle.specification(target.side);
       if (target.kind === 'hero' && value(spec,'shieldBreakDamageBase') && target.counterReadyAt <= battle.state.tick) {
         const enemy = nearestEnemy(battle,target);
-        if (enemy && distance(target,enemy) <= target.range+40) deferred.push({ sourceId: target.id, side: target.side, targetId: enemy.id, raw: value(spec,'shieldBreakDamageBase')*catalog.eras[target.eraId].hpAttackMultiplier, damageType: 'physical', projectile: false });
+        if (enemy && distance(target,enemy) <= target.range+40) deferred.push({ sourceId: target.id, side: target.side, targetId: enemy.id, raw: value(spec,'shieldBreakDamageBase')*eraAttackMultiplier(catalog.eras[target.eraId]), damageType: 'physical', projectile: false });
         target.counterReadyAt = battle.state.tick+ticks(value(spec,'internalCooldownSec'));
       }
     }

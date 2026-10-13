@@ -211,9 +211,34 @@ func _flush_loadout() -> void:
 func surrender() -> void:
 	await _change("POST", "/v1/matches/" + match_id + "/surrender", {"confirm":true})
 func acknowledge_result() -> void:
+	if match_id.is_empty():
+		return
 	var result = await _change("POST", "/v1/matches/" + match_id + "/ack-result", {})
 	if result.get("ok", false):
-		match_id = ""; pending.clear(); _save_session()
+		# The result view is a terminal projection.  Clear every match-local
+		# object after the authoritative acknowledgement so the lobby cannot
+		# resurrect the finished battle on its next activity poll.
+		activity_generation += 1
+		match_id = ""
+		pending.clear()
+		state_cache.clear()
+		chunks.clear()
+		seen_feedback.clear()
+		finished = false
+		syncing = false
+		resume_sent = false
+		next_seq = 1
+		retry_at = -1.0
+		connection_epoch = 0
+		if socket != null:
+			socket.close()
+			socket = null
+		if battle_state != null:
+			battle_state.queue_free()
+			battle_state = null
+		activity = {"kind":"", "id":""}
+		activity_changed.emit()
+		_save_session()
 
 func refresh_activity() -> void:
 	if not authenticated or busy or backgrounded: return

@@ -3,7 +3,7 @@ extends SceneTree
 var checks = []
 var failures = 0
 
-func _initialize() -> void: call_deferred("run")
+func _init() -> void: call_deferred("run")
 
 func expect(value: bool, label: String) -> void:
 	checks.append({"name":label,"passed":value})
@@ -17,7 +17,7 @@ func fixture(difficulty: String = "D02", era: String = "A1") -> GameModel:
 	return m
 
 func run() -> void:
-	for row in [["D01",0.8,0.85],["D02",1.25,1.35],["D03",1.5,1.65]]:
+	for row in [["D01",1.0,1.0],["D02",1.0,1.0],["D03",1.5,1.65]]:
 		for age in ["A1","A5","A10"]:
 			var m = fixture(row[0],age)
 			var ordinary_gold = float(m.db.rules["resources"]["startingGold"]) * float(m.db.era(age)["costMultiplier"])

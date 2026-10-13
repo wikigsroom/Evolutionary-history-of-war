@@ -47,13 +47,13 @@ describe('队列与时代',() => {
     expect(battle.state.sides[0].gold-before).toBe(33750);
     expect(battle.act({ type: 'cancel',side: 0,queueId: item.id }).ok).toBe(false);
   });
-  test('进化保留基地伤血，已付旧兵保持出生时代',() => {
+  test('进化回满基地并按时代成长，已付旧兵保持出生时代',() => {
     const battle = match();
     battle.base(0).hp = 1200;
     battle.act({ type: 'train',side: 0,unitId: 'U11' });
     battle.state.sides[0].knowledge = 160000;
     expect(battle.act({ type: 'evolve',side: 0 }).ok).toBe(true);
-    expect(battle.base(0).hp).toBe(1600);
+    expect(battle.base(0).hp).toBe(battle.base(0).maxHp);
     const tick = battle.state.tick; battle.step(100);
     expect(battle.state.tick).toBe(tick+100);
     battle.step(48);

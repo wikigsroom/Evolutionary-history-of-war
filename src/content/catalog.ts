@@ -30,4 +30,5 @@ export const missions = rawMissions as Mission[];
 export const builds = rawBuilds as Build[];
 export const enemies = rawEnemies as EnemyProfile[];
 export const catalog = { eras: index(eras), heroes: index(heroes), units: index(units), skills: index(skills), specializations: index(specializations), talents: index(talents), relics: index(relics), upgrades: index(upgrades), turrets: index(turrets), weapons: index(weapons), missions: index(missions), builds: index(builds), enemies: index(enemies) };
+export const eraAttackMultiplier = (era: { hpAttackMultiplier: number; attackMultiplier?: number }) => era.attackMultiplier ?? era.hpAttackMultiplier;
 export { rules, loot };

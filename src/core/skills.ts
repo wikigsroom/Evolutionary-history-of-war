@@ -1,4 +1,4 @@
-import { catalog, rules } from '../content/catalog';
+import { catalog, eraAttackMultiplier, rules } from '../content/catalog';
 import { fire } from './combat';
 import { clamp, position, ticks, value, worldX, type Action, type Entity, type Hit, type ScheduledSkill, type Side, type Status } from './types';
 import type { Battle } from './battle';
@@ -45,7 +45,7 @@ export function castSkill(battle: Battle, action: Extract<Action,{ type: 'cast' 
     hero.charge = { until: battle.state.tick+ticks(value(skill.effects,'chargeSec')),
       destination: clamp(hero.x+direction*position(value(skill.effects,'chargeDistance')+value(spec,'chargeRangeAdd')),position(120),position(1480)),
       hitIds: [], skillId: skill.id, distance: value(skill.effects,'chargeDistance'), castId: id,
-      raw: skill.damageBase*catalog.eras[player.eraId].hpAttackMultiplier*(1+clamp(value(modifiers,'skillPowerBonus')+value(spec,'signatureDamageBonus'),-.9,rules.caps.skillPowerBonus)),
+      raw: skill.damageBase*eraAttackMultiplier(catalog.eras[player.eraId])*(1+clamp(value(modifiers,'skillPowerBonus')+value(spec,'signatureDamageBonus'),-.9,rules.caps.skillPowerBonus)),
       knockback: value(skill.effects,'knockbackDistance')*value(spec,'knockbackMultiplier',1) };
     hero.releaseAt = 0;
     if (value(spec,'allyAttackBonus')) for (const ally of battle.living(action.side)) if (ally.kind !== 'base' && Math.abs(ally.x-hero.x) <= position(160)) ally.attackBuff = { until: battle.state.tick+ticks(value(spec,'durationSec')), bonus: value(spec,'allyAttackBonus') };
@@ -55,8 +55,8 @@ export function castSkill(battle: Battle, action: Extract<Action,{ type: 'cast' 
     const hp = Math.floor(Number(summon.hpBase)*era.hpAttackMultiplier*(1+value(spec,'summonHpBonus')));
     const entity: Entity = {
       ...structuredClone(hero), id: battle.id(), contentId: 'summon-H04', kind: 'summon', x: position(x), previousX: position(x), hp, maxHp: hp, radius: fighterProfile('summon-H04').radius,
-      attack: Number(summon.attackBase)*era.hpAttackMultiplier*(1+value(spec,'summonAttackBonus')), armor: Number(summon.armor), range: Number(summon.range),
-      baseAttack: Number(summon.attackBase)*era.hpAttackMultiplier, attackBonus: value(spec,'summonAttackBonus'),
+      attack: Number(summon.attackBase)*eraAttackMultiplier(era)*(1+value(spec,'summonAttackBonus')), armor: Number(summon.armor), range: Number(summon.range),
+      baseAttack: Number(summon.attackBase)*eraAttackMultiplier(era), attackBonus: value(spec,'summonAttackBonus'),
       period: ticks(Number(summon.attackPeriodSec)*(1+value(spec,'summonAttackPeriodBonus'))), windup: ticks(.2), speed: 0, moveRemainder: 0,
       weaponId: String(summon.weaponId), damageType: 'physical', statuses: [], shields: [], targetId: null, releaseAt: 0, nextAttack: battle.state.tick,
       phase: 'idle', bornTick: battle.state.tick, rushFirstHit: false, rushUntil: 0, charge: undefined, yielding: false,
@@ -67,7 +67,7 @@ export function castSkill(battle: Battle, action: Extract<Action,{ type: 'cast' 
     const scheduled: ScheduledSkill = { id, side: action.side, sourceId: hero.id, sourceSnapshot: structuredClone(hero), skillId: skill.id, x: target ? worldX(target) : x, targetId: target?.id,
       due: battle.state.tick+1, remaining: value(skill.effects,'burstCount',value(skill.effects,'shotCount',skill.id === 'HS05' ? 6 : 1)),
       spacing: ticks(value(skill.effects,'burstSpacingSec',value(skill.effects,'shotSpacingSec',skill.id === 'HS05' ? 1 : 0))),
-      eraMultiplier: catalog.eras[player.eraId].hpAttackMultiplier, visited: [] };
+      eraMultiplier: eraAttackMultiplier(catalog.eras[player.eraId]), visited: [] };
     if (skill.id === 'HS05') scheduled.due = battle.state.tick+30;
     if (skill.id === 'S05') scheduled.due = battle.state.tick+ticks(.5+(action.side === 1 && battle.state.config.missionId === 'M09' ? .4 : 0));
     battle.state.scheduledSkills.push(scheduled);

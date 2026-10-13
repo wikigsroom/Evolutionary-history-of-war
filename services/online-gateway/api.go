@@ -251,7 +251,11 @@ func (s *Server) ackResultHTTP(w http.ResponseWriter, r *http.Request, player st
 			return nil, invalid("MATCH_ACTIVE")
 		}
 		_, err = tx.Exec(r.Context(), "UPDATE online_players SET activity_kind='',activity_id='' WHERE id=$1 AND activity_id=$2", player, row.ID)
-		return Object{"ok": true}, err
+		if err != nil {
+			return nil, err
+		}
+		activity, err := s.activity(r.Context(), tx, player)
+		return Object{"ok": true, "activity": activity}, err
 	})
 }
 

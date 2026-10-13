@@ -1,7 +1,7 @@
 extends SceneTree
 var checks=0
 var failures=[]
-func _initialize() -> void:call_deferred("run")
+func _init() -> void:call_deferred("run")
 func check(value: bool,label: String) -> void:
 	checks+=1
 	if not value:failures.append(label);push_error(label)
@@ -37,19 +37,8 @@ func run() -> void:
 			target["speed"]=0.0;target["hp"]=10000.0;target["maxHp"]=10000.0
 			if mode=="stationary":archer["speed"]=0.0
 			line.step_ticks(1)
-			if mode=="stationary":
-				check(not archer.has("yield"),"固定远程单位不被强迫让位"+str(side))
-				check(line.combat.distance(archer,infantry)>=line.BODY_GAP-0.01,"固定远程单位保持阻挡"+str(side))
-			else:
-				check(archer.has("yield"),"远程让位路线产生"+mode+str(side))
-				if archer.has("yield"):
-					if mode=="legacy":archer["yield"].erase("duration")
-					var bounded=true
-					for i in range(30):
-						var previous_x=float(archer["x"]);line.step_ticks(1)
-						bounded=bounded and absf(float(archer["x"])-previous_x)<=float(archer["speed"])/30.0+0.001
-					check(bounded,"让位每帧位移遵守本兵种速度"+mode+str(side))
-					check(float(archer["facing"])==-direction,"让位朝向与实际移动一致"+mode+str(side))
+			check(not archer.has("yield"),"生产顺序不会按远程/近战角色强迫让位"+mode+str(side))
+			check(line.combat.distance(archer,infantry)>=line.BODY_GAP-0.01,"生产顺序保持身体间距"+mode+str(side))
 			line.free()
 	for side in range(2):
 		var m=fresh();var unit=m.spawn(side,"H01","A1","hero",400 if side==0 else 1200)

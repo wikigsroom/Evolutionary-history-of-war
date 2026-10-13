@@ -1,5 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { Battle } from '../src/core/battle';
+import { catalog } from '../src/content/catalog';
 import { type MatchConfig, type Side } from '../src/core/types';
 
 const loadout = { heroId: 'H01', specializationId: 'P011', commonSkillIds: ['S01', 'S02'], relicIds: [], talentIds: ['T11', 'T12'] };
@@ -39,9 +40,10 @@ describe('双方时代独立推进', () => {
   test('敌方只会因自己的经验进化，不能把进化传给我方', () => {
     const battle = match();
     battle.state.sides[0].knowledge = 0;
-    battle.state.sides[1].knowledge = 85_000;
+    battle.state.sides[1].knowledge = catalog.eras.A1.nextEvolutionKnowledge! * 1000;
 
-    battle.step(30);
+    // Standard AI now deliberates more slowly; allow one decision interval.
+    battle.step(60);
 
     expect(battle.state.sides.map(side => side.eraId)).toEqual(['A1', 'A2']);
     expect(battle.base(0).eraId).toBe('A1');

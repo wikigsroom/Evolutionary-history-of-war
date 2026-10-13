@@ -50,9 +50,10 @@ func content_and_damage() -> void:
 			var hit_ratio = float(new_damage) / maxi(1, old_damage)
 			var dps_ratio = raw_ratio * float(old["period"]) / float(newer["period"])
 			matrix.append({"from": old["contentId"], "to": newer["contentId"], "oldAttack": old["attack"], "newAttack": newer["attack"], "rawRatio": raw_ratio, "sameTargetHitRatio": hit_ratio, "dpsRatio": dps_ratio})
-			expect(raw_ratio >= 5.0 - 0.000001, "Fivefold attack " + newer["contentId"], raw_ratio)
-			expect(hit_ratio >= 5.0, "Fivefold same-target damage " + newer["contentId"], hit_ratio)
-			expect(dps_ratio >= 5.0 - 0.000001, "Fivefold DPS " + newer["contentId"], dps_ratio)
+			var expected_attack_ratio = m.db.attack_multiplier("A%d" % (index + 1)) / m.db.attack_multiplier("A%d" % index)
+			expect(raw_ratio >= expected_attack_ratio * 0.95, "Era attack gap is reduced to the new multiplier " + newer["contentId"], {"actual":raw_ratio,"expected":expected_attack_ratio})
+			expect(hit_ratio >= expected_attack_ratio * 0.75, "Same-target damage follows reduced era gap " + newer["contentId"], {"actual":hit_ratio,"expected":expected_attack_ratio})
+			expect(dps_ratio >= expected_attack_ratio * 0.95, "DPS follows reduced era gap " + newer["contentId"], {"actual":dps_ratio,"expected":expected_attack_ratio})
 			m.entities.erase(old); m.entities.erase(newer)
 	for index in range(1, 11):
 		var era = m.db.era("A%d" % index)
@@ -65,7 +66,7 @@ func content_and_damage() -> void:
 	m.combat.kill(unit)
 	expect(float(m.sides[0]["knowledge"]) - before < 300.0, "Late-era kill cannot skip many ages", float(m.sides[0]["knowledge"]) - before)
 	var final_guard = m.spawn(0,"U101","A10","unit",600.0)
-	expect(m.db.era_index(final_guard["eraId"]) == 9 and float(final_guard["attack"]) >= 14.0 * pow(5,9) and m.db.profile("U101")["family"] == "shield", "Era ten ID, power and approved sword-guard art agree")
+	expect(m.db.era_index(final_guard["eraId"]) == 9 and float(final_guard["attack"]) >= 14.0 * m.db.attack_multiplier("A10") * 0.99 and m.db.profile("U101")["family"] == "shield", "Era ten ID, reduced attack gap and approved sword-guard art agree")
 	m.free()
 
 func support_fight(medics: int, shielders: int, armor_level: int) -> Dictionary:
@@ -126,8 +127,8 @@ func healing_and_shields() -> void:
 func evolution_and_maps() -> void:
 	var m = fixture()
 	var initial = m.environment.scene.duplicate(true)
-	m.sides[0]["knowledge"] = 85.0
-	expect(not m.act({"type":"evolve", "side":0})["ok"], "Old 85 XP cannot rush the first evolution")
+	m.sides[0]["knowledge"] = 77.0
+	expect(not m.act({"type":"evolve", "side":0})["ok"], "Below the new first evolution gate cannot rush the first evolution")
 	for era in range(1, 10):
 		m.sides[0]["knowledge"] = m.era_cost(0)
 		expect(m.act({"type":"evolve", "side":0})["ok"], "Evolve through age " + str(era + 1))

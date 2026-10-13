@@ -1,11 +1,11 @@
-import { catalog, eras, rules } from '../content/catalog';
+import { catalog, eraAttackMultiplier, eras, rules } from '../content/catalog';
 import { effects, loadoutErrors } from './loadout';
 import { boundedRandom } from './rng';
 import { castSkill, updateSkills } from './skills';
 import { applyHits, updateCombat, updateProjectiles, updateStatuses } from './combat';
 import { decide } from './ai';
 import { fighterProfile } from './fighter-profiles';
-import { nearestSpace, spaceFree, spawnX } from './occupancy';
+import { nearestSpawnSpace, nearestSpace, spawnX } from './occupancy';
 import { attackResearch, researchById, researchCost, researchLevel } from './research';
 import { ageSpecials, updateAgeSpecials } from './age-specials';
 import { activeItems, defaultActiveItems, defaultItemCooldowns } from './active-items';
@@ -22,8 +22,9 @@ export class Battle {
     const mission = config.missionId ? catalog.missions[config.missionId] : undefined;
     const eraId = config.startingEraId ?? mission?.startingEraId ?? 'A1';
     if (!catalog.eras[eraId]) throw new Error('未知初始时代');
+    const difficulty = rules.difficulty.find(item => item.id === config.difficultyId) ?? rules.difficulty[1];
     const side = (index: Side): SideState => ({
-      eraId, gold: (index === 0 ? mission?.playerStartingGold ?? rules.resources.startingGold : mission?.enemyStartingGold ?? rules.resources.startingGold) * 1000,
+      eraId, gold: (index === 0 ? mission?.playerStartingGold ?? rules.resources.startingGold : mission?.enemyStartingGold ?? rules.resources.startingGold) * 1000 * (index === 1 ? Number(difficulty.startingGoldMultiplier ?? 1) : 1),
       knowledge: 0, command: rules.resources.startingCommand * 1000, remainders: [0,0,0],
       loadout: structuredClone(index === 0 ? config.loadout : config.enemyLoadout), stance: 'cover', stanceReadyAt: 0,
       queue: [], cooldowns: {}, upgrades: [], unlockedSlots: 1, turrets: [], heroRespawnAt: 0,
@@ -57,7 +58,7 @@ export class Battle {
   populationCap() { return rules.world.populationPerSide - (this.state.config.heroEnabled === false ? 0 : rules.world.heroReservedSlots); }
   spawnBlocked(side: Side, contentId: string) {
     if (this.population(side) >= this.populationCap()) return 'population' as const;
-    return spaceFree(this.state, spawnX(side, contentId), fighterProfile(contentId).radius) ? null : 'exit' as const;
+    return nearestSpawnSpace(this.state, spawnX(side, contentId), fighterProfile(contentId).radius, side) !== undefined ? null : 'exit' as const;
   }
   heavyUnlocked(side: Side) { return this.state.config.mode === 'trial' || researchLevel(this.state.sides[side], 'heavy-unlock') > 0; }
   modifiers(side: Side): Effects { const player = this.state.sides[side]; return this.state.config.heroEnabled===false ? {} : effects(player.loadout, player.upgrades); }
@@ -77,12 +78,12 @@ export class Battle {
   }
   skillRange(side:Side,skillId:string){const skill=catalog.skills[skillId];return skill.castRange+(skill.category==='common' ? value(this.modifiers(side),'commonCastRangeAdd') : 0);}
 
-  spawn(side: Side, contentId: string, eraId: string, kind: 'unit' | 'hero' = 'unit'): Entity {
+  spawn(side: Side, contentId: string, eraId: string, kind: 'unit' | 'hero' = 'unit', spawnPosition?: number): Entity {
     const content = (kind === 'hero' ? catalog.heroes[contentId] : catalog.units[contentId]) as Fighter;
     if (!content) throw new Error(`未知实体：${contentId}`);
     const unit = kind === 'unit' ? catalog.units[contentId] : undefined;
     const fighter: Entity = {
-      id: this.id(), contentId, side, kind, eraId, x: spawnX(side, contentId), hp: 1, maxHp: 1,
+      id: this.id(), contentId, side, kind, eraId, x: spawnPosition ?? spawnX(side, contentId), hp: 1, maxHp: 1,
       radius: fighterProfile(contentId).radius, attack: 0, baseAttack: 0, attackBonus: 0, armor: content.armor, energyResistance: content.energyResistance,
       range: content.range, speed: content.moveSpeed, moveRemainder: 0, weaponId: content.weaponId, damageType: content.damageType,
       heavy: unit?.heavy ?? false, role: unit?.role ?? 'hero', period: ticks(content.attackPeriodSec), windup: ticks(unit?.windupSec ?? .25),
@@ -112,7 +113,7 @@ export class Battle {
     entity.maxHp = Math.floor(content.hpBase * era.hpAttackMultiplier * (1 + hpBonus));
     entity.hp = clamp(Math.floor(entity.maxHp * ratio), entity.hp > 0 ? 1 : 0, entity.maxHp);
     const attackBonus = entity.kind === 'hero' ? value(spec,'heroAttackBonus') : value(modifier,'unitAttackBonus') + (entity.role === 'front' ? value(modifier,'frontAttackBonus') : 0);
-    entity.baseAttack = content.attackBase * era.hpAttackMultiplier;
+    entity.baseAttack = content.attackBase * eraAttackMultiplier(era);
     entity.attackBonus = clamp(attackBonus + (entity.kind === 'unit' ? attackResearch(this.state.sides[entity.side], entity.role) : 0),-.9,rules.caps.attackBonus);
     entity.attack = entity.baseAttack * (1 + entity.attackBonus);
     entity.range = content.range + value(spec,'rangeAdd') + (entity.role === 'ranged' ? value(modifier,'rangedRangeAdd') + researchLevel(this.state.sides[entity.side], 'ranged-range') * 25 : 0);
@@ -156,10 +157,14 @@ export class Battle {
       if (player.knowledge < era.nextEvolutionKnowledge * 1000) return fail('学识不足');
       player.knowledge -= era.nextEvolutionKnowledge * 1000;
       player.eraId = eras[eras.findIndex(item => item.id === player.eraId)+1].id;
-      const base = this.base(action.side), ratio = base.hp/base.maxHp;
+      const base = this.base(action.side);
       const bossBonus = action.side === 1 && state.config.missionId ? Number(catalog.missions[state.config.missionId].bossParameters?.enemyBaseHpBonus ?? 0) : 0;
       base.maxHp = Math.floor(catalog.eras[player.eraId].baseHp * (1+value(modifier,'baseHpBonus')+bossBonus));
-      base.hp = Math.floor(base.maxHp * ratio); base.eraId = player.eraId;
+      // An era transition is a strategic reset point: the capital's new
+      // generation of defenses comes online at full strength.  Unit HP keeps
+      // its existing snapshot semantics, while the capital is restored to
+      // the newly scaled maximum.
+      base.hp = base.maxHp; base.eraId = player.eraId;
       const hero = this.hero(action.side);
       if (hero) { hero.eraId = player.eraId; this.refresh(hero); }
       player.awaitingUpgrade = false;
@@ -260,17 +265,22 @@ export class Battle {
       for(const entity of state.entities)entity.previousX=entity.x;
       for (const side of [0,1] as Side[]) {
         const player = state.sides[side], era = catalog.eras[player.eraId], modifier = this.modifiers(side);
-        const rates = [rules.resources.goldPerSec*era.incomeMultiplier*(1+clamp(value(modifier,'incomeBonus'),0,rules.caps.incomeBonus)), 0, rules.resources.commandPerSec];
+        const difficultyIncome = side === 1 ? Number((rules.difficulty.find(item => item.id === state.config.difficultyId) ?? rules.difficulty[1]).incomeMultiplier ?? 1) : 1;
+        const rates = [rules.resources.goldPerSec*era.incomeMultiplier*difficultyIncome*(1+clamp(value(modifier,'incomeBonus'),0,rules.caps.incomeBonus)), 0, rules.resources.commandPerSec];
         const fields = ['gold','knowledge','command'] as const;
         rates.forEach((rate,i) => { player.remainders[i] += Math.round(rate*1000); const change = Math.floor(player.remainders[i]/30); player[fields[i]] += change; player.remainders[i] %= 30; });
         player.command = Math.min(player.command,this.commandMax(side));
-        if (state.config.heroEnabled !== false && !this.hero(side) && player.heroRespawnAt > 0 && state.tick >= player.heroRespawnAt && spaceFree(state, spawnX(side, player.loadout.heroId), fighterProfile(player.loadout.heroId).radius)) {
-          this.spawn(side,player.loadout.heroId,player.eraId,'hero'); player.heroRespawnAt = 0; player.stance = 'cover';
+        if (state.config.heroEnabled !== false && !this.hero(side) && player.heroRespawnAt > 0 && state.tick >= player.heroRespawnAt) {
+          const heroX = nearestSpawnSpace(state, spawnX(side, player.loadout.heroId), fighterProfile(player.loadout.heroId).radius, side, undefined, false);
+          if (heroX !== undefined) { this.spawn(side,player.loadout.heroId,player.eraId,'hero',heroX); player.heroRespawnAt = 0; player.stance = 'cover'; }
         }
         const item = player.queue[0];
         if (item) {
           item.remaining = Math.max(0,item.remaining-1);
-          if (item.remaining === 0 && !this.spawnBlocked(side, item.unitId)) { this.spawn(side,item.unitId,item.eraId); player.queue.shift(); }
+          if (item.remaining === 0) {
+            const spawnPosition = nearestSpawnSpace(state, spawnX(side, item.unitId), fighterProfile(item.unitId).radius, side);
+            if (spawnPosition !== undefined && !this.spawnBlocked(side, item.unitId)) { this.spawn(side,item.unitId,item.eraId,'unit',spawnPosition); player.queue.shift(); }
+          }
         }
       }
       updateStatuses(this); updateSkills(this); updateAgeSpecials(this); updateCombat(this); updateProjectiles(this);
@@ -328,7 +338,14 @@ export class Battle {
         this.state.sides[entity.side].knowledge += Math.floor(experience * .65)*1000;
         this.event('reward',worldX(entity),enemy,{ amount: gold });
       }
-    } else if (entity.kind === 'hero') this.state.sides[entity.side].heroRespawnAt = this.state.tick + ticks(rules.hero.respawnSec-value(this.modifiers(entity.side),'respawnReductionSec'));
+    } else if (entity.kind === 'hero') {
+      const upgradeCost = catalog.eras[entity.eraId].nextEvolutionKnowledge ?? 0;
+      const lossRatio = Number((rules.resources as Record<string, unknown>).commanderDeathKnowledgeLossRatio ?? 0.2);
+      const knowledgeLoss = Math.min(this.state.sides[entity.side].knowledge, upgradeCost * lossRatio * 1000);
+      this.state.sides[entity.side].knowledge = Math.max(0, this.state.sides[entity.side].knowledge - knowledgeLoss);
+      this.state.sides[entity.side].heroRespawnAt = this.state.tick + ticks(rules.hero.respawnSec-value(this.modifiers(entity.side),'respawnReductionSec'));
+      this.event('commanderLoss',worldX(entity),entity.side,{ targetId: entity.id, amount: knowledgeLoss });
+    }
     else if (entity.kind === 'summon' && naturalExpiry) this.state.sides[entity.side].gold += value(this.specification(entity.side),'naturalExpiryGold')*1000;
   }
   snapshot() { return structuredClone(this.state); }

@@ -34,12 +34,56 @@ func nearest_space(x: float, radius: float, ignored_id: int = -1) -> float:
 		if absf(candidate - x) < closest: best = candidate
 	return best
 
+func spawn_space_free(x: float, radius: float, ignored_id: int = -1, ignore_side: int = -1, ignore_own_units: bool = false, keep_own_id: int = -1) -> bool:
+	if x - radius < 139.0 or x + radius > 1461.0: return false
+	for unit in m.living(-1, false):
+		if int(unit["id"]) == ignored_id: continue
+		if ignore_own_units and int(unit["side"]) == ignore_side and unit["kind"] == "unit" and int(unit["id"]) != keep_own_id: continue
+		if absf(x - float(unit["x"])) < radius + float(unit["radius"]) + m.BODY_GAP - 0.01: return false
+	return true
+
+func nearest_spawn_space(x: float, radius: float, ignored_id: int = -1, side: int = -1) -> float:
+	x = clampf(x, 139.0 + radius, 1461.0 - radius)
+	var lower = 139.0 + radius
+	var upper = 1461.0 - radius
+	if side >= 0:
+		for soldier in m.living(side, false):
+			if soldier["kind"] != "unit" or int(soldier["id"]) == ignored_id: continue
+			var gap = float(soldier["radius"]) + radius + m.BODY_GAP
+			if side == 0: upper = minf(upper, float(soldier["x"]) - gap)
+			else: lower = maxf(lower, float(soldier["x"]) + gap)
+	# When the production lane is full, keep the completed order queued. Falling
+	# back to the front of the line would reverse production order and create
+	# overlapping bodies once the formation pass tries to restore the line.
+	if lower > upper: return NAN
+	x = clampf(x, lower, upper)
+	if spawn_space_free(x, radius, ignored_id): return x
+	var blockers = m.living(-1, false).filter(func(u): return int(u["id"]) != ignored_id)
+	blockers.sort_custom(func(a, b): return float(a["x"]) - float(a["radius"]) < float(b["x"]) - float(b["radius"]))
+	var cursor = lower
+	var limit = upper
+	var best = NAN
+	var closest = INF
+	for unit in blockers:
+		var left = float(unit["x"]) - float(unit["radius"]) - radius - m.BODY_GAP
+		if left >= cursor - 0.001:
+			var candidate = clampf(x, cursor, minf(left, limit))
+			if absf(candidate - x) < closest: best = candidate; closest = absf(candidate - x)
+		cursor = maxf(cursor, float(unit["x"]) + float(unit["radius"]) + radius + m.BODY_GAP)
+		if cursor > limit: break
+	if cursor <= limit:
+		var candidate = clampf(x, cursor, limit)
+		if absf(candidate - x) < closest: best = candidate
+	return best
+
 func constrained_x(unit: Dictionary, destination: float) -> float:
 	var origin = float(unit["x"])
 	var result = clampf(destination, 139.0 + float(unit["radius"]), 1461.0 - float(unit["radius"]))
 	var direction = signf(result - origin)
 	for other in grounded():
-		if other["id"] == unit["id"] or (float(other["x"]) - origin) * direction <= 0.0: continue
+		# A covering commander is a rear-line body. Let a newly produced unit
+		# pass its old position so the commander cannot seal the exit.
+		if other["id"] == unit["id"] or (unit["kind"] == "unit" and other["kind"] == "hero" and other["side"] == unit["side"] and m.sides[int(unit["side"])]["stance"] == "cover") or (float(other["x"]) - origin) * direction <= 0.0: continue
 		var boundary = float(other["x"]) - direction * (float(other["radius"]) + float(unit["radius"]) + m.BODY_GAP)
 		if direction > 0.0: result = minf(result, maxf(origin, boundary))
 		else: result = maxf(result, minf(origin, boundary))
@@ -49,11 +93,9 @@ func distance(a: Dictionary, b: Dictionary) -> float:
 	return absf(float(a["x"]) - float(b["x"])) - float(a["radius"]) - float(b["radius"])
 
 func nearest_enemy(unit: Dictionary) -> Dictionary:
-	var direction = 1.0 if int(unit["side"]) == 0 else -1.0
 	var closest = INF
 	var result = {}
 	for candidate in m.living(1 - int(unit["side"])):
-		if (float(candidate["x"]) - float(unit["x"])) * direction < -float(candidate["radius"]) - float(unit["radius"]): continue
 		var gap = distance(unit, candidate)
 		if gap < closest - 0.001 or (absf(gap - closest) <= 0.001 and (result.is_empty() or int(candidate["id"]) < int(result["id"]))):
 			result = candidate; closest = gap
@@ -123,9 +165,30 @@ func update_statuses() -> void:
 				m.abilities.add_shield(ally, float(special["auraShieldRatio"]) * generation_factor, 4.0, true)
 
 func update_units() -> void:
+	# Unit production order is the lane order. Roles no longer move ranged
+	# units behind melee units; commanders retain their independent cover lane.
+	for side in [0, 1]:
+		var lane_direction = 1.0 if side == 0 else -1.0
+		var formation = m.living(side, false).filter(func(u): return u["kind"] == "unit" and not u.has("charge") and not u.has("yield") and float(u["speed"]) > 0.0)
+		formation.sort_custom(func(a, b): return int(a.get("bornTick", 0)) < int(b.get("bornTick", 0)) if int(a.get("bornTick", 0)) != int(b.get("bornTick", 0)) else int(a["id"]) < int(b["id"]))
+		for index in range(1, formation.size()):
+			var front = formation[index - 1]
+			var rear = formation[index]
+			var required = float(front["radius"]) + float(rear["radius"]) + m.BODY_GAP
+			if (float(front["x"]) - float(rear["x"])) * lane_direction < required:
+				var target_x = float(front["x"]) - lane_direction * required
+				if target_x >= 139.0 + float(rear["radius"]) and target_x <= 1461.0 - float(rear["radius"]) and spawn_space_free(target_x, float(rear["radius"]), int(rear["id"]), int(rear["side"]), true, int(front["id"])):
+					rear["x"] = target_x
+					rear["previousX"] = rear["x"]
+					rear["runDistance"] = float(rear.get("runDistance", 0.0))
 	var fighters = m.living(-1, false)
 	fighters.sort_custom(func(a, b):
 		if a["side"] != b["side"]: return int(a["side"]) < int(b["side"])
+		var a_rank = 0 if a["kind"] == "unit" else (1 if a["kind"] == "hero" else 2)
+		var b_rank = 0 if b["kind"] == "unit" else (1 if b["kind"] == "hero" else 2)
+		if a_rank != b_rank: return a_rank < b_rank
+		if a["kind"] == "unit" and b["kind"] == "unit":
+			return int(a.get("bornTick", 0)) < int(b.get("bornTick", 0)) if int(a.get("bornTick", 0)) != int(b.get("bornTick", 0)) else int(a["id"]) < int(b["id"])
 		if absf(float(a["x"]) - float(b["x"])) < 0.001: return int(a["id"]) < int(b["id"])
 		return float(a["x"]) > float(b["x"]) if a["side"] == 0 else float(a["x"]) < float(b["x"]))
 	for unit in fighters:
@@ -145,13 +208,17 @@ func update_units() -> void:
 			continue
 		if unit["kind"] == "hero" and m.sides[int(unit["side"])]["stance"] == "cover":
 			var direction = 1.0 if unit["side"] == 0 else -1.0
-			var allies = m.living(int(unit["side"]), false).filter(func(u): return u["kind"] == "unit" and float(u["range"]) < 100.0 and not u.has("yield"))
-			allies.sort_custom(func(a, b): return float(a["x"]) > float(b["x"]) if unit["side"] == 0 else float(a["x"]) < float(b["x"]))
+			var allies = m.living(int(unit["side"]), false).filter(func(u): return u["kind"] == "unit")
+			allies.sort_custom(func(a, b): return (float(a["x"]) - float(b["x"])) * direction < 0.0)
 			if not allies.is_empty():
-				var front = allies[0]
-				var rear = float(front["x"]) - direction * (float(unit["radius"]) + float(front["radius"]) + 9.0)
-				if (float(unit["x"]) - float(front["x"])) * direction > -float(unit["radius"]) and space_free(rear, float(unit["radius"]), int(unit["id"])):
-					unit["yield"] = {"from": unit["x"], "to": rear, "at": m.tick, "duration": yield_ticks(unit, float(unit["x"]), rear)}; unit["releaseAt"] = -1; continue
+				var rear_unit = allies[0]
+				var rear = float(rear_unit["x"]) - direction * (float(unit["radius"]) + float(rear_unit["radius"]) + 9.0)
+				var overlaps = allies.any(func(ally): return absf(float(ally["x"]) - float(unit["x"])) < float(ally["radius"]) + float(unit["radius"]) + m.BODY_GAP - 0.01)
+				if (float(unit["x"]) - rear) * direction > 0.0 or overlaps:
+					var gap = nearest_space(rear, float(unit["radius"]), int(unit["id"]))
+					unit["releaseAt"] = -1
+					if not is_nan(gap): unit["yield"] = {"from": unit["x"], "to": gap, "at": m.tick, "duration": yield_ticks(unit, float(unit["x"]), gap)}; continue
+					unit["phase"] = "idle"
 		if m.tick < int(unit["staggerUntil"]): unit["phase"] = "idle"; continue
 		if unit["kind"] == "hero" and m.sides[int(unit["side"])]["stance"] == "retreat":
 			unit["releaseAt"] = -1
@@ -190,19 +257,14 @@ func update_units() -> void:
 		if unit.get("rushArmed", false):
 			unit["rushArmed"] = false
 			unit["rushUntil"] = m.tick + ceili((8.0 + float(m.modifiers(int(unit["side"])).get("rushBuffAddSec", 0.0))) * 30.0)
-		var desired = float(unit["x"]) + direction * minf(movement, maxf(0.0, distance(unit, target) - float(unit["range"]) + 1.0))
+		# A unit that has crossed a gate blocker must walk toward the actual
+		# target; using only the side direction could leave it idle forever.
+		var travel_direction = signf(float(target["x"]) - float(unit["x"]))
+		if absf(travel_direction) < 0.1: travel_direction = direction
+		var desired = float(unit["x"]) + travel_direction * minf(movement, maxf(0.0, distance(unit, target) - float(unit["range"]) + 1.0))
 		move_actor(unit, constrained_x(unit, desired))
 		var moved = absf(float(unit["x"]) - float(unit["previousX"]))
 		unit["phase"] = "walk" if moved > 0.01 else "idle"
-		# Support soldiers deliberately step into a rear rank to let short weapons reach the front.
-		if moved <= 0.01 and float(unit["range"]) < 100.0:
-			for ally in grounded():
-				if ally["side"] != unit["side"] or ally["id"] == unit["id"] or float(ally["range"]) < 100.0 or float(ally["speed"]) <= 0.0: continue
-				if (float(ally["x"]) - float(unit["x"])) * direction < 0.0 or distance(unit, ally) > m.BODY_GAP + 2.0: continue
-				var rear = float(unit["x"]) - direction * (float(unit["radius"]) + float(ally["radius"]) + m.BODY_GAP)
-				if space_free(rear, float(ally["radius"]), int(ally["id"])):
-					ally["yield"] = {"from": ally["x"], "to": rear, "at": m.tick, "duration": yield_ticks(ally, float(ally["x"]), rear)}; ally["releaseAt"] = -1
-				break
 
 func release(source: Dictionary, target: Dictionary) -> void:
 	var side = int(source["side"])
@@ -262,7 +324,7 @@ func update_turrets() -> void:
 			targets.sort_custom(func(a, b): return absf(float(a["x"]) - m.BASE_POSITIONS[side]) < absf(float(b["x"]) - m.BASE_POSITIONS[side]))
 			var weapon = "W05" if row["mode"] == "siege" else "W04"
 			var source = {"id": tower["id"], "contentId": tower["contentId"], "side": side, "x": m.BASE_POSITIONS[side], "kind": "turret", "slot": tower["slot"], "weaponId": weapon, "eraId": row["eraId"], "role": "turret"}
-			var damage = float(row["attackBase"]) * float(m.db.era(row["eraId"])["hpAttackMultiplier"]) * (1.0 + clampf(float(m.modifiers(side).get("turretAttackBonus", 0.0)) + m.research_level(side, "tower-attack") * 0.15, 0.0, 0.3))
+			var damage = float(row["attackBase"]) * m.db.attack_multiplier(row["eraId"]) * (1.0 + clampf(float(m.modifiers(side).get("turretAttackBonus", 0.0)) + m.research_level(side, "tower-attack") * 0.15, 0.0, 0.3))
 			fire(source, targets[0], damage, row["damageType"], {"weaponId": weapon, "splashRadius": row["splashRadius"], "maxTargets": row["maxTargets"], "canDamageBase": false})
 			tower["nextAttack"] = m.tick + ceili(float(row["attackPeriodSec"]) * 30)
 
@@ -366,7 +428,7 @@ func apply_hits() -> void:
 			var spec = m.specification(int(target["side"]))
 			if target["kind"] == "hero" and spec.has("shieldBreakDamageBase") and m.tick >= int(target["counterReadyAt"]):
 				target["counterReadyAt"] = m.tick + 240
-				m.scheduled.append({"due": m.tick + 1, "kind": "counter", "source": target.duplicate(true), "x": target["x"], "damage": float(spec["shieldBreakDamageBase"]) * float(m.db.era(target["eraId"])["hpAttackMultiplier"])})
+				m.scheduled.append({"due": m.tick + 1, "kind": "counter", "source": target.duplicate(true), "x": target["x"], "damage": float(spec["shieldBreakDamageBase"]) * m.db.attack_multiplier(target["eraId"])})
 		if target["kind"] != "base":
 			for effect in extra.get("statuses", []): delayed_statuses.append({"target":target,"effect":effect})
 			if extra.has("suppressionMagnitude"): m.abilities.add_status(target, "ST02", float(extra.get("suppressionDurationSec", 4.0)), {"suppression": float(extra["suppressionMagnitude"])})
@@ -413,5 +475,11 @@ func kill(unit: Dictionary, natural: bool = false) -> void:
 			m.sides[1 - side]["knowledge"] = float(m.sides[1 - side]["knowledge"]) + experience
 			m.sides[side]["knowledge"] = float(m.sides[side]["knowledge"]) + floori(experience * 0.65)
 			m.emit_event("reward", float(unit["x"]), 1 - side, {"amount": bounty, "xp": experience})
-	elif unit["kind"] == "hero": m.sides[side]["heroRespawnAt"] = m.tick + ceili((25.0 - float(m.modifiers(side).get("respawnReductionSec", 0.0))) * 30.0)
+	elif unit["kind"] == "hero":
+		var loss_ratio = float(m.db.rules.get("resources", {}).get("commanderDeathKnowledgeLossRatio", 0.2))
+		var upgrade_cost = m.era_cost(side)
+		var knowledge_loss = minf(float(m.sides[side]["knowledge"]), upgrade_cost * loss_ratio)
+		m.sides[side]["knowledge"] = maxf(0.0, float(m.sides[side]["knowledge"]) - knowledge_loss)
+		m.sides[side]["heroRespawnAt"] = m.tick + ceili((25.0 - float(m.modifiers(side).get("respawnReductionSec", 0.0))) * 30.0)
+		m.emit_event("commanderLoss", float(unit["x"]), side, {"targetId": unit["id"], "amount": knowledge_loss})
 	elif unit["kind"] == "summon" and natural: m.sides[side]["gold"] = float(m.sides[side]["gold"]) + float(m.specification(side).get("naturalExpiryGold", 0.0))

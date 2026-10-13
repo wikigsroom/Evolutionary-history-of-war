@@ -22,13 +22,42 @@ export function nearestSpace(state: BattleState, x: number, radius: number, exce
   }
   return candidates.filter(candidate => spaceFree(state, candidate, radius, except)).sort((a, b) => Math.abs(a - x) - Math.abs(b - x) || a - b)[0];
 }
+// Spawn placement must include bodies that are currently yielding or charging:
+// those bodies still occupy pixels even though movement collision treats them
+// as transient. Without this distinction a newly completed order could appear
+// inside a withdrawing commander and create a permanent overlap.
+export function spawnSpaceFree(state: BattleState, x: number, radius: number, side: Side, except?: number, ignoreOwnUnits = false, keepOwnUnit?: number) {
+  const [min, max] = bounds(radius);
+  return x >= min && x <= max && state.entities.every(other => !other.hp || other.kind === 'base' || other.garrisoned || other.id === except || (ignoreOwnUnits && other.side === side && other.kind === 'unit' && other.id !== keepOwnUnit) || Math.abs(other.x - x) >= position(radius + other.radius + BODY_GAP));
+}
+export function nearestSpawnSpace(state: BattleState, x: number, radius: number, side: Side, except?: number, keepProductionOrder = true): number | undefined {
+  let [min, max] = bounds(radius);
+  // New soldiers enter behind every surviving soldier. A protected space
+  // inside their own capital remains usable when an enemy reaches the gate.
+  if (keepProductionOrder) for (const other of state.entities) {
+    if (other.hp <= 0 || other.side !== side || other.kind !== 'unit' || other.garrisoned || other.id === except) continue;
+    if (side === 0) max = Math.min(max, other.x - position(radius + other.radius + BODY_GAP));
+    else min = Math.max(min, other.x + position(radius + other.radius + BODY_GAP));
+  }
+  // When the production lane is full, keep the completed order queued. Falling
+  // back to the front of the line would reverse production order and create
+  // overlapping bodies once the formation pass tries to restore the line.
+  if (min > max) return undefined;
+  const candidates = [clamp(x, min, max), min, max];
+  for (const other of state.entities.filter(entity => entity.hp > 0 && entity.kind !== 'base' && !entity.garrisoned)) if (other.id !== except) {
+    candidates.push(other.x - position(radius + other.radius + BODY_GAP), other.x + position(radius + other.radius + BODY_GAP));
+  }
+  return candidates.filter(candidate => candidate >= min && candidate <= max && spawnSpaceFree(state, candidate, radius, side, except)).sort((a, b) => Math.abs(a - x) - Math.abs(b - x) || a - b)[0];
+}
 export function constrainedGoal(state: BattleState, entity: Entity, goal: number): number {
   const [min, max] = bounds(entity.radius);
   goal = clamp(goal, min, max);
   if (entity.yielding || entity.charge) return goal;
   const direction = Math.sign(goal - entity.x);
   for (const other of state.entities) {
-    if (!grounded(other) || other.id === entity.id || (other.x - entity.x) * direction <= 0) continue;
+    // A covering commander is a rear-line body. Let a newly produced unit
+    // pass its old position so the commander cannot seal the recruitment lane.
+    if (!grounded(other) || other.id === entity.id || (entity.kind === 'unit' && other.kind === 'hero' && other.side === entity.side && state.sides[entity.side].stance === 'cover') || (other.x - entity.x) * direction <= 0) continue;
     const stop = other.x - direction * position(entity.radius + other.radius + BODY_GAP);
     goal = direction > 0 ? Math.min(goal, Math.max(entity.x, stop)) : Math.max(goal, Math.min(entity.x, stop));
   }

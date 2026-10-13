@@ -189,7 +189,6 @@ func _encyclopedia_cards(parent: Control) -> void:
 		var panel=_panel(row);panel.custom_minimum_size.x=221;var box=VBoxContainer.new();box.add_theme_constant_override("separation",13);panel.add_child(box)
 		var art=TextureRect.new();art.texture=PixelTheme.texture("res://assets/ui/units/"+unit["id"]+".png");art.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;art.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;art.custom_minimum_size.y=140;box.add_child(art)
 		_text(box,unit["name"],22,PixelTheme.AMBER)
-		var multiplier=float(store.db.era(encyclopedia_era)["hpAttackMultiplier"])
 		_text(box,"%s\n生命 %s · 攻击 %s\n射程 %d · 攻速 %.1fs"%[EpochData.ROLES.get(unit["role"],"特种"),PixelTheme.number(float(unit["hpBase"])*store.db.hp_multiplier(encyclopedia_era)),PixelTheme.number(float(unit["attackBase"])*store.db.attack_multiplier(encyclopedia_era)),int(unit["range"]),float(unit["attackPeriodSec"])],15)
 		_text(box,unit.get("special",{}).get("auraLabel","需研究开放重型军团" if unit["heavy"] else "盾兵挡住战线，远程在后排输出"),14,PixelTheme.MUTED)
 func _settings() -> void:

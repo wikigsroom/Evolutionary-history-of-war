@@ -114,9 +114,11 @@ func run() -> void:
 	check(not view.target_action.is_empty() and m.sides[0]["activeItems"]["smoke-bomb"]==2,"取消的触摸手势不施放道具")
 	await click(view.target_cancel,true);check(view.target_action.is_empty(),"触屏返回按钮取消选点")
 	await click(view.unit_cards[0]);var pending=m.sides[0]["queue"][0];pending["remaining"]=0
-	var blocker=m.spawn(0,"U11","A1","unit",m.spawn_x(0,"U11"));blocker["speed"]=0;await settle()
-	check(view.training_queue.slots[0].blocked and view.queue_label.text=="出口堵塞","完工阻挡显示警示与满进度")
-	await capture("04-queue-blocked")
+	var blocker=m.spawn(1,"U11","A1","unit",m.spawn_x(0,"U11"));blocker["speed"]=0;await settle()
+	check(not view.training_queue.slots[0].blocked and m.sides[0]["queue"].is_empty(),"完工订单绕开敌方营门占位并立即出营")
+	await capture("04-queue-gap-spawn")
+	# Put a fresh order in the queue so the cancellation interaction remains covered.
+	await click(view.unit_cards[0]);await settle()
 	await click(view.training_queue.slots[0]);check(m.paused and is_instance_valid(button(view,"取消")),"点击队列图标打开取消面板")
 	await click(button(view,"取消"));check(m.sides[0]["queue"].is_empty(),"图标取消操作实际移除订单")
 	view.go_back();await settle()

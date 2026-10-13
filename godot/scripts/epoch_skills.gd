@@ -318,7 +318,7 @@ func resolve_skill(event: Dictionary, field_tick: bool = false) -> void:
 		if skill_id == "S04": extra["statuses"] = [{"id": "ST01", "duration": 4.0, "data": {"armorBreak": 0.25}}]
 		elif skill_id == "S05": extra["brokenArmorBonus"] = 0.2
 		elif skill_id == "S06": extra["statuses"] = [{"id": "ST03", "duration": 3.0, "data": {"slow": 0.3}}, {"id": "ST05", "duration": 6.0, "data": {}}]
-		elif skill_id == "S08": extra["statuses"] = [{"id": "ST06", "duration": 4.0 + float(mods.get("burnDurationAddSec", 0.0)), "data": {"damage": 12.0 * float(m.db.era(source["eraId"])["hpAttackMultiplier"]), "nextTick": m.tick + 30, "source": source.duplicate(true)}}]
+		elif skill_id == "S08": extra["statuses"] = [{"id": "ST06", "duration": 4.0 + float(mods.get("burnDurationAddSec", 0.0)), "data": {"damage": 12.0 * m.db.attack_multiplier(source["eraId"]), "nextTick": m.tick + 30, "source": source.duplicate(true)}}]
 		elif skill_id == "HS05":
 			extra["statuses"] = [{"id": "ST03", "duration": 1.1, "data": {"slow": float(spec.get("signatureSlowMagnitude", variant.get("fieldSlow", 0.18)))}}]
 			if spec.get("signatureAddsConductive", false): extra["statuses"].append({"id": "ST05", "duration": 6.0, "data": {}})
@@ -337,7 +337,7 @@ func resolve_skill(event: Dictionary, field_tick: bool = false) -> void:
 				details["weaponId"] = variant.get("projectileWeapon", "W01") if skill_id == "HS02" else "W04"; details["pierceTargets"] = int(spec.get("pierceTargets", variant.get("pierceTargets", 1))) if skill_id == "HS02" else 1
 				m.combat.fire(source, target, raw, skill["damageType"], details)
 			else: m.combat.hit(source, target, raw * (pow(0.7, i) if skill_id == "S07" else 1.0), skill["damageType"], details)
-		if skill_id == "S08": m.fields.append({"id": event["castId"], "kind": "burn", "x": x, "side": side, "radius": 75.0, "until": m.tick + 120, "source": source, "duration": 4.0 + float(mods.get("burnDurationAddSec", 0.0)), "damage": 12.0 * float(m.db.era(source["eraId"])["hpAttackMultiplier"]), "hitIds": affected.map(func(t): return t["id"])})
+		if skill_id == "S08": m.fields.append({"id": event["castId"], "kind": "burn", "x": x, "side": side, "radius": 75.0, "until": m.tick + 120, "source": source, "duration": 4.0 + float(mods.get("burnDurationAddSec", 0.0)), "damage": 12.0 * m.db.attack_multiplier(source["eraId"]), "hitIds": affected.map(func(t): return t["id"])})
 		if skill_id == "HS05" and affected.size() >= 2 and spec.has("refundCommandOnTwoHits") and not event.get("refunded", false):
 			m.sides[side]["command"] = minf(m.command_max(side), float(m.sides[side]["command"]) + 8.0); event["refunded"] = true
 		if skill_id in ["S03", "HS02"] and int(event["pulse"]) + 1 < (int(variant.get("pulses", 2)) if skill_id == "HS02" else 3):

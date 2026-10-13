@@ -142,8 +142,8 @@ func _refresh_hud() -> void:
 		card.title=row["name"];card.art_path="res://assets/ui/units/"+row["id"]+".png";card.value=str(model.unit_cost(0,row["id"]))
 		card.locked=bool(row["heavy"]) and not model.heavy_unlocked(0)
 		card.disabled=input_locked or ((float(player["gold"])<model.unit_cost(0,row["id"]) or player["queue"].size()>=5 or model.winner!=-1) and not card.locked)
-		var multiplier=float(model.db.era(row["eraId"])["hpAttackMultiplier"])
-		card.tooltip_text="%s · %s\n生命 %s / 攻击 %s / 射程 %d\n%s" % [row["name"],EpochData.ROLES.get(row["role"],"特种"),PixelTheme.number(float(row["hpBase"])*multiplier),PixelTheme.number(float(row["attackBase"])*multiplier),int(row["range"]),"先研究重型军团" if card.locked else row.get("special",{}).get("auraLabel","点击招募，按队列依次出营")]
+		var hp_multiplier=float(model.db.hp_multiplier(row["eraId"]));var attack_multiplier=float(model.db.attack_multiplier(row["eraId"]))
+		card.tooltip_text="%s · %s\n生命 %s / 攻击 %s / 射程 %d\n%s" % [row["name"],EpochData.ROLES.get(row["role"],"特种"),PixelTheme.number(float(row["hpBase"])*hp_multiplier),PixelTheme.number(float(row["attackBase"])*attack_multiplier),int(row["range"]),"先研究重型军团" if card.locked else row.get("special",{}).get("auraLabel","点击招募，按队列依次出营")]
 		card.update_visual()
 	training_queue.refresh(model)
 	for id in item_cards.keys():

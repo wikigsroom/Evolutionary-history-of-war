@@ -29,13 +29,14 @@ describe('真实阵线与接敌',()=>{
     expect(front.targetId).toBe(target.id);expect(spear.targetId).toBe(target.id);
     expect(ranged.every(e=>e.targetId===target.id)).toBe(true);assertBodies(battle);
   });
-  test('训练完成与出口可用分别判断，堵塞时保留订单与出生时代',()=>{
-    const battle=game(),door=place(battle,0,'U11',spawnX(0,'U11')/100);door.speed=0;
+  test('训练完成与出口可用分别判断，敌方营门占位不冻结我方订单',()=>{
+    const battle=game(),door=place(battle,1,'U11',spawnX(0,'U11')/100);door.speed=0;
     expect(battle.act({type:'train',side:0,unitId:'U11'}).ok).toBe(true);battle.step(ticks(2));
-    expect(battle.state.sides[0].queue[0].remaining).toBe(0);expect(battle.spawnBlocked(0,'U11')).toBe('exit');
-    battle.state.sides[0].knowledge=100000;expect(battle.act({type:'evolve',side:0}).ok).toBe(true);
-    battle.kill(door);battle.step();
-    expect(battle.state.sides[0].queue).toHaveLength(0);expect(battle.living(0).find(e=>e.kind==='unit')?.eraId).toBe('A1');assertBodies(battle);
+    // An enemy gate body must not freeze a completed order: the producer can
+    // use the next legal gap in the lane and preserve the order's birth era.
+    expect(battle.state.sides[0].queue).toHaveLength(0);
+    const spawned=battle.living(0).find(e=>e.kind==='unit');
+    expect(spawned).toBeDefined();expect(spawned?.eraId).toBe('A1');assertBodies(battle);
   });
   test('重型单位、英雄、临时炮台共享身体空间；撤回后的英雄重新落位',()=>{
     const battle=game(true);battle.hero(0)!.x=position(500);battle.hero(1)!.x=position(1300);
@@ -52,6 +53,11 @@ describe('真实阵线与接敌',()=>{
     const battle=game(true);battle.state.sides[0].gold=1000000;
     battle.act({type:'train',side:0,unitId:'U11'});battle.act({type:'train',side:0,unitId:'U12'});battle.step(300);
     expect(battle.population(0)).toBe(2);expect(battle.living(0).find(e=>e.contentId==='U11')!.x).toBeGreaterThan(position(400));assertBodies(battle);
+  });
+  test('单位出生顺序决定前后，角色类型不改变生产排序',()=>{
+    const battle=game();const first=place(battle,0,'U12',650);const second=place(battle,0,'U11',650);place(battle,1,'U11',900);
+    battle.step();
+    expect(first.x).toBeGreaterThan(second.x);assertBodies(battle);
   });
 });
 describe('时代与资源取舍',()=>{
@@ -70,8 +76,8 @@ describe('时代与资源取舍',()=>{
     battle.state.sides[0].knowledge=85000;battle.act({type:'evolve',side:0});expect(battle.state.paused).toBe(false);expect(veteran.eraId).toBe('A1');expect(veteran.maxHp).toBe(hp);expect(battle.state.sides[0].research['front-attack']).toBe(1);expect(battle.heavyUnlocked(0)).toBe(true);
   });
   test('时代大招有预告、冷却和 XP 成本，不能把一份 XP 同时用于进化',()=>{
-    const battle=game();const target=place(battle,1,'U11',850);target.speed=0;const hp=target.hp;battle.state.sides[0].knowledge=85000;
-    expect(battle.act({type:'ageSpecial',side:0,x:850}).ok).toBe(true);expect(battle.state.sides[0].knowledge).toBe(60000);expect(battle.act({type:'evolve',side:0}).ok).toBe(false);
+    const battle=game();const target=place(battle,1,'U11',850);target.speed=0;const hp=target.hp;const cost=catalog.eras.A1.nextEvolutionKnowledge!*1000;battle.state.sides[0].knowledge=cost;
+    expect(battle.act({type:'ageSpecial',side:0,x:850}).ok).toBe(true);expect(battle.state.sides[0].knowledge).toBe(cost-25000);expect(battle.act({type:'evolve',side:0}).ok).toBe(false);
     battle.step(12);expect(target.hp).toBe(hp);battle.step(12);expect(target.hp).toBeLessThan(hp);expect(battle.act({type:'ageSpecial',side:0,x:850}).ok).toBe(false);
   });
   test('四兵种克制独立于护甲与伤害类型',()=>{
@@ -82,5 +88,11 @@ describe('时代与资源取舍',()=>{
   test('保存恢复跨预告大招与排队时点，后续模拟结果保持一致',()=>{
     const battle=game();place(battle,1,'U11',850);battle.state.sides[0].knowledge=50000;battle.act({type:'ageSpecial',side:0,x:850});battle.act({type:'train',side:0,unitId:'U11'});battle.step(12);
     const restored=new Battle(battle.state.config,validateSnapshot(battle.snapshot()));battle.step(120);restored.step(120);expect(restored.snapshot()).toEqual(battle.snapshot());
+  });
+  test('指挥官阵亡扣除当前时代升级经验的 20%',()=>{
+    const battle=game(true);const hero=battle.hero(0)!;battle.state.sides[0].knowledge=100000;
+    battle.kill(hero);
+    expect(battle.state.sides[0].knowledge).toBe(100000 - catalog.eras.A1.nextEvolutionKnowledge! * 1000 * 0.2);
+    expect(battle.state.sides[0].heroRespawnAt).toBeGreaterThan(0);
   });
 });
